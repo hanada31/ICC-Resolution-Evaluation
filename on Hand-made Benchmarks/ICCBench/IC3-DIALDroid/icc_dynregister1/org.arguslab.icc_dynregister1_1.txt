@@ -1,0 +1,56 @@
+name: "org.arguslab.icc_dynregister1"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_dynregister1.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_dynregister1.MainActivity: void sendBroadcast(android.content.Intent)>($r1)"
+      class_name: "org.arguslab.icc_dynregister1.MainActivity"
+      method: "<org.arguslab.icc_dynregister1.MainActivity: void leakImei()>"
+      id: 7
+    }
+    kind: RECEIVER
+    intents {
+      attributes {
+        kind: ACTION
+        value: "com.fgwei"
+      }
+      attributes {
+        kind: EXTRA
+        value: "id"
+      }
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_dynregister1.MyReceiver"
+  kind: DYNAMIC_RECEIVER
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "com.fgwei"
+    }
+  }
+  registration_instruction {
+    statement: "virtualinvoke $r0.<org.arguslab.icc_dynregister1.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r4, $r2)"
+    class_name: "org.arguslab.icc_dynregister1.MainActivity"
+    method: "<org.arguslab.icc_dynregister1.MainActivity: void onCreate(android.os.Bundle)>"
+    id: 13
+  }
+}
+analysis_start: 1628844422
+analysis_end: 1628844425

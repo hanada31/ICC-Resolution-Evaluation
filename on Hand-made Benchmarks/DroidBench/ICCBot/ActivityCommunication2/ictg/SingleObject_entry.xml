@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_action_string_operations.OutFlowActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_action_string_operations.OutFlowActivity"/>
+      <destinition name="edu.mit.icc_action_string_operations.InFlowActivity"/>
+      <sender action="edu.mit.icc_action_string_operations.ACTION" extras="String-DroidBench"/>
+      <nodes>
+        <node method="OutFlowActivity onCreate" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="OutFlowActivity onCreate" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r6)"/>
+        <node method="OutFlowActivity onCreate" type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)"/>
+        <node method="OutFlowActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_action_string_operations.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

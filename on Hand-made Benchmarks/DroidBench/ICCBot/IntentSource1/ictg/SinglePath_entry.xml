@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="IntentSource1 setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1855589354" predsStr="1048928512" succsStr="687608114" context=""/>
+        <baseNodePointTo value="1855589354" context=""/>
+        <nodeSetPointToMe value="1855589354,687608114," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="IntentSource1 setResult" unit="this.&lt;lu.uni.snt.serval.IntentSource1: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="687608114" predsStr="1855589354" succsStr="" context=""/>
+        <baseNodePointTo value="687608114" context=""/>
+        <nodeSetPointToMe value="687608114," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="IntentSource1 onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.snt.serval.IntentSource1: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="241316255" predsStr="149526537" succsStr="1295338046" context=""/>
+        <baseNodePointTo value="241316255" context=""/>
+        <nodeSetPointToMe value="241316255,1295338046,614516107," context=""/>
+      </node>
+      <node type="SetAttribute" method="IntentSource1 onCreate" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.MAIN&quot;)">
+        <nodeInfo nodeId="1295338046" predsStr="241316255" succsStr="614516107" context=""/>
+        <baseNodePointTo value="241316255" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="IntentSource1 onCreate" unit="virtualinvoke r0.&lt;lu.uni.snt.serval.IntentSource1: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)">
+        <nodeInfo nodeId="614516107" predsStr="1295338046" succsStr="" context=""/>
+        <baseNodePointTo value="241316255" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

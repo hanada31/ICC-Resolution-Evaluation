@@ -1,0 +1,26 @@
+name: "lu.uni.trux.raicc.setWindow"
+version: 1
+used_permissions: "android.permission.SEND_SMS"
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "lu.uni.trux.raicc.setWindow.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+components {
+  name: "lu.uni.trux.raicc.setWindow.TargetActivity"
+  kind: ACTIVITY
+  exported: false
+}
+analysis_start: 1628845787
+analysis_end: 1628845793

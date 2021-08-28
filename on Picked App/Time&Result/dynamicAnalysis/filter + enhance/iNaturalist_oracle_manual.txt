@@ -1,0 +1,44 @@
+## manual edges
+
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.INaturalistService
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.ObservationPhotosViewer
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.OnboardingActivity
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.ObservationPhotosViewer
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.IdentificationActivity
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.LocationDetailsActivity
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.DataQualityAssessment
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.UserProfile
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.TaxonActivity
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.ObservationProjectsViewer
++ org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.ObservationEditor
++ org.inaturalist.android.GuideDetails --> org.inaturalist.android.TaxonTagPhotosViewer
++ org.inaturalist.android.GuideDetails --> org.inaturalist.android.GuideTaxonActivity
++ org.inaturalist.android.GuideDetails --> org.inaturalist.android.INaturalistService
++ org.inaturalist.android.GuideDetails --> org.inaturalist.android.OnboardingActivity
++ org.inaturalist.android.TaxonSearchActivity --> org.inaturalist.android.CompareSuggestionActivity
++ org.inaturalist.android.TaxonSuggestionsActivity --> org.inaturalist.android.CompareSuggestionActivity
++ org.inaturalist.android.WebActivity --> org.inaturalist.android.OnboardingActivity
+
++ org.inaturalist.android.SettingsActivity--> org.inaturalist.android.About
+
+- org.inaturalist.android.GuideDetails --> org.inaturalist.android.ItemSearchActivity
+- org.inaturalist.android.GuidesActivity --> org.inaturalist.android.INaturalistService
+- org.inaturalist.android.GuidesActivity --> org.inaturalist.android.GuideDetails
+- org.inaturalist.android.ItemSearchActivity --> org.inaturalist.android.INaturalistService
+- org.inaturalist.android.MissionsOnboardingActivity --> org.inaturalist.android.INaturalistService
+- org.inaturalist.android.NetworkSettings --> org.inaturalist.android.INaturalistService
+- org.inaturalist.android.TutorialActivity --> org.inaturalist.android.INaturalistService
+- org.inaturalist.android.TaxonActivity --> org.inaturalist.android.UserProfile
+- org.inaturalist.android.TutorialActivity --> org.inaturalist.android.OnboardingActivity
+- org.inaturalist.android.UserActivity --> org.inaturalist.android.ObservationEditor
+
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.About
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.GuideDetails
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.NetworkSettings
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.ItemSearchActivity
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.ProjectDetails
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.TaxonActivity
+- org.inaturalist.android.ObservationListActivity --> org.inaturalist.android.TaxonSearchActivity
+- org.inaturalist.android.ObservationViewerActivity --> org.inaturalist.android.LoginSignupActivity
+- org.inaturalist.android.OnboardingActivity --> org.inaturalist.android.ItemSearchActivity
+- org.inaturalist.android.ProjectsActivity --> org.inaturalist.android.ProjectDetails

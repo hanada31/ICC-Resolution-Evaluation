@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_explicit1.MainActivity">
+    <singleIntent>
+      <method method="void leakImei()" methodtrace="void leakImei()"/>
+      <source name="org.arguslab.icc_explicit1.MainActivity"/>
+      <destinition name="org.arguslab.icc_explicit1.FooActivity"/>
+      <sender extras="String-data"/>
+      <nodes>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_explicit1/FooActivity;&quot;)"/>
+        <node method="MainActivity leakImei" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_explicit1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.arguslab.icc_explicit1.MainActivity">
+    <singleIntent>
+      <method method="void onRequestPermissionsResult(int,java.lang.String[],int[])" methodtrace="void leakImei()"/>
+      <source name="org.arguslab.icc_explicit1.MainActivity"/>
+      <destinition name="org.arguslab.icc_explicit1.FooActivity"/>
+      <sender extras="String-data"/>
+      <nodes>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_explicit1/FooActivity;&quot;)"/>
+        <node method="MainActivity leakImei" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_explicit1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.ActivityMessenger: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="ActivityMessenger setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="737897289" predsStr="1023423954" succsStr="523528914" context=""/>
+        <baseNodePointTo value="737897289" context=""/>
+        <nodeSetPointToMe value="737897289,523528914," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="ActivityMessenger setResult" unit="this.&lt;edu.mit.icc_service_messages.ActivityMessenger: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="523528914" predsStr="737897289" succsStr="" context=""/>
+        <baseNodePointTo value="523528914" context=""/>
+        <nodeSetPointToMe value="523528914," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="951629504" predsStr="689213488" succsStr="1753645864" context=""/>
+        <baseNodePointTo value="951629504" context=""/>
+        <nodeSetPointToMe value="951629504," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;edu.mit.icc_service_messages.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1753645864" predsStr="951629504" succsStr="" context=""/>
+        <baseNodePointTo value="1753645864" context=""/>
+        <nodeSetPointToMe value="1753645864," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onStart()&gt;">
+    <singlePath>
+      <method methodtrace="void onStart()"/>
+      <node type="CreateMethod" method="ActivityMessenger onStart" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="1723177853" predsStr="2040548959" succsStr="1395725953" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+        <nodeSetPointToMe value="1723177853,1395725953,1144499207," context=""/>
+      </node>
+      <node type="SetAttribute" method="ActivityMessenger onStart" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_service_messages/MessengerService;&quot;)">
+        <nodeInfo nodeId="1395725953" predsStr="1723177853" succsStr="1144499207" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="ActivityMessenger onStart" unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)">
+        <nodeInfo nodeId="1144499207" predsStr="1395725953" succsStr="" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.icc_service_messages.MessengerService dummyMainMethod_edu_mit_icc__service__messages_MessengerService(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="951629504" predsStr="689213488" succsStr="1753645864" context=""/>
+        <baseNodePointTo value="951629504" context=""/>
+        <nodeSetPointToMe value="951629504," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;edu.mit.icc_service_messages.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1753645864" predsStr="951629504" succsStr="" context=""/>
+        <baseNodePointTo value="1753645864" context=""/>
+        <nodeSetPointToMe value="1753645864," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="951629504" predsStr="689213488" succsStr="1753645864" context=""/>
+        <baseNodePointTo value="951629504" context=""/>
+        <nodeSetPointToMe value="951629504," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;edu.mit.icc_service_messages.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1753645864" predsStr="951629504" succsStr="" context=""/>
+        <baseNodePointTo value="1753645864" context=""/>
+        <nodeSetPointToMe value="1753645864," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.icc_service_messages.ActivityMessenger dummyMainMethod_edu_mit_icc__service__messages_ActivityMessenger(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onStart()"/>
+      <node type="CreateMethod" method="ActivityMessenger onStart" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="1723177853" predsStr="2040548959" succsStr="1395725953" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+        <nodeSetPointToMe value="1723177853,1395725953,1144499207," context=""/>
+      </node>
+      <node type="SetAttribute" method="ActivityMessenger onStart" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_service_messages/MessengerService;&quot;)">
+        <nodeInfo nodeId="1395725953" predsStr="1723177853" succsStr="1144499207" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="ActivityMessenger onStart" unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)">
+        <nodeInfo nodeId="1144499207" predsStr="1395725953" succsStr="" context=""/>
+        <baseNodePointTo value="1723177853" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

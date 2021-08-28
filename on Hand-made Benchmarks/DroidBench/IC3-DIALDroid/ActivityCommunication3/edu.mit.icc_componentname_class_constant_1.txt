@@ -1,0 +1,73 @@
+name: "edu.mit.icc_componentname_class_constant"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "edu.mit.icc_componentname_class_constant.OutFlowActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<edu.mit.icc_componentname_class_constant.OutFlowActivity: void startActivity(android.content.Intent)>($r9)"
+      class_name: "edu.mit.icc_componentname_class_constant.OutFlowActivity"
+      method: "<edu.mit.icc_componentname_class_constant.OutFlowActivity: void onCreate(android.os.Bundle)>"
+      id: 16
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: EXTRA
+        value: "DroidBench"
+      }
+      attributes {
+        kind: CLASS
+        value: "edu/mit/icc_componentname_class_constant/InFlowActivity"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "edu.mit.icc_componentname_class_constant"
+      }
+    }
+  }
+}
+components {
+  name: "edu.mit.icc_componentname_class_constant.InFlowActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "edu.mit.icc_component_class_constant.ACTION"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+    }
+  }
+}
+components {
+  name: "edu.mit.icc_componentname_class_constant.IsolateActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "edu.mit.icc_component_class_constant.EDIT"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+    }
+  }
+}
+analysis_start: 1628844067
+analysis_end: 1628844070

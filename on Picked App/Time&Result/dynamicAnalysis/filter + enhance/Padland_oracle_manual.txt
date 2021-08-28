@@ -1,0 +1,24 @@
+## manual edges
+
+
++ com.mikifus.padland.PadLandActivity --> com.mikifus.padland.SettingsActivity
++ com.mikifus.padland.PadInfoActivity --> com.mikifus.padland.PadViewActivity
++ com.mikifus.padland.PadListActivity --> com.mikifus.padland.PadViewActivity
++ com.mikifus.padland.PadInfoActivity --> com.mikifus.padland.PadListActivity
++ com.mikifus.padland.PadListActivity --> com.mikifus.padland.PadListActivity
+
+- com.mikifus.padland.PadLandDataActivity --> com.mikifus.padland.PadInfoActivity
++ com.mikifus.padland.PadListActivity --> com.mikifus.padland.PadInfoActivity
+- com.mikifus.padland.IntroActivity --> com.mikifus.padland.PadLandDataActivity
++ com.mikifus.padland.IntroActivity --> com.mikifus.padland.PadListActivity
+- com.mikifus.padland.NewPadActivity --> com.mikifus.padland.PadLandDataActivity
++ com.mikifus.padland.NewPadActivity --> com.mikifus.padland.PadViewActivity
+- com.mikifus.padland.SettingsActivity --> com.mikifus.padland.PadLandDataActivity
++ com.mikifus.padland.SettingsActivity --> com.mikifus.padland.ServerListActivity
+
+- com.mikifus.padland.SplashActivity --> com.mikifus.padland.PadLandDataActivity
+- com.mikifus.padland.PadLandDataActivity --> com.mikifus.padland.PadListActivity
+- com.mikifus.padland.PadLandDataActivity --> com.mikifus.padland.PadViewActivity
+- com.mikifus.padland.PadLandDataActivity --> com.mikifus.padland.ServerListActivity
+- com.mikifus.padland.NewPadActivity --> com.mikifus.padland.SettingsActivity
+- com.mikifus.padland.PadListActivity --> com.mikifus.padland.SettingsActivity

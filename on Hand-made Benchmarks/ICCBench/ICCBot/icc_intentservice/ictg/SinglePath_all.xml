@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;">
+    <singlePath>
+      <method methodtrace="void leakImei()"/>
+      <node type="CreateMethod" method="MainActivity leakImei" unit="r1 = new android.content.Intent">
+        <nodeInfo nodeId="350099713" predsStr="1348045338" succsStr="1132385302" context=""/>
+        <baseNodePointTo value="350099713" context=""/>
+        <nodeSetPointToMe value="350099713,1132385302,301084728,233271622," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity leakImei" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_intentservice/MyIntentService;&quot;)">
+        <nodeInfo nodeId="1132385302" predsStr="350099713" succsStr="301084728" context=""/>
+        <baseNodePointTo value="350099713" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity leakImei" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)">
+        <nodeInfo nodeId="301084728" predsStr="1132385302" succsStr="233271622" context=""/>
+        <baseNodePointTo value="350099713" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="MainActivity leakImei" unit="virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;(r1)">
+        <nodeInfo nodeId="233271622" predsStr="301084728" succsStr="" context=""/>
+        <baseNodePointTo value="350099713" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onHandleIntent" unit="$r1 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="1448580731" predsStr="123045427" succsStr="1631143060" context=""/>
+        <baseNodePointTo value="1448580731" context=""/>
+        <nodeSetPointToMe value="1448580731," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onHandleIntent" unit="$r1 = virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1631143060" predsStr="1448580731" succsStr="1468685544" context=""/>
+        <baseNodePointTo value="1631143060" context=""/>
+        <nodeSetPointToMe value="1631143060," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="665448485" predsStr="1843674049" succsStr="1905486482" context=""/>
+        <baseNodePointTo value="665448485" context=""/>
+        <nodeSetPointToMe value="665448485," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1905486482" predsStr="665448485" succsStr="" context=""/>
+        <baseNodePointTo value="1905486482" context=""/>
+        <nodeSetPointToMe value="1905486482," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_intentservice.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="313249054" predsStr="347354124" succsStr="802814772" context=""/>
+        <baseNodePointTo value="313249054" context=""/>
+        <nodeSetPointToMe value="313249054,802814772," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;org.arguslab.icc_intentservice.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="802814772" predsStr="313249054" succsStr="" context=""/>
+        <baseNodePointTo value="802814772" context=""/>
+        <nodeSetPointToMe value="802814772," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: org.arguslab.icc_intentservice.MyIntentService dummyMainMethod_org_arguslab_icc__intentservice_MyIntentService(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onHandleIntent" unit="$r1 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="1448580731" predsStr="123045427" succsStr="1631143060" context=""/>
+        <baseNodePointTo value="1448580731" context=""/>
+        <nodeSetPointToMe value="1448580731," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onHandleIntent" unit="$r1 = virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1631143060" predsStr="1448580731" succsStr="1468685544" context=""/>
+        <baseNodePointTo value="1631143060" context=""/>
+        <nodeSetPointToMe value="1631143060," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="665448485" predsStr="1843674049" succsStr="1905486482" context=""/>
+        <baseNodePointTo value="665448485" context=""/>
+        <nodeSetPointToMe value="665448485," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1905486482" predsStr="665448485" succsStr="" context=""/>
+        <baseNodePointTo value="1905486482" context=""/>
+        <nodeSetPointToMe value="1905486482," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onHandleIntent" unit="$r1 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="1448580731" predsStr="123045427" succsStr="1631143060" context=""/>
+        <baseNodePointTo value="1448580731" context=""/>
+        <nodeSetPointToMe value="1448580731," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onHandleIntent" unit="$r1 = virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1631143060" predsStr="1448580731" succsStr="1468685544" context=""/>
+        <baseNodePointTo value="1631143060" context=""/>
+        <nodeSetPointToMe value="1631143060," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyIntentService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="665448485" predsStr="1843674049" succsStr="1905486482" context=""/>
+        <baseNodePointTo value="665448485" context=""/>
+        <nodeSetPointToMe value="665448485," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyIntentService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1905486482" predsStr="665448485" succsStr="" context=""/>
+        <baseNodePointTo value="1905486482" context=""/>
+        <nodeSetPointToMe value="1905486482," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

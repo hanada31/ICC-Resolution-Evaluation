@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;de.ecspride.IntentSink2: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="IntentSink2 setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1739806152" predsStr="582857168" succsStr="948315053" context=""/>
+        <baseNodePointTo value="1739806152" context=""/>
+        <nodeSetPointToMe value="1739806152,948315053," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="IntentSink2 setResult" unit="this.&lt;de.ecspride.IntentSink2: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="948315053" predsStr="1739806152" succsStr="" context=""/>
+        <baseNodePointTo value="948315053" context=""/>
+        <nodeSetPointToMe value="948315053," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;de.ecspride.IntentSink2: void startIntent(android.view.View)&gt;">
+    <singlePath>
+      <method methodtrace="void startIntent(android.view.View)"/>
+      <node type="CreateMethod" method="IntentSink2 startIntent" unit="r2 = new android.content.Intent">
+        <nodeInfo nodeId="1322907569" predsStr="2035401634" succsStr="756126725" context=""/>
+        <baseNodePointTo value="1322907569" context=""/>
+        <nodeSetPointToMe value="1322907569,756126725,1474529475,542641486,566039179," context=""/>
+      </node>
+      <node type="InitIntent" method="IntentSink2 startIntent" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()">
+        <nodeInfo nodeId="756126725" predsStr="1322907569" succsStr="1474529475" context=""/>
+        <baseNodePointTo value="1322907569" context=""/>
+      </node>
+      <node type="SetAttribute" method="IntentSink2 startIntent" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setClassName(android.content.Context,java.lang.String)&gt;(r0, $r8)">
+        <nodeInfo nodeId="1474529475" predsStr="756126725" succsStr="542641486" context=""/>
+        <baseNodePointTo value="1322907569" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="IntentSink2 startIntent" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;id&quot;, $r6)">
+        <nodeInfo nodeId="542641486" predsStr="1474529475" succsStr="566039179" context=""/>
+        <baseNodePointTo value="1322907569" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="IntentSink2 startIntent" unit="virtualinvoke r0.&lt;de.ecspride.IntentSink2: void startActivity(android.content.Intent)&gt;(r2)">
+        <nodeInfo nodeId="566039179" predsStr="542641486" succsStr="" context=""/>
+        <baseNodePointTo value="1322907569" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

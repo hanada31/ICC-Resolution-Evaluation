@@ -1,0 +1,21 @@
+## manual edges
+
++ es.usc.citius.servando.calendula.activities.UpdateFromFileActivity --> es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity
++ es.usc.citius.servando.calendula.activities.AllergiesSearchActivity --> es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity
++ es.usc.citius.servando.calendula.activities.AllergiesActivity --> es.usc.citius.servando.calendula.activities.AllergiesSearchActivity
++ es.usc.citius.servando.calendula.activities.MedicineInfoActivity --> es.usc.citius.servando.calendula.activities.WebViewActivity
++ es.usc.citius.servando.calendula.activities.PatientDetailActivity --> es.usc.citius.servando.calendula.activities.ScanActivity
++ es.usc.citius.servando.calendula.scheduling.AlarmIntentService --> es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity
++ es.usc.citius.servando.calendula.HomePagerActivity --> es.usc.citius.servando.calendula.activities.CalendarActivity
++ es.usc.citius.servando.calendula.scheduling.PickupAlarmReceiver --> es.usc.citius.servando.calendula.activities.CalendarActivity
++ es.usc.citius.servando.calendula.drugdb.download.DBDownloadReceiver --> es.usc.citius.servando.calendula.drugdb.download.InstallDatabaseService
++ es.usc.citius.servando.calendula.scheduling.AlarmReceiver --> es.usc.citius.servando.calendula.scheduling.AlarmIntentService
+
+
++ es.usc.citius.servando.calendula.activities.ConfirmActivity --> es.usc.citius.servando.calendula.HomePagerActivity
++ es.usc.citius.servando.calendula.scheduling.AlarmIntentService --> es.usc.citius.servando.calendula.activities.ConfirmActivity
++ es.usc.citius.servando.calendula.scheduling.AlarmIntentService --> es.usc.citius.servando.calendula.scheduling.NotificationEventReceiver
+- es.usc.citius.servando.calendula.activities.RoutinesActivity --> es.usc.citius.servando.calendula.HomePagerActivity
+- es.usc.citius.servando.calendula.activities.RoutinesActivity --> es.usc.citius.servando.calendula.activities.ConfirmActivity
+- es.usc.citius.servando.calendula.activities.StartActivity --> es.usc.citius.servando.calendula.activities.RoutinesActivity
+- es.usc.citius.servando.calendula.activities.ScheduleCreationActivity --> es.usc.citius.servando.calendula.activities.SchedulesHelpActivity

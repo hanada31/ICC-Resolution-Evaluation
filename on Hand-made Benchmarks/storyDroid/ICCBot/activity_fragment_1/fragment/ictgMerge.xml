@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.test.ui.transition.Bfragment">
+    <destination name="com.test.ui.transition.CFragment" type="Frag2Frag" method="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.test.ui.transition.BlankFragment">
+    <destination name="com.test.ui.transition.AFragment" type="Frag2Frag" method="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.test.ui.transition.MainActivity">
+    <destination name="com.test.ui.transition.BlankFragment" type="Act2Frag" method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.test.ui.transition.AActivity">
+    <destination name="com.test.ui.transition.Bfragment" type="Act2Frag" method="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+</root>

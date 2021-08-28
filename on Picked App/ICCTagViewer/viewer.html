@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <style>
+        body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+        }
+
+        html {
+            height: -webkit-fill-available;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            height: calc(100vh - 56px);
+            max-height: 100vh;
+            overflow-x: auto;
+            overflow-y: auto;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            pointer-events: none;
+            fill: currentColor;
+        }
+
+        .dropdown-toggle { outline: 0; }
+
+        .nav-flush .nav-link {
+            border-radius: 0;
+        }
+
+        .btn-toggle {
+            display: inline-flex;
+            align-items: center;
+            padding: .25rem .5rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, .65);
+            background-color: transparent;
+            border: 0;
+        }
+        .btn-toggle:hover,
+        .btn-toggle:focus {
+            color: rgba(255, 255, 255, .85);
+            background-color: #9e9e9e;
+        }
+
+        .btn-toggle::before {
+            width: 1.25em;
+            line-height: 0;
+            content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+            transition: transform .35s ease;
+            transform-origin: .5em 50%;
+        }
+
+        .btn-toggle[aria-expanded="true"] {
+            color: rgba(255, 255, 255, .85);
+        }
+        .btn-toggle[aria-expanded="true"]::before {
+            transform: rotate(90deg);
+        }
+
+        .btn-toggle-nav a {
+            display: inline-flex;
+            padding: .1875rem .5rem;
+            margin-top: .125rem;
+            margin-left: 1.25rem;
+            text-decoration: none;
+        }
+        .btn-toggle-nav a:hover,
+        .btn-toggle-nav a:focus {
+            background-color: #9e9e9e;
+        }
+
+        #xmlCode {
+            width: 100%;
+            height: 50vh;
+            font-family: Consolas, serif;
+            font-size: 14px;
+        }
+
+        .form-check-label {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+
+        .accordion-button {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ICC TAG Viewer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">查看</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">导出</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                       aria-expanded="false">其它</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                        <li><a class="dropdown-item" href="#">Action 1</a></li>
+                        <li><a class="dropdown-item" href="#">Action 2</a></li>
+                        <li><a class="dropdown-item" href="#">Action 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form>
+                <input class="form-control j-search" type="text" placeholder="搜索..." aria-label="Search">
+            </form>
+        </div>
+    </div>
+</nav>
+<main>
+    <!--
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 200px;">
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    开源项目
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-light rounded">1Sheeld</a></li>
+                        <li><a href="#" class="link-light rounded">AFWall+</a></li>
+                        <li><a href="#" class="link-light rounded">AnkiDroid</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                    设置
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-light rounded">TAG 管理</a></li>
+                        <li><a href="#" class="link-light rounded">项目管理</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    -->
+    <div class="container p-3 container-main">
+        <div class="mb-3">
+            <button class="btn btn-success j-add-flow">添加边</button>
+            <button class="btn btn-primary j-collapse">展开所有</button>
+            <button class="btn btn-primary j-import ms-1">导入 XML</button>
+            <button class="btn btn-success j-export ms-1">导出 XML</button>
+            <button class="btn btn-primary j-save ms-1">临时保存</button>
+            <button class="btn btn-success j-save-read ms-1">读取保存数据</button>
+            <button class="btn btn-danger j-save-clear ms-1">清除保存数据</button>
+            <button class="btn btn-warning j-test ms-1">测试按钮</button>
+            <div class="form-check form-check-inline ms-1">
+                <label class="form-check-label" type="button">
+                    <input class="form-check-input option-onlyOne" type="checkbox" value="onlyOne">
+                    每级别仅展开一个
+                </label>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="xmlModal" tabindex="-1" aria-labelledby="xmlModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="xmlModalLabel">
+                    <span class="modal-title-text">XML 操作</span>
+                    <img class="modal-title-loading" style="height: 30px; display: none" src="images/loading.gif" />
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <textarea id="xmlCode" spellcheck="false"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary j-cancel" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary j-confirm">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast-container position-absolute p-3 top-0 start-50 translate-middle-x" id="toastPlacement">
+    <div class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                <i class="toast-icon bi bi-alarm"></i>
+                <span class="toast-msg">Hello, world! This is a toast message.</span>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/viewer.js"></script>
+</html>

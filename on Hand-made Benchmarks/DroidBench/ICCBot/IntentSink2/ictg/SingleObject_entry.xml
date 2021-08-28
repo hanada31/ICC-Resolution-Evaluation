@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="de.ecspride.IntentSink2">
+    <singleIntent>
+      <method method="void startIntent(android.view.View)" methodtrace="void startIntent(android.view.View)"/>
+      <source name="de.ecspride.IntentSink2"/>
+      <sender extras="String-id"/>
+      <nodes>
+        <node method="IntentSink2 startIntent" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="IntentSink2 startIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setClassName(android.content.Context,java.lang.String)&gt;(r0, $r8)"/>
+        <node method="IntentSink2 startIntent" type="SetIntentExtra" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;id&quot;, $r6)"/>
+        <node method="IntentSink2 startIntent" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.ecspride.IntentSink2: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

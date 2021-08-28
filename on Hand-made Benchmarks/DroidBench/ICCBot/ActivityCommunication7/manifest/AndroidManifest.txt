@@ -1,0 +1,29 @@
+manifest
+- package: edu.mit.icc_non_constant_class_object
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 8
+	- targetSdkVersion: 19
+	application
+	- icon: 2130837504
+	- theme: 2131099649
+	- label: 2131034112
+	- allowBackup: true
+	- debuggable: true
+		activity
+		- name: edu.mit.icc_non_constant_class_object.OutFlowActivity
+		- label: 2131034112
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- name: edu.mit.icc_non_constant_class_object.InFlowActivity
+		- label: 2131034112
+		activity
+		- name: edu.mit.icc_non_constant_class_object.IsolateActivity
+		- label: 2131034112
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE

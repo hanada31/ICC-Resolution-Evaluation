@@ -1,0 +1,23 @@
+manifest
+- package: lu.uni.snt.serval
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 8
+	- targetSdkVersion: 18
+	application
+	- icon: 2130837504
+	- theme: 2131099649
+	- label: 2131034112
+	- allowBackup: true
+	- debuggable: true
+		activity
+		- name: lu.uni.snt.serval.IntentSource1
+		- label: 2131034112
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE

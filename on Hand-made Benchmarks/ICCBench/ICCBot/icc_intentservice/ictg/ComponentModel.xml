@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_intentservice.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_intentservice.MyIntentService" extras="String-data"/>
+  </component>
+  <component name="org.arguslab.icc_intentservice.MyIntentService" type="Service"/>
+</root>

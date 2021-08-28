@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_dynregister1.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_dynregister1.MyReceiver" action="com.fgwei" extras="String-id"/>
+  </component>
+  <component name="org.arguslab.icc_dynregister1.MyReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="com.fgwei"/>
+    </manifest>
+  </component>
+</root>

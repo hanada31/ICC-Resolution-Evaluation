@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1222816951" predsStr="153181179" succsStr="" context=""/>
+        <baseNodePointTo value="1222816951" context=""/>
+        <nodeSetPointToMe value="1222816951," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setOnClickPendingIntent.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="198921214" predsStr="1685099891" succsStr="753105237" context=""/>
+        <baseNodePointTo value="198921214" context=""/>
+        <nodeSetPointToMe value="198921214,753105237," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;lu.uni.trux.raicc.setOnClickPendingIntent.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="753105237" predsStr="198921214" succsStr="" context=""/>
+        <baseNodePointTo value="753105237" context=""/>
+        <nodeSetPointToMe value="753105237," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="TargetActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1062425515" predsStr="403404866" succsStr="1720782061" context=""/>
+        <baseNodePointTo value="1062425515" context=""/>
+        <nodeSetPointToMe value="1062425515,1720782061," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="TargetActivity setResult" unit="this.&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1720782061" predsStr="1062425515" succsStr="" context=""/>
+        <baseNodePointTo value="1720782061" context=""/>
+        <nodeSetPointToMe value="1720782061," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setOnClickPendingIntent.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="515517325" predsStr="849044822" succsStr="1849626764" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+        <nodeSetPointToMe value="515517325,1849626764,2051308637,320604054,1547018299," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setOnClickPendingIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1849626764" predsStr="515517325" succsStr="2051308637" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="2051308637" predsStr="1849626764" succsStr="320604054" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="320604054" predsStr="2051308637" succsStr="1547018299" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r6)">
+        <nodeInfo nodeId="1547018299" predsStr="320604054" succsStr="" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.setOnClickPendingIntent.MainActivity dummyMainMethod_lu_uni_trux_raicc_setOnClickPendingIntent_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="515517325" predsStr="849044822" succsStr="1849626764" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+        <nodeSetPointToMe value="515517325,1849626764,2051308637,320604054,1547018299," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setOnClickPendingIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1849626764" predsStr="515517325" succsStr="2051308637" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="2051308637" predsStr="1849626764" succsStr="320604054" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="320604054" predsStr="2051308637" succsStr="1547018299" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r6)">
+        <nodeInfo nodeId="1547018299" predsStr="320604054" succsStr="" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity dummyMainMethod_lu_uni_trux_raicc_setOnClickPendingIntent_TargetActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1222816951" predsStr="153181179" succsStr="" context=""/>
+        <baseNodePointTo value="1222816951" context=""/>
+        <nodeSetPointToMe value="1222816951," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setOnClickPendingIntent.MyWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;">
+    <singlePath>
+      <method methodtrace="void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])"/>
+      <node type="CreateMethod" method="MyWidgetProvider onUpdate" unit="$r11 = new android.content.Intent">
+        <nodeInfo nodeId="1785850177" predsStr="2125085331" succsStr="573904188" context=""/>
+        <baseNodePointTo value="1785850177" context=""/>
+        <nodeSetPointToMe value="1785850177,573904188,1861384953,1092856598,612198802," context=""/>
+      </node>
+      <node type="SetAttribute" method="MyWidgetProvider onUpdate" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Llu/uni/trux/raicc/setOnClickPendingIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="573904188" predsStr="1785850177" succsStr="1861384953" context=""/>
+        <baseNodePointTo value="1785850177" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MyWidgetProvider onUpdate" unit="virtualinvoke $r11.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r7)">
+        <nodeInfo nodeId="1861384953" predsStr="573904188" succsStr="1092856598" context=""/>
+        <baseNodePointTo value="1785850177" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MyWidgetProvider onUpdate" unit="$r12 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;($r1, 0, $r11, 0)">
+        <nodeInfo nodeId="1092856598" predsStr="1861384953" succsStr="612198802" context=""/>
+        <baseNodePointTo value="1785850177" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MyWidgetProvider onUpdate" unit="virtualinvoke $r6.&lt;android.widget.RemoteViews: void setOnClickPendingIntent(int,android.app.PendingIntent)&gt;(2131165310, $r12)">
+        <nodeInfo nodeId="612198802" predsStr="1092856598" succsStr="787158228" context=""/>
+        <baseNodePointTo value="1785850177" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1222816951" predsStr="153181179" succsStr="" context=""/>
+        <baseNodePointTo value="1222816951" context=""/>
+        <nodeSetPointToMe value="1222816951," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="515517325" predsStr="849044822" succsStr="1849626764" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+        <nodeSetPointToMe value="515517325,1849626764,2051308637,320604054,1547018299," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setOnClickPendingIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1849626764" predsStr="515517325" succsStr="2051308637" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="2051308637" predsStr="1849626764" succsStr="320604054" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="320604054" predsStr="2051308637" succsStr="1547018299" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r6)">
+        <nodeInfo nodeId="1547018299" predsStr="320604054" succsStr="" context=""/>
+        <baseNodePointTo value="515517325" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

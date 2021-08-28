@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.test.ui.transition.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.test.ui.transition.NextActivity"/>
+  </component>
+  <component name="com.test.ui.transition.B" type="Activity">
+    <sender destination="com.test.ui.transition.MainActivity, com.test.ui.transition.C, com.test.ui.transition.NextActivity"/>
+  </component>
+  <component name="com.test.ui.transition.C" type="Activity">
+    <sender destination="com.test.ui.transition.MainActivity, com.test.ui.transition.D, com.test.ui.transition.NextActivity, com.test.ui.transition.A"/>
+  </component>
+  <component name="com.test.ui.transition.D" type="Activity">
+    <sender destination="com.test.ui.transition.E"/>
+  </component>
+  <component name="com.test.ui.transition.E" type="Activity">
+    <sender destination="com.test.ui.transition.MainActivity"/>
+  </component>
+  <component name="com.test.ui.transition.NextActivity" type="Activity">
+    <sender destination="com.test.ui.transition.A"/>
+  </component>
+  <component name="com.test.ui.transition.A" type="Activity">
+    <sender destination="com.test.ui.transition.MainActivity, com.test.ui.transition.B, com.test.ui.transition.NextActivity"/>
+  </component>
+</root>

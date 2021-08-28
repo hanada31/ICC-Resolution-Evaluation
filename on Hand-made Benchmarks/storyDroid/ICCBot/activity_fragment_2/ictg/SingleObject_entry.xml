@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.test.ui.transition.NextActivity">
+    <singleIntent>
+      <method method="void go2Activity(android.content.Context,java.lang.Class)" methodtrace="void go2Activity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="NextActivity go2Activity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity go2Activity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity go2Activity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.NextActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)
+						   void go2Activity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="NextActivity go2Activity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity go2Activity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity go2Activity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)
+						   void go2Activity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <destinition name="com.test.ui.transition.AActivity"/>
+      <nodes>
+        <node method="NextActivity go2Activity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity go2Activity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity go2Activity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity go2Activity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

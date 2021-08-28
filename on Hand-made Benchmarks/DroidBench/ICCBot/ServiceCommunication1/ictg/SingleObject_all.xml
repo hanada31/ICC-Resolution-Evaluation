@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_service_messages.ActivityMessenger">
+    <singleIntent>
+      <method method="void onStart()" methodtrace="void onStart()"/>
+      <source name="edu.mit.icc_service_messages.ActivityMessenger"/>
+      <destinition name="edu.mit.icc_service_messages.MessengerService"/>
+      <nodes>
+        <node method="ActivityMessenger onStart" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="ActivityMessenger onStart" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_service_messages/MessengerService;&quot;)"/>
+        <node method="ActivityMessenger onStart" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.rpc_messengerservice.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="663326227" predsStr="1395912847" succsStr="1331644236" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+        <nodeSetPointToMe value="663326227," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.rpc_messengerservice.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1331644236" predsStr="663326227" succsStr="" context=""/>
+        <baseNodePointTo value="1331644236" context=""/>
+        <nodeSetPointToMe value="1331644236," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.rpc_messengerservice.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="2032479363" predsStr="781527109" succsStr="1874812338" context=""/>
+        <baseNodePointTo value="2032479363" context=""/>
+        <nodeSetPointToMe value="2032479363,1874812338," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;org.arguslab.rpc_messengerservice.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1874812338" predsStr="2032479363" succsStr="" context=""/>
+        <baseNodePointTo value="1874812338" context=""/>
+        <nodeSetPointToMe value="1874812338," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: org.arguslab.rpc_messengerservice.MessengerService dummyMainMethod_org_arguslab_rpc__messengerservice_MessengerService(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="663326227" predsStr="1395912847" succsStr="1331644236" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+        <nodeSetPointToMe value="663326227," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.rpc_messengerservice.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1331644236" predsStr="663326227" succsStr="" context=""/>
+        <baseNodePointTo value="1331644236" context=""/>
+        <nodeSetPointToMe value="1331644236," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MessengerService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="663326227" predsStr="1395912847" succsStr="1331644236" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+        <nodeSetPointToMe value="663326227," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MessengerService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.rpc_messengerservice.MessengerService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1331644236" predsStr="663326227" succsStr="" context=""/>
+        <baseNodePointTo value="1331644236" context=""/>
+        <nodeSetPointToMe value="1331644236," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.rpc_messengerservice.MainActivity: void onStart()&gt;">
+    <singlePath>
+      <method methodtrace="void onStart()"/>
+      <node type="CreateMethod" method="MainActivity onStart" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="67883256" predsStr="2098413495" succsStr="2125625192" context=""/>
+        <baseNodePointTo value="67883256" context=""/>
+        <nodeSetPointToMe value="67883256,2125625192,1634319881," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onStart" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/arguslab/rpc_messengerservice/MessengerService;&quot;)">
+        <nodeInfo nodeId="2125625192" predsStr="67883256" succsStr="1634319881" context=""/>
+        <baseNodePointTo value="67883256" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="MainActivity onStart" unit="virtualinvoke r0.&lt;org.arguslab.rpc_messengerservice.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)">
+        <nodeInfo nodeId="1634319881" predsStr="2125625192" succsStr="98818836" context=""/>
+        <baseNodePointTo value="67883256" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

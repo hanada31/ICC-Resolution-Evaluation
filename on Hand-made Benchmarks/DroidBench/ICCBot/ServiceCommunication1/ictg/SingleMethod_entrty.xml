@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.ActivityMessenger: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;edu.mit.icc_service_messages.ActivityMessenger: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="parameter0 = virtualinvoke this.&lt;edu.mit.icc_service_messages.MessengerService: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.ActivityMessenger: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onStart()&gt;">
+    <node unit="$r1 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_service_messages/MessengerService;&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)" type="SendIntent2ICC"/>
+  </singleMethod>
+</root>

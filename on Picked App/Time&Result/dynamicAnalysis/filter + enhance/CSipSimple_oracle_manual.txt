@@ -1,0 +1,25 @@
+## manual edges
+
++ com.csipsimple.ui.SipHome --> com.csipsimple.ui.calllog.CallLogDetailsActivity
++ com.csipsimple.ui.SipHome --> com.csipsimple.service.Downloader
++ com.csipsimple.ui.prefs.cupcake.MainPrefs --> com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity
++ com.csipsimple.ui.incall.InCallActivity --> com.csipsimple.ui.incall.InCallMediaControl
++ com.csipsimple.ui.incall.InCallActivity --> com.csipsimple.ui.PickupSipUri
++ com.csipsimple.ui.incall.InCallActivity --> com.csipsimple.service.SipService
++ com.csipsimple.service.SipService --> com.csipsimple.plugins.codecs.ReceiverSilk
+
++ com.csipsimple.ui.prefs.AudioTester --> com.csipsimple.service.SipService
+
+
+- com.csipsimple.ui.SipHome --> com.csipsimple.service.OutgoingCall
+- com.csipsimple.ui.SipHome --> com.csipsimple.widgets.AccountWidgetProvider
+- com.csipsimple.ui.account.AccountsEditList --> com.csipsimple.widgets.AccountWidgetProvider
+- com.csipsimple.ui.prefs.AudioTester --> com.csipsimple.ui.prefs.Codecs
+- com.csipsimple.ui.prefs.AudioTester --> com.csipsimple.ui.prefs.PrefsFast
+- com.csipsimple.ui.prefs.Codecs --> com.csipsimple.ui.prefs.PrefsFilters
+- com.csipsimple.ui.prefs.PrefsFast --> com.csipsimple.ui.prefs.Codecs
+- com.csipsimple.ui.prefs.PrefsFilters --> com.csipsimple.plugins.telephony.CallHandler
+- com.csipsimple.ui.prefs.hc.MainPrefs --> com.csipsimple.ui.prefs.Codecs
+- com.csipsimple.wizards.BasePrefsWizard --> com.csipsimple.widgets.AccountWidgetProvider
+- com.csipsimple.wizards.WizardChooser --> com.csipsimple.widgets.AccountWidgetProvider
+- com.csipsimple.wizards.WizardChooser --> com.csipsimple.wizards.BasePrefsWizard

@@ -1,0 +1,34 @@
+manifest
+- package: de.ecspride
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 8
+	- targetSdkVersion: 17
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	uses-permission
+	- name: android.permission.SEND_SMS
+	application
+	- icon: 2130837504
+	- theme: 2131034113
+	- label: 2130968576
+	- allowBackup: true
+	- debuggable: true
+		activity
+		- name: de.ecspride.Activity1
+		- label: 2130968576
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- name: de.ecspride.Activity2
+		- label: 2130968579
+		- taskAffinity: de.ecspride.Activity2
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER

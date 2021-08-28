@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;edu.mit.shared_preferences.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="170778406" predsStr="556662073" succsStr="" context=""/>
+        <baseNodePointTo value="170778406" context=""/>
+        <nodeSetPointToMe value="170778406," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.shared_preferences.MainActivity dummyMainMethod_edu_mit_shared__preferences_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="170778406" predsStr="556662073" succsStr="" context=""/>
+        <baseNodePointTo value="170778406" context=""/>
+        <nodeSetPointToMe value="170778406," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.shared_preferences.AnotherActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="AnotherActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.AnotherActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1198450099" predsStr="1529010337" succsStr="" context=""/>
+        <baseNodePointTo value="1198450099" context=""/>
+        <nodeSetPointToMe value="1198450099," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.shared_preferences.AnotherActivity dummyMainMethod_edu_mit_shared__preferences_AnotherActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="AnotherActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.AnotherActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1198450099" predsStr="1529010337" succsStr="" context=""/>
+        <baseNodePointTo value="1198450099" context=""/>
+        <nodeSetPointToMe value="1198450099," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="AnotherActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.AnotherActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1198450099" predsStr="1529010337" succsStr="" context=""/>
+        <baseNodePointTo value="1198450099" context=""/>
+        <nodeSetPointToMe value="1198450099," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.shared_preferences.MainActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="170778406" predsStr="556662073" succsStr="" context=""/>
+        <baseNodePointTo value="170778406" context=""/>
+        <nodeSetPointToMe value="170778406," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

@@ -1,0 +1,38 @@
+## manual edges
++ com.farmerbb.taskbar.service.StartMenuService --> com.farmerbb.taskbar.activity.InvisibleActivityAlt
++ com.farmerbb.taskbar.service.StartMenuService --> com.farmerbb.taskbar.activity.InvisibleActivity
++ com.farmerbb.taskbar.service.StartMenuService --> com.farmerbb.taskbar.activity.ContextMenuActivity
++ com.farmerbb.taskbar.service.StartMenuService --> com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark
++ com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.HomeActivity
++ com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.ShortcutActivity
++ com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.StartTaskbarActivity
++ com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.ImportSettingsActivity
++ com.farmerbb.taskbar.ImportSettingsActivity --> com.farmerbb.taskbar.activity.MainActivity
++ com.farmerbb.taskbar.service.DashboardService --> com.farmerbb.taskbar.activity.DashboardActivity
++ com.farmerbb.taskbar.service.DashboardService --> com.farmerbb.taskbar.activity.dark.DashboardActivityDark
++ com.farmerbb.taskbar.activity.ContextMenuActivity --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.activity.InvisibleActivityAlt
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.activity.dark.InvisibleActivityAltDark
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.service.TaskbarService
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.service.StartMenuService
++ com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.service.DashboardService
++ com.farmerbb.taskbar.receiver.BootReceiver --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.receiver.BootReceiver --> com.farmerbb.taskbar.service.NotificationService
++ com.farmerbb.taskbar.receiver.ShowHideTaskbarReceiver --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.receiver.PackageUpgradeReceiver --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.receiver.StartReceiver --> com.farmerbb.taskbar.activity.DummyActivity
++ com.farmerbb.taskbar.receiver.StartReceiver --> com.farmerbb.taskbar.service.NotificationService
+
+
++ com.farmerbb.taskbar.activity.ImportSettingsActivity --> com.farmerbb.taskbar.receiver.SendSettingsReceiver
++ com.farmerbb.taskbar.receiver.SendSettingsReceiver --> com.farmerbb.taskbar.receiver.ReceiveSettingsReceiver
++ com.farmerbb.taskbar.receiver.ReceiveSettingsReceiver --> com.farmerbb.taskbar.activity.ImportSettingsActivity
++ com.farmerbb.taskbar.activity.ContextMenuActivity --> com.farmerbb.taskbar.service.StartMenuService
+
+
+- com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.ContextMenuActivity
+- com.farmerbb.taskbar.MainActivity --> com.farmerbb.taskbar.activity.InvisibleActivity
+- com.farmerbb.taskbar.activity.InvisibleActivityFreeform --> com.farmerbb.taskbar.service.NotificationService
+- com.farmerbb.taskbar.activity.InvisibleActivityAlt --> com.farmerbb.taskbar.activity.InvisibleActivity
+- com.farmerbb.taskbar.activity.SelectAppActivity --> com.farmerbb.taskbar.activity.InvisibleActivityFreeform

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.test.ui.transition.MainActivity">
+    <destination name="com.test.ui.transition.NextActivity" type="Act2Act" method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.B">
+    <destination name="com.test.ui.transition.C" type="Act2Act" method="&lt;com.test.ui.transition.B: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.NextActivity" type="Act2Act" method="&lt;com.test.ui.transition.B: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.MainActivity" type="Act2Act" method="&lt;com.test.ui.transition.B: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.C">
+    <destination name="com.test.ui.transition.A" type="Act2Act" method="&lt;com.test.ui.transition.C: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.MainActivity" type="Act2Act" method="&lt;com.test.ui.transition.C: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.D" type="Act2Act" method="&lt;com.test.ui.transition.C: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.NextActivity" type="Act2Act" method="&lt;com.test.ui.transition.C: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.D">
+    <destination name="com.test.ui.transition.E" type="Act2Act" method="&lt;com.test.ui.transition.D: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.E">
+    <destination name="com.test.ui.transition.MainActivity" type="Act2Act" method="&lt;com.test.ui.transition.E: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.NextActivity">
+    <destination name="com.test.ui.transition.A" type="Act2Act" method="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.test.ui.transition.A">
+    <destination name="com.test.ui.transition.B" type="Act2Act" method="&lt;com.test.ui.transition.A: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.test.ui.transition.MainActivity" type="Act2Act" method="&lt;com.test.ui.transition.A: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+</root>

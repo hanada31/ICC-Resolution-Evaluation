@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.HookActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.FooActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.HookActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;org.arguslab.icc_implicit_mix1.HookActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.FooActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;org.arguslab.icc_implicit_mix1.FooActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.MainActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;org.arguslab.icc_implicit_mix1.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.MainActivity: void leakImei()&gt;">
+    <node unit="r1 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;()&gt;()" type="InitIntent"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;test_action&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category1&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category2&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r5, &quot;test/type&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)" type="SetIntentExtra"/>
+    <node unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)" type="SendIntent2ICC"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;">
+    <node unit="specialinvoke r0.&lt;org.arguslab.icc_implicit_mix1.MainActivity: void leakImei()&gt;()"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.FooActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="r2 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;()&gt;()" type="InitIntent"/>
+    <node unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;test_action2&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category3&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category4&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r3, &quot;test/type&quot;)" type="SetAttribute"/>
+    <node unit="$r4 = virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.FooActivity: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+    <node unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r5)" type="SetIntentExtra"/>
+    <node unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.FooActivity: void startActivity(android.content.Intent)&gt;(r2)" type="SendIntent2ICC"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_mix1.HookActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.HookActivity: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+  </singleMethod>
+</root>

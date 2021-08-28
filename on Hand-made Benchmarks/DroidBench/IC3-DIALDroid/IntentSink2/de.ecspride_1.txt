@@ -1,0 +1,43 @@
+name: "de.ecspride"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "de.ecspride.IntentSink2"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<de.ecspride.IntentSink2: void startActivity(android.content.Intent)>($r2)"
+      class_name: "de.ecspride.IntentSink2"
+      method: "<de.ecspride.IntentSink2: void startIntent(android.view.View)>"
+      id: 13
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: EXTRA
+        value: "id"
+      }
+      attributes {
+        kind: CLASS
+        value: "(.*)"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "de.ecspride"
+      }
+    }
+  }
+}
+analysis_start: 1628844018
+analysis_end: 1628844021

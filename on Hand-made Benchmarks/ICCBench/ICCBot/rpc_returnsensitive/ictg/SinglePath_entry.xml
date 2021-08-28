@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.rpc_returnsensitive.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="969440066" predsStr="742969054" succsStr="1207758771" context=""/>
+        <baseNodePointTo value="969440066" context=""/>
+        <nodeSetPointToMe value="969440066,1207758771," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;org.arguslab.rpc_returnsensitive.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1207758771" predsStr="969440066" succsStr="" context=""/>
+        <baseNodePointTo value="1207758771" context=""/>
+        <nodeSetPointToMe value="1207758771," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.rpc_returnsensitive.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="android.os.IBinder onBind(android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="LocalService onBind" unit="parameter0 := @parameter0: android.content.Intent">
+        <nodeInfo nodeId="589166341" predsStr="1997028929" succsStr="756222660" context=""/>
+        <baseNodePointTo value="589166341" context=""/>
+        <nodeSetPointToMe value="589166341," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="LocalService onBind" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.rpc_returnsensitive.LocalService: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="756222660" predsStr="589166341" succsStr="" context=""/>
+        <baseNodePointTo value="756222660" context=""/>
+        <nodeSetPointToMe value="756222660," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.rpc_returnsensitive.MainActivity: void onStart()&gt;">
+    <singlePath>
+      <method methodtrace="void onStart()"/>
+      <node type="CreateMethod" method="MainActivity onStart" unit="r1 = new android.content.Intent">
+        <nodeInfo nodeId="663326227" predsStr="1395912847" succsStr="1331644236" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+        <nodeSetPointToMe value="663326227,1331644236,1487131937," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onStart" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/arguslab/rpc_returnsensitive/LocalService;&quot;)">
+        <nodeInfo nodeId="1331644236" predsStr="663326227" succsStr="1487131937" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="MainActivity onStart" unit="virtualinvoke r0.&lt;org.arguslab.rpc_returnsensitive.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;(r1, $r2, 1)">
+        <nodeInfo nodeId="1487131937" predsStr="1331644236" succsStr="349757746" context=""/>
+        <baseNodePointTo value="663326227" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

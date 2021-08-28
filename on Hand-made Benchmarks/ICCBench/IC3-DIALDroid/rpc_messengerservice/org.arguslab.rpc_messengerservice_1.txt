@@ -1,0 +1,44 @@
+name: "org.arguslab.rpc_messengerservice"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.rpc_messengerservice.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.rpc_messengerservice.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)"
+      class_name: "org.arguslab.rpc_messengerservice.MainActivity"
+      method: "<org.arguslab.rpc_messengerservice.MainActivity: void onStart()>"
+      id: 5
+    }
+    kind: SERVICE
+    intents {
+      attributes {
+        kind: CLASS
+        value: "org/arguslab/rpc_messengerservice/MessengerService"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "org.arguslab.rpc_messengerservice"
+      }
+    }
+  }
+}
+components {
+  name: "org.arguslab.rpc_messengerservice.MessengerService"
+  kind: SERVICE
+  exported: true
+}
+analysis_start: 1628844431
+analysis_end: 1628844434

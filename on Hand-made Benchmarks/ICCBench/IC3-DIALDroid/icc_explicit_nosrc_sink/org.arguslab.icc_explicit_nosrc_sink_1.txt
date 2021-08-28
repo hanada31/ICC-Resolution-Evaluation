@@ -1,0 +1,47 @@
+name: "org.arguslab.icc_explicit_nosrc_sink"
+version: 1
+components {
+  name: "org.arguslab.icc_explicit_nosrc_sink.FooActivity"
+  kind: ACTIVITY
+  exported: false
+}
+components {
+  name: "org.arguslab.icc_explicit_nosrc_sink.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_explicit_nosrc_sink.MainActivity: void startActivity(android.content.Intent)>($r2)"
+      class_name: "org.arguslab.icc_explicit_nosrc_sink.MainActivity"
+      method: "<org.arguslab.icc_explicit_nosrc_sink.MainActivity: void onCreate(android.os.Bundle)>"
+      id: 8
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: EXTRA
+        value: "data"
+      }
+      attributes {
+        kind: CLASS
+        value: "org/arguslab/icc_explicit_nosrc_sink/FooActivity"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "org.arguslab.icc_explicit_nosrc_sink"
+      }
+    }
+  }
+}
+analysis_start: 1628844393
+analysis_end: 1628844396

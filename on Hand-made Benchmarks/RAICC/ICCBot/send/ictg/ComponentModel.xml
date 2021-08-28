@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="lu.uni.trux.raicc.send.SecondActivity" type="Activity"/>
+  <component name="lu.uni.trux.raicc.send.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="lu.uni.trux.raicc.send.TargetActivity" extras="String-DroidBench"/>
+  </component>
+  <component name="lu.uni.trux.raicc.send.TargetActivity" type="Activity"/>
+</root>

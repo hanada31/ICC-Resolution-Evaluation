@@ -1,0 +1,21 @@
+name: "de.ecspride"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "de.ecspride.IntentSink1"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+analysis_start: 1624857205
+analysis_end: 1624857207

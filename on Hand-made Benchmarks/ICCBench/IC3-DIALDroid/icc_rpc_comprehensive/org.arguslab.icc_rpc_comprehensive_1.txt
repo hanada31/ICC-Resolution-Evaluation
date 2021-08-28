@@ -1,0 +1,68 @@
+name: "org.arguslab.icc_rpc_comprehensive"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_rpc_comprehensive.FooActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_rpc_comprehensive.FooActivity: void startActivityForResult(android.content.Intent,int)>($r3, 1)"
+      class_name: "org.arguslab.icc_rpc_comprehensive.FooActivity"
+      method: "<org.arguslab.icc_rpc_comprehensive.FooActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>"
+      id: 10
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: CLASS
+        value: "org/arguslab/icc_rpc_comprehensive/BarActivity"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "org.arguslab.icc_rpc_comprehensive"
+      }
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_rpc_comprehensive.BarActivity"
+  kind: ACTIVITY
+  exported: false
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_rpc_comprehensive.BarActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r3, 1)"
+      class_name: "org.arguslab.icc_rpc_comprehensive.BarActivity"
+      method: "<org.arguslab.icc_rpc_comprehensive.BarActivity: void onStart()>"
+      id: 7
+    }
+    kind: SERVICE
+    intents {
+      attributes {
+        kind: CLASS
+        value: "org/arguslab/icc_rpc_comprehensive/RemoteService"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "org.arguslab.icc_rpc_comprehensive"
+      }
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_rpc_comprehensive.RemoteService"
+  kind: SERVICE
+  exported: true
+}
+analysis_start: 1628844435
+analysis_end: 1628844438

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_implicit_action.FooActivity">
+    <SingleFragment>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_action.FooActivity"/>
+      <nodes>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_action.FooActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </SingleFragment>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_action.MainActivity">
+    <SingleFragment>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_action.MainActivity"/>
+      <nodes>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_action.MainActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </SingleFragment>
+  </Component>
+</root>

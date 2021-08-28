@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_rpc_comprehensive.FooActivity">
+    <singleIntent>
+      <method method="void onRequestPermissionsResult(int,java.lang.String[],int[])" methodtrace="void onRequestPermissionsResult(int,java.lang.String[],int[])"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.FooActivity"/>
+      <destinition name="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+      <nodes>
+        <node method="FooActivity onRequestPermissionsResult" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="FooActivity onRequestPermissionsResult" type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setClass(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/arguslab/icc_rpc_comprehensive/BarActivity;&quot;)"/>
+        <node method="FooActivity onRequestPermissionsResult" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void startActivityForResult(android.content.Intent,int)&gt;(r3, 1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.arguslab.icc_rpc_comprehensive.BarActivity">
+    <singleIntent>
+      <method method="void onStart()" methodtrace="void onStart()"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+      <destinition name="org.arguslab.icc_rpc_comprehensive.RemoteService"/>
+      <nodes>
+        <node method="BarActivity onStart" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="BarActivity onStart" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setClass(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/arguslab/icc_rpc_comprehensive/RemoteService;&quot;)"/>
+        <node method="BarActivity onStart" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;(r1, $r3, 1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

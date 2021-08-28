@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;lu.uni.snt.serval.IntentSource1: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void onActivityResult(int,int,android.content.Intent)&gt;">
+    <node unit="$r1 := @parameter2: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.snt.serval.IntentSource1: void onCreate(android.os.Bundle)&gt;">
+    <node unit="$r2 = virtualinvoke r0.&lt;lu.uni.snt.serval.IntentSource1: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+    <node unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.MAIN&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke r0.&lt;lu.uni.snt.serval.IntentSource1: void startActivityForResult(android.content.Intent,int)&gt;($r2, 1)" type="SendIntent2ICC"/>
+  </singleMethod>
+</root>

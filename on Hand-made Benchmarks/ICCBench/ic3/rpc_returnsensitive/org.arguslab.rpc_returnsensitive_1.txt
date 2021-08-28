@@ -1,0 +1,44 @@
+name: "org.arguslab.rpc_returnsensitive"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.rpc_returnsensitive.LocalService"
+  kind: SERVICE
+  exported: true
+}
+components {
+  name: "org.arguslab.rpc_returnsensitive.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke r0.<org.arguslab.rpc_returnsensitive.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r1, r4, b1)"
+      class_name: "org.arguslab.rpc_returnsensitive.MainActivity"
+      method: "<org.arguslab.rpc_returnsensitive.MainActivity: void onStart()>"
+      id: 7
+    }
+    kind: SERVICE
+    intents {
+      attributes {
+        kind: CLASS
+        value: "org/arguslab/rpc_returnsensitive/LocalService"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "org.arguslab.rpc_returnsensitive"
+      }
+    }
+  }
+}
+analysis_start: 1624856473
+analysis_end: 1624856475

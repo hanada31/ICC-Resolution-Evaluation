@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.TargetActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;lu.uni.trux.raicc.setSendDataMessage.TargetActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.TargetActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.MainActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;lu.uni.trux.raicc.setSendDataMessage.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+    <node unit="$r2 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setSendDataMessage/TargetActivity;&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)" type="SetIntentExtra"/>
+    <node unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r2, 0)" type="pendingIntentCreation"/>
+    <node unit="virtualinvoke $r6.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r4)" type="sendOutWrapperredIntent"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.TargetActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setSendDataMessage.TargetActivity: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setSendDataMessage.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <node unit="$r1 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setSendDataMessage/IntermediateActivity;&quot;)" type="SetAttribute"/>
+    <node unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)" type="SetIntentExtra"/>
+    <node unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)" type="pendingIntentCreation"/>
+    <node unit="virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)&gt;(&quot;dummyAddress&quot;, null, 0, $r8, $r6, null)" type="sendOutWrapperredIntent"/>
+  </singleMethod>
+</root>

@@ -1,0 +1,58 @@
+name: "org.arguslab.icc_implicit_data2"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_implicit_data2.FooActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "test"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+    }
+    attributes {
+      kind: TYPE
+      value: "test/type"
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_implicit_data2.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_implicit_data2.MainActivity: void startActivity(android.content.Intent)>($r1)"
+      class_name: "org.arguslab.icc_implicit_data2.MainActivity"
+      method: "<org.arguslab.icc_implicit_data2.MainActivity: void leakImei()>"
+      id: 8
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: TYPE
+        value: "test/type"
+      }
+      attributes {
+        kind: EXTRA
+        value: "data"
+      }
+    }
+  }
+}
+analysis_start: 1628844377
+analysis_end: 1628844380

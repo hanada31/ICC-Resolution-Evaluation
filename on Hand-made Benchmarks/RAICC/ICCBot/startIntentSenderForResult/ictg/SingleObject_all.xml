@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="lu.uni.trux.raicc.startIntentSenderForResult.MainActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="lu.uni.trux.raicc.startIntentSenderForResult.MainActivity"/>
+      <destinition name="lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/startIntentSenderForResult/SecondActivity;&quot;)"/>
+        <node method="MainActivity onCreate" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)"/>
+        <node method="MainActivity onCreate" type="pendingIntentCreation" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r2, 0)"/>
+        <node method="MainActivity onCreate" type="sendOutWrapperredIntent" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.startIntentSenderForResult.MainActivity: void startIntentSenderForResult(android.content.IntentSender,int,android.content.Intent,int,int,int)&gt;($r7, 0, null, 0, 0, 0)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="lu.uni.trux.raicc.startIntentSenderForResult.MainActivity"/>
+      <destinition name="lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/startIntentSenderForResult/SecondActivity;&quot;)"/>
+        <node method="MainActivity onCreate" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)"/>
+        <node method="MainActivity onCreate" type="pendingIntentCreation" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r2, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity"/>
+      <destinition name="lu.uni.trux.raicc.startIntentSenderForResult.MainActivity"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="SecondActivity onCreate" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="SecondActivity onCreate" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/startIntentSenderForResult/MainActivity;&quot;)"/>
+        <node method="SecondActivity onCreate" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)"/>
+        <node method="SecondActivity onCreate" type="pendingIntentCreation" unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity"/>
+      <destinition name="lu.uni.trux.raicc.startIntentSenderForResult.MainActivity"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="SecondActivity onCreate" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="SecondActivity onCreate" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/startIntentSenderForResult/MainActivity;&quot;)"/>
+        <node method="SecondActivity onCreate" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)"/>
+        <node method="SecondActivity onCreate" type="pendingIntentCreation" unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+        <node method="SecondActivity onCreate" type="sendOutWrapperredIntent" unit="virtualinvoke $r4.&lt;android.app.PendingIntent: void send(android.content.Context,int,android.content.Intent,android.app.PendingIntent$OnFinished,android.os.Handler,java.lang.String,android.os.Bundle)&gt;(r0, 0, null, null, null, null, null)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

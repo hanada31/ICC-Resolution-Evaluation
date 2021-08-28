@@ -1,0 +1,55 @@
+## manual edges
+
++ fr.ybo.transportsrennes.activity.timeo.TimeoActivity --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete --> fr.ybo.transportsrennes.activity.itineraires.Itineraires
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget21 --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget11 --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowRes --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.services.UpdateTimeServiceReceiver --> fr.ybo.transportsrennes.services.UpdateTimeService
+
+
++ fr.ybo.transportsrennes.activity.bus.ListNotif --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.services.UpdateTimeService --> fr.ybo.transportsrennes.activity.bus.DetailArret
++ fr.ybo.transportsrennes.activity.TransportsBordeaux --> fr.ybo.transportsrennes.activity.bus.ListNotif
++ fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup --> fr.ybo.transportsrennes.activity.bus.TabFavoris
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowRes --> fr.ybo.transportsrennes.services.UpdateTimeService
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget --> fr.ybo.transportsrennes.services.UpdateTimeService
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget11 --> fr.ybo.transportsrennes.services.UpdateTimeService
++ fr.ybo.transportsrennes.activity.widgets.TransportsWidget21 --> fr.ybo.transportsrennes.services.UpdateTimeService
++ fr.ybo.transportsrennes.activity.bus.TabFavoris --> fr.ybo.transportsbordeaux.activity.loading.LoadingActivity
++ fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsbordeaux.activity.bus.ListArretByPosition
++ fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.parkrelais.ListParkRelais
++ fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsbordeaux.activity.alerts.TabAlertes
+
+
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.bus.ListNotif
+- fr.ybo.transportsrennes.activity.pointsdevente.ListPointsDeVente --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.velos.ListStationsFavoris --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.velos.ListStationsByPosition --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.bus.BusRennes --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.bus.DetailArret --> fr.ybo.transportsrennes.util.AlarmReceiver
+- fr.ybo.transportsrennes.activity.velos.ListStationsFavoris --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.velos.ListStationsByPosition --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.bus.TabFavoris --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.bus.DetailArret --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.bus.BusRennes --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.services.UpdateTimeService
+- fr.ybo.transportsrennes.activity.alerts.DetailAlert --> fr.ybo.transportsrennes.activity.bus.TabFavoris
+- fr.ybo.transportsrennes.activity.bus.BusRennes --> fr.ybo.transportsrennes.activity.bus.TabFavoris
+- fr.ybo.transportsrennes.activity.bus.ListNotif --> fr.ybo.transportsrennes.activity.bus.TabFavoris
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.bus.TabFavoris
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.bus.DetailArret
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.velos.ListStationsFavoris
+- fr.ybo.transportsrennes.activity.bus.DetailArret --> fr.ybo.transportsrennes.activity.velos.ListStationsByPosition
+- fr.ybo.transportsrennes.activity.bus.BusRennes --> fr.ybo.transportsrennes.activity.bus.DetailArret
+- fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup --> fr.ybo.transportsrennes.activity.bus.DetailArret
+- fr.ybo.transportsrennes.activity.bus.TabFavoris --> fr.ybo.transportsrennes.activity.bus.DetailArret
+- fr.ybo.transportsrennes.activity.velos.ListStationsByPosition --> fr.ybo.transportsrennes.activity.bus.DetailArret
+
+- fr.ybo.transportsrennes.activity.TransportsRennes --> fr.ybo.transportsrennes.activity.alerts.DetailAlert
+

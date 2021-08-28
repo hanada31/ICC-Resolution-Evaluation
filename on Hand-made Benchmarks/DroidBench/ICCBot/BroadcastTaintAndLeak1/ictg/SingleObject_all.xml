@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest">
+    <singleIntent>
+      <method method="void onDestroy()" methodtrace="void onDestroy()"/>
+      <source name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest"/>
+      <destinition name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1"/>
+      <sender action="edu.mit.icc_broadcast_programmatic_intentfilter.action" extras="String-imei"/>
+      <nodes>
+        <node method="BroadcastTest onDestroy" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="BroadcastTest onDestroy" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r5)"/>
+        <node method="BroadcastTest onDestroy" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;imei&quot;, $r4)"/>
+        <node method="BroadcastTest onDestroy" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void sendBroadcast(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

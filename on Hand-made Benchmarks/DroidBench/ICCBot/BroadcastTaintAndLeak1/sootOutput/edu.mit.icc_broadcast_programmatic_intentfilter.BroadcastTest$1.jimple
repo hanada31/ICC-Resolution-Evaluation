@@ -1,0 +1,43 @@
+class edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1 extends android.content.BroadcastReceiver
+{
+    final edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest this$0;
+
+    void <init>(edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest)
+    {
+        edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1 r0;
+        edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest $r1;
+
+        r0 := @this: edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1;
+
+        $r1 := @parameter0: edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest;
+
+        r0.<edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest this$0> = $r1;
+
+        specialinvoke r0.<android.content.BroadcastReceiver: void <init>()>();
+
+        return;
+    }
+
+    public void onReceive(android.content.Context, android.content.Intent)
+    {
+        edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1 r0;
+        android.content.Context $r1;
+        android.content.Intent $r2;
+        java.lang.String $r3;
+
+        r0 := @this: edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1;
+
+        $r1 := @parameter0: android.content.Context;
+
+        $r2 := @parameter1: android.content.Intent;
+
+        $r3 = virtualinvoke $r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("imei");
+
+        if $r3 == null goto label1;
+
+        staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DroidBench", $r3);
+
+     label1:
+        return;
+    }
+}

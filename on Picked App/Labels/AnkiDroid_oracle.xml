@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/AnkiDroid/Anki-Android-2.8.4">
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>CardBrowser.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; NavigationDrawerActivity.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="348" end="348"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="319" end="321"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>DeckPicker.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; DeckPicker.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="376" end="376"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1746" end="1750"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Previewer" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; NavigationDrawerActivity.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Previewer.java" start="34" end="34"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="319" end="321"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; Reviewer.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="59" end="59"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="545" end="553"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Statistics" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>Statistics.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; NavigationDrawerActivity.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Statistics.java" start="87" end="87"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="319" end="321"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.CardBrowser" method="">
+    <comment>StudyOptionsActivity.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; NavigationDrawerActivity.openCardBrowser() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="44" end="44"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="283" end="283"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="319" end="321"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelBrowser" destination="com.ichi2.anki.CardTemplateEditor" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; ModelBrowser.onCollectionLoaded() -&gt; DeckTask.launchDeckTask() -&gt; DeckTask.execute() -&gt; DeckTask.TaskListener.onPostExecute() -&gt; ModelBrowser.fillModelList() -&gt; ModelBrowserContextMenu.newInstance() -&gt; *MaterialDialog.ListCallback.onSelection() -&gt; ModelBrowser.openTemplateEditor() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="58" end="58"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="240" end="240"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/async/DeckTask.java" start="131" end="132"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="117" end="117"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="171" end="171"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="546" end="548"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.anki.CardTemplateEditor" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; NoteEditor.onCollectionLoaded() -&gt; TextView.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; NoteEditor.showCardTemplateEditor() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="103" end="103"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="359" end="359"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1007" end="1018"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.DeckOptions" method="">
+    <comment>DeckPicker.onCreate() -&gt; DeckAdapter.setDeckLongClickListener() -&gt; View.OnLongClickListener.onLongClick() -&gt; DeckPickerContextMenu.newInstance() -&gt; AnkiActivity.showDialogFragment() -&gt; DeckPickerContextMenu.onCreateDialog() -&gt; MaterialDialog.Builder.itemsCallback() -&gt; *MaterialDialog.ListCallback.onSelection() -&gt; DeckPicker.showContextMenuDeckOptions() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="391" end="391"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="237" end="237"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/dialogs/DeckPickerContextMenu.java" start="66" end="73"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/dialogs/DeckPickerContextMenu.java" start="129" end="129"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1935" end="1937"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.DeckOptions" method="">
+    <comment>*Reviewer.onOptionsItemSelected() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="245" end="246"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.DeckOptions" method="">
+    <comment>StudyOptionsActivity.onCreate() -&gt; loadStudyOptionsFragment() -&gt; StudyOptionsFragment.newInstance() -&gt; *onMenuItemClick() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="46" end="46"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="55" end="56"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="299" end="301"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="86" end="86"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardTemplateEditor" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardTemplateEditor.java" start="68" end="68"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="110" end="110"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Info" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Info.java" start="49" end="49"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.IntentHandler" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*IntentHandler.onCreate() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/IntentHandler.java" start="43" end="44"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/IntentHandler.java" start="106" end="108"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/IntentHandler.java" start="128" end="130"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/IntentHandler.java" start="135" end="138"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelBrowser" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="58" end="58"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelFieldEditor" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelFieldEditor.java" start="47" end="47"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.MyAccount" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/MyAccount.java" start="41" end="41"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="103" end="103"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Previewer" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Previewer.java" start="34" end="34"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="59" end="59"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Statistics" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Statistics.java" start="59" end="59"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="31" end="31"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity" destination="com.ichi2.anki.DeckPicker" method="">
+    <comment>*AnkiActivity.onLoadFinished() -&gt; onCollectionLoadError() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/activity/MultimediaEditFieldActivity.java" start="53" end="53"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="288" end="288"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="267" end="270"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.FilteredDeckOptions" method="">
+    <comment>DeckPicker.onCreate() -&gt; DeckAdapter.setDeckLongClickListener() -&gt; View.OnLongClickListener.onLongClick() -&gt; DeckPickerContextMenu.newInstance() -&gt; AnkiActivity.showDialogFragment() -&gt; DeckPickerContextMenu.onCreateDialog() -&gt; MaterialDialog.Builder.itemsCallback() -&gt; *MaterialDialog.ListCallback.onSelection() -&gt; DeckPicker.showContextMenuDeckOptions() -&gt; startActivityWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="391" end="391"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="237" end="237"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/dialogs/DeckPickerContextMenu.java" start="66" end="73"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/dialogs/DeckPickerContextMenu.java" start="129" end="129"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1930" end="1932"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.FilteredDeckOptions" method="">
+    <comment>*StudyOptionsActivity.onCreate() -&gt; StudyOptionsActivity.loadStudyOptionsFragment() -&gt;StudyOptionsFragment.onMenuItemClick() -&gt; openFilteredDeckOptions() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="46" end="46"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="297" end="297"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="139" end="139"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="150" end="153"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.ModelBrowser" method="">
+    <comment>*DeckPicker.onOptionsItemSelected() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="625" end="626"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelBrowser" destination="com.ichi2.anki.ModelFieldEditor" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; ModelBrowser.onCollectionLoaded() -&gt; DeckTask.launchDeckTask() -&gt; DeckTask.execute() -&gt; DeckTask.TaskListener.onPostExecute() -&gt; ModelBrowser.fillModelList() -&gt; ListView.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="240" end="240"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/async/DeckTask.java" start="131" end="132"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="117" end="117"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="276" end="279"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.MyAccount" method="">
+    <comment>DeckPicker.onResume() -&gt; sync() -&gt; showSyncErrorDialog() -&gt; AnkiActivity.showAsyncDialogFragment() -&gt; SyncErrorDialog.onCreateDialog() -&gt; MaterialDialog.Builder.callback() -&gt; *MaterialDialog.ButtonCallback.onPositive() -&gt; DeckPicker.loginToSyncServer() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="718" end="718"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1285" end="1285"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1301" end="1301"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1073" end="1074"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/dialogs/SyncErrorDialog.java" start="81" end="81"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1593" end="1595"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>*CardBrowser.onOptionsItemSelected() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="633" end="635"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>DeckPicker.onCreate() -&gt; configureFloatingActionsMenu() -&gt; FloatingActionButton.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; DeckPicker.addNote() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="408" end="408"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="508" end="514"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="854" end="856"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>NoteEditor.onOptionsItemSelected() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="842" end="848"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Previewer" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>AbstractFlashcardViewer.onCollectionLoaded() -&gt; initLayout() -&gt; *AbstractFlashcardViewer.MyGestureDetector.onFling() -&gt; AbstractFlashcardViewer.executeCommand() -&gt; editCard() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Previewer.java" start="34" end="34"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="891" end="891"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="1346" end="1346"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="2745" end="2745"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="2593" end="2593"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="1187" end="1191"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>*Reviewer.onOptionsItemSelected() -&gt; addNote() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="256" end="256"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="267" end="269"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.widget.AddNoteWidget" destination="com.ichi2.anki.NoteEditor" method="">
+    <comment>*AddNoteWidget.onUpdate() -&gt; AppWidgetManager.updateAppWidget()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/AddNoteWidget.java" start="37" end="44"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.Preferences" method="">
+    <comment>CardBrowser.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="348" end="348"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.Preferences" method="">
+    <comment>DeckPicker.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="376" end="376"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Previewer" destination="com.ichi2.anki.Preferences" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Previewer.java" start="34" end="34"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.Preferences" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="59" end="59"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Statistics" destination="com.ichi2.anki.Preferences" method="">
+    <comment>Statistics.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Statistics.java" start="87" end="87"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.Preferences" method="">
+    <comment>StudyOptionsActivity.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="44" end="44"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="297" end="297"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.Previewer" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; CardBrowser.onCollectionLoaded() -&gt; ListView.setOnItemLongClickListener() -&gt; AdapterView.OnItemLongClickListener.onItemLongClick() -&gt; *MaterialDialog.ListCallback.onSelection() -&gt; startActivityWithoutAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="86" end="86"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="44" end="44"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="509" end="510"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="207" end="211"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardTemplateEditor" destination="com.ichi2.anki.Previewer" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; CardTemplateEditor.onCollectionLoaded() -&gt; ViewPager.addOnPageChangeListener() -&gt; ViewPager.OnPageChangeListener.onPageSelected() -&gt; FragmentPagerAdapter.instantiateItem() -&gt; *CardTemplateFragment.onOptionsItemSelected() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardTemplateEditor.java" start="68" end="68"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardTemplateEditor.java" start="214" end="214"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardTemplateEditor.java" start="221" end="221"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardTemplateEditor.java" start="485" end="505"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.Reviewer" method="">
+    <comment>*DeckPicker.onOptionsItemSelected() -&gt; undo() -&gt; DeckTask.launchDeckTask() -&gt; DeckTask.TaskListener.onPostExecute() -&gt; DeckPicker.openReviewer() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="566" end="566"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1012" end="1012"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1027" end="1027"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="2166" end="2167"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.Reviewer" method="">
+    <comment>*StudyOptionsActivity.onMenuItemClick() -&gt; openReviewer() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="292" end="292"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsFragment.java" start="234" end="234"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.Statistics" method="">
+    <comment>CardBrowser.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="348" end="348"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.Statistics" method="">
+    <comment>DeckPicker.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="376" end="376"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Previewer" destination="com.ichi2.anki.Statistics" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Previewer.java" start="34" end="34"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.Statistics" method="">
+    <comment>AbstractFlashcardViewer.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="59" end="59"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AbstractFlashcardViewer.java" start="860" end="860"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Statistics" destination="com.ichi2.anki.Statistics" method="">
+    <comment>Statistics.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Statistics.java" start="87" end="87"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.Statistics" method="">
+    <comment>StudyOptionsActivity.onCreate() -&gt; NavigationDrawerActivity.initNavigationDrawer() -&gt; DrawerLayout.addDrawerListener() -&gt; NavigationDrawerActivity.onNavigationItemSelected() -&gt; *ActionBarDrawerToggle.onDrawerClosed() -&gt; Handler.post() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="44" end="44"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="115" end="135"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="272" end="309"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="122" end="122"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NavigationDrawerActivity.java" start="286" end="288"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.StudyOptionsActivity" method="">
+    <comment>DeckPicker.onOptionsItemSelected() -&gt; MaterialDialog.Builder.callback() -&gt; *MaterialDialog.ButtonCallback.onPositive() -&gt; DeckPicker.openStudyOptions() -&gt; startActivityForResultWithAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="591" end="605"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="596" end="604"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="602" end="602"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="1737" end="1740"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity" destination="com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity" method="">
+    <comment>MultimediaEditFieldActivity.onCreate() -&gt; recreateEditingUi() -&gt; BasicControllerFactory.createControllerForField() -&gt; BasicTextFieldController.createUI() -&gt; createPronounceButton() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/activity/MultimediaEditFieldActivity.java" start="98" end="98"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/activity/MultimediaEditFieldActivity.java" start="120" end="120"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/fields/BasicControllerFactory.java" start="39" end="39"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/fields/BasicTextFieldController.java" start="93" end="93"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/fields/BasicTextFieldController.java" start="126" end="140"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/multimediacard/fields/BasicTextFieldController.java" start="136" end="138"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity" method="">
+    <comment>AnkiActivity.onLoadFinished() -&gt; NoteEditor.onCollectionLoaded() -&gt; setNote() -&gt; populateEditFields() -&gt; setMMButtonListener() -&gt; ImageButton.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; NoteEditor.startMultimediaFieldEditor() -&gt; startActivityForResultWithoutAnimation()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="103" end="103"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/AnkiActivity.java" start="286" end="286"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="488" end="488"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1368" end="1368"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1385" end="1385"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1126" end="1126"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1136" end="1136"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1147" end="1147"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="1242" end="1246"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>CardBrowser.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="533" end="533"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>DeckPicker.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="755" end="755"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelBrowser" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>ModelBrowser.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="227" end="227"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelFieldEditor" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>ModelFieldEditor.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelFieldEditor.java" start="102" end="102"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>NoteEditor.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="546" end="546"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>Reviewer.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="464" end="464"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>StudyOptionsActivity.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="117" end="117"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.widget.AnkiDroidWidgetSmall" destination="com.ichi2.anki.services.NotificationService" method="">
+    <comment>AnkiDroidWidgetSmall.onUpdate() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetSmall.java" start="47" end="47"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="112" end="114"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.CardBrowser" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>CardBrowser.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/CardBrowser.java" start="533" end="533"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.DeckPicker" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>DeckPicker.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/DeckPicker.java" start="755" end="755"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelBrowser" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>ModelBrowser.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelBrowser.java" start="227" end="227"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.ModelFieldEditor" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>ModelFieldEditor.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/ModelFieldEditor.java" start="102" end="102"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.NoteEditor" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>NoteEditor.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/NoteEditor.java" start="546" end="546"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.Reviewer" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>Reviewer.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/Reviewer.java" start="464" end="464"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.anki.StudyOptionsActivity" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>StudyOptionsActivity.onStop() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/anki/StudyOptionsActivity.java" start="117" end="117"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.ichi2.widget.AnkiDroidWidgetSmall" destination="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" method="">
+    <comment>AnkiDroidWidgetSmall.onUpdate() -&gt; WidgetStatus.update() -&gt; UpdateDeckStatusAsyncTask.execute() -&gt; onPostExecute() -&gt; startService()</comment>
+    <callLines>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetSmall.java" start="47" end="47"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="60" end="61"/>
+      <line src="/AnkiDroid/src/main/java/com/ichi2/widget/WidgetStatus.java" start="107" end="109"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="true"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+</root>

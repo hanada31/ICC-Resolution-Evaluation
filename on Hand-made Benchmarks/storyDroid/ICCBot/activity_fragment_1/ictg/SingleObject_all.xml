@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.test.ui.transition.CFragment">
+    <singleIntent>
+      <method method="void onAttach(android.content.Context)" methodtrace="void onAttach(android.content.Context)"/>
+      <source name="com.test.ui.transition.CFragment"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="CFragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="CFragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)"/>
+        <node method="CFragment onAttach" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.CFragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.AFragment">
+    <singleIntent>
+      <method method="void onAttach(android.content.Context)" methodtrace="void onAttach(android.content.Context)"/>
+      <source name="com.test.ui.transition.AFragment"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="AFragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="AFragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>
+        <node method="AFragment onAttach" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.AFragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.NextActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <destinition name="com.test.ui.transition.AActivity"/>
+      <nodes>
+        <node method="NextActivity$1 onClick" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NextActivity$1 onClick" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)"/>
+        <node method="NextActivity$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.Bfragment">
+    <singleIntent>
+      <method method="void onAttach(android.content.Context)" methodtrace="void onAttach(android.content.Context)"/>
+      <source name="com.test.ui.transition.Bfragment"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="Bfragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="Bfragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)"/>
+        <node method="Bfragment onAttach" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.Bfragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onAttach(android.content.Context)" methodtrace="void onAttach(android.content.Context)"/>
+      <source name="com.test.ui.transition.Bfragment"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="Bfragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="Bfragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>
+        <node method="Bfragment onAttach" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.Bfragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.BlankFragment">
+    <singleIntent>
+      <method method="void onAttach(android.content.Context)" methodtrace="void onAttach(android.content.Context)"/>
+      <source name="com.test.ui.transition.BlankFragment"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="BlankFragment onAttach" type="CreateMethod" unit="$r6 = new android.content.Intent"/>
+        <node method="BlankFragment onAttach" type="SetAttribute" unit="specialinvoke $r6.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>
+        <node method="BlankFragment onAttach" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.BlankFragment: void startActivity(android.content.Intent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

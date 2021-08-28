@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="edu.mit.icc_component_not_in_manifest.IsolateActivity" type="Activity"/>
+  <component name="edu.mit.icc_component_not_in_manifest.OutFlowActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="edu.mit.icc_component_not_in_manifest.InFlowActivity" extras="String-DroidBench"/>
+  </component>
+</root>

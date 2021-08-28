@@ -1,0 +1,42 @@
+manifest
+- compileSdkVersionCodename: 10
+- package: lu.uni.trux.raicc.setOnClickPendingIntent
+- platformBuildVersionName: 10
+- compileSdkVersion: 29
+- versionName: 1.0
+- platformBuildVersionCode: 29
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 13
+	- targetSdkVersion: 23
+	uses-permission
+	- name: android.permission.SEND_SMS
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	application
+	- supportsRtl: true
+	- allowBackup: true
+	- icon: 2131361792
+	- theme: 2131492869
+	- roundIcon: 2131361793
+	- label: 2131427347
+		activity
+		- name: lu.uni.trux.raicc.setOnClickPendingIntent.TargetActivity
+		activity
+		- name: lu.uni.trux.raicc.setOnClickPendingIntent.MainActivity
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		receiver
+		- name: lu.uni.trux.raicc.setOnClickPendingIntent.MyWidgetProvider
+			intent-filter
+				action
+				- name: android.appwidget.action.APPWIDGET_UPDATE
+			meta-data
+			- name: android.appwidget.provider
+			- resource: 2131623936
+		meta-data
+		- name: com.google.android.gms.version
+		- value: 2131230726

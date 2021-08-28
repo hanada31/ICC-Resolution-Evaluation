@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="com.test.ui.transition.D">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.D"/>
+      <nodes>
+        <node method="D goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="D goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="D goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.D: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.B">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.B"/>
+      <nodes>
+        <node method="B goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.B: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.C">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <nodes>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.D">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.D: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.D: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/E;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.D"/>
+      <destinition name="com.test.ui.transition.E"/>
+      <nodes>
+        <node method="D goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="D goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="D goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="D goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.D: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.D: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.D: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/E;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.D"/>
+      <nodes>
+        <node method="D goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="D goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="D goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.D: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.MainActivity">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="MainActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.C">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/test/ui/transition/A;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <destinition name="com.test.ui.transition.A"/>
+      <nodes>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/test/ui/transition/D;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <destinition name="com.test.ui.transition.D"/>
+      <nodes>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lcom/test/ui/transition/A;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.C"/>
+      <nodes>
+        <node method="C goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="C goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="C goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.C: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.B">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.B"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.B: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.B"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.B: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/C;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.B"/>
+      <destinition name="com.test.ui.transition.C"/>
+      <nodes>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.B: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.B"/>
+      <nodes>
+        <node method="B goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="B goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="B goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.B: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.E">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.E"/>
+      <nodes>
+        <node method="E goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="E goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="E goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.E: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.NextActivity">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="NextActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.A">
+    <singleIntent>
+      <method method="void goToActivity(android.content.Context,java.lang.Class)" methodtrace="void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.A"/>
+      <nodes>
+        <node method="A goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.A: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.NextActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.NextActivity: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/A;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <destinition name="com.test.ui.transition.A"/>
+      <nodes>
+        <node method="NextActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.NextActivity: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/A;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="NextActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NextActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="NextActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.A">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.A"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.A: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/B;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.A"/>
+      <destinition name="com.test.ui.transition.B"/>
+      <nodes>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.A: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.A"/>
+      <nodes>
+        <node method="A goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="A goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="A goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.A: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.MainActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.MainActivity"/>
+      <destinition name="com.test.ui.transition.NextActivity"/>
+      <nodes>
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="MainActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>
+        <node method="MainActivity goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="com.test.ui.transition.E">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.E: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.E: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.E"/>
+      <destinition name="com.test.ui.transition.MainActivity"/>
+      <nodes>
+        <node method="E goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="E goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="E goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="E goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.E: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.E: void goToActivity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.E: void goToActivity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)
+						   void goToActivity(android.content.Context,java.lang.Class)"/>
+      <source name="com.test.ui.transition.E"/>
+      <nodes>
+        <node method="E goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="E goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, $r2)"/>
+        <node method="E goToActivity" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;com.test.ui.transition.E: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

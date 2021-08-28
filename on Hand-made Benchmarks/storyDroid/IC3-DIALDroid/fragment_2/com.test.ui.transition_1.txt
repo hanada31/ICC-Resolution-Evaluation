@@ -1,0 +1,19 @@
+name: "com.test.ui.transition"
+version: 1
+components {
+  name: "com.test.ui.transition.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+analysis_start: 1628845155
+analysis_end: 1628845164

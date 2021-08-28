@@ -1,0 +1,34 @@
+name: "org.arguslab.icc_explicit_src_nosink"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_explicit_src_nosink.FooActivity"
+  kind: ACTIVITY
+  exported: false
+  extras {
+    extra: "data"
+    instruction {
+      statement: "r9 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r8)"
+      class_name: "org.arguslab.icc_explicit_src_nosink.FooActivity"
+      method: "<org.arguslab.icc_explicit_src_nosink.FooActivity: void onCreate(android.os.Bundle)>"
+      id: 9
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_explicit_src_nosink.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+analysis_start: 1624856416
+analysis_end: 1624856418

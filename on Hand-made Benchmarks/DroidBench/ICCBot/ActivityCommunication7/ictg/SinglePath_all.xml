@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="OutFlowActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="715194034" predsStr="663531845" succsStr="891052865" context=""/>
+        <baseNodePointTo value="715194034" context=""/>
+        <nodeSetPointToMe value="715194034,891052865," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="OutFlowActivity setResult" unit="this.&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="891052865" predsStr="715194034" succsStr="" context=""/>
+        <baseNodePointTo value="891052865" context=""/>
+        <nodeSetPointToMe value="891052865," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="IsolateActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="41260873" predsStr="943051773" succsStr="1325322464" context=""/>
+        <baseNodePointTo value="41260873" context=""/>
+        <nodeSetPointToMe value="41260873,1325322464," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="IsolateActivity setResult" unit="this.&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1325322464" predsStr="41260873" succsStr="" context=""/>
+        <baseNodePointTo value="1325322464" context=""/>
+        <nodeSetPointToMe value="1325322464," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="InFlowActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="282850912" predsStr="1173897563" succsStr="1772825962" context=""/>
+        <baseNodePointTo value="282850912" context=""/>
+        <nodeSetPointToMe value="282850912,1772825962," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="InFlowActivity setResult" unit="this.&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1772825962" predsStr="282850912" succsStr="" context=""/>
+        <baseNodePointTo value="1772825962" context=""/>
+        <nodeSetPointToMe value="1772825962," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="IsolateActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="807240950" predsStr="1286393023" succsStr="" context=""/>
+        <baseNodePointTo value="807240950" context=""/>
+        <nodeSetPointToMe value="807240950," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.icc_non_constant_class_object.IsolateActivity dummyMainMethod_edu_mit_icc__non__constant__class__object_IsolateActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="IsolateActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="807240950" predsStr="1286393023" succsStr="" context=""/>
+        <baseNodePointTo value="807240950" context=""/>
+        <nodeSetPointToMe value="807240950," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="InFlowActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1657767638" predsStr="1180504901" succsStr="" context=""/>
+        <baseNodePointTo value="1657767638" context=""/>
+        <nodeSetPointToMe value="1657767638," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: edu.mit.icc_non_constant_class_object.InFlowActivity dummyMainMethod_edu_mit_icc__non__constant__class__object_InFlowActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="InFlowActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1657767638" predsStr="1180504901" succsStr="" context=""/>
+        <baseNodePointTo value="1657767638" context=""/>
+        <nodeSetPointToMe value="1657767638," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="OutFlowActivity onCreate" unit="r3 = new android.content.Intent">
+        <nodeInfo nodeId="532299734" predsStr="1949877205" succsStr="984302294" context=""/>
+        <baseNodePointTo value="532299734" context=""/>
+        <nodeSetPointToMe value="532299734,984302294,1806545036,1496969287," context=""/>
+      </node>
+      <node type="SetAttribute" method="OutFlowActivity onCreate" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, $r7)">
+        <nodeInfo nodeId="984302294" predsStr="532299734" succsStr="1806545036" context=""/>
+        <baseNodePointTo value="532299734" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="OutFlowActivity onCreate" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r6)">
+        <nodeInfo nodeId="1806545036" predsStr="984302294" succsStr="1496969287" context=""/>
+        <baseNodePointTo value="532299734" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="OutFlowActivity onCreate" unit="virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r3)">
+        <nodeInfo nodeId="1496969287" predsStr="1806545036" succsStr="" context=""/>
+        <baseNodePointTo value="532299734" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="InFlowActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1657767638" predsStr="1180504901" succsStr="" context=""/>
+        <baseNodePointTo value="1657767638" context=""/>
+        <nodeSetPointToMe value="1657767638," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="IsolateActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.IsolateActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="807240950" predsStr="1286393023" succsStr="" context=""/>
+        <baseNodePointTo value="807240950" context=""/>
+        <nodeSetPointToMe value="807240950," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

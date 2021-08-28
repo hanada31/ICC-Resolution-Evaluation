@@ -1,0 +1,23 @@
+## manual edges
+
++ dev.ukanth.ufirewall.activity.LogActivity --> dev.ukanth.ufirewall.activity.LogDetailActivity
++ dev.ukanth.ufirewall.MainActivity --> dev.ukanth.ufirewall.service.FirewallService
++ dev.ukanth.ufirewall.service.ApplyOnBootService --> dev.ukanth.ufirewall.service.LogService
++ dev.ukanth.ufirewall.widget.ToggleWidget --> dev.ukanth.ufirewall.widget.ToggleWidgetActivity
++ dev.ukanth.ufirewall.widget.ToggleWidgetOld --> dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity
++ dev.ukanth.ufirewall.broadcast.OnBootReceiver --> dev.ukanth.ufirewall.service.ApplyOnBootService
++ dev.ukanth.ufirewall.MainActivity --> dev.ukanth.ufirewall.service.RootShellService
++ dev.ukanth.ufirewall.service.RulesApplyService --> dev.ukanth.ufirewall.service.LogService
++ dev.ukanth.ufirewall.MainActivity --> dev.ukanth.ufirewall.service.FirewallService
++ dev.ukanth.ufirewall.service.LogService --> dev.ukanth.ufirewall.service.LogService
++ dev.ukanth.ufirewall.service.RootShellService --> dev.ukanth.ufirewall.service.RootShellService
++ dev.ukanth.ufirewall.widget.StatusWidget --> dev.ukanth.ufirewall.widget.StatusWidget
+
++ dev.ukanth.ufirewall.preferences.PreferencesActivity --> dev.ukanth.ufirewall.service.LogService
++ dev.ukanth.ufirewall.service.ApplyOnBootService --> dev.ukanth.ufirewall.service.FirewallService
++ dev.ukanth.ufirewall.plugin.FireReceiver --> dev.ukanth.ufirewall.widget.StatusWidget
++ dev.ukanth.ufirewall.service.ToggleTileService --> dev.ukanth.ufirewall.widget.StatusWidget
++ dev.ukanth.ufirewall.widget.ToggleWidgetActivity --> dev.ukanth.ufirewall.widget.StatusWidget
++ dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity --> dev.ukanth.ufirewall.widget.StatusWidget
+
++ dev.ukanth.ufirewall.preferences.PreferencesActivity --> haibison.android.lockpattern.LockPatternActivity

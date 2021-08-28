@@ -1,0 +1,35 @@
+## manual edges
+
++ net.osmand.plus.activities.search.SearchPOIActivity --> net.osmand.plus.activities.EditPOIFilterActivity
++ net.osmand.plus.activities.search.SearchActivity --> net.osmand.plus.activities.FavoritesListActivity
++ net.osmand.plus.activities.search.SearchPOIActivity --> net.osmand.plus.activities.search.SearchActivity
++ net.osmand.plus.activities.search.SearchActivity --> net.osmand.plus.activities.search.SearchAddressActivity
++ net.osmand.plus.activities.search.SearchActivity --> net.osmand.plus.activities.search.SearchPOIActivity
++ net.osmand.plus.activities.search.SearchAddressActivity --> net.osmand.plus.activities.search.SearchRegionByNameActivity
++ net.osmand.plus.activities.search.SearchAddressActivity --> net.osmand.plus.activities.search.SearchCityByNameActivity
++ net.osmand.plus.activities.search.SearchAddressActivity --> net.osmand.plus.activities.search.SearchStreetByNameActivity
++ net.osmand.plus.activities.search.SearchAddressActivity --> net.osmand.plus.activities.search.SearchBuildingByNameActivity
++ net.osmand.plus.activities.search.SearchAddressActivity --> net.osmand.plus.activities.search.SearchStreet2ByNameActivity
++ net.osmand.plus.development.SettingsDevelopmentActivity --> net.osmand.plus.development.TestVoiceActivity
++ net.osmand.plus.development.SettingsDevelopmentActivity --> net.osmand.plus.development.LogcatActivity
++ net.osmand.plus.activities.MapActivity --> net.osmand.plus.activities.PrintDialogActivity
++ net.osmand.plus.activities.PluginActivity --> net.osmand.access.SettingsAccessibilityActivity
++ net.osmand.plus.activities.PluginActivity --> net.osmand.plus.audionotes.SettingsAudioVideoActivity
++ net.osmand.plus.activities.PluginActivity --> net.osmand.plus.monitoring.SettingsMonitoringActivity
++ net.osmand.plus.activities.PluginActivity --> net.osmand.plus.osmedit.SettingsOsmEditingActivity
++ net.osmand.plus.activities.PluginActivity --> net.osmand.plus.development.SettingsDevelopmentActivity
++ net.osmand.plus.activities.SettingsActivity --> net.osmand.plus.activities.SettingsGeneralActivity
++ net.osmand.plus.activities.SettingsActivity --> net.osmand.plus.activities.SettingsNavigationActivity
++ net.osmand.plus.activities.SettingsActivity --> net.osmand.plus.activities.OsmLiveActivity
++ net.osmand.plus.activities.SettingsActivity --> net.osmand.plus.activities.PrivacyAndSecurityActivity
+
+
++ net.osmand.plus.activities.TrackActivity --> net.osmand.plus.myplaces.FavoritesActivity
+
+- net.osmand.plus.profiles.EditProfileActivity --> net.osmand.plus.profiles.SettingsProfileActivity
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.NavigationService
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.activities.SettingsNavigationActivity
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.monitoring.SettingsMonitoringActivity
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.profiles.EditProfileActivity
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.profiles.SettingsProfileActivity
+- net.osmand.plus.activities.MapActivity --> net.osmand.plus.rastermaps.SettingsRasterMapsActivity

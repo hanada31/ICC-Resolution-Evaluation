@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_implicit_nosrc_nosink.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_implicit_nosrc_nosink.FooActivity" action="amandroid.impliciticctest_action.testaction" extras="String-data:noSrc"/>
+  </component>
+  <component name="org.arguslab.icc_implicit_nosrc_nosink.FooActivity" type="Activity">
+    <manifest>
+      <intent_filter action="amandroid.impliciticctest_action.testaction" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+</root>

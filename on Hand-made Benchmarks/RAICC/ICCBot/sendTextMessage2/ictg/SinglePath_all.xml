@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.trux.raicc.sendTextMessage2.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="581250984" predsStr="1494090357" succsStr="271923493" context=""/>
+        <baseNodePointTo value="581250984" context=""/>
+        <nodeSetPointToMe value="581250984,271923493," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;lu.uni.trux.raicc.sendTextMessage2.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="271923493" predsStr="581250984" succsStr="" context=""/>
+        <baseNodePointTo value="271923493" context=""/>
+        <nodeSetPointToMe value="271923493," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="TargetActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1522755386" predsStr="1634773603" succsStr="730021607" context=""/>
+        <baseNodePointTo value="1522755386" context=""/>
+        <nodeSetPointToMe value="1522755386,730021607," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="TargetActivity setResult" unit="this.&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="730021607" predsStr="1522755386" succsStr="" context=""/>
+        <baseNodePointTo value="730021607" context=""/>
+        <nodeSetPointToMe value="730021607," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.sendTextMessage2.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="1245887282" predsStr="2139247716" succsStr="43412840" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+        <nodeSetPointToMe value="1245887282,43412840,1639580490,217467501,1395846122,1652433353," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/sendTextMessage2/TargetActivity;&quot;)">
+        <nodeInfo nodeId="43412840" predsStr="1245887282" succsStr="1639580490" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)">
+        <nodeInfo nodeId="1639580490" predsStr="43412840" succsStr="217467501" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;Extra&quot;, &quot;extra&quot;)">
+        <nodeInfo nodeId="217467501" predsStr="1639580490" succsStr="1395846122" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)">
+        <nodeInfo nodeId="1395846122" predsStr="217467501" succsStr="1652433353" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;(&quot;dummyAddress&quot;, null, &quot;body&quot;, $r6, null)">
+        <nodeInfo nodeId="1652433353" predsStr="1395846122" succsStr="" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1394746660" predsStr="494170639" succsStr="" context=""/>
+        <baseNodePointTo value="1394746660" context=""/>
+        <nodeSetPointToMe value="1394746660," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.sendTextMessage2.TargetActivity dummyMainMethod_lu_uni_trux_raicc_sendTextMessage2_TargetActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1394746660" predsStr="494170639" succsStr="" context=""/>
+        <baseNodePointTo value="1394746660" context=""/>
+        <nodeSetPointToMe value="1394746660," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.sendTextMessage2.MainActivity dummyMainMethod_lu_uni_trux_raicc_sendTextMessage2_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="1245887282" predsStr="2139247716" succsStr="43412840" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+        <nodeSetPointToMe value="1245887282,43412840,1639580490,217467501,1395846122,1652433353," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/sendTextMessage2/TargetActivity;&quot;)">
+        <nodeInfo nodeId="43412840" predsStr="1245887282" succsStr="1639580490" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)">
+        <nodeInfo nodeId="1639580490" predsStr="43412840" succsStr="217467501" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;Extra&quot;, &quot;extra&quot;)">
+        <nodeInfo nodeId="217467501" predsStr="1639580490" succsStr="1395846122" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)">
+        <nodeInfo nodeId="1395846122" predsStr="217467501" succsStr="1652433353" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;(&quot;dummyAddress&quot;, null, &quot;body&quot;, $r6, null)">
+        <nodeInfo nodeId="1652433353" predsStr="1395846122" succsStr="" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r1 = new android.content.Intent">
+        <nodeInfo nodeId="1245887282" predsStr="2139247716" succsStr="43412840" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+        <nodeSetPointToMe value="1245887282,43412840,1639580490,217467501,1395846122,1652433353," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/sendTextMessage2/TargetActivity;&quot;)">
+        <nodeInfo nodeId="43412840" predsStr="1245887282" succsStr="1639580490" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)">
+        <nodeInfo nodeId="1639580490" predsStr="43412840" succsStr="217467501" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;Extra&quot;, &quot;extra&quot;)">
+        <nodeInfo nodeId="217467501" predsStr="1639580490" succsStr="1395846122" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)">
+        <nodeInfo nodeId="1395846122" predsStr="217467501" succsStr="1652433353" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;(&quot;dummyAddress&quot;, null, &quot;body&quot;, $r6, null)">
+        <nodeInfo nodeId="1652433353" predsStr="1395846122" succsStr="" context=""/>
+        <baseNodePointTo value="1245887282" context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.sendTextMessage2.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="1394746660" predsStr="494170639" succsStr="" context=""/>
+        <baseNodePointTo value="1394746660" context=""/>
+        <nodeSetPointToMe value="1394746660," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

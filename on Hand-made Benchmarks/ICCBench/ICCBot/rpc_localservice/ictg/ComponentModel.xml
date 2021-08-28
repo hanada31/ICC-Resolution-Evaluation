@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.rpc_localservice.LocalService" type="Service" exported="true"/>
+  <component name="org.arguslab.rpc_localservice.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.rpc_localservice.LocalService"/>
+  </component>
+</root>

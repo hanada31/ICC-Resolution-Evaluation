@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_implicit_mix1.FooActivity">
+    <SingleFragment>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_mix1.FooActivity"/>
+      <nodes>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.FooActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </SingleFragment>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_mix1.HookActivity">
+    <SingleFragment>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_mix1.HookActivity"/>
+      <nodes>
+        <node method="HookActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.HookActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </SingleFragment>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_mix1.MainActivity">
+    <SingleFragment>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_mix1.MainActivity"/>
+      <nodes>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix1.MainActivity: void setContentView(int)&gt;(2130903042)"/>
+      </nodes>
+    </SingleFragment>
+  </Component>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;de.ecspride.Activity1: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;de.ecspride.Activity1: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;de.ecspride.Activity1: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;de.ecspride.Activity2: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;de.ecspride.Activity2: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;de.ecspride.Activity2: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+</root>

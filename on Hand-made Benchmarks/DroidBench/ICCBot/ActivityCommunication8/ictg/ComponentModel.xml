@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="edu.mit.icc_pass_action_string_through_api.OutFlowActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender extras="String-DroidBench"/>
+  </component>
+  <component name="edu.mit.icc_pass_action_string_through_api.IsolateActivity" type="Activity">
+    <manifest>
+      <intent_filter action="edu.mit.icc_action_string_operations.EDIT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+  <component name="edu.mit.icc_pass_action_string_through_api.InFlowActivity" type="Activity">
+    <manifest>
+      <intent_filter action="edu.mit.icc_action_string_operations.ACTION" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+</root>

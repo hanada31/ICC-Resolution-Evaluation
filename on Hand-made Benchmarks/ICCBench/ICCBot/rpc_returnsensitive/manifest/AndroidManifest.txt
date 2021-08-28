@@ -1,0 +1,29 @@
+manifest
+- package: org.arguslab.rpc_returnsensitive
+- platformBuildVersionName: 7.1.1
+- versionName: 1.0
+- platformBuildVersionCode: 25
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 25
+	- targetSdkVersion: 25
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE
+	application
+	- supportsRtl: true
+	- allowBackup: true
+	- icon: 2130837504
+	- theme: 2131099648
+	- roundIcon: 2130837505
+	- label: 2131034112
+		activity
+		- name: org.arguslab.rpc_returnsensitive.MainActivity
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		service
+		- exported: true
+		- name: org.arguslab.rpc_returnsensitive.LocalService
+		- enabled: true

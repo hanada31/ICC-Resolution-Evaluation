@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/me.blog.korn123.easydiary/aaf-easydiary-1.4.153">
+  <OracleEdge source="me.blog.korn123.easydiary.activities.CalendarActivity" destination="me.blog.korn123.easydiary.activities.DiaryInsertActivity" method="">
+    <comment>CalendarActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; CalendarActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/CalendarActivity.kt" start="137" end="141"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.CalendarActivity" destination="me.blog.korn123.easydiary.activities.DiaryReadActivity" method="">
+    <comment>CalendarActivity.onCreate() -&gt; AdapterView.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; CalendarActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/CalendarActivity.kt" start="85" end="90"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.CalendarActivity" method="">
+    <comment>*DiaryMainActivity.onOptionsItemSelected() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="206" end="208"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.DashboardActivity" method="">
+    <comment>DiaryMainActivity.onOptionsItemSelected() -&gt; createCustomOptionMenu() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="212" end="212"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="269" end="269"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="258" end="258"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.DevActivity" method="">
+    <comment>DiaryMainActivity.onOptionsItemSelected() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="211" end="211"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.DiaryInsertActivity" method="">
+    <comment>DiaryMainActivity.onCreate() -&gt; bindEvent() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="82" end="82"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="492" end="497"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.DiaryReadActivity" method="">
+    <comment>DiaryMainActivity.onCreate() -&gt; bindEvent() -&gt; AdapterView.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="475" end="478"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.SettingsActivity" method="">
+    <comment>DiaryMainActivity.onOptionsItemSelected() -&gt; createCustomOptionMenu() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="212" end="212"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="269" end="269"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="260" end="260"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.StatisticsActivity" method="">
+    <comment>DiaryMainActivity.onOptionsItemSelected() -&gt; createCustomOptionMenu() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="212" end="212"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="269" end="269"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="259" end="259"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryMainActivity" destination="me.blog.korn123.easydiary.activities.TimelineActivity" method="">
+    <comment>*DiaryMainActivity.onOptionsItemSelected() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryMainActivity.kt" start="201" end="203"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryReadActivity" destination="me.blog.korn123.easydiary.activities.DiaryUpdateActivity" method="">
+    <comment>*DiaryReadActivity.onOptionsItemSelected() -&gt; startEditing() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="126" end="126"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="158" end="166"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryReadActivity" destination="me.blog.korn123.easydiary.activities.PhotoViewPagerActivity" method="">
+    <comment>DiaryReadActivity.onCreate() -&gt; new SectionsPagerAdapter() -&gt; DiaryReadActivity.setupViewPager() -&gt; ViewPager.setAdapter() -&gt; SectionsPagerAdapter.getItem() -&gt; DiaryReadActivity.PlaceholderFragment.newInstance() -&gt; new DiaryReadActivity.PlaceholderFragment() -&gt; DiaryReadActivity.PlaceholderFragment.onActivityCreated() -&gt; initContents() -&gt; ImageView.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="79" end="79"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="319" end="319"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="703" end="703"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="503" end="503"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="568" end="568"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="682" end="685"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.DiaryReadActivity" destination="me.blog.korn123.easydiary.activities.PostCardActivity" method="">
+    <comment>*DiaryReadActivity.onOptionsItemSelected() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/DiaryReadActivity.kt" start="131" end="134"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.FingerprintLockActivity" destination="me.blog.korn123.easydiary.activities.PinLockActivity" method="">
+    <comment>FingerprintLockActivity.onCreate() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; FingerprintLockActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/FingerprintLockActivity.kt" start="63" end="65"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.IntroActivity" destination="me.blog.korn123.easydiary.activities.DiaryMainActivity" method="">
+    <comment>*IntroActivity.handleMessage() -&gt; TransitionHelper.startActivityWithTransition() -&gt; DiaryMainActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/IntroActivity.kt" start="61" end="61"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.PinLockActivity" destination="me.blog.korn123.easydiary.activities.FingerprintLockActivity" method="">
+    <comment>PinLockActivity.onCreate() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; PinLockActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/PinLockActivity.kt" start="46" end="48"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.PostCardActivity" destination="me.blog.korn123.easydiary.activities.PostCardViewerActivity" method="">
+    <comment>PostCardActivity.onRequestPermissionsResult() -&gt; exportDiaryCard() -&gt; Thread.start() -&gt; Handler.post() -&gt; TransitionHelper.startActivityWithTransition() -&gt; PostCardActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/PostCardActivity.kt" start="322" end="323"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.PostCardViewerActivity" destination="me.blog.korn123.easydiary.activities.PostcardViewPagerActivity" method="">
+    <comment>PostCardViewerActivity.onCreate() -&gt; RecyclerView.apply() -&gt; new PostcardAdapter() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; PostCardViewerActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/PostCardViewerActivity.kt" start="64" end="67"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/PostCardViewerActivity.kt" start="54" end="54"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/PostCardViewerActivity.kt" start="57" end="61"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.SettingsActivity" destination="me.blog.korn123.easydiary.activities.CustomizationActivity" method="">
+    <comment>SettingsActivity.onCreate() -&gt; new SettingsBasicFragment() -&gt; new DotIndicatorPager2Adapter() -&gt; ViewPager.setAdapter() -&gt; SettingsBasicFragment.onActivityCreated() -&gt; bindEvent() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; SettingsActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="18" end="18"/>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="22" end="23"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsBasicFragment.kt" start="152" end="152"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsBasicFragment.kt" start="84" end="84"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.SettingsActivity" destination="me.blog.korn123.easydiary.activities.FingerprintLockActivity" method="">
+    <comment>SettingsActivity.onCreate() -&gt; new SettingsLockFragment() -&gt; new DotIndicatorPager2Adapter() -&gt; ViewPager.setAdapter() -&gt; SettingsLockFragment.onActivityCreated() -&gt; SettingsLockFragment.bindEvent() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; SettingsActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="19" end="19"/>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="22" end="23"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsLockFragment.kt" start="110" end="110"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsLockFragment.kt" start="90" end="92"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.SettingsActivity" destination="me.blog.korn123.easydiary.activities.MarkDownViewActivity" method="">
+    <comment>SettingsActivity.onCreate() -&gt; new SettingsAppInfoFragment() -&gt; new DotIndicatorPager2Adapter() -&gt; ViewPager.setAdapter() -&gt; SettingsAppInfoFragment.onActivityCreated() -&gt; bindEvent() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; SettingsActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsAppInfoFragment.kt" start="93" end="93"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsAppInfoFragment.kt" start="70" end="73"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.SettingsActivity" destination="me.blog.korn123.easydiary.activities.PinLockActivity" method="">
+    <comment>SettingsActivity.onCreate() -&gt; new SettingsLockFragment() -&gt; new DotIndicatorPager2Adapter() -&gt; ViewPager.setAdapter() -&gt; SettingsLockFragment.onActivityCreated() -&gt; SettingsLockFragment.bindEvent() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; SettingsActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="19" end="19"/>
+      <line src="/app/src/gms/java/me/blog/korn123/easydiary/activities/SettingsActivity.kt" start="22" end="23"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsLockFragment.kt" start="109" end="109"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/fragments/SettingsLockFragment.kt" start="73" end="75"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.TimelineActivity" destination="me.blog.korn123.easydiary.activities.DiaryInsertActivity" method="">
+    <comment>TimelineActivity.onCreate() -&gt; bindEvent() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; TimelineActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/TimelineActivity.kt" start="72" end="72"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/TimelineActivity.kt" start="186" end="189"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.activities.TimelineActivity" destination="me.blog.korn123.easydiary.activities.DiaryReadActivity" method="">
+    <comment>TimelineActivity.onCreate() -&gt; setupTimelineSearch() -&gt; View.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; TransitionHelper.startActivityWithTransition() -&gt; TimelineActivity.startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/TimelineActivity.kt" start="70" end="70"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/activities/TimelineActivity.kt" start="270" end="276"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/helper/TransitionHelper.kt" start="21" end="21"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="me.blog.korn123.easydiary.widgets.DiaryMainWidget" destination="me.blog.korn123.easydiary.services.DiaryMainWidgetService" method="">
+    <comment>*DiaryMainWidget.onReceive() -&gt; performUpdate() -&gt; AppWidgetManager.updateAppWidget()</comment>
+    <callLines>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/widgets/DiaryMainWidget.kt" start="47" end="47"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/widgets/DiaryMainWidget.kt" start="83" end="85"/>
+      <line src="/app/src/main/java/me/blog/korn123/easydiary/widgets/DiaryMainWidget.kt" start="99" end="100"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+</root>

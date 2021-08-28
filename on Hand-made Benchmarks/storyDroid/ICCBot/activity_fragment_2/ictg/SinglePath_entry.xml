@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;com.test.ui.transition.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1265829284" predsStr="1959062069" succsStr="434089207" context=""/>
+        <baseNodePointTo value="1265829284" context=""/>
+        <nodeSetPointToMe value="1265829284,434089207," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;com.test.ui.transition.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="434089207" predsStr="1265829284" succsStr="" context=""/>
+        <baseNodePointTo value="434089207" context=""/>
+        <nodeSetPointToMe value="434089207," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.NextActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="NextActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1660277226" predsStr="1586552340" succsStr="259801958" context=""/>
+        <baseNodePointTo value="1660277226" context=""/>
+        <nodeSetPointToMe value="1660277226,259801958," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="NextActivity setResult" unit="this.&lt;com.test.ui.transition.NextActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="259801958" predsStr="1660277226" succsStr="" context=""/>
+        <baseNodePointTo value="259801958" context=""/>
+        <nodeSetPointToMe value="259801958," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;">
+    <singlePath>
+      <method methodtrace="void go2Activity(android.content.Context,java.lang.Class)"/>
+      <node type="CreateMethod" method="NextActivity go2Activity" unit="r3 = new android.content.Intent">
+        <nodeInfo nodeId="1900711284" predsStr="995884327" succsStr="1780570274" context=""/>
+        <baseNodePointTo value="1900711284" context=""/>
+        <nodeSetPointToMe value="1900711284,1780570274,1881803645," context=""/>
+      </node>
+      <node type="SetAttribute" method="NextActivity go2Activity" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)">
+        <nodeInfo nodeId="1780570274" predsStr="1900711284" succsStr="1881803645" context=""/>
+        <baseNodePointTo value="1900711284" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="NextActivity go2Activity" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)">
+        <nodeInfo nodeId="1881803645" predsStr="1780570274" succsStr="" context=""/>
+        <baseNodePointTo value="1900711284" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)
+						   &lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)
+						   void go2Activity(android.content.Context,java.lang.Class)"/>
+      <node method="NextActivity onCreate" unit="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)">
+        <nodeInfo nodeId="1134904383" predsStr="1960451251" succsStr="" context=""/>
+        <baseNodePointTo value="1134904383" context=""/>
+        <nodeSetPointToMe value="1134904383,1900711284,1780570274,1881803645," context=""/>
+      </node>
+      <node type="CreateMethod" method="NextActivity go2Activity" unit="r3 = new android.content.Intent">
+        <nodeInfo nodeId="1900711284" predsStr="995884327" succsStr="1780570274" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+        <baseNodePointTo value="1900711284" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+      </node>
+      <node type="SetAttribute" method="NextActivity go2Activity" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)">
+        <nodeInfo nodeId="1780570274" predsStr="1900711284" succsStr="1881803645" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+        <baseNodePointTo value="1900711284" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+      </node>
+      <node type="SendIntent2ICC" method="NextActivity go2Activity" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;(r3)">
+        <nodeInfo nodeId="1881803645" predsStr="1780570274" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+        <baseNodePointTo value="1900711284" context="specialinvoke r0.&lt;com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)1134904383"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

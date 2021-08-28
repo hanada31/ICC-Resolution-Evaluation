@@ -1,0 +1,54 @@
+name: "org.arguslab.icc_dynregister2"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_dynregister2.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_dynregister2.MyReceiver2"
+  kind: DYNAMIC_RECEIVER
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "com.ksu2"
+    }
+  }
+  registration_instruction {
+    statement: "virtualinvoke r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r10, r11)"
+    class_name: "org.arguslab.icc_dynregister2.MainActivity"
+    method: "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>"
+    id: 25
+  }
+}
+components {
+  name: "org.arguslab.icc_dynregister2.MyReceiver"
+  kind: DYNAMIC_RECEIVER
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "com.ksu"
+    }
+  }
+  registration_instruction {
+    statement: "virtualinvoke r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r7, r8)"
+    class_name: "org.arguslab.icc_dynregister2.MainActivity"
+    method: "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>"
+    id: 19
+  }
+}
+analysis_start: 1624856454
+analysis_end: 1624856456

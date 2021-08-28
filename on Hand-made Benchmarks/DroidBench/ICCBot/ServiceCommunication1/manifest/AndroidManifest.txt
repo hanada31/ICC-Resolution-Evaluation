@@ -1,0 +1,26 @@
+manifest
+- package: edu.mit.icc_service_messages
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 4
+	- targetSdkVersion: 19
+	application
+	- label: ActivityMessenger
+	- debuggable: true
+	- hardwareAccelerated: true
+		activity
+		- name: edu.mit.icc_service_messages.ActivityMessenger
+		- label: ActivityMessenger
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.DEFAULT
+				category
+				- name: android.intent.category.LAUNCHER
+		service
+		- exported: false
+		- name: edu.mit.icc_service_messages.MessengerService
+	uses-permission
+	- name: android.permission.READ_PHONE_STATE

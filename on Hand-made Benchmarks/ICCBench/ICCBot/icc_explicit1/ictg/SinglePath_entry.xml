@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_explicit1.FooActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="FooActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1572066684" predsStr="1819552644" succsStr="1403325194" context=""/>
+        <baseNodePointTo value="1572066684" context=""/>
+        <nodeSetPointToMe value="1572066684,1403325194," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="FooActivity setResult" unit="this.&lt;org.arguslab.icc_explicit1.FooActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1403325194" predsStr="1572066684" succsStr="" context=""/>
+        <baseNodePointTo value="1403325194" context=""/>
+        <nodeSetPointToMe value="1403325194," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_explicit1.MainActivity: void leakImei()&gt;">
+    <singlePath>
+      <method methodtrace="void leakImei()"/>
+      <node type="CreateMethod" method="MainActivity leakImei" unit="r1 = new android.content.Intent">
+        <nodeInfo nodeId="923366543" predsStr="1246807878" succsStr="2045560071" context=""/>
+        <baseNodePointTo value="923366543" context=""/>
+        <nodeSetPointToMe value="923366543,2045560071,1861416877,584349634," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity leakImei" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_explicit1/FooActivity;&quot;)">
+        <nodeInfo nodeId="2045560071" predsStr="923366543" succsStr="1861416877" context=""/>
+        <baseNodePointTo value="923366543" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity leakImei" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)">
+        <nodeInfo nodeId="1861416877" predsStr="2045560071" succsStr="584349634" context=""/>
+        <baseNodePointTo value="923366543" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="MainActivity leakImei" unit="virtualinvoke r0.&lt;org.arguslab.icc_explicit1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)">
+        <nodeInfo nodeId="584349634" predsStr="1861416877" succsStr="" context=""/>
+        <baseNodePointTo value="923366543" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_explicit1.FooActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="FooActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_explicit1.FooActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="115297013" predsStr="2131723476" succsStr="" context=""/>
+        <baseNodePointTo value="115297013" context=""/>
+        <nodeSetPointToMe value="115297013," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_explicit1.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="398468940" predsStr="622625093" succsStr="2059316201" context=""/>
+        <baseNodePointTo value="398468940" context=""/>
+        <nodeSetPointToMe value="398468940,2059316201," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;org.arguslab.icc_explicit1.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="2059316201" predsStr="398468940" succsStr="" context=""/>
+        <baseNodePointTo value="2059316201" context=""/>
+        <nodeSetPointToMe value="2059316201," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

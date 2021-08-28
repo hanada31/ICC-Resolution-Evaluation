@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="lu.uni.trux.raicc.requestLocationUpdates.MainActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="lu.uni.trux.raicc.requestLocationUpdates.MainActivity"/>
+      <destinition name="lu.uni.trux.raicc.requestLocationUpdates.IntermediateService"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/requestLocationUpdates/IntermediateService;&quot;)"/>
+        <node method="MainActivity onCreate" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r5)"/>
+        <node method="MainActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.requestLocationUpdates.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="lu.uni.trux.raicc.requestLocationUpdates.IntermediateService">
+    <singleIntent>
+      <method method="int onStartCommand(android.content.Intent,int,int)" methodtrace="int onStartCommand(android.content.Intent,int,int)"/>
+      <source name="lu.uni.trux.raicc.requestLocationUpdates.IntermediateService"/>
+      <destinition name="lu.uni.trux.raicc.requestLocationUpdates.TargetBroadcastReceiver"/>
+      <sender extras="String-DroidBench"/>
+      <nodes>
+        <node method="IntermediateService onStartCommand" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="IntermediateService onStartCommand" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/requestLocationUpdates/TargetBroadcastReceiver;&quot;)"/>
+        <node method="IntermediateService onStartCommand" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r3)"/>
+        <node method="IntermediateService onStartCommand" type="pendingIntentCreation" unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r2, 0)"/>
+        <node method="IntermediateService onStartCommand" type="sendOutWrapperredIntent" unit="virtualinvoke $r6.&lt;android.location.LocationManager: void requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)&gt;(0L, 0.0F, $r1, $r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_implicit_mix2.MainActivity">
+    <singleIntent>
+      <method method="void leakImei()" methodtrace="void leakImei()"/>
+      <source name="org.arguslab.icc_implicit_mix2.MainActivity"/>
+      <destinition name="org.arguslab.icc_implicit_mix2.FooActivity"/>
+      <sender action="test_action" category="test_category1, test_category2" data="amandroid://fgwei:8888/abc/def" type="test/type" extras="String-data"/>
+      <nodes>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;test_action&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category1&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category2&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r5, &quot;test/type&quot;)"/>
+        <node method="MainActivity leakImei" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix2.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_mix2.MainActivity">
+    <singleIntent>
+      <method method="void onRequestPermissionsResult(int,java.lang.String[],int[])" methodtrace="void leakImei()"/>
+      <source name="org.arguslab.icc_implicit_mix2.MainActivity"/>
+      <destinition name="org.arguslab.icc_implicit_mix2.FooActivity"/>
+      <sender action="test_action" category="test_category1, test_category2" data="amandroid://fgwei:8888/abc/def" type="test/type" extras="String-data"/>
+      <nodes>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;test_action&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category1&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;test_category2&quot;)"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setDataAndType(android.net.Uri,java.lang.String)&gt;($r5, &quot;test/type&quot;)"/>
+        <node method="MainActivity leakImei" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;data&quot;, $r4)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_mix2.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

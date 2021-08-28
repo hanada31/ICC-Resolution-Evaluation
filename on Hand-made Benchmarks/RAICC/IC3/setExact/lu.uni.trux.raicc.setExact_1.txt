@@ -1,0 +1,35 @@
+name: "lu.uni.trux.raicc.setExact"
+version: 1
+used_permissions: "android.permission.SEND_SMS"
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "lu.uni.trux.raicc.setExact.TargetActivity"
+  kind: ACTIVITY
+  exported: false
+  extras {
+    extra: "DroidBench"
+    instruction {
+      statement: "r4 = virtualinvoke r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r1)"
+      class_name: "lu.uni.trux.raicc.setExact.TargetActivity"
+      method: "<lu.uni.trux.raicc.setExact.TargetActivity: void onCreate(android.os.Bundle)>"
+      id: 7
+    }
+  }
+}
+components {
+  name: "lu.uni.trux.raicc.setExact.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+analysis_start: 1625024507
+analysis_end: 1625024509

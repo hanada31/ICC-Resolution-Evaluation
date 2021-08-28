@@ -1,0 +1,158 @@
+name: "org.arguslab.icc_implicit_mix1"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_implicit_mix1.HookActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "test_action2"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+      value: "test_category4"
+      value: "test_category3"
+    }
+    attributes {
+      kind: HOST
+      value: "fgwei"
+    }
+    attributes {
+      kind: TYPE
+      value: "test/type"
+    }
+    attributes {
+      kind: PATH
+      value: ".*\\.com"
+    }
+    attributes {
+      kind: PORT
+      value: "8888"
+    }
+    attributes {
+      kind: SCHEME
+      value: "amandroid"
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_implicit_mix1.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_implicit_mix1.MainActivity: void startActivity(android.content.Intent)>($r1)"
+      class_name: "org.arguslab.icc_implicit_mix1.MainActivity"
+      method: "<org.arguslab.icc_implicit_mix1.MainActivity: void leakImei()>"
+      id: 12
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: ACTION
+        value: "test_action"
+      }
+      attributes {
+        kind: CATEGORY
+        value: "test_category2"
+        value: "test_category1"
+      }
+      attributes {
+        kind: TYPE
+        value: "test/type"
+      }
+      attributes {
+        kind: EXTRA
+        value: "data"
+      }
+      attributes {
+        kind: URI
+        value: "amandroid://fgwei:8888/abc/def"
+      }
+    }
+  }
+}
+components {
+  name: "org.arguslab.icc_implicit_mix1.FooActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "test_action"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "test_category2"
+      value: "test_category1"
+      value: "android.intent.category.DEFAULT"
+    }
+    attributes {
+      kind: HOST
+      value: "fgwei"
+    }
+    attributes {
+      kind: TYPE
+      value: "test/type"
+    }
+    attributes {
+      kind: PATH
+      value: "/abc(.*)"
+    }
+    attributes {
+      kind: PORT
+      value: "8888"
+    }
+    attributes {
+      kind: SCHEME
+      value: "amandroid"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r0.<org.arguslab.icc_implicit_mix1.FooActivity: void startActivity(android.content.Intent)>($r2)"
+      class_name: "org.arguslab.icc_implicit_mix1.FooActivity"
+      method: "<org.arguslab.icc_implicit_mix1.FooActivity: void onCreate(android.os.Bundle)>"
+      id: 14
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: ACTION
+        value: "test_action2"
+      }
+      attributes {
+        kind: CATEGORY
+        value: "test_category4"
+        value: "test_category3"
+      }
+      attributes {
+        kind: TYPE
+        value: "test/type"
+      }
+      attributes {
+        kind: EXTRA
+        value: "data"
+      }
+      attributes {
+        kind: URI
+        value: "amandroid://fgwei:8888/xxx/xxx.com"
+      }
+    }
+  }
+}
+analysis_start: 1628844439
+analysis_end: 1628844442

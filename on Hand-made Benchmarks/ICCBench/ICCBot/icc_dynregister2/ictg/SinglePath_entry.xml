@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;">
+    <singlePath>
+      <method methodtrace="void leakImei()"/>
+      <node type="CreateMethod" method="MainActivity leakImei" unit="r1 = new android.content.Intent">
+        <nodeInfo nodeId="1913718808" predsStr="1307525827" succsStr="1856759576" context=""/>
+        <baseNodePointTo value="1913718808" context=""/>
+        <nodeSetPointToMe value="1913718808,1856759576,953492906,261849385," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity leakImei" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r6)">
+        <nodeInfo nodeId="1856759576" predsStr="1913718808" succsStr="953492906" context=""/>
+        <baseNodePointTo value="1913718808" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity leakImei" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;id&quot;, $r5)">
+        <nodeInfo nodeId="953492906" predsStr="1856759576" succsStr="261849385" context=""/>
+        <baseNodePointTo value="1913718808" context=""/>
+      </node>
+      <node type="SendIntent2ICC" method="MainActivity leakImei" unit="virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void sendBroadcast(android.content.Intent)&gt;(r1)">
+        <nodeInfo nodeId="261849385" predsStr="953492906" succsStr="" context=""/>
+        <baseNodePointTo value="1913718808" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="927690291" predsStr="2111069331" succsStr="8312750" context=""/>
+        <baseNodePointTo value="927690291" context=""/>
+        <nodeSetPointToMe value="927690291,8312750," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;org.arguslab.icc_dynregister2.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="8312750" predsStr="927690291" succsStr="" context=""/>
+        <baseNodePointTo value="8312750" context=""/>
+        <nodeSetPointToMe value="8312750," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onReceive(android.content.Context,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyReceiver2 onReceive" unit="$r2 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1961805376" predsStr="1531532466" succsStr="963884756" context=""/>
+        <baseNodePointTo value="1961805376" context=""/>
+        <nodeSetPointToMe value="1961805376," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyReceiver2 onReceive" unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver2: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="963884756" predsStr="1961805376" succsStr="" context=""/>
+        <baseNodePointTo value="963884756" context=""/>
+        <nodeSetPointToMe value="963884756," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onReceive(android.content.Context,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MyReceiver onReceive" unit="$r2 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1463905865" predsStr="1552595422" succsStr="779857934" context=""/>
+        <baseNodePointTo value="1463905865" context=""/>
+        <nodeSetPointToMe value="1463905865," context=""/>
+      </node>
+      <node type="ReceiveIntentFromOutMethod" method="MyReceiver onReceive" unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="779857934" predsStr="1463905865" succsStr="" context=""/>
+        <baseNodePointTo value="779857934" context=""/>
+        <nodeSetPointToMe value="779857934," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

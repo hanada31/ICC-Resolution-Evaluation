@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="lu.uni.trux.raicc.sendIntent.TargetActivity" type="Activity">
+    <manifest>
+      <intent_filter action="ACTION" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+  <component name="lu.uni.trux.raicc.sendIntent.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="lu.uni.trux.raicc.sendIntent.TargetActivity" action="ACTION" extras="String-DroidBench,String-extra:noLeak"/>
+  </component>
+</root>

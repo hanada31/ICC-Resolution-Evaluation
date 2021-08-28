@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="2139653400" predsStr="2134547473" succsStr="" context=""/>
+        <baseNodePointTo value="2139653400" context=""/>
+        <nodeSetPointToMe value="2139653400," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.setFullScreenIntent.TargetActivity dummyMainMethod_lu_uni_trux_raicc_setFullScreenIntent_TargetActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="2139653400" predsStr="2134547473" succsStr="" context=""/>
+        <baseNodePointTo value="2139653400" context=""/>
+        <nodeSetPointToMe value="2139653400," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="TargetActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="975396641" predsStr="366712878" succsStr="452373864" context=""/>
+        <baseNodePointTo value="975396641" context=""/>
+        <nodeSetPointToMe value="975396641,452373864," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="TargetActivity setResult" unit="this.&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="452373864" predsStr="975396641" succsStr="" context=""/>
+        <baseNodePointTo value="452373864" context=""/>
+        <nodeSetPointToMe value="452373864," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setFullScreenIntent.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1629222661" predsStr="234791882" succsStr="1712007468" context=""/>
+        <baseNodePointTo value="1629222661" context=""/>
+        <nodeSetPointToMe value="1629222661,1712007468," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;lu.uni.trux.raicc.setFullScreenIntent.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1712007468" predsStr="1629222661" succsStr="" context=""/>
+        <baseNodePointTo value="1712007468" context=""/>
+        <nodeSetPointToMe value="1712007468," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;lu.uni.trux.raicc.setFullScreenIntent.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="306863700" predsStr="50442783" succsStr="1578461615" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+        <nodeSetPointToMe value="306863700,1578461615,12355244,245583342,1314589328," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setFullScreenIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1578461615" predsStr="306863700" succsStr="12355244" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="12355244" predsStr="1578461615" succsStr="245583342" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="245583342" predsStr="12355244" succsStr="1314589328" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setFullScreenIntent(android.app.PendingIntent,boolean)&gt;($r6, 1)">
+        <nodeInfo nodeId="1314589328" predsStr="245583342" succsStr="" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: lu.uni.trux.raicc.setFullScreenIntent.MainActivity dummyMainMethod_lu_uni_trux_raicc_setFullScreenIntent_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="306863700" predsStr="50442783" succsStr="1578461615" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+        <nodeSetPointToMe value="306863700,1578461615,12355244,245583342,1314589328," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setFullScreenIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1578461615" predsStr="306863700" succsStr="12355244" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="12355244" predsStr="1578461615" succsStr="245583342" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="245583342" predsStr="12355244" succsStr="1314589328" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setFullScreenIntent(android.app.PendingIntent,boolean)&gt;($r6, 1)">
+        <nodeInfo nodeId="1314589328" predsStr="245583342" succsStr="" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="CreateMethod" method="MainActivity onCreate" unit="$r5 = new android.content.Intent">
+        <nodeInfo nodeId="306863700" predsStr="50442783" succsStr="1578461615" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+        <nodeSetPointToMe value="306863700,1578461615,12355244,245583342,1314589328," context=""/>
+      </node>
+      <node type="SetAttribute" method="MainActivity onCreate" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setFullScreenIntent/TargetActivity;&quot;)">
+        <nodeInfo nodeId="1578461615" predsStr="306863700" succsStr="12355244" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="SetIntentExtra" method="MainActivity onCreate" unit="virtualinvoke $r5.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;DroidBench&quot;, $r4)">
+        <nodeInfo nodeId="12355244" predsStr="1578461615" succsStr="245583342" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="pendingIntentCreation" method="MainActivity onCreate" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r5, 0)">
+        <nodeInfo nodeId="245583342" predsStr="12355244" succsStr="1314589328" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+      <node type="sendOutWrapperredIntent" method="MainActivity onCreate" unit="virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setFullScreenIntent(android.app.PendingIntent,boolean)&gt;($r6, 1)">
+        <nodeInfo nodeId="1314589328" predsStr="245583342" succsStr="" context=""/>
+        <baseNodePointTo value="306863700" context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="ReceiveIntentFromOutMethod" method="TargetActivity onCreate" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.setFullScreenIntent.TargetActivity: android.content.Intent getIntent()&gt;()">
+        <nodeInfo nodeId="2139653400" predsStr="2134547473" succsStr="" context=""/>
+        <baseNodePointTo value="2139653400" context=""/>
+        <nodeSetPointToMe value="2139653400," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

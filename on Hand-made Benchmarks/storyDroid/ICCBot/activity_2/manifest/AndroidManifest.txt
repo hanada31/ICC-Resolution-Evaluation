@@ -1,0 +1,52 @@
+manifest
+- package: com.test.ui.transition
+- versionName: 1.0
+- versionCode: 1
+	uses-sdk
+	- minSdkVersion: 18
+	- targetSdkVersion: 27
+	application
+	- supportsRtl: true
+	- allowBackup: true
+	- debuggable: true
+	- icon: 2131427328
+	- theme: 2131558406
+	- roundIcon: 2131427329
+	- label: 2131492895
+		activity
+		- name: com.test.ui.transition.MainActivity
+			intent-filter
+				action
+				- name: android.intent.action.MAIN
+				category
+				- name: android.intent.category.LAUNCHER
+		activity
+		- name: com.test.ui.transition.NextActivity
+		- theme: 2131558408
+		- label: 2131492911
+		activity
+		- name: com.test.ui.transition.A
+		- theme: 2131558408
+		- label: 2131492906
+		activity
+		- name: com.test.ui.transition.B
+		- theme: 2131558408
+		- label: 2131492907
+		activity
+		- name: com.test.ui.transition.C
+		- theme: 2131558408
+		- label: 2131492908
+		activity
+		- name: com.test.ui.transition.D
+		- theme: 2131558408
+		- label: 2131492909
+		activity
+		- name: com.test.ui.transition.E
+		- theme: 2131558408
+		- label: 2131492910
+		meta-data
+		- name: android.support.VERSION
+		- value: 26.1.0
+		meta-data
+		- name: android.arch.lifecycle.VERSION
+		- value: 27.0.0-SNAPSHOT

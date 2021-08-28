@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;de.ecspride.Activity1: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity1 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity1: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1131673199" predsStr="1291832417" succsStr="" context=""/>
+        <baseNodePointTo value="1131673199" context=""/>
+        <nodeSetPointToMe value="1131673199," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: de.ecspride.Activity1 dummyMainMethod_de_ecspride_Activity1(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity1 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity1: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1131673199" predsStr="1291832417" succsStr="" context=""/>
+        <baseNodePointTo value="1131673199" context=""/>
+        <nodeSetPointToMe value="1131673199," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;de.ecspride.Activity2: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity2 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity2: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="123721308" predsStr="1954761469" succsStr="" context=""/>
+        <baseNodePointTo value="123721308" context=""/>
+        <nodeSetPointToMe value="123721308," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: de.ecspride.Activity2 dummyMainMethod_de_ecspride_Activity2(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity2 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity2: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="123721308" predsStr="1954761469" succsStr="" context=""/>
+        <baseNodePointTo value="123721308" context=""/>
+        <nodeSetPointToMe value="123721308," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity2 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity2: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="123721308" predsStr="1954761469" succsStr="" context=""/>
+        <baseNodePointTo value="123721308" context=""/>
+        <nodeSetPointToMe value="123721308," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="Activity1 onCreate" unit="virtualinvoke r0.&lt;de.ecspride.Activity1: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1131673199" predsStr="1291832417" succsStr="" context=""/>
+        <baseNodePointTo value="1131673199" context=""/>
+        <nodeSetPointToMe value="1131673199," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

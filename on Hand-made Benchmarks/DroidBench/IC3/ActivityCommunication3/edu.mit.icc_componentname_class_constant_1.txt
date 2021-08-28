@@ -1,0 +1,91 @@
+name: "edu.mit.icc_componentname_class_constant"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "edu.mit.icc_componentname_class_constant.OutFlowActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+  exit_points {
+    instruction {
+      statement: "virtualinvoke r0.<edu.mit.icc_componentname_class_constant.OutFlowActivity: void startActivity(android.content.Intent)>(r3)"
+      class_name: "edu.mit.icc_componentname_class_constant.OutFlowActivity"
+      method: "<edu.mit.icc_componentname_class_constant.OutFlowActivity: void onCreate(android.os.Bundle)>"
+      id: 19
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: EXTRA
+        value: "DroidBench"
+      }
+      attributes {
+        kind: CLASS
+        value: "edu/mit/icc_componentname_class_constant/InFlowActivity"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "edu.mit.icc_componentname_class_constant"
+      }
+    }
+  }
+}
+components {
+  name: "edu.mit.icc_componentname_class_constant.InFlowActivity"
+  kind: ACTIVITY
+  exported: true
+  extras {
+    extra: "DroidBench"
+    instruction {
+      statement: "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)"
+      class_name: "edu.mit.icc_componentname_class_constant.InFlowActivity"
+      method: "<edu.mit.icc_componentname_class_constant.InFlowActivity: void onCreate(android.os.Bundle)>"
+      id: 7
+    }
+  }
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "edu.mit.icc_component_class_constant.ACTION"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+    }
+  }
+}
+components {
+  name: "edu.mit.icc_componentname_class_constant.IsolateActivity"
+  kind: ACTIVITY
+  exported: true
+  extras {
+    extra: "DroidBench"
+    instruction {
+      statement: "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)"
+      class_name: "edu.mit.icc_componentname_class_constant.IsolateActivity"
+      method: "<edu.mit.icc_componentname_class_constant.IsolateActivity: void onCreate(android.os.Bundle)>"
+      id: 5
+    }
+  }
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "edu.mit.icc_component_class_constant.EDIT"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.DEFAULT"
+    }
+  }
+}
+analysis_start: 1624857213
+analysis_end: 1624857215

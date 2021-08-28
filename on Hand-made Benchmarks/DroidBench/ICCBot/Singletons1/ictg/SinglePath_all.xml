@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;edu.mit.to_components_share_memory.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="6267452" predsStr="1617550648" succsStr="1434932926" context=""/>
+        <baseNodePointTo value="6267452" context=""/>
+        <nodeSetPointToMe value="6267452,1434932926," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;edu.mit.to_components_share_memory.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1434932926" predsStr="6267452" succsStr="" context=""/>
+        <baseNodePointTo value="1434932926" context=""/>
+        <nodeSetPointToMe value="1434932926," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;edu.mit.to_components_share_memory.AnotherActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="AnotherActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1108367077" predsStr="650410100" succsStr="675889995" context=""/>
+        <baseNodePointTo value="1108367077" context=""/>
+        <nodeSetPointToMe value="1108367077,675889995," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="AnotherActivity setResult" unit="this.&lt;edu.mit.to_components_share_memory.AnotherActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="675889995" predsStr="1108367077" succsStr="" context=""/>
+        <baseNodePointTo value="675889995" context=""/>
+        <nodeSetPointToMe value="675889995," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

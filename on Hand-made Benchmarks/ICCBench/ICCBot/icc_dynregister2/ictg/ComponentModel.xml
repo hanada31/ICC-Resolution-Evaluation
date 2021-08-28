@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_dynregister2.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_dynregister2.MyReceiver" action="com.ksu" extras="String-id"/>
+  </component>
+  <component name="org.arguslab.icc_dynregister2.MyReceiver2" type="Receiver">
+    <manifest>
+      <intent_filter action="com.ksu2"/>
+    </manifest>
+  </component>
+  <component name="org.arguslab.icc_dynregister2.MyReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="com.ksu"/>
+    </manifest>
+  </component>
+</root>

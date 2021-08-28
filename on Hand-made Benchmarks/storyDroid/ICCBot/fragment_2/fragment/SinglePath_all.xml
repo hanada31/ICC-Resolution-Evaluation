@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="NotBlankFragment showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1839224920" predsStr="259037522" succsStr="1930770744" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+        <nodeSetPointToMe value="1839224920,1930770744,1745123250,1664469481,205008719,1455299337," context=""/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1930770744" predsStr="1839224920" succsStr="1745123250" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+      </node>
+      <node type="replaceFunction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1745123250" predsStr="1930770744" succsStr="1664469481" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+      </node>
+      <node type="commit" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1664469481" predsStr="1745123250" succsStr="205008719" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="205008719" predsStr="1664469481" succsStr="1455299337" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+      </node>
+      <node type="PassOut" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1455299337" predsStr="205008719" succsStr="" context=""/>
+        <baseNodePointTo value="1839224920" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="E showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="74644332" predsStr="1842195698" succsStr="893451976" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+        <nodeSetPointToMe value="74644332,893451976,1430226189,1427442020,1185886513,1948987794," context=""/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="893451976" predsStr="74644332" succsStr="1430226189" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+      </node>
+      <node type="replaceFunction" method="E showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1430226189" predsStr="893451976" succsStr="1427442020" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+      </node>
+      <node type="commit" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1427442020" predsStr="1430226189" succsStr="1185886513" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1185886513" predsStr="1427442020" succsStr="1948987794" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+      </node>
+      <node type="PassOut" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1948987794" predsStr="1185886513" succsStr="" context=""/>
+        <baseNodePointTo value="74644332" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="B showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1418164690" predsStr="1106015886" succsStr="844778182" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+        <nodeSetPointToMe value="1418164690,844778182,702440682,195313497,1686281750,82764858," context=""/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="844778182" predsStr="1418164690" succsStr="702440682" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+      </node>
+      <node type="replaceFunction" method="B showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="702440682" predsStr="844778182" succsStr="195313497" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+      </node>
+      <node type="commit" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="195313497" predsStr="702440682" succsStr="1686281750" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1686281750" predsStr="195313497" succsStr="82764858" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+      </node>
+      <node type="PassOut" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="82764858" predsStr="1686281750" succsStr="" context=""/>
+        <baseNodePointTo value="1418164690" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="D showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="368107690" predsStr="567612461" succsStr="580657755" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+        <nodeSetPointToMe value="368107690,580657755,879798021,1032694234,803928945,1822919213," context=""/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="580657755" predsStr="368107690" succsStr="879798021" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+      </node>
+      <node type="replaceFunction" method="D showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="879798021" predsStr="580657755" succsStr="1032694234" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+      </node>
+      <node type="commit" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1032694234" predsStr="879798021" succsStr="803928945" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="803928945" predsStr="1032694234" succsStr="1822919213" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+      </node>
+      <node type="PassOut" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1822919213" predsStr="803928945" succsStr="" context=""/>
+        <baseNodePointTo value="368107690" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="C showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="593280871" predsStr="585762230" succsStr="1648446240" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+        <nodeSetPointToMe value="593280871,1648446240,116410801,1950694252,841225476,1523863595," context=""/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1648446240" predsStr="593280871" succsStr="116410801" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+      </node>
+      <node type="replaceFunction" method="C showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="116410801" predsStr="1648446240" succsStr="1950694252" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+      </node>
+      <node type="commit" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1950694252" predsStr="116410801" succsStr="841225476" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="841225476" predsStr="1950694252" succsStr="1523863595" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+      </node>
+      <node type="PassOut" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1523863595" predsStr="841225476" succsStr="" context=""/>
+        <baseNodePointTo value="593280871" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="getFragment" method="A showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="969714552" predsStr="720020274" succsStr="942510884" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+        <nodeSetPointToMe value="969714552,942510884,423034454,1715088753,988929445,1846664556," context=""/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="942510884" predsStr="969714552" succsStr="423034454" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+      </node>
+      <node type="replaceFunction" method="A showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="423034454" predsStr="942510884" succsStr="1715088753" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+      </node>
+      <node type="commit" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1715088753" predsStr="423034454" succsStr="988929445" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="988929445" predsStr="1715088753" succsStr="1846664556" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+      </node>
+      <node type="PassOut" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1846664556" predsStr="988929445" succsStr="" context=""/>
+        <baseNodePointTo value="969714552" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment()"/>
+      <node type="getFragment" method="MainActivity showFragment" unit="$r2 = virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1258141658" predsStr="590326096" succsStr="293250234" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+        <nodeSetPointToMe value="1258141658,293250234,1995702555,684676028,262890008,1261459491," context=""/>
+      </node>
+      <node type="beginTransaction" method="MainActivity showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="293250234" predsStr="1258141658" succsStr="1995702555" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+      </node>
+      <node type="replaceFunction" method="MainActivity showFragment" unit="$r3 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)">
+        <nodeInfo nodeId="1995702555" predsStr="293250234" succsStr="684676028" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+      </node>
+      <node type="commit" method="MainActivity showFragment" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="684676028" predsStr="1995702555" succsStr="262890008" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+      </node>
+      <node type="beginTransaction" method="MainActivity showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="262890008" predsStr="684676028" succsStr="1261459491" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+      </node>
+      <node type="PassOut" method="MainActivity showFragment" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;(r1)">
+        <nodeInfo nodeId="1261459491" predsStr="262890008" succsStr="" context=""/>
+        <baseNodePointTo value="1258141658" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.E: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="E onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="813492746" predsStr="118336015" succsStr="" context=""/>
+        <baseNodePointTo value="813492746" context=""/>
+        <nodeSetPointToMe value="813492746,74644332,893451976,1430226189,1427442020,1185886513,1948987794," context=""/>
+      </node>
+      <node type="getFragment" method="E showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="74644332" predsStr="1842195698" succsStr="893451976" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="893451976" predsStr="74644332" succsStr="1430226189" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="replaceFunction" method="E showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1430226189" predsStr="893451976" succsStr="1427442020" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="commit" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1427442020" predsStr="1430226189" succsStr="1185886513" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1185886513" predsStr="1427442020" succsStr="1948987794" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="PassOut" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1948987794" predsStr="1185886513" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)">
+        <nodeInfo nodeId="1515916820" predsStr="1396100606" succsStr="2079425972" context=""/>
+        <baseNodePointTo value="1515916820" context=""/>
+        <nodeSetPointToMe value="1515916820," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.D: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="D onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="1020499064" predsStr="2093061476" succsStr="" context=""/>
+        <baseNodePointTo value="1020499064" context=""/>
+        <nodeSetPointToMe value="1020499064,368107690,580657755,879798021,1032694234,803928945,1822919213," context=""/>
+      </node>
+      <node type="getFragment" method="D showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="368107690" predsStr="567612461" succsStr="580657755" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="580657755" predsStr="368107690" succsStr="879798021" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="replaceFunction" method="D showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="879798021" predsStr="580657755" succsStr="1032694234" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="commit" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1032694234" predsStr="879798021" succsStr="803928945" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="803928945" predsStr="1032694234" succsStr="1822919213" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="PassOut" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1822919213" predsStr="803928945" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.C: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="C onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)">
+        <nodeInfo nodeId="1266468699" predsStr="164293879" succsStr="" context=""/>
+        <baseNodePointTo value="1266468699" context=""/>
+        <nodeSetPointToMe value="1266468699,593280871,1648446240,116410801,1950694252,841225476,1523863595," context=""/>
+      </node>
+      <node type="getFragment" method="C showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="593280871" predsStr="585762230" succsStr="1648446240" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1648446240" predsStr="593280871" succsStr="116410801" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="replaceFunction" method="C showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="116410801" predsStr="1648446240" succsStr="1950694252" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="commit" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1950694252" predsStr="116410801" succsStr="841225476" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="841225476" predsStr="1950694252" succsStr="1523863595" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="PassOut" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1523863595" predsStr="841225476" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;">
+    <singlePath>
+      <method methodtrace="void showFragment()"/>
+      <node type="getFragment" method="BlankFragment showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1840394190" predsStr="431257724" succsStr="1343472275" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+        <nodeSetPointToMe value="1840394190,1343472275,1384421324,1749639800,351927520,1513137078," context=""/>
+      </node>
+      <node type="beginTransaction" method="BlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1343472275" predsStr="1840394190" succsStr="1384421324" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+      </node>
+      <node type="replaceFunction" method="BlankFragment showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)">
+        <nodeInfo nodeId="1384421324" predsStr="1343472275" succsStr="1749639800" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+      </node>
+      <node type="commit" method="BlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1749639800" predsStr="1384421324" succsStr="351927520" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+      </node>
+      <node type="beginTransaction" method="BlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="351927520" predsStr="1749639800" succsStr="1513137078" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+      </node>
+      <node type="PassOut" method="BlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;(r1)">
+        <nodeInfo nodeId="1513137078" predsStr="351927520" succsStr="" context=""/>
+        <baseNodePointTo value="1840394190" context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.C dummyMainMethod_com_test_ui_transition_C(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="C onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)">
+        <nodeInfo nodeId="1266468699" predsStr="164293879" succsStr="" context=""/>
+        <baseNodePointTo value="1266468699" context=""/>
+        <nodeSetPointToMe value="1266468699,593280871,1648446240,116410801,1950694252,841225476,1523863595," context=""/>
+      </node>
+      <node type="getFragment" method="C showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="593280871" predsStr="585762230" succsStr="1648446240" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1648446240" predsStr="593280871" succsStr="116410801" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="replaceFunction" method="C showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="116410801" predsStr="1648446240" succsStr="1950694252" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="commit" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1950694252" predsStr="116410801" succsStr="841225476" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="841225476" predsStr="1950694252" succsStr="1523863595" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="PassOut" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1523863595" predsStr="841225476" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.E dummyMainMethod_com_test_ui_transition_E(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="E onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="813492746" predsStr="118336015" succsStr="" context=""/>
+        <baseNodePointTo value="813492746" context=""/>
+        <nodeSetPointToMe value="813492746,74644332,893451976,1430226189,1427442020,1185886513,1948987794," context=""/>
+      </node>
+      <node type="getFragment" method="E showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="74644332" predsStr="1842195698" succsStr="893451976" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="893451976" predsStr="74644332" succsStr="1430226189" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="replaceFunction" method="E showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1430226189" predsStr="893451976" succsStr="1427442020" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="commit" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1427442020" predsStr="1430226189" succsStr="1185886513" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1185886513" predsStr="1427442020" succsStr="1948987794" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="PassOut" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1948987794" predsStr="1185886513" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.D dummyMainMethod_com_test_ui_transition_D(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="D onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="1020499064" predsStr="2093061476" succsStr="" context=""/>
+        <baseNodePointTo value="1020499064" context=""/>
+        <nodeSetPointToMe value="1020499064,368107690,580657755,879798021,1032694234,803928945,1822919213," context=""/>
+      </node>
+      <node type="getFragment" method="D showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="368107690" predsStr="567612461" succsStr="580657755" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="580657755" predsStr="368107690" succsStr="879798021" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="replaceFunction" method="D showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="879798021" predsStr="580657755" succsStr="1032694234" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="commit" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1032694234" predsStr="879798021" succsStr="803928945" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="803928945" predsStr="1032694234" succsStr="1822919213" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="PassOut" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1822919213" predsStr="803928945" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.A: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="A onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)">
+        <nodeInfo nodeId="2054735863" predsStr="151483127" succsStr="" context=""/>
+        <baseNodePointTo value="2054735863" context=""/>
+        <nodeSetPointToMe value="2054735863,969714552,942510884,423034454,1715088753,988929445,1846664556," context=""/>
+      </node>
+      <node type="getFragment" method="A showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="969714552" predsStr="720020274" succsStr="942510884" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="942510884" predsStr="969714552" succsStr="423034454" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="replaceFunction" method="A showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="423034454" predsStr="942510884" succsStr="1715088753" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="commit" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1715088753" predsStr="423034454" succsStr="988929445" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="988929445" predsStr="1715088753" succsStr="1846664556" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="PassOut" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1846664556" predsStr="988929445" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.B: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="B onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)">
+        <nodeInfo nodeId="178803304" predsStr="1437267199" succsStr="" context=""/>
+        <baseNodePointTo value="178803304" context=""/>
+        <nodeSetPointToMe value="178803304,1418164690,844778182,702440682,195313497,1686281750,82764858," context=""/>
+      </node>
+      <node type="getFragment" method="B showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1418164690" predsStr="1106015886" succsStr="844778182" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="844778182" predsStr="1418164690" succsStr="702440682" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="replaceFunction" method="B showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="702440682" predsStr="844778182" succsStr="195313497" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="commit" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="195313497" predsStr="702440682" succsStr="1686281750" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1686281750" predsStr="195313497" succsStr="82764858" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="PassOut" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="82764858" predsStr="1686281750" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.A dummyMainMethod_com_test_ui_transition_A(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="A onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)">
+        <nodeInfo nodeId="2054735863" predsStr="151483127" succsStr="" context=""/>
+        <baseNodePointTo value="2054735863" context=""/>
+        <nodeSetPointToMe value="2054735863,969714552,942510884,423034454,1715088753,988929445,1846664556," context=""/>
+      </node>
+      <node type="getFragment" method="A showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="969714552" predsStr="720020274" succsStr="942510884" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="942510884" predsStr="969714552" succsStr="423034454" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="replaceFunction" method="A showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="423034454" predsStr="942510884" succsStr="1715088753" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="commit" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1715088753" predsStr="423034454" succsStr="988929445" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="988929445" predsStr="1715088753" succsStr="1846664556" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="PassOut" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1846664556" predsStr="988929445" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.B dummyMainMethod_com_test_ui_transition_B(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="B onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)">
+        <nodeInfo nodeId="178803304" predsStr="1437267199" succsStr="" context=""/>
+        <baseNodePointTo value="178803304" context=""/>
+        <nodeSetPointToMe value="178803304,1418164690,844778182,702440682,195313497,1686281750,82764858," context=""/>
+      </node>
+      <node type="getFragment" method="B showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1418164690" predsStr="1106015886" succsStr="844778182" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="844778182" predsStr="1418164690" succsStr="702440682" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="replaceFunction" method="B showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="702440682" predsStr="844778182" succsStr="195313497" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="commit" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="195313497" predsStr="702440682" succsStr="1686281750" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1686281750" predsStr="195313497" succsStr="82764858" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="PassOut" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="82764858" predsStr="1686281750" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="NotBlankFragment onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="936024161" predsStr="1434061352" succsStr="" context=""/>
+        <baseNodePointTo value="936024161" context=""/>
+        <nodeSetPointToMe value="936024161,1839224920,1930770744,1745123250,1664469481,205008719,1455299337," context=""/>
+      </node>
+      <node type="getFragment" method="NotBlankFragment showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1839224920" predsStr="259037522" succsStr="1930770744" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1930770744" predsStr="1839224920" succsStr="1745123250" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="replaceFunction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1745123250" predsStr="1930770744" succsStr="1664469481" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="commit" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1664469481" predsStr="1745123250" succsStr="205008719" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="205008719" predsStr="1664469481" succsStr="1455299337" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="PassOut" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1455299337" predsStr="205008719" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.MainActivity dummyMainMethod_com_test_ui_transition_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)">
+        <nodeInfo nodeId="1515916820" predsStr="1396100606" succsStr="2079425972" context=""/>
+        <baseNodePointTo value="1515916820" context=""/>
+        <nodeSetPointToMe value="1515916820," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: com.test.ui.transition.NotBlankFragment dummyMainMethod_com_test_ui_transition_NotBlankFragment(android.content.Intent,android.app.Activity)&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="NotBlankFragment onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="936024161" predsStr="1434061352" succsStr="" context=""/>
+        <baseNodePointTo value="936024161" context=""/>
+        <nodeSetPointToMe value="936024161,1839224920,1930770744,1745123250,1664469481,205008719,1455299337," context=""/>
+      </node>
+      <node type="getFragment" method="NotBlankFragment showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1839224920" predsStr="259037522" succsStr="1930770744" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1930770744" predsStr="1839224920" succsStr="1745123250" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="replaceFunction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1745123250" predsStr="1930770744" succsStr="1664469481" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="commit" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1664469481" predsStr="1745123250" succsStr="205008719" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="205008719" predsStr="1664469481" succsStr="1455299337" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="PassOut" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1455299337" predsStr="205008719" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="NotBlankFragment onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="936024161" predsStr="1434061352" succsStr="" context=""/>
+        <baseNodePointTo value="936024161" context=""/>
+        <nodeSetPointToMe value="936024161,1839224920,1930770744,1745123250,1664469481,205008719,1455299337," context=""/>
+      </node>
+      <node type="getFragment" method="NotBlankFragment showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1839224920" predsStr="259037522" succsStr="1930770744" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1930770744" predsStr="1839224920" succsStr="1745123250" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="replaceFunction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1745123250" predsStr="1930770744" succsStr="1664469481" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="commit" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1664469481" predsStr="1745123250" succsStr="205008719" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="beginTransaction" method="NotBlankFragment showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="205008719" predsStr="1664469481" succsStr="1455299337" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+      <node type="PassOut" method="NotBlankFragment showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1455299337" predsStr="205008719" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+        <baseNodePointTo value="1839224920" context="specialinvoke r0.&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;(r2)936024161"/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="A onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)">
+        <nodeInfo nodeId="2054735863" predsStr="151483127" succsStr="" context=""/>
+        <baseNodePointTo value="2054735863" context=""/>
+        <nodeSetPointToMe value="2054735863,969714552,942510884,423034454,1715088753,988929445,1846664556," context=""/>
+      </node>
+      <node type="getFragment" method="A showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="969714552" predsStr="720020274" succsStr="942510884" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="942510884" predsStr="969714552" succsStr="423034454" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="replaceFunction" method="A showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="423034454" predsStr="942510884" succsStr="1715088753" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="commit" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1715088753" predsStr="423034454" succsStr="988929445" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="beginTransaction" method="A showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="988929445" predsStr="1715088753" succsStr="1846664556" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+      <node type="PassOut" method="A showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1846664556" predsStr="988929445" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+        <baseNodePointTo value="969714552" context="specialinvoke r0.&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;($r5)2054735863"/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)">
+        <nodeInfo nodeId="1515916820" predsStr="1396100606" succsStr="2079425972" context=""/>
+        <baseNodePointTo value="1515916820" context=""/>
+        <nodeSetPointToMe value="1515916820," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="B onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)">
+        <nodeInfo nodeId="178803304" predsStr="1437267199" succsStr="" context=""/>
+        <baseNodePointTo value="178803304" context=""/>
+        <nodeSetPointToMe value="178803304,1418164690,844778182,702440682,195313497,1686281750,82764858," context=""/>
+      </node>
+      <node type="getFragment" method="B showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="1418164690" predsStr="1106015886" succsStr="844778182" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="844778182" predsStr="1418164690" succsStr="702440682" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="replaceFunction" method="B showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="702440682" predsStr="844778182" succsStr="195313497" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="commit" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="195313497" predsStr="702440682" succsStr="1686281750" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="beginTransaction" method="B showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1686281750" predsStr="195313497" succsStr="82764858" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+      <node type="PassOut" method="B showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="82764858" predsStr="1686281750" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+        <baseNodePointTo value="1418164690" context="specialinvoke r0.&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;($r6)178803304"/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="C onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)">
+        <nodeInfo nodeId="1266468699" predsStr="164293879" succsStr="" context=""/>
+        <baseNodePointTo value="1266468699" context=""/>
+        <nodeSetPointToMe value="1266468699,593280871,1648446240,116410801,1950694252,841225476,1523863595," context=""/>
+      </node>
+      <node type="getFragment" method="C showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="593280871" predsStr="585762230" succsStr="1648446240" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1648446240" predsStr="593280871" succsStr="116410801" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="replaceFunction" method="C showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="116410801" predsStr="1648446240" succsStr="1950694252" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="commit" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1950694252" predsStr="116410801" succsStr="841225476" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="beginTransaction" method="C showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="841225476" predsStr="1950694252" succsStr="1523863595" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+      <node type="PassOut" method="C showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1523863595" predsStr="841225476" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+        <baseNodePointTo value="593280871" context="specialinvoke r0.&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;($r7)1266468699"/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="D onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="1020499064" predsStr="2093061476" succsStr="" context=""/>
+        <baseNodePointTo value="1020499064" context=""/>
+        <nodeSetPointToMe value="1020499064,368107690,580657755,879798021,1032694234,803928945,1822919213," context=""/>
+      </node>
+      <node type="getFragment" method="D showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="368107690" predsStr="567612461" succsStr="580657755" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="580657755" predsStr="368107690" succsStr="879798021" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="replaceFunction" method="D showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="879798021" predsStr="580657755" succsStr="1032694234" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="commit" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1032694234" predsStr="879798021" succsStr="803928945" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="beginTransaction" method="D showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="803928945" predsStr="1032694234" succsStr="1822919213" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+      <node type="PassOut" method="D showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1822919213" predsStr="803928945" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+        <baseNodePointTo value="368107690" context="specialinvoke r0.&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;(r2)1020499064"/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onAttach(android.content.Context)
+						   &lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt; --- specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)
+						   void showFragment(android.support.v4.app.Fragment)"/>
+      <node type="PassOut" method="E onAttach" unit="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)">
+        <nodeInfo nodeId="813492746" predsStr="118336015" succsStr="" context=""/>
+        <baseNodePointTo value="813492746" context=""/>
+        <nodeSetPointToMe value="813492746,74644332,893451976,1430226189,1427442020,1185886513,1948987794," context=""/>
+      </node>
+      <node type="getFragment" method="E showFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()">
+        <nodeInfo nodeId="74644332" predsStr="1842195698" succsStr="893451976" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="893451976" predsStr="74644332" succsStr="1430226189" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="replaceFunction" method="E showFragment" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)">
+        <nodeInfo nodeId="1430226189" predsStr="893451976" succsStr="1427442020" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="commit" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()">
+        <nodeInfo nodeId="1427442020" predsStr="1430226189" succsStr="1185886513" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="beginTransaction" method="E showFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()">
+        <nodeInfo nodeId="1185886513" predsStr="1427442020" succsStr="1948987794" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+      <node type="PassOut" method="E showFragment" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)&gt;($r1)">
+        <nodeInfo nodeId="1948987794" predsStr="1185886513" succsStr="" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+        <baseNodePointTo value="74644332" context="specialinvoke r0.&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;(r2)813492746"/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

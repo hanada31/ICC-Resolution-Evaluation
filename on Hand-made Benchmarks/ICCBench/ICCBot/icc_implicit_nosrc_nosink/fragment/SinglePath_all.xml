@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="FooActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1415638483" predsStr="703841336" succsStr="" context=""/>
+        <baseNodePointTo value="1415638483" context=""/>
+        <nodeSetPointToMe value="1415638483," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="1756333997" predsStr="585814865" succsStr="" context=""/>
+        <baseNodePointTo value="1756333997" context=""/>
+        <nodeSetPointToMe value="1756333997," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: org.arguslab.icc_implicit_nosrc_nosink.FooActivity dummyMainMethod_org_arguslab_icc__implicit__nosrc__nosink_FooActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="FooActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1415638483" predsStr="703841336" succsStr="" context=""/>
+        <baseNodePointTo value="1415638483" context=""/>
+        <nodeSetPointToMe value="1415638483," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: org.arguslab.icc_implicit_nosrc_nosink.MainActivity dummyMainMethod_org_arguslab_icc__implicit__nosrc__nosink_MainActivity(android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="1756333997" predsStr="585814865" succsStr="" context=""/>
+        <baseNodePointTo value="1756333997" context=""/>
+        <nodeSetPointToMe value="1756333997," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+  <singleMethod source="&lt;dummyMainClass: void dummyMainMethod(java.lang.String[])&gt;">
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="MainActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void setContentView(int)&gt;(2130903041)">
+        <nodeInfo nodeId="1756333997" predsStr="585814865" succsStr="" context=""/>
+        <baseNodePointTo value="1756333997" context=""/>
+        <nodeSetPointToMe value="1756333997," context=""/>
+      </node>
+    </singlePath>
+    <singlePath>
+      <method methodtrace="void onCreate(android.os.Bundle)"/>
+      <node type="setContentView" method="FooActivity onCreate" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void setContentView(int)&gt;(2130903040)">
+        <nodeInfo nodeId="1415638483" predsStr="703841336" succsStr="" context=""/>
+        <baseNodePointTo value="1415638483" context=""/>
+        <nodeSetPointToMe value="1415638483," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

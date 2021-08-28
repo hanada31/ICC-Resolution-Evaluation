@@ -1,0 +1,48 @@
+name: "com.test.ui.transition"
+version: 1
+components {
+  name: "com.test.ui.transition.NextActivity"
+  kind: ACTIVITY
+  exported: false
+  exit_points {
+    instruction {
+      statement: "virtualinvoke $r2.<com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)>($r3)"
+      class_name: "com.test.ui.transition.NextActivity$1"
+      method: "<com.test.ui.transition.NextActivity$1: void onClick(android.view.View)>"
+      id: 7
+    }
+    kind: ACTIVITY
+    intents {
+      attributes {
+        kind: CLASS
+        value: "com/test/ui/transition/AActivity"
+      }
+      attributes {
+        kind: PACKAGE
+        value: "com.test.ui.transition"
+      }
+    }
+  }
+}
+components {
+  name: "com.test.ui.transition.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+components {
+  name: "com.test.ui.transition.AActivity"
+  kind: ACTIVITY
+  exported: false
+}
+analysis_start: 1628845228
+analysis_end: 1628845241

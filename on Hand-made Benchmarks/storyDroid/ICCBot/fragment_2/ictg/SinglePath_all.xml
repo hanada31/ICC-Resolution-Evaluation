@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;com.test.ui.transition.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <singlePath>
+      <method methodtrace="void setResult(int,android.content.Intent)"/>
+      <node type="ReceiveIntentFromParatMethod" method="MainActivity setResult" unit="parameter1 := @parameter1: android.content.Intent">
+        <nodeInfo nodeId="1212968421" predsStr="818770828" succsStr="1395328755" context=""/>
+        <baseNodePointTo value="1212968421" context=""/>
+        <nodeSetPointToMe value="1212968421,1395328755," context=""/>
+      </node>
+      <node type="StaticCreateMethod" method="MainActivity setResult" unit="this.&lt;com.test.ui.transition.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1">
+        <nodeInfo nodeId="1395328755" predsStr="1212968421" succsStr="" context=""/>
+        <baseNodePointTo value="1395328755" context=""/>
+        <nodeSetPointToMe value="1395328755," context=""/>
+      </node>
+    </singlePath>
+  </singleMethod>
+</root>

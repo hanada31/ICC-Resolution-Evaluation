@@ -1,0 +1,34 @@
+name: "org.arguslab.icc_stateful"
+version: 1
+used_permissions: "android.permission.READ_PHONE_STATE"
+components {
+  name: "org.arguslab.icc_stateful.FooActivity"
+  kind: ACTIVITY
+  exported: false
+}
+components {
+  name: "org.arguslab.icc_stateful.MainActivity"
+  kind: ACTIVITY
+  exported: true
+  extras {
+    extra: "data"
+    instruction {
+      statement: "r7 = virtualinvoke r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r6)"
+      class_name: "org.arguslab.icc_stateful.MainActivity"
+      method: "<org.arguslab.icc_stateful.MainActivity: void onActivityResult(int,int,android.content.Intent)>"
+      id: 9
+    }
+  }
+  intent_filters {
+    attributes {
+      kind: ACTION
+      value: "android.intent.action.MAIN"
+    }
+    attributes {
+      kind: CATEGORY
+      value: "android.intent.category.LAUNCHER"
+    }
+  }
+}
+analysis_start: 1624856408
+analysis_end: 1624856410

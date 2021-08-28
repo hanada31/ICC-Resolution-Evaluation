@@ -1,0 +1,18 @@
+## manual edges
+
++ com.nutomic.syncthingandroid.activities.ShareActivity --> com.nutomic.syncthingandroid.activities.FolderPickerActivity
++ com.nutomic.syncthingandroid.activities.MainActivity --> com.nutomic.syncthingandroid.service.SyncthingService
++ com.nutomic.syncthingandroid.activities.SettingsActivity --> com.nutomic.syncthingandroid.service.SyncthingService
++ com.nutomic.syncthingandroid.activities.SyncthingActivity --> com.nutomic.syncthingandroid.service.SyncthingService
++ com.nutomic.syncthingandroid.activities.WebGuiActivity --> com.nutomic.syncthingandroid.service.SyncthingService
++ com.nutomic.syncthingandroid.receiver.BootReceiver --> com.nutomic.syncthingandroid.service.SyncthingService
+
++ com.nutomic.syncthingandroid.service.SyncthingService --> com.nutomic.syncthingandroid.activities.LogActivity
++ com.nutomic.syncthingandroid.receiver.AppConfigReceiver --> com.nutomic.syncthingandroid.activities.MainActivity
++ com.nutomic.syncthingandroid.activities.SettingsActivity --> com.nutomic.syncthingandroid.activities.MainActivity
+
+- com.nutomic.syncthingandroid.activities.SettingsActivity --> com.nutomic.syncthingandroid.activities.LogActivity
+- com.nutomic.syncthingandroid.activities.MainActivity --> com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity
+- com.nutomic.syncthingandroid.activities.WebGuiActivity --> com.nutomic.syncthingandroid.activities.MainActivity
+- com.nutomic.syncthingandroid.activities.MainActivity --> com.nutomic.syncthingandroid.activities.LogActivity
+- com.nutomic.syncthingandroid.activities.WebGuiActivity --> com.nutomic.syncthingandroid.activities.SettingsActivity

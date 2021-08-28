@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;">
+    <node unit="r1 = new android.content.Intent" type="CreateMethod"/>
+    <node unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r6)" type="SetAttribute"/>
+    <node unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;id&quot;, $r5)" type="SetIntentExtra"/>
+    <node unit="virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void sendBroadcast(android.content.Intent)&gt;(r1)" type="SendIntent2ICC"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;">
+    <node unit="specialinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;()"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void setResult(int,android.content.Intent)&gt;">
+    <node unit="parameter1 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="this.&lt;org.arguslab.icc_dynregister2.MainActivity: android.content.Intent ipcResultIntent&gt; = parameter1" type="StaticCreateMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MainActivity: void setIntent(android.content.Intent)&gt;">
+    <node unit="parameter0 := @parameter0: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;">
+    <node unit="$r2 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver2: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+  </singleMethod>
+  <singleMethod source="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;">
+    <node unit="$r2 := @parameter1: android.content.Intent" type="ReceiveIntentFromParatMethod"/>
+    <node unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver: android.content.Intent getIntent()&gt;()" type="ReceiveIntentFromOutMethod"/>
+  </singleMethod>
+</root>

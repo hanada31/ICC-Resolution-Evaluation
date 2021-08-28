@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.test.ui.transition.NextActivity" type="Activity">
+    <sender destination="com.test.ui.transition.MainActivity"/>
+  </component>
+  <component name="com.test.ui.transition.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.test.ui.transition.NextActivity"/>
+  </component>
+</root>

@@ -94,7 +94,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" destination="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByTitleActivity" method="">
-    <comment>*QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
+    <comment>QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="46" end="46"/>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="59" end="59"/>
@@ -113,7 +113,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" destination="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByUsernameActivity" method="">
-    <comment>*QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
+    <comment>QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="47" end="47"/>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="63" end="64"/>
@@ -132,7 +132,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" destination="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity" method="">
-    <comment>*QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
+    <comment>QuizletLauncher.onCreate() -&gt; Button.setOnClickListener() -&gt; *QuizletLauncher.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="48" end="48"/>
       <line src="/src/org/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher.java" start="68" end="68"/>
@@ -596,7 +596,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -619,7 +619,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -637,7 +637,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -650,7 +650,7 @@
       <line src="/src/org/liberty/android/fantastischmemo/ui/CardPlayerActivity.java" start="211" end="214"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -709,7 +709,7 @@
       <line src="/src/org/liberty/android/fantastischmemo/ui/PreviewEditActivity.java" start="673" end="679"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>

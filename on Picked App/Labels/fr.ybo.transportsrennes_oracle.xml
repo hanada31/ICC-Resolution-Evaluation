@@ -60,14 +60,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsbordeaux.activity.alerts.TabAlertes" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsRennes/res/layout/main.xml" start="26" end="26"/>
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26"/>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="57" end="57"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -80,14 +80,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsbordeaux.activity.bus.ListArretByPosition" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsRennes/res/layout/main.xml" start="26" end="26"/>
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26"/>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="52" end="52"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -100,14 +100,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.bus.BusRennes" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsRennes/res/layout/main.xml" start="26" end="26"/>
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26"/>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="46" end="47"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -120,14 +120,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsBordeaux/res/layout/main.xml" start="35" end="35"/>
+      <line src="/TransportsBordeaux/res/layout/main.xml" start="34" end="35"/>
       <line src="/TransportsBordeaux/src/fr/ybo/transportsbordeaux/fragments/DashboardFragment.java" start="72" end="72"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -140,14 +140,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.parkrelais.ListParkRelais" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsRennes/res/layout/main.xml" start="26" end="26"/>
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26"/>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="67" end="67"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -178,14 +178,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.velos.ListStationsByPosition" method="">
-    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65"/>
-      <line src="/TransportsRennes/res/layout/main.xml" start="26" end="26"/>
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26"/>
       <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="62" end="62"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -362,7 +362,7 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
@@ -515,8 +515,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -535,8 +535,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="false" isImplicit="true"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -553,8 +553,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -573,8 +573,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="false" isImplicit="true"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -591,8 +591,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -611,8 +611,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="false" isImplicit="true"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -629,8 +629,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -649,8 +649,8 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="false" isImplicit="true"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>

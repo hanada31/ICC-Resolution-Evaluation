@@ -333,13 +333,12 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="net.osmand.plus.activities.PluginsActivity" destination="net.osmand.plus.activities.PluginActivity" method="">
-    <comment>PluginsActivity.onCreate() -&gt; setListAdapter() -&gt; *onItemClick() -&gt; startActivity()</comment>
+    <comment>PluginsActivity.onCreate() -&gt; setListAdapter() -&gt; PluginsActivity extends OsmandListActivity -&gt; OsmandListActivity.setListAdapter() -&gt; setOnItemClickListener() -&gt; View.setOnItemClickListener() -&gt; *OsmandListActivity.onItemClick() -&gt; startActivity()</comment>
     <callLines>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/PluginsActivity.java" start="29" end="29"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/OsmandListActivity.java" start="18" end="19"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/OsmandListActivity.java" start="75" end="75"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/OsmandListActivity.java" start="93" end="93"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/PluginsActivity.java" start="41" end="41"/>
+      <line src="/OsmAnd/src/net/osmand/plus/activities/PluginsActivity.java" start="29" end="29"/>
+      <line src="/OsmAnd/src/net/osmand/plus/activities/OsmandListActivity.java" start="74" end="75"/>
+      <line src="/OsmAnd/src/net/osmand/plus/activities/OsmandListActivity.java" start="93" end="93"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/PluginsActivity.java" start="50" end="55"/>
     </callLines>
     <tags>
@@ -359,8 +358,6 @@
     <comment>*SettingsActivity.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *SettingsActivity.onPreferenceClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="40" end="41"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="18" end="18"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsBaseActivity.java" start="44" end="45"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="98" end="100"/>
     </callLines>
     <tags>
@@ -370,7 +367,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -380,8 +377,6 @@
     <comment>*SettingsActivity.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *SettingsActivity.onPreferenceClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="40" end="41"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="18" end="18"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsBaseActivity.java" start="44" end="45"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="103" end="104"/>
     </callLines>
     <tags>
@@ -391,7 +386,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -401,8 +396,6 @@
     <comment>*SettingsActivity.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *SettingsActivity.onPreferenceClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="40" end="41"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="18" end="18"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsBaseActivity.java" start="44" end="45"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="55" end="55"/>
     </callLines>
     <tags>
@@ -412,7 +405,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -422,8 +415,6 @@
     <comment>*SettingsActivity.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *SettingsActivity.onPreferenceClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="40" end="41"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="18" end="18"/>
-      <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsBaseActivity.java" start="44" end="45"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/SettingsActivity.java" start="57" end="57"/>
     </callLines>
     <tags>
@@ -433,7 +424,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -458,7 +449,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="net.osmand.plus.activities.search.SearchActivity" destination="net.osmand.plus.activities.FavoritesListActivity" method="">
-    <comment>*SearchActivity.onCreate() -&gt; setTopSpinner() -&gt; ActionBar.setListNavigationCallbacks() -&gt; *OnNavigationListener.onNavigationItemSelected() -&gt; SearchActivity.startActivityForResult()</comment>
+    <comment>SearchActivity.onCreate() -&gt; setTopSpinner() -&gt; ActionBar.setListNavigationCallbacks() -&gt; *OnNavigationListener.onNavigationItemSelected() -&gt; SearchActivity.startActivityForResult()</comment>
     <callLines>
       <line src="/OsmAnd/src/net/osmand/plus/activities/search/SearchActivity.java" start="141" end="141"/>
       <line src="/OsmAnd/src/net/osmand/plus/activities/search/SearchActivity.java" start="225" end="228"/>

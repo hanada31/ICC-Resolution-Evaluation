@@ -2,7 +2,7 @@
 
 <root srcCodeBase="/PassAndroid/PassAndroid-3.4.7">
   <OracleEdge source="org.ligi.passandroid.ui.PassViewActivity" destination="org.ligi.passandroid.FullscreenMapActivity" method="">
-    <comment>PassViewActivity.onResumeFragments() -&gt; refresh() -&gt; PassbookMapsFacade.init() -&gt; new LocationsMapFragment() -&gt; FragmentTransaction.commit() -&gt; LocationsMapFragment.onCreateView() -&gt; getMapAsync() -&gt; setOnMapLoadedCallback() -&gt; setOnMapClickListener() -&gt; *onClick() -&gt; Activity.startActivityFromClass()</comment>
+    <comment>PassViewActivity.onResumeFragments() -&gt; refresh() -&gt; PassbookMapsFacade.init() -&gt; new LocationsMapFragment() -&gt; FragmentTransaction.commit() -&gt; LocationsMapFragment.onCreateView() -&gt; getMapAsync() -&gt; setOnMapLoadedCallback() -&gt; setOnMapClickListener() -&gt; *onClick() -&gt; Activity.startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassViewActivity.kt" start="130" end="130"/>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassViewActivity.kt" start="57" end="57"/>
@@ -11,8 +11,8 @@
       <line src="/android/src/withMaps/java/org/ligi/passandroid/LocationsMapFragment.kt" start="32" end="37"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="false" isAtypicalSendICC="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
@@ -24,13 +24,13 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.PassViewActivity" destination="org.ligi.passandroid.ui.FullscreenBarcodeActivity" method="">
-    <comment>PassViewActivity.onResumeFragments() -&gt; ImageButton.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityFromClass()</comment>
+    <comment>PassViewActivity.onResumeFragments() -&gt; ImageButton.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassViewActivity.kt" start="124" end="124"/>
     </callLines>
     <tags>
       <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="false" isAtypicalSendICC="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
@@ -42,14 +42,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.PassListActivity" destination="org.ligi.passandroid.ui.HelpActivity" method="code view">
-    <comment>*PassListActivity.onOptionsItemSelected() -&gt; startActivityFromClass()</comment>
+    <comment>*PassListActivity.onOptionsItemSelected() -&gt; startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassListActivity.kt" start="212" end="212"/>
     </callLines>
     <tags>
       <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -60,7 +60,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.FullscreenBarcodeActivity" destination="org.ligi.passandroid.ui.PassEditActivity" method="">
-    <comment>FullscreenBarcodeActivity extends PassViewActivityBase -&gt; *PassViewActivityBase.onOptionsItemSelected() -&gt; PassMenuOptions.process() -&gt; Activity.startActivityFromClass()</comment>
+    <comment>FullscreenBarcodeActivity extends PassViewActivityBase -&gt; *PassViewActivityBase.onOptionsItemSelected() -&gt; PassMenuOptions.process() -&gt; Activity.startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/FullscreenBarcodeActivity.kt" start="13" end="13"/>
       <line src="//android/src/main/java/org/ligi/passandroid/ui/PassViewActivityBase.kt" start="114" end="114"/>
@@ -69,7 +69,7 @@
     <tags>
       <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -80,15 +80,15 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.PassListActivity" destination="org.ligi.passandroid.ui.PassEditActivity" method="">
-    <comment>PassListActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityFromClass()</comment>
+    <comment>PassListActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassListActivity.kt" start="176" end="176"/>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassListActivity.kt" start="180" end="180"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -99,7 +99,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.PassViewActivity" destination="org.ligi.passandroid.ui.PassEditActivity" method="">
-    <comment>PassViewActivityextends PassViewActivityBase -&gt; *PassViewActivityBase.onOptionsItemSelected() -&gt; PassMenuOptions.process() -&gt; Activity.startActivityFromClass()</comment>
+    <comment>PassViewActivityextends PassViewActivityBase -&gt; *PassViewActivityBase.onOptionsItemSelected() -&gt; PassMenuOptions.process() -&gt; Activity.startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassViewActivity.kt" start="30" end="30"/>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassViewActivityBase.kt" start="114" end="114"/>
@@ -108,7 +108,7 @@
     <tags>
       <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -191,7 +191,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.ligi.passandroid.ui.PassListActivity" destination="org.ligi.passandroid.ui.PassViewActivity" method="">
-    <comment>PassListActivity.onCreate() -&gt; new PassTopicFragmentPagerAdapter() -&gt; PassTopicFragmentPagerAdapter.getItem() -&gt; PassListFragment.newInstance() -&gt; PassListFragment.onCreateView() -&gt; new PassAdapter() -&gt; PassAdapter.onBindViewHolder() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; PassListActivity.startActivityFromClass()</comment>
+    <comment>PassListActivity.onCreate() -&gt; new PassTopicFragmentPagerAdapter() -&gt; PassTopicFragmentPagerAdapter.getItem() -&gt; PassListFragment.newInstance() -&gt; PassListFragment.onCreateView() -&gt; new PassAdapter() -&gt; PassAdapter.onBindViewHolder() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; PassListActivity.startActivityFromClass() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassListActivity.kt" start="53" end="53"/>
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassTopicFragmentPagerAdapter.kt" start="22" end="22"/>
@@ -205,7 +205,7 @@
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
@@ -222,7 +222,7 @@
       <line src="/android/src/main/java/org/ligi/passandroid/ui/PassNavigationView.kt" start="45" end="45"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -247,7 +247,7 @@
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>

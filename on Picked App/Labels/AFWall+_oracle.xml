@@ -78,43 +78,6 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.activity.OldLogActivity" destination="dev.ukanth.ufirewall.activity.LogActivity" method="">
-    <comment>*OldLogActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/OldLogActivity.java" start="89" end="91"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.activity.LogActivity" destination="dev.ukanth.ufirewall.activity.LogDetailActivity" method="">
-    <comment>LogActivity.onCreate() -&gt; *LogRecyclerViewAdapter.recyclerItemClickListener.onItemClick() -&gt; startActivity()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="114" end="114"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="129" end="135"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
   <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.activity.OldLogActivity" method="">
     <comment>*MainActivity.onOptionsItemSelected() -&gt; showLog() -&gt; startActivityForResult()</comment>
     <callLines>
@@ -129,44 +92,6 @@
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.activity.LogActivity" destination="dev.ukanth.ufirewall.activity.OldLogActivity" method="">
-    <comment>*LogActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="335" end="337"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.preferences.PreferencesActivity" destination="dev.ukanth.ufirewall.activity.ProfileActivity" method="">
-    <comment>PreferencesActivity.onBuildHeaders() -&gt; loadHeadersFromResource(R.xml.preferences_headers) -&gt; R.xml.preferences_headers.MultiProfilePreferenceFragment -&gt; MultiProfilePreferenceFragment.onCreate() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; startActivity()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/PreferencesActivity.java" start="242" end="242"/>
-      <line src="/aFWall/src/main/res/xml/preferences_headers.xml" start="25" end="28"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/MultiProfilePreferenceFragment.java" start="29" end="33"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -210,24 +135,6 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.broadcast.OnBootReceiver" destination="dev.ukanth.ufirewall.service.ApplyOnBootService" method="">
-    <comment>OnBootReceiver.onReceive() -&gt; startService()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/broadcast/OnBootReceiver.java" start="19" end="19"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
   <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.service.FirewallService" method="">
     <comment>*MainActivity.onCreate() -&gt; registerNetworkObserver() -&gt; startService()</comment>
     <callLines>
@@ -247,19 +154,155 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.service.ApplyOnBootService" destination="dev.ukanth.ufirewall.service.FirewallService" method="">
-    <comment>ApplyOnBootService.onStartCommand() -&gt; startService()</comment>
+  <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.service.RootShellService" method="">
+    <comment>*MainActivity.onCreate() -&gt; startRootShell() -&gt; RootCommand.run() -&gt; RootShellService.runScriptAsRoot() -&gt; reOpenShell() -&gt; startService()</comment>
     <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/ApplyOnBootService.java" start="80" end="80"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="227" end="227"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="483" end="495"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootCommand.java" start="137" end="137"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootShellService.java" start="337" end="337"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootShellService.java" start="321" end="322"/>
     </callLines>
     <tags>
       <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
+    <comment>*MainActivity.onOptionsItemSelected() -&gt; disableOrEnable() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="1168" end="1168"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="1129" end="1129"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.activity.LogActivity" destination="dev.ukanth.ufirewall.activity.LogDetailActivity" method="">
+    <comment>LogActivity.onCreate() -&gt; *LogRecyclerViewAdapter.recyclerItemClickListener.onItemClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="114" end="114"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="129" end="135"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.activity.LogActivity" destination="dev.ukanth.ufirewall.activity.OldLogActivity" method="">
+    <comment>*LogActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/LogActivity.java" start="335" end="337"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.activity.OldLogActivity" destination="dev.ukanth.ufirewall.activity.LogActivity" method="">
+    <comment>*OldLogActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/activity/OldLogActivity.java" start="89" end="91"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.broadcast.OnBootReceiver" destination="dev.ukanth.ufirewall.service.ApplyOnBootService" method="">
+    <comment>OnBootReceiver.onReceive() -&gt; startService()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/broadcast/OnBootReceiver.java" start="19" end="19"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.plugin.FireReceiver" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
+    <comment>FireReceiver.onReceive() -&gt; RootCommand.setCallback() -&gt; *RootCommand.Callback.cbFunc() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/plugin/FireReceiver.java" start="196" end="202"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.preferences.PreferencesActivity" destination="dev.ukanth.ufirewall.activity.ProfileActivity" method="">
+    <comment>PreferencesActivity.onBuildHeaders() -&gt; loadHeadersFromResource() -&gt; R.xml.preferences_headers.header -&gt; MultiProfilePreferenceFragment.onCreate() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/PreferencesActivity.java" start="242" end="242"/>
+      <line src="/aFWall/src/main/res/xml/preferences_headers.xml" start="25" end="28"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/MultiProfilePreferenceFragment.java" start="29" end="33"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="true"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -282,6 +325,45 @@
         <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
         <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.preferences.PreferencesActivity" destination="haibison.android.lockpattern.LockPatternActivity" method="">
+    <comment>PreferencesActivity.onBuildHeaders() -&gt; loadHeadersFromResource() -&gt; R.xml.preferences_headers.header -&gt; *SecPreferenceFragment.onSharedPreferenceChanged() -&gt; showPatternActivity() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/PreferencesActivity.java" start="242" end="242"/>
+      <line src="/aFWall/src/main/res/xml/preferences_headers.xml" start="17" end="20"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/SecPreferenceFragment.java" start="269" end="269"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/SecPreferenceFragment.java" start="244" end="245"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="true"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.service.ApplyOnBootService" destination="dev.ukanth.ufirewall.service.FirewallService" method="">
+    <comment>ApplyOnBootService.onStartCommand() -&gt; startService()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/ApplyOnBootService.java" start="80" end="80"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -323,47 +405,6 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.service.RulesApplyService" destination="dev.ukanth.ufirewall.service.LogService" method="">
-    <comment>*RulesApplyService.onHandleIntent() -&gt; startService()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RulesApplyService.java" start="31" end="31"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RulesApplyService.java" start="34" end="34"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.service.RootShellService" method="">
-    <comment>*MainActivity.onCreate() -&gt; startRootShell() -&gt; RootCommand.run() -&gt; RootShellService.runScriptAsRoot() -&gt; reOpenShell() -&gt; startService()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="227" end="227"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="483" end="495"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootCommand.java" start="137" end="137"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootShellService.java" start="337" end="337"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RootShellService.java" start="321" end="322"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
   <OracleEdge source="dev.ukanth.ufirewall.service.RootShellService" destination="dev.ukanth.ufirewall.service.RootShellService" method="">
     <comment>*RootShellService.onStartCommand() -&gt; RootCommand.run() -&gt; RootShellService.runScriptAsRoot() -&gt; reOpenShell() -&gt; startService()</comment>
     <callLines>
@@ -385,41 +426,21 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.MainActivity" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
-    <comment>*MainActivity.onOptionsItemSelected() -&gt; disableOrEnable() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
+  <OracleEdge source="dev.ukanth.ufirewall.service.RulesApplyService" destination="dev.ukanth.ufirewall.service.LogService" method="">
+    <comment>*RulesApplyService.onHandleIntent() -&gt; startService()</comment>
     <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="1168" end="1168"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/MainActivity.java" start="1129" end="1129"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RulesApplyService.java" start="31" end="31"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/service/RulesApplyService.java" start="34" end="34"/>
     </callLines>
     <tags>
       <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.plugin.FireReceiver" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
-    <comment>FireReceiver.onReceive() -&gt; RootCommand.setCallback() -&gt; *RootCommand.Callback.cbFunc() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/plugin/FireReceiver.java" start="196" end="202"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="false" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
     </tags>
@@ -431,7 +452,7 @@
       <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -455,9 +476,27 @@
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="false" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="true"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="dev.ukanth.ufirewall.widget.ToggleWidget" destination="dev.ukanth.ufirewall.widget.ToggleWidgetActivity" method="">
+    <comment>*ToggleWidget.onUpdate() -&gt; AppWidgetManager.updateAppWidget()</comment>
+    <callLines>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidget.java" start="50" end="54"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
     </tags>
@@ -484,45 +523,6 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
-    <comment>ToggleWidgetOldActivity.switchAction/onClick() -&gt; switchAction() -&gt; startAction() -&gt; Thread.run() -&gt; RootCommand.setCallback() -&gt; *RootCommand.Callback.cbFunc() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="221" end="221"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="142" end="142"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="294" end="303"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.widget.ToggleWidget" destination="dev.ukanth.ufirewall.widget.ToggleWidgetActivity" method="">
-    <comment>*ToggleWidget.onUpdate() -&gt; AppWidgetManager.updateAppWidget()</comment>
-    <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidget.java" start="50" end="54"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
   <OracleEdge source="dev.ukanth.ufirewall.widget.ToggleWidgetOld" destination="dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity" method="">
     <comment>*ToggleWidgetOld.onUpdate() -&gt; AppWidgetManager.updateAppWidget()</comment>
     <callLines>
@@ -541,23 +541,23 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="dev.ukanth.ufirewall.preferences.PreferencesActivity" destination="haibison.android.lockpattern.LockPatternActivity" method="">
-    <comment>PreferencesActivity.onBuildHeaders() -&gt; loadHeadersFromResource(R.xml.preferences_headers) -&gt; R.xml.preferences_headers.SecPreferenceFragment -&gt; *SecPreferenceFragment.onSharedPreferenceChanged() -&gt; showPatternActivity() -&gt; startActivityForResult()</comment>
+  <OracleEdge source="dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity" destination="dev.ukanth.ufirewall.widget.StatusWidget" method="">
+    <comment>ToggleWidgetOldActivity.switchAction/onClick() -&gt; switchAction() -&gt; startAction() -&gt; Thread.run() -&gt; RootCommand.setCallback() -&gt; *RootCommand.Callback.cbFunc() -&gt; Api.setEnabled() -&gt; sendBroadcast()</comment>
     <callLines>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/PreferencesActivity.java" start="242" end="242"/>
-      <line src="/aFWall/src/main/res/xml/preferences_headers.xml" start="17" end="20"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/SecPreferenceFragment.java" start="269" end="269"/>
-      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/preferences/SecPreferenceFragment.java" start="244" end="245"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="221" end="221"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="142" end="142"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/widget/ToggleWidgetOldActivity.java" start="294" end="303"/>
+      <line src="/aFWall/src/main/java/dev/ukanth/ufirewall/Api.java" start="2031" end="2034"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
     </tags>

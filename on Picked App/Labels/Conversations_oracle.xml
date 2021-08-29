@@ -120,7 +120,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="eu.siacs.conversations.ui.ConferenceDetailsActivity" destination="eu.siacs.conversations.ui.MediaBrowserActivity" method="">
-    <comment>ConferenceDetailsActivity.onSart() -&gt; ConferenceDetailsActivity extends XmppActivity -&gt; XmppActivity.connectToBackend() -&gt; bindService() -&gt; ServiceConnection.onServiceConnected() -&gt; ConferenceDetailsActivity.onBackendConnected() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MediaBrowserActivity.launch() -&gt; Context.startActivity()</comment>
+    <comment>ConferenceDetailsActivity.onStart() -&gt; ConferenceDetailsActivity extends XmppActivity -&gt; XmppActivity.connectToBackend() -&gt; bindService() -&gt; ServiceConnection.onServiceConnected() -&gt; ConferenceDetailsActivity.onBackendConnected() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MediaBrowserActivity.launch() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/src/main/java/eu/siacs/conversations/ui/ConferenceDetailsActivity.java" start="213" end="213"/>
       <line src="/src/main/java/eu/siacs/conversations/ui/ConferenceDetailsActivity.java" start="59" end="59"/>
@@ -201,7 +201,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="eu.siacs.conversations.ui.ContactDetailsActivity" destination="eu.siacs.conversations.ui.MediaBrowserActivity" method="">
-    <comment>ContactDetailsActivity.onSart() -&gt; ContactDetailsActivity extends OmemoActivity -&gt; OmemoActivity extends XmppActivity -&gt; XmppActivity.connectToBackend() -&gt; bindService() -&gt; ServiceConnection.onServiceConnected() -&gt; ContactDetailsActivity.onBackendConnected() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MediaBrowserActivity.launch() -&gt; Context.startActivity()</comment>
+    <comment>ContactDetailsActivity.onStart() -&gt; ContactDetailsActivity extends OmemoActivity -&gt; OmemoActivity extends XmppActivity -&gt; XmppActivity.connectToBackend() -&gt; bindService() -&gt; ServiceConnection.onServiceConnected() -&gt; ContactDetailsActivity.onBackendConnected() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MediaBrowserActivity.launch() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/src/main/java/eu/siacs/conversations/ui/ContactDetailsActivity.java" start="219" end="219"/>
       <line src="/src/main/java/eu/siacs/conversations/ui/ContactDetailsActivity.java" start="61" end="61"/>
@@ -306,7 +306,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -362,7 +362,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
@@ -389,7 +389,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
@@ -418,7 +418,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -489,7 +489,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
@@ -516,7 +516,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
@@ -544,7 +544,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -591,7 +591,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
@@ -935,13 +935,13 @@
       <line src="/src/main/java/eu/siacs/conversations/ui/StartConversationActivity.java" start="992" end="998"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>

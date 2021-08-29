@@ -10,8 +10,8 @@
     </callLines>
     <tags>
       <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="true"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -30,8 +30,8 @@
     </callLines>
     <tags>
       <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="true"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
@@ -42,7 +42,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.mikifus.padland.SplashActivity" destination="com.mikifus.padland.IntroActivity" method="">
-    <comment>*SettingsActivity.onCreate() -&gt; Handler.postDelayed() -&gt; Runnable.run() -&gt; launchNext() -&gt; Thread.start() -&gt; Runnable.run() -&gt; startActivity()</comment>
+    <comment>*SettingsActivity.onCreate() -&gt; Handler.postDelayed() -&gt; Runnable.run() -&gt; launchNext() -&gt; Thread.start() -&gt; Runnable.run() -&gt; SplashActivity.startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/mikifus/padland/SplashActivity.java" start="33" end="33"/>
       <line src="/app/src/main/java/com/mikifus/padland/SplashActivity.java" start="54" end="55"/>
@@ -114,7 +114,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -161,7 +161,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.mikifus.padland.SplashActivity" destination="com.mikifus.padland.PadListActivity" method="">
-    <comment>*SettingsActivity.onCreate() -&gt; Handler.postDelayed() -&gt; Runnable.run() -&gt; launchNext() -&gt; Thread.start() -&gt; Runnable.run() -&gt; startActivity()</comment>
+    <comment>*SettingsActivity.onCreate() -&gt; Handler.postDelayed() -&gt; Runnable.run() -&gt; launchNext() -&gt; Thread.start() -&gt; Runnable.run() -&gt; SplashActivity.startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/mikifus/padland/SplashActivity.java" start="33" end="33"/>
       <line src="/app/src/main/java/com/mikifus/padland/SplashActivity.java" start="70" end="71"/>
@@ -247,8 +247,8 @@
     </callLines>
     <tags>
       <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="true"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="false"/>
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>

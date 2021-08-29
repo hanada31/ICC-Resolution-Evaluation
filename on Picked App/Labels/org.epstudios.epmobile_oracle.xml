@@ -207,7 +207,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.Brugada" destination="org.epstudios.epmobile.Prefs" method="">
-    <comment>*Brugada.onOptionsItemSelected() -&gt; Brugada extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*Brugada.onOptionsItemSelected() -&gt; Brugada extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/Brugada.java" start="31" end="31"/>
       <line src="/src/org/epstudios/epmobile/Brugada.java" start="64" end="64"/>
@@ -942,7 +942,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.EpiVt" destination="org.epstudios.epmobile.About" method="">
-    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/EpiVt.java" start="25" end="25"/>
       <line src="/src/org/epstudios/epmobile/EpiVt.java" start="7" end="7"/>
@@ -962,7 +962,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.EpiVt" destination="org.epstudios.epmobile.Prefs" method="">
-    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/EpiVt.java" start="25" end="25"/>
       <line src="/src/org/epstudios/epmobile/EpiVt.java" start="7" end="7"/>
@@ -1089,7 +1089,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.IcdRisk" destination="org.epstudios.epmobile.About" method="">
-    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="8" end="8"/>
       <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="33" end="33"/>
@@ -1110,7 +1110,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.IcdRisk" destination="org.epstudios.epmobile.Prefs" method="">
-    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="8" end="8"/>
       <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="33" end="33"/>
@@ -1150,7 +1150,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.LongQtEcg" destination="org.epstudios.epmobile.About" method="">
-    <comment>*LongQtEcg.onOptionsItemSelected() -&gt; LongQtEcg extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*LongQtEcg.onOptionsItemSelected() -&gt; LongQtEcg extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/LongQtEcg.java" start="7" end="7"/>
       <line src="/src/org/epstudios/epmobile/LongQtEcg.java" start="25" end="25"/>
@@ -1253,7 +1253,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.LongQtSubtypes" destination="org.epstudios.epmobile.About" method="">
-    <comment>*LongQtSubtypes.onOptionsItemSelected() -&gt; LongQtSubtypes extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*LongQtSubtypes.onOptionsItemSelected() -&gt; LongQtSubtypes extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/LongQtSubtypes.java" start="25" end="25"/>
       <line src="/src/org/epstudios/epmobile/LongQtSubtypes.java" start="43" end="43"/>
@@ -1460,7 +1460,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.Qtc" destination="org.epstudios.epmobile.Prefs" method="">
-    <comment>*Qtc.onOptionsItemSelected() -&gt; Qtc extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*Qtc.onOptionsItemSelected() -&gt; Qtc extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/Qtc.java" start="39" end="39"/>
       <line src="/src/org/epstudios/epmobile/Qtc.java" start="80" end="80"/>
@@ -1643,7 +1643,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.Prefs" method="">
-    <comment>*RiskScoreList.onOptionsItemSelected() -&gt; RiskScoreList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected()</comment>
+    <comment>*RiskScoreList.onOptionsItemSelected() -&gt; RiskScoreList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="12" end="12"/>
       <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26"/>
@@ -1684,7 +1684,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.Rwpt" destination="org.epstudios.epmobile.About" method="">
-    <comment>*Rwpt.onOptionsItemSelected() -&gt; Rwpt extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*Rwpt.onOptionsItemSelected() -&gt; Rwpt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/Rwpt.java" start="25" end="25"/>
       <line src="/src/org/epstudios/epmobile/Rwpt.java" start="44" end="44"/>
@@ -1851,7 +1851,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.Warfarin" destination="org.epstudios.epmobile.About" method="">
-    <comment>*Warfarin.onOptionsItemSelected() -&gt; Warfarin extends EpDrugCalculatorActivity -&gt; EpDrugCalculatorActivity.onOptionsItemSelected() -&gt; EpDrugCalculatorActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*Warfarin.onOptionsItemSelected() -&gt; Warfarin extends EpDrugCalculatorActivity -&gt; EpDrugCalculatorActivity.onOptionsItemSelected() -&gt; EpDrugCalculatorActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/Warfarin.java" start="34" end="34"/>
       <line src="/src/org/epstudios/epmobile/Warfarin.java" start="70" end="70"/>
@@ -2020,7 +2020,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.epstudios.epmobile.WctMorphologyCriteria" destination="org.epstudios.epmobile.About" method="">
-    <comment>*WctMorphologyCriteria.onOptionsItemSelected() -&gt; WctMorphologyCriteria extends EpActivity -&gt; EpActivity.onOptionsItemSelected()</comment>
+    <comment>*WctMorphologyCriteria.onOptionsItemSelected() -&gt; WctMorphologyCriteria extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/org/epstudios/epmobile/WctMorphologyCriteria.java" start="25" end="25"/>
       <line src="/src/org/epstudios/epmobile/WctMorphologyCriteria.java" start="44" end="44"/>

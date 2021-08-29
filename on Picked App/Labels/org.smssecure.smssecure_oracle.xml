@@ -165,11 +165,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.RecipientPreferenceActivity" method="">
-    <comment>ConversationActivity.onCreate() -&gt; initializeViews() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ConversationActivity.startActivitySceneTransition()</comment>
+    <comment>ConversationActivity.onCreate() -&gt; initializeViews() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ConversationActivity.startActivitySceneTransition() -&gt; ConversationActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity extends BaseActionBarActivity -&gt; ActivityCompat.startActivity()</comment>
     <callLines>
       <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="218" end="218"/>
       <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="865" end="865"/>
       <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="868" end="871"/>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="144" end="144"/>
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="23" end="23"/>
+      <line src="/src/org/smssecure/smssecure/BaseActionBarActivity.java" start="85" end="85"/>
     </callLines>
     <tags>
       <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
@@ -178,7 +181,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -640,7 +643,7 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="true" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -680,7 +683,7 @@
       <line src="/src/org/smssecure/smssecure/ImageMediaAdapter.java" start="103" end="103"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>

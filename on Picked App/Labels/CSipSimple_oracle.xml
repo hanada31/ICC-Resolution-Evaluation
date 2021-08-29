@@ -27,6 +27,31 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
+  <OracleEdge source="com.csipsimple.ui.SipHome" destination="com.csipsimple.plugins.telephony.CallHandler" method="">
+    <comment>SipHome.onCreate() -&gt; DialerFragment.placeCall() -&gt;DialerFragment.placeCallWithOption() -&gt;CallHandlerPlugin.loadFrom() -&gt; Context.sendOrderedBroadcast()</comment>
+    <callLines>
+      <line src="/src/com/csipsimple/ui/SipHome.java" start="175" end="175"/>
+      <line src="/src/com/csipsimple/ui/SipHome.java" start="385" end="385"/>
+      <line src="/src/com/csipsimple/ui/SipHome.java" start="369" end="369"/>
+      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="94" end="94"/>
+      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="643" end="643"/>
+      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="694" end="694"/>
+      <line src="/src/com/csipsimple/utils/CallHandlerPlugin.java" start="112" end="112"/>
+      <line src="/src/com/csipsimple/utils/CallHandlerPlugin.java" start="84" end="86"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="false" isImplicit="true"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
   <OracleEdge source="com.csipsimple.ui.SipHome" destination="com.csipsimple.service.Downloader" method="">
     <comment>SipHome.onCreate() -&gt; Thread.start() -&gt; SipHome.asyncSanityCheck() -&gt; NightlyUpdater.getUpdaterPopup() -&gt; new UpdaterPopupLauncher() -&gt; runOnUiThread() -&gt; NightlyUpdater.UpdaterPopupLauncher.run() -&gt; AlertDialog.Builder.setPositiveButton() -&gt; *View.OnClickListener.onClick() -&gt; startService()</comment>
     <callLines>
@@ -68,6 +93,29 @@
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.csipsimple.ui.SipHome" destination="com.csipsimple.ui.PickupSipUri" method="">
+    <comment>SipHome.onCreate() -&gt; ConversationsListFragment.onContextItemSelected() -&gt; ConversationsListFragment.viewDetails() -&gt; MessageFragment.onClick() -&gt; MessageFragment.chooseSipUri() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/src/com/csipsimple/ui/SipHome.java" start="181" end="181"/>
+      <line src="/src/com/csipsimple/ui/messages/ConversationsListFragment.java" start="254" end="254"/>
+      <line src="/src/com/csipsimple/ui/messages/ConversationsListFragment.java" start="177" end="181"/>
+      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="72" end="72"/>
+      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="289" end="289"/>
+      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="264" end="265"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
     </tags>
@@ -176,14 +224,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.csipsimple.ui.account.AccountsEditList" destination="com.csipsimple.wizards.BasePrefsWizard" method="">
-    <comment>AccountsEditList.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_view -&gt; *AccountsEditListFragment.onContextItemSelected() -&gt; showDetails() -&gt; startActivity()</comment>
+    <comment>AccountsEditList.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_view.list -&gt; *AccountsEditListFragment.onContextItemSelected() -&gt; showDetails() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/com/csipsimple/ui/account/AccountsEditList.java" start="37" end="37"/>
       <line src="/res/layout/accounts_view.xml" start="2" end="6"/>
       <line src="/src/com/csipsimple/ui/account/AccountsEditListFragment.java" start="378" end="385"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -196,14 +244,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.csipsimple.ui.account.AccountsEditList" destination="com.csipsimple.wizards.WizardChooser" method="">
-    <comment>AccountsEditList.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_view -&gt; *AccountsEditListFragment.onContextItemSelected() -&gt; startActivityForResult()</comment>
+    <comment>AccountsEditList.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_view.list -&gt; *AccountsEditListFragment.onContextItemSelected() -&gt; startActivityForResult()</comment>
     <callLines>
       <line src="/src/com/csipsimple/ui/account/AccountsEditList.java" start="37" end="37"/>
       <line src="/res/layout/accounts_view.xml" start="2" end="6"/>
       <line src="/src/com/csipsimple/ui/account/AccountsEditListFragment.java" start="543" end="545"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -216,14 +264,14 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.csipsimple.ui.filters.AccountFilters" destination="com.csipsimple.ui.filters.EditFilter" method="">
-    <comment>AccountFilters.onCreate() -&gt; setContentView() -&gt; R.layout.account_filters_view -&gt; *AccountFiltersListFragment.onContextItemSelected() -&gt; showDetails() -&gt; startActivity()</comment>
+    <comment>AccountFilters.onCreate() -&gt; setContentView() -&gt; R.layout.account_filters_view.list -&gt; *AccountFiltersListFragment.onContextItemSelected() -&gt; showDetails() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/com/csipsimple/ui/filters/AccountFilters.java" start="69" end="69"/>
       <line src="/res/layout/account_filters_view.xml" start="2" end="6"/>
       <line src="/src/com/csipsimple/ui/filters/AccountFiltersListFragment.java" start="288" end="291"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -331,7 +379,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.csipsimple.ui.prefs.PrefsFilters" destination="com.csipsimple.ui.filters.AccountFilters" method="">
-    <comment>PrefsFilters.onCreate() -&gt; PrefsFilters extends AccountsChooserListActivity -&gt; AccountsChooserListActivity.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_chooser_view -&gt; AccountsChooserListFragment.onListItemClick() -&gt; AccountsChooserListFragment.OnAccountClickListener.onAccountClicked() -&gt; AccountsChooserListActivity implements OnAccountClickListener -&gt; *PrefsFilters.onAccountClicked() -&gt; startActivity()</comment>
+    <comment>PrefsFilters.onCreate() -&gt; PrefsFilters extends AccountsChooserListActivity -&gt; AccountsChooserListActivity.onCreate() -&gt; setContentView() -&gt; R.layout.accounts_chooser_view.listFragment -&gt; AccountsChooserListFragment.onListItemClick() -&gt; AccountsChooserListFragment.OnAccountClickListener.onAccountClicked() -&gt; AccountsChooserListActivity implements OnAccountClickListener -&gt; *PrefsFilters.onAccountClicked() -&gt; startActivity()</comment>
     <callLines>
       <line src="/src/com/csipsimple/ui/prefs/PrefsFilters.java" start="39" end="39"/>
       <line src="/src/com/csipsimple/ui/prefs/PrefsFilters.java" start="34" end="34"/>
@@ -341,7 +389,7 @@
       <line src="/src/com/csipsimple/ui/prefs/PrefsFilters.java" start="52" end="56"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -459,54 +507,6 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="com.csipsimple.ui.SipHome" destination="com.csipsimple.plugins.telephony.CallHandler" method="">
-    <comment>SipHome.onCreate() -&gt; DialerFragment.placeCall() -&gt;DialerFragment.placeCallWithOption() -&gt;CallHandlerPlugin.loadFrom() </comment>
-    <callLines>
-      <line src="/src/com/csipsimple/ui/SipHome.java" start="175" end="175"/>
-      <line src="/src/com/csipsimple/ui/SipHome.java" start="385" end="385"/>
-      <line src="/src/com/csipsimple/ui/SipHome.java" start="369" end="369"/>
-      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="94" end="94"/>
-      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="643" end="643"/>
-      <line src="/src/com/csipsimple/ui/dialpad/DialerFragment.java" start="694" end="694"/>
-      <line src="/src/com/csipsimple/utils/CallHandlerPlugin.java" start="112" end="112"/>
-      <line src="/src/com/csipsimple/utils/CallHandlerPlugin.java" start="84" end="86"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="false" isImplicit="true"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
-        <objectScope isStaticVal="true" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
-      </analyzeScope>
-    </tags>
-  </OracleEdge>
-  <OracleEdge source="com.csipsimple.ui.SipHome" destination="com.csipsimple.ui.PickupSipUri" method="">
-    <comment>SipHome.onCreate() -&gt; ConversationsListFragment.onContextItemSelected()-&gt; ConversationsListFragment.viewDetails() -&gt;MessageFragment.onClick() -&gt;MessageFragment.chooseSipUri()</comment>
-    <callLines>
-      <line src="/src/com/csipsimple/ui/SipHome.java" start="181" end="181"/>
-      <line src="/src/com/csipsimple/ui/messages/ConversationsListFragment.java" start="254" end="254"/>
-      <line src="/src/com/csipsimple/ui/messages/ConversationsListFragment.java" start="177" end="181"/>
-      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="72" end="72"/>
-      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="289" end="289"/>
-      <line src="/src/com/csipsimple/ui/messages/MessageFragment.java" start="264" end="265"/>
-    </callLines>
-    <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
-      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
-      <intentMatch isExplicit="true" isImplicit="false"/>
-      <analyzeScope>
-        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>

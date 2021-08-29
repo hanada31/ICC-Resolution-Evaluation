@@ -47,7 +47,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.activity.Accounts" destination="com.fsck.k9.activity.MessageList" method="">
-    <comment>Accounts.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *Accounts.onItemClick() -&gt; Accounts.onOpenAccount() -&gt; MessageList.actionDisplaySearch() -&gt; MessageList.intentDisplaySearch() </comment>
+    <comment>Accounts.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *Accounts.onItemClick() -&gt; Accounts.onOpenAccount() -&gt; MessageList.actionDisplaySearch() -&gt; MessageList.intentDisplaySearch() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/Accounts.java" start="422" end="422"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/Accounts.java" start="1240" end="1240"/>
@@ -69,7 +69,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.activity.Accounts" destination="com.fsck.k9.activity.UpgradeDatabases" method="">
-    <comment>*Accounts.onCreate() -&gt; UpgradeDatabases.actionUpgradeDatabases() </comment>
+    <comment>*Accounts.onCreate() -&gt; UpgradeDatabases.actionUpgradeDatabases() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/Accounts.java" start="402" end="402"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/UpgradeDatabases.java" start="83" end="90"/>
@@ -368,7 +368,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.activity.MessageList" destination="com.fsck.k9.activity.setup.OpenPgpAppSelectDialog" method="">
-    <comment>MessageList.onCreate() -&gt; MessageList.initializeFragments() -&gt; MessageViewFragment.onCreate() -&gt; *MessageViewFragment.redisplayMessage() -&gt; MessageViewFragment.startOpenPgpChooserActivity()</comment>
+    <comment>MessageList.onCreate() -&gt; MessageList.initializeFragments() -&gt; MessageViewFragment.onCreate() -&gt; *MessageViewFragment.redisplayMessage() -&gt; MessageViewFragment.startOpenPgpChooserActivity() -&gt; startActivity()</comment>
     <callLines>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/MessageList.java" start="231" end="231"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/MessageList.java" start="294" end="298"/>
@@ -564,7 +564,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.activity.setup.AccountSetupBasics" destination="com.fsck.k9.activity.setup.AccountSetupAccountType" method="">
-    <comment>AccountSetupBasics.onCreate() -&gt; Button.setOnClickListener() -&gt; *AccountSetupBasics.onClick() -&gt; AccountSetupBasics.onManualSetup() -&gt; AccountSetupAccountType.actionSelectAccountType() </comment>
+    <comment>AccountSetupBasics.onCreate() -&gt; Button.setOnClickListener() -&gt; *AccountSetupBasics.onClick() -&gt; AccountSetupBasics.onManualSetup() -&gt; AccountSetupAccountType.actionSelectAccountType() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupBasics.java" start="92" end="92"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/setup/AccountSetupBasics.java" start="446" end="446"/>
@@ -782,7 +782,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.activity.setup.WelcomeMessage" destination="com.fsck.k9.activity.setup.AccountSetupBasics" method="">
-    <comment>WelcomeMessage.onCreate() -&gt; View.setOnClickListener() -&gt; *WelcomeMessage.onClick() -&gt; AccountSetupBasics.actionNewAccount() </comment>
+    <comment>WelcomeMessage.onCreate() -&gt; View.setOnClickListener() -&gt; *WelcomeMessage.onClick() -&gt; AccountSetupBasics.actionNewAccount() -&gt; Context.startActivity()</comment>
     <callLines>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/setup/WelcomeMessage.java" start="35" end="35"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/activity/setup/WelcomeMessage.java" start="43" end="43"/>
@@ -812,7 +812,7 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
@@ -827,7 +827,7 @@
       <line src="/k9mail/src/main/java/com/fsck/k9/provider/UnreadWidgetProvider.java" start="74" end="84"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -850,7 +850,7 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
@@ -878,8 +878,10 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.fsck.k9.service.RemoteControlReceiver" destination="com.fsck.k9.service.RemoteControlService" method="">
-    <comment>*RemoteControlReceiver.receive() -&gt; RemoteControlService.set() -&gt; Context.startService()</comment>
+    <comment>RemoteControlReceiver extends CoreReceiver -&gt; *CoreReceiver.onReceive() -&gt; RemoteControlReceiver.receive() -&gt; RemoteControlService.set() -&gt; Context.startService()</comment>
     <callLines>
+      <line src="/k9mail/src/main/java/com/fsck/k9/service/RemoteControlReceiver.java" start="17" end="17"/>
+      <line src="/k9mail/src/main/java/com/fsck/k9/service/CoreReceiver.java" start="62" end="62"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/service/RemoteControlReceiver.java" start="23" end="23"/>
       <line src="/k9mail/src/main/java/com/fsck/k9/service/RemoteControlService.java" start="30" end="33"/>
     </callLines>
@@ -888,9 +890,9 @@
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>
@@ -903,12 +905,12 @@
       <line src="/k9mail/src/main/java/com/fsck/k9/widget/list/MessageListWidgetProvider.java" start="46" end="57"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="false" isAtypicalSendICC="true"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
-        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>

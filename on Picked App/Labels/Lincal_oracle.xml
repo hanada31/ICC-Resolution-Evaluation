@@ -106,7 +106,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="felixwiemuth.lincal.ui.AddCalendarActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
-    <comment>*LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <comment>AddCalendarActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/AddCalendarActivity.java" start="39" end="39"/>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65"/>
@@ -125,7 +125,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="felixwiemuth.lincal.ui.CalendarListActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
-    <comment>*LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <comment>CalendarListActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="46" end="46"/>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65"/>
@@ -144,7 +144,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="felixwiemuth.lincal.ui.CalendarViewActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
-    <comment>*LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <comment>CalendarViewActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewActivity.java" start="32" end="32"/>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65"/>
@@ -163,7 +163,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="felixwiemuth.lincal.ui.SettingsActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
-    <comment>*LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <comment>*SettingsActivity extends LinCalMenuAppCompatActivity -&gt; LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/SettingsActivity.java" start="29" end="29"/>
       <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65"/>

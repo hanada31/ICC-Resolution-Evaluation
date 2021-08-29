@@ -817,11 +817,12 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.ExploreActivity" method="">
-    <comment>ObservationListActivity.onCreate() -&gt; ObservationListActivity.initializeTabs() -&gt; ObservationListActivity.instantiateItem() -&gt; ObservationListActivity.onClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; initializeTabs() -&gt; new ObservationsPageAdapter() -&gt; ViewPager.setAdapter() -&gt; ObservationListActivity.ObservationsPageAdapter.instantiateItem() -&gt; Button.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationListActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="408" end="408"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1357" end="1357"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1357" end="1358"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="988" end="988"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1067" end="1067"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="997" end="997"/>
       <line src="//iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1008" end="1019"/>
     </callLines>
@@ -862,8 +863,9 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>ObservationListActivity extends BaseFragmentActivity -&gt; *BaseFragmentActivity.onResume() -&gt; BaseFragmentActivity.refreshUserDetails() -</comment>
+    <comment>ObservationListActivity.onResume() -&gt; ObservationListActivity extends BaseFragmentActivity -&gt; *BaseFragmentActivity.onResume() -&gt; refreshUserDetails() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="691" end="691"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="68" end="68"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="519" end="519"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="221" end="222"/>
@@ -882,10 +884,12 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.LoginSignupActivity" method="">
-    <comment>ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onDrawerCreate() -&gt; BaseFragmentActivity.onPostCreate() -&gt; BaseFragmentActivity.onReceive()</comment>
+    <comment>ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onPostCreate() -&gt; safeRegisterReceiver() -&gt; Context.registerReceiver() -&gt; *BaseFragmentActivity.UserDetailsReceiver.onReceive() -&gt; startActivity()</comment>
     <callLines>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="86" end="86"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="68" end="68"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="495" end="495"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="547" end="547"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="554" end="554"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="569" end="572"/>
     </callLines>
     <tags>
@@ -904,6 +908,7 @@
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.MissionsActivity" method="">
     <comment>ObservationListActivity.onCreate() -&gt; ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onDrawerCreate() -&gt; buildSideMenu() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; BaseFragmentActivity.startActivityIfNew() -&gt; startActivity()</comment>
     <callLines>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="350" end="350"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="68" end="68"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="156" end="156"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="366" end="366"/>
@@ -925,15 +930,16 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.ObservationEditor" method="">
-    <comment>ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onClick()  -&gt; BaseFragmentActivity.showNewObsMenu() -&gt; BaseFragmentActivity.buildSideMenu()-&gt; BaseFragmentActivity.setOnClickListener() -&gt; BaseFragmentActivity.onClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onDrawerCreate() -&gt; buildSideMenu() -&gt; View.setOnClickListener() -&gt; View.OnClickListener.onClick() -&gt; BaseFragmentActivity.showNewObsMenu() -&gt; BottomSheet.Builder.listener() -&gt; *DialogInterface.OnClickListener.onClick() -&gt; BaseFragmentActivity.startActivityForResult()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="68" end="68"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="156" end="156"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="331" end="331"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="281" end="281"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="291" end="293"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -946,7 +952,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.ObservationSearchActivity" method="">
-    <comment>ObservationListActivity.onOptionsItemSelected() </comment>
+    <comment>*ObservationListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="959" end="959"/>
     </callLines>
@@ -964,11 +970,12 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.ObservationViewerActivity" method="">
-    <comment>ObservationListActivity.onCreate() -&gt; ObservationListActivity.initializeTabs() -&gt; ObservationListActivity.instantiateItem() -&gt; ObservationListActivity.onClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; initializeTabs() -&gt; new ObservationsPageAdapter() -&gt; ViewPager.setAdapter() -&gt; ObservationListActivity.ObservationsPageAdapter.instantiateItem() -&gt; View.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; ObservationListActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="408" end="408"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1357" end="1357"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1357" end="1358"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="988" end="988"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1064" end="1064"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1043" end="1043"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="1047" end="1051"/>
     </callLines>
@@ -986,14 +993,17 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationListActivity" destination="org.inaturalist.android.OnboardingActivity" method="">
-    <comment>ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onDrawerCreate() -&gt; BaseFragmentActivity.buildSideMenu() -&gt; BaseFragmentActivity.setOnClickListener() -&gt; BaseFragmentActivity.onClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; ObservationListActivity extends BaseFragmentActivity -&gt; BaseFragmentActivity.onDrawerCreate() -&gt; buildSideMenu() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; BaseFragmentActivity.startActivityIfNew() -&gt; startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationListActivity.java" start="68" end="68"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="156" end="156"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="178" end="178"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="182" end="182"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="443" end="443"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="453" end="453"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -1001,7 +1011,7 @@
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
-        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+        <sensitivityScope flow="false" path="false" context="true" object="false" field="false"/>
       </analyzeScope>
     </tags>
   </OracleEdge>
@@ -1118,7 +1128,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.DataQualityAssessment" method="">
-    <comment>ObservationViewerActivity.onOptionsItemSelected() -&gt; ObservationViewerActivity.refreshDataQuality() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>ObservationViewerActivity.onOptionsItemSelected() -&gt; refreshDataQuality() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1933" end="1933"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1484" end="1484"/>
@@ -1139,15 +1149,17 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>*ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.refreshAttributes() -&gt; ObservationViewerActivity.setAdapter() -&gt; ObservationViewerActivity.onDeleteAnnotationValue() </comment>
+    <comment>ObservationViewerActivity.onCreate() -&gt; refreshAttributes() -&gt; new AnnotationsAdapter() -&gt; ListView.setAdapter() -&gt; AnnotationsAdapter.getView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; OnAnnotationActions.onAnnotationVoteDelete() -&gt; ObservationViewerActivity implements AnnotationsAdapter.OnAnnotationActions -&gt; ObservationViewerActivity.onAnnotationVoteDelete() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="452" end="452"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/AnnotationsAdapter.java" start="52" end="52"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="2292" end="2292"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="261" end="263"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/AnnotationsAdapter.java" start="225" end="225"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/AnnotationsAdapter.java" start="460" end="460"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/AnnotationsAdapter.java" start="467" end="467"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="282" end="284"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -1160,11 +1172,12 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.IdentificationActivity" method="">
-    <comment>*ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.refreshAttributes() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>ObservationViewerActivity.onCreate() -&gt; refreshActivity() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivityForResult()</comment>
     <callLines>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="452" end="452"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="603" end="603"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="829" end="829"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1059" end="1059"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1062" end="1062"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1062" end="1068"/>
       <line src="//iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1088" end="1088"/>
     </callLines>
     <tags>
@@ -1181,7 +1194,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.LocationDetailsActivity" method="">
-    <comment>*ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.setupMap() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>ObservationViewerActivity.onResume() -&gt; setupMap() -&gt; GoogleMap.setOnClickListener() -&gt; *GoogleMap.OnMapClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="449" end="449"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1193" end="1193"/>
@@ -1201,7 +1214,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.ObservationEditor" method="">
-    <comment>*ObservationViewerActivity.onOptionsItemSelected() </comment>
+    <comment>*ObservationViewerActivity.onOptionsItemSelected() -&gt; startActivityForResult()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1926" end="1929"/>
     </callLines>
@@ -1219,7 +1232,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.ObservationPhotosViewer" method="">
-    <comment>*ObservationViewerActivity.onCreate() -&gt; ObservationViewerActivity.reloadPhotos() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>*ObservationViewerActivity.onCreate() -&gt; reloadPhotos() -&gt; new PhotosViewPagerAdapter() -&gt; ViewPager.setAdapter() -&gt; ObservationViewerActivity.instantiateItem() -&gt; ImageView.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="606" end="606"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="2259" end="2261"/>
@@ -1232,7 +1245,7 @@
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
-        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false"/>
         <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="false"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
@@ -1240,7 +1253,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.ObservationProjectsViewer" method="">
-    <comment>*ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.loadObservationIntoUI() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>*ObservationViewerActivity.onResume() -&gt; loadObservationIntoUI() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="446" end="446"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1770" end="1770"/>
@@ -1260,8 +1273,9 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.OnboardingActivity" method="">
-    <comment>ObservationViewerActivity.onCreate() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>ObservationViewerActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivityForResult()</comment>
     <callLines>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="591" end="591"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="586" end="586"/>
     </callLines>
     <tags>
@@ -1278,7 +1292,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.TaxonActivity" method="">
-    <comment>*ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.loadObservationIntoUI() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>*ObservationViewerActivity.onResume() -&gt; loadObservationIntoUI() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="446" end="446"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1647" end="1647"/>
@@ -1298,9 +1312,10 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ObservationViewerActivity" destination="org.inaturalist.android.UserProfile" method="">
-    <comment>*ObservationViewerActivity.onOptionsItemSelected() -&gt; ObservationViewerActivity.refreshDataQuality() -&gt; ObservationViewerActivity.setOnClickListener() -&gt; ObservationViewerActivity.onClick() </comment>
+    <comment>ObservationViewerActivity.onResume() -&gt; ObservationViewerActivity.refreshDataQuality() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ObservationViewerActivity.startActivity()</comment>
     <callLines>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1933" end="1933"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="447" end="447"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1579" end="1579"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1569" end="1569"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ObservationViewerActivity.java" start="1573" end="1575"/>
     </callLines>
@@ -1318,7 +1333,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.OnboardingActivity" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>*OnboardingActivity.onActivityResult() </comment>
+    <comment>*OnboardingActivity.onActivityResult() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/OnboardingActivity.java" start="232" end="233"/>
     </callLines>
@@ -1336,7 +1351,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.OnboardingActivity" destination="org.inaturalist.android.LoginSignupActivity" method="">
-    <comment>OnboardingActivity.onCreate() -&gt; OnboardingActivity.setOnClickListener() -&gt; *OnboardingActivity.onClick() </comment>
+    <comment>OnboardingActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; OnboardingActivity.startActivityForResult()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/OnboardingActivity.java" start="102" end="102"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/OnboardingActivity.java" start="107" end="110"/>
@@ -1355,7 +1370,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProfileEditor" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>*ProfileEditor.onOptionsItemSelected()</comment>
+    <comment>*ProfileEditor.onOptionsItemSelected() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProfileEditor.java" start="96" end="96"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProfileEditor.java" start="151" end="151"/>
@@ -1374,7 +1389,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProfileEditor" destination="org.inaturalist.android.UserProfile" method="">
-    <comment>OnboardingActivity.onCreate() -&gt; OnboardingActivity.setOnClickListener() -&gt; *OnboardingActivity.onClick() </comment>
+    <comment>ProfileEditor.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ProfileEditor.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProfileEditor.java" start="241" end="241"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProfileEditor.java" start="246" end="250"/>
@@ -1393,7 +1408,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectDetails" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>OnboardingActivity.onResume() -&gt; OnboardingActivity.getProjectDetails() </comment>
+    <comment>OnboardingActivity.onResume() -&gt; getProjectDetails() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="333" end="333"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="480" end="482"/>
@@ -1412,11 +1427,11 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectDetails" destination="org.inaturalist.android.ObservationViewerActivity" method="">
-    <comment>ProjectDetails.onCreate() -&gt; ProjectDetails.initializeTabs() -&gt; ProjectDetails.instantiateItem() -&gt; ProjectDetails.onItemClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; initializeTabs() -&gt; new ProjectDetailsPageAdapter() -&gt; ViewPager.setAdapter() -&gt; ObservationListActivity.ProjectDetailsPageAdapter.instantiateItem() -&gt; Button.setOnClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; ProjectDetails.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="174" end="174"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="366" end="366"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="719" end="719"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="366" end="367"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="733" end="733"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="802" end="806"/>
     </callLines>
     <tags>
@@ -1433,7 +1448,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectDetails" destination="org.inaturalist.android.ProjectDetailsAbout" method="">
-    <comment>ProjectDetails.onCreate() -&gt; ProjectDetails.setOnClickListener() -&gt; *ProjectDetails.onClick() </comment>
+    <comment>ProjectDetails.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ProjectDetails.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="197" end="197"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="200" end="202"/>
@@ -1452,7 +1467,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectDetails" destination="org.inaturalist.android.ProjectNews" method="">
-    <comment>ProjectDetails.onCreate() -&gt; ProjectDetails.setOnClickListener() -&gt; *ProjectDetails.onClick() </comment>
+    <comment>ProjectDetails.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ProjectDetails.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="188" end="188"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="190" end="193"/>
@@ -1471,10 +1486,10 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectDetails" destination="org.inaturalist.android.TaxonActivity" method="">
-    <comment>ProjectDetails.onCreate() -&gt; ProjectDetails.initializeTabs() -&gt; ProjectDetails.instantiateItem() -&gt; ProjectDetails.onItemClick() </comment>
+    <comment>ObservationListActivity.onCreate() -&gt; initializeTabs() -&gt; new ProjectDetailsPageAdapter() -&gt; ViewPager.setAdapter() -&gt; ObservationListActivity.ProjectDetailsPageAdapter.instantiateItem() -&gt; Button.setOnClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; ProjectDetails.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="174" end="174"/>
-      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="366" end="366"/>
+      <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="366" end="367"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="733" end="733"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectDetails.java" start="784" end="787"/>
     </callLines>
@@ -1492,7 +1507,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectNews" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>ProjectDetails.onResume() </comment>
+    <comment>*ProjectNews.onResume() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectNews.java" start="183" end="189"/>
     </callLines>
@@ -1510,7 +1525,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectNews" destination="org.inaturalist.android.NewsArticle" method="">
-    <comment>ProjectNews.onCreate() -&gt; ProjectNews.onItemClick()</comment>
+    <comment>ProjectNews.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; ProjectNews.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectNews.java" start="102" end="102"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectNews.java" start="120" end="123"/>
@@ -1529,7 +1544,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectSelectorActivity" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>ProjectDetails.onResume() </comment>
+    <comment>*ProjectSelectorActivity.onResume() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectSelectorActivity.java" start="354" end="355"/>
     </callLines>
@@ -1593,7 +1608,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectsActivity" destination="org.inaturalist.android.INaturalistService" method="">
-    <comment>ProjectsActivityextends BaseFragmentActivity -&gt; *BaseFragmentActivity.onResume() -&gt; BaseFragmentActivity.refreshUserDetails() -</comment>
+    <comment>ProjectsActivity extends BaseFragmentActivity -&gt; *BaseFragmentActivity.onResume() -&gt; refreshUserDetails() -&gt; ContextCompat.startForegroundService()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectsActivity.java" start="29" end="29"/>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/BaseFragmentActivity.java" start="519" end="519"/>
@@ -1613,7 +1628,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.ProjectsActivity" destination="org.inaturalist.android.ItemSearchActivity" method="">
-    <comment>ProjectDetails.onOptionsItemSelected()</comment>
+    <comment>*ProjectsActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/ProjectsActivity.java" start="188" end="193"/>
     </callLines>
@@ -1654,7 +1669,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.SettingsActivity" destination="org.inaturalist.android.About" method="">
-    <comment>SettingsActivity.onCreate() -&gt; settings.xml -&gt; SettingsFragment.onCreate() -&gt; *SettingsActivity.setOnPreferenceClickListener() -&gt; SettingsActivity.onPreferenceClick() -&gt; </comment>
+    <comment>SettingsActivity.onCreate() -&gt; setContentView() -&gt; R.layout.settings.fragment -&gt; SettingsFragment.onCreate() -&gt; refreshSettings() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; SettingsFragment.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/SettingsActivity.java" start="28" end="28"/>
       <line src="/iNaturalist/src/main/res/layout/settings.xml" start="6" end="6"/>
@@ -1663,7 +1678,7 @@
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/SettingsFragment.java" start="280" end="281"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>
@@ -1722,7 +1737,7 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="org.inaturalist.android.SettingsActivity" destination="org.inaturalist.android.NetworkSettings" method="">
-    <comment>SettingsActivity.onCreate() -&gt; settings.xml -&gt; SettingsFragment.onCreate() -&gt; *SettingsActivity.setOnPreferenceClickListener() -&gt; SettingsActivity.onPreferenceClick() -&gt; </comment>
+    <comment>SettingsActivity.onCreate() -&gt; setContentView() -&gt; R.layout.settings.fragment -&gt; SettingsFragment.onCreate() -&gt; refreshSettings() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; SettingsFragment.startActivity()</comment>
     <callLines>
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/SettingsActivity.java" start="28" end="28"/>
       <line src="/iNaturalist/src/main/res/layout/settings.xml" start="6" end="6"/>
@@ -1731,7 +1746,7 @@
       <line src="/iNaturalist/src/main/java/org/inaturalist/android/SettingsFragment.java" start="312" end="313"/>
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false"/>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true"/>
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
       <intentMatch isExplicit="true" isImplicit="false"/>
       <analyzeScope>

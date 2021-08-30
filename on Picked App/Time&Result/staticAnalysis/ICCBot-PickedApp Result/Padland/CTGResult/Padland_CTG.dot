@@ -1,0 +1,45 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+NewPadActivity[color = red];
+PadLandDataActivity[color = red];
+SplashActivity[style=filled, fillcolor=orange, color = red];
+SettingsActivity[color = red];
+PadViewActivity[style=filled, fillcolor=pink, color = red];
+PadInfoActivity[color = red];
+IntroActivity[color = red];
+PadListActivity[style=filled, fillcolor=pink, color = red];
+About[color = red];
+ServerListActivity[color = red];
+NewPadActivity->PadViewActivity;
+NewPadActivity->SettingsActivity;
+PadLandDataActivity->SettingsActivity;
+PadLandDataActivity->PadListActivity;
+SplashActivity->PadListActivity;
+SplashActivity->IntroActivity;
+SplashActivity->SettingsActivity;
+SettingsActivity->SettingsActivity;
+PadViewActivity->PadListActivity;
+PadViewActivity->SettingsActivity;
+PadInfoActivity->PadListActivity;
+PadInfoActivity->PadViewActivity;
+PadInfoActivity->SettingsActivity;
+IntroActivity->PadListActivity;
+PadListActivity->PadViewActivity;
+PadListActivity->PadInfoActivity;
+PadListActivity->PadListActivity;
+PadListActivity->SettingsActivity;
+PadListActivity->NewPadActivity;
+About->SettingsActivity;
+ServerListActivity->SettingsActivity;
+ServerListActivity->PadListActivity;
+}

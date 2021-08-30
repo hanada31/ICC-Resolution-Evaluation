@@ -1,0 +1,44 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+IconPackApplyActivity[color = red];
+InvisibleActivityAlt[color = red];
+SelectAppActivityDark[color = red];
+ContextMenuActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+InvisibleActivity[color = red];
+StartTaskbarActivity[color = red];
+SelectAppActivity[color = red];
+DashboardActivity[color = red];
+IconPackActivity[color = red];
+DashboardActivityDark[color = red];
+ClearDataActivityDark[color = red];
+KeyboardShortcutActivity[color = red];
+ClearDataActivity[color = red];
+IconPackActivityDark[color = red];
+ShortcutActivity[color = red];
+InvisibleActivityFreeform[color = red];
+DummyActivity[color = red];
+ContextMenuActivityDark[color = red];
+InvisibleActivityAltDark[color = red];
+ImportSettingsActivity[color = red];
+HomeActivity[color = red];
+
+ MainActivity -> ImportSettingsActivity
+ DummyActivity -> ContextMenuActivity
+ DummyActivity -> SelectAppActivity
+ DummyActivity -> ContextMenuActivityDark
+ DummyActivity -> DummyActivity
+ DummyActivity -> StartTaskbarActivity
+ DummyActivity -> SelectAppActivityDark
+ DummyActivity -> ShortcutActivity
+}

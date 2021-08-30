@@ -1,0 +1,54 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+SharingActivity[color = red];
+CamerasActivity[color = red];
+VideoActivity[style=filled, fillcolor=pink, color = red];
+IntercomHelpCenterActivity[color = red];
+PublicCamerasWebActivity[color = red];
+LightBoxActivity[color = red];
+AddCameraActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+IntercomSheetActivity[color = red];
+SimpleWebActivity[color = red];
+ScanActivity[color = red];
+EditCameraLocationActivity[color = red];
+ManageAccountsActivity[color = red];
+EditCameraActivity[color = red];
+OnBoardingActivity[color = red];
+IntercomPostActivity[color = red];
+IntercomMessengerActivity[color = red];
+RecordingWebActivity[color = red];
+DeepLinkedActivity[style=filled, fillcolor=pink, color = red];
+SignUpActivity[color = red];
+CameraPrefsActivity[color = red];
+ViewCameraActivity[color = red];
+LoginActivity[color = red];
+IntercomNoteActivity[color = red];
+AllDevicesActivity[color = red];
+CreateShareActivity[color = red];
+IntercomArticleActivity[color = red];
+ReleaseNotesActivity[color = red];
+GalleryInputFullScreenActivity[color = red];
+IntercomVideoActivity[color = red];
+ViewPagerActivity[color = red];
+GalleryLightBoxActivity[color = red];
+CameraListSyncService[style=filled, fillcolor=pink, color = royalblue];
+AppIndexingService[style=filled, fillcolor=pink, color = royalblue];
+IntercomFcmMessengerService[style=filled, fillcolor=pink, color = royalblue];
+EvercamAuthenticatorService[style=filled, fillcolor=pink, color = royalblue];
+IntercomPushBroadcastReceiver[color = peru];
+CrashlyticsInitProvider[color = violet];
+PicassoProvider[color = violet];
+DummyProvider[color = violet];
+IntercomInitializeContentProvider[color = violet];
+}

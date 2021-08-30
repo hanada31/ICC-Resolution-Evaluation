@@ -1,0 +1,75 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+TaskListActivity[style=filled, fillcolor=orange, color = red];
+ShortcutActivity[color = red];
+DeleteCompletedActivity[color = red];
+ExportTaskActivity[color = red];
+DeleteAllCalendarEventsActivity[color = red];
+UpgradeActivity[color = red];
+ImportTaskActivity[color = red];
+SnoozeActivity[color = red];
+BasicPreferences[color = red];
+ClearAllDataActivity[color = red];
+MissedCallActivity[color = red];
+DefaultsPreferences[color = red];
+TimePickerActivity[color = red];
+PurgeDeletedActivity[color = red];
+AppearancePreferences[color = red];
+TagSettingsActivity[color = red];
+DateShortcutPreferences[color = red];
+FileExplore[color = red];
+DeleteCompletedEventsActivity[color = red];
+NotificationActivity[color = red];
+DonationActivity[color = red];
+AddAttachmentActivity[color = red];
+AACRecordingActivity[color = red];
+MiscellaneousPreferences[color = red];
+BeastModePreferences[color = red];
+FilterShortcutActivity[color = red];
+DateAndTimePickerActivity[color = red];
+CameraActivity[color = red];
+CalendarSelectionActivity[color = red];
+TaskEditActivity[color = red];
+FilterSelectionActivity[color = red];
+OldTaskPreferences[color = red];
+CalendarReminderActivity[color = red];
+ResetPreferencesActivity[color = red];
+WidgetConfigActivity[color = red];
+FilterSettingsActivity[color = red];
+CustomFilterActivity[color = red];
+BackupPreferences[color = red];
+HelpAndFeedbackActivity[color = red];
+SortActivity[color = red];
+ShareLinkActivity[color = red];
+VoiceCommandActivity[color = red];
+CalendarAlarmListCreator[color = red];
+ReminderPreferences[color = red];
+
+ TaskListActivity -> UpgradeActivity
+ TaskListActivity -> FilterSettingsActivity
+ TaskListActivity -> TaskEditActivity
+ TaskListActivity -> SortActivity
+ TaskListActivity -> TagSettingsActivity
+ SnoozeActivity -> UpgradeActivity
+ TaskEditActivity -> UpgradeActivity
+ OldTaskPreferences -> UpgradeActivity
+ CalendarReminderActivity -> CalendarAlarmListCreator
+ CalendarReminderActivity -> UpgradeActivity
+ CalendarReminderActivity -> BasicPreferences
+ ShareLinkActivity -> FilterSettingsActivity
+ ShareLinkActivity -> TaskEditActivity
+ ShareLinkActivity -> TagSettingsActivity
+ ShareLinkActivity -> UpgradeActivity
+ ShareLinkActivity -> SortActivity
+ CalendarAlarmListCreator -> BasicPreferences
+}

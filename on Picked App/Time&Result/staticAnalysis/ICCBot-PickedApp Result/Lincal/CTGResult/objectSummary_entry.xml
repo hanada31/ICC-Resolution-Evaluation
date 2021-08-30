@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="felixwiemuth.lincal.NotificationService">
+    <singleIntent>
+      <method method="void runWithCalendar(android.content.Context,int)" methodtrace="void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.AddCalendarActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="interICC_android.intent.action.OPEN_DOCUMENT, android.intent.category.OPENAB"/>
+      <sender action="android.intent.action.OPEN_DOCUMENT" category="android.intent.category.OPENABLE" type="*/*"/>
+      <nodes>
+        <node method="AddCalendarActivity$1 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="AddCalendarActivity$1 onClick" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.OPEN_DOCUMENT&quot;)"/>
+        <node method="AddCalendarActivity$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;android.intent.category.OPENABLE&quot;)"/>
+        <node method="AddCalendarActivity$1 onClick" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;*/*&quot;)"/>
+        <node method="AddCalendarActivity$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;felixwiemuth.lincal.ui.AddCalendarActivity: void startActivityForResult(android.content.Intent,int)&gt;(r2, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.CalendarListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <nodes>
+        <node method="CalendarListActivity$1 onClick" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="CalendarListActivity$1 onClick" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lfelixwiemuth/lincal/ui/AddCalendarActivity;&quot;)"/>
+        <node method="CalendarListActivity$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;felixwiemuth.lincal.ui.CalendarListActivity: void startActivityForResult(android.content.Intent,int)&gt;($r3, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.NotificationService">
+    <singleIntent>
+      <method method="void sendNotification(felixwiemuth.lincal.data.CEntry,int,felixwiemuth.lincal.data.LinCalConfig)" methodtrace="void sendNotification(felixwiemuth.lincal.data.CEntry,int,felixwiemuth.lincal.data.LinCalConfig)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService sendNotification" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NotificationService sendNotification" type="pendingIntentCreation" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, r3, 1073741824)"/>
+        <node method="NotificationService sendNotification" type="sendOutWrapperredIntent" unit="$r7 = virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.CalendarListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarViewActivity"/>
+      <sender extras="int-felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS"/>
+      <nodes>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="CreateMethod" unit="r4 = new android.content.Intent"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r10, class &quot;Lfelixwiemuth/lincal/ui/CalendarViewActivity;&quot;)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetIntentExtra" unit="virtualinvoke r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS&quot;, $i0)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;felixwiemuth.lincal.ui.CalendarListActivity: void startActivityForResult(android.content.Intent,int)&gt;(r4, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.NotificationService">
+    <singleIntent>
+      <method method="java.util.Calendar processCalendar(felixwiemuth.lincal.data.LinCal,felixwiemuth.lincal.data.LinCalConfig,java.util.Calendar)" methodtrace="void sendNotification(felixwiemuth.lincal.data.CEntry,int,felixwiemuth.lincal.data.LinCalConfig)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService sendNotification" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NotificationService sendNotification" type="pendingIntentCreation" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, r3, 1073741824)"/>
+        <node method="NotificationService sendNotification" type="sendOutWrapperredIntent" unit="$r7 = virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.CalendarViewActivity">
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean onOptionsItemSelected(android.view.MenuItem)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarViewActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <nodes>
+        <node method="CalendarViewActivity onOptionsItemSelected" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="CalendarViewActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/ui/CalendarListActivity;&quot;)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean onOptionsItemSelected(android.view.MenuItem)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarViewActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.SettingsActivity"/>
+      <nodes>
+        <node method="LinCalMenuAppCompatActivity onOptionsItemSelected" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="LinCalMenuAppCompatActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/ui/SettingsActivity;&quot;)"/>
+        <node method="LinCalMenuAppCompatActivity onOptionsItemSelected" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.acra.dialog.CrashReportDialog">
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void sendCrash(java.lang.String,java.lang.String)
+&lt;org.acra.sender.SenderServiceStarter: void startService(boolean,boolean)&gt; --- virtualinvoke r3.&lt;org.acra.sender.SenderServiceStarter: void startService(boolean,boolean)&gt;(0, 1)
+void startService(boolean,boolean)"/>
+      <source name="org.acra.dialog.CrashReportDialog"/>
+      <destinition name="org.acra.sender.SenderService"/>
+      <sender extras="boolean-approveReportsFirst,boolean-onlySendSilentReports,Serializable@-acraConfig:new org.acra.config.ACRAConfiguration"/>
+      <nodes>
+        <node method="SenderServiceStarter startService" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="SenderServiceStarter startService" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/acra/sender/SenderService;&quot;)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;onlySendSilentReports&quot;, $z0)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;approveReportsFirst&quot;, $z1)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.io.Serializable)&gt;(&quot;acraConfig&quot;, $r5)"/>
+        <node method="SenderServiceStarter startService" type="SendIntent2ICC" unit="virtualinvoke $r4.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void sendCrash(java.lang.String,java.lang.String)
+&lt;org.acra.sender.SenderServiceStarter: void startService(boolean,boolean)&gt; --- virtualinvoke r3.&lt;org.acra.sender.SenderServiceStarter: void startService(boolean,boolean)&gt;(0, 1)
+void startService(boolean,boolean)"/>
+      <source name="org.acra.dialog.CrashReportDialog"/>
+      <destinition name="org.acra.sender.SenderService"/>
+      <sender extras="boolean-approveReportsFirst:1,boolean-onlySendSilentReports:0,Serializable@-acraConfig:new org.acra.config.ACRAConfiguration"/>
+      <nodes>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;onlySendSilentReports&quot;, $z0)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;approveReportsFirst&quot;, $z1)"/>
+        <node method="SenderServiceStarter startService" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="SenderServiceStarter startService" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/acra/sender/SenderService;&quot;)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;onlySendSilentReports&quot;, $z0)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;approveReportsFirst&quot;, $z1)"/>
+        <node method="SenderServiceStarter startService" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.io.Serializable)&gt;(&quot;acraConfig&quot;, $r5)"/>
+        <node method="SenderServiceStarter startService" type="SendIntent2ICC" unit="virtualinvoke $r4.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.LinCalBroadcastReceiver">
+    <singleIntent>
+      <method method="void onReceive(android.content.Context,android.content.Intent)" methodtrace="void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="felixwiemuth.lincal.LinCalBroadcastReceiver"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="LinCalBroadcastReceiver onReceive" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="LinCalBroadcastReceiver onReceive" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="LinCalBroadcastReceiver onReceive" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.CalendarListActivity">
+    <singleIntent>
+      <method method="void onBindViewHolder(felixwiemuth.lincal.ui.CalendarListActivity$SimpleItemRecyclerViewAdapter$ViewHolder,int)" methodtrace="void onClick(android.view.View)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarViewActivity"/>
+      <sender extras="int-felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS"/>
+      <nodes>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="CreateMethod" unit="r4 = new android.content.Intent"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r10, class &quot;Lfelixwiemuth/lincal/ui/CalendarViewActivity;&quot;)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetIntentExtra" unit="virtualinvoke r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS&quot;, $i0)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;felixwiemuth.lincal.ui.CalendarListActivity: void startActivityForResult(android.content.Intent,int)&gt;(r4, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.CalendarListActivity">
+    <singleIntent>
+      <method method="void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int)" methodtrace="void onClick(android.view.View)"/>
+      <source name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarViewActivity"/>
+      <sender extras="int-felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS"/>
+      <nodes>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="CreateMethod" unit="r4 = new android.content.Intent"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r10, class &quot;Lfelixwiemuth/lincal/ui/CalendarViewActivity;&quot;)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SetIntentExtra" unit="virtualinvoke r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.CalendarListActivity.EXTRA_ARG_CALENDAR_POS&quot;, $i0)"/>
+        <node method="CalendarListActivity$SimpleItemRecyclerViewAdapter$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;felixwiemuth.lincal.ui.CalendarListActivity: void startActivityForResult(android.content.Intent,int)&gt;(r4, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.ui.AddCalendarActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID:new int"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID:new felixwiemuth.lincal.data.LinCalConfig"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID:new felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <sender extras="int-felixwiemuth.lincal.NotificationService.CALENDAR_ID"/>
+      <nodes>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="NotificationService runWithCalendar" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService runWithCalendar" type="SetIntentExtra" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;(&quot;felixwiemuth.lincal.NotificationService.CALENDAR_ID&quot;, $i0)"/>
+        <node method="NotificationService runWithCalendar" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt; --- staticinvoke &lt;felixwiemuth.lincal.Calendars: void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)&gt;(r2, $r3, $r11)
+void addCalendarChecked(felixwiemuth.lincal.data.LinCalConfig,android.content.Context,java.lang.Runnable)
+&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt; --- virtualinvoke $r4.&lt;felixwiemuth.lincal.Calendars: int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)&gt;($r1, $r0)
+int addCalendar(android.content.Context,felixwiemuth.lincal.data.LinCalConfig)
+&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt; --- staticinvoke &lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;($r1, $i0)
+void runWithCalendar(android.content.Context,int)"/>
+      <source name="felixwiemuth.lincal.ui.AddCalendarActivity"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <nodes>
+        <node method="Util showErrorDialog" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="Util showErrorDialog" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lfelixwiemuth/lincal/ui/CalendarListActivity;&quot;)"/>
+        <node method="Util showErrorDialog" type="pendingIntentCreation" unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;($r1, 0, r3, 1073741824)"/>
+        <node method="Util showErrorDialog" type="sendOutWrapperredIntent" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="felixwiemuth.lincal.NotificationService">
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService onHandleIntent" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="NotificationService onHandleIntent" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService onHandleIntent" type="pendingIntentCreation" unit="$r10 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService onHandleIntent" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="NotificationService onHandleIntent" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService onHandleIntent" type="pendingIntentCreation" unit="$r10 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+        <node method="NotificationService onHandleIntent" type="sendOutWrapperredIntent" unit="virtualinvoke r9.&lt;android.app.AlarmManager: void setExact(int,long,android.app.PendingIntent)&gt;(0, $l2, $r10)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void sendNotification(felixwiemuth.lincal.data.CEntry,int,felixwiemuth.lincal.data.LinCalConfig)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService sendNotification" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="NotificationService sendNotification" type="pendingIntentCreation" unit="$r6 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, r3, 1073741824)"/>
+        <node method="NotificationService sendNotification" type="sendOutWrapperredIntent" unit="$r7 = virtualinvoke $r7.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService onHandleIntent" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="NotificationService onHandleIntent" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService onHandleIntent" type="pendingIntentCreation" unit="$r10 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.NotificationService"/>
+      <nodes>
+        <node method="NotificationService onHandleIntent" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="NotificationService onHandleIntent" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lfelixwiemuth/lincal/NotificationService;&quot;)"/>
+        <node method="NotificationService onHandleIntent" type="pendingIntentCreation" unit="$r10 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)&gt;(r0, 0, $r1, 0)"/>
+        <node method="NotificationService onHandleIntent" type="sendOutWrapperredIntent" unit="virtualinvoke r9.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l2, $r10)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void showErrorDialog(int,java.lang.String,boolean,android.content.Context)"/>
+      <source name="felixwiemuth.lincal.NotificationService"/>
+      <destinition name="felixwiemuth.lincal.ui.CalendarListActivity"/>
+      <nodes>
+        <node method="Util showErrorDialog" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="Util showErrorDialog" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lfelixwiemuth/lincal/ui/CalendarListActivity;&quot;)"/>
+        <node method="Util showErrorDialog" type="pendingIntentCreation" unit="$r4 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;($r1, 0, r3, 1073741824)"/>
+        <node method="Util showErrorDialog" type="sendOutWrapperredIntent" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

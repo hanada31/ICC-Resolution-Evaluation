@@ -1,0 +1,34 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+FolderPickerActivity[color = red];
+VersioningDialogActivity[color = red];
+LogActivity[color = red];
+PullOrderDialogActivity[color = red];
+SettingsActivity[color = red];
+ShareActivity[color = red];
+MainActivity[color = red];
+SyncthingService[color = red];
+FolderTypeDialogActivity[color = red];
+WebGuiActivity[color = red];
+DeviceActivity[color = red];
+FolderActivity[color = red];
+FirstStartActivity[style=filled, fillcolor=orange, color = red];
+ThemedAppCompatActivity[color = red];
+
+ ShareActivity -> FolderPickerActivity
+ FolderActivity -> PullOrderDialogActivity
+ FolderActivity -> FolderTypeDialogActivity
+ FolderActivity -> VersioningDialogActivity
+ FolderActivity -> FolderPickerActivity
+ FirstStartActivity -> WebGuiActivity
+}

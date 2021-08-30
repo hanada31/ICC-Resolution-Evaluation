@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="de.tobiasbielefeld.solitaire.ui.GameSelector">
+    <singleIntent>
+      <method method="boolean a(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.settings.Settings"/>
+      <nodes>
+        <node method="GameSelector a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="GameSelector a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lde/tobiasbielefeld/solitaire/ui/settings/Settings;&quot;)"/>
+        <node method="GameSelector a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean a(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.manual.Manual"/>
+      <nodes>
+        <node method="GameSelector a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="GameSelector a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lde/tobiasbielefeld/solitaire/ui/manual/Manual;&quot;)"/>
+        <node method="GameSelector a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean a(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.about.AboutActivity"/>
+      <nodes>
+        <node method="GameSelector a" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="GameSelector a" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lde/tobiasbielefeld/solitaire/ui/about/AboutActivity;&quot;)"/>
+        <node method="GameSelector a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.settings.Settings">
+    <singleIntent>
+      <method method="void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)" methodtrace="void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.settings.Settings"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.settings.Settings"/>
+      <sender flags="FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+      <nodes>
+        <node method="Settings onSharedPreferenceChanged" type="CreateMethod" unit="$r28 = new android.content.Intent"/>
+        <node method="Settings onSharedPreferenceChanged" type="SetAttribute" unit="specialinvoke $r28.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r22, class &quot;Lde/tobiasbielefeld/solitaire/ui/settings/Settings;&quot;)"/>
+        <node method="Settings onSharedPreferenceChanged" type="SetAttribute" unit="virtualinvoke $r13.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(67108864)"/>
+        <node method="Settings onSharedPreferenceChanged" type="SetAttribute" unit="virtualinvoke $r13.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(268435456)"/>
+        <node method="Settings onSharedPreferenceChanged" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void startActivity(android.content.Intent)&gt;($r13)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.GameManager">
+    <singleIntent>
+      <method method="void menuClick(android.view.View)" methodtrace="void menuClick(android.view.View)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameManager"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.settings.Settings"/>
+      <nodes>
+        <node method="GameManager menuClick" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="GameManager menuClick" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lde/tobiasbielefeld/solitaire/ui/settings/Settings;&quot;)"/>
+        <node method="GameManager menuClick" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameManager: void startActivityForResult(android.content.Intent,int)&gt;($r8, 1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void menuClick(android.view.View)" methodtrace="void menuClick(android.view.View)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameManager"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity"/>
+      <nodes>
+        <node method="GameManager menuClick" type="CreateMethod" unit="$r8 = new android.content.Intent"/>
+        <node method="GameManager menuClick" type="SetAttribute" unit="specialinvoke $r8.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r9, class &quot;Lde/tobiasbielefeld/solitaire/ui/statistics/StatisticsActivity;&quot;)"/>
+        <node method="GameManager menuClick" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameManager: void startActivity(android.content.Intent)&gt;($r8)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.GameSelector">
+    <singleIntent>
+      <method method="void a(android.view.View)" methodtrace="void a(android.view.View)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.GameManager"/>
+      <sender extras="int-game"/>
+      <nodes>
+        <node method="GameSelector a" type="CreateMethod" unit="$r11 = new android.content.Intent"/>
+        <node method="GameSelector a" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r12, class &quot;Lde/tobiasbielefeld/solitaire/ui/GameManager;&quot;)"/>
+        <node method="GameSelector a" type="SetIntentExtra" unit="virtualinvoke $r11.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r13, $i0)"/>
+        <node method="GameSelector a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)&gt;($r11, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity">
+    <singleIntent>
+      <method method="void l()" methodtrace="void l()"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity"/>
+      <nodes>
+        <node method="StatisticsActivity l" type="ReceiveIntentFromOutMethod" unit="$r5 = virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity: android.content.Intent getIntent()&gt;()"/>
+        <node method="StatisticsActivity l" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity: void startActivity(android.content.Intent)&gt;($r5)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.GameSelector">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.GameManager"/>
+      <sender extras="int-game"/>
+      <nodes>
+        <node method="GameSelector onCreate" type="CreateMethod" unit="$r9 = new android.content.Intent"/>
+        <node method="GameSelector onCreate" type="SetAttribute" unit="specialinvoke $r9.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r10, class &quot;Lde/tobiasbielefeld/solitaire/ui/GameManager;&quot;)"/>
+        <node method="GameSelector onCreate" type="SetIntentExtra" unit="virtualinvoke $r9.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r11, $i0)"/>
+        <node method="GameSelector onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)&gt;($r9, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="de.tobiasbielefeld.solitaire.ui.GameSelector">
+    <singleIntent>
+      <method method="boolean onTouch(android.view.View,android.view.MotionEvent)" methodtrace="void a(android.view.View)"/>
+      <source name="de.tobiasbielefeld.solitaire.ui.GameSelector"/>
+      <destinition name="de.tobiasbielefeld.solitaire.ui.GameManager"/>
+      <sender extras="int-game"/>
+      <nodes>
+        <node method="GameSelector a" type="CreateMethod" unit="$r11 = new android.content.Intent"/>
+        <node method="GameSelector a" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r12, class &quot;Lde/tobiasbielefeld/solitaire/ui/GameManager;&quot;)"/>
+        <node method="GameSelector a" type="SetIntentExtra" unit="virtualinvoke $r11.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r13, $i0)"/>
+        <node method="GameSelector a" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)&gt;($r11, 0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

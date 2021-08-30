@@ -1,0 +1,788 @@
+{
+    "name": "io.evercam.androidapp",
+    "version": 230,
+    "used_permissions": [
+        "android.permission.READ_CONTACTS",
+        "android.permission.GET_ACCOUNTS",
+        "android.permission.READ_SYNC_SETTINGS",
+        "android.permission.AUTHENTICATE_ACCOUNTS",
+        "android.permission.VIBRATE",
+        "android.permission.READ_PROFILE",
+        "android.permission.MANAGE_DOCUMENTS",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.WRITE_SYNC_SETTINGS",
+        "android.permission.READ_SYNC_STATS",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.WAKE_LOCK",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.MANAGE_ACCOUNTS",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "android.permission.READ_PHONE_STATE",
+        "com.android.launcher.permission.INSTALL_SHORTCUT"
+    ],
+    "components": [
+        {
+            "name": "io.evercam.androidapp.sharing.SharingActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.sync.CameraListSyncService",
+            "kind": 1,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.content.SyncAdapter"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.google.android.gms.analytics.AnalyticsReceiver",
+            "kind": 2,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "com.google.android.gms.analytics.globalConfigResource",
+                    "instruction": {
+                        "statement": "i1 = virtualinvoke r12.<android.os.Bundle: int getInt(java.lang.String)>(r13)",
+                        "class_name": "com.google.android.gms.internal.measurement.zzde",
+                        "method": "<com.google.android.gms.internal.measurement.zzde: void zzac()>",
+                        "id": 22
+                    }
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r5.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>(r13)",
+                        "class_name": "com.google.android.gms.internal.measurement.zzct",
+                        "method": "<com.google.android.gms.internal.measurement.zzct: void onReceive(android.content.Context,android.content.Intent)>",
+                        "id": 26
+                    },
+                    "kind": 1,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "com.google.android.gms.analytics.ANALYTICS_DISPATCH"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "com.google.android.gms.analytics.AnalyticsService"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "io.evercam.androidapp"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.publiccameras.PublicCamerasWebActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.squareup.picasso.PicassoProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "io.evercam.androidapp.sync.DummyProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+            "kind": 2,
+            "exported": true,
+            "permission": "com.google.android.c2dm.permission.SEND",
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.google.android.c2dm.intent.RECEIVE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.addeditcamera.AddCameraActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.auth.api.signin.RevocationBoundService",
+            "kind": 1,
+            "exported": true,
+            "permission": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+        },
+        {
+            "name": "com.google.android.gms.measurement.AppMeasurementReceiver",
+            "kind": 2,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.ScanActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.EditCameraLocationActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.EditCameraActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.AppIndexingService",
+            "kind": 1,
+            "exported": true,
+            "permission": "com.google.android.gms.permission.APPINDEXING",
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.google.firebase.appindexing.UPDATE_INDEX"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.intercom.android.sdk.fcm.IntercomFcmMessengerService",
+            "kind": 1,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 15,
+                            "int_value": [
+                                -400
+                            ]
+                        },
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.google.firebase.INSTANCE_ID_EVENT",
+                                "com.google.firebase.MESSAGING_EVENT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.DeepLinkedActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.BROWSABLE",
+                                "android.intent.category.DEFAULT"
+                            ]
+                        },
+                        {
+                            "kind": 9,
+                            "value": [
+                                "evercam.io"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/gpocam(.*)"
+                            ]
+                        },
+                        {
+                            "kind": 6,
+                            "value": [
+                                "http"
+                            ]
+                        },
+                        {
+                            "kind": 9,
+                            "value": [
+                                "evercam.io"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/gpocam(.*)"
+                            ]
+                        },
+                        {
+                            "kind": 6,
+                            "value": [
+                                "https"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.SignUpActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.firebase.components.ComponentDiscoveryService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.LoginActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomNoteActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.IntercomInitializeContentProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "io.evercam.androidapp.scan.AllDevicesActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.sharing.CreateShareActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomArticleActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.ReleaseNotesActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.measurement.AppMeasurementService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomVideoActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.analytics.AnalyticsJobService",
+            "kind": 1,
+            "exported": false,
+            "permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+            "name": "io.evercam.androidapp.photoview.ViewPagerActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.CamerasActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.video.VideoActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        },
+                        {
+                            "kind": 9,
+                            "value": [
+                                "@2131689593"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "@2131689594(.*)"
+                            ]
+                        },
+                        {
+                            "kind": 6,
+                            "value": [
+                                "@2131689595"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.google.android.gms.common.api.GoogleApiActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "notify_manager",
+                    "instruction": {
+                        "statement": "z0 = virtualinvoke r2.<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>(\"notify_manager\", 1)",
+                        "class_name": "com.google.android.gms.common.api.GoogleApiActivity",
+                        "method": "<com.google.android.gms.common.api.GoogleApiActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 8
+                    }
+                },
+                {
+                    "extra": "pending_intent",
+                    "instruction": {
+                        "statement": "r6 = virtualinvoke r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>(\"pending_intent\")",
+                        "class_name": "com.google.android.gms.common.api.GoogleApiActivity",
+                        "method": "<com.google.android.gms.common.api.GoogleApiActivity: void onCreate(android.os.Bundle)>",
+                        "id": 14
+                    }
+                },
+                {
+                    "extra": "resolution",
+                    "instruction": {
+                        "statement": "i0 = virtualinvoke r3.<android.os.Bundle: int getInt(java.lang.String)>(\"resolution\")",
+                        "class_name": "com.google.android.gms.common.api.GoogleApiActivity",
+                        "method": "<com.google.android.gms.common.api.GoogleApiActivity: void onCreate(android.os.Bundle)>",
+                        "id": 4
+                    }
+                },
+                {
+                    "extra": "error_code",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>(\"error_code\")",
+                        "class_name": "com.google.android.gms.common.api.GoogleApiActivity",
+                        "method": "<com.google.android.gms.common.api.GoogleApiActivity: void onCreate(android.os.Bundle)>",
+                        "id": 16
+                    }
+                }
+            ]
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomHelpCenterActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.lightbox.LightBoxActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "signInAccount",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.content.Intent: android.os.Parcelable getParcelableExtra(java.lang.String)>(r3)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 15
+                    }
+                },
+                {
+                    "extra": "config",
+                    "instruction": {
+                        "statement": "r19 = virtualinvoke r17.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>(r18)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 33
+                    }
+                },
+                {
+                    "extra": "signingInGoogleApiClients",
+                    "instruction": {
+                        "statement": "z7 = virtualinvoke r5.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r32)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 83
+                    }
+                },
+                {
+                    "extra": "signInResultCode",
+                    "instruction": {
+                        "statement": "i9 = virtualinvoke r5.<android.os.Bundle: int getInt(java.lang.String)>(r33)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 88
+                    }
+                },
+                {
+                    "extra": "signInResultData",
+                    "instruction": {
+                        "statement": "r35 = virtualinvoke r5.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>(r34)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 91
+                    }
+                },
+                {
+                    "extra": "config",
+                    "instruction": {
+                        "statement": "r17 = virtualinvoke r6.<android.content.Intent: android.os.Bundle getBundleExtra(java.lang.String)>(r16)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 31
+                    }
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void startActivityForResult(android.content.Intent,int)>(r24, c7)",
+                        "class_name": "com.google.android.gms.auth.api.signin.internal.SignInHubActivity",
+                        "method": "<com.google.android.gms.auth.api.signin.internal.SignInHubActivity: void onCreate(android.os.Bundle)>",
+                        "id": 72
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "config"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "io.evercam.androidapp"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "config"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "com.google.android.gms"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.google.android.gms.analytics.AnalyticsService",
+            "kind": 1,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "com.google.android.gms.analytics.globalConfigResource",
+                    "instruction": {
+                        "statement": "i1 = virtualinvoke r12.<android.os.Bundle: int getInt(java.lang.String)>(r13)",
+                        "class_name": "com.google.android.gms.internal.measurement.zzde",
+                        "method": "<com.google.android.gms.internal.measurement.zzde: void zzac()>",
+                        "id": 22
+                    }
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomSheetActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.SimpleWebActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.ManageAccountsActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.firebase.iid.FirebaseInstanceIdService",
+            "kind": 1,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 15,
+                            "int_value": [
+                                -500
+                            ]
+                        },
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.google.firebase.INSTANCE_ID_EVENT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.crashlytics.android.CrashlyticsInitProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": "",
+            "extras": [
+                {
+                    "extra": "firebase_crashlytics_collection_enabled",
+                    "instruction": {
+                        "statement": "z1 = virtualinvoke r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>(r10, z0)",
+                        "class_name": "com.crashlytics.android.ManifestEnabledCheckStrategy",
+                        "method": "<com.crashlytics.android.ManifestEnabledCheckStrategy: boolean isCrashlyticsEnabled(android.content.Context)>",
+                        "id": 13
+                    }
+                }
+            ]
+        },
+        {
+            "name": "com.google.firebase.messaging.FirebaseMessagingService",
+            "kind": 1,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 15,
+                            "int_value": [
+                                -500
+                            ]
+                        },
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.google.firebase.MESSAGING_EVENT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.evercam.androidapp.OnBoardingActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomPostActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver",
+            "kind": 2,
+            "exported": true,
+            "permission": "android.permission.INSTALL_PACKAGES",
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "com.android.vending.INSTALL_REFERRER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.google.firebase.provider.FirebaseInitProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "io.intercom.android.sdk.activities.IntercomMessengerActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.recordings.RecordingWebActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.CameraPrefsActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.ViewCameraActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "io.evercam.androidapp.authentication.EvercamAuthenticatorService",
+            "kind": 1,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.accounts.AccountAuthenticator"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "io.intercom.android.sdk.push.IntercomPushBroadcastReceiver",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "io.intercom.android.sdk.INTERCOM_PUSH_OPENED"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.intercom.input.gallery.GalleryInputFullScreenActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.google.android.gms.measurement.AppMeasurementJobService",
+            "kind": 1,
+            "exported": false,
+            "permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+            "name": "com.intercom.input.gallery.GalleryLightBoxActivity",
+            "kind": 0,
+            "exported": false
+        }
+    ],
+    "analysis_start": 1618474012,
+    "analysis_end": 1618474039
+}

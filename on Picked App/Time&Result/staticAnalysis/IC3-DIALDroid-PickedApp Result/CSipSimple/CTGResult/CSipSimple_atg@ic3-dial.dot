@@ -1,0 +1,47 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+MainPrefs[style=filled, fillcolor=pink, color = red];
+PrefsFast[style=filled, fillcolor=pink, color = red];
+ShortcutWidgetConfigure[style=filled, fillcolor=pink, color = red];
+EditFilter[color = red];
+BasePrefsWizard[color = red];
+SipHome[style=filled, fillcolor=orange, color = red];
+WizardChooser[color = red];
+PickupSipUri[color = red];
+CallLogDetailsActivity[color = red];
+MainPrefs[style=filled, fillcolor=pink, color = red];
+PrefsLoaderActivity[color = red];
+Codecs[color = red];
+AccountFilters[color = red];
+InCallMediaControl[color = red];
+AudioTester[color = red];
+PrefsFilters[color = red];
+AccountWidgetConfigure[style=filled, fillcolor=pink, color = red];
+MessageActivity[color = red];
+OutgoingCallChooser[style=filled, fillcolor=pink, color = red];
+InCallActivity[style=filled, fillcolor=pink, color = red];
+AccountsEditList[color = red];
+AccountEdit[color = red];
+MondotalkCreate[color = red];
+Downloader[color = royalblue];
+SipService[style=filled, fillcolor=pink, color = royalblue];
+ReceiverSilk[style=filled, fillcolor=pink, color = peru];
+HeadsetButtonReceiver[color = peru];
+CallHandler[style=filled, fillcolor=pink, color = peru];
+OutgoingCall[style=filled, fillcolor=pink, color = peru];
+DeviceStateReceiver[style=filled, fillcolor=pink, color = peru];
+ShortcutWidgetProvider[style=filled, fillcolor=pink, color = peru];
+AccountWidgetProvider[style=filled, fillcolor=pink, color = peru];
+DBProvider[color = violet];
+PreferenceProvider[color = violet];
+}

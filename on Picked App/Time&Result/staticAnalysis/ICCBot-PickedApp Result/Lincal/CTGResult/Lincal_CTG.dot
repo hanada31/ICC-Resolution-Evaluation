@@ -1,0 +1,37 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+SettingsActivity[color = red];
+AddCalendarActivity[style=filled, fillcolor=pink, color = red];
+CrashReportDialog[color = red];
+CalendarListActivity[style=filled, fillcolor=orange, color = red];
+CalendarViewActivity[color = red];
+NotificationService[color = royalblue];
+SenderService[color = royalblue];
+LinCalBroadcastReceiver[style=filled, fillcolor=pink, color = peru];
+SettingsActivity->SettingsActivity;
+LinCalBroadcastReceiver->NotificationService;
+AddCalendarActivity->NotificationService;
+AddCalendarActivity->SettingsActivity;
+AddCalendarActivity->CalendarListActivity;
+NotificationService->CalendarListActivity;
+NotificationService->NotificationService;
+CrashReportDialog->SenderService;
+CalendarListActivity->CalendarViewActivity;
+CalendarListActivity->AddCalendarActivity;
+CalendarListActivity->NotificationService;
+CalendarListActivity->SettingsActivity;
+CalendarListActivity->CalendarListActivity;
+CalendarViewActivity->NotificationService;
+CalendarViewActivity->CalendarListActivity;
+CalendarViewActivity->SettingsActivity;
+}

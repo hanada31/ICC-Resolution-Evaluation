@@ -1,0 +1,55 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+ManageAccountActivity[color = red];
+ChangePasswordActivity[color = red];
+ShareViaAccountActivity[color = red];
+ContactDetailsActivity[color = red];
+ShortcutActivity[style=filled, fillcolor=pink, color = red];
+ShowLocationActivity[color = red];
+ChooseContactActivity[color = red];
+RecordingActivity[color = red];
+ShareWithActivity[style=filled, fillcolor=pink, color = red];
+CropImageActivity[color = red];
+ConferenceDetailsActivity[color = red];
+PickServerActivity[color = red];
+ScanActivity[color = red];
+ConversationsActivity[color = red];
+StartConversationActivity[style=filled, fillcolor=pink, color = red];
+ShareLocationActivity[color = red];
+ChooseAccountForProfilePictureActivity[style=filled, fillcolor=pink, color = red];
+EditAccountActivity[color = red];
+ChannelDiscoveryActivity[color = red];
+MagicCreateActivity[color = red];
+ImportBackupActivity[color = red];
+SettingsActivity[style=filled, fillcolor=pink, color = red];
+AboutActivity[style=filled, fillcolor=pink, color = red];
+MediaBrowserActivity[color = red];
+WelcomeActivity[color = red];
+MucUsersActivity[color = red];
+SearchActivity[color = red];
+BlocklistActivity[color = red];
+TrustKeysActivity[color = red];
+ConversationActivity[style=filled, fillcolor=orange, color = red];
+UriHandlerActivity[style=filled, fillcolor=pink, color = red];
+PublishProfilePictureActivity[color = red];
+PublishGroupChatProfilePictureActivity[color = red];
+MemorizingActivity[color = red];
+XmppConnectionService[color = royalblue];
+ContactChooserTargetService[style=filled, fillcolor=pink, color = royalblue];
+PushMessageReceiver[color = royalblue];
+ImportBackupService[color = royalblue];
+ExportBackupService[color = royalblue];
+MaintenanceReceiver[style=filled, fillcolor=pink, color = peru];
+EventReceiver[style=filled, fillcolor=pink, color = peru];
+BarcodeProvider[color = violet];
+}

@@ -1,0 +1,2371 @@
+{
+    "name": "com.ichi2.anki", 
+    "analysis_end": 1627556358, 
+    "analysis_start": 1627555082, 
+    "used_permissions": [
+        "android.permission.INTERNET", 
+        "android.permission.VIBRATE", 
+        "android.permission.ACCESS_NETWORK_STATE", 
+        "android.permission.WAKE_LOCK", 
+        "android.permission.RECORD_AUDIO", 
+        "android.permission.WRITE_EXTERNAL_STORAGE", 
+        "com.ichi2.anki.permission.READ_WRITE_DATABASE"
+    ], 
+    "version": 20804300, 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.ModelFieldEditor", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.Info", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 103
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.MyAccount", 
+                        "method": "<com.ichi2.anki.MyAccount: void resetPassword()>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.MyAccount: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 91
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 79
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController: void onActivityResult(int,int,android.content.Intent)>", 
+                        "statement": "$r8 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r2, null, null, null)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.StudyOptionsFragment", 
+                        "method": "<com.ichi2.anki.StudyOptionsFragment: void openReviewer()>", 
+                        "statement": "virtualinvoke $r2.<android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)>($r1, 901)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithColorDict()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 103)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithGlosbe()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 101)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r8.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 102)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 71
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.ichi2.anki.VideoPlayer", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.ichi2.anki.FilteredDeckOptions", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.ichi2.widget.AddNoteWidget", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MEDIA_EJECT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MEDIA_MOUNTED"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.receiver.SdCardReceiver", 
+                        "method": "<com.ichi2.anki.receiver.SdCardReceiver: void onReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.receiver.SdCardReceiver", 
+                        "method": "<com.ichi2.anki.receiver.SdCardReceiver: void onReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 25
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.ichi2.anki.receiver.SdCardReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.MULTIWINDOW_LAUNCHER", 
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.ichi2.anki.DO_SYNC"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/vnd.anki"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/x-apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/octet-stream"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "content"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/zip"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "content"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "content"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.apkg"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.IntentHandler", 
+                        "method": "<com.ichi2.anki.IntentHandler: void onCreate(android.os.Bundle)>", 
+                        "statement": "$r15 = virtualinvoke $r13.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r14, null, null, null)", 
+                        "id": 42
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.IntentHandler", 
+                        "method": "<com.ichi2.anki.IntentHandler: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.IntentHandler: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 70
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.IntentHandler", 
+                        "method": "<com.ichi2.anki.IntentHandler: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.IntentHandler: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 136
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.IntentHandler", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 103
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.MyAccount", 
+                        "method": "<com.ichi2.anki.MyAccount: void resetPassword()>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.MyAccount: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 91
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 79
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.StudyOptionsFragment", 
+                        "method": "<com.ichi2.anki.StudyOptionsFragment: void openReviewer()>", 
+                        "statement": "virtualinvoke $r2.<android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)>($r1, 901)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r8.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 102)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 71
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.MyAccount", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "android.support.v4.content.FileProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.CardTemplateEditor", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 103
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.MyAccount", 
+                        "method": "<com.ichi2.anki.MyAccount: void resetPassword()>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.MyAccount: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 91
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 79
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.StudyOptionsFragment", 
+                        "method": "<com.ichi2.anki.StudyOptionsFragment: void openReviewer()>", 
+                        "statement": "virtualinvoke $r2.<android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)>($r1, 901)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithColorDict()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 103)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithGlosbe()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 101)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r8.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 102)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 71
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.Previewer", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.multimediacard.activity.TranslationActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 103
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.MyAccount", 
+                        "method": "<com.ichi2.anki.MyAccount: void resetPassword()>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.MyAccount: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 91
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 79
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.StudyOptionsFragment", 
+                        "method": "<com.ichi2.anki.StudyOptionsFragment: void openReviewer()>", 
+                        "statement": "virtualinvoke $r2.<android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)>($r1, 901)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithColorDict()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 103)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithGlosbe()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 101)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r8.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 102)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 71
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.DeckPicker", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.CardBrowser", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.StudyOptionsActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 103
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.MyAccount", 
+                        "method": "<com.ichi2.anki.MyAccount: void resetPassword()>", 
+                        "statement": "virtualinvoke $r0.<com.ichi2.anki.MyAccount: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 91
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 79
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Info$2", 
+                        "method": "<com.ichi2.anki.Info$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Info: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicImageFieldController$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.StudyOptionsFragment", 
+                        "method": "<com.ichi2.anki.StudyOptionsFragment: void openReviewer()>", 
+                        "statement": "virtualinvoke $r2.<android.support.v4.app.FragmentActivity: void startActivityForResult(android.content.Intent,int)>($r1, 901)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithColorDict()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 103)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController: void startTranslationWithGlosbe()>", 
+                        "statement": "virtualinvoke $r5.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r1, 101)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2", 
+                        "method": "<com.ichi2.anki.multimediacard.fields.BasicTextFieldController$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r8.<com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity: void startActivityForResult(android.content.Intent,int)>($r2, 102)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: boolean lookUp(java.lang.String)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 71
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.Reviewer", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithoutAnimation(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.Statistics", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "com.ichi2.anki.services.NotificationService", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.openintents.action.CREATE_FLASHCARD"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithoutAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.NoteEditor", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$7", 
+                        "method": "<com.ichi2.anki.Preferences$7: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r2.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$3", 
+                        "method": "<com.ichi2.anki.Preferences$3: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r2.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$6", 
+                        "method": "<com.ichi2.anki.Preferences$6: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r2.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.Preferences", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.ichi2.widget.AnkiDroidWidgetSmall", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.ichi2.anki.DeckOptions", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityWithAnimation(android.content.Intent,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivityForResultWithAnimation(android.content.Intent,int,int)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.AnkiActivity", 
+                        "method": "<com.ichi2.anki.AnkiActivity: void startActivity(android.content.Intent)>", 
+                        "statement": "specialinvoke $r0.<android.support.v7.app.AppCompatActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Preferences$1", 
+                        "method": "<com.ichi2.anki.Preferences$1: void onPositive(com.afollestad.materialdialogs.MaterialDialog)>", 
+                        "statement": "virtualinvoke $r3.<com.ichi2.anki.Preferences: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.ichi2.anki.Lookup", 
+                        "method": "<com.ichi2.anki.Lookup: void lookupLeo(java.lang.String,java.lang.CharSequence)>", 
+                        "statement": "virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.ichi2.anki.ModelBrowser", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.ichi2.anki.provider.CardContentProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.FilteredDeckOptions$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.AbstractFlashcardViewer$12", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.appwidget.AppWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.NoteEditor$8", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.widget.AddNoteWidget", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.receiver.SdCardReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.content.WakefulBroadcastReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v7.app.AppCompatDelegateImplV14$AutoNightModeManager$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.media.session.MediaButtonReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.CardBrowser$18", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.DeckOptions$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.widget.AnkiDroidWidgetSmall", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.media.TransportMediatorJellybeanMR2$3", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.ichi2.anki.DeckOptions", 
+                "method": "<com.ichi2.anki.DeckOptions: void registerExternalStorageListener()>", 
+                "statement": "virtualinvoke $r0.<com.ichi2.anki.DeckOptions: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1)", 
+                "id": 10
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.ichi2.anki.DeckPicker$19", 
+            "exported": true
+        }
+    ], 
+    "permissions": [
+        {
+            "name": "com.ichi2.anki.permission.READ_WRITE_DATABASE", 
+            "level": 1
+        }
+    ]
+}

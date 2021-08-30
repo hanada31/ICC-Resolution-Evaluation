@@ -1,0 +1,3626 @@
+{
+    "name": "de.danoeh.antennapod", 
+    "analysis_end": 1627546417, 
+    "analysis_start": 1627545840, 
+    "used_permissions": [
+        "android.permission.INTERNET", 
+        "android.permission.ACCESS_NETWORK_STATE", 
+        "android.permission.VIBRATE", 
+        "android.permission.WAKE_LOCK", 
+        "android.permission.ACCESS_WIFI_STATE", 
+        "android.permission.RECEIVE_BOOT_COMPLETED", 
+        "android.permission.BLUETOOTH", 
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+    ], 
+    "version": 1070195, 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.CastplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.CastplayerActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.CastplayerActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.CastplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.CastplayerActivity: void onResume()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.CastplayerActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.CastplayerActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 44)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<android.content.Context: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.fragment.ItemFragment$$Lambda$5", 
+                        "method": "<de.danoeh.antennapod.fragment.ItemFragment$$Lambda$5: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r10)", 
+                        "id": 32
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: boolean onOptionsItemClicked(android.content.Context,android.view.MenuItem,de.danoeh.antennapod.core.feed.Feed)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                        "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendNotificationBroadcast(int,int)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivityForResult(android.content.Intent,int)>($r4, 1)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<de.danoeh.antennapod.activity.OpmlImportFromPathActivity: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity$$Lambda$3: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MainActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.MainActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MainActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r1.<android.app.PendingIntent: void send()>()", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r1.<android.app.PendingIntent: void send()>()", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.dialog.CustomMRControllerDialog$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r1.<android.app.PendingIntent: void send()>()", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.storage.DBTasks", 
+                        "method": "<de.danoeh.antennapod.core.storage.DBTasks: void playMedia$4e7c0cea(android.content.Context,de.danoeh.antennapod.core.feed.FeedMedia,boolean,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 25
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<de.danoeh.antennapod.activity.OpmlImportFromPathActivity: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.FlattrAuthActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.storage.DownloadRequester", 
+                        "method": "<de.danoeh.antennapod.core.storage.DownloadRequester: void cancelDownload(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void shareLink(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void showNoTokenDialogOrRedirect(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r7)", 
+                        "id": 20
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 43)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 43)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.FeedInfoActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.AboutActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.google.android.gms.common.api.GoogleApiActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.ACTION_POWER_CONNECTED", 
+                                "android.intent.action.ACTION_POWER_DISCONNECTED"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.receiver.PowerConnectionReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "video/*"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerActivity: void startActivity(android.content.Intent,android.os.Bundle)>($r4, $r7)", 
+                        "id": 18
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 31
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.VideoplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.VideoplayerActivity: void onResume()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.VideoplayerActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 20
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void shareLink(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void showNoTokenDialogOrRedirect(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r7)", 
+                        "id": 20
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void shareFeedItemFile(android.content.Context,de.danoeh.antennapod.core.feed.FeedMedia)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.VideoplayerActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "permission": "android.permission.BIND_JOB_SERVICE", 
+            "name": "de.danoeh.antennapod.core.service.FeedUpdateJobService", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.net.conn.CONNECTIVITY_CHANGE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.receiver.ConnectivityActionReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.core.receiver.FeedUpdateReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                ".activities.FlattrAuthActivity"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "de.danoeh.antennapod"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "flattr4j"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<android.content.Context: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.FlattrAuthActivity", 
+                        "method": "<de.danoeh.antennapod.activity.FlattrAuthActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.FlattrAuthActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.FlattrAuthActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.FlattrAuthActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.OpmlFeedChooserActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.service.PlayerWidgetJobService", 
+                        "method": "<de.danoeh.antennapod.core.service.PlayerWidgetJobService: void onHandleWork(android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.PlayerWidgetJobService: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r3, $r7, 0)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "permission": "android.permission.BIND_JOB_SERVICE", 
+            "name": "de.danoeh.antennapod.core.service.PlayerWidgetJobService", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "android.support.v4.content.FileProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.StatisticsActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.PreferenceActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "de.danoeh.antennapod.STOP_WIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "de.danoeh.antennapod.FORCE_WIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.core.receiver.PlayerWidget", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "de.danoeh.antennapdsp.intent.SP_APPS_QUERY_FEEDS_RESPONSE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.receiver.SPAReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "permission": "android.permission.BIND_JOB_SERVICE", 
+            "name": "de.danoeh.antennapod.core.service.GpodnetSyncService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivityForResult(android.content.Intent,int)>($r4, 1)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.media.browse.MediaBrowserService"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                        "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendNotificationBroadcast(int,int)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                        "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void access$1200(de.danoeh.antennapod.core.service.playback.PlaybackService,de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer$PSMPInfo,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendBroadcast(android.content.Intent)>($r6)", 
+                        "id": 35
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void showNoTokenDialogOrRedirect(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r7)", 
+                        "id": 20
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: boolean onOptionsItemClicked(android.content.Context,android.view.MenuItem,de.danoeh.antennapod.core.feed.Feed)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void shareLink(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void showNoTokenDialogOrRedirect(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r7)", 
+                        "id": 20
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.FeedSettingsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<de.danoeh.antennapod.activity.OpmlImportFromPathActivity: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.OpmlImportFromPathActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<de.danoeh.antennapod.activity.OpmlImportFromPathActivity: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.OpmlImportFromPathActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MEDIA_BUTTON"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "de.danoeh.antennapod.NOTIFY_BUTTON_RECEIVER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.core.receiver.MediaButtonReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.DownloadAuthenticationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$0: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 44)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 43)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivityForResult(android.content.Intent,int)>($r3, 43)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.ImportExportActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.media.action.MEDIA_PLAY_FROM_SEARCH"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.SplashActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.SplashActivity$$Lambda$1: void call()>", 
+                        "statement": "virtualinvoke $r1.<de.danoeh.antennapod.activity.SplashActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.SplashActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.DirectoryChooserActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                        "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendNotificationBroadcast(int,int)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MainActivity$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.activity.MainActivity$$Lambda$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MainActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.MainActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "audio/*"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.AudioplayerActivity", 
+                        "method": "<de.danoeh.antennapod.activity.AudioplayerActivity: void onResume()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.AudioplayerActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.AudioplayerActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                ".activity.gpoddernet.GpodnetAuthenticationActivity"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity$$Lambda$3: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.PACKAGE_REPLACED"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "de.danoeh.antennapod"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "package"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "de.danoeh.antennapod.core.receiver.AlarmUpdateReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "itpc"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "pcast"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "feed"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "antennapod-subscribe"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/rss+xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/atom+xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/xml"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "feeds.feedburner.com"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "feedproxy.google.com"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "feeds2.feedburner.com"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "feedsproxy.google.com"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.rss"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.atom"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.antennapod.audio.ServiceBackedAudioPlayer", 
+                        "method": "<org.antennapod.audio.ServiceBackedAudioPlayer: boolean ConnectPlayMediaService()>", 
+                        "statement": "$z0 = virtualinvoke $r4.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.core.util.flattr.FlattrUtils$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r5.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r7.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 23
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity", 
+                        "method": "<de.danoeh.antennapod.activity.OnlineFeedViewActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.OnlineFeedViewActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r5)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3", 
+                        "method": "<de.danoeh.antennapod.core.util.playback.PlaybackController$$Lambda$3: void call(java.lang.Object)>", 
+                        "statement": "virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r4, $r5, 0)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "android.arch.core.internal.SafeIterableMap$1", 
+                        "method": "<android.arch.core.internal.SafeIterableMap$1: void sendLocalBroadcast(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2", 
+                        "method": "<de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r2.<de.danoeh.antennapod.activity.ImportExportActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.preferences.PreferenceController", 
+                        "method": "<de.danoeh.antennapod.preferences.PreferenceController: void lambda$null$43$PreferenceController$3c92ef9(android.content.Context,java.io.File)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.MediaplayerInfoActivity", 
+                        "method": "<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.MediaplayerInfoActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.OnlineFeedViewActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/x-opml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/octet-stream"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/x-opml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/xml"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/octet-stream"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "content"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.VariableSpeedDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.VariableSpeedDialog: void lambda$showGetPluginDialog$1$VariableSpeedDialog$5531701c(android.content.Context)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 2
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.activity.StorageErrorActivity", 
+                        "method": "<de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()>", 
+                        "statement": "virtualinvoke $r0.<de.danoeh.antennapod.activity.StorageErrorActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.danoeh.antennapod.dialog.RatingDialog", 
+                        "method": "<de.danoeh.antennapod.dialog.RatingDialog: void lambda$createDialog$0$RatingDialog$2fd15666()>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r0)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.danoeh.antennapod.activity.OpmlImportFromIntentActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "de.danoeh.antennapod.core.service.download.DownloadService", 
+            "exported": false
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.receiver.PowerConnectionReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.receiver.FeedUpdateReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.receiver.ConnectivityActionReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.content.WakefulBroadcastReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v7.app.AppCompatDelegateImplV14$AutoNightModeManager$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$4", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.media.session.MediaButtonReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$6", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$5", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$8", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v4.content.pm.ShortcutManagerCompat$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$7", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$9", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.receiver.PlayerWidget", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.receiver.SPAReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.download.DownloadService$2", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.google.android.libraries.cast.companionlibrary.remotecontrol.VideoIntentReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$10", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackService$11", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.service.playback.PlaybackServiceFlavorHelper$2", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v7.media.RemotePlaybackClient$ActionReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v7.media.SystemMediaRouteProvider$LegacyImpl$VolumeChangeReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.appwidget.AppWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.receiver.MediaButtonReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.bumptech.glide.manager.DefaultConnectivityMonitor$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.util.playback.PlaybackController$2", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.download.DownloadService", 
+                "method": "<de.danoeh.antennapod.core.service.download.DownloadService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.download.DownloadService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r6, $r5)", 
+                "id": 21
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.content.BroadcastReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.support.v7.media.RegisteredMediaRouteProviderWatcher$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.activity.StorageErrorActivity$2", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.google.android.libraries.cast.companionlibrary.cast.reconnection.ReconnectionService$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.util.playback.PlaybackController$3", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.util.playback.PlaybackController$4", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.google.android.gms.internal.zzrj", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "de.danoeh.antennapod.core.receiver.AlarmUpdateReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "de.danoeh.antennapod.core.service.playback.PlaybackService", 
+                "method": "<de.danoeh.antennapod.core.service.playback.PlaybackService: void onCreate()>", 
+                "statement": "virtualinvoke $r0.<de.danoeh.antennapod.core.service.playback.PlaybackService: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 29
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.google.android.libraries.cast.companionlibrary.cast.reconnection.ReconnectionService$2", 
+            "exported": true
+        }
+    ]
+}

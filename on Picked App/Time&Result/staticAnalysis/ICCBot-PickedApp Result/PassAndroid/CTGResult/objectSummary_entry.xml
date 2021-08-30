@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onActivityResult(int,int,android.content.Intent)" methodtrace="void onActivityResult(int,int,android.content.Intent)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <nodes>
+        <node method="PassListActivity onActivityResult" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="PassListActivity onActivityResult" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="PassListActivity onActivityResult" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r3)"/>
+        <node method="PassListActivity onActivityResult" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.InstallListener">
+    <singleIntent>
+      <method method="void onReceive(android.content.Context,android.content.Intent)" methodtrace="void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="org.ligi.passandroid.InstallListener"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender flags="FLAG_ACTIVITY_NEW_TASK "/>
+      <nodes>
+        <node method="InstallListener onReceive" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="InstallListener onReceive" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="InstallListener onReceive" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setFlags(int)&gt;(268435456)"/>
+        <node method="InstallListener onReceive" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r4)"/>
+        <node method="InstallListener onReceive" type="SendIntent2ICC" unit="virtualinvoke $r1.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassViewActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="org.ligi.passandroid.ui.TouchImageActivity"/>
+      <sender extras="String-IMAGE:new java.lang.String"/>
+      <nodes>
+        <node method="PassViewActivity$processImage$1 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="PassViewActivity$processImage$1 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r3, class &quot;Lorg/ligi/passandroid/ui/TouchImageActivity;&quot;)"/>
+        <node method="PassViewActivity$processImage$1 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;IMAGE&quot;, $r5)"/>
+        <node method="PassViewActivity$processImage$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;org.ligi.passandroid.ui.PassViewActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassEditActivity">
+    <singleIntent>
+      <method method="void a(int)" methodtrace="void a(int)"/>
+      <source name="org.ligi.passandroid.ui.PassEditActivity"/>
+      <destinition name="interICC_android.intent.action.GET_CONTENT"/>
+      <sender action="android.intent.action.GET_CONTENT" type="image/*"/>
+      <nodes>
+        <node method="ImageEditHelper a" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;image/*&quot;)"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.GET_CONTENT&quot;)"/>
+        <node method="ImageEditHelper a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivityForResult(android.content.Intent,int)&gt;($r1, $i0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity">
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity"/>
+      <destinition name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView"/>
+      <nodes>
+        <node method="URLRewriteActivity$3 onClick" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="URLRewriteActivity$3 onClick" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;&quot;)"/>
+        <node method="URLRewriteActivity$3 onClick" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="URLRewriteActivity$3 onClick" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity">
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity"/>
+      <destinition name="interICC_android.intent.action.SEND"/>
+      <sender action="android.intent.action.SEND" type="text/plain" extras="String-android.intent.extra.TEXT,String[]-android.intent.extra.EMAIL:newarray (java.lang.String)[1],String-android.intent.extra.SUBJECT:PassAndroid: URLRewrite Problem"/>
+      <nodes>
+        <node method="URLRewriteActivity$2 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="URLRewriteActivity$2 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>
+        <node method="URLRewriteActivity$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.intent.extra.SUBJECT&quot;, &quot;PassAndroid: URLRewrite Problem&quot;)"/>
+        <node method="URLRewriteActivity$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String[])&gt;(&quot;android.intent.extra.EMAIL&quot;, $r3)"/>
+        <node method="URLRewriteActivity$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.intent.extra.TEXT&quot;, $r7)"/>
+        <node method="URLRewriteActivity$2 onClick" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/plain&quot;)"/>
+        <node method="URLRewriteActivity$2 onClick" type="SendIntent2ICC" unit="virtualinvoke $r4.&lt;org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.SearchPassesIntentService">
+    <singleIntent>
+      <method method="void onHandleIntent(android.content.Intent)" methodtrace="void onHandleIntent(android.content.Intent)"/>
+      <source name="org.ligi.passandroid.ui.SearchPassesIntentService"/>
+      <destinition name="org.ligi.passandroid.ui.PassListActivity"/>
+      <nodes>
+        <node method="SearchPassesIntentService onHandleIntent" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="SearchPassesIntentService onHandleIntent" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r8, class &quot;Lorg/ligi/passandroid/ui/PassListActivity;&quot;)"/>
+        <node method="SearchPassesIntentService onHandleIntent" type="pendingIntentCreation" unit="$r9 = staticinvoke &lt;android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)&gt;($r7, 1, $r1, 0)"/>
+        <node method="SearchPassesIntentService onHandleIntent" type="sendOutWrapperredIntent" unit="$r10 = virtualinvoke $r10.&lt;android.support.v4.app.NotificationCompat$Builder: android.support.v4.app.NotificationCompat$Builder setContentIntent(android.app.PendingIntent)&gt;($r9)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/PassEditActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/PassEditActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassEditActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassViewActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/FullscreenBarcodeActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/FullscreenBarcodeActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="org.ligi.passandroid.ui.FullscreenBarcodeActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender data="http://prod.wap.ncrwebhost.mobi/mobiqa/wap/"/>
+      <nodes>
+        <node method="USAirwaysLoadActivity onCreate" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r18, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r3)"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender data="http://prod.wap.ncrwebhost.mobi/mobiqa/wap/"/>
+      <nodes>
+        <node method="USAirwaysLoadActivity onCreate" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r18, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r3)"/>
+        <node method="USAirwaysLoadActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity">
+    <singleIntent>
+      <method method="void a(java.lang.String)" methodtrace="void a(java.lang.String)"/>
+      <source name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity"/>
+      <destinition name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView"/>
+      <nodes>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;&quot;)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void a(java.lang.String)" methodtrace="void a(java.lang.String)"/>
+      <source name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <nodes>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity">
+    <singleIntent>
+      <method method="void onPostExecute(java.lang.Object)" methodtrace="void a(java.lang.String)"/>
+      <source name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity"/>
+      <destinition name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView"/>
+      <nodes>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/ligi/passandroid/ui/quirk_fix/OpenIphoneWebView;&quot;)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onPostExecute(java.lang.Object)" methodtrace="void a(java.lang.String)"/>
+      <source name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <nodes>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r6)"/>
+        <node method="ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask a" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassImportActivity">
+    <singleIntent>
+      <method method="void a(java.lang.String)" methodtrace="void a(java.lang.String)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r14, class &quot;Lorg/ligi/passandroid/ui/PassViewActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void a(java.lang.String)" methodtrace="void a(java.lang.String)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r14, class &quot;Lorg/ligi/passandroid/ui/PassViewActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassImportActivity">
+    <singleIntent>
+      <method method="java.lang.Object a(java.lang.Object)" methodtrace="void a(java.lang.String)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r14, class &quot;Lorg/ligi/passandroid/ui/PassViewActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="java.lang.Object a(java.lang.Object)" methodtrace="void a(java.lang.String)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r14, class &quot;Lorg/ligi/passandroid/ui/PassViewActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassEditActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void a(int)"/>
+      <source name="org.ligi.passandroid.ui.PassEditActivity"/>
+      <destinition name="interICC_android.intent.action.GET_CONTENT"/>
+      <sender action="android.intent.action.GET_CONTENT" type="image/*"/>
+      <nodes>
+        <node method="ImageEditHelper a" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;image/*&quot;)"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.GET_CONTENT&quot;)"/>
+        <node method="ImageEditHelper a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivityForResult(android.content.Intent,int)&gt;($r1, $i0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.FullscreenMapActivity">
+    <singleIntent>
+      <method method="void a()" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=", http://maps.google.com/?q="/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void a()" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=", http://maps.google.com/?q="/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void a()" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=""/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.FullscreenMapActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=", http://maps.google.com/?q="/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=", http://maps.google.com/?q="/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void b(android.app.Activity,org.ligi.passandroid.model.pass.PassLocation,org.ligi.passandroid.model.pass.Pass)"/>
+      <source name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity, org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender action="android.intent.action.VIEW" data=""/>
+      <nodes>
+        <node method="NavigateToLocationsDialogKt b" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.VIEW&quot;)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SetAttribute" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r8)"/>
+        <node method="NavigateToLocationsDialogKt b" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void f()" methodtrace="void f()
+&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt; --- specialinvoke $r9.&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt;(r0, $r1)
+void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.SearchPassesIntentService"/>
+      <nodes>
+        <node method="PassListActivity f" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassListActivity f" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/SearchPassesIntentService;&quot;)"/>
+        <node method="PassListActivity f" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+        <node method="PassListActivity$scan$2 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="PassListActivity f" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onRequestPermissionsResult(int,java.lang.String[],int[])" methodtrace="void f()
+&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt; --- specialinvoke $r9.&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt;(r0, $r1)
+void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.SearchPassesIntentService"/>
+      <nodes>
+        <node method="PassListActivity f" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassListActivity f" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/SearchPassesIntentService;&quot;)"/>
+        <node method="PassListActivity f" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+        <node method="PassListActivity$scan$2 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="PassListActivity f" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void g()" methodtrace="void g()"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="interICC_android.intent.action.OPEN_DOCUMENT, android.intent.category.OPENAB"/>
+      <sender action="android.intent.action.OPEN_DOCUMENT" category="android.intent.category.OPENABLE" type="*/*"/>
+      <nodes>
+        <node method="PassListActivity g" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.OPEN_DOCUMENT&quot;)"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;android.intent.category.OPENABLE&quot;)"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;*/*&quot;)"/>
+        <node method="PassListActivity g" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: void startActivityForResult(android.content.Intent,int)&gt;($r1, 1000)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void g()"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="interICC_android.intent.action.OPEN_DOCUMENT, android.intent.category.OPENAB"/>
+      <sender action="android.intent.action.OPEN_DOCUMENT" category="android.intent.category.OPENABLE" type="*/*"/>
+      <nodes>
+        <node method="PassListActivity g" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;android.intent.action.OPEN_DOCUMENT&quot;)"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent addCategory(java.lang.String)&gt;(&quot;android.intent.category.OPENABLE&quot;)"/>
+        <node method="PassListActivity g" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;*/*&quot;)"/>
+        <node method="PassListActivity g" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: void startActivityForResult(android.content.Intent,int)&gt;($r1, 1000)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean onOptionsItemSelected(android.view.MenuItem)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/ligi/passandroid/ui/HelpActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean onOptionsItemSelected(android.view.MenuItem)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/ligi/passandroid/ui/HelpActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.HelpActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassEditActivity">
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void a(int)"/>
+      <source name="org.ligi.passandroid.ui.PassEditActivity"/>
+      <destinition name="interICC_android.intent.action.GET_CONTENT"/>
+      <sender action="android.intent.action.GET_CONTENT" type="image/*"/>
+      <nodes>
+        <node method="ImageEditHelper a" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;image/*&quot;)"/>
+        <node method="ImageEditHelper a" type="SetAttribute" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.GET_CONTENT&quot;)"/>
+        <node method="ImageEditHelper a" type="SendIntent2ICC" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivityForResult(android.content.Intent,int)&gt;($r1, $i0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassImportActivity"/>
+      <sender data=", null, https://mobile.virginaustralia.com/boarding/pass.pkpass?key=, https://www.cathaypacific.com/icheckin2/PassbookServlet?v="/>
+      <nodes>
+        <node method="URLRewriteActivity onCreate" type="CreateMethod" unit="$r4 = new android.content.Intent"/>
+        <node method="URLRewriteActivity onCreate" type="SetAttribute" unit="specialinvoke $r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/ligi/passandroid/ui/PassImportActivity;&quot;)"/>
+        <node method="URLRewriteActivity onCreate" type="SetAttribute" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r5)"/>
+        <node method="URLRewriteActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void f()
+&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt; --- specialinvoke $r9.&lt;org.ligi.passandroid.ui.PassListActivity$scan$2: void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)&gt;(r0, $r1)
+void &lt;init&gt;(org.ligi.passandroid.ui.PassListActivity,android.content.Intent)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <destinition name="org.ligi.passandroid.ui.SearchPassesIntentService"/>
+      <nodes>
+        <node method="PassListActivity f" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassListActivity f" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/ligi/passandroid/ui/SearchPassesIntentService;&quot;)"/>
+        <node method="PassListActivity f" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassListActivity: android.content.ComponentName startService(android.content.Intent)&gt;($r1)"/>
+        <node method="PassListActivity$scan$2 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="PassListActivity f" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassListActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void a(android.content.Context,android.net.Uri)"/>
+      <source name="org.ligi.passandroid.ui.PassListActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="org.ligi.passandroid.ui.PassViewActivity">
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/ligi/passandroid/ui/PassEditActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/ligi/passandroid/ui/PassEditActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassEditActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)
+&lt;org.ligi.passandroid.maps.PassbookMapsFacade: void a(android.content.Context)&gt; --- virtualinvoke $r17.&lt;org.ligi.passandroid.maps.PassbookMapsFacade: void a(android.content.Context)&gt;($r5)
+void a(android.content.Context)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lorg/ligi/passandroid/FullscreenMapActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="org.ligi.passandroid.FullscreenMapActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="void i()"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="interICC_com.android.launcher.action.INSTALL_SHORTCUT"/>
+      <sender action="com.android.launcher.action.INSTALL_SHORTCUT" extras="Parcelable@-android.intent.extra.shortcut.ICON,String-android.intent.extra.shortcut.NAME:, new java.lang.String,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent"/>
+      <nodes>
+        <node method="PassViewActivityBase i" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="PassViewActivityBase i" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;com.android.launcher.action.INSTALL_SHORTCUT&quot;)"/>
+        <node method="PassViewActivityBase i" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.shortcut.INTENT&quot;, $r6)"/>
+        <node method="PassViewActivityBase i" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;android.intent.extra.shortcut.NAME&quot;, $r4)"/>
+        <node method="PassViewActivityBase i" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.shortcut.ICON&quot;, $r6)"/>
+        <node method="PassViewActivityBase i" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.ligi.passandroid.ui.PassViewActivityBase: void sendBroadcast(android.content.Intent)&gt;($r1)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="boolean a(android.view.MenuItem)
+&lt;org.ligi.passandroid.maps.PassbookMapsFacade: void a(android.content.Context)&gt; --- virtualinvoke $r17.&lt;org.ligi.passandroid.maps.PassbookMapsFacade: void a(android.content.Context)&gt;($r5)
+void a(android.content.Context)
+&lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt; --- staticinvoke &lt;org.ligi.kaxt.ContextExtensionsKt: void a(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lorg/ligi/passandroid/FullscreenMapActivity;&quot;)
+void a(android.content.Context,java.lang.Class)"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <nodes>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="ContextExtensionsKt a" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, $r1)"/>
+        <node method="ContextExtensionsKt a" type="SendIntent2ICC" unit="virtualinvoke $r0.&lt;android.content.Context: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="boolean onOptionsItemSelected(android.view.MenuItem)" methodtrace="void i()"/>
+      <source name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <destinition name="org.ligi.passandroid.ui.PassViewActivity"/>
+      <sender extras="String-uuid:new java.lang.String,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent"/>
+      <nodes>
+        <node method="PassViewActivityBase i" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="PassViewActivityBase i" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;uuid&quot;, $r4)"/>
+        <node method="PassViewActivityBase i" type="SetAttribute" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent setComponent(android.content.ComponentName)&gt;($r5)"/>
+        <node method="PassViewActivityBase i" type="SetIntentExtra" unit="virtualinvoke $r1.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,android.os.Parcelable)&gt;(&quot;android.intent.extra.shortcut.INTENT&quot;, $r6)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

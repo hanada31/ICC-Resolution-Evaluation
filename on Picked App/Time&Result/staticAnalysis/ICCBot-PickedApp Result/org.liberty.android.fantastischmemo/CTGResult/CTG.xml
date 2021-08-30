@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="org.liberty.android.fantastischmemo.downloader.dropbox.DropboxDBListActivity">
+    <destination name="org.liberty.android.fantastischmemo.downloader.dropbox.UploadDropboxScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.dropbox.DropboxDBListActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.AlarmReceiver">
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="33" extras="int-request_code:1" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="24" extras="int-request_code:2" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.OptionScreen">
+    <destination name="org.liberty.android.fantastischmemo.ui.AlgorithmCustomizationScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.OptionScreen$1$1: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.QuizActivity">
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.QACardActivity: void onDestroy()&gt;" InstructionId="15" extras="int-request_code" flags=""/>
+    <destination name="com.example.android.apis.graphics.FingerPaint" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.QuizActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="26" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.DatabaseMerger">
+    <destination name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.DatabaseMerger: void onClick(android.view.View)&gt;" InstructionId="8" extras="String-file_extension:.db" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.DatabaseMerger: void onClick(android.view.View)&gt;" InstructionId="15" extras="String-file_extension:.db" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.downloader.FEDirectory">
+    <destination name="org.liberty.android.fantastischmemo.downloader.DownloaderFE" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.FEDirectory: void openCategory(org.liberty.android.fantastischmemo.downloader.DownloadItem)&gt;" InstructionId="7" action="am.fe.intent.search_tag" extras="String-search_criterion:new java.lang.String" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.AnyMemoWidgetProvider">
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.AnyMemoWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;" InstructionId="8" extras="int-request_code:1" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.AlarmReceiver" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.SetAlarmReceiver: void setWidgetUpdateAlarm(android.content.Context)&gt;" InstructionId="9" extras="int-request_code:2" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity">
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: void restartActivity()&gt;" InstructionId="23" extras="int-category:new int,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity$10: void onClick(android.view.View)&gt;" InstructionId="20" extras="Serializable@-id:new java.lang.Integer,boolean-is_edit_new:0,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.SettingsScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="48" extras="Serializable@-openid:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: void restartActivity()&gt;" InstructionId="23" extras="Serializable@-id:new java.lang.Integer,int-category:new int,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.SettingsScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="48" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.QACardActivity: void onDestroy()&gt;" InstructionId="15" extras="int-request_code" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardListActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="48" extras="Serializable@-openid:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.SettingsScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="19" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="74" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardListActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="48" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity$9: void onClick(android.view.View)&gt;" InstructionId="20" extras="String-dbpath:new java.lang.String,boolean-is_edit_new:1" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity$9: void onClick(android.view.View)&gt;" InstructionId="20" extras="String-dbpath:new java.lang.String,boolean-is_edit_new:1,Serializable@-id:new java.lang.Integer" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="74" extras="Serializable@-start_card_id:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.DatabaseMerger" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="148" extras="String-src_path:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.DetailScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.PreviewEditActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="35" extras="Serializable@-card_id:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher">
+    <destination name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher: void onClick(android.view.View)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByUsernameActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher: void onClick(android.view.View)&gt;" InstructionId="11" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByTitleActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.service.CardPlayerService">
+    <destination name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.CardPlayerService: void showNotification()&gt;" InstructionId="12" extras="" flags="FLAG_ACTIVITY_SINGLE_TOP "/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity">
+    <destination name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUploadActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListScreen">
+    <destination name="org.liberty.android.fantastischmemo.downloader.google.UploadGoogleDriveScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListScreen: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.downloader.cram.CramLauncher">
+    <destination name="org.liberty.android.fantastischmemo.downloader.cram.CramPublicUserCardSetActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.cram.CramLauncher: void onClick(android.view.View)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.downloader.cram.CramSearchPublicCardSetActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.cram.CramLauncher: void onClick(android.view.View)&gt;" InstructionId="11" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.downloader.FEDirectory" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.downloader.cram.CramLauncher: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity">
+    <destination name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.service.CardPlayerService: void showNotification()&gt;" InstructionId="12"/>
+    <destination name="org.liberty.android.fantastischmemo.service.CardPlayerService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.CardPlayerActivity: void bindCardPlayerService()&gt;" InstructionId="9" extras="Serializable@-current_card_id:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.QACardActivity: void onDestroy()&gt;" InstructionId="15" extras="int-request_code" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.service.ConvertIntentService">
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.ConvertIntentService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="-1" extras="String-dbpath" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.AnyMemo" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.ConvertIntentService: void showSuccessNotification(int,java.lang.String)&gt;" InstructionId="24" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.ConvertIntentService: void showSuccessNotification(int,java.lang.String)&gt;" InstructionId="24" extras="String-dbpath" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.AnyMemo" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.ConvertIntentService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.CardEditor">
+    <destination name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardEditor: void startAudioBrowser()&gt;" InstructionId="5" extras="String-file_extension:.3gp,.ogg,.mp3,.wav,.amr" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardEditor: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="30" extras="String-file_extension:.png,.jpg,.tif,.bmp" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardEditor: void restartActivity()&gt;" InstructionId="25" extras="String-dbpath:new java.lang.String,Serializable@-id:new java.lang.Integer" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.service.AnyMemoService">
+    <destination name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.AnyMemoService: void updateWidget()&gt;" InstructionId="60" extras="String-dbpath" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.AnyMemoService: void updateWidget()&gt;" InstructionId="32" extras="String-dbpath" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.AnyMemoService: void updateWidget()&gt;" InstructionId="74" extras="String-dbpath" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="org.liberty.android.fantastischmemo.ui.AnyMemo" type="NonAct2Act" method="&lt;org.liberty.android.fantastischmemo.service.AnyMemoService: void showNotification()&gt;" InstructionId="28" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.CardListActivity">
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardListActivity: void gotoPreviewEditActivity(org.liberty.android.fantastischmemo.domain.Card)&gt;" InstructionId="10" extras="String-dbpath:new java.lang.String,Serializable@-id:new java.lang.Integer" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardListActivity: void gotoCardEditorActivity(org.liberty.android.fantastischmemo.domain.Card)&gt;" InstructionId="10" extras="String-dbpath:new java.lang.String,Serializable@-id:new java.lang.Integer" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardListActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardListActivity: void restartActivity()&gt;" InstructionId="14" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.DetailScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.CardListActivity: void gotoDetailActivity(org.liberty.android.fantastischmemo.domain.Card)&gt;" InstructionId="10" extras="String-dbpath:new java.lang.String,Serializable@-card_id:new java.lang.Integer" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.StudyActivity">
+    <destination name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void restartActivity()&gt;" InstructionId="16" extras="Serializable@-start_card_id:new java.lang.Integer,int-category_id:new int,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void restartActivity()&gt;" InstructionId="16" extras="int-category_id:new int,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.DetailScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void gotoDetail()&gt;" InstructionId="10" extras="Serializable@-card_id:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void gotoPreviewEdit()&gt;" InstructionId="13" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void showEditDialog()&gt;" InstructionId="12" extras="Serializable@-id:new java.lang.Integer,String-dbpath:new java.lang.String,boolean-is_edit_new:0" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.SettingsScreen" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void gotoSettings()&gt;" InstructionId="5" extras="String-dbpath:new java.lang.String" flags=""/>
+    <destination name="com.example.android.apis.graphics.FingerPaint" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void gotoPaint()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.QACardActivity: void onDestroy()&gt;" InstructionId="15" extras="int-request_code" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.StudyActivity: void gotoPreviewEdit()&gt;" InstructionId="13" extras="Serializable@-id:new java.lang.Integer,String-dbpath:new java.lang.String" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.SetAlarmReceiver">
+    <destination name="org.liberty.android.fantastischmemo.AlarmReceiver" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.SetAlarmReceiver: void setNotificationAlarm(android.content.Context)&gt;" InstructionId="46" extras="int-request_code:1" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.AlarmReceiver" type="NonAct2NonAct" method="&lt;org.liberty.android.fantastischmemo.SetAlarmReceiver: void setWidgetUpdateAlarm(android.content.Context)&gt;" InstructionId="9" extras="int-request_code:2" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.ShareScreen">
+    <destination name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.ShareScreen: void onClick(android.view.View)&gt;" InstructionId="42" extras="String-dbpath,Serializable@-id:new java.lang.Integer" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Act2Act" method="&lt;org.liberty.android.fantastischmemo.ui.ShareScreen: void onClick(android.view.View)&gt;" InstructionId="62" extras="String-file_extension:.db" flags=""/>
+  </source>
+  <source name="org.liberty.android.fantastischmemo.ui.AnyMemo">
+    <destination name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.ui.AnyMemo: void onDestroy()&gt;" InstructionId="8" extras="int-request_code" flags=""/>
+    <destination name="org.liberty.android.fantastischmemo.AlarmReceiver" type="Act2NonAct" method="&lt;org.liberty.android.fantastischmemo.SetAlarmReceiver: void setNotificationAlarm(android.content.Context)&gt;" InstructionId="46" extras="int-request_code:1" flags=""/>
+  </source>
+</root>

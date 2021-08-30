@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.integreight.onesheeld.MainActivity">
+    <destination name="com.integreight.onesheeld.Tutorial" type="Act2Act" method="&lt;com.integreight.onesheeld.appFragments.SheeldsList: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="26"/>
+    <destination name="com.integreight.onesheeld.services.OneSheeldService" type="Act2Act" method="&lt;com.integreight.onesheeld.appFragments.SheeldsList$12: void onConnect(com.integreight.onesheeld.sdk.OneSheeldDevice)&gt;" InstructionId="30"/>
+    <destination name="com.integreight.onesheeld.MainActivity" type="Act2Act" method="&lt;com.integreight.onesheeld.shields.controller.NfcShield: void setupForegroundDispatch()&gt;" InstructionId="44" extras="" flags=""/>
+    <destination name="com.integreight.onesheeld.Tutorial" type="Act2Act" method="&lt;com.integreight.onesheeld.MainActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="34" extras="" flags=""/>
+  </source>
+  <source name="com.integreight.onesheeld.services.OneSheeldService">
+    <destination name="com.integreight.onesheeld.MainActivity" type="NonAct2Act" method="&lt;com.integreight.onesheeld.services.OneSheeldService: void showNotification()&gt;" InstructionId="24" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </source>
+  <source name="com.integreight.onesheeld.shields.controller.utils.NfcUtils">
+    <destination name="com.integreight.onesheeld.MainActivity" type="Act2Act" method="&lt;com.integreight.onesheeld.shields.controller.utils.NfcUtils: void onCreate(android.os.Bundle)&gt;" InstructionId="52" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+    <destination name="com.integreight.onesheeld.MainActivity" type="Act2Act" method="&lt;com.integreight.onesheeld.shields.controller.utils.NfcUtils: void onCreate(android.os.Bundle)&gt;" InstructionId="47" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </source>
+</root>

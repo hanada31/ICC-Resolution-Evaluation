@@ -1,0 +1,2022 @@
+{
+    "name": "ch.hgdev.toposuite", 
+    "analysis_end": 1627542740, 
+    "analysis_start": 1627542575, 
+    "used_permissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+    ], 
+    "version": 56, 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 35
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "leve_ortho_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/cheminortho/CheminementOrthoResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 21
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "station_number", 
+                                        "unknown_orientation_calculation_id", 
+                                        "determinations", 
+                                        "unknown_orientation", 
+                                        "polar_survey_position", 
+                                        "instrument_height"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/polarsurvey/PolarSurveyResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "polar_survey_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/polarsurvey/PolarSurveyResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 37
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "number_of_segments", 
+                                        "circle_center_point_number", 
+                                        "first_result_point_number", 
+                                        "circle_start_point_number", 
+                                        "arc_length", 
+                                        "circle_end_point_number"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/circularsegmentation/CircularSegmentationResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "limit_displacement_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/limdispl/LimitDisplacementResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "axis_impl_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/axisimpl/AxisImplantationResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 55
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "point_selected_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/pointproj/PointProjectionResultActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.EDIT", 
+                                "android.intent.action.SENDTO", 
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.coo"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.COO"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.koo"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.KOO"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.ptp"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.PTP"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.csv"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.CSV"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/csv"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/comma-separated-values"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/octet-stream"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.points.PointsManagerActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 40
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "station_number", 
+                                        "points_with_s"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/polarimplantation/PolarImplantationResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 27
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "leve_ortho_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/leveortho/LeveOrthoResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.history.HistoryActivity$1", 
+                        "method": "<ch.hgdev.toposuite.history.HistoryActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r9.<ch.hgdev.toposuite.history.HistoryActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 17
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "calculation_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.history.HistoryActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "free_station_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/freestation/FreeStationResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.settings.AboutActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 27
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "ortho_impl_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/orthoimpl/OrthoImplantationResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.entry.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.EDIT", 
+                                "android.intent.action.SENDTO", 
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.tpst"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "*"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                ".*\\.TPST"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "application/json"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.jobs.JobsActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity", 
+                        "method": "<ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 47
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "station_number", 
+                                        "orientations", 
+                                        "calculation_position"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "ch/hgdev/toposuite/calculation/activities/abriss/AbrissResultsActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.settings.SettingsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.help.HelpActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "ch.hgdev.toposuite.TopoSuiteActivity", 
+                        "method": "<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "ch.hgdev.toposuite"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "ch.hgdev.toposuite.calculation.activities.circle.CircleActivity", 
+            "exported": false
+        }
+    ]
+}

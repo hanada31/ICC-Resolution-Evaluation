@@ -1,0 +1,28 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+AboutActivity[color = red];
+Manual[color = red];
+GameSelector[style=filled, fillcolor=orange, color = red];
+Settings[color = red];
+StatisticsActivity[color = red];
+GameManager[color = red];
+SettingsGames[color = red];
+GameSelector->GameManager;
+GameSelector->Settings;
+GameSelector->Manual;
+GameSelector->AboutActivity;
+Settings->Settings;
+GameManager->StatisticsActivity;
+GameManager->Settings;
+SettingsGames->SettingsGames;
+}

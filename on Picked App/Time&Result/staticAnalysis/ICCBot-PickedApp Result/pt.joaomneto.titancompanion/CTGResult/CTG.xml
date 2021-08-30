@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity">
+    <destination name="pt.joaomneto.titancompanion.GamebookWikiaActivity" type="Act2Act" method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2: void onClick(android.view.View)&gt;" InstructionId="19" extras="String-GAMEBOOK_URL" flags=""/>
+    <destination name="pt.joaomneto.titancompanion.GamebookFullImageActivity" type="Act2Act" method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1: void onClick(android.view.View)&gt;" InstructionId="18" extras="int-GAMEBOOK_COVER" flags=""/>
+  </source>
+  <source name="pt.joaomneto.titancompanion.MainActivity">
+    <destination name="pt.joaomneto.titancompanion.GamebookListActivity" type="Act2Act" method="&lt;pt.joaomneto.titancompanion.MainActivity: void createNewAdventure(android.view.View)&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="pt.joaomneto.titancompanion.LoadAdventureActivity" type="Act2Act" method="&lt;pt.joaomneto.titancompanion.MainActivity: void loadAdventure(android.view.View)&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="pt.joaomneto.titancompanion.TCPreferenceActivity" type="Act2Act" method="&lt;pt.joaomneto.titancompanion.MainActivity: void settings(android.view.View)&gt;" InstructionId="8" extras="boolean-:android:no_headers:1,String-:android:show_fragment:class Lpt/joaomneto/titancompanion/fragment/TCPreferenceFragment;" flags=""/>
+  </source>
+</root>

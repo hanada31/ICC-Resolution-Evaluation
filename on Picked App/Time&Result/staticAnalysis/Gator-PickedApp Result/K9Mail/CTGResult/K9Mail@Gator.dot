@@ -1,0 +1,76 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+ChooseIdentity[color = red];
+EmailAddressList[color = red];
+AccountSetupIncoming[color = red];
+ChooseFolder[color = red];
+MessageList[color = red];
+AccountSettings[color = red];
+AccountSetupCheckSettings[color = red];
+LauncherShortcuts[color = red];
+WelcomeMessage[color = red];
+MessageCompose[color = red];
+FolderSettings[color = red];
+Accounts[style=filled, fillcolor=orange, color = red];
+FolderList[color = red];
+OpenPgpAppSelectDialog[color = red];
+EditIdentity[color = red];
+AccountSetupComposition[color = red];
+AccountSetupAccountType[color = red];
+ManageIdentities[color = red];
+ChooseAccount[color = red];
+Prefs[color = red];
+AccountSetupOptions[color = red];
+UpgradeDatabases[color = red];
+FontSizeSettings[color = red];
+AccountSetupOutgoing[color = red];
+NotificationDeleteConfirmation[color = red];
+AccountSetupNames[color = red];
+Search[color = red];
+AccountSetupBasics[color = red];
+UnreadWidgetConfiguration[color = red];
+
+ ChooseIdentity -> EditIdentity
+ AccountSetupIncoming -> AccountSetupCheckSettings
+ MessageList -> FolderSettings
+ MessageList -> Accounts
+ MessageList -> AccountSettings
+ MessageList -> Prefs
+ MessageList -> MessageCompose
+ WelcomeMessage -> AccountSetupBasics
+ WelcomeMessage -> Accounts
+ MessageCompose -> Accounts
+ MessageCompose -> MessageCompose
+ Accounts -> Prefs
+ Accounts -> WelcomeMessage
+ Accounts -> MessageCompose
+ Accounts -> AccountSettings
+ Accounts -> AccountSetupBasics
+ Accounts -> Accounts
+ FolderList -> Accounts
+ FolderList -> FolderSettings
+ FolderList -> AccountSettings
+ FolderList -> Prefs
+ FolderList -> MessageCompose
+ AccountSetupAccountType -> AccountSetupIncoming
+ ManageIdentities -> EditIdentity
+ AccountSetupOptions -> AccountSetupNames
+ AccountSetupOutgoing -> AccountSetupCheckSettings
+ Search -> AccountSettings
+ Search -> MessageCompose
+ Search -> FolderSettings
+ Search -> Prefs
+ Search -> Accounts
+ AccountSetupBasics -> AccountSetupAccountType
+ AccountSetupBasics -> AccountSetupCheckSettings
+}

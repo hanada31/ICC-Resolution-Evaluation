@@ -1,0 +1,70 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+FullscreenMapActivity[color = red];
+PassAndroidActivity[color = red];
+GoogleApiActivity[color = red];
+PassEditActivity[color = red];
+HelpActivity[color = red];
+TouchImageActivity[color = red];
+PassViewActivityBase[color = red];
+OpenIphoneWebView[color = red];
+ExtractURLAsIphoneActivity[color = red];
+URLRewriteActivity[color = red];
+USAirwaysLoadActivity[color = red];
+PassViewActivity[color = red];
+PreferenceActivity[color = red];
+FullscreenBarcodeActivity[color = red];
+PassListActivity[style=filled, fillcolor=orange, color = red];
+PassImportActivity[color = red];
+
+ FullscreenMapActivity -> FullscreenBarcodeActivity
+ FullscreenMapActivity -> PassViewActivity
+ FullscreenMapActivity -> TouchImageActivity
+ FullscreenMapActivity -> HelpActivity
+ FullscreenMapActivity -> FullscreenMapActivity
+ FullscreenMapActivity -> PassEditActivity
+ PassEditActivity -> FullscreenBarcodeActivity
+ PassEditActivity -> HelpActivity
+ PassEditActivity -> PassViewActivity
+ PassEditActivity -> PassEditActivity
+ PassEditActivity -> FullscreenMapActivity
+ PassViewActivityBase -> FullscreenMapActivity
+ PassViewActivityBase -> FullscreenBarcodeActivity
+ PassViewActivityBase -> HelpActivity
+ PassViewActivityBase -> PassViewActivity
+ PassViewActivityBase -> PassEditActivity
+ URLRewriteActivity -> PassImportActivity
+ USAirwaysLoadActivity -> PassImportActivity
+ PassViewActivity -> FullscreenBarcodeActivity
+ PassViewActivity -> PassViewActivity
+ PassViewActivity -> TouchImageActivity
+ PassViewActivity -> HelpActivity
+ PassViewActivity -> FullscreenMapActivity
+ PassViewActivity -> PassEditActivity
+ FullscreenBarcodeActivity -> FullscreenMapActivity
+ FullscreenBarcodeActivity -> TouchImageActivity
+ FullscreenBarcodeActivity -> FullscreenBarcodeActivity
+ FullscreenBarcodeActivity -> PassViewActivity
+ FullscreenBarcodeActivity -> PassEditActivity
+ FullscreenBarcodeActivity -> HelpActivity
+ PassListActivity -> FullscreenBarcodeActivity
+ PassListActivity -> HelpActivity
+ PassListActivity -> PassViewActivity
+ PassListActivity -> PassEditActivity
+ PassListActivity -> FullscreenMapActivity
+ PassImportActivity -> PassEditActivity
+ PassImportActivity -> FullscreenBarcodeActivity
+ PassImportActivity -> PassViewActivity
+ PassImportActivity -> HelpActivity
+ PassImportActivity -> FullscreenMapActivity
+}

@@ -1,0 +1,1212 @@
+{
+    "name": "eu.vranckaert.worktime", 
+    "analysis_end": 1627546821, 
+    "analysis_start": 1627546422, 
+    "used_permissions": [
+        "android.permission.INTERNET", 
+        "android.permission.ACCESS_NETWORK_STATE", 
+        "android.permission.ACCESS_WIFI_STATE", 
+        "com.android.vending.BILLING", 
+        "android.permission.RECEIVE_BOOT_COMPLETED", 
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+    ], 
+    "version": 260, 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity: void showProjectChooser()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity: void startActivityForResult(android.content.Intent,int)>($r1, 11)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity: void showTaskChooser()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity: void startActivityForResult(android.content.Intent,int)>($r1, 13)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchInActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.reporting.ReportingResultActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.reporting.ReportingResultActivity: void save()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.reporting.ReportingResultActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 24
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.reporting.ReportingResultActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.utils.file.DirectoryPicker", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.tasks.SelectTaskActivity$2", 
+                        "method": "<eu.vranckaert.worktime.activities.tasks.SelectTaskActivity$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r6.<eu.vranckaert.worktime.activities.tasks.SelectTaskActivity: void startActivityForResult(android.content.Intent,int)>($r2, 7)", 
+                        "id": 49
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.tasks.SelectTaskActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.TimeRegistrationsPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationSplitActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: boolean onContextItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener", 
+                        "method": "<eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity$1", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r4.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 1)", 
+                        "id": 51
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 14
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity$2", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity: void startActivityForResult(android.content.Intent,int)>($r2, 6)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity$4", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity$4: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity: void startActivityForResult(android.content.Intent,int)>($r2, 7)", 
+                        "id": 49
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditProjectAndTaskActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.preferences.PreferencesActivity$1", 
+                        "method": "<eu.vranckaert.worktime.activities.preferences.PreferencesActivity$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.preferences.PreferencesActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.preferences.PreferencesActivity$3", 
+                        "method": "<eu.vranckaert.worktime.activities.preferences.PreferencesActivity$3: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<eu.vranckaert.worktime.activities.preferences.PreferencesActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.preferences.PreferencesActivity$2", 
+                        "method": "<eu.vranckaert.worktime.activities.preferences.PreferencesActivity$2: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.preferences.PreferencesActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.context.IntentUtil", 
+                        "method": "<eu.vranckaert.worktime.utils.context.IntentUtil: void goBack(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.PreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ManageProjectsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void openEditProjectActivity(eu.vranckaert.worktime.model.Project)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void startActivityForResult(android.content.Intent,int)>($r2, 8)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener", 
+                        "method": "<eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ManageProjectsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void openProjectDetailActivity(eu.vranckaert.worktime.model.Project)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void startActivityForResult(android.content.Intent,int)>($r2, 10)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.context.IntentUtil", 
+                        "method": "<eu.vranckaert.worktime.utils.context.IntentUtil: void goBack(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ManageProjectsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void openAddProjectActivity()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void startActivityForResult(android.content.Intent,int)>($r1, 6)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ManageProjectsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void openCopyProjectActivity(eu.vranckaert.worktime.model.Project)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ManageProjectsActivity: void startActivityForResult(android.content.Intent,int)>($r2, 12)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.projects.ManageProjectsActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.ResetPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.donations.google.BillingService$1", 
+                        "method": "<eu.vranckaert.worktime.utils.donations.google.BillingService$1: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r4.<eu.vranckaert.worktime.utils.donations.google.BillingService: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.donations.google.BillingService", 
+                        "method": "<eu.vranckaert.worktime.utils.donations.google.BillingService: boolean bindToMarketBillingService()>", 
+                        "statement": "$z0 = virtualinvoke $r0.<eu.vranckaert.worktime.utils.donations.google.BillingService: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r2, $r0, 1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "eu.vranckaert.worktime.utils.donations.google.BillingService", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationDeleteActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditEndTimeActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 1)", 
+                        "id": 83
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 113
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 65
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 57
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 165
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 95
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 107
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 142
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 119
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void handleTimeRegistrationAction(eu.vranckaert.worktime.enums.timeregistration.TimeRegistrationAction)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity: void startActivityForResult(android.content.Intent,int)>($r18, 3)", 
+                        "id": 129
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationActionActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.DateTimePreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.utils.donations.DonationsActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.SD_RESTORE_DATA"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.backup.RestoreFromSDActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.projects.CopyProjectActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.tasks.AddEditTaskActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_CONFIGURE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.widget.Configuration2x1Activity", 
+                        "method": "<eu.vranckaert.worktime.activities.widget.Configuration2x1Activity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.widget.Configuration2x1Activity: void startActivityForResult(android.content.Intent,int)>($r2, 11)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.widget.Configuration2x1Activity", 
+                        "method": "<eu.vranckaert.worktime.activities.widget.Configuration2x1Activity: void onActivityResult(int,int,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.widget.Configuration2x1Activity: void startActivityForResult(android.content.Intent,int)>($r1, 13)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.widget.Configuration2x1Activity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationPunchOutActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.AccountSyncPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.SD_BACKUP_DATA"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.backup.BackupToSDActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity$1", 
+                        "method": "<eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity: void startActivityForResult(android.content.Intent,int)>($r2, 43522432)", 
+                        "id": 19
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.SD_BACKUP_SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.backup.BackupSendFromSDActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.about.AboutActivity$1", 
+                        "method": "<eu.vranckaert.worktime.activities.about.AboutActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.about.AboutActivity: void startActivity(android.content.Intent)>($r11)", 
+                        "id": 33
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.context.IntentUtil", 
+                        "method": "<eu.vranckaert.worktime.utils.context.IntentUtil: void goBack(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.about.AboutActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarSplitActionHandleActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.notifcationbar.StatusBarSplitActionHandleActivity: void launchTimeRegistrationActionsDialog()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.notifcationbar.StatusBarSplitActionHandleActivity: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarSplitActionHandleActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.reporting.ReportingCriteriaActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.reporting.ReportingCriteriaActivity: void generateReport()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.reporting.ReportingCriteriaActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 25
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.reporting.ReportingCriteriaActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationSetCommentActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void openReportingCriteriaActivity(eu.vranckaert.worktime.model.Project)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void openEditProjectActivity(eu.vranckaert.worktime.model.Project)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void startActivityForResult(android.content.Intent,int)>($r2, 8)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener", 
+                        "method": "<eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void openEditTaskActivity(eu.vranckaert.worktime.model.Task)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void startActivityForResult(android.content.Intent,int)>($r2, 9)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void openReportingCriteriaActivity(eu.vranckaert.worktime.model.Project,eu.vranckaert.worktime.model.Task)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void openAddTaskActivity()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity: void startActivityForResult(android.content.Intent,int)>($r1, 7)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.projects.ProjectDetailsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.projects.SelectProjectActivity$2", 
+                        "method": "<eu.vranckaert.worktime.activities.projects.SelectProjectActivity$2: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r6.<eu.vranckaert.worktime.activities.projects.SelectProjectActivity: void startActivityForResult(android.content.Intent,int)>($r2, 6)", 
+                        "id": 43
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.projects.SelectProjectActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.android.vending.billing.IN_APP_NOTIFY", 
+                                "com.android.vending.billing.PURCHASE_STATE_CHANGED", 
+                                "com.android.vending.billing.RESPONSE_CODE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.donations.google.BillingReceiver", 
+                        "method": "<eu.vranckaert.worktime.utils.donations.google.BillingReceiver: void purchaseStateChanged(android.content.Context,java.lang.String,java.lang.String)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.donations.google.BillingReceiver", 
+                        "method": "<eu.vranckaert.worktime.utils.donations.google.BillingReceiver: void notify(android.content.Context,java.lang.String)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r3)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.utils.donations.google.BillingReceiver", 
+                        "method": "<eu.vranckaert.worktime.utils.donations.google.BillingReceiver: void checkResponseCode(android.content.Context,long,int)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.utils.donations.google.BillingReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.time_registration_action_dialog"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 26
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationRestartActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.time_registration_action_split"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 26
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarOthersActionHandleActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.notifcationbar.StatusBarOthersActionHandleActivity: void launchTimeRegistrationActionsDialog()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.notifcationbar.StatusBarOthersActionHandleActivity: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarOthersActionHandleActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationAddActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.account.AccountRegisterActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationEditStartTimeActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.ProjectsAndTasksPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED", 
+                                "android.intent.action.MY_PACKAGE_REPLACED"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.ActionDialogBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 26
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver", 
+                        "method": "<eu.vranckaert.worktime.broadcastreceiver.SplitBroadCastReceiver: void handleReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.broadcastreceiver.AlarmSyncInitBroadcastReceiver", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountProfileActivity$1", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountProfileActivity$1: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.account.AccountProfileActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountProfileActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountProfileActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.account.AccountProfileActivity: android.content.ComponentName startService(android.content.Intent)>($r4)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountProfileActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountProfileActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.account.AccountProfileActivity: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.account.AccountProfileActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.projects.AddEditProjectActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.NotificationsPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.preferences.ResetApplicationPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountSyncService", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountSyncService: void handleResult(java.lang.Exception)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.account.AccountSyncService: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 16
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "eu.vranckaert.worktime.activities.account.AccountSyncService", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.account.AccountSyncHistoryActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "eu.vranckaert.worktime.BACKUP_DOC"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.backup.BackupRestoreInfoActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.providers.WorkTimeWidgetProvider_2x2_Project", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountLoginActivity$2", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountLoginActivity$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<eu.vranckaert.worktime.activities.account.AccountLoginActivity: void startActivityForResult(android.content.Intent,int)>($r2, 15)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.account.AccountLoginActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.account.AccountLoginActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.account.AccountLoginActivity: void startActivityForResult(android.content.Intent,int)>($r2, 14)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.account.AccountLoginActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.utils.view.actionbar.synclock.SyncLockingActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener", 
+                        "method": "<eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationDetailActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationDetailActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationDetailActivity: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationDetailActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.reporting.ReportingExportActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "eu.vranckaert.worktime.providers.WorkTimeWidgetProvider_2x1_ProjectTask", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.HomeActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.HomeActivity: void launchActivity(java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.HomeActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener", 
+                        "method": "<eu.vranckaert.worktime.activities.punchbar.PunchBarClickListener: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.HomeActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarPunchOutHandleActivity", 
+                        "method": "<eu.vranckaert.worktime.activities.notifcationbar.StatusBarPunchOutHandleActivity: void launchStopTimeRegistrationActivity()>", 
+                        "statement": "virtualinvoke $r0.<eu.vranckaert.worktime.activities.notifcationbar.StatusBarPunchOutHandleActivity: void startActivityForResult(android.content.Intent,int)>($r1, 2)", 
+                        "id": 14
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "eu.vranckaert.worktime.activities.notifcationbar.StatusBarPunchOutHandleActivity", 
+            "exported": false
+        }
+    ]
+}

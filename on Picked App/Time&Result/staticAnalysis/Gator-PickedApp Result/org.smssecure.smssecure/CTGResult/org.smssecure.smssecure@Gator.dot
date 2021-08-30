@@ -1,0 +1,348 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+BlockedContactsActivity[color = red];
+PushContactSelectionActivity[color = red];
+MessageDetailsActivity[color = red];
+ShareActivity[color = red];
+ConversationPopupActivity[color = red];
+LogSubmitActivity[color = red];
+ConversationActivity[color = red];
+ViewLocalIdentityActivity[color = red];
+PanicResponderActivity[color = red];
+MmsPreferencesActivity[color = red];
+ConversationListArchiveActivity[color = red];
+MediaPreviewActivity[color = red];
+CountrySelectionActivity[color = red];
+GroupCreateActivity[color = red];
+ImportExportActivity[color = red];
+PromptMmsActivity[color = red];
+ApplicationPreferencesActivity[color = red];
+RecipientPreferenceActivity[color = red];
+ViewIdentityActivity[color = red];
+MediaOverviewActivity[color = red];
+ApplicationMigrationService[color = red];
+NewConversationActivity[color = red];
+VerifyIdentityActivity[color = red];
+DatabaseUpgradeActivity[color = red];
+PassphraseChangeActivity[color = red];
+IntroScreenActivity[color = red];
+ExitActivity[color = red];
+DummyActivity[color = red];
+ConversationListActivity[color = red];
+PassphrasePromptActivity[color = red];
+PassphraseCreateActivity[color = red];
+DatabaseMigrationActivity[color = red];
+SmsSendtoActivity[color = red];
+
+ BlockedContactsActivity -> GroupCreateActivity
+ BlockedContactsActivity -> ImportExportActivity
+ BlockedContactsActivity -> LogSubmitActivity
+ BlockedContactsActivity -> ApplicationPreferencesActivity
+ BlockedContactsActivity -> NewConversationActivity
+ BlockedContactsActivity -> PromptMmsActivity
+ BlockedContactsActivity -> RecipientPreferenceActivity
+ BlockedContactsActivity -> ViewLocalIdentityActivity
+ BlockedContactsActivity -> PushContactSelectionActivity
+ BlockedContactsActivity -> MmsPreferencesActivity
+ BlockedContactsActivity -> ExitActivity
+ BlockedContactsActivity -> VerifyIdentityActivity
+ PushContactSelectionActivity -> VerifyIdentityActivity
+ PushContactSelectionActivity -> PushContactSelectionActivity
+ PushContactSelectionActivity -> NewConversationActivity
+ PushContactSelectionActivity -> PromptMmsActivity
+ PushContactSelectionActivity -> ViewLocalIdentityActivity
+ PushContactSelectionActivity -> ImportExportActivity
+ PushContactSelectionActivity -> LogSubmitActivity
+ PushContactSelectionActivity -> MmsPreferencesActivity
+ PushContactSelectionActivity -> ApplicationPreferencesActivity
+ PushContactSelectionActivity -> RecipientPreferenceActivity
+ PushContactSelectionActivity -> ExitActivity
+ PushContactSelectionActivity -> GroupCreateActivity
+ MessageDetailsActivity -> PushContactSelectionActivity
+ MessageDetailsActivity -> NewConversationActivity
+ MessageDetailsActivity -> ViewLocalIdentityActivity
+ MessageDetailsActivity -> MmsPreferencesActivity
+ MessageDetailsActivity -> VerifyIdentityActivity
+ MessageDetailsActivity -> PromptMmsActivity
+ MessageDetailsActivity -> GroupCreateActivity
+ MessageDetailsActivity -> ImportExportActivity
+ MessageDetailsActivity -> ExitActivity
+ MessageDetailsActivity -> LogSubmitActivity
+ MessageDetailsActivity -> RecipientPreferenceActivity
+ MessageDetailsActivity -> ApplicationPreferencesActivity
+ ShareActivity -> ExitActivity
+ ShareActivity -> PromptMmsActivity
+ ShareActivity -> VerifyIdentityActivity
+ ShareActivity -> GroupCreateActivity
+ ShareActivity -> ImportExportActivity
+ ShareActivity -> MmsPreferencesActivity
+ ShareActivity -> ApplicationPreferencesActivity
+ ShareActivity -> NewConversationActivity
+ ShareActivity -> LogSubmitActivity
+ ShareActivity -> RecipientPreferenceActivity
+ ShareActivity -> ViewLocalIdentityActivity
+ ShareActivity -> PushContactSelectionActivity
+ ConversationPopupActivity -> NewConversationActivity
+ ConversationPopupActivity -> RecipientPreferenceActivity
+ ConversationPopupActivity -> ApplicationPreferencesActivity
+ ConversationPopupActivity -> PushContactSelectionActivity
+ ConversationPopupActivity -> ImportExportActivity
+ ConversationPopupActivity -> LogSubmitActivity
+ ConversationPopupActivity -> ViewLocalIdentityActivity
+ ConversationPopupActivity -> PromptMmsActivity
+ ConversationPopupActivity -> ExitActivity
+ ConversationPopupActivity -> GroupCreateActivity
+ ConversationPopupActivity -> VerifyIdentityActivity
+ ConversationPopupActivity -> MmsPreferencesActivity
+ LogSubmitActivity -> GroupCreateActivity
+ LogSubmitActivity -> PromptMmsActivity
+ LogSubmitActivity -> VerifyIdentityActivity
+ LogSubmitActivity -> PushContactSelectionActivity
+ LogSubmitActivity -> ViewLocalIdentityActivity
+ LogSubmitActivity -> RecipientPreferenceActivity
+ LogSubmitActivity -> NewConversationActivity
+ LogSubmitActivity -> MmsPreferencesActivity
+ LogSubmitActivity -> LogSubmitActivity
+ LogSubmitActivity -> ImportExportActivity
+ LogSubmitActivity -> ApplicationPreferencesActivity
+ LogSubmitActivity -> ExitActivity
+ ConversationActivity -> ExitActivity
+ ConversationActivity -> PromptMmsActivity
+ ConversationActivity -> LogSubmitActivity
+ ConversationActivity -> GroupCreateActivity
+ ConversationActivity -> ImportExportActivity
+ ConversationActivity -> MmsPreferencesActivity
+ ConversationActivity -> ApplicationPreferencesActivity
+ ConversationActivity -> RecipientPreferenceActivity
+ ConversationActivity -> NewConversationActivity
+ ConversationActivity -> ViewLocalIdentityActivity
+ ConversationActivity -> VerifyIdentityActivity
+ ConversationActivity -> PushContactSelectionActivity
+ ViewLocalIdentityActivity -> PushContactSelectionActivity
+ ViewLocalIdentityActivity -> ViewLocalIdentityActivity
+ ViewLocalIdentityActivity -> NewConversationActivity
+ ViewLocalIdentityActivity -> RecipientPreferenceActivity
+ ViewLocalIdentityActivity -> MmsPreferencesActivity
+ ViewLocalIdentityActivity -> ImportExportActivity
+ ViewLocalIdentityActivity -> LogSubmitActivity
+ ViewLocalIdentityActivity -> ApplicationPreferencesActivity
+ ViewLocalIdentityActivity -> ExitActivity
+ ViewLocalIdentityActivity -> GroupCreateActivity
+ ViewLocalIdentityActivity -> PromptMmsActivity
+ ViewLocalIdentityActivity -> VerifyIdentityActivity
+ MmsPreferencesActivity -> PromptMmsActivity
+ MmsPreferencesActivity -> GroupCreateActivity
+ MmsPreferencesActivity -> ImportExportActivity
+ MmsPreferencesActivity -> ExitActivity
+ MmsPreferencesActivity -> LogSubmitActivity
+ MmsPreferencesActivity -> ApplicationPreferencesActivity
+ MmsPreferencesActivity -> RecipientPreferenceActivity
+ MmsPreferencesActivity -> PushContactSelectionActivity
+ MmsPreferencesActivity -> NewConversationActivity
+ MmsPreferencesActivity -> ViewLocalIdentityActivity
+ MmsPreferencesActivity -> MmsPreferencesActivity
+ MmsPreferencesActivity -> VerifyIdentityActivity
+ ConversationListArchiveActivity -> MmsPreferencesActivity
+ ConversationListArchiveActivity -> ApplicationPreferencesActivity
+ ConversationListArchiveActivity -> RecipientPreferenceActivity
+ ConversationListArchiveActivity -> ExitActivity
+ ConversationListArchiveActivity -> GroupCreateActivity
+ ConversationListArchiveActivity -> ImportExportActivity
+ ConversationListArchiveActivity -> LogSubmitActivity
+ ConversationListArchiveActivity -> ViewLocalIdentityActivity
+ ConversationListArchiveActivity -> VerifyIdentityActivity
+ ConversationListArchiveActivity -> NewConversationActivity
+ ConversationListArchiveActivity -> PromptMmsActivity
+ ConversationListArchiveActivity -> PushContactSelectionActivity
+ MediaPreviewActivity -> NewConversationActivity
+ MediaPreviewActivity -> RecipientPreferenceActivity
+ MediaPreviewActivity -> PushContactSelectionActivity
+ MediaPreviewActivity -> MmsPreferencesActivity
+ MediaPreviewActivity -> ApplicationPreferencesActivity
+ MediaPreviewActivity -> ViewLocalIdentityActivity
+ MediaPreviewActivity -> PromptMmsActivity
+ MediaPreviewActivity -> VerifyIdentityActivity
+ MediaPreviewActivity -> LogSubmitActivity
+ MediaPreviewActivity -> GroupCreateActivity
+ MediaPreviewActivity -> ImportExportActivity
+ MediaPreviewActivity -> ExitActivity
+ GroupCreateActivity -> VerifyIdentityActivity
+ GroupCreateActivity -> ViewLocalIdentityActivity
+ GroupCreateActivity -> PushContactSelectionActivity
+ GroupCreateActivity -> NewConversationActivity
+ GroupCreateActivity -> RecipientPreferenceActivity
+ GroupCreateActivity -> PromptMmsActivity
+ GroupCreateActivity -> ApplicationPreferencesActivity
+ GroupCreateActivity -> GroupCreateActivity
+ GroupCreateActivity -> ImportExportActivity
+ GroupCreateActivity -> LogSubmitActivity
+ GroupCreateActivity -> MmsPreferencesActivity
+ GroupCreateActivity -> ExitActivity
+ ImportExportActivity -> NewConversationActivity
+ ImportExportActivity -> RecipientPreferenceActivity
+ ImportExportActivity -> ApplicationPreferencesActivity
+ ImportExportActivity -> PushContactSelectionActivity
+ ImportExportActivity -> ImportExportActivity
+ ImportExportActivity -> LogSubmitActivity
+ ImportExportActivity -> VerifyIdentityActivity
+ ImportExportActivity -> MmsPreferencesActivity
+ ImportExportActivity -> ExitActivity
+ ImportExportActivity -> PromptMmsActivity
+ ImportExportActivity -> GroupCreateActivity
+ ImportExportActivity -> ViewLocalIdentityActivity
+ PromptMmsActivity -> NewConversationActivity
+ PromptMmsActivity -> RecipientPreferenceActivity
+ PromptMmsActivity -> ApplicationPreferencesActivity
+ PromptMmsActivity -> MmsPreferencesActivity
+ PromptMmsActivity -> VerifyIdentityActivity
+ PromptMmsActivity -> ViewLocalIdentityActivity
+ PromptMmsActivity -> PushContactSelectionActivity
+ PromptMmsActivity -> PromptMmsActivity
+ PromptMmsActivity -> ExitActivity
+ PromptMmsActivity -> GroupCreateActivity
+ PromptMmsActivity -> ImportExportActivity
+ PromptMmsActivity -> LogSubmitActivity
+ ApplicationPreferencesActivity -> GroupCreateActivity
+ ApplicationPreferencesActivity -> ImportExportActivity
+ ApplicationPreferencesActivity -> PushContactSelectionActivity
+ ApplicationPreferencesActivity -> MmsPreferencesActivity
+ ApplicationPreferencesActivity -> VerifyIdentityActivity
+ ApplicationPreferencesActivity -> ViewLocalIdentityActivity
+ ApplicationPreferencesActivity -> ExitActivity
+ ApplicationPreferencesActivity -> NewConversationActivity
+ ApplicationPreferencesActivity -> PromptMmsActivity
+ ApplicationPreferencesActivity -> RecipientPreferenceActivity
+ ApplicationPreferencesActivity -> LogSubmitActivity
+ ApplicationPreferencesActivity -> ApplicationPreferencesActivity
+ RecipientPreferenceActivity -> ViewLocalIdentityActivity
+ RecipientPreferenceActivity -> ExitActivity
+ RecipientPreferenceActivity -> NewConversationActivity
+ RecipientPreferenceActivity -> PromptMmsActivity
+ RecipientPreferenceActivity -> RecipientPreferenceActivity
+ RecipientPreferenceActivity -> ApplicationPreferencesActivity
+ RecipientPreferenceActivity -> LogSubmitActivity
+ RecipientPreferenceActivity -> GroupCreateActivity
+ RecipientPreferenceActivity -> ImportExportActivity
+ RecipientPreferenceActivity -> PushContactSelectionActivity
+ RecipientPreferenceActivity -> MmsPreferencesActivity
+ RecipientPreferenceActivity -> VerifyIdentityActivity
+ ViewIdentityActivity -> NewConversationActivity
+ ViewIdentityActivity -> MmsPreferencesActivity
+ ViewIdentityActivity -> ApplicationPreferencesActivity
+ ViewIdentityActivity -> RecipientPreferenceActivity
+ ViewIdentityActivity -> VerifyIdentityActivity
+ ViewIdentityActivity -> ViewLocalIdentityActivity
+ ViewIdentityActivity -> PushContactSelectionActivity
+ ViewIdentityActivity -> ExitActivity
+ ViewIdentityActivity -> PromptMmsActivity
+ ViewIdentityActivity -> GroupCreateActivity
+ ViewIdentityActivity -> ImportExportActivity
+ ViewIdentityActivity -> LogSubmitActivity
+ MediaOverviewActivity -> VerifyIdentityActivity
+ MediaOverviewActivity -> ViewLocalIdentityActivity
+ MediaOverviewActivity -> ExitActivity
+ MediaOverviewActivity -> PromptMmsActivity
+ MediaOverviewActivity -> GroupCreateActivity
+ MediaOverviewActivity -> ApplicationPreferencesActivity
+ MediaOverviewActivity -> RecipientPreferenceActivity
+ MediaOverviewActivity -> ImportExportActivity
+ MediaOverviewActivity -> LogSubmitActivity
+ MediaOverviewActivity -> NewConversationActivity
+ MediaOverviewActivity -> MmsPreferencesActivity
+ MediaOverviewActivity -> PushContactSelectionActivity
+ NewConversationActivity -> PushContactSelectionActivity
+ NewConversationActivity -> NewConversationActivity
+ NewConversationActivity -> ViewLocalIdentityActivity
+ NewConversationActivity -> MmsPreferencesActivity
+ NewConversationActivity -> ImportExportActivity
+ NewConversationActivity -> LogSubmitActivity
+ NewConversationActivity -> ApplicationPreferencesActivity
+ NewConversationActivity -> RecipientPreferenceActivity
+ NewConversationActivity -> GroupCreateActivity
+ NewConversationActivity -> ExitActivity
+ NewConversationActivity -> PromptMmsActivity
+ NewConversationActivity -> VerifyIdentityActivity
+ VerifyIdentityActivity -> ViewLocalIdentityActivity
+ VerifyIdentityActivity -> PushContactSelectionActivity
+ VerifyIdentityActivity -> NewConversationActivity
+ VerifyIdentityActivity -> ApplicationPreferencesActivity
+ VerifyIdentityActivity -> RecipientPreferenceActivity
+ VerifyIdentityActivity -> PromptMmsActivity
+ VerifyIdentityActivity -> GroupCreateActivity
+ VerifyIdentityActivity -> ImportExportActivity
+ VerifyIdentityActivity -> LogSubmitActivity
+ VerifyIdentityActivity -> MmsPreferencesActivity
+ VerifyIdentityActivity -> ExitActivity
+ VerifyIdentityActivity -> VerifyIdentityActivity
+ PassphraseChangeActivity -> PromptMmsActivity
+ PassphraseChangeActivity -> GroupCreateActivity
+ PassphraseChangeActivity -> ExitActivity
+ PassphraseChangeActivity -> LogSubmitActivity
+ PassphraseChangeActivity -> ApplicationPreferencesActivity
+ PassphraseChangeActivity -> RecipientPreferenceActivity
+ PassphraseChangeActivity -> PushContactSelectionActivity
+ PassphraseChangeActivity -> NewConversationActivity
+ PassphraseChangeActivity -> ViewLocalIdentityActivity
+ PassphraseChangeActivity -> ImportExportActivity
+ PassphraseChangeActivity -> VerifyIdentityActivity
+ PassphraseChangeActivity -> MmsPreferencesActivity
+ IntroScreenActivity -> PromptMmsActivity
+ IntroScreenActivity -> ImportExportActivity
+ IntroScreenActivity -> LogSubmitActivity
+ IntroScreenActivity -> ExitActivity
+ IntroScreenActivity -> GroupCreateActivity
+ IntroScreenActivity -> PushContactSelectionActivity
+ IntroScreenActivity -> NewConversationActivity
+ IntroScreenActivity -> MmsPreferencesActivity
+ IntroScreenActivity -> ApplicationPreferencesActivity
+ IntroScreenActivity -> RecipientPreferenceActivity
+ IntroScreenActivity -> VerifyIdentityActivity
+ IntroScreenActivity -> ViewLocalIdentityActivity
+ ConversationListActivity -> ImportExportActivity
+ ConversationListActivity -> LogSubmitActivity
+ ConversationListActivity -> MmsPreferencesActivity
+ ConversationListActivity -> NewConversationActivity
+ ConversationListActivity -> PushContactSelectionActivity
+ ConversationListActivity -> VerifyIdentityActivity
+ ConversationListActivity -> ViewLocalIdentityActivity
+ ConversationListActivity -> ExitActivity
+ ConversationListActivity -> PromptMmsActivity
+ ConversationListActivity -> GroupCreateActivity
+ ConversationListActivity -> ApplicationPreferencesActivity
+ ConversationListActivity -> RecipientPreferenceActivity
+ PassphrasePromptActivity -> LogSubmitActivity
+ PassphrasePromptActivity -> MmsPreferencesActivity
+ PassphrasePromptActivity -> ExitActivity
+ PassphrasePromptActivity -> GroupCreateActivity
+ PassphrasePromptActivity -> ImportExportActivity
+ PassphrasePromptActivity -> PushContactSelectionActivity
+ PassphrasePromptActivity -> VerifyIdentityActivity
+ PassphrasePromptActivity -> ApplicationPreferencesActivity
+ PassphrasePromptActivity -> RecipientPreferenceActivity
+ PassphrasePromptActivity -> NewConversationActivity
+ PassphrasePromptActivity -> ViewLocalIdentityActivity
+ PassphrasePromptActivity -> PromptMmsActivity
+ DatabaseMigrationActivity -> ImportExportActivity
+ DatabaseMigrationActivity -> GroupCreateActivity
+ DatabaseMigrationActivity -> MmsPreferencesActivity
+ DatabaseMigrationActivity -> ExitActivity
+ DatabaseMigrationActivity -> VerifyIdentityActivity
+ DatabaseMigrationActivity -> ViewLocalIdentityActivity
+ DatabaseMigrationActivity -> PushContactSelectionActivity
+ DatabaseMigrationActivity -> ApplicationPreferencesActivity
+ DatabaseMigrationActivity -> NewConversationActivity
+ DatabaseMigrationActivity -> PromptMmsActivity
+ DatabaseMigrationActivity -> LogSubmitActivity
+ DatabaseMigrationActivity -> RecipientPreferenceActivity
+ SmsSendtoActivity -> NewConversationActivity
+}

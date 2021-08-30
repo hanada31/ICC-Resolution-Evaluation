@@ -1,0 +1,47 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+CollectionMembersActivity[color = red];
+DebugInfoActivity[style=filled, fillcolor=pink, color = red];
+ViewCollectionActivity[color = red];
+AccountActivity[color = red];
+AppSettingsActivity[color = red];
+JournalItemActivity[color = red];
+AboutActivity[color = red];
+LoginActivity[style=filled, fillcolor=pink, color = red];
+WebViewActivity[color = red];
+TrustCertificateActivity[style=filled, fillcolor=pink, color = red];
+SyncNotification[color = red];
+CreateCollectionActivity[color = red];
+ImportActivity[color = red];
+ChangeEncryptionPasswordActivity[color = red];
+PermissionsActivity[color = red];
+EditCollectionActivity[color = red];
+AccountSettingsActivity[color = red];
+AccountsActivity[style=filled, fillcolor=orange, color = red];
+LegacySenderService[color = royalblue];
+CalendarsSyncAdapterService[style=filled, fillcolor=pink, color = royalblue];
+ContactsSyncAdapterService[style=filled, fillcolor=pink, color = royalblue];
+AccountUpdateService[color = royalblue];
+JobSenderService[color = royalblue];
+TasksSyncAdapterService[style=filled, fillcolor=pink, color = royalblue];
+CustomCertService[color = royalblue];
+AccountAuthenticatorService[color = royalblue];
+AddressBooksSyncAdapterService[style=filled, fillcolor=pink, color = royalblue];
+NullAuthenticatorService[color = royalblue];
+PackageChangedReceiver[style=filled, fillcolor=pink, color = peru];
+NotificationBroadcastReceiver[color = peru];
+AccountSettings[style=filled, fillcolor=pink, color = peru];
+App[style=filled, fillcolor=pink, color = peru];
+AcraContentProvider[color = violet];
+AddressBookProvider[color = violet];
+}

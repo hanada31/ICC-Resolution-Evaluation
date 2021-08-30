@@ -1,0 +1,45 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+CastplayerActivity[color = red];
+StorageErrorActivity[color = red];
+FeedInfoActivity[color = red];
+FeedSettingsActivity[color = red];
+AboutActivity[color = red];
+OpmlImportFromPathActivity[color = red];
+VideoplayerActivity[style=filled, fillcolor=pink, color = red];
+FlattrAuthActivity[style=filled, fillcolor=pink, color = red];
+DownloadAuthenticationActivity[color = red];
+OpmlFeedChooserActivity[color = red];
+ImportExportActivity[color = red];
+SplashActivity[style=filled, fillcolor=orange, color = red];
+DirectoryChooserActivity[color = red];
+StatisticsActivity[color = red];
+MainActivity[color = red];
+AudioplayerActivity[style=filled, fillcolor=pink, color = red];
+PreferenceActivity[color = red];
+GpodnetAuthenticationActivity[style=filled, fillcolor=pink, color = red];
+OnlineFeedViewActivity[style=filled, fillcolor=pink, color = red];
+OpmlImportFromIntentActivity[style=filled, fillcolor=pink, color = red];
+PlaybackService[style=filled, fillcolor=pink, color = royalblue];
+FeedUpdateJobService[color = royalblue];
+GpodnetSyncService[color = royalblue];
+PlayerWidgetJobService[color = royalblue];
+DownloadService[color = royalblue];
+PowerConnectionReceiver[style=filled, fillcolor=pink, color = peru];
+ConnectivityActionReceiver[style=filled, fillcolor=pink, color = peru];
+FeedUpdateReceiver[style=filled, fillcolor=pink, color = peru];
+MediaButtonReceiver[style=filled, fillcolor=pink, color = peru];
+AlarmUpdateReceiver[style=filled, fillcolor=pink, color = peru];
+PlayerWidget[style=filled, fillcolor=pink, color = peru];
+SPAReceiver[style=filled, fillcolor=pink, color = peru];
+}

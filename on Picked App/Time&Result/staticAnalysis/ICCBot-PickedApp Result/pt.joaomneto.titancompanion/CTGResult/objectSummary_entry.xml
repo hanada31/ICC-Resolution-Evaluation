@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="pt.joaomneto.titancompanion.MainActivity">
+    <singleIntent>
+      <method method="void rate(android.view.View)" methodtrace="void rate(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>
+      <nodes>
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>
+        <node method="MainActivity rate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void rate(android.view.View)" methodtrace="void rate(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>
+      <sender flags="FLAG_ACTIVITY_NEW_DOCUMENT FLAG_ACTIVITY_MULTIPLE_TASK FLAG_ACTIVITY_NO_HISTORY "/>
+      <nodes>
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>
+        <node method="MainActivity rate" type="SetAttribute" unit="virtualinvoke $r6.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(1208483840)"/>
+        <node method="MainActivity rate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.MainActivity">
+    <singleIntent>
+      <method method="void createNewAdventure(android.view.View)" methodtrace="void createNewAdventure(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.GamebookListActivity"/>
+      <nodes>
+        <node method="MainActivity createNewAdventure" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="MainActivity createNewAdventure" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/GamebookListActivity;&quot;)"/>
+        <node method="MainActivity createNewAdventure" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.MainActivity">
+    <singleIntent>
+      <method method="void loadAdventure(android.view.View)" methodtrace="void loadAdventure(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>
+      <nodes>
+        <node method="MainActivity loadAdventure" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="MainActivity loadAdventure" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/LoadAdventureActivity;&quot;)"/>
+        <node method="MainActivity loadAdventure" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.GamebookFullImageActivity"/>
+      <sender extras="int-GAMEBOOK_COVER"/>
+      <nodes>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lpt/joaomneto/titancompanion/GamebookFullImageActivity;&quot;)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r7, $i0)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.GamebookWikiaActivity"/>
+      <sender extras="String-GAMEBOOK_URL"/>
+      <nodes>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lpt/joaomneto/titancompanion/GamebookWikiaActivity;&quot;)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r7, $r10)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity">
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <destinition name="java.lang.Class"/>
+      <sender extras="int-GAMEBOOK_ID:new int"/>
+      <nodes>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="CreateMethod" unit="$r11 = new android.content.Intent"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, $r6)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r8, $i0)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SendIntent2ICC" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.view.View)" methodtrace="void onClick(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <destinition name="java.lang.Class"/>
+      <sender extras="int-GAMEBOOK_ID:new int"/>
+      <nodes>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="CreateMethod" unit="$r11 = new android.content.Intent"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, $r6)"/>
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetIntentExtra" unit="virtualinvoke $r2.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r8, $i0)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.MainActivity">
+    <singleIntent>
+      <method method="void settings(android.view.View)" methodtrace="void settings(android.view.View)"/>
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.TCPreferenceActivity"/>
+      <sender extras="boolean-:android:no_headers:1,String-:android:show_fragment:class Lpt/joaomneto/titancompanion/fragment/TCPreferenceFragment;"/>
+      <nodes>
+        <node method="MainActivity settings" type="CreateMethod" unit="$r3 = new android.content.Intent"/>
+        <node method="MainActivity settings" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/TCPreferenceActivity;&quot;)"/>
+        <node method="MainActivity settings" type="SetIntentExtra" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;(&quot;:android:show_fragment&quot;, $r1)"/>
+        <node method="MainActivity settings" type="SetIntentExtra" unit="virtualinvoke $r3.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,boolean)&gt;(&quot;:android:no_headers&quot;, 1)"/>
+        <node method="MainActivity settings" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r3)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookListActivity">
+    <singleIntent>
+      <method method="void onItemClick(android.widget.AdapterView,android.view.View,int,long)" methodtrace="void onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>
+      <sender extras="int-GAMEBOOK_POSITION"/>
+      <nodes>
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="SetIntentExtra" unit="virtualinvoke $r4.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,int)&gt;($r1, $i0)"/>
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;pt.joaomneto.titancompanion.GamebookListActivity: void startActivity(android.content.Intent)&gt;($r4)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookListActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)
+&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt; --- specialinvoke $r14.&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;(r0, $r13)
+void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>
+      <destinition name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <nodes>
+        <node method="GamebookListActivity onCreate" type="CreateMethod" unit="$r13 = new android.content.Intent"/>
+        <node method="GamebookListActivity onCreate" type="SetAttribute" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r11, class &quot;Lpt/joaomneto/titancompanion/GamebookSelectionActivity;&quot;)"/>
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+        <node method="GamebookListActivity onCreate" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.LoadAdventureActivity">
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>
+      <destinition name="null, pt.joaomneto.titancompanion.adventure.impl.NEW JAVA.LANG.STRINGAdventure"/>
+      <sender extras="String-ADVENTURE_FILE"/>
+      <nodes>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r21.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r8, $r29)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r21.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r8, $r29)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>
+      <destinition name="null, pt.joaomneto.titancompanion.adventure.impl.NEW JAVA.LANG.STRINGAdventure"/>
+      <sender extras="String-ADVENTURE_FILE"/>
+      <nodes>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r21.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r8, $r29)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r21.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r8, $r29)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SendIntent2ICC" unit="virtualinvoke $r23.&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void startActivity(android.content.Intent)&gt;($r21)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>
+      <destinition name="null, pt.joaomneto.titancompanion.adventure.impl.NEW JAVA.LANG.STRINGAdventure"/>
+      <nodes>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/>
+      </nodes>
+    </singleIntent>
+    <singleIntent>
+      <method method="void onClick(android.content.DialogInterface,int)" methodtrace="void onClick(android.content.DialogInterface,int)"/>
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>
+      <destinition name="null, pt.joaomneto.titancompanion.adventure.impl.NEW JAVA.LANG.STRINGAdventure"/>
+      <sender extras="String-ADVENTURE_FILE"/>
+      <nodes>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/>
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetIntentExtra" unit="virtualinvoke $r21.&lt;android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)&gt;($r8, $r29)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity">
+    <singleIntent>
+      <method method="void onCreate(android.os.Bundle)" methodtrace="void onCreate(android.os.Bundle)"/>
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>
+      <nodes>
+        <node method="GamebookSelectionActivity onCreate" type="ReceiveIntentFromOutMethod" unit="$r7 = virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: android.content.Intent getIntent()&gt;()"/>
+        <node method="GamebookSelectionActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void setIntent(android.content.Intent)&gt;($r7)"/>
+      </nodes>
+    </singleIntent>
+  </Component>
+</root>

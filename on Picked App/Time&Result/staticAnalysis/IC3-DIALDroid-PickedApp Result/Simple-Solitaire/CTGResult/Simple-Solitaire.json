@@ -1,0 +1,267 @@
+{
+    "analysis_end": 1627549239, 
+    "analysis_start": 1627549220, 
+    "version": 71, 
+    "name": "de.tobiasbielefeld.solitaire", 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.about.AboutActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.manual.Manual", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.tobiasbielefeld.solitaire.ui.GameSelector", 
+                        "method": "<de.tobiasbielefeld.solitaire.ui.GameSelector: void a(android.view.View)>", 
+                        "statement": "virtualinvoke $r0.<de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)>($r11, 0)", 
+                        "id": 31
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "game"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "de/tobiasbielefeld/solitaire/ui/GameManager"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.tobiasbielefeld.solitaire.ui.GameSelector", 
+                        "method": "<de.tobiasbielefeld.solitaire.ui.GameSelector: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)>($r9, 0)", 
+                        "id": 34
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "game"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "de/tobiasbielefeld/solitaire/ui/GameManager"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.GameSelector", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.settings.Settings", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.tobiasbielefeld.solitaire.ui.GameSelector", 
+                        "method": "<de.tobiasbielefeld.solitaire.ui.GameSelector: void a(android.view.View)>", 
+                        "statement": "virtualinvoke $r0.<de.tobiasbielefeld.solitaire.ui.GameSelector: void startActivityForResult(android.content.Intent,int)>($r11, 0)", 
+                        "id": 31
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "game"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "de/tobiasbielefeld/solitaire/ui/GameManager"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.GameManager", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.tobiasbielefeld.solitaire.ui.settings.Settings", 
+                        "method": "<de.tobiasbielefeld.solitaire.ui.settings.Settings: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<de.tobiasbielefeld.solitaire.ui.settings.Settings: void startActivity(android.content.Intent)>($r13)", 
+                        "id": 207
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        67108864, 
+                                        268435456
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "de/tobiasbielefeld/solitaire/ui/settings/Settings"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.tobiasbielefeld.solitaire.ui.settings.a", 
+                        "method": "<de.tobiasbielefeld.solitaire.ui.settings.a: void c()>", 
+                        "statement": "virtualinvoke $r0.<de.tobiasbielefeld.solitaire.ui.settings.a: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "android.intent.action.MAIN"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "android.intent.category.LAUNCHER"
+                                    ]
+                                }, 
+                                {
+                                    "int_value": [
+                                        268435456
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "android.intent.action.MAIN"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "android.intent.category.INFO"
+                                    ]
+                                }, 
+                                {
+                                    "int_value": [
+                                        268435456
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.tobiasbielefeld.solitaire"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.tobiasbielefeld.solitaire.ui.settings.SettingsGames", 
+            "exported": false
+        }
+    ]
+}

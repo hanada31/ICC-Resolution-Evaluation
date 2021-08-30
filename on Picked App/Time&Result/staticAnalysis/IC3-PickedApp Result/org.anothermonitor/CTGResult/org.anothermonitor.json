@@ -1,0 +1,1405 @@
+{
+    "name": "org.anothermonitor", 
+    "analysis_end": 1627967407, 
+    "analysis_start": 1627967393, 
+    "used_permissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+    ], 
+    "version": 5, 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "org.anothermonitor.ActivityProcesses", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.anothermonitor.ActivityHelp", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ServiceReader", 
+                        "method": "<org.anothermonitor.ServiceReader: void stopRecord()>", 
+                        "statement": "virtualinvoke $r0.<org.anothermonitor.ServiceReader: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ServiceReader", 
+                        "method": "<org.anothermonitor.ServiceReader: void stopRecord()>", 
+                        "statement": "virtualinvoke $r0.<org.anothermonitor.ServiceReader: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "actionSetIconRecord"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 1, 
+            "name": "org.anothermonitor.ServiceReader", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain$37", 
+                        "method": "<org.anothermonitor.ActivityMain$37: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<org.anothermonitor.ActivityMain: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 47
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain$12", 
+                        "method": "<org.anothermonitor.ActivityMain$12: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<org.anothermonitor.ActivityMain: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/anothermonitor/ActivityAbout"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.anothermonitor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain$26", 
+                        "method": "<org.anothermonitor.ActivityMain$26: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<org.anothermonitor.ActivityMain: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "listSelected"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/anothermonitor/ActivityProcesses"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.anothermonitor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain$11", 
+                        "method": "<org.anothermonitor.ActivityMain$11: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r5.<org.anothermonitor.ActivityMain: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 9
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/anothermonitor/ActivityHelp"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.anothermonitor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain", 
+                        "method": "<org.anothermonitor.ActivityMain: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/anothermonitor/ServiceReader"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.anothermonitor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain$37", 
+                        "method": "<org.anothermonitor.ActivityMain$37: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<org.anothermonitor.ActivityMain: void startActivity(android.content.Intent)>($r6)", 
+                        "id": 19
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityMain", 
+                        "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                        "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 0)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/anothermonitor/ServiceReader"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.anothermonitor"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.anothermonitor.ActivityMain", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityAbout$2", 
+                        "method": "<org.anothermonitor.ActivityAbout$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<org.anothermonitor.ActivityAbout: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 14
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.anothermonitor.ActivityAbout$2", 
+                        "method": "<org.anothermonitor.ActivityAbout$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r3.<org.anothermonitor.ActivityAbout: void startActivity(android.content.Intent)>($r4)", 
+                        "id": 26
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.anothermonitor.ActivityAbout", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityProcesses$1", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityHelp$1", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityAbout$1", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityMain$5", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ServiceReader$3", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityMain$6", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ServiceReader$4", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ActivityMain$4", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "org.anothermonitor.ServiceReader$2", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "android.support.v4.media.TransportMediatorJellybeanMR2$3", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionClose"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionSetIconRecord"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionStop"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionRemoveProcess"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "actionCloseActivity"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.anothermonitor.ActivityMain", 
+                "method": "<org.anothermonitor.ActivityMain: void onStart()>", 
+                "statement": "virtualinvoke $r0.<org.anothermonitor.ActivityMain: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 9
+            }, 
+            "name": "android.support.v4.content.WakefulBroadcastReceiver", 
+            "exported": true
+        }
+    ]
+}

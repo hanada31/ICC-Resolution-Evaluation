@@ -1,0 +1,367 @@
+{
+    "name": "me.blog.korn123.easydiary",
+    "version": 219,
+    "used_permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "com.android.alarm.permission.SET_ALARM",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.INTERNET",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.READ_EXTERNAL_STORAGE"
+    ],
+    "components": [
+        {
+            "name": "me.blog.korn123.easydiary.activities.DiaryReadActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.SettingsActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.DashboardActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.StatisticsActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.services.NotificationService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+            "kind": 2,
+            "exported": true,
+            "permission": "android.permission.DUMP",
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.DiaryUpdateActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.TimelineActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.PostcardViewPagerActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+            "kind": 2,
+            "exported": false
+        },
+        {
+            "name": "androidx.room.MultiInstanceInvalidationService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.receivers.AlarmReceiver",
+            "kind": 2,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.CalendarActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "com.werb.pickphotoview.PickPhotoActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.WorkManagerInitializer",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.FingerprintLockActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.BATTERY_OKAY",
+                                "android.intent.action.BATTERY_LOW"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.DiaryInsertActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.DiaryMainActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.net.conn.CONNECTIVITY_CHANGE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.PhotoViewPagerActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.SystemAlarmService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.TIMEZONE_CHANGED",
+                                "android.intent.action.BOOT_COMPLETED",
+                                "android.intent.action.TIME_SET"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.werb.pickphotoview.PickPhotoPreviewActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.ACTION_POWER_CONNECTED",
+                                "android.intent.action.ACTION_POWER_DISCONNECTED"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.receivers.BootCompletedReceiver",
+            "kind": 2,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED",
+                                "com.htc.intent.action.QUICKBOOT_POWERON",
+                                "android.intent.action.QUICKBOOT_POWERON"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.services.DiaryMainWidgetService",
+            "kind": 1,
+            "exported": false,
+            "permission": "android.permission.BIND_REMOTEVIEWS"
+        },
+        {
+            "name": "androidx.work.impl.foreground.SystemForegroundService",
+            "kind": 1,
+            "exported": false
+        },
+        {
+            "name": "androidx.biometric.DeviceCredentialHandlerActivity",
+            "kind": 0,
+            "exported": true
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.DevActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.PostCardViewerActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.work.impl.background.systemjob.SystemJobService",
+            "kind": 1,
+            "exported": true,
+            "permission": "android.permission.BIND_JOB_SERVICE"
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.IntroActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN",
+                                "android.intent.action.VIEW"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.MarkDownViewActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.CustomizationActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "androidx.core.content.FileProvider",
+            "kind": 4,
+            "exported": false,
+            "permission": ""
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.DEVICE_STORAGE_LOW",
+                                "android.intent.action.DEVICE_STORAGE_OK"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.PostCardActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.activities.PinLockActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "me.blog.korn123.easydiary.widgets.DiaryMainWidget",
+            "kind": 2,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+            "kind": 2,
+            "exported": false,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "androidx.work.impl.background.systemalarm.UpdateProxies"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1622107896,
+    "analysis_end": 1622107900
+}

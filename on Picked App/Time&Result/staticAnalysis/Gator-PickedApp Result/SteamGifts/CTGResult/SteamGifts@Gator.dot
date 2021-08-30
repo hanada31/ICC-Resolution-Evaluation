@@ -1,0 +1,98 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+DetailActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+BaseActivity[color = red];
+SettingsActivity[color = red];
+IntroActivity[color = red];
+CommonActivity[color = red];
+UrlHandlingActivity[color = red];
+AboutActivity[color = red];
+LoginActivity[color = red];
+WebViewActivity[color = red];
+SGToolsLoginActivity[color = red];
+WriteCommentActivity[color = red];
+SyncActivity[color = red];
+
+ DetailActivity -> WriteCommentActivity
+ DetailActivity -> SettingsActivity
+ DetailActivity -> MainActivity
+ DetailActivity -> WebViewActivity
+ DetailActivity -> DetailActivity
+ DetailActivity -> SyncActivity
+ DetailActivity -> AboutActivity
+ MainActivity -> SettingsActivity
+ MainActivity -> IntroActivity
+ MainActivity -> WriteCommentActivity
+ MainActivity -> AboutActivity
+ MainActivity -> MainActivity
+ MainActivity -> WebViewActivity
+ MainActivity -> DetailActivity
+ MainActivity -> SyncActivity
+ BaseActivity -> WriteCommentActivity
+ BaseActivity -> MainActivity
+ BaseActivity -> AboutActivity
+ BaseActivity -> WebViewActivity
+ BaseActivity -> SettingsActivity
+ BaseActivity -> DetailActivity
+ BaseActivity -> SyncActivity
+ SettingsActivity -> DetailActivity
+ SettingsActivity -> SyncActivity
+ SettingsActivity -> WebViewActivity
+ SettingsActivity -> AboutActivity
+ SettingsActivity -> MainActivity
+ SettingsActivity -> SettingsActivity
+ SettingsActivity -> WriteCommentActivity
+ CommonActivity -> AboutActivity
+ CommonActivity -> DetailActivity
+ CommonActivity -> WebViewActivity
+ CommonActivity -> SettingsActivity
+ CommonActivity -> MainActivity
+ CommonActivity -> WriteCommentActivity
+ CommonActivity -> SyncActivity
+ UrlHandlingActivity -> WebViewActivity
+ UrlHandlingActivity -> WriteCommentActivity
+ UrlHandlingActivity -> MainActivity
+ UrlHandlingActivity -> AboutActivity
+ UrlHandlingActivity -> SyncActivity
+ UrlHandlingActivity -> SettingsActivity
+ UrlHandlingActivity -> DetailActivity
+ AboutActivity -> SettingsActivity
+ AboutActivity -> WriteCommentActivity
+ AboutActivity -> MainActivity
+ AboutActivity -> SyncActivity
+ AboutActivity -> DetailActivity
+ AboutActivity -> AboutActivity
+ AboutActivity -> WebViewActivity
+ WebViewActivity -> MainActivity
+ WebViewActivity -> WebViewActivity
+ WebViewActivity -> SettingsActivity
+ WebViewActivity -> DetailActivity
+ WebViewActivity -> AboutActivity
+ WebViewActivity -> SyncActivity
+ WebViewActivity -> WriteCommentActivity
+ WriteCommentActivity -> AboutActivity
+ WriteCommentActivity -> WriteCommentActivity
+ WriteCommentActivity -> SyncActivity
+ WriteCommentActivity -> MainActivity
+ WriteCommentActivity -> DetailActivity
+ WriteCommentActivity -> SettingsActivity
+ WriteCommentActivity -> WebViewActivity
+ SyncActivity -> WebViewActivity
+ SyncActivity -> MainActivity
+ SyncActivity -> WriteCommentActivity
+ SyncActivity -> SyncActivity
+ SyncActivity -> AboutActivity
+ SyncActivity -> SettingsActivity
+ SyncActivity -> DetailActivity
+}

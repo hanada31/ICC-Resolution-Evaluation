@@ -1,0 +1,26 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=wheat, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+SettingsActivity[color = red];
+AddCalendarActivity[color = red];
+CrashReportDialog[color = red];
+LinCalMenuAppCompatActivity[color = red];
+CalendarViewActivity[color = red];
+CalendarListActivity[style=filled, fillcolor=orange, color = red];
+
+ SettingsActivity -> SettingsActivity
+ AddCalendarActivity -> SettingsActivity
+ LinCalMenuAppCompatActivity -> SettingsActivity
+ CalendarViewActivity -> SettingsActivity
+ CalendarListActivity -> SettingsActivity
+ CalendarListActivity -> AddCalendarActivity
+}

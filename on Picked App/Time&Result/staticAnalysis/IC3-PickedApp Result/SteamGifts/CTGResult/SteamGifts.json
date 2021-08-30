@@ -1,0 +1,3243 @@
+{
+    "name": "net.mabako.steamgifts",
+    "version": 1005511,
+    "used_permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+    ],
+    "components": [
+        {
+            "name": "net.mabako.steamgifts.activities.DetailActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "bundle_expanded_selection_appended",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "giveaway-details",
+                    "instruction": {
+                        "statement": "r57 = virtualinvoke r56.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"giveaway-details\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 141
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection_appended",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "giveaway",
+                    "instruction": {
+                        "statement": "r12 = virtualinvoke r11.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"giveaway\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 12
+                    }
+                },
+                {
+                    "extra": "bundle_drawer_content_switched",
+                    "instruction": {
+                        "statement": "z0 = virtualinvoke r18.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>(\"bundle_drawer_content_switched\", 0)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: com.mikepenz.materialdrawer.Drawer buildView()>",
+                        "id": 34
+                    }
+                },
+                {
+                    "extra": "bundle_selection_header",
+                    "instruction": {
+                        "statement": "i1 = virtualinvoke r67.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_selection_header\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.AccountHeaderBuilder",
+                        "method": "<com.mikepenz.materialdrawer.AccountHeaderBuilder: com.mikepenz.materialdrawer.AccountHeader build()>",
+                        "id": 132
+                    }
+                },
+                {
+                    "extra": "close-nested",
+                    "instruction": {
+                        "statement": "r25 = virtualinvoke r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r24)",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 56
+                    }
+                },
+                {
+                    "extra": "bundle_selections",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "uuid",
+                    "instruction": {
+                        "statement": "r31 = virtualinvoke r29.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(r30)",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 75
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "entered",
+                    "instruction": {
+                        "statement": "z3 = virtualinvoke r1.<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>(r15, z0)",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 38
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection_appended",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "bundle_expanded",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "user",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r25.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(\"user\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 45
+                    }
+                },
+                {
+                    "extra": "bundle_selections",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "bundle_sticky_footer_selection",
+                    "instruction": {
+                        "statement": "i24 = virtualinvoke r57.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_sticky_footer_selection\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: void createContent()>",
+                        "id": 164
+                    }
+                },
+                {
+                    "extra": "bundle_expanded",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "discussion",
+                    "instruction": {
+                        "statement": "r21 = virtualinvoke r20.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"discussion\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 34
+                    }
+                },
+                {
+                    "extra": "edited-comment",
+                    "instruction": {
+                        "statement": "r12 = virtualinvoke r1.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(r11)",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 26
+                    }
+                },
+                {
+                    "extra": "notifications",
+                    "instruction": {
+                        "statement": "r38 = virtualinvoke r37.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"notifications\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 76
+                    }
+                },
+                {
+                    "extra": "comment-context",
+                    "instruction": {
+                        "statement": "r7 = virtualinvoke r6.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"comment-context\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 3
+                    }
+                },
+                {
+                    "extra": "whitelist-blacklist-type",
+                    "instruction": {
+                        "statement": "r28 = virtualinvoke r27.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"whitelist-blacklist-type\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "uuid",
+                    "instruction": {
+                        "statement": "r33 = virtualinvoke r32.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"uuid\")",
+                        "class_name": "net.mabako.steamgifts.activities.DetailActivity",
+                        "method": "<net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)>",
+                        "id": 65
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection_appended",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "bundle_sticky_footer_selection_appended",
+                    "instruction": {
+                        "statement": "i35 = virtualinvoke r76.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_sticky_footer_selection_appended\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: void createContent()>",
+                        "id": 224
+                    }
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r10.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r11)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$4",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)>",
+                        "id": 38
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/AboutActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r13.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r3)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$2",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$2: boolean onProfileImageClick(android.view.View,com.mikepenz.materialdrawer.model.interfaces.IProfile,boolean)>",
+                        "id": 18
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r12.<android.content.Context: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.CommentContextViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.CommentContextViewHolder$1: void onClick(android.view.View)>",
+                        "id": 15
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r2.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r4)",
+                        "class_name": "net.mabako.steamgifts.fragments.profile.MessageListFragment",
+                        "method": "<net.mabako.steamgifts.fragments.profile.MessageListFragment: void navigateTo(net.mabako.steamgifts.data.Comment)>",
+                        "id": 5
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {},
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "http://steamcommunity.com/my/edit/settings"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/comment/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/feedback/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "uuid"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "url"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/WebViewActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r3.<android.content.Context: void startActivity(android.content.Intent)>(r9)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.MessageHeaderViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.MessageHeaderViewHolder$1: void onClick(android.view.View)>",
+                        "id": 10
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {},
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "http://steamcommunity.com/my/edit/settings"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/comment/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/feedback/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "uuid"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "url"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/WebViewActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r14.<net.mabako.steamgifts.activities.CommonActivity: void startActivityForResult(android.content.Intent,int)>(r15, 10)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$4",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)>",
+                        "id": 49
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/SettingsActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r11.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.AboutFragment$2",
+                        "method": "<net.mabako.steamgifts.fragments.AboutFragment$2: void onClick(android.view.View)>",
+                        "id": 14
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r5.<android.content.Context: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.images.ImageFragment$5",
+                        "method": "<net.mabako.steamgifts.fragments.images.ImageFragment$5: void onClick(android.view.View)>",
+                        "id": 10
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "NULL-CONSTANT"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.GiveawayDetailFragment",
+                        "method": "<net.mabako.steamgifts.fragments.GiveawayDetailFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r16.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$CustomAccountHeaderBuilder$1",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$CustomAccountHeaderBuilder$1: void onClick(android.view.View)>",
+                        "id": 20
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "notifications"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r13.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.UserViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.UserViewHolder$1: void onClick(android.view.View)>",
+                        "id": 15
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.CommonActivity: void startActivityForResult(android.content.Intent,int)>(r1, b0)",
+                        "class_name": "net.mabako.steamgifts.activities.CommonActivity",
+                        "method": "<net.mabako.steamgifts.activities.CommonActivity: void requestLogin()>",
+                        "id": 5
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/LoginActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r15.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.activities.CommonActivity$1$2",
+                        "method": "<net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)>",
+                        "id": 23
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.DiscussionDetailFragment",
+                        "method": "<net.mabako.steamgifts.fragments.DiscussionDetailFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.profile.MessageListFragment",
+                        "method": "<net.mabako.steamgifts.fragments.profile.MessageListFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "no-drawer",
+                    "instruction": {
+                        "statement": "z0 = virtualinvoke r7.<android.content.Intent: boolean getBooleanExtra(java.lang.String,boolean)>(\"no-drawer\", 0)",
+                        "class_name": "net.mabako.steamgifts.activities.MainActivity",
+                        "method": "<net.mabako.steamgifts.activities.MainActivity: void onCreate(android.os.Bundle)>",
+                        "id": 15
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection_appended",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "bundle_sticky_footer_selection",
+                    "instruction": {
+                        "statement": "i24 = virtualinvoke r57.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_sticky_footer_selection\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: void createContent()>",
+                        "id": 164
+                    }
+                },
+                {
+                    "extra": "bundle_expanded",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection_appended",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "bundle_drawer_content_switched",
+                    "instruction": {
+                        "statement": "z0 = virtualinvoke r18.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>(\"bundle_drawer_content_switched\", 0)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: com.mikepenz.materialdrawer.Drawer buildView()>",
+                        "id": 34
+                    }
+                },
+                {
+                    "extra": "bundle_selection_header",
+                    "instruction": {
+                        "statement": "i1 = virtualinvoke r67.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_selection_header\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.AccountHeaderBuilder",
+                        "method": "<com.mikepenz.materialdrawer.AccountHeaderBuilder: com.mikepenz.materialdrawer.AccountHeader build()>",
+                        "id": 132
+                    }
+                },
+                {
+                    "extra": "type",
+                    "instruction": {
+                        "statement": "r12 = virtualinvoke r11.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(\"type\")",
+                        "class_name": "net.mabako.steamgifts.activities.MainActivity",
+                        "method": "<net.mabako.steamgifts.activities.MainActivity: void onCreate(android.os.Bundle)>",
+                        "id": 25
+                    }
+                },
+                {
+                    "extra": "bundle_selections",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "bundle_expanded_selection_appended",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r25)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "bundle_expanded",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r15)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 13
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection_appended",
+                    "instruction": {
+                        "statement": "r8 = virtualinvoke r1.<android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>(r30)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 54
+                    }
+                },
+                {
+                    "extra": "bundle_sticky_footer_selection_appended",
+                    "instruction": {
+                        "statement": "i35 = virtualinvoke r76.<android.os.Bundle: int getInt(java.lang.String,int)>(\"bundle_sticky_footer_selection_appended\", -1)",
+                        "class_name": "com.mikepenz.materialdrawer.DrawerBuilder",
+                        "method": "<com.mikepenz.materialdrawer.DrawerBuilder: void createContent()>",
+                        "id": 224
+                    }
+                },
+                {
+                    "extra": "bundle_selections",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "bundle_selections_selection",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r1.<android.os.Bundle: int[] getIntArray(java.lang.String)>(r20)",
+                        "class_name": "com.mikepenz.fastadapter.FastAdapter",
+                        "method": "<com.mikepenz.fastadapter.FastAdapter: com.mikepenz.fastadapter.FastAdapter withSavedInstanceState(android.os.Bundle,java.lang.String)>",
+                        "id": 30
+                    }
+                },
+                {
+                    "extra": "query",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r13.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(\"query\")",
+                        "class_name": "net.mabako.steamgifts.activities.MainActivity",
+                        "method": "<net.mabako.steamgifts.activities.MainActivity: void onCreate(android.os.Bundle)>",
+                        "id": 29
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r10.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r11)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$4",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)>",
+                        "id": 38
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/AboutActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r13.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r3)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$2",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$2: boolean onProfileImageClick(android.view.View,com.mikepenz.materialdrawer.model.interfaces.IProfile,boolean)>",
+                        "id": 18
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r12.<android.content.Context: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.CommentContextViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.CommentContextViewHolder$1: void onClick(android.view.View)>",
+                        "id": 15
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r2.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r4)",
+                        "class_name": "net.mabako.steamgifts.fragments.profile.MessageListFragment",
+                        "method": "<net.mabako.steamgifts.fragments.profile.MessageListFragment: void navigateTo(net.mabako.steamgifts.data.Comment)>",
+                        "id": 5
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {},
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "http://steamcommunity.com/my/edit/settings"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/comment/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/feedback/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "uuid"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "url"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/WebViewActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r3.<android.content.Context: void startActivity(android.content.Intent)>(r9)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.MessageHeaderViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.MessageHeaderViewHolder$1: void onClick(android.view.View)>",
+                        "id": 10
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {},
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "http://steamcommunity.com/my/edit/settings"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/comment/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/feedback/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "uuid"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "url"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/WebViewActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r14.<net.mabako.steamgifts.activities.CommonActivity: void startActivityForResult(android.content.Intent,int)>(r15, 10)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$4",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)>",
+                        "id": 49
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/SettingsActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r11.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.AboutFragment$2",
+                        "method": "<net.mabako.steamgifts.fragments.AboutFragment$2: void onClick(android.view.View)>",
+                        "id": 14
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r5.<android.content.Context: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.images.ImageFragment$5",
+                        "method": "<net.mabako.steamgifts.fragments.images.ImageFragment$5: void onClick(android.view.View)>",
+                        "id": 10
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "NULL-CONSTANT"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.GiveawayDetailFragment",
+                        "method": "<net.mabako.steamgifts.fragments.GiveawayDetailFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r16.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.activities.Navbar$CustomAccountHeaderBuilder$1",
+                        "method": "<net.mabako.steamgifts.activities.Navbar$CustomAccountHeaderBuilder$1: void onClick(android.view.View)>",
+                        "id": 20
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "notifications"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r13.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.adapters.viewholder.UserViewHolder$1",
+                        "method": "<net.mabako.steamgifts.adapters.viewholder.UserViewHolder$1: void onClick(android.view.View)>",
+                        "id": 15
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.CommonActivity: void startActivityForResult(android.content.Intent,int)>(r1, b0)",
+                        "class_name": "net.mabako.steamgifts.activities.CommonActivity",
+                        "method": "<net.mabako.steamgifts.activities.CommonActivity: void requestLogin()>",
+                        "id": 5
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/LoginActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r15.<net.mabako.steamgifts.activities.CommonActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.activities.CommonActivity$1$2",
+                        "method": "<net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)>",
+                        "id": 23
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.DiscussionDetailFragment",
+                        "method": "<net.mabako.steamgifts.fragments.DiscussionDetailFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r7.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.fragments.profile.MessageListFragment",
+                        "method": "<net.mabako.steamgifts.fragments.profile.MessageListFragment: void showProfile(java.lang.String)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.SettingsActivity",
+            "kind": 0,
+            "exported": false,
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.intro.IntroActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "currentItem",
+                    "instruction": {
+                        "statement": "i0 = virtualinvoke r1.<android.os.Bundle: int getInt(java.lang.String)>(r4)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 10
+                    }
+                },
+                {
+                    "extra": "lockPage",
+                    "instruction": {
+                        "statement": "i1 = virtualinvoke r1.<android.os.Bundle: int getInt(java.lang.String)>(r10)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 22
+                    }
+                },
+                {
+                    "extra": "progressButtonEnabled",
+                    "instruction": {
+                        "statement": "z1 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r3)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 7
+                    }
+                },
+                {
+                    "extra": "type",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r3)",
+                        "class_name": "net.mabako.steamgifts.intro.IntroActivity",
+                        "method": "<net.mabako.steamgifts.intro.IntroActivity: void init(android.os.Bundle)>",
+                        "id": 4
+                    }
+                },
+                {
+                    "extra": "nextEnabled",
+                    "instruction": {
+                        "statement": "z2 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r6)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 14
+                    }
+                },
+                {
+                    "extra": "baseProgressButtonEnabled",
+                    "instruction": {
+                        "statement": "z0 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r2)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 4
+                    }
+                },
+                {
+                    "extra": "nextPagingEnabled",
+                    "instruction": {
+                        "statement": "z3 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r8)",
+                        "class_name": "com.github.paolorotolo.appintro.AppIntro2",
+                        "method": "<com.github.paolorotolo.appintro.AppIntro2: void restoreLockingState(android.os.Bundle)>",
+                        "id": 18
+                    }
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.receivers.CheckForWonGiveaways",
+            "kind": 2,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "giveaway-ids",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r2.<android.content.Intent: java.util.ArrayList getStringArrayListExtra(java.lang.String)>(r13)",
+                        "class_name": "net.mabako.steamgifts.receivers.CheckForWonGiveaways",
+                        "method": "<net.mabako.steamgifts.receivers.CheckForWonGiveaways: void onReceive(android.content.Context,android.content.Intent)>",
+                        "id": 25
+                    }
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.UrlHandlingActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.BROWSABLE",
+                                "android.intent.category.DEFAULT"
+                            ]
+                        },
+                        {
+                            "kind": 6,
+                            "value": [
+                                "http"
+                            ]
+                        },
+                        {
+                            "kind": 6,
+                            "value": [
+                                "https"
+                            ]
+                        },
+                        {
+                            "kind": 9,
+                            "value": [
+                                "www.steamgifts.com"
+                            ]
+                        },
+                        {
+                            "kind": 9,
+                            "value": [
+                                "steamgifts.com"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/giveaway/....."
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/giveaway/...../.*"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/discussion/....."
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/discussion/...../.*"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/user/.*"
+                            ]
+                        },
+                        {
+                            "kind": 10,
+                            "value": [
+                                "/giveaways/search"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.UrlHandlingActivity: void startActivity(android.content.Intent)>(r6)",
+                        "class_name": "net.mabako.steamgifts.activities.UrlHandlingActivity",
+                        "method": "<net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)>",
+                        "id": 13
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.UrlHandlingActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "net.mabako.steamgifts.activities.UrlHandlingActivity",
+                        "method": "<net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {},
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/MainActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "http://steamcommunity.com/my/edit/settings"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "discussion"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/comment/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "https://www.steamgifts.com/go/feedback/(.*)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "comment-context",
+                                        "giveaway"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "user"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "uuid"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/DetailActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "url"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "net/mabako/steamgifts/activities/WebViewActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "net.mabako.steamgifts"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.AboutActivity",
+            "kind": 0,
+            "exported": false,
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.LoginActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.WebViewActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "url",
+                    "instruction": {
+                        "statement": "r2 = virtualinvoke r4.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(\"url\")",
+                        "class_name": "net.mabako.steamgifts.activities.WebViewActivity",
+                        "method": "<net.mabako.steamgifts.activities.WebViewActivity: void onCreate(android.os.Bundle)>",
+                        "id": 4
+                    }
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r5.<net.mabako.steamgifts.activities.WebViewActivity: void startActivity(android.content.Intent)>(r6)",
+                        "class_name": "net.mabako.steamgifts.activities.WebViewActivity$1",
+                        "method": "<net.mabako.steamgifts.activities.WebViewActivity$1: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>",
+                        "id": 11
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.WebViewActivity: void startActivity(android.content.Intent)>(r3)",
+                        "class_name": "net.mabako.steamgifts.activities.WebViewActivity",
+                        "method": "<net.mabako.steamgifts.activities.WebViewActivity: boolean onOptionsItemSelected(android.view.MenuItem)>",
+                        "id": 11
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                },
+                                {
+                                    "kind": 5,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.receivers.BootReceiver",
+            "kind": 2,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED",
+                                "android.intent.action.QUICKBOOT_POWERON"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.sgtools.SGToolsLoginActivity",
+            "kind": 0,
+            "exported": false
+        },
+        {
+            "name": "net.mabako.steamgifts.receivers.CheckForNewMessages",
+            "kind": 2,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "comment-id",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r13)",
+                        "class_name": "net.mabako.steamgifts.receivers.CheckForNewMessages",
+                        "method": "<net.mabako.steamgifts.receivers.CheckForNewMessages: void onReceive(android.content.Context,android.content.Intent)>",
+                        "id": 25
+                    }
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "xsrf-token",
+                    "instruction": {
+                        "statement": "r6 = virtualinvoke r4.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r5)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 6
+                    }
+                },
+                {
+                    "extra": "title",
+                    "instruction": {
+                        "statement": "r11 = virtualinvoke r9.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r10)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 20
+                    }
+                },
+                {
+                    "extra": "giveaway-id",
+                    "instruction": {
+                        "statement": "r28 = virtualinvoke r27.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r3)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 51
+                    }
+                },
+                {
+                    "extra": "parent",
+                    "instruction": {
+                        "statement": "r14 = virtualinvoke r12.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(r13)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 26
+                    }
+                },
+                {
+                    "extra": "comment-to-edit",
+                    "instruction": {
+                        "statement": "r25 = virtualinvoke r23.<android.content.Intent: java.io.Serializable getSerializableExtra(java.lang.String)>(r24)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 47
+                    }
+                },
+                {
+                    "extra": "entered",
+                    "instruction": {
+                        "statement": "z2 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>(r35, z1)",
+                        "class_name": "net.mabako.steamgifts.activities.WriteCommentActivity",
+                        "method": "<net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)>",
+                        "id": 68
+                    }
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "net.mabako.steamgifts.activities.SyncActivity",
+            "kind": 0,
+            "exported": false,
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<net.mabako.steamgifts.activities.BaseActivity: void startActivity(android.content.Intent)>(r1)",
+                        "class_name": "net.mabako.steamgifts.activities.BaseActivity",
+                        "method": "<net.mabako.steamgifts.activities.BaseActivity: void onResume()>",
+                        "id": 6
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "com.squareup.picasso.Dispatcher$NetworkBroadcastReceiver",
+            "kind": 3,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.AIRPLANE_MODE"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.net.conn.CONNECTIVITY_CHANGE",
+                                "android.intent.action.AIRPLANE_MODE"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "registration_instruction": {
+                "statement": "virtualinvoke r7.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r0, r1)",
+                "class_name": "com.squareup.picasso.Dispatcher$NetworkBroadcastReceiver",
+                "method": "<com.squareup.picasso.Dispatcher$NetworkBroadcastReceiver: void register()>",
+                "id": 12
+            }
+        }
+    ],
+    "analysis_start": 1618475294,
+    "analysis_end": 1618475510
+}

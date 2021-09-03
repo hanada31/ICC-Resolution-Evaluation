@@ -258,9 +258,10 @@
       </analyzeScope>
     </tags>
   </OracleEdge>
-  <OracleEdge source="com.mikifus.padland.PadLandActivity" destination="com.mikifus.padland.SettingsActivity" method="">
-    <comment>*PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+  <OracleEdge source="com.mikifus.padland.NewPadActivity" destination="com.mikifus.padland.SettingsActivity" method="">
+    <comment>NewPadActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
     <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/NewPadActivity.java" start="33" end="33"/>
       <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
     </callLines>
     <tags>
@@ -270,7 +271,123 @@
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
         <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
-        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.PadInfoActivity" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>PadInfoActivity extends  PadLandDataActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/PadInfoActivity.java" start="26" end="26"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandDataActivity.java" start="40" end="40"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.SplashActivity" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>SplashActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/SplashActivity.java" start="13" end="13"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.PadViewActivity" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>PadViewActivity extends  PadLandDataActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/PadViewActivity.java" start="58" end="58"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandDataActivity.java" start="40" end="40"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.About" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>Aboutextends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/About.java" start="14" end="14"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.PadListActivity" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>PadListActivity extends  PadLandDataActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/PadListActivity.java" start="58" end="58"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
+        <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
+        <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.mikifus.padland.ServerListActivity" destination="com.mikifus.padland.SettingsActivity" method="xxx">
+    <comment>ServerListActivityextends  PadLandDataActivity extends PadLandActivity -&gt; *PadLandActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/com/mikifus/padland/ServerListActivity.java" start="29" end="29"/>
+      <line src="/app/src/main/java/com/mikifus/padland/PadLandActivity.java" start="51" end="52"/>
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false"/>
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false"/>
+      <intentMatch isExplicit="true" isImplicit="false"/>
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false"/>
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false"/>
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true"/>
         <objectScope isStaticVal="false" isStringOp="false" isNoExtra="true"/>
         <sensitivityScope flow="false" path="false" context="false" object="false" field="false"/>
       </analyzeScope>

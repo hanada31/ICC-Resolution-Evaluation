@@ -27,7 +27,7 @@ The evaluation results on 31 apps with PRR oracle and labels are given.
 - ICCTagViewer: Html page to display the PRR oracle and its labels.
 - Labels: Information of the PRR oracle and its labels.
 - Time&Result: 
-  - dynamicAnalysis: dynamic oracle construction results.
-  - staticAnalysis: Running time and the ICC resolution results of tools, IC3, IC3-DIALDroid, Gator and ICCBot. 
+  - oracle construction: dynamic oracle construction results.
+  - ICC resolution: Running time and the ICC resolution results of tools, IC3, IC3-DIALDroid, Gator and ICCBot. 
 
 ​	

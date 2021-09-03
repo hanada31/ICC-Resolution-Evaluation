@@ -1,48 +1,50 @@
 # ICCViewer
 
-ICC Oracle Viewer for Android Application
+ICC Viewer for Android Applications
 
 ## Introduction
-**ICCViewer**: An ICC oracle viewer for Android application based on [Bootstrap 5](https://getbootstrap.com), [jQuery](https://jquery.com) and [monaco-editor](https://github.com/microsoft/monaco-editor).
+**ICCViewer**: An ICC viewer for Android applications with 1400+ built-in PRR oracle ICCs for 31 apps.
+
+The website implementation is based on [Bootstrap 5](https://getbootstrap.com), [jQuery](https://jquery.com) and [monaco-editor](https://github.com/microsoft/monaco-editor).
 
 ## Features
 
-- **Online Viewing**: View the oracle annotation results of [picked applications](https://github.com/hanada31/ICC-Resolution-Evaluation/tree/main/on%20Picked%20App).
+- **Online Viewing**: View the ICC annotation results of [picked applications](https://github.com/hanada31/ICC-Resolution-Evaluation/tree/main/on%20Picked%20App).
 
-- **Offline Editing**: Edit the oracle annotation through the browser, the data is saved locally, and can be imported and exported.
+- **Offline Editing**: Edit the ICC annotation through the browser, the data is saved locally, and can be imported and exported.
 
-- **Oracle Sorting**: Oracle can be sorted according to **Source Class** and **Destination Class** respectively while editing.
+- **ICC Sorting**: ICCs can be sorted according to **Source Class** and **Destination Class** respectively while editing.
 
 - **Auto Saving**: Automatically save editing results every five minutes (Can be enable / disable manually).
 
 - **Label Checking**: Check the selection of labels according to the call path.
 
-- **Internationalization**: Support multiple languages, with Chinese and English currently.
+- **Internationalization**: Support multiple languages, with English and Chinese currently.
 
 ## Usage
 
-### View the annotation results of picked applications
+### View the ICCs and their characteristics of picked applications
 
-After entering the ICCViewer page, click the option in the drop-down menu next to **Application** to view the oracle annotation results of 31 open source Android applications involved in our experiment.
+On the ICCViewer page, click the option in the drop-down menu next to **Application** to view the built-in ICC results of 31 open source apps involved in our experiment.
 
 ![Select picked applications](images/readme-01.png)
 
-At the same time, you can also click the **Import XML** button and paste the contents of local oracle annotation XML file into the textarea for viewing.
+At the same time, you can also click the **Import XML** button and paste the contents of local ICC annotation XML file into the textarea for viewing.
 
 ![Import XML](images/readme-02.png)
 
-### Edit oracle annotation
+### Edit ICC annotation
 
-After the oracle annotation data is loaded, each oracle edge will be displayed as a collapsed accordion. Click on the title of accordion to expand the annotation panel.
+After the ICC annotation data is loaded, each ICC edge will be displayed as a collapsed accordion. Click on the title of accordion to expand the annotation panel.
 
 ![Annotation panel](images/readme-03.png)
 
 The following is a brief description of the annotation panel:
 
-- **Copy / Paste Labels**：Copy the selection status of all labels of an oracle edge, and apply it to another oracle edge completely.
-- **Expand / Collapse All**: Expand or collapse the accordion of oracle edge or category of labels.
-- **Edit Info / Save Change / Discard Change**：Edit the **Source Class** and **Destination Class** of an oracle edge. Need to click **Save Change** to take effect, or **Discard Change** to discard the changes.
-- **Delete Edge**: Delete the current oracle edge.
+- **Copy / Paste Labels**：Copy the selection status of all labels of an ICC edge, and apply it to another ICC edge completely.
+- **Expand / Collapse All**: Expand or collapse the accordion of ICC edge or category of labels.
+- **Edit Info / Save Change / Discard Change**：Edit the **Source Class** and **Destination Class** of an ICC edge. Need to click **Save Change** to take effect, or **Discard Change** to discard the changes.
+- **Delete Edge**: Delete the current ICC edge.
 - **Source Class**: The full name of the source class of ICC.
 - **Destination Class**: The full name of the destination class of ICC.
 - **Call Path**: The call path of ICC, please refers to [Call Path Specification](#call-path-specification)
@@ -54,7 +56,7 @@ The following is a brief description of the annotation panel:
 - **Label Accordion**：Each category of label can be collapsed and expanded separately, and each label is presented as a checkbox. The original name and description of the label will be displayed when the mouse is moved to the checkbox.
 - **Label Checking**: When the label checking is turned on, the possible problems of label selection will be displayed at the end of accordion panel. Please refers to [Label Checking Based on Call Path](#label-checking-based-on-call-path)
 
-### Create Oracle Annotation for Other Applications
+### Create ICC Annotation for Other Applications
 
 After clicking the last option `-- Custom -- ` of the drop-down menu next to **Application**, the **Source Root** edit box will be shown. The default value of source code path is `/ICCViewer/apps`, which is the path corresponding to the `apps` folder in the online version of **ICCViewer**, storing all source code of picked applications in our experiment.
 
@@ -85,7 +87,7 @@ The main checking rules are as follows:
 
 | Rule name | Related labels | Checking logic | Description
 | :----- | :----- | :----- | :----- |
-| Life cycle related invocation | `entryMethod.isLifeCycle` | include <-> select, ~include <-> ~select | Whether common life cycle method name appear in the call path
+| Lifecycle related invocation | `entryMethod.isLifeCycle` | include <-> select, ~include <-> ~select | Whether common life cycle method name appear in the call path
 | Suspected implicit callback | `entryMethod.isImplicitCallback` | include -> select | Whether common implicit callback method name appear in the call path
 | Suspected dynamic callback | `entryMethod.isDynamicCallBack` | include -> select | Whether common dynamic callback method name appear in the call path
 | Suspected static callback | `entryMethod.isStaticCallBack` | include -> select | Whether static resource reference (`R.`) in the call path

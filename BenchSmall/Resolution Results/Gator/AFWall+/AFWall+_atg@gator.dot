@@ -1,0 +1,54 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+AppDetailActivity[color = red];
+LogDetailActivity[color = red];
+LogActivity[color = red];
+ToggleWidgetActivity[style=filled, fillcolor=pink, color = red];
+PreferencesActivity[color = red];
+HelpActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+ToggleWidgetOldActivity[style=filled, fillcolor=pink, color = red];
+RulesActivity[color = red];
+OldLogActivity[color = red];
+CustomScriptActivity[color = red];
+DataDumpActivity[color = red];
+ProfileActivity[color = red];
+LockPatternActivity[color = red];
+LocaleEdit[style=filled, fillcolor=pink, color = red];
+ApplyOnBootService[color = royalblue];
+RootShellService[color = royalblue];
+RulesApplyService[color = royalblue];
+ToggleTileService[style=filled, fillcolor=pink, color = royalblue];
+FirewallService[style=filled, fillcolor=pink, color = royalblue];
+LogService[color = royalblue];
+ToggleWidgetOld[style=filled, fillcolor=pink, color = peru];
+StatusWidget[style=filled, fillcolor=pink, color = peru];
+FireReceiver[style=filled, fillcolor=pink, color = peru];
+OnBootReceiver[style=filled, fillcolor=pink, color = peru];
+ToggleWidget[style=filled, fillcolor=pink, color = peru];
+XPreferenceProvider[color = violet];
+ShareProfilePreference[color = violet];
+LogActivity->OldLogActivity;
+LogActivity->LockPatternActivity;
+PreferencesActivity->LockPatternActivity;
+OldLogActivity->LogActivity;
+MainActivity->LockPatternActivity;
+MainActivity->OldLogActivity;
+MainActivity->PreferencesActivity;
+MainActivity->HelpActivity;
+MainActivity->LogActivity;
+MainActivity->RulesActivity;
+MainActivity->CustomScriptActivity;
+ToggleWidgetOldActivity->LockPatternActivity;
+RulesActivity->LockPatternActivity;
+}

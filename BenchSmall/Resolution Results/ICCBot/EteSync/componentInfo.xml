@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.acra.sender.LegacySenderService" type="Service"/>
+  <component name="com.etesync.syncadapter.syncadapter.CalendarsSyncAdapterService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="android.content.SyncAdapter"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.ViewCollectionActivity, com.etesync.syncadapter.ui.PermissionsActivity, at.bitfire.cert4android.CustomCertService, com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity, com.etesync.syncadapter.ui.AccountsActivity"/>
+  </component>
+  <component name="org.acra.receiver.NotificationBroadcastReceiver" type="Receiver"/>
+  <component name="com.etesync.syncadapter.AccountUpdateService" type="Service"/>
+  <component name="com.etesync.syncadapter.AccountSettings$AppUpdatedReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_REPLACED" scheme="package" path="com.etesync.syncadapter"/>
+    </manifest>
+  </component>
+  <component name="at.bitfire.cert4android.CustomCertService" type="Service">
+    <sender destination="at.bitfire.cert4android.CustomCertService, at.bitfire.cert4android.TrustCertificateActivity" action="certificateDecision" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.setup.LoginActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.setup.LoginCredentialsFragment, com.etesync.syncadapter.ui.WebViewActivity"/>
+  </component>
+  <component name="at.bitfire.cert4android.TrustCertificateActivity" type="Activity" exported="true">
+    <sender destination="at.bitfire.cert4android.CustomCertService" action="certificateDecision"/>
+  </component>
+  <component name="com.etesync.syncadapter.syncadapter.AddressBooksSyncAdapterService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="android.content.SyncAdapter"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.PermissionsActivity, at.bitfire.cert4android.CustomCertService, com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.syncadapter.NullAuthenticatorService" type="Service">
+    <manifest>
+      <intent_filter action="android.accounts.AccountAuthenticator"/>
+    </manifest>
+  </component>
+  <component name="com.etesync.syncadapter.App$AppUpdatedReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_REPLACED" scheme="package" path="com.etesync.syncadapter"/>
+    </manifest>
+  </component>
+  <component name="org.acra.sender.JobSenderService" type="Service" permission="android.permission.BIND_JOB_SERVICE"/>
+  <component name="com.etesync.syncadapter.ui.AccountSettingsActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.ChangeEncryptionPasswordActivity, com.etesync.syncadapter.ui.WebViewActivity, com.etesync.syncadapter.ui.AccountSettingsActivity$AccountSettingsFragment, com.etesync.syncadapter.ui.setup.LoginCredentialsChangeFragment"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.AccountsActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.AppSettingsActivity, com.etesync.syncadapter.ui.setup.LoginActivity, com.etesync.syncadapter.ui.AboutActivity, com.etesync.syncadapter.ui.WebViewActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.CollectionMembersActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.AddMemberFragment, com.etesync.syncadapter.ui.CollectionMembersListFragment"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.DebugInfoActivity" type="Activity" exported="true"/>
+  <component name="com.etesync.syncadapter.syncadapter.ContactsSyncAdapterService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="android.content.SyncAdapter"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.ViewCollectionActivity, com.etesync.syncadapter.ui.PermissionsActivity, at.bitfire.cert4android.CustomCertService, com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity, com.etesync.syncadapter.ui.AccountsActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.ViewCollectionActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.importlocal.ImportActivity, com.etesync.syncadapter.ui.CollectionMembersActivity, com.etesync.syncadapter.ui.journalviewer.ListEntriesFragment, com.etesync.syncadapter.ui.EditCollectionActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.AccountActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.AccountUpdateService, com.etesync.syncadapter.ui.ViewCollectionActivity, com.etesync.syncadapter.ui.setup.SetupUserInfoFragment, interICC_android.intent.action.VIEW, , com.etesync.syncadapter.ui.AccountSettingsActivity, com.etesync.syncadapter.ui.CreateCollectionActivity" action="android.intent.action.VIEW" data="https://f-droid.org/en/packages/new java.lang.String47, https://play.google.com/store/apps/details?id=new java.lang.String"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.AppSettingsActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.AppSettingsActivity$SettingsFragment, at.bitfire.cert4android.CustomCertService, interICC_android.settings.APP_NOTIFICATION_SETTINGS, , com.etesync.syncadapter.ui.AccountsActivity" action="android.settings.APP_NOTIFICATION_SETTINGS, resetCertificates" flags="FLAG_ACTIVITY_CLEAR_TASK , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.JournalItemActivity" type="Activity">
+    <sender destination="interICC_android.intent.action.SEND, " action="android.intent.action.SEND" type="text/plain" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+  </component>
+  <component name="com.etesync.syncadapter.syncadapter.TasksSyncAdapterService" type="Service" exported="true">
+    <manifest>
+      <intent_filter action="android.content.SyncAdapter"/>
+    </manifest>
+    <sender destination="com.etesync.syncadapter.ui.ViewCollectionActivity, com.etesync.syncadapter.ui.PermissionsActivity, at.bitfire.cert4android.CustomCertService, com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity, com.etesync.syncadapter.ui.AccountsActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.AboutActivity" type="Activity"/>
+  <component name="com.etesync.syncadapter.ui.WebViewActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.WebViewActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.syncadapter.SyncNotification$NotificationHandlerActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.DebugInfoActivity, com.etesync.syncadapter.ui.WebViewActivity, com.etesync.syncadapter.ui.AccountSettingsActivity"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.CreateCollectionActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.CreateCollectionFragment"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.importlocal.ImportActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.importlocal.ImportActivity$SelectImportFragment, com.etesync.syncadapter.ui.importlocal.LocalCalendarImportFragment, com.etesync.syncadapter.ui.importlocal.LocalContactImportFragment"/>
+  </component>
+  <component name="com.etesync.syncadapter.ui.ChangeEncryptionPasswordActivity" type="Activity">
+    <sender destination="at.bitfire.cert4android.CustomCertService"/>
+  </component>
+  <component name="com.etesync.syncadapter.PackageChangedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_ADDED, android.intent.action.PACKAGE_FULLY_REMOVED" scheme="package"/>
+    </manifest>
+  </component>
+  <component name="com.etesync.syncadapter.ui.PermissionsActivity" type="Activity">
+    <sender destination="interICC_android.support.BIND_NOTIFICATION_SIDE_CHANNEL, "/>
+  </component>
+  <component name="com.etesync.syncadapter.syncadapter.AccountAuthenticatorService" type="Service">
+    <manifest>
+      <intent_filter action="android.accounts.AccountAuthenticator"/>
+    </manifest>
+  </component>
+  <component name="com.etesync.syncadapter.ui.EditCollectionActivity" type="Activity">
+    <sender destination="com.etesync.syncadapter.ui.DeleteCollectionFragment$ConfirmDeleteCollectionFragment"/>
+  </component>
+</root>

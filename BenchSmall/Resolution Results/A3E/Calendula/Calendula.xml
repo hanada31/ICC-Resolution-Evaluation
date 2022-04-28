@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="es.usc.citius.servando.calendula.activities.UpdateFromFileActivity" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity" encoded_callback="Les/usc/citius/servando/calendula/activities/UpdateFromFileActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.scheduling.AlarmReceiver" >
+<ChildActivity name="es.usc.citius.servando.calendula.scheduling.AlarmIntentService" encoded_callback="Les/usc/citius/servando/calendula/scheduling/AlarmReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.activities.MedicineInfoActivity" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.MedicinesActivity" encoded_callback="Les/usc/citius/servando/calendula/activities/MedicineInfoActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.activities.ConfirmActivity" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.StartActivity" encoded_callback="Les/usc/citius/servando/calendula/activities/ConfirmActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.HomePagerActivity" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.SchedulesHelpActivity" encoded_callback="Les/usc/citius/servando/calendula/HomePagerActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="es.usc.citius.servando.calendula.activities.CalendarActivity" encoded_callback="Les/usc/citius/servando/calendula/HomePagerActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.fragments.ScheduleSummaryFragment" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.SummaryCalendarActivity" encoded_callback="Les/usc/citius/servando/calendula/fragments/ScheduleSummaryFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.fragments.MedInfoFragment" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.MedicinesActivity" encoded_callback="Les/usc/citius/servando/calendula/fragments/MedInfoFragment$2;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.fragments.SelectMedicineListFragment" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.MedicinesActivity" encoded_callback="Les/usc/citius/servando/calendula/fragments/SelectMedicineListFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.persistence.alerts.StockRunningOutAlert" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.MedicinesActivity" encoded_callback="Les/usc/citius/servando/calendula/persistence/alerts/StockRunningOutAlert$StockAlertViewProvider$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="es.usc.citius.servando.calendula.activities.PatientsActivity" >
+<ChildActivity name="es.usc.citius.servando.calendula.activities.PatientDetailActivity" encoded_callback="Les/usc/citius/servando/calendula/activities/PatientsActivity$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="es.usc.citius.servando.calendula.activities.PatientDetailActivity" encoded_callback="Les/usc/citius/servando/calendula/activities/PatientsActivity;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+</Activity >
+</ActivityGraph>

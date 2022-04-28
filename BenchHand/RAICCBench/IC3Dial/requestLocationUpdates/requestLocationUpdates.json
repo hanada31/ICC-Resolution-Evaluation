@@ -1,0 +1,81 @@
+{
+    "name": "lu.uni.trux.raicc.requestLocationUpdates", 
+    "analysis_end": 1628845842, 
+    "analysis_start": 1628845837, 
+    "used_permissions": [
+        "android.permission.ACCESS_FINE_LOCATION", 
+        "android.permission.ACCESS_COARSE_LOCATION", 
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "lu.uni.trux.raicc.requestLocationUpdates.MainActivity", 
+                        "method": "<lu.uni.trux.raicc.requestLocationUpdates.MainActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<lu.uni.trux.raicc.requestLocationUpdates.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "lu/uni/trux/raicc/requestLocationUpdates/IntermediateService"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "lu.uni.trux.raicc.requestLocationUpdates"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 2, 
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.TargetBroadcastReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.IntermediateService", 
+            "exported": true
+        }
+    ]
+}

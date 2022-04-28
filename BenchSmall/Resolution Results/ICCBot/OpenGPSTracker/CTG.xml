@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="org.osmdroid.tileprovider.modules.MapTileFileStorageProviderBase$MyBroadcastReceiver"/>
+  <source name="nl.sogeti.android.gpstracker.viewer.ApplicationPreferenceActivity"/>
+  <source name="nl.sogeti.android.gpstracker.actions.NameTrack">
+    <destination name="nl.sogeti.android.gpstracker.actions.NameTrack" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.actions.NameTrack: void startDelayNotification()&gt;" InstructionId="18" data="new android.net.Uri" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.util.DockReceiver">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.util.DockReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="31" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.util.DockReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="21" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.viewer.TracksLiveFolder"/>
+  <source name="nl.sogeti.android.gpstracker.streaming.VoiceOver"/>
+  <source name="nl.sogeti.android.gpstracker.streaming.CustomUpload">
+    <destination name="nl.sogeti.android.gpstracker.streaming.CustomUpload" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.streaming.CustomUpload: void notifyError(android.content.Context,java.lang.Exception)&gt;" InstructionId="15" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.util.PowerReceiver">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.util.PowerReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="15" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.util.PowerReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="37" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.logger.GPSLoggerService">
+    <destination name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void broadCastLoggingState()&gt;" InstructionId="8" action="nl.sogeti.android.gpstracker.LOGGING_STATE_CHANGED" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void updateNotification()&gt;" InstructionId="36" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void notifyOnDisabledProvider(int)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.streaming.VoiceOver" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void broadcastLocation(android.location.Location)&gt;" InstructionId="56" action="nl.sogeti.android.gpstracker.intent.action.STREAMBROADCAST" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void notifyOnPoorSignal(int)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.streaming.CustomUpload" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerService: void broadcastLocation(android.location.Location)&gt;" InstructionId="56" action="nl.sogeti.android.gpstracker.intent.action.STREAMBROADCAST" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider">
+    <destination name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: android.widget.RemoteViews buildUpdate(android.content.Context,int)&gt;" InstructionId="6" category="android.intent.category.ALTERNATIVE" data="custom:" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.InsertNote" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="29" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: android.widget.RemoteViews buildUpdate(android.content.Context,int)&gt;" InstructionId="8" category="android.intent.category.ALTERNATIVE" data="custom:" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: void updateWidget(android.content.Context)&gt;" InstructionId="-1" category="android.intent.category.ALTERNATIVE" data="custom:" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.ControlTracking" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="23" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: void onEnabled(android.content.Context)&gt;" InstructionId="5" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.widget.ControlWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;" InstructionId="-1" category="android.intent.category.ALTERNATIVE" data="custom:" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.viewer.LoggerMap">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void startup(android.content.Context,java.lang.Runnable)&gt;" InstructionId="14" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.ControlTracking" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.ApplicationPreferenceActivity" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void &lt;init&gt;(android.content.Context)&gt;" InstructionId="9" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.InsertNote" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.ShareTrack" type="vnd.android.cursor.item/vnd.nl.sogeti.android.track" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="69" action="android.intent.action.RUN" extras="" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+    <destination name="nl.sogeti.android.gpstracker.actions.Statistics" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="42" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.TrackList" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="29" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.TrackList" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.LoggerMap$8: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="12" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.actions.InsertNote">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void &lt;init&gt;(android.content.Context)&gt;" InstructionId="9" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void startup(android.content.Context,java.lang.Runnable)&gt;" InstructionId="14" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.viewer.TrackList">
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void onCreate(android.os.Bundle)&gt;" InstructionId="22" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.ShareTrack" type="vnd.android.cursor.item/vnd.nl.sogeti.android.track" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: boolean onContextItemSelected(android.view.MenuItem)&gt;" InstructionId="40" action="android.intent.action.RUN" data="new android.net.Uri" extras="" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+    <destination name="nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService: void collectBreadcrumbsOauthToken()&gt;" InstructionId="22" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.actions.DescribeTrack" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList$10$1: void onCheckedChanged(android.widget.CompoundButton,boolean)&gt;" InstructionId="23" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.Statistics" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: boolean onContextItemSelected(android.view.MenuItem)&gt;" InstructionId="50" data="new android.net.Uri" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void onStart()&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void displayIntent(android.content.Intent)&gt;" InstructionId="25" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void onNewIntent(android.content.Intent)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.viewer.TrackList: void onListItemClick(android.widget.ListView,android.view.View,int,long)&gt;" InstructionId="43" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.actions.Statistics">
+    <destination name="nl.sogeti.android.gpstracker.viewer.TrackList" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.actions.Statistics: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="13" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.ShareTrack" type="vnd.android.cursor.item/vnd.nl.sogeti.android.track" method="&lt;nl.sogeti.android.gpstracker.actions.Statistics: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="26" action="android.intent.action.RUN" data="new android.net.Uri" extras="" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.actions.ShareTrack">
+    <destination name="nl.sogeti.android.gpstracker.viewer.LoggerMap" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.actions.ShareTrack$ShareProgressListener: void startNotification()&gt;" InstructionId="-1" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService: void collectBreadcrumbsOauthToken()&gt;" InstructionId="22" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.actions.DescribeTrack" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.actions.ShareTrack: void sendToBreadcrumbs(android.net.Uri,java.lang.String)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.actions.ShareTrack: void onCreate(android.os.Bundle)&gt;" InstructionId="6" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.actions.ShareTrack: void onStart()&gt;" InstructionId="5" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity"/>
+  <source name="nl.sogeti.android.gpstracker.actions.DescribeTrack">
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.actions.DescribeTrack: void onStart()&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService: void collectBreadcrumbsOauthToken()&gt;" InstructionId="22" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.actions.DescribeTrack: void onCreate(android.os.Bundle)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.actions.ControlTracking">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void startup(android.content.Context,java.lang.Runnable)&gt;" InstructionId="14" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.actions.NameTrack" type="Act2Act" method="&lt;nl.sogeti.android.gpstracker.actions.ControlTracking$1: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="Act2NonAct" method="&lt;nl.sogeti.android.gpstracker.logger.GPSLoggerServiceManager: void &lt;init&gt;(android.content.Context)&gt;" InstructionId="9" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService">
+    <destination name="nl.sogeti.android.gpstracker.oauth.PrepareRequestTokenActivity" type="NonAct2Act" method="&lt;nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService: void collectBreadcrumbsOauthToken()&gt;" InstructionId="22" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="nl.sogeti.android.gpstracker.util.BootReceiver">
+    <destination name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" type="NonAct2NonAct" method="&lt;nl.sogeti.android.gpstracker.util.BootReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="12" action="nl.sogeti.android.gpstracker.intent.action.GPSLoggerService" extras="" flags=""/>
+  </source>
+</root>

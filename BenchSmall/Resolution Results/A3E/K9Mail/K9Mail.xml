@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.fsck.k9.activity.ManageIdentities" >
+<ChildActivity name="com.fsck.k9.activity.EditIdentity" encoded_callback="Lcom/fsck/k9/activity/ManageIdentities;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="com.fsck.k9.activity.EditIdentity" encoded_callback="Lcom/fsck/k9/activity/ManageIdentities;=&gt;editItem(I)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.UnreadWidgetConfiguration" >
+<ChildActivity name="com.fsck.k9.activity.ChooseAccount" encoded_callback="Lcom/fsck/k9/activity/UnreadWidgetConfiguration$1;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+<ChildActivity name="com.fsck.k9.activity.ChooseFolder" encoded_callback="Lcom/fsck/k9/activity/UnreadWidgetConfiguration$3;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.UpgradeDatabases" >
+<ChildActivity name="com.fsck.k9.activity.UpgradeDatabases" encoded_callback="Lcom/fsck/k9/activity/UpgradeDatabases;=&gt;actionUpgradeDatabases(Landroid/content/Context;Landroid/content/Intent;)Z"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.WelcomeMessage" >
+<ChildActivity name="com.fsck.k9.activity.setup.WelcomeMessage" encoded_callback="Lcom/fsck/k9/activity/setup/WelcomeMessage;=&gt;showWelcomeMessage(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupCheckSettings" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupCheckSettings" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupCheckSettings;=&gt;actionCheckSettings(Landroid/app/Activity;Lcom/fsck/k9/Account;Lcom/fsck/k9/activity/setup/AccountSetupCheckSettings$CheckDirection;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.Accounts" >
+<ChildActivity name="com.fsck.k9.activity.Accounts" encoded_callback="Lcom/fsck/k9/activity/Accounts;=&gt;listAccounts(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.service.DatabaseUpgradeService" >
+<ChildActivity name="com.fsck.k9.service.DatabaseUpgradeService" encoded_callback="Lcom/fsck/k9/service/DatabaseUpgradeService;=&gt;startService(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupOptions" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupOptions" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupOptions;=&gt;actionOptions(Landroid/content/Context;Lcom/fsck/k9/Account;Z)V"/>
+</Activity >
+<Activity name="com.fsck.k9.service.MailService" >
+<ChildActivity name="com.fsck.k9.service.MailService" encoded_callback="Lcom/fsck/k9/service/MailService;=&gt;actionRestartPushers(Landroid/content/Context;Ljava/lang/Integer;)V"/>
+<ChildActivity name="com.fsck.k9.service.MailService" encoded_callback="Lcom/fsck/k9/service/MailService;=&gt;actionReset(Landroid/content/Context;Ljava/lang/Integer;)V"/>
+<ChildActivity name="com.fsck.k9.service.MailService" encoded_callback="Lcom/fsck/k9/service/MailService;=&gt;actionReschedulePoll(Landroid/content/Context;Ljava/lang/Integer;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupOutgoing" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupOutgoing" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupOutgoing;=&gt;actionOutgoingSettings(Landroid/content/Context;Lcom/fsck/k9/Account;Z)V"/>
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupOutgoing" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupOutgoing;=&gt;intentActionEditOutgoingSettings(Landroid/content/Context;Lcom/fsck/k9/Account;)Landroid/content/Intent;"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupNames" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupNames" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupNames;=&gt;actionSetNames(Landroid/content/Context;Lcom/fsck/k9/Account;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupIncoming" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupIncoming" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupIncoming;=&gt;actionIncomingSettings(Landroid/app/Activity;Lcom/fsck/k9/Account;Z)V"/>
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupIncoming" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupIncoming;=&gt;intentActionEditIncomingSettings(Landroid/content/Context;Lcom/fsck/k9/Account;)Landroid/content/Intent;"/>
+</Activity >
+<Activity name="com.fsck.k9.widget.list.MessageListWidgetProvider" >
+<ChildActivity name="com.fsck.k9.widget.list.MessageListWidgetService" encoded_callback="Lcom/fsck/k9/widget/list/MessageListWidgetProvider;=&gt;updateAppWidget(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;I)V"/>
+<ChildActivity name="com.fsck.k9.activity.MessageList" encoded_callback="Lcom/fsck/k9/widget/list/MessageListWidgetProvider;=&gt;viewActionTemplatePendingIntent(Landroid/content/Context;)Landroid/app/PendingIntent;"/>
+<ChildActivity name="com.fsck.k9.activity.MessageCompose" encoded_callback="Lcom/fsck/k9/widget/list/MessageListWidgetProvider;=&gt;composeActionPendingIntent(Landroid/content/Context;)Landroid/app/PendingIntent;"/>
+<ChildActivity name="com.fsck.k9.widget.list.MessageListWidgetProvider" encoded_callback="Lcom/fsck/k9/widget/list/MessageListWidgetProvider;=&gt;triggerMessageListWidgetUpdate(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.provider.UnreadWidgetProvider" >
+<ChildActivity name="com.fsck.k9.activity.UnreadWidgetConfiguration" encoded_callback="Lcom/fsck/k9/provider/UnreadWidgetProvider;=&gt;updateWidget(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/fsck/k9/helper/UnreadWidgetProperties;)V"/>
+<ChildActivity name="com.fsck.k9.provider.UnreadWidgetProvider" encoded_callback="Lcom/fsck/k9/provider/UnreadWidgetProvider;=&gt;updateUnreadCount(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.FolderList" >
+<ChildActivity name="com.fsck.k9.activity.FolderList" encoded_callback="Lcom/fsck/k9/activity/FolderList;=&gt;actionHandleAccountIntent(Landroid/content/Context;Lcom/fsck/k9/Account;Z)Landroid/content/Intent;"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSettings" >
+<ChildActivity name="com.fsck.k9.activity.ManageIdentities" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSettings;=&gt;onManageIdentities()V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.compose.MessageActions" >
+<ChildActivity name="com.fsck.k9.activity.MessageCompose" encoded_callback="Lcom/fsck/k9/activity/compose/MessageActions;=&gt;actionEditDraft(Landroid/content/Context;Lcom/fsck/k9/activity/MessageReference;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.MessageList" >
+<ChildActivity name="com.fsck.k9.activity.MessageList" encoded_callback="Lcom/fsck/k9/activity/MessageList;=&gt;intentDisplaySearch(Landroid/content/Context;Lcom/fsck/k9/search/SearchSpecification;ZZZ)Landroid/content/Intent;"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.AccountSetupComposition" >
+<ChildActivity name="com.fsck.k9.activity.setup.AccountSetupComposition" encoded_callback="Lcom/fsck/k9/activity/setup/AccountSetupComposition;=&gt;actionEditCompositionSettings(Landroid/app/Activity;Lcom/fsck/k9/Account;)V"/>
+</Activity >
+<Activity name="com.fsck.k9.activity.setup.FontSizeSettings" >
+<ChildActivity name="com.fsck.k9.activity.setup.FontSizeSettings" encoded_callback="Lcom/fsck/k9/activity/setup/FontSizeSettings;=&gt;actionEditSettings(Landroid/content/Context;)V"/>
+</Activity >
+</ActivityGraph>

@@ -1,0 +1,92 @@
+{
+    "name": "edu.mit.icc_intent_passed_through_api", 
+    "analysis_end": 1628844012, 
+    "analysis_start": 1628844009, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "edu.mit.icc_intent_passed_through_api.EDIT"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_intent_passed_through_api.IsolateActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "edu.mit.icc_intent_passed_through_api.OutFlowActivity", 
+                        "method": "<edu.mit.icc_intent_passed_through_api.OutFlowActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<edu.mit.icc_intent_passed_through_api.OutFlowActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_intent_passed_through_api.OutFlowActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "edu.mit.icc_intent_passed_through_api.ACTION"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_intent_passed_through_api.InFlowActivity", 
+            "exported": true
+        }
+    ]
+}

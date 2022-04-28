@@ -1,0 +1,52 @@
+{
+    "name": "lu.uni.trux.raicc.requestNetwork",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.CHANGE_NETWORK_STATE",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.WRITE_SETTINGS"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.requestNetwork.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.requestNetwork.TargetService",
+            "kind": 1,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r2)",
+                        "class_name": "lu.uni.trux.raicc.requestNetwork.TargetService",
+                        "method": "<lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)>",
+                        "id": 6
+                    }
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032359,
+    "analysis_end": 1639032362
+}

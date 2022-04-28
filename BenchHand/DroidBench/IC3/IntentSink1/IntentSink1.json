@@ -1,0 +1,35 @@
+{
+    "name": "de.ecspride.ICC_IntentSink1",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "de.ecspride.ICC_IntentSink1.IntentSink1",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT",
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031935,
+    "analysis_end": 1639031937
+}

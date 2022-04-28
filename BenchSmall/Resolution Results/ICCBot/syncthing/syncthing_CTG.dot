@@ -1,0 +1,62 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+ShareActivity[style=filled, fillcolor=pink, color = red];
+SettingsActivity[color = red];
+PullOrderDialogActivity[color = red];
+MainActivity[color = red];
+FolderPickerActivity[color = red];
+VersioningDialogActivity[color = red];
+WebGuiActivity[color = red];
+DeviceActivity[color = red];
+FolderTypeDialogActivity[color = red];
+FolderActivity[color = red];
+FirstStartActivity[style=filled, fillcolor=orange, color = red];
+LogActivity[style=filled, fillcolor=pink, color = red];
+SyncthingService[color = royalblue];
+AppConfigReceiver[style=filled, fillcolor=pink, color = peru];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+ReceiverManager_dynamicReceiver[color = peru];
+ShareActivity->LogActivity;
+ShareActivity->SettingsActivity;
+ShareActivity->FolderPickerActivity;
+ShareActivity->SyncthingService;
+SettingsActivity->SyncthingService;
+SettingsActivity->MainActivity;
+SettingsActivity->SettingsActivity;
+MainActivity->LogActivity;
+MainActivity->SyncthingService;
+MainActivity->WebGuiActivity;
+MainActivity->FirstStartActivity;
+MainActivity->SettingsActivity;
+SyncthingService->SyncthingService;
+SyncthingService->LogActivity;
+SyncthingService->MainActivity;
+SyncthingService->FirstStartActivity;
+FolderPickerActivity->SyncthingService;
+WebGuiActivity->LogActivity;
+WebGuiActivity->SettingsActivity;
+WebGuiActivity->SyncthingService;
+DeviceActivity->SyncthingService;
+FolderActivity->PullOrderDialogActivity;
+FolderActivity->FolderPickerActivity;
+FolderActivity->SyncthingService;
+FolderActivity->VersioningDialogActivity;
+FolderActivity->FolderTypeDialogActivity;
+FirstStartActivity->MainActivity;
+AppConfigReceiver->MainActivity;
+AppConfigReceiver->SyncthingService;
+BootReceiver->SyncthingService;
+LogActivity->SyncthingService;
+}
+}

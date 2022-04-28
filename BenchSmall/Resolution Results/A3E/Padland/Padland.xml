@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.mikifus.padland.PadLandActivity" >
+<ChildActivity name="com.mikifus.padland.SettingsActivity" encoded_callback="Lcom/mikifus/padland/PadLandActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.mikifus.padland.i" >
+<ChildActivity name="com.mikifus.padland.PadInfoActivity" encoded_callback="Lcom/mikifus/padland/i;=&gt;onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z"/>
+</Activity >
+<Activity name="com.mikifus.padland.c" >
+<ChildActivity name="com.mikifus.padland.PadListActivity" encoded_callback="Lcom/mikifus/padland/c;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.mikifus.padland.PadListActivity" >
+<ChildActivity name="com.mikifus.padland.PadViewActivity" encoded_callback="Lcom/mikifus/padland/PadListActivity;=&gt;m()V"/>
+</Activity >
+</ActivityGraph>

@@ -1,0 +1,70 @@
+{
+    "name": "org.arguslab.icc_implicit_category", 
+    "analysis_end": 1624856395, 
+    "analysis_start": 1624856393, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_category.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "test"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "amandroid.impliciticctest_Categories.testcategory2", 
+                                "android.intent.category.DEFAULT", 
+                                "amandroid.impliciticctest_Categories.testcategory1"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_category.FooActivity", 
+                        "method": "<org.arguslab.icc_implicit_category.FooActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "r8 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r7)", 
+                        "id": 11
+                    }, 
+                    "extra": "data"
+                }
+            ], 
+            "name": "org.arguslab.icc_implicit_category.FooActivity", 
+            "exported": true
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+digraph G {
+com_etesync_syncadapter_syncadapter_SyncNotification -> com_etesync_syncadapter_ui_AccountSettingsActivity [label="Lcom/etesync/syncadapter/syncadapter/SyncNotification$NotificationHandlerActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+com_etesync_syncadapter_syncadapter_SyncNotification -> com_etesync_syncadapter_ui_DebugInfoActivity [label="Lcom/etesync/syncadapter/syncadapter/SyncNotification$NotificationHandlerActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+com_etesync_syncadapter_ui_AccountActivity -> com_etesync_syncadapter_ui_AccountSettingsActivity [label="Lcom/etesync/syncadapter/ui/AccountActivity;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_etesync_syncadapter_ui_CreateCollectionActivity -> com_etesync_syncadapter_ui_AccountActivity [label="Lcom/etesync/syncadapter/ui/CreateCollectionActivity;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_etesync_syncadapter_ui_AccountSettingsActivity -> com_etesync_syncadapter_ui_AccountActivity [label="Lcom/etesync/syncadapter/ui/AccountSettingsActivity;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_etesync_syncadapter_ui_AccountsActivity -> com_etesync_syncadapter_ui_setup_LoginActivity [label="Lcom/etesync/syncadapter/ui/AccountsActivity$onCreate$1;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+com_etesync_syncadapter_ui_AccountListFragment -> com_etesync_syncadapter_ui_AccountActivity [label="Lcom/etesync/syncadapter/ui/AccountListFragment;=>onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V", fontcolor="red"];
+com_etesync_syncadapter_ui_setup_DetectConfigurationFragment -> com_etesync_syncadapter_ui_DebugInfoActivity [label="Lcom/etesync/syncadapter/ui/setup/DetectConfigurationFragment$NothingDetectedFragment$onCreateDialog$1;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+com_etesync_syncadapter_ui_setup_LoginCredentialsChangeFragment -> com_etesync_syncadapter_ui_DebugInfoActivity [label="Lcom/etesync/syncadapter/ui/setup/LoginCredentialsChangeFragment$NothingDetectedFragment$onCreateDialog$1;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+com_etesync_syncadapter_ui_ExceptionInfoFragment -> com_etesync_syncadapter_ui_DebugInfoActivity [label="Lcom/etesync/syncadapter/ui/ExceptionInfoFragment$onCreateDialog$dialog$1;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+com_etesync_syncadapter_log_Logger -> com_etesync_syncadapter_ui_AppSettingsActivity [label="Lcom/etesync/syncadapter/log/Logger;=>reinitialize()V", fontcolor="red"];
+}

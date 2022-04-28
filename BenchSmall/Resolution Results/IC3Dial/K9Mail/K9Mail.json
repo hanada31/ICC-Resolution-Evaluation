@@ -1,0 +1,2354 @@
+{
+    "name": "com.fsck.k9", 
+    "analysis_end": 1628855124, 
+    "analysis_start": 1628854587, 
+    "used_permissions": [
+        "android.permission.READ_CONTACTS", 
+        "android.permission.READ_SYNC_SETTINGS", 
+        "android.permission.INTERNET", 
+        "com.fsck.k9.permission.READ_MESSAGES", 
+        "android.permission.ACCESS_NETWORK_STATE", 
+        "android.permission.VIBRATE", 
+        "android.permission.WAKE_LOCK", 
+        "com.fsck.k9.permission.REMOTE_CONTROL", 
+        "android.permission.WRITE_CONTACTS", 
+        "android.permission.RECEIVE_BOOT_COMPLETED", 
+        "android.permission.WRITE_EXTERNAL_STORAGE", 
+        "com.fsck.k9.permission.DELETE_MESSAGES"
+    ], 
+    "version": 26000, 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.ManageIdentities", 
+                        "method": "<com.fsck.k9.activity.ManageIdentities: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.ManageIdentities: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.ManageIdentities", 
+                        "method": "<com.fsck.k9.activity.ManageIdentities: void editItem(int)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.ManageIdentities: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.ChooseIdentity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.EmailAddressList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupOutgoing", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupOutgoing: void actionOutgoingSettings(android.content.Context,com.fsck.k9.Account,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupIncoming", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "permission": "com.fsck.k9.permission.REMOTE_CONTROL", 
+            "name": "com.fsck.k9.service.RemoteControlService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.ChooseFolder", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "com.fsck.k9.service.SleepService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSettings", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSettings: void onManageIdentities()>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.setup.AccountSettings: void startActivityForResult(android.content.Intent,int)>($r1, 2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupOutgoing", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupOutgoing: void actionEditOutgoingSettings(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSettings", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupCheckSettings", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "com.fsck.k9.service.PushService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.AttachmentProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.FolderSettings", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT", 
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.NotificationDeleteConfirmation", 
+                        "method": "<com.fsck.k9.activity.NotificationDeleteConfirmation: void triggerDelete()>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.NotificationDeleteConfirmation: android.content.ComponentName startService(android.content.Intent)>($r4)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageList", 
+                        "method": "<com.fsck.k9.activity.MessageList: void actionDisplaySearch(android.content.Context,com.fsck.k9.search.SearchSpecification,boolean,boolean,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void onImport()>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.Accounts: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.controller.MessagingController", 
+                        "method": "<com.fsck.k9.controller.MessagingController: com.fsck.k9.AccountStats getSearchAccountStatsSynchronous(com.fsck.k9.search.SearchAccount,com.fsck.k9.controller.MessagingListener)>", 
+                        "statement": "$r21 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r19, $r3, $r4, $r17, null)", 
+                        "id": 44
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.compose.MessageActions", 
+                        "method": "<com.fsck.k9.activity.compose.MessageActions: void actionCompose(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSettings", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSettings: void actionSettings(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts$6", 
+                        "method": "<com.fsck.k9.activity.Accounts$6: void run()>", 
+                        "statement": "virtualinvoke $r3.<com.fsck.k9.activity.Accounts: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.Prefs", 
+                        "method": "<com.fsck.k9.activity.setup.Prefs: void actionPrefs(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void onExport(boolean,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.Accounts: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 19
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupBasics", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupBasics: void actionNewAccount(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.FolderList", 
+                        "method": "<com.fsck.k9.activity.FolderList: void actionHandleAccount(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.WelcomeMessage", 
+                        "method": "<com.fsck.k9.activity.setup.WelcomeMessage: void showWelcomeMessage(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.Accounts", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.OpenPgpAppSelectDialog", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageList", 
+                        "method": "<com.fsck.k9.activity.MessageList: void actionDisplaySearch(android.content.Context,com.fsck.k9.search.SearchSpecification,boolean,boolean,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.FolderSettings", 
+                        "method": "<com.fsck.k9.activity.setup.FolderSettings: void actionSettings(android.content.Context,com.fsck.k9.Account,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.compose.MessageActions", 
+                        "method": "<com.fsck.k9.activity.compose.MessageActions: void actionCompose(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSettings", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSettings: void actionSettings(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.Prefs", 
+                        "method": "<com.fsck.k9.activity.setup.Prefs: void actionPrefs(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void listAccounts(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.FolderList", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.widget.list.MessageListWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.EditIdentity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupComposition", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void connectivityChange(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionCancel(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.RemoteControlService", 
+                        "method": "<com.fsck.k9.service.RemoteControlService: void set(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: java.lang.Integer receive(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 45
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.service.RemoteControlReceiver", 
+            "permission": "com.fsck.k9.permission.REMOTE_CONTROL", 
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.fsck.k9.K9RemoteControl.requestAccounts"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.fsck.k9.K9RemoteControl.set"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.RawMessageProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "com.fsck.k9.notification.NotificationActionService", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupAccountType", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.ChooseAccount", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.FontSizeSettings", 
+                        "method": "<com.fsck.k9.activity.setup.FontSizeSettings: void actionEditSettings(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.Prefs", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "com.fsck.k9.service.PollService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.MessageProvider", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.FontSizeSettings", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupOptions", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupOptions: void actionOptions(android.content.Context,com.fsck.k9.Account,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupOutgoing", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.NotificationDeleteConfirmation", 
+                        "method": "<com.fsck.k9.activity.NotificationDeleteConfirmation: void triggerDelete()>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.NotificationDeleteConfirmation: android.content.ComponentName startService(android.content.Intent)>($r4)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.controller.MessagingController", 
+                        "method": "<com.fsck.k9.controller.MessagingController: com.fsck.k9.AccountStats getSearchAccountStatsSynchronous(com.fsck.k9.search.SearchAccount,com.fsck.k9.controller.MessagingListener)>", 
+                        "statement": "$r21 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r19, $r3, $r4, $r17, null)", 
+                        "id": 44
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts$6", 
+                        "method": "<com.fsck.k9.activity.Accounts$6: void run()>", 
+                        "statement": "virtualinvoke $r3.<com.fsck.k9.activity.Accounts: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.NotificationDeleteConfirmation", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.EmailProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void listAccounts(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupNames", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReschedulePoll(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PushService", 
+                        "method": "<com.fsck.k9.service.PushService: void stopService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionRestartPushers(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.PollService", 
+                        "method": "<com.fsck.k9.service.PollService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void scheduleIntent(android.content.Context,long,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: void cancelIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 1, 
+            "name": "com.fsck.k9.service.MailService", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.DEVICE_STORAGE_OK"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.DEVICE_STORAGE_LOW"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.net.conn.CONNECTIVITY_CHANGE"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.android.sync.SYNC_CONN_STATUS_CHANGED"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void connectivityChange(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionCancel(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.RemoteControlService", 
+                        "method": "<com.fsck.k9.service.RemoteControlService: void set(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: java.lang.Integer receive(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 45
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.service.BootReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "messages"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "email"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.compose.MessageActions", 
+                        "method": "<com.fsck.k9.activity.compose.MessageActions: void actionEditDraft(android.content.Context,com.fsck.k9.activity.MessageReference)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.FolderSettings", 
+                        "method": "<com.fsck.k9.activity.setup.FolderSettings: void actionSettings(android.content.Context,com.fsck.k9.Account,java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSettings", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSettings: void actionSettings(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.Prefs", 
+                        "method": "<com.fsck.k9.activity.setup.Prefs: void actionPrefs(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void listAccounts(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.FolderList", 
+                        "method": "<com.fsck.k9.activity.FolderList: void actionHandleAccount(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.MessageList", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.CREATE_SHORTCUT"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.LauncherShortcuts", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MEDIA_MOUNTED"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "file"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.service.StorageReceiver", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void importSettings(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupBasics", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupBasics: void actionNewAccount(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.WelcomeMessage", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_UPDATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.controller.MessagingController", 
+                        "method": "<com.fsck.k9.controller.MessagingController: com.fsck.k9.AccountStats getSearchAccountStatsSynchronous(com.fsck.k9.search.SearchAccount,com.fsck.k9.controller.MessagingListener)>", 
+                        "statement": "$r21 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r19, $r3, $r4, $r17, null)", 
+                        "id": 44
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.provider.UnreadWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SENDTO"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "mailto"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.BROWSABLE", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "mailto"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND_MULTIPLE"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "*/*"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.autocrypt.PEER_ACTION"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageCompose", 
+                        "method": "<com.fsck.k9.activity.MessageCompose: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.MessageCompose: void startActivity(android.content.Intent)>($r11)", 
+                        "id": 47
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageList", 
+                        "method": "<com.fsck.k9.activity.MessageList: void actionDisplaySearch(android.content.Context,com.fsck.k9.search.SearchSpecification,boolean,boolean,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.helper.Contacts", 
+                        "method": "<com.fsck.k9.helper.Contacts: android.database.Cursor getContactByAddress(java.lang.String)>", 
+                        "statement": "$r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, $r4, null, null, \"times_contacted DESC, display_name, _id\")", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageCompose$12", 
+                        "method": "<com.fsck.k9.activity.MessageCompose$12: void showPickAttachmentDialog(int)>", 
+                        "statement": "virtualinvoke $r2.<com.fsck.k9.activity.MessageCompose: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.cache.EmailProviderCache", 
+                        "method": "<com.fsck.k9.cache.EmailProviderCache: void notifyChange()>", 
+                        "statement": "virtualinvoke $r7.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r4, null)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.openintents.openpgp.util.OpenPgpServiceConnection", 
+                        "method": "<org.openintents.openpgp.util.OpenPgpServiceConnection: void bindToService()>", 
+                        "statement": "$z0 = virtualinvoke $r5.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r2, $r6, 1)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.MessageCompose", 
+                        "method": "<com.fsck.k9.activity.MessageCompose: void showContactPicker(int)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.MessageCompose: void startActivityForResult(android.content.Intent,int)>($r1, $i0)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.mailstore.LocalStore", 
+                        "method": "<com.fsck.k9.mailstore.LocalStore: void notifyChange()>", 
+                        "statement": "virtualinvoke $r5.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.MessageCompose", 
+            "exported": true
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.DecryptedFileProvider", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "com.fsck.k9.service.DatabaseUpgradeService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.ManageIdentities", 
+                        "method": "<com.fsck.k9.activity.ManageIdentities: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.ManageIdentities: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.ManageIdentities", 
+                        "method": "<com.fsck.k9.activity.ManageIdentities: void editItem(int)>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.ManageIdentities: void startActivityForResult(android.content.Intent,int)>($r1, 1)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.ManageIdentities", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupNames", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupNames: void actionSetNames(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupOptions", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.fsck.k9.provider.AttachmentTempFileProvider", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.DatabaseUpgradeService", 
+                        "method": "<com.fsck.k9.service.DatabaseUpgradeService: void startService(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: void launchOriginalActivity()>", 
+                        "statement": "virtualinvoke $r0.<com.fsck.k9.activity.UpgradeDatabases: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.UpgradeDatabases", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void connectivityChange(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionCancel(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.RemoteControlService", 
+                        "method": "<com.fsck.k9.service.RemoteControlService: void set(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.BootReceiver", 
+                        "method": "<com.fsck.k9.service.BootReceiver: java.lang.Integer receive(android.content.Context,android.content.Intent,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 45
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.fsck.k9.service.CoreReceiver", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "permission": "android.permission.BIND_REMOTEVIEWS", 
+            "name": "com.fsck.k9.widget.list.MessageListWidgetService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.service.MailService", 
+                        "method": "<com.fsck.k9.service.MailService: void actionReset(android.content.Context,java.lang.Integer)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupNames", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupNames: void actionSetNames(android.content.Context,com.fsck.k9.Account)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.setup.AccountSetupAccountType", 
+                        "method": "<com.fsck.k9.activity.setup.AccountSetupAccountType: void actionSelectAccountType(android.content.Context,com.fsck.k9.Account,boolean)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 8
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.setup.AccountSetupBasics", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEARCH"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UpgradeDatabases", 
+                        "method": "<com.fsck.k9.activity.UpgradeDatabases: boolean actionUpgradeDatabases(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.compose.MessageActions", 
+                        "method": "<com.fsck.k9.activity.compose.MessageActions: void actionEditDraft(android.content.Context,com.fsck.k9.activity.MessageReference)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.Accounts", 
+                        "method": "<com.fsck.k9.activity.Accounts: void listAccounts(android.content.Context)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 5
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.Search", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_CONFIGURE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UnreadWidgetConfiguration$3", 
+                        "method": "<com.fsck.k9.activity.UnreadWidgetConfiguration$3: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<com.fsck.k9.activity.UnreadWidgetConfiguration: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.controller.MessagingController", 
+                        "method": "<com.fsck.k9.controller.MessagingController: com.fsck.k9.AccountStats getSearchAccountStatsSynchronous(com.fsck.k9.search.SearchAccount,com.fsck.k9.controller.MessagingListener)>", 
+                        "statement": "$r21 = virtualinvoke $r12.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r19, $r3, $r4, $r17, null)", 
+                        "id": 44
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.fsck.k9.activity.UnreadWidgetConfiguration$1", 
+                        "method": "<com.fsck.k9.activity.UnreadWidgetConfiguration$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r3.<com.fsck.k9.activity.UnreadWidgetConfiguration: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.fsck.k9.activity.UnreadWidgetConfiguration", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.fragment.MessageListFragment$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.StorageGoneReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.RemoteControlReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.activity.UpgradeDatabases$UpgradeDatabaseBroadcastReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "android.appwidget.AppWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.BootReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.bumptech.glide.manager.DefaultConnectivityMonitor$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.activity.ActivityListener$1", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.CoreReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.StorageReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.provider.DecryptedFileProvider$DecryptedFileProviderCleanupReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.provider.UnreadWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.provider.AttachmentTempFileProvider$AttachmentTempFileProviderCleanupReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.service.ShutdownReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.activity.ActivityListener", 
+                "method": "<com.fsck.k9.activity.ActivityListener: void onResume(android.content.Context)>", 
+                "statement": "virtualinvoke $r1.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.widget.list.MessageListWidgetProvider", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.fsck.k9.power.DeviceIdleManager$RealDeviceIdleManager", 
+                "method": "<com.fsck.k9.power.DeviceIdleManager$RealDeviceIdleManager: void registerReceiver()>", 
+                "statement": "virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r4, $r1)", 
+                "id": 7
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.fsck.k9.power.DeviceIdleReceiver", 
+            "exported": true
+        }
+    ], 
+    "permissions": [
+        {
+            "name": "com.fsck.k9.permission.READ_MESSAGES", 
+            "level": 1
+        }, 
+        {
+            "name": "com.fsck.k9.permission.REMOTE_CONTROL", 
+            "level": 1
+        }, 
+        {
+            "name": "com.fsck.k9.permission.DELETE_MESSAGES", 
+            "level": 1
+        }
+    ]
+}

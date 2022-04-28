@@ -1,0 +1,125 @@
+{
+    "name": "edu.mit.icc_unresolvable_intent", 
+    "analysis_end": 1628844037, 
+    "analysis_start": 1628844033, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "edu.mit.icc_unresolvable_intent.ACTION"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_unresolvable_intent.InFlowActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "edu.mit.icc_unresolvable_intent.OutFlowActivity", 
+                        "method": "<edu.mit.icc_unresolvable_intent.OutFlowActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<edu.mit.icc_unresolvable_intent.OutFlowActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "edu.mit.icc_unresolvable_intent.EDIT"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "edu.mit.icc_unresolvable_intent.ACTION"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_unresolvable_intent.OutFlowActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "edu.mit.icc_unresolvable_intent.EDIT"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_unresolvable_intent.InFlowActivity2", 
+            "exported": true
+        }
+    ]
+}

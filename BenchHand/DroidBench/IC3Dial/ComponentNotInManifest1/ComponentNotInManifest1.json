@@ -1,0 +1,74 @@
+{
+    "name": "edu.mit.icc_component_not_in_manifest", 
+    "analysis_end": 1628844007, 
+    "analysis_start": 1628844003, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "edu.mit.icc_component_not_in_manifest.IsolateActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "edu.mit.icc_component_not_in_manifest.OutFlowActivity", 
+                        "method": "<edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<edu.mit.icc_component_not_in_manifest.OutFlowActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "edu/mit/icc_component_not_in_manifest/InFlowActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "edu.mit.icc_component_not_in_manifest"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_component_not_in_manifest.OutFlowActivity", 
+            "exported": true
+        }
+    ]
+}

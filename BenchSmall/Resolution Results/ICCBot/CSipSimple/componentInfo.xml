@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.csipsimple.ui.prefs.PrefsFast" type="Activity" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.ui.action.PREFS_FAST" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+  <component name="com.csipsimple.widgets.ShortcutWidgetConfigure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender action="com.csipsimple.phone.action.FAVORITES, com.csipsimple.phone.action.DIALER, com.csipsimple.ui.action.PREFS_GLOBAL, com.csipsimple.ui.action.PREFS_FAST, com.csipsimple.phone.action.MESSAGES, com.csipsimple.phone.action.CALLLOG"/>
+  </component>
+  <component name="com.csipsimple.ui.filters.EditFilter" type="Activity"/>
+  <component name="com.csipsimple.ui.PickupSipUri" type="Activity">
+    <sender destination="interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.plugins.telephony.CallHandler" action="com.csipsimple.phone.action.HANDLE_CALL, android.intent.action.CALL_PRIVILEGED"/>
+  </component>
+  <component name="com.csipsimple.ui.filters.AccountFilters" type="Activity">
+    <sender destination="com.csipsimple.ui.filters.AccountFiltersListFragment"/>
+  </component>
+  <component name="com.csipsimple.ui.incall.InCallMediaControl" type="Activity">
+    <sender destination="com.csipsimple.service.SipService" action="com.csipsimple.service.SipService"/>
+  </component>
+  <component name="com.csipsimple.ui.prefs.AudioTester" type="Activity">
+    <sender destination="com.csipsimple.service.SipService"/>
+  </component>
+  <component name="com.csipsimple.ui.prefs.PrefsFilters" type="Activity">
+    <sender destination="com.csipsimple.ui.account.AccountsChooserListFragment, com.csipsimple.ui.filters.AccountFilters"/>
+  </component>
+  <component name="com.csipsimple.service.DeviceStateReceiver" type="Receiver" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.net.conn.CONNECTIVITY_CHANGE"/>
+      <intent_filter action="android.intent.action.PACKAGE_ADDED, android.intent.action.PACKAGE_REMOVED" scheme="package"/>
+      <intent_filter action="com.csipsimple.accounts.activate"/>
+    </manifest>
+    <sender destination="com.csipsimple.service.SipService, interICC_android.intent.action.VIEW, " action="android.intent.action.VIEW" type="application/vnd.android.package-archive" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.csipsimple.utils.TimerWrapper" type="Receiver">
+    <manifest>
+      <intent_filter action="com.csipsimple.PJ_TIMER" scheme="timer"/>
+    </manifest>
+    <sender destination="com.csipsimple.utils.TimerWrapper" action="com.csipsimple.PJ_TIMER" data="timer://"/>
+  </component>
+  <component name="com.csipsimple.wizards.impl.MondotalkCreate" type="Activity"/>
+  <component name="com.csipsimple.ui.prefs.hc.MainPrefs" type="Activity" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.ui.action.PREFS_GLOBAL" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.csipsimple.ui.prefs.hc.PrefsLoaderFragment, interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.ui.prefs.AudioTester" action="android.intent.action.CALL_PRIVILEGED, com.csipsimple.ui.action.PREFS_FAST"/>
+  </component>
+  <component name="com.csipsimple.wizards.BasePrefsWizard" type="Activity">
+    <sender destination="com.csipsimple.wizards.WizardChooser, interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.service.receiver.DynamicReceiver5, com.csipsimple.ui.filters.AccountFilters" action="com.csipsimple.service.ACTION_SIP_REQUEST_RESTART, android.intent.action.CALL_PRIVILEGED"/>
+  </component>
+  <component name="com.csipsimple.service.Downloader" type="Service">
+    <sender destination="com.csipsimple.ui.SipHome"/>
+  </component>
+  <component name="com.csipsimple.ui.SipHome" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+      <intent_filter action="com.csipsimple.phone.action.DIALER" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.intent.action.DIAL" category="android.intent.category.DEFAULT" scheme="csip"/>
+      <intent_filter action="com.csipsimple.phone.action.CALLLOG" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="com.csipsimple.phone.action.FAVORITES" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="com.csipsimple.phone.action.MESSAGES" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.csipsimple.ui.prefs.hc.MainPrefs, com.csipsimple.ui.prefs.PrefsFast, com.csipsimple.ui.calllog.CallLogListFragment, com.csipsimple.wizards.BasePrefsWizard, com.csipsimple.service.Downloader, com.csipsimple.service.SipService, interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.ui.calllog.CallLogDetailsActivity, com.csipsimple.ui.prefs.cupcake.MainPrefs, com.csipsimple.ui.messages.ConversationsListFragment, com.csipsimple.ui.dialpad.DialerFragment, com.csipsimple.ui.messages.MessageActivity, com.csipsimple.ui.favorites.FavListFragment, com.csipsimple.service.receiver.DynamicReceiver5, com.csipsimple.ui.warnings.WarningFragment, com.csipsimple.ui.help.Help, com.csipsimple.ui.account.AccountsEditList" action="com.csipsimple.service.ACTION_SIP_REQUEST_RESTART, com.csipsimple.service.SipService, com.csipsimple.service.ACTION_OUTGOING_UNREGISTER, com.csipsimple.action.APPLY_NIGHTLY, android.intent.action.CALL_PRIVILEGED, com.csipsimple.ui.action.PREFS_GLOBAL, com.csipsimple.ui.action.PREFS_FAST" flags="FLAG_ACTIVITY_NEW_TASK " extras="Parcelable@-pendingIntent,"/>
+  </component>
+  <component name="com.csipsimple.wizards.WizardChooser" type="Activity"/>
+  <component name="com.csipsimple.service.SipService" type="Service" exported="true" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.service.SipConfiguration, com.csipsimple.service.SipService"/>
+    </manifest>
+    <sender destination="interICC_com.csipsimple.service.CALL_CHANGED, , com.csipsimple.plugins.codecs.ReceiverSilk, com.csipsimple.ui.SipHome, com.csipsimple.service.SipService, interICC_com.csipsimple.service.CALL_RECORDED, , interICC_org.openintents.audio.action_volume_update, , interICC_com.csipsimple.plugins.action.REGISTER_VIDEO, , com.csipsimple.ui.incall.InCallMediaControl, interICC_com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED, " action="com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.plugins.action.REGISTER_VIDEO, com.csipsimple.PJ_TIMER, com.csipsimple.service.CALL_CHANGED, com.csipsimple.phone.action.DIALER, com.csipsimple.service.CALL_RECORDED, org.openintents.audio.action_volume_update, com.csipsimple.codecs.action.REGISTER_CODEC" data="timer://" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.csipsimple.service.HeadsetButtonReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.MEDIA_BUTTON"/>
+    </manifest>
+  </component>
+  <component name="com.csipsimple.ui.calllog.CallLogDetailsActivity" type="Activity">
+    <sender destination="com.csipsimple.ui.calllog.CallLogDetailsFragment"/>
+  </component>
+  <component name="com.csipsimple.ui.prefs.cupcake.MainPrefs" type="Activity" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.ui.action.PREFS_GLOBAL" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.ui.prefs.AudioTester" action="android.intent.action.CALL_PRIVILEGED, com.csipsimple.ui.action.PREFS_FAST"/>
+  </component>
+  <component name="com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity" type="Activity"/>
+  <component name="com.csipsimple.ui.prefs.Codecs" type="Activity">
+    <sender destination="com.csipsimple.ui.prefs.CodecsFragment"/>
+  </component>
+  <component name="com.csipsimple.plugins.telephony.CallHandler" type="Receiver" permission="android.permission.PROCESS_OUTGOING_CALLS">
+    <manifest>
+      <intent_filter action="com.csipsimple.phone.action.HANDLE_CALL"/>
+    </manifest>
+    <sender destination="interICC_android.intent.action.CALL_PRIVILEGED, " action="android.intent.action.CALL, android.intent.action.CALL_PRIVILEGED"/>
+  </component>
+  <component name="com.csipsimple.widgets.ShortcutWidgetProvider" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+  </component>
+  <component name="com.csipsimple.widgets.AccountWidgetProvider" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE, com.csipsimple.service.REGISTRATION_CHANGED, com.csipsimple.service.ACCOUNT_CHANGED"/>
+    </manifest>
+    <sender destination="com.csipsimple.service.DeviceStateReceiver" action="com.csipsimple.accounts.activate"/>
+  </component>
+  <component name="com.csipsimple.plugins.codecs.ReceiverSilk" type="Receiver" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.codecs.action.REGISTER_CODEC"/>
+    </manifest>
+  </component>
+  <component name="com.csipsimple.widgets.AccountWidgetConfigure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.csipsimple.ui.account.AccountsChooserListFragment, com.csipsimple.service.DeviceStateReceiver" action="com.csipsimple.accounts.activate"/>
+  </component>
+  <component name="com.csipsimple.ui.messages.MessageActivity" type="Activity">
+    <sender destination="com.csipsimple.ui.messages.MessageFragment"/>
+  </component>
+  <component name="com.csipsimple.service.receiver.DynamicReceiver5" type="Receiver">
+    <manifest>
+      <intent_filter action="com.csipsimple.service.ACTION_SIP_CAN_BE_STOPPED, com.csipsimple.service.ACTION_SIP_REQUEST_RESTART, vpn.connectivity, com.csipsimple.service.ACTION_OUTGOING_UNREGISTER, com.csipsimple.service.ACTION_DEFER_OUTGOING_UNREGISTER, android.net.conn.CONNECTIVITY_CHANGE, com.csipsimple.service.ACCOUNT_CHANGED"/>
+    </manifest>
+    <sender destination="com.csipsimple.plugins.codecs.ReceiverSilk, interICC_org.openintents.audio.action_volume_update, , interICC_com.csipsimple.plugins.action.REGISTER_VIDEO, , interICC_com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED, "/>
+  </component>
+  <component name="com.csipsimple.ui.outgoingcall.OutgoingCallChooser" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CALL" category="android.intent.category.DEFAULT" scheme="sips"/>
+      <intent_filter action="android.intent.action.VIEW" category="android.intent.category.DEFAULT" scheme="sip"/>
+      <intent_filter action="android.phone.extra.NEW_CALL_INTENT" category="android.intent.category.DEFAULT" scheme="sips"/>
+      <intent_filter action="android.intent.action.SENDTO, android.intent.action.VIEW" category="android.intent.category.BROWSABLE, android.intent.category.DEFAULT" scheme="sips" host="sip"/>
+      <intent_filter action="android.intent.action.CALL_PRIVILEGED" category="android.intent.category.DEFAULT" scheme="sip"/>
+      <intent_filter action="android.intent.action.CALL_PRIVILEGED" category="android.intent.category.DEFAULT" scheme="tel"/>
+      <intent_filter action="android.intent.action.CALL_PRIVILEGED" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.intent.action.SENDTO" category="android.intent.category.DEFAULT" scheme="smsto"/>
+    </manifest>
+    <sender destination="com.csipsimple.service.SipService, com.csipsimple.service.receiver.DynamicReceiver5, com.csipsimple.ui.outgoingcall.OutgoingCallListFragment" action="com.csipsimple.service.SipService, com.csipsimple.service.ACTION_OUTGOING_UNREGISTER, com.csipsimple.service.ACTION_DEFER_OUTGOING_UNREGISTER"/>
+  </component>
+  <component name="com.csipsimple.service.OutgoingCall" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.NEW_OUTGOING_CALL"/>
+    </manifest>
+    <sender destination="com.csipsimple.ui.outgoingcall.OutgoingCallChooser, com.csipsimple.plugins.telephony.CallHandler" action="com.csipsimple.phone.action.HANDLE_CALL, android.intent.action.CALL" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.csipsimple.ui.incall.InCallActivity" type="Activity" permission="android.permission.CONFIGURE_SIP">
+    <manifest>
+      <intent_filter action="com.csipsimple.phone.action.INCALL" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.csipsimple.service.SipService, com.csipsimple.ui.PickupSipUri, interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.ui.incall.DtmfDialogFragment, com.csipsimple.ui.incall.InCallMediaControl" action="android.intent.action.CALL_PRIVILEGED"/>
+  </component>
+  <component name="com.csipsimple.ui.account.AccountsEditList" type="Activity">
+    <sender destination="com.csipsimple.ui.account.AccountsEditListFragment"/>
+  </component>
+  <component name="com.csipsimple.ui.account.AccountEdit" type="Activity">
+    <sender destination="com.csipsimple.wizards.WizardChooser, interICC_android.intent.action.CALL_PRIVILEGED, , com.csipsimple.service.receiver.DynamicReceiver5, com.csipsimple.ui.filters.AccountFilters"/>
+  </component>
+</root>

@@ -1,0 +1,74 @@
+{
+    "name": "org.arguslab.icc_explicit1", 
+    "analysis_end": 1628844388, 
+    "analysis_start": 1628844385, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "org.arguslab.icc_explicit1.FooActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_explicit1.MainActivity", 
+                        "method": "<org.arguslab.icc_explicit1.MainActivity: void leakImei()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.icc_explicit1.MainActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "data"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/icc_explicit1/FooActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.icc_explicit1"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_explicit1.MainActivity", 
+            "exported": true
+        }
+    ]
+}

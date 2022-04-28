@@ -1,0 +1,1200 @@
+{
+    "name": "com.mikifus.padland", 
+    "analysis_end": 1620737911, 
+    "analysis_start": 1620737858, 
+    "used_permissions": [
+        "android.permission.INTERNET", 
+        "android.permission.ACCESS_NETWORK_STATE"
+    ], 
+    "version": 20, 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "com.mikifus.padland.NewPadActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadModel", 
+                        "method": "<com.mikifus.padland.Models.PadModel: boolean a(long,android.content.ContentValues)>", 
+                        "statement": "r16 = virtualinvoke r14.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(r15, r1)", 
+                        "id": 30
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: int b()>", 
+                        "statement": "r6 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r1, r2, null, null, \"create_date DESC\")", 
+                        "id": 8
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: boolean d(long)>", 
+                        "statement": "i4 = virtualinvoke r3.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(r1, r5, r2)", 
+                        "id": 14
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadModel", 
+                        "method": "<com.mikifus.padland.Models.PadModel: boolean a(long,android.content.ContentValues)>", 
+                        "statement": "i5 = virtualinvoke r7.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(r8, r1, r2, r5)", 
+                        "id": 15
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor d()>", 
+                        "statement": "r4 = virtualinvoke r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r1, r2, null, null, null)", 
+                        "id": 4
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: void b(long)>", 
+                        "statement": "virtualinvoke r11.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(r1, r2, r12, r9)", 
+                        "id": 27
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: java.util.ArrayList a()>", 
+                        "statement": "r6 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r4, r1, null, null, \"create_date DESC\")", 
+                        "id": 9
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: java.util.HashMap a(int)>", 
+                        "statement": "r8 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r4, r6, \"\", null, r1)", 
+                        "id": 16
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.c", 
+                        "method": "<com.mikifus.padland.c: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke r12.<android.content.Context: void startActivity(android.content.Intent)>(r9)", 
+                        "id": 18
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "pad_id", 
+                                        "action"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/mikifus/padland/PadListActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.mikifus.padland"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor a(java.lang.String,java.lang.String)>", 
+                        "statement": "r9 = virtualinvoke r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r2, r3, r4, r5, null)", 
+                        "id": 13
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void j()>", 
+                        "statement": "virtualinvoke r3.<android.os.Bundle: long getLong(java.lang.String,long)>(r1, l0)", 
+                        "id": 7
+                    }, 
+                    "extra": "focus_pad"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void i()>", 
+                        "statement": "r9 = virtualinvoke r7.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r8)", 
+                        "id": 3
+                    }, 
+                    "extra": "action"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r7 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r1)", 
+                        "id": 19
+                    }, 
+                    "extra": "padUrl"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r9 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r12)", 
+                        "id": 17
+                    }, 
+                    "extra": "padServer"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void m()>", 
+                        "statement": "r10 = virtualinvoke r8.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r9)", 
+                        "id": 3
+                    }, 
+                    "extra": "android.intent.extra.TEXT"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void i()>", 
+                        "statement": "r12 = virtualinvoke r10.<android.content.Intent: java.util.ArrayList getStringArrayListExtra(java.lang.String)>(r11)", 
+                        "id": 6
+                    }, 
+                    "extra": "pad_id"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r5 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r10)", 
+                        "id": 13
+                    }, 
+                    "extra": "padName"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r8 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r11)", 
+                        "id": 15
+                    }, 
+                    "extra": "padLocalName"
+                }
+            ], 
+            "name": "com.mikifus.padland.PadLandDataActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.mikifus.padland.SplashActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.SettingsActivity$SettingsFragment", 
+                        "method": "<com.mikifus.padland.SettingsActivity$SettingsFragment: void a()>", 
+                        "statement": "r3 = virtualinvoke r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>(r2)", 
+                        "id": 3
+                    }, 
+                    "extra": "server_name_list"
+                }
+            ], 
+            "name": "com.mikifus.padland.SettingsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadModel", 
+                        "method": "<com.mikifus.padland.Models.PadModel: boolean a(long,android.content.ContentValues)>", 
+                        "statement": "r16 = virtualinvoke r14.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(r15, r1)", 
+                        "id": 30
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadModel", 
+                        "method": "<com.mikifus.padland.Models.PadModel: boolean a(long,android.content.ContentValues)>", 
+                        "statement": "i5 = virtualinvoke r7.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(r8, r1, r2, r5)", 
+                        "id": 15
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: void b(long)>", 
+                        "statement": "virtualinvoke r11.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(r1, r2, r12, r9)", 
+                        "id": 27
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor a(java.lang.String,java.lang.String)>", 
+                        "statement": "r9 = virtualinvoke r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r2, r3, r4, r5, null)", 
+                        "id": 13
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.mikifus.padland.PadViewActivity", 
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "pad.riseup.net"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/p/(.*)"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "framapad.org"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/p/(.*)"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "piratenpad.de"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/p/(.*)"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "piratepad.net"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "piratenpad.de"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/p/(.*)"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "etherpad.mozilla.org"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/p/(.*)"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "free.primarypad.com"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "https"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "titanpad.com"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "http"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "meetingwords.com"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r7 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r1)", 
+                        "id": 19
+                    }, 
+                    "extra": "padUrl"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r9 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r12)", 
+                        "id": 17
+                    }, 
+                    "extra": "padServer"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r5 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r10)", 
+                        "id": 13
+                    }, 
+                    "extra": "padName"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadViewActivity", 
+                        "method": "<com.mikifus.padland.PadViewActivity: com.mikifus.padland.Models.Pad l()>", 
+                        "statement": "r8 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r11)", 
+                        "id": 15
+                    }, 
+                    "extra": "padLocalName"
+                }
+            ], 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.c", 
+                        "method": "<com.mikifus.padland.c: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke r12.<android.content.Context: void startActivity(android.content.Intent)>(r9)", 
+                        "id": 18
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "pad_id", 
+                                        "action"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/mikifus/padland/PadListActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.mikifus.padland"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor a(java.lang.String,java.lang.String)>", 
+                        "statement": "r9 = virtualinvoke r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r2, r3, r4, r5, null)", 
+                        "id": 13
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.mikifus.padland.PadInfoActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z0 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r2)", 
+                        "id": 4
+                    }, 
+                    "extra": "baseProgressButtonEnabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z1 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r3)", 
+                        "id": 7
+                    }, 
+                    "extra": "progressButtonEnabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z5 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r12)", 
+                        "id": 28
+                    }, 
+                    "extra": "com.github.paolorotolo.appintro_immersive_mode_enabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "i1 = virtualinvoke r1.<android.os.Bundle: int getInt(java.lang.String)>(r11)", 
+                        "id": 25
+                    }, 
+                    "extra": "lockPage"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z7 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r14)", 
+                        "id": 34
+                    }, 
+                    "extra": "com.github.paolorotolo.appintro_color_transitions_enabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "i0 = virtualinvoke r1.<android.os.Bundle: int getInt(java.lang.String)>(r5)", 
+                        "id": 13
+                    }, 
+                    "extra": "currentItem"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z2 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r4)", 
+                        "id": 10
+                    }, 
+                    "extra": "skipButtonEnabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z6 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r13)", 
+                        "id": 31
+                    }, 
+                    "extra": "com.github.paolorotolo.appintro_immersive_mode_sticky"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z4 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r9)", 
+                        "id": 21
+                    }, 
+                    "extra": "nextPagingEnabled"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.github.paolorotolo.appintro.AppIntroBase", 
+                        "method": "<com.github.paolorotolo.appintro.AppIntroBase: void onRestoreInstanceState(android.os.Bundle)>", 
+                        "statement": "z3 = virtualinvoke r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>(r7)", 
+                        "id": 17
+                    }, 
+                    "extra": "nextEnabled"
+                }
+            ], 
+            "name": "com.mikifus.padland.IntroActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: int b()>", 
+                        "statement": "r6 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r1, r2, null, null, \"create_date DESC\")", 
+                        "id": 8
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: boolean d(long)>", 
+                        "statement": "i4 = virtualinvoke r3.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(r1, r5, r2)", 
+                        "id": 14
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor d()>", 
+                        "statement": "r4 = virtualinvoke r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r1, r2, null, null, null)", 
+                        "id": 4
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: java.util.ArrayList a()>", 
+                        "statement": "r6 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r4, r1, null, null, \"create_date DESC\")", 
+                        "id": 9
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.Models.PadGroupModel", 
+                        "method": "<com.mikifus.padland.Models.PadGroupModel: java.util.HashMap a(int)>", 
+                        "statement": "r8 = virtualinvoke r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r4, r6, \"\", null, r1)", 
+                        "id": 16
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.c", 
+                        "method": "<com.mikifus.padland.c: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke r12.<android.content.Context: void startActivity(android.content.Intent)>(r9)", 
+                        "id": 18
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "pad_id", 
+                                        "action"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/mikifus/padland/PadListActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.mikifus.padland"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadLandDataActivity$PadlistDb", 
+                        "method": "<com.mikifus.padland.PadLandDataActivity$PadlistDb: android.database.Cursor a(java.lang.String,java.lang.String)>", 
+                        "statement": "r9 = virtualinvoke r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(r2, r3, r4, r5, null)", 
+                        "id": 13
+                    }, 
+                    "uris": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "content://com.mikifus.padland.padlandcontentprovider/padlist"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.mikifus.padland.PadListActivity", 
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW", 
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void j()>", 
+                        "statement": "virtualinvoke r3.<android.os.Bundle: long getLong(java.lang.String,long)>(r1, l0)", 
+                        "id": 7
+                    }, 
+                    "extra": "focus_pad"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void i()>", 
+                        "statement": "r9 = virtualinvoke r7.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r8)", 
+                        "id": 3
+                    }, 
+                    "extra": "action"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void m()>", 
+                        "statement": "r10 = virtualinvoke r8.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r9)", 
+                        "id": 3
+                    }, 
+                    "extra": "android.intent.extra.TEXT"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadListActivity", 
+                        "method": "<com.mikifus.padland.PadListActivity: void i()>", 
+                        "statement": "r12 = virtualinvoke r10.<android.content.Intent: java.util.ArrayList getStringArrayListExtra(java.lang.String)>(r11)", 
+                        "id": 6
+                    }, 
+                    "extra": "pad_id"
+                }
+            ], 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.mikifus.padland.About", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.mikifus.padland.ServerListActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadContentProvider", 
+                        "method": "<com.mikifus.padland.PadContentProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>", 
+                        "statement": "virtualinvoke r23.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>(r1, null)", 
+                        "id": 45
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.mikifus.padland.PadContentProvider", 
+                        "method": "<com.mikifus.padland.PadContentProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>", 
+                        "statement": "virtualinvoke r53.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>(r1, null)", 
+                        "id": 120
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.mikifus.padland.PadContentProvider", 
+            "exported": false
+        }
+    ]
+}

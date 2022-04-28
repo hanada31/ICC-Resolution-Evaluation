@@ -1,0 +1,5 @@
+digraph G {
+com_oriondev_moneywallet_ui_activity_LauncherActivity -> com_oriondev_moneywallet_service_UpgradeLegacyEditionIntentService [label="Lcom/oriondev/moneywallet/ui/activity/LauncherActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+com_oriondev_moneywallet_ui_activity_LauncherActivity -> com_oriondev_moneywallet_ui_activity_BackupListActivity [label="Lcom/oriondev/moneywallet/ui/activity/LauncherActivity$2;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+com_oriondev_moneywallet_broadcast_DailyBroadcastReceiver -> com_oriondev_moneywallet_ui_activity_NewEditTransactionActivity [label="Lcom/oriondev/moneywallet/broadcast/DailyBroadcastReceiver;=>onReceive(Landroid/content/Context;Landroid/content/Intent;)V", fontcolor="red"];
+}

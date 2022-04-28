@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_implicit_data1.FooActivity" type="Activity">
+    <manifest>
+      <intent_filter action="test" category="android.intent.category.DEFAULT" scheme="amandroid" host="fgwei" port="4444"/>
+    </manifest>
+  </component>
+  <component name="org.arguslab.icc_implicit_data1.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_implicit_data1.FooActivity" data="amandroid://fgwei:4444"/>
+  </component>
+</root>

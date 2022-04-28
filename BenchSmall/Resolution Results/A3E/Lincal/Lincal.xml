@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="felixwiemuth.lincal.LinCalBroadcastReceiver" >
+<ChildActivity name="felixwiemuth.lincal.NotificationService" encoded_callback="Lfelixwiemuth/lincal/LinCalBroadcastReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity" >
+<ChildActivity name="felixwiemuth.lincal.ui.SettingsActivity" encoded_callback="Lfelixwiemuth/lincal/ui/LinCalMenuAppCompatActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="felixwiemuth.lincal.ui.CalendarViewActivity" >
+<ChildActivity name="felixwiemuth.lincal.ui.CalendarListActivity" encoded_callback="Lfelixwiemuth/lincal/ui/CalendarViewActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="felixwiemuth.lincal.ui.CalendarListActivity" >
+<ChildActivity name="felixwiemuth.lincal.ui.AddCalendarActivity" encoded_callback="Lfelixwiemuth/lincal/ui/CalendarListActivity$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="felixwiemuth.lincal.ui.CalendarViewActivity" encoded_callback="Lfelixwiemuth/lincal/ui/CalendarListActivity$SimpleItemRecyclerViewAdapter$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="felixwiemuth.lincal.NotificationService" >
+<ChildActivity name="felixwiemuth.lincal.NotificationService" encoded_callback="Lfelixwiemuth/lincal/NotificationService;=&gt;onHandleIntent(Landroid/content/Intent;)V"/>
+<ChildActivity name="felixwiemuth.lincal.NotificationService" encoded_callback="Lfelixwiemuth/lincal/NotificationService;=&gt;runWithCalendar(Landroid/content/Context;I)V"/>
+</Activity >
+<Activity name="felixwiemuth.lincal.util.Util" >
+<ChildActivity name="felixwiemuth.lincal.ui.CalendarListActivity" encoded_callback="Lfelixwiemuth/lincal/util/Util;=&gt;showErrorDialog(ILjava/lang/String;ZLandroid/content/Context;)V"/>
+</Activity >
+<Activity name="org.acra.sender.SenderServiceStarter" >
+<ChildActivity name="org.acra.sender.SenderService" encoded_callback="Lorg/acra/sender/SenderServiceStarter;=&gt;startService(ZZ)V"/>
+</Activity >
+</ActivityGraph>

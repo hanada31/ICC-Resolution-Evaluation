@@ -1,0 +1,62 @@
+{
+    "name": "lu.uni.trux.raicc.startIntentSenderForResult",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.SEND_SMS",
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.startIntentSenderForResult.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(\"DroidBench\")",
+                        "class_name": "lu.uni.trux.raicc.startIntentSenderForResult.MainActivity",
+                        "method": "<lu.uni.trux.raicc.startIntentSenderForResult.MainActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r6 = virtualinvoke r5.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(\"DroidBench\")",
+                        "class_name": "lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity",
+                        "method": "<lu.uni.trux.raicc.startIntentSenderForResult.SecondActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032111,
+    "analysis_end": 1639032113
+}

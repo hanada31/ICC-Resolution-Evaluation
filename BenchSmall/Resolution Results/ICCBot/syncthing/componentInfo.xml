@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.nutomic.syncthingandroid.activities.FolderPickerActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.VersioningDialogActivity" type="Activity"/>
+  <component name="com.nutomic.syncthingandroid.activities.LogActivity" type="Activity">
+    <manifest>
+      <intent_filter action=".activities.LogActivity" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService" action="android.intent.action.SEND" type="text/plain"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.receiver.BootReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.intent.action.MY_PACKAGE_REPLACED"/>
+    </manifest>
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.ShareActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SEND" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.intent.action.SEND_MULTIPLE" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.nutomic.syncthingandroid.activities.SettingsActivity, com.nutomic.syncthingandroid.service.SyncthingService, com.nutomic.syncthingandroid.activities.FolderPickerActivity, com.nutomic.syncthingandroid.activities.LogActivity"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.SettingsActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService, com.nutomic.syncthingandroid.activities.MainActivity, com.nutomic.syncthingandroid.activities.SettingsActivity$SettingsFragment" action="com.nutomic.syncthingandroid.service.SyncthingService.RESET_DATABASE, com.nutomic.syncthingandroid.service.SyncthingService.RESET_DELTAS, com.nutomic.syncthingandroid.service.SyncthingService.RESTART, com.nutomic.syncthingandroid.service.SyncthingService.REFRESH_NETWORK_INFO"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.PullOrderDialogActivity" type="Activity"/>
+  <component name="com.nutomic.syncthingandroid.activities.MainActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.activities.SettingsActivity, com.nutomic.syncthingandroid.service.SyncthingService, interICC_android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, , interICC_android.intent.action.SEND, , com.nutomic.syncthingandroid.activities.FirstStartActivity, com.nutomic.syncthingandroid.fragments.DrawerFragment, com.nutomic.syncthingandroid.activities.LogActivity" action="android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, android.intent.action.SEND, com.nutomic.syncthingandroid.service.SyncthingService.RESTART" data="package:com.nutomic.syncthingandroid" type="text/plain"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.service.SyncthingService" type="Service">
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService, com.nutomic.syncthingandroid.activities.MainActivity, com.nutomic.syncthingandroid.activities.FirstStartActivity, com.nutomic.syncthingandroid.activities.LogActivity" action="com.nutomic.syncthingandroid.service.SyncthingService.RESTART"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.WebGuiActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.activities.SettingsActivity, com.nutomic.syncthingandroid.service.SyncthingService, com.nutomic.syncthingandroid.activities.LogActivity" action="com.nutomic.syncthingandroid.service.SyncthingService.RESTART"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.DeviceActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.service.SyncthingService, interICC_android.intent.action.SEND, " action="android.intent.action.SEND" type="text/plain"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity" type="Activity"/>
+  <component name="com.nutomic.syncthingandroid.activities.FolderActivity" type="Activity">
+    <sender destination="com.nutomic.syncthingandroid.activities.PullOrderDialogActivity, com.nutomic.syncthingandroid.service.SyncthingService, com.nutomic.syncthingandroid.activities.FolderPickerActivity, interICC_android.intent.action.EDIT, , com.nutomic.syncthingandroid.activities.VersioningDialogActivity, com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity, interICC_android.intent.action.OPEN_DOCUMENT_TREE, " action="android.intent.action.EDIT, android.intent.action.OPEN_DOCUMENT_TREE" type="text/plain" flags="FLAG_GRANT_WRITE_URI_PERMISSION "/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.activities.FirstStartActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LEANBACK_LAUNCHER"/>
+    </manifest>
+    <sender destination="com.nutomic.syncthingandroid.activities.MainActivity"/>
+  </component>
+  <component name="com.nutomic.syncthingandroid.receiver.AppConfigReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="com.nutomic.syncthingandroid.action.STOP, com.nutomic.syncthingandroid.action.START"/>
+    </manifest>
+    <sender destination="com.nutomic.syncthingandroid.activities.MainActivity, com.nutomic.syncthingandroid.service.SyncthingService"/>
+  </component>
+</root>

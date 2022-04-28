@@ -1,0 +1,62 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+DetailActivity[color = red];
+UrlHandlingActivity[style=filled, fillcolor=pink, color = red];
+AboutActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+LoginActivity[color = red];
+WebViewActivity[color = red];
+SGToolsLoginActivity[color = red];
+SettingsActivity[color = red];
+IntroActivity[color = red];
+WriteCommentActivity[color = red];
+SyncActivity[color = red];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+CheckForWonGiveaways[color = peru];
+CheckForNewMessages[color = peru];
+Dispatcher[color = peru];
+DetailActivity->SyncActivity;
+DetailActivity->DetailActivity;
+DetailActivity->SGToolsLoginActivity;
+DetailActivity->WriteCommentActivity;
+DetailActivity->LoginActivity;
+DetailActivity->WebViewActivity;
+DetailActivity->MainActivity;
+UrlHandlingActivity->MainActivity;
+UrlHandlingActivity->WebViewActivity;
+UrlHandlingActivity->DetailActivity;
+UrlHandlingActivity->LoginActivity;
+AboutActivity->DetailActivity;
+AboutActivity->LoginActivity;
+MainActivity->LoginActivity;
+MainActivity->IntroActivity;
+MainActivity->DetailActivity;
+MainActivity->SyncActivity;
+MainActivity->SettingsActivity;
+MainActivity->AboutActivity;
+WebViewActivity->DetailActivity;
+WebViewActivity->MainActivity;
+WebViewActivity->WebViewActivity;
+WebViewActivity->LoginActivity;
+IntroActivity->IntroActivity;
+SettingsActivity->SyncActivity;
+SettingsActivity->DetailActivity;
+SettingsActivity->SettingsActivity;
+CheckForWonGiveaways->CheckForNewMessages;
+CheckForNewMessages->CheckForWonGiveaways;
+CheckForNewMessages->CheckForNewMessages;
+SyncActivity->DetailActivity;
+SyncActivity->LoginActivity;
+}
+}

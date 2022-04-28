@@ -1,0 +1,68 @@
+{
+    "name": "org.arguslab.icc_stateful", 
+    "analysis_end": 1628844400, 
+    "analysis_start": 1628844397, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "kind": 0, 
+            "name": "org.arguslab.icc_stateful.FooActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_stateful.MainActivity", 
+                        "method": "<org.arguslab.icc_stateful.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.icc_stateful.MainActivity: void startActivityForResult(android.content.Intent,int)>($r3, 1)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/icc_stateful/FooActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.icc_stateful"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_stateful.MainActivity", 
+            "exported": true
+        }
+    ]
+}

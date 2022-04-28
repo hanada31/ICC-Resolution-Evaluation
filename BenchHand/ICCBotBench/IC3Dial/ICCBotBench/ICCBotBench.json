@@ -1,0 +1,1001 @@
+{
+    "analysis_end": 1638534564, 
+    "analysis_start": 1638534556, 
+    "version": 1, 
+    "name": "com.iccbot", 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.second.fragctx"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT", 
+                                "category.fragctx"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFragCtx.Des2WithFragCtx", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withCtx.Utils", 
+                        "method": "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Source3WithCtx", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withCtx.Source1WithCtx", 
+                        "method": "<com.iccbot.withCtx.Source1WithCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<com.iccbot.withCtx.Source1WithCtx: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Source1WithCtx", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withCtx.Source2WithCtx", 
+                        "method": "<com.iccbot.withCtx.Source2WithCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<com.iccbot.withCtx.Source2WithCtx: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Source2WithCtx", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withCtx.Utils", 
+                        "method": "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Source4WithCtx", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.first.frag"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "category.frag", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFrag.Des1WithFrag", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.second.ctx"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "category.ctx", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Des2WithCtx", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withCtx.Utils", 
+                        "method": "<com.iccbot.withCtx.Utils: void startIntent(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 2
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.ctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.ctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Source5WithCtx", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.first.ctx"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "category.ctx", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withCtx.Des1WithCtx", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFrag.Source1WithFrag", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.first.fragctx"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT", 
+                                "category.fragctx"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFragCtx.Des1WithFragCtx", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFrag.Source2WithFrag", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "action.second.frag"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "category.frag", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFrag.Des2WithFrag", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFragCtx.FragWithFragCtx", 
+                        "method": "<com.iccbot.withFragCtx.FragWithFragCtx: void doWithAction(java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.first.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "action.second.fragctx"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "category.fragctx"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.iccbot.withFrag.Frag1WithFrag", 
+                        "method": "<com.iccbot.withFrag.Frag1WithFrag: void onAttach(android.app.Activity)>", 
+                        "statement": "virtualinvoke $r3.<android.support.v4.app.FragmentActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/iccbot/withFrag/Des1WithFrag"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.iccbot"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.iccbot.withFragCtx.SourceWithFragCtx", 
+            "exported": true
+        }
+    ]
+}

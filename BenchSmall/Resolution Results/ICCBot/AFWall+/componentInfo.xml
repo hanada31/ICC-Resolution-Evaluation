@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="dev.ukanth.ufirewall.activity.LogDetailActivity" type="Activity"/>
+  <component name="dev.ukanth.ufirewall.widget.ToggleWidgetActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.MainActivity$3, interICC_android.intent.action.VIEW, , dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2, haibison.android.lockpattern.LockPatternActivity" action="android.intent.action.MAIN, TOAST, UPDATEUI, android.intent.action.VIEW, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED" category="android.intent.category.LAUNCHER" data="null, market://search?q=pub:ukpriya" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.RulesApplyService" type="Service">
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity$2, dev.ukanth.ufirewall.service.LogService" action="TOAST, UPDATEUI"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.widget.StatusWidget" type="Receiver">
+    <manifest>
+      <intent_filter action="dev.ukanth.ufirewall.intent.action.TOGGLE_REQUEST, android.appwidget.action.APPWIDGET_UPDATE, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2" action="android.intent.action.MAIN, TOAST, dev.ukanth.ufirewall.intent.action.TOGGLE_REQUEST, UPDATEUI, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.HelpActivity" type="Activity"/>
+  <component name="dev.ukanth.ufirewall.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.MULTIWINDOW_LAUNCHER, android.intent.category.DEFAULT, android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.activity.LogActivity, dev.ukanth.ufirewall.preferences.PreferencesActivity, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.activity.HelpActivity, interICC_android.intent.action.VIEW, , dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.activity.RulesActivity, dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.activity.OldLogActivity, dev.ukanth.ufirewall.CustomRulesActivity, interICC_android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS, , dev.ukanth.ufirewall.activity.CustomScriptActivity, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity$2, haibison.android.lockpattern.LockPatternActivity, dev.ukanth.ufirewall.service.FirewallService" action="android.intent.action.MAIN, TOAST, UPDATEUI, android.intent.action.VIEW, android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN" category="android.intent.category.LAUNCHER" data="null, market://search?q=pub:ukpriya" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.MainActivity$3, interICC_android.intent.action.VIEW, , dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2, haibison.android.lockpattern.LockPatternActivity" action="android.intent.action.MAIN, TOAST, UPDATEUI, android.intent.action.VIEW, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED" category="android.intent.category.LAUNCHER" data="null, market://search?q=pub:ukpriya" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.OldLogActivity" type="Activity">
+    <sender destination="dev.ukanth.ufirewall.activity.LogActivity"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.CustomScriptActivity" type="Activity">
+    <sender action="dev.ukanth.ufirewall.intent.action.CUSTOM_SCRIPT"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.MainActivity$3" type="Receiver">
+    <manifest>
+      <intent_filter action="UPDATEUI"/>
+    </manifest>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.ProfileActivity" type="Activity"/>
+  <component name="dev.ukanth.ufirewall.broadcast.ConnectivityChangeReceiver" type="Receiver">
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity$2" action="TOAST, UPDATEUI"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.MainActivity$2" type="Receiver">
+    <manifest>
+      <intent_filter action="TOAST"/>
+    </manifest>
+  </component>
+  <component name="dev.ukanth.ufirewall.plugin.LocaleEdit" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
+    </manifest>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.FirewallService" type="Service" exported="true">
+    <sender destination="dev.ukanth.ufirewall.MainActivity" action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.LogService" type="Service">
+    <sender destination="dev.ukanth.ufirewall.service.LogService"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.AppDetailActivity" type="Activity">
+    <sender destination="interICC_android.settings.APPLICATION_DETAILS_SETTINGS, , com.android.settings.InstalledAppDetails" action="android.settings.APPLICATION_DETAILS_SETTINGS, android.intent.action.VIEW" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.ApplyOnBootService" type="Service">
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity$2, dev.ukanth.ufirewall.service.FirewallService, dev.ukanth.ufirewall.service.LogService" action="TOAST, UPDATEUI"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.widget.ToggleWidgetOld" type="Receiver">
+    <manifest>
+      <intent_filter action="dev.ukanth.ufirewall.intent.action.TOGGLE_REQUEST, android.appwidget.action.APPWIDGET_UPDATE, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.widget.ToggleWidgetOldActivity"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.LogActivity" type="Activity">
+    <sender destination="dev.ukanth.ufirewall.activity.LogDetailActivity, dev.ukanth.ufirewall.activity.OldLogActivity, interICC_android.intent.action.VIEW, , haibison.android.lockpattern.LockPatternActivity" action="android.intent.action.VIEW, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN" data="null, market://search?q=pub:ukpriya"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.preferences.PreferencesActivity" type="Activity">
+    <sender destination="dev.ukanth.ufirewall.preferences.SecPreferenceFragment, interICC_android.intent.action.VIEW, , dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.preferences.ExpPreferenceFragment, dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.preferences.MultiProfilePreferenceFragment, dev.ukanth.ufirewall.preferences.LanguagePreferenceFragment, dev.ukanth.ufirewall.preferences.WidgetPreferenceFragment, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.preferences.UIPreferenceFragment, dev.ukanth.ufirewall.preferences.CustomBinaryPreferenceFragment, dev.ukanth.ufirewall.preferences.LogPreferenceFragment, dev.ukanth.ufirewall.MainActivity$2, haibison.android.lockpattern.LockPatternActivity, dev.ukanth.ufirewall.preferences.RulesPreferenceFragment, dev.ukanth.ufirewall.service.LogService" action="android.intent.action.MAIN, TOAST, UPDATEUI, android.intent.action.VIEW, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN" category="android.intent.category.LAUNCHER" data="null, market://search?q=pub:ukpriya" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.plugin.FireReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2" action="android.intent.action.MAIN, TOAST, UPDATEUI, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.ToggleTileService" type="Service" permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+    <manifest>
+      <intent_filter action="android.service.quicksettings.action.QS_TILE"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.widget.StatusWidget, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2" action="android.intent.action.MAIN, TOAST, UPDATEUI, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.broadcast.OnBootReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.MEDIA_MOUNTED, android.intent.action.BOOT_COMPLETED, android.intent.action.QUICKBOOT_POWERON" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.ApplyOnBootService"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.RulesActivity" type="Activity">
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, interICC_android.intent.action.SEND, , dev.ukanth.ufirewall.MainActivity$3, interICC_android.intent.action.VIEW, , dev.ukanth.ufirewall.MainActivity$2, haibison.android.lockpattern.LockPatternActivity" action="TOAST, UPDATEUI, android.intent.action.VIEW, android.intent.action.SEND, haibison.android.lockpattern.LockPatternActivity.COMPARE_PATTERN" data="null, market://search?q=pub:ukpriya" type="plain/text"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.widget.ToggleWidget" type="Receiver">
+    <manifest>
+      <intent_filter action="dev.ukanth.ufirewall.intent.action.TOGGLE_REQUEST, android.appwidget.action.APPWIDGET_UPDATE, dev.ukanth.ufirewall.intent.action.STATUS_CHANGED"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.widget.ToggleWidgetActivity"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.service.RootShellService" type="Service">
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity$2" action="TOAST, UPDATEUI"/>
+  </component>
+  <component name="dev.ukanth.ufirewall.broadcast.PackageBroadcast" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_REMOVED" scheme="package"/>
+    </manifest>
+    <sender destination="dev.ukanth.ufirewall.service.RootShellService, dev.ukanth.ufirewall.MainActivity$3, dev.ukanth.ufirewall.MainActivity, dev.ukanth.ufirewall.MainActivity$2" action="android.intent.action.MAIN, TOAST, UPDATEUI" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="dev.ukanth.ufirewall.activity.DataDumpActivity" type="Activity"/>
+  <component name="haibison.android.lockpattern.LockPatternActivity" type="Activity">
+    <sender destination="interICC_, " data="null" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK " extras="Parcelable@-haibison.android.lockpattern.LockPatternActivity.PENDING_INTENT_OK,"/>
+  </component>
+</root>

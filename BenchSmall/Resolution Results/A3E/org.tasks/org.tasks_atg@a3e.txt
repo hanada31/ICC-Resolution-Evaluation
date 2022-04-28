@@ -1,0 +1,13 @@
+com.todoroo.astrid.activity.TaskListActivity -> com.todoroo.astrid.actfm.TagSettingsActivity
+com.todoroo.astrid.activity.TaskListActivity -> org.tasks.preferences.BasicPreferences
+com.todoroo.astrid.activity.ShortcutActivity -> com.todoroo.astrid.activity.TaskListActivity
+com.todoroo.astrid.activity.ShortcutActivity -> com.todoroo.astrid.activity.ShortcutActivity
+org.tasks.preferences.BackupPreferences -> com.todoroo.astrid.files.FileExplore
+org.tasks.preferences.MiscellaneousPreferences -> com.todoroo.astrid.files.FileExplore
+com.todoroo.astrid.core.DefaultsPreferences -> org.tasks.activities.CalendarSelectionActivity
+com.todoroo.astrid.gcal.CalendarAlarmListCreator -> com.todoroo.astrid.activity.TaskListActivity
+com.todoroo.astrid.gcal.CalendarAlarmListCreator -> org.tasks.preferences.BasicPreferences
+com.todoroo.astrid.gcal.CalendarReminderActivity -> org.tasks.preferences.BasicPreferences
+com.todoroo.astrid.gcal.CalendarReminderActivity -> com.todoroo.astrid.activity.TaskListActivity
+com.todoroo.astrid.gcal.CalendarReminderActivity -> com.todoroo.astrid.gcal.CalendarAlarmReceiver
+com.todoroo.astrid.gcal.CalendarReminderActivity -> com.todoroo.astrid.gcal.CalendarAlarmListCreator

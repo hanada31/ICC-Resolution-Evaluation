@@ -1,0 +1,74 @@
+{
+    "name": "org.arguslab.icc_intentservice", 
+    "analysis_end": 1628844463, 
+    "analysis_start": 1628844460, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_intentservice.MainActivity", 
+                        "method": "<org.arguslab.icc_intentservice.MainActivity: void leakImei()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.icc_intentservice.MainActivity: android.content.ComponentName startService(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "data"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/icc_intentservice/MyIntentService"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.icc_intentservice"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_intentservice.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.arguslab.icc_intentservice.MyIntentService", 
+            "exported": false
+        }
+    ]
+}

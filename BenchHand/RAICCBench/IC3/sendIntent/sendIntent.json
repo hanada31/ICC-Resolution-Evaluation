@@ -1,0 +1,68 @@
+{
+    "name": "lu.uni.trux.raicc.sendIntent",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.sendIntent.TargetActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "extra",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r3)",
+                        "class_name": "lu.uni.trux.raicc.sendIntent.TargetActivity",
+                        "method": "<lu.uni.trux.raicc.sendIntent.TargetActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "ACTION"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.sendIntent.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032265,
+    "analysis_end": 1639032268
+}

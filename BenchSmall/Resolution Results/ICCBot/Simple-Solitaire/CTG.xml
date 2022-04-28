@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="de.tobiasbielefeld.solitaire.ui.about.AboutActivity"/>
+  <source name="de.tobiasbielefeld.solitaire.ui.manual.Manual"/>
+  <source name="de.tobiasbielefeld.solitaire.ui.GameSelector">
+    <destination name="de.tobiasbielefeld.solitaire.ui.GameManager" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void a(android.view.View)&gt;" InstructionId="31" extras="" flags=""/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.manual.Manual" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: boolean a(android.view.MenuItem)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.about.AboutActivity" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: boolean a(android.view.MenuItem)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.GameManager" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: void onCreate(android.os.Bundle)&gt;" InstructionId="34" extras="" flags=""/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameSelector: boolean a(android.view.MenuItem)&gt;" InstructionId="11" extras="" flags=""/>
+  </source>
+  <source name="de.tobiasbielefeld.solitaire.ui.settings.Settings">
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)&gt;" InstructionId="210" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$AdditionalMovementsPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$SoundPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$CustomizationPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$ExpertSettingsPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$OtherPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$MenuPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings$DeveloperOptionsPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.Settings: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity"/>
+  <source name="de.tobiasbielefeld.solitaire.ui.GameManager">
+    <destination name="de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameManager: void menuClick(android.view.View)&gt;" InstructionId="38" extras="" flags=""/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.Settings" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.GameManager: void menuClick(android.view.View)&gt;" InstructionId="52" extras="" flags=""/>
+  </source>
+  <source name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames">
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$VegasPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$CalculationPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$KlondikePreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$GolfPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$YukonPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$NapoleonsTombPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$SpiderPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$FortyEightPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$PyramidPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$Mod3PreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="de.tobiasbielefeld.solitaire.ui.settings.SettingsGames$CanfieldPreferenceFragment" type="Act2Act" method="&lt;de.tobiasbielefeld.solitaire.ui.settings.SettingsGames: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+  </source>
+</root>

@@ -1,0 +1,77 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+ShareActivity[style=filled, fillcolor=pink, color = red];
+SettingsActivity[color = red];
+PullOrderDialogActivity[color = red];
+MainActivity[color = red];
+FolderPickerActivity[color = red];
+VersioningDialogActivity[color = red];
+WebGuiActivity[color = red];
+DeviceActivity[color = red];
+FolderTypeDialogActivity[color = red];
+FolderActivity[color = red];
+FirstStartActivity[style=filled, fillcolor=orange, color = red];
+LogActivity[style=filled, fillcolor=pink, color = red];
+SyncthingService[color = royalblue];
+AppConfigReceiver[style=filled, fillcolor=pink, color = peru];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+ReceiverManager_dynamicReceiver[color = peru];
+SimpleVersioningFragment[color = teal];
+StaggeredVersioningFragment[color = teal];
+TrashCanVersioningFragment[color = teal];
+NoVersioningFragment[color = teal];
+DeviceListFragment[color = teal];
+ExternalVersioningFragment[color = teal];
+FolderListFragment[color = teal];
+NumberPickerFragment[color = teal];
+SettingsActivity[color = teal];
+DrawerFragment[color = teal];
+StaggeredVersioningFragment->FolderPickerActivity;
+FolderPickerActivity->SyncthingService;
+FolderListFragment->FolderActivity;
+BootReceiver->SyncthingService;
+LogActivity->SyncthingService;
+ShareActivity->LogActivity;
+ShareActivity->SettingsActivity;
+ShareActivity->FolderPickerActivity;
+ShareActivity->SyncthingService;
+SettingsActivity->SyncthingService;
+SettingsActivity->MainActivity;
+SettingsActivity->SettingsActivity;
+MainActivity->LogActivity;
+MainActivity->SyncthingService;
+MainActivity->FirstStartActivity;
+MainActivity->SettingsActivity;
+MainActivity->DrawerFragment;
+SyncthingService->SyncthingService;
+SyncthingService->LogActivity;
+SyncthingService->MainActivity;
+SyncthingService->FirstStartActivity;
+WebGuiActivity->LogActivity;
+WebGuiActivity->SettingsActivity;
+WebGuiActivity->SyncthingService;
+DeviceListFragment->DeviceActivity;
+DeviceActivity->SyncthingService;
+FolderActivity->PullOrderDialogActivity;
+FolderActivity->FolderPickerActivity;
+FolderActivity->VersioningDialogActivity;
+FolderActivity->FolderTypeDialogActivity;
+FolderActivity->SyncthingService;
+FirstStartActivity->MainActivity;
+AppConfigReceiver->MainActivity;
+AppConfigReceiver->SyncthingService;
+DrawerFragment->WebGuiActivity;
+DrawerFragment->SettingsActivity;
+}
+}

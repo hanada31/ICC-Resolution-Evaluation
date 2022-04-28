@@ -1,0 +1,57 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+MoonWidget0ConfigActivity_2x1[style=filled, fillcolor=pink, color = red];
+SuntimesWidgetListActivity[color = red];
+SuntimesConfigActivity0_2x1[style=filled, fillcolor=pink, color = red];
+SolsticeWidget0ConfigActivity[style=filled, fillcolor=pink, color = red];
+MoonWidget0ConfigActivity_3x1[style=filled, fillcolor=pink, color = red];
+MoonWidget0ConfigActivity[style=filled, fillcolor=pink, color = red];
+ClockWidget0ConfigActivity[style=filled, fillcolor=pink, color = red];
+WidgetThemeListActivity[color = red];
+ClockWidget0ConfigActivity_3x1[style=filled, fillcolor=pink, color = red];
+SuntimesSettingsActivity[color = red];
+AlarmDismissActivity[style=filled, fillcolor=pink, color = red];
+SuntimesActivity[style=filled, fillcolor=pink, color = red];
+SuntimesConfigActivity0[style=filled, fillcolor=pink, color = red];
+SuntimesConfigActivity1[style=filled, fillcolor=pink, color = red];
+AlarmClockActivity[style=filled, fillcolor=orange, color = red];
+SuntimesConfigActivity2[style=filled, fillcolor=pink, color = red];
+SuntimesConfigActivity2_3x1[style=filled, fillcolor=pink, color = red];
+SuntimesConfigActivity2_3x2[style=filled, fillcolor=pink, color = red];
+WidgetThemeConfigActivity[color = red];
+SuntimesWidget1Service[color = royalblue];
+AlarmNotifications[color = royalblue];
+MoonWidget0[style=filled, fillcolor=pink, color = peru];
+SolsticeWidget0[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget0_2x1[style=filled, fillcolor=pink, color = peru];
+MoonWidget0_2x1[style=filled, fillcolor=pink, color = peru];
+MoonWidget0_3x1[style=filled, fillcolor=pink, color = peru];
+ClockWidget0[style=filled, fillcolor=pink, color = peru];
+AlarmNotifications[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget2_3x2[style=filled, fillcolor=pink, color = peru];
+ClockWidget0_3x1[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget2_3x1[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget2[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget1[style=filled, fillcolor=pink, color = peru];
+SuntimesWidget0[style=filled, fillcolor=pink, color = peru];
+CalculatorProvider[color = violet];
+AlarmNotifications->AlarmDismissActivity;
+AlarmNotifications->AlarmClockActivity;
+AlarmNotifications->AlarmNotifications;
+SolsticeWidget0ConfigActivity->SolsticeWidget0;
+SuntimesActivity->SuntimesSettingsActivity;
+SuntimesConfigActivity0->WidgetThemeListActivity;
+SuntimesConfigActivity0->SuntimesWidget0;
+WidgetThemeListActivity->WidgetThemeConfigActivity;
+SuntimesSettingsActivity->SuntimesWidgetListActivity;
+}

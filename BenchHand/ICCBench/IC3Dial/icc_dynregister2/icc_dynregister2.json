@@ -1,0 +1,109 @@
+{
+    "name": "org.arguslab.icc_dynregister2", 
+    "analysis_end": 1628844450, 
+    "analysis_start": 1628844448, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_dynregister2.MainActivity", 
+                        "method": "<org.arguslab.icc_dynregister2.MainActivity: void leakImei()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.icc_dynregister2.MainActivity: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 12
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "com.ksu"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "id"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_dynregister2.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.ksu2"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.arguslab.icc_dynregister2.MainActivity", 
+                "method": "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke $r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r5, $r4)", 
+                "id": 18
+            }, 
+            "name": "org.arguslab.icc_dynregister2.MyReceiver2", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.ksu"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.arguslab.icc_dynregister2.MainActivity", 
+                "method": "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke $r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r3, $r4)", 
+                "id": 13
+            }, 
+            "name": "org.arguslab.icc_dynregister2.MyReceiver", 
+            "exported": true
+        }
+    ]
+}

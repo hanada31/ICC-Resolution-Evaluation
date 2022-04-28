@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="me.blog.korn123.easydiary.activities.DiaryReadActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryUpdateActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PostCardActivity, me.blog.korn123.easydiary.activities.PhotoViewPagerActivity, me.blog.korn123.easydiary.activities.PinLockActivity" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.SettingsActivity" type="Activity">
+    <sender destination="me.blog.korn123.easydiary.receivers.AlarmReceiver, g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.DashboardActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.StatisticsActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.services.NotificationService" type="Service"/>
+  <component name="me.blog.korn123.easydiary.activities.DiaryUpdateActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, interICC_android.speech.action.RECOGNIZE_SPEECH, android.speech.action.RECOGNIZE_SPEECH, , com.werb.pickphotoview.PickPhotoActivity, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" action="android.speech.action.RECOGNIZE_SPEECH"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.TimelineActivity" type="Activity">
+    <sender destination="me.blog.korn123.easydiary.activities.DiaryReadActivity, g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.PostcardViewPagerActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, interICC_android.intent.action.SEND, , me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" action="android.intent.action.SEND" type="image/jpeg"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.receivers.AlarmReceiver" type="Receiver">
+    <sender destination="me.blog.korn123.easydiary.receivers.AlarmReceiver, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.CalendarActivity" type="Activity">
+    <sender destination="me.blog.korn123.easydiary.activities.DiaryReadActivity, g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.werb.pickphotoview.PickPhotoActivity" type="Activity">
+    <sender destination="com.werb.pickphotoview.PickPhotoActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.FingerprintLockActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, androidx.biometric.DeviceCredentialHandlerActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.DiaryInsertActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, interICC_android.speech.action.RECOGNIZE_SPEECH, android.speech.action.RECOGNIZE_SPEECH, , com.werb.pickphotoview.PickPhotoActivity, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" action="android.speech.action.RECOGNIZE_SPEECH" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.DiaryMainActivity" type="Activity">
+    <sender destination="me.blog.korn123.easydiary.activities.DiaryReadActivity, me.blog.korn123.easydiary.activities.SettingsActivity, g.a.a.a.l.a, interICC_android.speech.action.RECOGNIZE_SPEECH, , me.blog.korn123.easydiary.activities.DashboardActivity, me.blog.korn123.easydiary.activities.StatisticsActivity, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.DevActivity, me.blog.korn123.easydiary.activities.PinLockActivity, me.blog.korn123.easydiary.activities.PostCardViewerActivity" action="android.speech.action.RECOGNIZE_SPEECH" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.PhotoViewPagerActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, interICC_android.intent.action.SEND, , me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity" action="android.intent.action.SEND" type="image/jpeg"/>
+  </component>
+  <component name="com.werb.pickphotoview.PickPhotoPreviewActivity" type="Activity">
+    <sender destination="com.werb.pickphotoview.PickPhotoPreviewActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.receivers.BootCompletedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, com.htc.intent.action.QUICKBOOT_POWERON, android.intent.action.QUICKBOOT_POWERON"/>
+    </manifest>
+    <sender destination="me.blog.korn123.easydiary.receivers.AlarmReceiver, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.services.DiaryMainWidgetService" type="Service" permission="android.permission.BIND_REMOTEVIEWS"/>
+  <component name="me.blog.korn123.easydiary.activities.DevActivity" type="Activity">
+    <sender destination="me.blog.korn123.easydiary.activities.MarkDownViewActivity, g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.PostCardViewerActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PostcardViewPagerActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.IntroActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, android.intent.action.VIEW" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="me.blog.korn123.easydiary.receivers.AlarmReceiver, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.MarkDownViewActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.CustomizationActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.PinLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.PostCardActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, interICC_android.intent.action.SEND, , me.blog.korn123.easydiary.activities.FingerprintLockActivity, me.blog.korn123.easydiary.activities.DiaryMainActivity, me.blog.korn123.easydiary.activities.PostCardViewerActivity, me.blog.korn123.easydiary.activities.PinLockActivity" action="android.intent.action.SEND" type="image/jpeg" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="me.blog.korn123.easydiary.activities.PinLockActivity" type="Activity">
+    <sender destination="g.a.a.a.l.a, me.blog.korn123.easydiary.activities.FingerprintLockActivity"/>
+  </component>
+  <component name="me.blog.korn123.easydiary.widgets.DiaryMainWidget" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="me.blog.korn123.easydiary.activities.DiaryReadActivity, me.blog.korn123.easydiary.services.DiaryMainWidgetService, me.blog.korn123.easydiary.activities.DiaryInsertActivity, me.blog.korn123.easydiary.widgets.DiaryMainWidget" action="open_write_page, open_read_page, update_widget" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+</root>

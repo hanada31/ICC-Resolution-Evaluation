@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.integreight.onesheeld.MainActivity" >
+<ChildActivity name="com.integreight.onesheeld.Tutorial" encoded_callback="Lcom/integreight/onesheeld/MainActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.integreight.onesheeld.NFCUtils-alias" encoded_callback="Lcom/integreight/onesheeld/MainActivity;=&gt;pauseMainActivityNfc()V"/>
+<ChildActivity name="com.integreight.onesheeld.services.OneSheeldService" encoded_callback="Lcom/integreight/onesheeld/MainActivity;=&gt;stopService()V"/>
+<ChildActivity name="com.integreight.onesheeld.NFCUtils-alias" encoded_callback="Lcom/integreight/onesheeld/MainActivity;=&gt;resumeNfcMainActivityFragments()V"/>
+</Activity >
+<Activity name="com.integreight.onesheeld.shields.controller.utils.NfcUtils" >
+<ChildActivity name="com.integreight.onesheeld.MainActivity" encoded_callback="Lcom/integreight/onesheeld/shields/controller/utils/NfcUtils;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="com.integreight.onesheeld.services.OneSheeldService" >
+<ChildActivity name="com.integreight.onesheeld.MainActivity" encoded_callback="Lcom/integreight/onesheeld/services/OneSheeldService;=&gt;showNotification()V"/>
+</Activity >
+<Activity name="com.integreight.onesheeld.shields.controller.CameraShield" >
+<ChildActivity name="com.integreight.onesheeld.shields.controller.utils.CameraHeadService" encoded_callback="Lcom/integreight/onesheeld/shields/controller/CameraShield;=&gt;bindService()V"/>
+</Activity >
+<Activity name="com.integreight.onesheeld.shields.controller.FaceDetectionShield" >
+<ChildActivity name="com.integreight.onesheeld.shields.controller.utils.CameraHeadService" encoded_callback="Lcom/integreight/onesheeld/shields/controller/FaceDetectionShield;=&gt;bindService()V"/>
+</Activity >
+<Activity name="com.integreight.onesheeld.shields.controller.ColorDetectionShield" >
+<ChildActivity name="com.integreight.onesheeld.shields.controller.utils.CameraHeadService" encoded_callback="Lcom/integreight/onesheeld/shields/controller/ColorDetectionShield;=&gt;bindService()V"/>
+</Activity >
+<Activity name="com.google.firebase.iid.zzg" >
+<ChildActivity name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" encoded_callback="Lcom/google/firebase/iid/zzg;=&gt;zza(Landroid/content/Context;ILjava/lang/String;Landroid/content/Intent;I)Landroid/app/PendingIntent;"/>
+</Activity >
+<Activity name="com.google.android.gms.internal.zzrz" >
+<ChildActivity name="com.google.android.gms.analytics.service.AnalyticsService" encoded_callback="Lcom/google/android/gms/internal/zzrz$zza;=&gt;zznP()Lcom/google/android/gms/internal/zzsu;"/>
+</Activity >
+</ActivityGraph>

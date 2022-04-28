@@ -1,0 +1,68 @@
+{
+    "name": "org.arguslab.rpc_remoteservice", 
+    "analysis_end": 1628844404, 
+    "analysis_start": 1628844401, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.arguslab.rpc_remoteservice.MainActivity", 
+                        "method": "<org.arguslab.rpc_remoteservice.MainActivity: void onStart()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.rpc_remoteservice.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/rpc_remoteservice/RemoteService"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.rpc_remoteservice"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.rpc_remoteservice.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.arguslab.rpc_remoteservice.RemoteService", 
+            "exported": true
+        }
+    ]
+}

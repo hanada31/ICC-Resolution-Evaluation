@@ -1,0 +1,67 @@
+{
+    "name": "lu.uni.trux.raicc.setSendDataMessage",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.SEND_SMS",
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r5 = virtualinvoke r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity",
+                        "method": "<lu.uni.trux.raicc.setSendDataMessage.IntermediateActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.setSendDataMessage.TargetActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r1)",
+                        "class_name": "lu.uni.trux.raicc.setSendDataMessage.TargetActivity",
+                        "method": "<lu.uni.trux.raicc.setSendDataMessage.TargetActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.setSendDataMessage.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032347,
+    "analysis_end": 1639032349
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="net.mabako.steamgifts.activities.DetailActivity">
+    <destination name="net.mabako.sgtools.SGToolsDetailFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.HiddenGamesFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.sgtools.SGToolsDetailFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void onActivityResult(int,int,android.content.Intent)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.DiscussionDetailFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.fragments.GiveawayGroupListFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.WhitelistBlacklistFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.GiveawayWinnerListFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.fragments.UserDetailFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.DetailActivity: void initLayout(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.MainActivity">
+    <destination name="net.mabako.steamgifts.fragments.DiscussionListFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.GiveawayListFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.SavedFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.Navbar$2: boolean onProfileImageClick(android.view.View,com.mikepenz.materialdrawer.model.interfaces.IProfile,boolean)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.SettingsActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="46" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.intro.IntroActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.intro.IntroActivity: void showIntroIfNeccessary(android.app.Activity,java.lang.String,int)&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.intro.IntroActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.intro.IntroActivity: void showIntro(android.app.Activity,java.lang.String)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.Navbar$CustomAccountHeaderBuilder$1: void onClick(android.view.View)&gt;" InstructionId="18" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.AboutActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.Navbar$4: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="36" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.SettingsActivity">
+    <destination name="net.mabako.steamgifts.activities.SyncActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.SettingsActivity$SettingsFragment$2: boolean onPreferenceClick(android.preference.Preference)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.SettingsActivity$SettingsFragment$4: boolean onPreferenceClick(android.preference.Preference)&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.SettingsActivity$SettingsFragment" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.SettingsActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.SettingsActivity$SettingsFragment$3: boolean onPreferenceClick(android.preference.Preference)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.intro.IntroActivity">
+    <destination name="net.mabako.steamgifts.intro.IntroActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.intro.IntroActivity: void showIntro(android.app.Activity,java.lang.String)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.intro.IntroActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.intro.IntroActivity: void showIntroIfNeccessary(android.app.Activity,java.lang.String,int)&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.receivers.CheckForWonGiveaways">
+    <destination name="net.mabako.steamgifts.receivers.CheckForNewMessages" type="NonAct2NonAct" method="&lt;net.mabako.steamgifts.receivers.CheckForWonGiveaways$Check: void addItems(java.util.List,boolean,java.lang.String)&gt;" InstructionId="-1" action="delete" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.UrlHandlingActivity">
+    <destination name="interICC_android.intent.action.VIEW, " type="Act2Class" method="&lt;net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" action="android.intent.action.VIEW" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.MainActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.WebViewActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.MainActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.UrlHandlingActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="12" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.AboutActivity">
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.fragments.AboutFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.AboutActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.LoginActivity"/>
+  <source name="net.mabako.steamgifts.activities.WebViewActivity">
+    <destination name="net.mabako.steamgifts.activities.MainActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.WebViewActivity$CustomWebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.net.Uri)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.WebViewActivity$CustomWebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.net.Uri)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.WebViewActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.WebViewActivity$CustomWebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.net.Uri)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.VIEW, " type="Act2Class" method="&lt;net.mabako.steamgifts.activities.WebViewActivity$CustomWebViewClient: boolean shouldOverrideUrlLoading(android.webkit.WebView,android.net.Uri)&gt;" InstructionId="-1" action="android.intent.action.VIEW" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.steamgifts.receivers.BootReceiver">
+    <destination name="java.lang.Class" type="NonAct2Class" method="&lt;net.mabako.steamgifts.PeriodicTasks: void scheduleTask(net.mabako.steamgifts.PeriodicTasks$Task,android.content.Context)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="net.mabako.sgtools.SGToolsLoginActivity"/>
+  <source name="net.mabako.steamgifts.receivers.CheckForNewMessages">
+    <destination name="net.mabako.steamgifts.receivers.CheckForWonGiveaways" type="NonAct2NonAct" method="&lt;net.mabako.steamgifts.receivers.CheckForNewMessages$Check: void addItems(java.util.List,boolean,java.lang.String)&gt;" InstructionId="18" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.receivers.CheckForNewMessages" type="NonAct2NonAct" method="&lt;net.mabako.steamgifts.receivers.CheckForNewMessages$Check: void addItems(java.util.List,boolean,java.lang.String)&gt;" InstructionId="-1" action="delete" extras="" flags=""/>
+  </source>
+  <source name="com.squareup.picasso.Dispatcher$NetworkBroadcastReceiver"/>
+  <source name="net.mabako.steamgifts.activities.WriteCommentActivity">
+    <destination name="net.mabako.steamgifts.fragments.SingleCommentFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.fragments.WriteCommentFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.WriteCommentActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="net.mabako.steamgifts.activities.SyncActivity">
+    <destination name="net.mabako.steamgifts.activities.DetailActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity$1$2: void onClick(android.view.View)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="net.mabako.steamgifts.fragments.SyncFragment" type="Act2Frag" method="&lt;net.mabako.steamgifts.activities.SyncActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="net.mabako.steamgifts.activities.LoginActivity" type="Act2Act" method="&lt;net.mabako.steamgifts.activities.CommonActivity: void requestLogin()&gt;" InstructionId="3" extras="" flags=""/>
+  </source>
+</root>

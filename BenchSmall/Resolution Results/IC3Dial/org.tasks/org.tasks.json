@@ -1,0 +1,1480 @@
+{
+    "name": "org.tasks", 
+    "analysis_end": 1628852035, 
+    "analysis_start": 1628851394, 
+    "used_permissions": [
+        "android.permission.READ_CONTACTS", 
+        "org.tasks.WRITE", 
+        "android.permission.WRITE_CALENDAR", 
+        "android.permission.VIBRATE", 
+        "android.permission.READ_CALENDAR", 
+        "android.permission.RECEIVE_BOOT_COMPLETED", 
+        "android.permission.RECORD_AUDIO", 
+        "android.permission.WRITE_EXTERNAL_STORAGE", 
+        "android.permission.READ_CALL_LOG", 
+        "org.tasks.READ", 
+        "android.permission.READ_PHONE_STATE", 
+        "com.android.launcher.permission.INSTALL_SHORTCUT", 
+        "org.tasks.permission.READ_TASKS"
+    ], 
+    "version": 383, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r7, 11544)", 
+                        "id": 41
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity: void newListFromLaunch()>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r1, 4)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.AstridActivity", 
+                        "method": "<com.todoroo.astrid.activity.AstridActivity: void onActivityResult(int,int,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.AstridActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.AstridActivity", 
+                        "method": "<com.todoroo.astrid.activity.AstridActivity: void startEditActivity(android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.AstridActivity: void startActivityForResult(android.content.Intent,int)>($r1, 0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r5, 11543)", 
+                        "id": 17
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r4, 11545)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.TaskListActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.ShortcutActivity", 
+                        "method": "<com.todoroo.astrid.activity.ShortcutActivity: void launchTaskList()>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.ShortcutActivity: void startActivity(android.content.Intent)>(r23)", 
+                        "id": 86
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.ShortcutActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.BOOT_COMPLETED"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "org.tasks.receivers.BootCompletedReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.DeleteCompletedActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.DeleteAllCalendarEventsActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.service.UpgradeActivity$1", 
+                        "method": "<com.todoroo.astrid.service.UpgradeActivity$1: void run()>", 
+                        "statement": "virtualinvoke $r1.<com.todoroo.astrid.service.UpgradeActivity: void sendBroadcast(android.content.Intent)>($r4)", 
+                        "id": 15
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.service.UpgradeActivity$1", 
+                        "method": "<com.todoroo.astrid.service.UpgradeActivity$1: void run()>", 
+                        "statement": "virtualinvoke $r1.<com.todoroo.astrid.service.UpgradeActivity: void sendBroadcast(android.content.Intent)>($r4)", 
+                        "id": 34
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.service.UpgradeActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.BasicPreferences$2", 
+                        "method": "<org.tasks.preferences.BasicPreferences$2: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<org.tasks.preferences.BasicPreferences: void startActivityForResult(android.content.Intent,int)>($r2, 10001)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.preferences.BasicPreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.ClearAllDataActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.PurgeDeletedActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "permission": "android.permission.BIND_REMOTEVIEWS", 
+            "name": "org.tasks.widget.ScrollableWidgetUpdateService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.DateShortcutPreferences$1", 
+                        "method": "<org.tasks.preferences.DateShortcutPreferences$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<org.tasks.preferences.DateShortcutPreferences: void startActivityForResult(android.content.Intent,int)>($r5, $i0)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.preferences.DateShortcutPreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.actfm.TagSettingsActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.DeleteCompletedEventsActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 2, 
+            "name": "org.tasks.receivers.CompleteTaskReceiver", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.reminders.NotificationActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.AddAttachmentActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 2, 
+            "name": "org.tasks.receivers.FirstLaunchReceiver", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.MiscellaneousPreferences$1", 
+                        "method": "<org.tasks.preferences.MiscellaneousPreferences$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r3.<org.tasks.preferences.MiscellaneousPreferences: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.MiscellaneousPreferences$3", 
+                        "method": "<org.tasks.preferences.MiscellaneousPreferences$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>", 
+                        "statement": "virtualinvoke $r6.<org.tasks.preferences.MiscellaneousPreferences: void startActivityForResult(android.content.Intent,int)>($r2, 2534)", 
+                        "id": 14
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.MiscellaneousPreferences", 
+                        "method": "<org.tasks.preferences.MiscellaneousPreferences: void onActivityResult(int,int,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<org.tasks.preferences.MiscellaneousPreferences: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 21
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.preferences.MiscellaneousPreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.BeastModePreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.files.AACRecordingActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.CREATE_SHORTCUT"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$4", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>($r1, $r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$6", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$6: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void refresh()>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$2", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$3", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$3: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity: void createNewList(java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.GCalControlSet", 
+                        "method": "<com.todoroo.astrid.gcal.GCalControlSet: void viewCalendarEvent()>", 
+                        "statement": "$r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r6, null, null, null)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.FilterShortcutActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 2, 
+            "name": "org.tasks.receivers.ListNotificationReceiver", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.PHONE_STATE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.calls.PhoneStateChangedReceiver", 
+                        "method": "<com.todoroo.astrid.calls.PhoneStateChangedReceiver: long getContactIdFromNumber(android.content.Context,java.lang.String)>", 
+                        "statement": "$r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r5, null, null, null)", 
+                        "id": 9
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.calls.PhoneStateChangedReceiver$1", 
+                        "method": "<com.todoroo.astrid.calls.PhoneStateChangedReceiver$1: void run()>", 
+                        "statement": "$r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, \"type = ? AND new = ?\", $r6, \"date DESC\")", 
+                        "id": 34
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.calls.PhoneStateChangedReceiver$1", 
+                        "method": "<com.todoroo.astrid.calls.PhoneStateChangedReceiver$1: void run()>", 
+                        "statement": "$r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, \"type = ? AND new = ?\", $r6, \"date DESC\")", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.calls.PhoneStateChangedReceiver", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.CameraActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.ReminderSchedulerIntentService", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.tasks.TASK_COMPLETED"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>($r1, $r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void refresh()>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.timers.TimerTaskCompleteListener", 
+            "exported": true
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.todoroo.astrid.provider.SqlContentProvider", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.FilterSelectionActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.ResetPreferencesActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.appwidget.action.APPWIDGET_CONFIGURE"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.widget.WidgetConfigActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "int_value": [
+                                1
+                            ], 
+                            "kind": 15
+                        }, 
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.tasks.TASK_COMPLETED"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.repeats.RepeatTaskCompleteListener", 
+                        "method": "<com.todoroo.astrid.repeats.RepeatTaskCompleteListener: void onReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>($r2, null)", 
+                        "id": 37
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.repeats.RepeatTaskCompleteListener", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.CalendarNotificationIntentService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.preferences.BackupPreferences$1", 
+                        "method": "<org.tasks.preferences.BackupPreferences$1: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r3.<org.tasks.preferences.BackupPreferences: void startActivityForResult(android.content.Intent,int)>($r2, 2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.preferences.BackupPreferences", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$4", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>($r1, $r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$6", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$6: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void refresh()>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$2", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$3", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$3: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity: void createNewList(java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.GCalControlSet", 
+                        "method": "<com.todoroo.astrid.gcal.GCalControlSet: void viewCalendarEvent()>", 
+                        "statement": "$r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r6, null, null, null)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.todoroo.astrid.widget.TasksWidget.EDIT_TASK", 
+                                "android.appwidget.action.APPWIDGET_UPDATE", 
+                                "org.tasks.REFRESH", 
+                                "com.todoroo.astrid.widget.TasksWidget.COMPLETE_TASK"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.widget.TasksWidget", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MY_PACKAGE_REPLACED"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "org.tasks.receivers.MyPackageReplacedReceiver", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.provider.Astrid3ContentProvider", 
+                        "method": "<com.todoroo.astrid.provider.Astrid3ContentProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>", 
+                        "statement": "virtualinvoke $r11.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 32
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.provider.Astrid3ContentProvider", 
+                        "method": "<com.todoroo.astrid.provider.Astrid3ContentProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>", 
+                        "statement": "virtualinvoke $r19.<android.content.ContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver)>($r1, null)", 
+                        "id": 67
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.todoroo.astrid.provider.Astrid3ContentProvider", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.ExportTaskActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.reminders.SnoozeActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.ImportTaskActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 2, 
+            "name": "org.tasks.receivers.TaskNotificationReceiver", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.reminders.MissedCallActivity", 
+                        "method": "<org.tasks.reminders.MissedCallActivity: void callNow()>", 
+                        "statement": "virtualinvoke $r0.<org.tasks.reminders.MissedCallActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.reminders.MissedCallActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.TimePickerActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.core.DefaultsPreferences", 
+                        "method": "<com.todoroo.astrid.core.DefaultsPreferences: void startCalendarSelectionActivity()>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.core.DefaultsPreferences: void startActivityForResult(android.content.Intent,int)>($r1, 10412)", 
+                        "id": 3
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.core.DefaultsPreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.preferences.AppearancePreferences", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.MidnightRefreshService", 
+            "exported": false
+        }, 
+        {
+            "kind": 4, 
+            "permission": "", 
+            "name": "com.todoroo.astrid.provider.Astrid2TaskProvider", 
+            "exported": true
+        }, 
+        {
+            "kind": 2, 
+            "name": "org.tasks.receivers.RefreshReceiver", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.files.FileExplore", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.BackupIntentService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.tasks.activities.DonationActivity", 
+                        "method": "<org.tasks.activities.DonationActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<org.tasks.activities.DonationActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.activities.DonationActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.DateAndTimePickerActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.AlarmSchedulingIntentService", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.CalendarSelectionActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.VIEW"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "vnd.android.cursor.item/task"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.TaskEditActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.tasks.TASK_REPEATED"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.alarms.AlarmTaskRepeatListener", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.core.OldTaskPreferences", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmReceiver", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmReceiver: void showCalReminder(android.content.Context,long,boolean)>", 
+                        "statement": "$r13 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r3, \"event_id = ? \", $r2, null)", 
+                        "id": 28
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmReceiver", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmReceiver: void showCalReminder(android.content.Context,long,boolean)>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r8)", 
+                        "id": 94
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmReceiver", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmReceiver: void showCalReminder(android.content.Context,long,boolean)>", 
+                        "statement": "$r12 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r3, \"_id = ?\", $r2, null)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.gcal.CalendarAlarmReceiver", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.adapter.TaskAdapter$2", 
+                        "method": "<com.todoroo.astrid.adapter.TaskAdapter$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r9.<android.app.PendingIntent: void send()>()", 
+                        "id": 22
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$4", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 10
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>", 
+                        "statement": "virtualinvoke $r3.<android.content.Context: void sendOrderedBroadcast(android.content.Intent,java.lang.String)>($r1, $r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$6", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$6: void onClick(android.content.DialogInterface,int)>", 
+                        "statement": "virtualinvoke $r3.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "org.tasks.Broadcaster", 
+                        "method": "<org.tasks.Broadcaster: void refresh()>", 
+                        "statement": "virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarAlarmListCreator$2", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarAlarmListCreator$2: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarAlarmListCreator: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity$3", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity$3: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.CalendarReminderActivity", 
+                        "method": "<com.todoroo.astrid.gcal.CalendarReminderActivity: void createNewList(java.lang.String)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.gcal.CalendarReminderActivity: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 11
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.GCalControlSet", 
+                        "method": "<com.todoroo.astrid.gcal.GCalControlSet: void viewCalendarEvent()>", 
+                        "statement": "$r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r6, null, null, null)", 
+                        "id": 13
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.gcal.CalendarReminderActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.actfm.FilterSettingsActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "com.todoroo.astrid.core.CustomFilterActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.preferences.HelpAndFeedbackActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.tasks.activities.SortActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity: void newListFromLaunch()>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r1, 4)", 
+                        "id": 7
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.AstridActivity", 
+                        "method": "<com.todoroo.astrid.activity.AstridActivity: void startEditActivity(android.content.Intent)>", 
+                        "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.AstridActivity: void startActivityForResult(android.content.Intent,int)>($r1, 0)", 
+                        "id": 4
+                    }, 
+                    "missing": 0
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.activity.TaskListActivity$4", 
+                        "method": "<com.todoroo.astrid.activity.TaskListActivity$4: void onClick(android.view.View)>", 
+                        "statement": "virtualinvoke $r2.<com.todoroo.astrid.activity.TaskListActivity: void startActivityForResult(android.content.Intent,int)>($r3, 10123)", 
+                        "id": 6
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.activity.ShareLinkActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "int_value": [
+                                2
+                            ], 
+                            "kind": 15
+                        }, 
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "org.tasks.TASK_COMPLETED"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 4, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.gcal.GCalTaskCompleteListener", 
+                        "method": "<com.todoroo.astrid.gcal.GCalTaskCompleteListener: void onReceive(android.content.Context,android.content.Intent)>", 
+                        "statement": "virtualinvoke $r11.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r14, $r4, null, null)", 
+                        "id": 30
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 2, 
+            "name": "com.todoroo.astrid.gcal.GCalTaskCompleteListener", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.google.android.gm.action.AUTO_SEND"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "text/plain"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.tasks.voice.VoiceCommandActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.tasks.scheduling.RefreshSchedulerIntentService", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.todoroo.astrid.reminders.ReminderPreferences$2", 
+                        "method": "<com.todoroo.astrid.reminders.ReminderPreferences$2: boolean onPreferenceClick(android.preference.Preference)>", 
+                        "statement": "virtualinvoke $r4.<com.todoroo.astrid.reminders.ReminderPreferences: void startActivityForResult(android.content.Intent,int)>($r5, $i0)", 
+                        "id": 12
+                    }, 
+                    "missing": 0
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.todoroo.astrid.reminders.ReminderPreferences", 
+            "exported": false
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.todoroo.astrid.adapter.FilterAdapter", 
+                "method": "<com.todoroo.astrid.adapter.FilterAdapter: void registerRecevier()>", 
+                "statement": "virtualinvoke $r1.<android.app.Activity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver", 
+            "exported": true
+        }, 
+        {
+            "registration_instruction": {
+                "class_name": "com.todoroo.astrid.activity.TaskListActivity", 
+                "method": "<com.todoroo.astrid.activity.TaskListActivity: void onResume()>", 
+                "statement": "virtualinvoke $r0.<com.todoroo.astrid.activity.TaskListActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2)", 
+                "id": 5
+            }, 
+            "kind": 3, 
+            "missing": 0, 
+            "name": "org.tasks.receivers.RepeatConfirmationReceiver", 
+            "exported": true
+        }
+    ], 
+    "permissions": [
+        {
+            "name": "org.tasks.WRITE", 
+            "level": 0
+        }, 
+        {
+            "name": "org.tasks.READ", 
+            "level": 0
+        }, 
+        {
+            "name": "org.tasks.permission.READ_TASKS", 
+            "level": 0
+        }
+    ]
+}

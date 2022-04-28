@@ -1,0 +1,45 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+DetailActivity[color = red];
+UrlHandlingActivity[style=filled, fillcolor=pink, color = red];
+AboutActivity[color = red];
+MainActivity[style=filled, fillcolor=orange, color = red];
+LoginActivity[color = red];
+WebViewActivity[color = red];
+SGToolsLoginActivity[color = red];
+SettingsActivity[color = red];
+IntroActivity[color = red];
+WriteCommentActivity[color = red];
+SyncActivity[color = red];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+CheckForWonGiveaways[color = peru];
+CheckForNewMessages[color = peru];
+DetailActivity->SettingsActivity;
+DetailActivity->DetailActivity;
+DetailActivity->AboutActivity;
+DetailActivity->LoginActivity;
+DetailActivity->MainActivity;
+DetailActivity->WebViewActivity;
+UrlHandlingActivity->WebViewActivity;
+UrlHandlingActivity->MainActivity;
+UrlHandlingActivity->DetailActivity;
+MainActivity->WebViewActivity;
+MainActivity->DetailActivity;
+MainActivity->MainActivity;
+MainActivity->AboutActivity;
+MainActivity->SettingsActivity;
+MainActivity->LoginActivity;
+SettingsActivity->SyncActivity;
+SettingsActivity->DetailActivity;
+IntroActivity->IntroActivity;
+}

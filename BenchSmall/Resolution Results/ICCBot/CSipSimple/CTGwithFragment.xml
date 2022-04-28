@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="com.csipsimple.ui.prefs.PrefsFast"/>
+  <source name="com.csipsimple.widgets.ShortcutWidgetConfigure"/>
+  <source name="com.csipsimple.ui.filters.EditFilter"/>
+  <source name="com.csipsimple.ui.PickupSipUri">
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.plugins.telephony.CallHandler" type="Act2NonAct" method="&lt;com.csipsimple.utils.CallHandlerPlugin: java.util.Map getAvailableCallHandlers(android.content.Context)&gt;" InstructionId="9" action="com.csipsimple.phone.action.HANDLE_CALL" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.filters.AccountFilters">
+    <destination name="com.csipsimple.ui.filters.AccountFiltersListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.filters.AccountFilters: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.filters.AccountFiltersListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.filters.AccountFilters: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.incall.InCallMediaControl">
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.incall.InCallMediaControl: void onResume()&gt;" InstructionId="5" action="com.csipsimple.service.SipService" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.prefs.AudioTester">
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.prefs.AudioTester: void onResume()&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.prefs.PrefsFilters">
+    <destination name="com.csipsimple.ui.filters.AccountFilters" type="Act2Act" method="&lt;com.csipsimple.ui.prefs.PrefsFilters: void onAccountClicked(long)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsChooserListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsChooserListActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsChooserListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsChooserListActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.csipsimple.service.DeviceStateReceiver">
+    <destination name="interICC_android.intent.action.VIEW, " type="application/vnd.android.package-archive" method="&lt;com.csipsimple.utils.NightlyUpdater: void applyUpdate(android.content.Intent)&gt;" InstructionId="-1" action="android.intent.action.VIEW" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="interICC_android.intent.action.VIEW, " type="application/vnd.android.package-archive" method="&lt;com.csipsimple.service.DeviceStateReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="-1" action="android.intent.action.VIEW" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="com.csipsimple.service.SipService" type="NonAct2NonAct" method="&lt;com.csipsimple.service.DeviceStateReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="44" extras="" flags=""/>
+    <destination name="com.csipsimple.service.SipService" type="NonAct2NonAct" method="&lt;com.csipsimple.service.DeviceStateReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="18" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.utils.TimerWrapper">
+    <destination name="com.csipsimple.utils.TimerWrapper" type="NonAct2NonAct" method="&lt;com.csipsimple.utils.TimerWrapper: int schedule(int,int,int)&gt;" InstructionId="-1" action="com.csipsimple.PJ_TIMER" data="timer://" extras="" flags=""/>
+    <destination name="com.csipsimple.utils.TimerWrapper" type="NonAct2NonAct" method="&lt;com.csipsimple.utils.TimerWrapper: int doSchedule(int,int)&gt;" InstructionId="22" action="com.csipsimple.PJ_TIMER" data="timer://" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.wizards.impl.MondotalkCreate"/>
+  <source name="com.csipsimple.ui.prefs.hc.MainPrefs">
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.prefs.hc.PrefsLoaderFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.prefs.hc.MainPrefs: void onBuildHeaders(java.util.List)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.prefs.AudioTester" type="Act2Act" method="&lt;com.csipsimple.ui.prefs.PrefsLogic: boolean onMainActivityOptionsItemSelected(com.actionbarsherlock.view.MenuItem,android.content.Context,com.csipsimple.utils.PreferencesWrapper)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.wizards.BasePrefsWizard">
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.wizards.WizardChooser" type="Act2Act" method="&lt;com.csipsimple.wizards.BasePrefsWizard: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="com.csipsimple.service.receiver.DynamicReceiver5" type="Act2NonAct" method="&lt;com.csipsimple.wizards.BasePrefsWizard: void saveAccount(java.lang.String)&gt;" InstructionId="40" action="com.csipsimple.service.ACTION_SIP_REQUEST_RESTART" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.filters.AccountFilters" type="Act2Act" method="&lt;com.csipsimple.wizards.BasePrefsWizard: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="35" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.service.Downloader">
+    <destination name="com.csipsimple.ui.SipHome" type="NonAct2Act" method="&lt;com.csipsimple.service.Downloader: void onHandleIntent(android.content.Intent)&gt;" InstructionId="28" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.SipHome">
+    <destination name="com.csipsimple.ui.warnings.WarningFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: void refreshWarningTabDisplay()&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.prefs.cupcake.MainPrefs" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="12" action="com.csipsimple.ui.action.PREFS_GLOBAL" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.messages.MessageActivity" type="Act2Act" method="&lt;com.csipsimple.ui.messages.ConversationsListFragment: void viewDetails(int,java.lang.String,java.lang.String)&gt;" InstructionId="22" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.help.Help" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.service.receiver.DynamicReceiver5" type="Act2NonAct" method="&lt;com.csipsimple.ui.SipHome: void disconnect(boolean)&gt;" InstructionId="8" action="com.csipsimple.service.ACTION_OUTGOING_UNREGISTER" extras="" flags=""/>
+    <destination name="com.csipsimple.service.receiver.DynamicReceiver5" type="Act2NonAct" method="&lt;com.csipsimple.ui.SipHome: void onActivityResult(int,int,android.content.Intent)&gt;" InstructionId="7" action="com.csipsimple.service.ACTION_SIP_REQUEST_RESTART" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.prefs.PrefsFast" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: void postStartSipService()&gt;" InstructionId="9" action="com.csipsimple.ui.action.PREFS_FAST" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.SipHome$3: void run()&gt;" InstructionId="8" action="com.csipsimple.service.SipService" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.calllog.CallLogListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.wizards.BasePrefsWizard" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: void postStartSipService()&gt;" InstructionId="40" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="com.csipsimple.ui.prefs.hc.MainPrefs" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="12" action="com.csipsimple.ui.action.PREFS_GLOBAL" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.calllog.CallLogDetailsFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.calllog.CallLogListFragment: void viewDetails(int,long[])&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.calllog.CallLogDetailsActivity" type="Act2Act" method="&lt;com.csipsimple.ui.calllog.CallLogListFragment: void viewDetails(int,long[])&gt;" InstructionId="35" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsEditList" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: java.util.List resolveActivitiesForPriviledgedCall(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.wizards.BasePrefsWizard" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="70" extras="" flags=""/>
+    <destination name="com.csipsimple.service.Downloader" type="Act2NonAct" method="&lt;com.csipsimple.utils.NightlyUpdater$UpdaterPopupLauncher$1: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="49" extras="Parcelable@-pendingIntent," flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsEditList" type="Act2Act" method="&lt;com.csipsimple.ui.SipHome: void postStartSipService()&gt;" InstructionId="40" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="com.csipsimple.ui.messages.MessageFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.messages.ConversationsListFragment: void viewDetails(int,java.lang.String,java.lang.String)&gt;" InstructionId="-1"/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.dialpad.DialerAutocompleteDetailsFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.dialpad.DialerFragment: void onVisibilityChanged(boolean)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.dialpad.DialerFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.favorites.FavListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: android.content.pm.ResolveInfo resolveActivityForPriviledgedCall(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.messages.ConversationsListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.SipHome: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.wizards.WizardChooser"/>
+  <source name="com.csipsimple.service.SipService">
+    <destination name="com.csipsimple.plugins.codecs.ReceiverSilk" type="NonAct2NonAct" method="&lt;com.csipsimple.pjsip.PjSipService: boolean sipStart()&gt;" InstructionId="-1" action="com.csipsimple.codecs.action.REGISTER_CODEC" extras="" flags=""/>
+    <destination name="interICC_com.csipsimple.plugins.action.REGISTER_VIDEO, " type="NonAct2Class" method="&lt;com.csipsimple.pjsip.PjSipService: boolean sipStart()&gt;" InstructionId="-1" action="com.csipsimple.plugins.action.REGISTER_VIDEO" extras="" flags=""/>
+    <destination name="interICC_com.csipsimple.service.CALL_CHANGED, " type="NonAct2Class" method="&lt;com.csipsimple.pjsip.UAStateReceiver: void onBroadcastCallState(com.csipsimple.api.SipCallSession)&gt;" InstructionId="-1" action="com.csipsimple.service.CALL_CHANGED" extras="" flags=""/>
+    <destination name="com.csipsimple.service.SipService" type="NonAct2NonAct" method="&lt;com.csipsimple.service.SipService$1: void makeCallWithOptions(java.lang.String,int,android.os.Bundle)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="interICC_org.openintents.audio.action_volume_update, " type="NonAct2Class" method="&lt;com.csipsimple.service.MediaManager: void broadcastVolumeWillBeUpdated(int,int)&gt;" InstructionId="-1" action="org.openintents.audio.action_volume_update" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.SipHome" type="NonAct2Act" method="&lt;com.csipsimple.service.SipNotifications: void notifyRegisteredAccounts(java.util.ArrayList,boolean)&gt;" InstructionId="36" action="com.csipsimple.phone.action.DIALER" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="interICC_com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED, " type="NonAct2Class" method="&lt;com.csipsimple.service.MediaManager: void broadcastMediaChanged()&gt;" InstructionId="-1" action="com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED" extras="" flags=""/>
+    <destination name="com.csipsimple.service.SipService" type="NonAct2NonAct" method="&lt;com.csipsimple.service.SipService$1: void sendMessage(java.lang.String,java.lang.String,long)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.incall.InCallMediaControl" type="NonAct2Act" method="&lt;com.csipsimple.service.SipService$1: void adjustVolume(com.csipsimple.api.SipCallSession,int,int)&gt;" InstructionId="30" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="interICC_com.csipsimple.service.CALL_RECORDED, " type="NonAct2Class" method="&lt;com.csipsimple.pjsip.PjSipService: void stopRecording(int)&gt;" InstructionId="-1" action="com.csipsimple.service.CALL_RECORDED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.service.HeadsetButtonReceiver"/>
+  <source name="com.csipsimple.ui.calllog.CallLogDetailsActivity">
+    <destination name="com.csipsimple.ui.calllog.CallLogDetailsFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.calllog.CallLogDetailsActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.csipsimple.ui.prefs.cupcake.MainPrefs">
+    <destination name="com.csipsimple.ui.prefs.AudioTester" type="Act2Act" method="&lt;com.csipsimple.ui.prefs.PrefsLogic: boolean onMainActivityOptionsItemSelected(com.actionbarsherlock.view.MenuItem,android.content.Context,com.csipsimple.utils.PreferencesWrapper)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.prefs.cupcake.PrefsLoaderActivity"/>
+  <source name="com.csipsimple.ui.prefs.Codecs">
+    <destination name="com.csipsimple.ui.prefs.CodecsFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.prefs.Codecs: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.csipsimple.plugins.telephony.CallHandler">
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="NonAct2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.widgets.ShortcutWidgetProvider"/>
+  <source name="com.csipsimple.widgets.AccountWidgetProvider">
+    <destination name="com.csipsimple.service.DeviceStateReceiver" type="NonAct2NonAct" method="&lt;com.csipsimple.widgets.AccountWidgetProvider: void updateWidget(android.content.Context)&gt;" InstructionId="-1" action="com.csipsimple.accounts.activate" extras="" flags=""/>
+    <destination name="com.csipsimple.service.DeviceStateReceiver" type="NonAct2NonAct" method="&lt;com.csipsimple.widgets.AccountWidgetProvider: android.widget.RemoteViews buildUpdate(android.content.Context,int)&gt;" InstructionId="46" action="com.csipsimple.accounts.activate" extras="" flags=""/>
+    <destination name="com.csipsimple.service.DeviceStateReceiver" type="NonAct2NonAct" method="&lt;com.csipsimple.widgets.AccountWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;" InstructionId="-1" action="com.csipsimple.accounts.activate" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.plugins.codecs.ReceiverSilk"/>
+  <source name="com.csipsimple.widgets.AccountWidgetConfigure">
+    <destination name="com.csipsimple.service.DeviceStateReceiver" type="Act2NonAct" method="&lt;com.csipsimple.widgets.AccountWidgetProvider: android.widget.RemoteViews buildUpdate(android.content.Context,int)&gt;" InstructionId="46" action="com.csipsimple.accounts.activate" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsChooserListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsChooserListActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.account.AccountsChooserListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsChooserListActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.csipsimple.ui.messages.MessageActivity">
+    <destination name="com.csipsimple.ui.messages.MessageFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.messages.MessageActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+  </source>
+  <source name="com.csipsimple.service.receiver.DynamicReceiver5">
+    <destination name="interICC_com.csipsimple.plugins.action.REGISTER_VIDEO, " type="NonAct2Class" method="&lt;com.csipsimple.pjsip.PjSipService: boolean sipStart()&gt;" InstructionId="-1" action="com.csipsimple.plugins.action.REGISTER_VIDEO" extras="" flags=""/>
+    <destination name="com.csipsimple.plugins.codecs.ReceiverSilk" type="NonAct2NonAct" method="&lt;com.csipsimple.pjsip.PjSipService: boolean sipStart()&gt;" InstructionId="-1" action="com.csipsimple.codecs.action.REGISTER_CODEC" extras="" flags=""/>
+    <destination name="interICC_org.openintents.audio.action_volume_update, " type="NonAct2Class" method="&lt;com.csipsimple.service.MediaManager: void broadcastVolumeWillBeUpdated(int,int)&gt;" InstructionId="-1" action="org.openintents.audio.action_volume_update" extras="" flags=""/>
+    <destination name="interICC_com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED, " type="NonAct2Class" method="&lt;com.csipsimple.service.MediaManager: void broadcastMediaChanged()&gt;" InstructionId="-1" action="com.csipsimple.service.MEDIA_CHANGED, com.csipsimple.service.MEDIA_CHANGED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.outgoingcall.OutgoingCallChooser">
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.outgoingcall.OutgoingCallChooser: void connectService()&gt;" InstructionId="11" action="com.csipsimple.service.SipService" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.outgoingcall.OutgoingCallListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.outgoingcall.OutgoingCallChooser: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.outgoingcall.OutgoingCallChooser: void connectService()&gt;" InstructionId="9" action="com.csipsimple.service.SipService" extras="" flags=""/>
+    <destination name="com.csipsimple.service.receiver.DynamicReceiver5" type="Act2NonAct" method="&lt;com.csipsimple.ui.outgoingcall.OutgoingCallChooser: void finishServiceIfNeeded(boolean)&gt;" InstructionId="8" action="com.csipsimple.service.ACTION_OUTGOING_UNREGISTER, com.csipsimple.service.ACTION_DEFER_OUTGOING_UNREGISTER" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.outgoingcall.OutgoingCallListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.outgoingcall.OutgoingCallChooser: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.service.OutgoingCall">
+    <destination name="com.csipsimple.ui.outgoingcall.OutgoingCallChooser" type="NonAct2Act" method="&lt;com.csipsimple.service.OutgoingCall: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="76" action="android.intent.action.CALL" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="com.csipsimple.plugins.telephony.CallHandler" type="NonAct2NonAct" method="&lt;com.csipsimple.utils.CallHandlerPlugin: java.util.Map getAvailableCallHandlers(android.content.Context)&gt;" InstructionId="9" action="com.csipsimple.phone.action.HANDLE_CALL" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.incall.InCallActivity">
+    <destination name="com.csipsimple.service.SipService" type="Act2NonAct" method="&lt;com.csipsimple.ui.incall.InCallActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="18" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.PickupSipUri" type="Act2Act" method="&lt;com.csipsimple.ui.incall.InCallActivity: void onTrigger(int,com.csipsimple.api.SipCallSession)&gt;" InstructionId="156" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.incall.DtmfDialogFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.incall.InCallActivity: void showDialpad(int)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.PickupSipUri" type="Act2Act" method="&lt;com.csipsimple.ui.incall.InCallActivity: void onTrigger(int,com.csipsimple.api.SipCallSession)&gt;" InstructionId="201" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.incall.InCallMediaControl" type="Act2Act" method="&lt;com.csipsimple.ui.incall.InCallActivity: void onTrigger(int,com.csipsimple.api.SipCallSession)&gt;" InstructionId="150" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.account.AccountsEditList">
+    <destination name="com.csipsimple.ui.account.AccountsEditListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsEditList: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="com.csipsimple.ui.account.AccountsEditListFragment" type="Act2Frag" method="&lt;com.csipsimple.ui.account.AccountsEditList: void onCreate(android.os.Bundle)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.csipsimple.ui.account.AccountEdit">
+    <destination name="com.csipsimple.service.receiver.DynamicReceiver5" type="Act2NonAct" method="&lt;com.csipsimple.wizards.BasePrefsWizard: void saveAccount(java.lang.String)&gt;" InstructionId="40" action="com.csipsimple.service.ACTION_SIP_REQUEST_RESTART" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: void initialize(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.CALL_PRIVILEGED, " type="Act2Class" method="&lt;com.csipsimple.utils.PhoneCapabilityTester: boolean isPhone(android.content.Context)&gt;" InstructionId="-1" action="android.intent.action.CALL_PRIVILEGED" extras="" flags=""/>
+    <destination name="com.csipsimple.wizards.WizardChooser" type="Act2Act" method="&lt;com.csipsimple.wizards.BasePrefsWizard: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="10" extras="" flags=""/>
+    <destination name="com.csipsimple.ui.filters.AccountFilters" type="Act2Act" method="&lt;com.csipsimple.wizards.BasePrefsWizard: boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem)&gt;" InstructionId="35" extras="" flags=""/>
+  </source>
+</root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity" >
+<ChildActivity name="org.ligi.passandroid.ui.PassImportActivity" encoded_callback="Lorg/ligi/passandroid/ui/quirk_fix/USAirwaysLoadActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity" >
+<ChildActivity name="org.ligi.passandroid.ui.PassImportActivity" encoded_callback="Lorg/ligi/passandroid/ui/quirk_fix/URLRewriteActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView" encoded_callback="Lorg/ligi/passandroid/ui/quirk_fix/URLRewriteActivity$3;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.PassListActivity" >
+<ChildActivity name="org.ligi.passandroid.ui.PassImportActivity" encoded_callback="Lorg/ligi/passandroid/ui/PassListActivity;=&gt;onActivityResult(IILandroid/content/Intent;)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.InstallListener" >
+<ChildActivity name="org.ligi.passandroid.ui.PassImportActivity" encoded_callback="Lorg/ligi/passandroid/InstallListener;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.PassViewActivity" >
+<ChildActivity name="org.ligi.passandroid.ui.TouchImageActivity" encoded_callback="Lorg/ligi/passandroid/ui/PassViewActivity$processImage$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.SearchPassesIntentService" >
+<ChildActivity name="org.ligi.passandroid.ui.PassListActivity" encoded_callback="Lorg/ligi/passandroid/ui/SearchPassesIntentService;=&gt;onHandleIntent(Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.PassMenuOptions" >
+<ChildActivity name="org.ligi.passandroid.ui.PassListActivity" encoded_callback="Lorg/ligi/passandroid/ui/PassMenuOptions$process$1;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity" >
+<ChildActivity name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView" encoded_callback="Lorg/ligi/passandroid/ui/ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask;=&gt;a(Ljava/lang/String;)V"/>
+<ChildActivity name="org.ligi.passandroid.ui.PassImportActivity" encoded_callback="Lorg/ligi/passandroid/ui/ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask;=&gt;a(Ljava/lang/String;)V"/>
+</Activity >
+</ActivityGraph>

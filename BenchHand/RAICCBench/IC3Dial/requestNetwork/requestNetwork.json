@@ -1,0 +1,41 @@
+{
+    "name": "lu.uni.trux.raicc.requestNetwork", 
+    "analysis_end": 1628845910, 
+    "analysis_start": 1628845905, 
+    "used_permissions": [
+        "android.permission.CHANGE_NETWORK_STATE", 
+        "android.permission.READ_PHONE_STATE", 
+        "android.permission.WRITE_SETTINGS"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "lu.uni.trux.raicc.requestNetwork.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "name": "lu.uni.trux.raicc.requestNetwork.TargetService", 
+            "exported": true
+        }
+    ]
+}

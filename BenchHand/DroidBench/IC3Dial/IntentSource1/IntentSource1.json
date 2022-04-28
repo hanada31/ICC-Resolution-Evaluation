@@ -1,0 +1,69 @@
+{
+    "name": "lu.uni.snt.serval", 
+    "analysis_end": 1628844031, 
+    "analysis_start": 1628844028, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "lu.uni.snt.serval.IntentSource1", 
+                        "method": "<lu.uni.snt.serval.IntentSource1: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke $r0.<lu.uni.snt.serval.IntentSource1: void startActivityForResult(android.content.Intent,int)>($r2, 1)", 
+                        "id": 6
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 1, 
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "lu.uni.snt.serval.IntentSource1", 
+            "exported": true
+        }
+    ]
+}

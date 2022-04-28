@@ -1,0 +1,24 @@
+digraph G {
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>onStart()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>onDestroy()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_actions_Statistics [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>onContextItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_viewer_LoggerMap [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_actions_DescribeTrack [label="Lnl/sogeti/android/gpstracker/viewer/TrackList$10$1;=>onCheckedChanged(Landroid/widget/CompoundButton;Z)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_TrackList -> nl_sogeti_android_gpstracker_viewer_LoggerMap [label="Lnl/sogeti/android/gpstracker/viewer/TrackList;=>displayIntent(Landroid/content/Intent;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_ShareTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_ShareTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=>onStart()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_ShareTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=>onDestroy()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_DescribeTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_DescribeTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=>onStart()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_DescribeTrack -> nl_sogeti_android_gpstracker_breadcrumbs_BreadcrumbsService [label="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=>onDestroy()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_widget_ControlWidgetProvider -> nl_sogeti_android_gpstracker_actions_ControlTracking [label="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=>onReceive(Landroid/content/Context;Landroid/content/Intent;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_widget_ControlWidgetProvider -> nl_sogeti_android_gpstracker_actions_InsertNote [label="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=>onReceive(Landroid/content/Context;Landroid/content/Intent;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_widget_ControlWidgetProvider -> nl_sogeti_android_gpstracker_widget_ControlWidgetProvider [label="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=><clinit>()V", fontcolor="red"];
+nl_sogeti_android_gpstracker_widget_ControlWidgetProvider -> nl_sogeti_android_gpstracker_widget_ControlWidgetProvider [label="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=>getLaunchPendingIntent(Landroid/content/Context;II)Landroid/app/PendingIntent;", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_Statistics -> nl_sogeti_android_gpstracker_viewer_TrackList [label="Lnl/sogeti/android/gpstracker/actions/Statistics;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+nl_sogeti_android_gpstracker_actions_ControlTracking -> nl_sogeti_android_gpstracker_actions_NameTrack [label="Lnl/sogeti/android/gpstracker/actions/ControlTracking$1;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_viewer_LoggerMap -> nl_sogeti_android_gpstracker_viewer_TrackList [label="Lnl/sogeti/android/gpstracker/viewer/LoggerMap$8;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_logger_GPSLoggerService -> nl_sogeti_android_gpstracker_viewer_LoggerMap [label="Lnl/sogeti/android/gpstracker/logger/GPSLoggerService;=>notifyOnDisabledProvider(I)V", fontcolor="red"];
+nl_sogeti_android_gpstracker_logger_GPSLoggerService -> nl_sogeti_android_gpstracker_viewer_LoggerMap [label="Lnl/sogeti/android/gpstracker/logger/GPSLoggerService;=>updateNotification()V", fontcolor="red"];
+}

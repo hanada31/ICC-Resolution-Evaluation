@@ -1,0 +1,54 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+DeckPicker[color = red];
+ModelFieldEditor[color = red];
+Info[color = red];
+MultimediaEditFieldActivity[color = red];
+VideoPlayer[color = red];
+FilteredDeckOptions[color = red];
+IntentHandler[style=filled, fillcolor=orange, color = red];
+AnkiDroidCrashReportDialog[color = red];
+LoadPronounciationActivity[color = red];
+CardBrowser[color = red];
+MyAccount[color = red];
+CardTemplateEditor[color = red];
+StudyOptionsActivity[color = red];
+Reviewer[style=filled, fillcolor=pink, color = red];
+Statistics[color = red];
+Previewer[color = red];
+TranslationActivity[color = red];
+NoteEditor[style=filled, fillcolor=pink, color = red];
+Preferences[color = red];
+DeckOptions[color = red];
+ModelBrowser[color = red];
+NotificationService[color = royalblue];
+AnkiDroidWidgetSmall[color = royalblue];
+AddNoteWidget[style=filled, fillcolor=pink, color = peru];
+SdCardReceiver[style=filled, fillcolor=pink, color = peru];
+AnkiDroidWidgetSmall[style=filled, fillcolor=pink, color = peru];
+CardContentProvider[color = violet];
+DeckPicker->ModelBrowser;
+DeckPicker->NoteEditor;
+DeckPicker->Reviewer;
+DeckPicker->StudyOptionsActivity;
+NotificationService->DeckPicker;
+Reviewer->DeckOptions;
+NoteEditor->MultimediaEditFieldActivity;
+NoteEditor->CardTemplateEditor;
+NoteEditor->NoteEditor;
+AddNoteWidget->NoteEditor;
+IntentHandler->DeckPicker;
+AnkiDroidWidgetSmall->IntentHandler;
+CardBrowser->NoteEditor;
+ModelBrowser->ModelFieldEditor;
+}

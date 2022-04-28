@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity_2x1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidgetListActivity" type="Activity">
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.HelpDialog, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, com.forrestguice.suntimeswidget.ClockWidget0, com.forrestguice.suntimeswidget.AboutDialog, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, java.lang.Class, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="suntimes.SUNTIMES_ALARM_UPDATE, android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SolsticeWidget0ConfigActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.HelpDialog, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity_3x1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0_3x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SolsticeWidget0" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SOLSTICE_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget0_2x1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0_2x1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.MOON_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0_3x1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.MOON_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="net.time4j.android.ApplicationStarter$TimezoneChangedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.TIMEZONE_CHANGED"/>
+    </manifest>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity" type="Activity">
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.HelpDialog, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, com.forrestguice.suntimeswidget.ClockWidget0, com.forrestguice.suntimeswidget.AboutDialog, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, interICC_android.intent.action.SEND, , com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0, interICC_android.intent.action.GET_CONTENT, android.intent.action.OPEN_DOCUMENT, " action="android.intent.action.RUN, android.intent.action.GET_CONTENT, android.intent.action.OPEN_DOCUMENT, suntimes.SUNTIMES_THEME_UPDATE, android.intent.action.SEND" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" type="text/*, new java.lang.String" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesSettingsActivity" type="Activity">
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidgetListActivity, com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.calendar.SuntimesCalendarActivity, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.SEND, , com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, interICC_android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS, , com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS, android.appwidget.action.APPWIDGET_UPDATE, android.intent.action.SEND" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" type="new java.lang.String" flags="FLAG_GRANT_READ_URI_PERMISSION , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications$NotificationService" type="Service"/>
+  <component name="com.forrestguice.suntimeswidget.SuntimesActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.DEFAULT, android.intent.category.LAUNCHER"/>
+      <intent_filter action="android.intent.action.VIEW" category="android.intent.category.DEFAULT" scheme="geo"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.LocationConfigDialog, com.forrestguice.suntimeswidget.LightMapDialog, com.forrestguice.suntimeswidget.HelpDialog, com.forrestguice.suntimeswidget.TimeZoneDialog, com.forrestguice.suntimeswidget.map.WorldMapDialog, com.forrestguice.suntimeswidget.MoonDialog, interICC_android.intent.action.VIEW, , com.forrestguice.suntimeswidget.AboutDialog, com.forrestguice.suntimeswidget.SuntimesSettingsActivity, com.forrestguice.suntimeswidget.AlarmDialog, interICC_suntimes.SUNTIMES_APP_UPDATE_PARTIAL, , interICC_suntimes.SUNTIMES_APP_UPDATE_FULL, , interICC_suntimes.SUNTIMES_APP_UPDATE_FULL, suntimes.SUNTIMES_APP_UPDATE_PARTIAL, , com.forrestguice.suntimeswidget.EquinoxDialog, com.forrestguice.suntimeswidget.TimeDateDialog, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" action="android.intent.action.RUN, com.forrestguice.suntimeswidget.PREFS_GENERAL, suntimes.SUNTIMES_APP_UPDATE_PARTIAL, null, suntimes.SUNTIMES_APP_UPDATE_FULL, android.intent.action.VIEW" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" data="null"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity0" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.HelpDialog, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.AboutDialog, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.ClockWidget0_3x1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.CLOCK_WIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidget1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity2" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget2" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE2"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE1"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, com.forrestguice.suntimeswidget.SuntimesWidget1Service, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity" type="Activity">
+    <sender destination="interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget0" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, suntimes.SUNTIMES_WIDGET_UPDATE, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity0_2x1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.MOON_WIDGET_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.MoonWidget0ConfigActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.ClockWidget0, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.ClockWidget0" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.CLOCK_WIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.ClockWidget0ConfigActivity_3x1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.ClockWidget0, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.alarmclock.ui.AlarmDismissActivity" type="Activity" exported="true">
+    <sender destination="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED, android.intent.action.TIME_SET"/>
+      <intent_filter action="suntimeswidget.alarm.silent, suntimeswidget.alarm.timeout, suntimeswidget.alarm.schedule, suntimeswidget.alarm.dismiss, suntimeswidget.alarm.disable, suntimeswidget.alarm.snooze, suntimeswidget.alarm.show" scheme="content"/>
+    </manifest>
+    <sender destination="interICC_android.intent.action.CLOSE_SYSTEM_DIALOGS, , com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications, com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications$NotificationService, interICC_com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockDismissActivity.UPDATE, " action="android.intent.action.CLOSE_SYSTEM_DIALOGS, android.intent.action.RUN, new android.content.Context, suntimeswidget.alarm.delete, com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockDismissActivity.UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget2_3x2" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE2"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget2_3x1" type="Receiver">
+    <manifest>
+      <intent_filter action="suntimes.SUNTIMES_ALARM_UPDATE, suntimes.SUNTIMES_THEME_UPDATE, android.appwidget.action.APPWIDGET_UPDATE, suntimes.SUNTIMES_WIDGET_UPDATE2"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.MoonWidget0, com.forrestguice.suntimeswidget.SolsticeWidget0, com.forrestguice.suntimeswidget.SuntimesWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_2x1, com.forrestguice.suntimeswidget.MoonWidget0_3x1, newarray (int)[i0], com.forrestguice.suntimeswidget.ClockWidget0, 0, com.forrestguice.suntimeswidget.ClockWidget0_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.SuntimesConfigActivity0, com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.SuntimesWidget2, com.forrestguice.suntimeswidget.SuntimesWidget1, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SET_ALARM" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.AlarmDialog, com.forrestguice.suntimeswidget.LocationConfigDialog, com.forrestguice.suntimeswidget.alarmclock.ui.AlarmRepeatDialog, com.forrestguice.suntimeswidget.alarmclock.ui.AlarmTimeDialog, com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications, com.forrestguice.suntimeswidget.SuntimesActivity, interICC_android.intent.action.RINGTONE_PICKER, , com.forrestguice.suntimeswidget.alarmclock.ui.AlarmOffsetDialog, com.forrestguice.suntimeswidget.alarmclock.ui.AlarmLabelDialog, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.AboutDialog, com.forrestguice.suntimeswidget.SuntimesSettingsActivity" action="android.intent.action.RUN, android.intent.action.RINGTONE_PICKER, null, new android.content.Context" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR" data="null" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity2_3x1" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidget2_3x1, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesConfigActivity2_3x2" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.forrestguice.suntimeswidget.SuntimesWidget2_3x2, com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity, interICC_android.intent.action.RUN, com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR, com.forrestguice.suntimeswidget.SuntimesWidget0" action="android.intent.action.RUN, android.appwidget.action.APPWIDGET_UPDATE" category="com.forrestguice.suntimeswidget.SUNTIMES_CALCULATOR"/>
+  </component>
+  <component name="com.forrestguice.suntimeswidget.SuntimesWidget1Service" type="Service" permission="android.permission.BIND_REMOTEVIEWS"/>
+</root>

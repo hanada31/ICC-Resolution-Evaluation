@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="pt.joaomneto.titancompanion.GamebookListActivity" >
+<ChildActivity name="pt.joaomneto.titancompanion.GamebookSelectionActivity" encoded_callback="Lpt/joaomneto/titancompanion/GamebookListActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="pt.joaomneto.titancompanion.GamebookSelectionActivity" >
+<ChildActivity name="pt.joaomneto.titancompanion.GamebookFullImageActivity" encoded_callback="Lpt/joaomneto/titancompanion/GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="pt.joaomneto.titancompanion.GamebookWikiaActivity" encoded_callback="Lpt/joaomneto/titancompanion/GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+</ActivityGraph>

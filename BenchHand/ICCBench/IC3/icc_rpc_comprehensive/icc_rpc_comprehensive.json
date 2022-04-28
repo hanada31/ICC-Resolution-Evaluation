@@ -1,0 +1,84 @@
+{
+    "name": "org.arguslab.icc_rpc_comprehensive", 
+    "analysis_end": 1624856445, 
+    "analysis_start": 1624856442, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_rpc_comprehensive.FooActivity", 
+                        "method": "<org.arguslab.icc_rpc_comprehensive.FooActivity: void onActivityResult(int,int,android.content.Intent)>", 
+                        "statement": "r7 = virtualinvoke r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r6)", 
+                        "id": 9
+                    }, 
+                    "extra": "key"
+                }
+            ], 
+            "name": "org.arguslab.icc_rpc_comprehensive.FooActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_rpc_comprehensive.BarActivity", 
+                        "method": "<org.arguslab.icc_rpc_comprehensive.BarActivity: void onStart()>", 
+                        "statement": "virtualinvoke r0.<org.arguslab.icc_rpc_comprehensive.BarActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r1, r5, b0)", 
+                        "id": 9
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/icc_rpc_comprehensive/RemoteService"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.icc_rpc_comprehensive"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_rpc_comprehensive.BarActivity", 
+            "exported": false
+        }, 
+        {
+            "kind": 1, 
+            "name": "org.arguslab.icc_rpc_comprehensive.RemoteService", 
+            "exported": true
+        }
+    ]
+}

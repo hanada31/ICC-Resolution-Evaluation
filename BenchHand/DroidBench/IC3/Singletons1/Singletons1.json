@@ -1,0 +1,51 @@
+{
+    "name": "edu.mit.to_components_share_memory",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.to_components_share_memory.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.to_components_share_memory.AnotherActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.DroidBench"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031898,
+    "analysis_end": 1639031899
+}

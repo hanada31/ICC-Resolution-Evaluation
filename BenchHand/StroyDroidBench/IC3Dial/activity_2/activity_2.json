@@ -1,0 +1,360 @@
+{
+    "analysis_end": 1628845210, 
+    "analysis_start": 1628845197, 
+    "version": 1, 
+    "name": "com.test.ui.transition", 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.MainActivity", 
+                        "method": "<com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/NextActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.B", 
+                        "method": "<com.test.ui.transition.B: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.B: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/C"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/MainActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/NextActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.B", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.C", 
+                        "method": "<com.test.ui.transition.C: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.C: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/D"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/A"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/MainActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/NextActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.C", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.D", 
+                        "method": "<com.test.ui.transition.D: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.D: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/E"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.D", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.E", 
+                        "method": "<com.test.ui.transition.E: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.E: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/MainActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.E", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.NextActivity", 
+                        "method": "<com.test.ui.transition.NextActivity: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/A"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.NextActivity", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.A", 
+                        "method": "<com.test.ui.transition.A: void goToActivity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.A: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/B"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }, 
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/MainActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.A", 
+            "exported": false
+        }
+    ]
+}

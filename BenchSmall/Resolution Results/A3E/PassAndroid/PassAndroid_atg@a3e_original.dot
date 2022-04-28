@@ -1,0 +1,12 @@
+digraph G {
+org_ligi_passandroid_ui_quirk_fix_USAirwaysLoadActivity -> org_ligi_passandroid_ui_PassImportActivity [label="Lorg/ligi/passandroid/ui/quirk_fix/USAirwaysLoadActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+org_ligi_passandroid_ui_quirk_fix_URLRewriteActivity -> org_ligi_passandroid_ui_PassImportActivity [label="Lorg/ligi/passandroid/ui/quirk_fix/URLRewriteActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+org_ligi_passandroid_ui_quirk_fix_URLRewriteActivity -> org_ligi_passandroid_ui_quirk_fix_OpenIphoneWebView [label="Lorg/ligi/passandroid/ui/quirk_fix/URLRewriteActivity$3;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+org_ligi_passandroid_ui_PassListActivity -> org_ligi_passandroid_ui_PassImportActivity [label="Lorg/ligi/passandroid/ui/PassListActivity;=>onActivityResult(IILandroid/content/Intent;)V", fontcolor="red"];
+org_ligi_passandroid_InstallListener -> org_ligi_passandroid_ui_PassImportActivity [label="Lorg/ligi/passandroid/InstallListener;=>onReceive(Landroid/content/Context;Landroid/content/Intent;)V", fontcolor="red"];
+org_ligi_passandroid_ui_PassViewActivity -> org_ligi_passandroid_ui_TouchImageActivity [label="Lorg/ligi/passandroid/ui/PassViewActivity$processImage$1;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+org_ligi_passandroid_ui_SearchPassesIntentService -> org_ligi_passandroid_ui_PassListActivity [label="Lorg/ligi/passandroid/ui/SearchPassesIntentService;=>onHandleIntent(Landroid/content/Intent;)V", fontcolor="red"];
+org_ligi_passandroid_ui_PassMenuOptions -> org_ligi_passandroid_ui_PassListActivity [label="Lorg/ligi/passandroid/ui/PassMenuOptions$process$1;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+org_ligi_passandroid_ui_ExtractURLAsIphoneActivity -> org_ligi_passandroid_ui_quirk_fix_OpenIphoneWebView [label="Lorg/ligi/passandroid/ui/ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask;=>a(Ljava/lang/String;)V", fontcolor="red"];
+org_ligi_passandroid_ui_ExtractURLAsIphoneActivity -> org_ligi_passandroid_ui_PassImportActivity [label="Lorg/ligi/passandroid/ui/ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask;=>a(Ljava/lang/String;)V", fontcolor="red"];
+}

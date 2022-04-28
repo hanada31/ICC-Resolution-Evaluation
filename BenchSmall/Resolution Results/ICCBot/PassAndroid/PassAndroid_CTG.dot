@@ -1,0 +1,48 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+subgraph cluster_component{ 
+FullscreenMapActivity[color = red];
+PassEditActivity[color = red];
+HelpActivity[color = red];
+TouchImageActivity[color = red];
+OpenIphoneWebView[color = red];
+URLRewriteActivity[style=filled, fillcolor=pink, color = red];
+ExtractURLAsIphoneActivity[style=filled, fillcolor=pink, color = red];
+USAirwaysLoadActivity[style=filled, fillcolor=pink, color = red];
+PreferenceActivity[color = red];
+PassViewActivity[style=filled, fillcolor=pink, color = red];
+PassListActivity[style=filled, fillcolor=orange, color = red];
+FullscreenBarcodeActivity[color = red];
+PassImportActivity[style=filled, fillcolor=pink, color = red];
+SearchPassesIntentService[color = royalblue];
+InstallListener[style=filled, fillcolor=pink, color = peru];
+FullscreenMapActivity->FullscreenMapActivity;
+FullscreenMapActivity->PassEditActivity;
+URLRewriteActivity->OpenIphoneWebView;
+URLRewriteActivity->PassImportActivity;
+ExtractURLAsIphoneActivity->PassImportActivity;
+ExtractURLAsIphoneActivity->OpenIphoneWebView;
+SearchPassesIntentService->PassListActivity;
+USAirwaysLoadActivity->PassImportActivity;
+InstallListener->PassImportActivity;
+PassViewActivity->TouchImageActivity;
+PassViewActivity->FullscreenBarcodeActivity;
+PassViewActivity->PassEditActivity;
+PassListActivity->PassImportActivity;
+PassListActivity->PassEditActivity;
+PassListActivity->SearchPassesIntentService;
+PassListActivity->HelpActivity;
+FullscreenBarcodeActivity->PassEditActivity;
+PassImportActivity->PassViewActivity;
+}
+}

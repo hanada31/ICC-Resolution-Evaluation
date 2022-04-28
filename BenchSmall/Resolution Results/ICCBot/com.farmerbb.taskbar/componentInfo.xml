@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.farmerbb.taskbar.activity.IconPackApplyActivity" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, com.farmerbb.taskbar.APPLY_ICON_PACK" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.service.NotificationService"/>
+  </component>
+  <component name="com.farmerbb.taskbar.service.StartMenuService" type="Service">
+    <sender destination="interICC_android.intent.action.WEB_SEARCH, , com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.activity.InvisibleActivityAlt, interICC_android.intent.action.VIEW, , com.farmerbb.taskbar.activity.ContextMenuActivity, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.InvisibleActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark" action="android.intent.action.MAIN, com.farmerbb.taskbar.HIDE_START_MENU, android.intent.action.WEB_SEARCH, android.intent.action.VIEW, com.farmerbb.taskbar.START_MENU_APPEARING, com.farmerbb.taskbar.START_MENU_DISAPPEARING, com.farmerbb.taskbar.HIDE_TASKBAR" category="android.intent.category.LAUNCHER" flags="FLAG_ACTIVITY_MULTIPLE_TASK , FLAG_ACTIVITY_TASK_ON_HOME , FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_LAUNCH_ADJACENT , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.DisableHomeReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.ENABLE_DISABLE_HOME">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.DISABLE_HOME"/>
+    </manifest>
+    <sender action="com.farmerbb.taskbar.KILL_HOME_ACTIVITY"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.SelectAppActivityDark" type="Activity">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.activity.dark.SelectAppActivityDark, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.SelectAppActivity"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.SendSettingsReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.paid.SEND_RECEIVE_SETTINGS">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.RECEIVE_SETTINGS"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.receiver.ReceiveSettingsReceiver" action="com.farmerbb.taskbar.SEND_SETTINGS"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.PackageUpgradeReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.MY_PACKAGE_REPLACED"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.service.NotificationService"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.ContextMenuActivity" type="Activity">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, interICC_android.settings.SETTINGS, , interICC_android.provider.action.BROWSE_DOCUMENT_ROOT, android.intent.category.DEFAULT, com.farmerbb.taskbar.activity.dark.SelectAppActivityDark, com.farmerbb.taskbar.receiver.QuitReceiver, com.farmerbb.taskbar.MainActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, interICC_android.settings.ACCESSIBILITY_SETTINGS, , com.farmerbb.taskbar.activity.SelectAppActivity, interICC_android.intent.action.SET_WALLPAPER, , com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.activity.DummyActivity, com.farmerbb.taskbar.activity.HomeActivity" action="android.settings.SETTINGS, com.farmerbb.taskbar.HIDE_START_MENU, com.farmerbb.taskbar.CONTEXT_MENU_DISAPPEARING, android.provider.action.BROWSE_DOCUMENT_ROOT, com.farmerbb.taskbar.SHOW_POWER_MENU, android.settings.ACCESSIBILITY_SETTINGS, com.farmerbb.taskbar.HIDE_TASKBAR, com.farmerbb.taskbar.CONTEXT_MENU_APPEARING, android.intent.action.MAIN, com.farmerbb.taskbar.TOGGLE_START_MENU_ALT, android.intent.action.SET_WALLPAPER, android.provider.action.BROWSE, com.farmerbb.taskbar.QUIT" category="android.intent.category.DEFAULT, android.intent.category.LAUNCHER, android.intent.category.HOME" data="content://com.android.externalstorage.documents/root/primary" flags="FLAG_ACTIVITY_LAUNCH_ADJACENT FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_MULTIPLE_TASK , FLAG_ACTIVITY_TASK_ON_HOME , FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_LAUNCH_ADJACENT , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="com.farmerbb.taskbar.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, android.intent.action.APPLICATION_PREFERENCES" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.b.a, interICC_android.settings.USAGE_ACCESS_SETTINGS, , com.farmerbb.taskbar.service.NotificationService, com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.b.g, com.farmerbb.taskbar.activity.ImportSettingsActivity" action="android.settings.USAGE_ACCESS_SETTINGS, android.intent.action.MAIN, com.farmerbb.taskbar.START_MENU_DISAPPEARING" flags="FLAG_ACTIVITY_LAUNCH_ADJACENT FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NO_ANIMATION "/>
+  </component>
+  <component name="com.farmerbb.taskbar.service.QuickSettingsTileService" type="Service" permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+    <manifest>
+      <intent_filter action="android.service.quicksettings.action.QS_TILE"/>
+    </manifest>
+    <sender destination="interICC_com.farmerbb.taskbar., " action="com.farmerbb.taskbar."/>
+  </component>
+  <component name="com.farmerbb.taskbar.service.NotificationService" type="Service">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.HomeActivity" action="android.intent.action.MAIN, com.farmerbb.taskbar.UPDATE_SWITCH, com.farmerbb.taskbar.FINISH_FREEFORM_ACTIVITY, com.farmerbb.taskbar.QUIT, com.farmerbb.taskbar.SHOW_HIDE_TASKBAR" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.InvisibleActivity" type="Activity">
+    <sender action="com.farmerbb.taskbar.HIDE_START_MENU"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.StartTaskbarActivity" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="interICC_com.farmerbb.taskbar., " action="android.intent.action.MAIN, com.farmerbb.taskbar." extras="Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.EnableHomeReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.ENABLE_DISABLE_HOME">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.ENABLE_HOME"/>
+    </manifest>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.ShowHideTaskbarReceiver" type="Receiver" permission="com.farmerbb.taskbar.START_STOP_TASKBAR">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.SHOW_HIDE_TASKBAR"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.service.NotificationService" action="com.farmerbb.taskbar.START_MENU_DISAPPEARING"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.UninstallReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_FULLY_REMOVED" scheme="package"/>
+    </manifest>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.IconPackActivity" type="Activity">
+    <sender destination="interICC_org.adw.launcher.THEMES, " action="org.adw.launcher.THEMES"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.DashboardActivityDark" type="Activity">
+    <sender destination="interICC_android.appwidget.action.APPWIDGET_CONFIGURE, "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.IconPackActivityDark" type="Activity">
+    <sender destination="interICC_org.adw.launcher.THEMES, "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.ClearDataActivity" type="Activity"/>
+  <component name="com.farmerbb.taskbar.service.PowerMenuService" type="Service" exported="true" permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+    <manifest>
+      <intent_filter action="android.accessibilityservice.AccessibilityService"/>
+    </manifest>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.LockDeviceReceiver" type="Receiver" exported="true" permission="android.permission.BIND_DEVICE_ADMIN">
+    <manifest>
+      <intent_filter action="android.app.action.DEVICE_ADMIN_ENABLED"/>
+    </manifest>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.DummyActivity" type="Activity">
+    <sender destination="interICC_android.app.action.ADD_DEVICE_ADMIN, " action="android.app.action.ADD_DEVICE_ADMIN"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.ReceiveSettingsReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.SEND_RECEIVE_SETTINGS">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.SEND_SETTINGS"/>
+    </manifest>
+    <sender action="com.farmerbb.taskbar.IMPORT_FINISHED"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark" type="Activity">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, interICC_android.settings.SETTINGS, , interICC_android.provider.action.BROWSE_DOCUMENT_ROOT, android.intent.category.DEFAULT, com.farmerbb.taskbar.activity.dark.SelectAppActivityDark, com.farmerbb.taskbar.receiver.QuitReceiver, com.farmerbb.taskbar.MainActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, interICC_android.settings.ACCESSIBILITY_SETTINGS, , com.farmerbb.taskbar.activity.SelectAppActivity, interICC_android.intent.action.SET_WALLPAPER, , com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.activity.DummyActivity, com.farmerbb.taskbar.activity.HomeActivity"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.InvisibleActivityAlt" type="Activity"/>
+  <component name="com.farmerbb.taskbar.receiver.QuitReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.START_STOP_TASKBAR">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.QUIT"/>
+    </manifest>
+    <sender action="com.farmerbb.taskbar.START_MENU_DISAPPEARING"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.StartReceiver" type="Receiver" exported="true" permission="com.farmerbb.taskbar.START_STOP_TASKBAR">
+    <manifest>
+      <intent_filter action="com.farmerbb.taskbar.START"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.service.NotificationService"/>
+  </component>
+  <component name="com.farmerbb.taskbar.receiver.BootReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.service.NotificationService"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.SelectAppActivity" type="Activity">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.activity.dark.SelectAppActivityDark, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.SelectAppActivity" action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.DashboardActivity" type="Activity">
+    <sender destination="interICC_android.appwidget.action.APPWIDGET_CONFIGURE, , interICC_android.appwidget.action.APPWIDGET_PICK, " action="com.farmerbb.taskbar.HIDE_DASHBOARD, com.farmerbb.taskbar.REMOVE_WIDGET_COMPLETED, com.farmerbb.taskbar.HIDE_START_MENU, android.appwidget.action.APPWIDGET_PICK, com.farmerbb.taskbar.HIDE_TASKBAR, com.farmerbb.taskbar.ADD_WIDGET_COMPLETED, android.appwidget.action.APPWIDGET_CONFIGURE"/>
+  </component>
+  <component name="com.farmerbb.taskbar.service.TaskbarService" type="Service">
+    <sender destination="com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.ContextMenuActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark, com.farmerbb.taskbar.activity.HomeActivity" action="android.intent.action.MAIN, com.farmerbb.taskbar.TOGGLE_START_MENU, com.farmerbb.taskbar.HIDE_START_MENU, com.farmerbb.taskbar.HIDE_DASHBOARD, com.farmerbb.taskbar.TOGGLE_DASHBOARD, com.farmerbb.taskbar.HIDE_TASKBAR" category="android.intent.category.LAUNCHER, android.intent.category.HOME" flags="FLAG_ACTIVITY_MULTIPLE_TASK , FLAG_ACTIVITY_TASK_ON_HOME , FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_LAUNCH_ADJACENT , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="com.farmerbb.taskbar.service.DashboardService" type="Service">
+    <sender destination="com.farmerbb.taskbar.activity.DashboardActivity, com.farmerbb.taskbar.activity.dark.DashboardActivityDark" action="com.farmerbb.taskbar.HIDE_START_MENU, com.farmerbb.taskbar.ADD_WIDGET_REQUESTED, com.farmerbb.taskbar.DASHBOARD_DISAPPEARING, com.farmerbb.taskbar.REMOVE_WIDGET_REQUESTED, com.farmerbb.taskbar.DASHBOARD_APPEARING" flags="FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.KeyboardShortcutActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, android.intent.action.ASSIST" category="android.intent.category.DEFAULT, android.intent.category.APP_CALENDAR, android.intent.category.APP_MAPS"/>
+    </manifest>
+    <sender destination="interICC_android.search.action.GLOBAL_SEARCH, , com.farmerbb.taskbar.receiver.QuitReceiver, interICC_com.google.android.googlequicksearchbox.TEXT_ASSIST, , com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.activity.DummyActivity, com.farmerbb.taskbar.receiver.StartReceiver" action="com.google.android.googlequicksearchbox.TEXT_ASSIST, com.farmerbb.taskbar.TOGGLE_START_MENU, com.farmerbb.taskbar.START, com.farmerbb.taskbar.QUIT, android.search.action.GLOBAL_SEARCH" flags="FLAG_ACTIVITY_LAUNCH_ADJACENT FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_MULTIPLE_TASK FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.ClearDataActivityDark" type="Activity"/>
+  <component name="com.farmerbb.taskbar.activity.ShortcutActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN, android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.receiver.StartReceiver" action="android.intent.action.MAIN, com.farmerbb.taskbar.START" flags="FLAG_ACTIVITY_LAUNCH_ADJACENT FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NO_ANIMATION " extras="Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.InvisibleActivityFreeform" type="Activity">
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.dark.InvisibleActivityAltDark, com.farmerbb.taskbar.activity.HomeActivity" action="android.intent.action.MAIN, com.farmerbb.taskbar.SHOW_TASKBAR, com.farmerbb.taskbar.HIDE_START_MENU, com.farmerbb.taskbar.HIDE_TASKBAR" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.dark.InvisibleActivityAltDark" type="Activity"/>
+  <component name="com.farmerbb.taskbar.activity.HomeActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.DEFAULT, android.intent.category.HOME"/>
+    </manifest>
+    <sender destination="com.farmerbb.taskbar.service.TaskbarService, com.farmerbb.taskbar.activity.IconPackApplyActivity, com.farmerbb.taskbar.service.DashboardService, com.farmerbb.taskbar.service.StartMenuService, interICC_android.intent.action.SET_WALLPAPER, , com.farmerbb.taskbar.activity.ShortcutActivity, com.farmerbb.taskbar.activity.InvisibleActivityFreeform, com.farmerbb.taskbar.activity.DummyActivity, com.farmerbb.taskbar.activity.StartTaskbarActivity, com.farmerbb.taskbar.activity.HomeActivity" action="android.intent.action.MAIN, com.farmerbb.taskbar.HIDE_START_MENU, com.farmerbb.taskbar.TEMP_SHOW_TASKBAR, com.farmerbb.taskbar.TEMP_HIDE_TASKBAR, android.intent.action.SET_WALLPAPER, com.farmerbb.taskbar.FINISH_FREEFORM_ACTIVITY" category="android.intent.category.HOME" flags="FLAG_ACTIVITY_LAUNCH_ADJACENT FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_NO_ANIMATION , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.farmerbb.taskbar.activity.ImportSettingsActivity" type="Activity">
+    <sender destination="com.farmerbb.taskbar.receiver.SendSettingsReceiver, com.farmerbb.taskbar.MainActivity" action="com.farmerbb.taskbar.RECEIVE_SETTINGS" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+</root>

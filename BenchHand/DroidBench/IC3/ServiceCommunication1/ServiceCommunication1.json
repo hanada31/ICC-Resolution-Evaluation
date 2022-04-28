@@ -1,0 +1,69 @@
+{
+    "name": "edu.mit.icc_service_messages",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.icc_service_messages.ActivityMessenger",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT",
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>(r1, r3, b0)",
+                        "class_name": "edu.mit.icc_service_messages.ActivityMessenger",
+                        "method": "<edu.mit.icc_service_messages.ActivityMessenger: void onStart()>",
+                        "id": 7
+                    },
+                    "kind": 1,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "edu/mit/icc_service_messages/MessengerService"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "edu.mit.icc_service_messages"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_service_messages.MessengerService",
+            "kind": 1,
+            "exported": false
+        }
+    ],
+    "analysis_start": 1639031921,
+    "analysis_end": 1639031923
+}

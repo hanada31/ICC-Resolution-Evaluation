@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="de.danoeh.antennapod.activity.CastplayerActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="20" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.activity.AudioplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.CastplayerActivity: void onReloadNotification(int)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="18" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.util.playback.PlaybackServiceStarter: void start()&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.VideoplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.VideoplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onReloadNotification(int)&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.FeedInfoActivity"/>
+  <source name="de.danoeh.antennapod.activity.AboutActivity"/>
+  <source name="de.danoeh.antennapod.receiver.PowerConnectionReceiver"/>
+  <source name="de.danoeh.antennapod.activity.VideoplayerActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="18" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.util.playback.PlaybackServiceStarter: void start()&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.AudioplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.VideoplayerActivity: void onReloadNotification(int)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="20" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.activity.CastplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.VideoplayerActivity: void onReloadNotification(int)&gt;" InstructionId="22" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.core.service.FeedUpdateJobService"/>
+  <source name="de.danoeh.antennapod.receiver.ConnectivityActionReceiver"/>
+  <source name="de.danoeh.antennapod.core.receiver.FeedUpdateReceiver"/>
+  <source name="de.danoeh.antennapod.activity.FlattrAuthActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.FlattrAuthActivity$$Lambda$0: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+    <destination name="de.danoeh.antennapod.activity.PreferenceActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.FlattrAuthActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="10" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.OpmlFeedChooserActivity"/>
+  <source name="de.danoeh.antennapod.core.service.PlayerWidgetJobService">
+    <destination name="de.danoeh.antennapod.core.receiver.MediaButtonReceiver" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.PlayerWidgetJobService: void onHandleWork(android.content.Intent)&gt;" InstructionId="87" action="de.danoeh.antennapod.NOTIFY_BUTTON_RECEIVER" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.PlayerWidgetJobService: void onHandleWork(android.content.Intent)&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.StatisticsActivity"/>
+  <source name="de.danoeh.antennapod.activity.PreferenceActivity">
+    <destination name="de.danoeh.antennapod.activity.AboutActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: boolean lambda$setupMainScreen$37$PreferenceController$234e8b40(android.support.v7.app.AppCompatActivity)&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.PreferenceActivity$MainFragment" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: android.support.v7.preference.PreferenceFragmentCompat openScreen(int,android.support.v7.app.AppCompatActivity)&gt;" InstructionId="-1"/>
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="text/plain" method="&lt;de.danoeh.antennapod.preferences.PreferenceController$$Lambda$40: boolean onPreferenceClick(android.support.v7.preference.Preference)&gt;" InstructionId="38" action="android.intent.action.SEND" extras="" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+    <destination name="de.danoeh.antennapod.activity.OpmlImportFromPathActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: boolean lambda$setupStorageScreen$8$PreferenceController$7ff604e7(android.app.Activity)&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: boolean lambda$setupInterfaceScreen$2$PreferenceController$11df2fb5(android.app.Activity)&gt;" InstructionId="5" extras="" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.activity.PreferenceActivity$MainFragment" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.PreferenceActivity: void showPreferenceScreen(int,boolean)&gt;" InstructionId="-1"/>
+    <destination name="de.danoeh.antennapod.activity.ImportExportActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: boolean lambda$setupStorageScreen$5$PreferenceController$7ff604e7(android.app.Activity)&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.StatisticsActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController: boolean lambda$setupMainScreen$38$PreferenceController$234e8b40(android.support.v7.app.AppCompatActivity)&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="text/plain" method="&lt;de.danoeh.antennapod.preferences.PreferenceController$$Lambda$40: boolean onPreferenceClick(android.support.v7.preference.Preference)&gt;" InstructionId="25" action="android.intent.action.SEND" extras="" flags="FLAG_GRANT_READ_URI_PERMISSION "/>
+    <destination name="de.danoeh.antennapod.activity.DirectoryChooserActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController$$Lambda$9: boolean onPreferenceClick(android.support.v7.preference.Preference)&gt;" InstructionId="18" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.DirectoryChooserActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.preferences.PreferenceController$$Lambda$10: boolean onPreferenceClick(android.support.v7.preference.Preference)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.core.receiver.PlayerWidget"/>
+  <source name="de.danoeh.antennapod.receiver.SPAReceiver">
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.core.service.GpodnetSyncService">
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.core.service.playback.PlaybackServiceFlavorHelper$2"/>
+  <source name="de.danoeh.antennapod.activity.StorageErrorActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.StorageErrorActivity: void leaveErrorState()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.DirectoryChooserActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.StorageErrorActivity$$Lambda$0: void onClick(android.view.View)&gt;" InstructionId="13" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.core.service.playback.PlaybackService">
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="79" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="105" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="98" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="116" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="90" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="71" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.service.playback.PlaybackService$3: void run()&gt;" InstructionId="134" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.FeedSettingsActivity"/>
+  <source name="de.danoeh.antennapod.activity.OpmlImportFromPathActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.OpmlImportBaseActivity$1: void onPostExecute(java.lang.Void)&gt;" InstructionId="8" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="de.danoeh.antennapod.core.receiver.MediaButtonReceiver">
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.receiver.MediaButtonReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="23" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.DownloadAuthenticationActivity">
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.ImportExportActivity">
+    <destination name="de.danoeh.antennapod.activity.SplashActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.ImportExportActivity$$Lambda$2: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.SplashActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.SplashActivity$$Lambda$1: void call()&gt;" InstructionId="4" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.DirectoryChooserActivity"/>
+  <source name="de.danoeh.antennapod.activity.MainActivity">
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.ItunesSearchFragment$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;" InstructionId="20"/>
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2Act" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16"/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="Act2Act" method="&lt;de.danoeh.antennapod.core.util.playback.PlaybackServiceStarter: void start()&gt;" InstructionId="8"/>
+    <destination name="de.danoeh.antennapod.activity.OpmlImportFromPathActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.AddFeedFragment$$Lambda$3: void onClick(android.view.View)&gt;" InstructionId="6"/>
+    <destination name="de.danoeh.antennapod.activity.FeedInfoActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.ItemlistFragment: void showFeedInfo()&gt;" InstructionId="11"/>
+    <destination name="de.danoeh.antennapod.activity.PreferenceActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MainActivity$$Lambda$1: void onClick(android.view.View)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.FeedSettingsActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.ItemlistFragment$$Lambda$2: void onClick(android.view.View)&gt;" InstructionId="13"/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;" InstructionId="13" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.ItunesSearchFragment$$Lambda$10: void call(java.lang.Object)&gt;" InstructionId="13"/>
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.AddFeedFragment$$Lambda$4: void onClick(android.view.View)&gt;" InstructionId="12"/>
+    <destination name="de.danoeh.antennapod.activity.OnlineFeedViewActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.fragment.FyydSearchFragment$$Lambda$0: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;" InstructionId="16"/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.util.playback.PlaybackServiceStarter: void start()&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.PreferenceActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity$$Lambda$2: void onClick(android.view.View)&gt;" InstructionId="8" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.AudioplayerActivity">
+    <destination name="de.danoeh.antennapod.activity.VideoplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onAwaitingVideoSurface()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.CastplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.AudioplayerActivity: void onReloadNotification(int)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.core.service.playback.PlaybackService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.util.playback.PlaybackServiceStarter: void start()&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="18" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="20" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.VideoplayerActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.MediaplayerInfoActivity: void onReloadNotification(int)&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.gpoddernet.GpodnetAuthenticationActivity$$Lambda$3: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </source>
+  <source name="de.danoeh.antennapod.core.receiver.AlarmUpdateReceiver"/>
+  <source name="de.danoeh.antennapod.activity.OnlineFeedViewActivity">
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="Act2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.OnlineFeedViewActivity$$Lambda$6: void onClick(android.view.View)&gt;" InstructionId="11" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.OnlineFeedViewActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="10" extras="" flags=""/>
+  </source>
+  <source name="de.danoeh.antennapod.activity.OpmlImportFromIntentActivity">
+    <destination name="de.danoeh.antennapod.activity.MainActivity" type="Act2Act" method="&lt;de.danoeh.antennapod.activity.OpmlImportBaseActivity$1: void onPostExecute(java.lang.Void)&gt;" InstructionId="8" extras="" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="de.danoeh.antennapod.core.service.download.DownloadService">
+    <destination name="de.danoeh.antennapod.core.service.download.DownloadService" type="NonAct2NonAct" method="&lt;de.danoeh.antennapod.core.storage.DownloadRequester: boolean download(android.content.Context,de.danoeh.antennapod.core.service.download.DownloadRequest)&gt;" InstructionId="16" extras="" flags=""/>
+  </source>
+</root>

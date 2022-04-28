@@ -1,0 +1,86 @@
+{
+    "name": "edu.mit.icc_broadcast_programmatic_intentfilter", 
+    "analysis_end": 1628844085, 
+    "analysis_start": 1628844082, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 2, 
+                    "instruction": {
+                        "class_name": "edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest", 
+                        "method": "<edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void onDestroy()>", 
+                        "statement": "virtualinvoke $r0.<edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void sendBroadcast(android.content.Intent)>($r1)", 
+                        "id": 8
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "edu.mit.icc_broadcast_programmatic_intentfilter.action"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "imei"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "edu.mit.icc_broadcast_programmatic_intentfilter.action"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest", 
+                "method": "<edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke $r0.<edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r3)", 
+                "id": 8
+            }, 
+            "name": "edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1", 
+            "exported": true
+        }
+    ]
+}

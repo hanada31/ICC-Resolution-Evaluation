@@ -1,0 +1,40 @@
+{
+    "name": "lu.uni.trux.raicc.setRepeating", 
+    "analysis_end": 1628845851, 
+    "analysis_start": 1628845845, 
+    "used_permissions": [
+        "android.permission.SEND_SMS", 
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "lu.uni.trux.raicc.setRepeating.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 0, 
+            "name": "lu.uni.trux.raicc.setRepeating.TargetActivity", 
+            "exported": false
+        }
+    ]
+}

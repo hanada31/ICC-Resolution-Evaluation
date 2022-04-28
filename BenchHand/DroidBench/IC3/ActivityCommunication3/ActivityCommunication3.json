@@ -1,0 +1,137 @@
+{
+    "name": "edu.mit.icc_componentname_class_constant",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.icc_componentname_class_constant.OutFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<edu.mit.icc_componentname_class_constant.OutFlowActivity: void startActivity(android.content.Intent)>(r3)",
+                        "class_name": "edu.mit.icc_componentname_class_constant.OutFlowActivity",
+                        "method": "<edu.mit.icc_componentname_class_constant.OutFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 19
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "edu/mit/icc_componentname_class_constant/InFlowActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "edu.mit.icc_componentname_class_constant"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_componentname_class_constant.InFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_componentname_class_constant.InFlowActivity",
+                        "method": "<edu.mit.icc_componentname_class_constant.InFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_component_class_constant.ACTION"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_componentname_class_constant.IsolateActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_componentname_class_constant.IsolateActivity",
+                        "method": "<edu.mit.icc_componentname_class_constant.IsolateActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_component_class_constant.EDIT"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031944,
+    "analysis_end": 1639031946
+}

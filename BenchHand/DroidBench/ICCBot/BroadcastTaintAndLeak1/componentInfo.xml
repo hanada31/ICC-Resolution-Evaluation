@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1" action="edu.mit.icc_broadcast_programmatic_intentfilter.action"/>
+  </component>
+  <component name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1" type="Receiver">
+    <manifest>
+      <intent_filter action="edu.mit.icc_broadcast_programmatic_intentfilter.action"/>
+    </manifest>
+  </component>
+</root>

@@ -1,0 +1,80 @@
+{
+    "name": "lu.uni.snt.serval",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.snt.serval.IntentSource1",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "(.*)",
+                    "instruction": {
+                        "statement": "r10 = virtualinvoke r2.<android.os.Bundle: java.lang.Object get(java.lang.String)>(r6)",
+                        "class_name": "lu.uni.snt.serval.IntentSource1",
+                        "method": "<lu.uni.snt.serval.IntentSource1: void onActivityResult(int,int,android.content.Intent)>",
+                        "id": 18
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<lu.uni.snt.serval.IntentSource1: void startActivityForResult(android.content.Intent,int)>(r2, b1)",
+                        "class_name": "lu.uni.snt.serval.IntentSource1",
+                        "method": "<lu.uni.snt.serval.IntentSource1: void onCreate(android.os.Bundle)>",
+                        "id": 9
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 1,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "<INTENT>"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031911,
+    "analysis_end": 1639031913
+}

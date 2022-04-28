@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.nutomic.syncthingandroid.activities.WebGuiActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/activities/WebGuiActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.MainActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/activities/MainActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.FirstStartActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/MainActivity;=&gt;onResume()V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/activities/MainActivity;=&gt;lambda$createRestartDialog$5$MainActivity(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.receiver.AppConfigReceiver" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/receiver/AppConfigReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.fragments.DrawerFragment" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.WebGuiActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.SettingsActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/DrawerFragment;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.fragments.FolderListFragment" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.FolderActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/FolderListFragment;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.FolderActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/FolderListFragment;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.fragments.DeviceListFragment" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.DeviceActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/DeviceListFragment;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.DeviceActivity" encoded_callback="Lcom/nutomic/syncthingandroid/fragments/DeviceListFragment;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.FirstStartActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.MainActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FirstStartActivity;=&gt;startApp()V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.WebGuiActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FirstStartActivity;=&gt;startApp()V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.receiver.BootReceiver" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/receiver/BootReceiver;=&gt;startServiceCompat(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.service.SyncthingRunnable" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/service/SyncthingRunnable;=&gt;run(Z)Ljava/lang/String;"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.SyncthingActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.service.SyncthingService" encoded_callback="Lcom/nutomic/syncthingandroid/activities/SyncthingActivity;=&gt;onResume()V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.StateDialogActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.SettingsActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/StateDialogActivity;=&gt;lambda$showDisabledDialog$1$StateDialogActivity(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.FolderActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.PullOrderDialogActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FolderActivity;=&gt;showPullOrderDialog()V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.FolderTypeDialogActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FolderActivity;=&gt;showFolderTypeDialog()V"/>
+<ChildActivity name="com.nutomic.syncthingandroid.activities.VersioningDialogActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FolderActivity;=&gt;showVersioningDialog()V"/>
+</Activity >
+<Activity name="com.nutomic.syncthingandroid.activities.FolderPickerActivity" >
+<ChildActivity name="com.nutomic.syncthingandroid.activities.FolderPickerActivity" encoded_callback="Lcom/nutomic/syncthingandroid/activities/FolderPickerActivity;=&gt;createIntent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;"/>
+</Activity >
+</ActivityGraph>

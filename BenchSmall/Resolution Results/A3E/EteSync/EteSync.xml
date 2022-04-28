@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.etesync.syncadapter.syncadapter.SyncNotification" >
+<ChildActivity name="com.etesync.syncadapter.ui.AccountSettingsActivity" encoded_callback="Lcom/etesync/syncadapter/syncadapter/SyncNotification$NotificationHandlerActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.etesync.syncadapter.ui.DebugInfoActivity" encoded_callback="Lcom/etesync/syncadapter/syncadapter/SyncNotification$NotificationHandlerActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.AccountActivity" >
+<ChildActivity name="com.etesync.syncadapter.ui.AccountSettingsActivity" encoded_callback="Lcom/etesync/syncadapter/ui/AccountActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.CreateCollectionActivity" >
+<ChildActivity name="com.etesync.syncadapter.ui.AccountActivity" encoded_callback="Lcom/etesync/syncadapter/ui/CreateCollectionActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.AccountSettingsActivity" >
+<ChildActivity name="com.etesync.syncadapter.ui.AccountActivity" encoded_callback="Lcom/etesync/syncadapter/ui/AccountSettingsActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.AccountsActivity" >
+<ChildActivity name="com.etesync.syncadapter.ui.setup.LoginActivity" encoded_callback="Lcom/etesync/syncadapter/ui/AccountsActivity$onCreate$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.AccountListFragment" >
+<ChildActivity name="com.etesync.syncadapter.ui.AccountActivity" encoded_callback="Lcom/etesync/syncadapter/ui/AccountListFragment;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.setup.DetectConfigurationFragment" >
+<ChildActivity name="com.etesync.syncadapter.ui.DebugInfoActivity" encoded_callback="Lcom/etesync/syncadapter/ui/setup/DetectConfigurationFragment$NothingDetectedFragment$onCreateDialog$1;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.setup.LoginCredentialsChangeFragment" >
+<ChildActivity name="com.etesync.syncadapter.ui.DebugInfoActivity" encoded_callback="Lcom/etesync/syncadapter/ui/setup/LoginCredentialsChangeFragment$NothingDetectedFragment$onCreateDialog$1;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.ui.ExceptionInfoFragment" >
+<ChildActivity name="com.etesync.syncadapter.ui.DebugInfoActivity" encoded_callback="Lcom/etesync/syncadapter/ui/ExceptionInfoFragment$onCreateDialog$dialog$1;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="com.etesync.syncadapter.log.Logger" >
+<ChildActivity name="com.etesync.syncadapter.ui.AppSettingsActivity" encoded_callback="Lcom/etesync/syncadapter/log/Logger;=&gt;reinitialize()V"/>
+</Activity >
+</ActivityGraph>

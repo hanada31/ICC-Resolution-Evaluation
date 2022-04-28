@@ -1,0 +1,68 @@
+{
+    "name": "org.arguslab.rpc_localservice", 
+    "analysis_end": 1628844459, 
+    "analysis_start": 1628844456, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "kind": 1, 
+            "name": "org.arguslab.rpc_localservice.LocalService", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 1, 
+                    "instruction": {
+                        "class_name": "org.arguslab.rpc_localservice.MainActivity", 
+                        "method": "<org.arguslab.rpc_localservice.MainActivity: void onStart()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.rpc_localservice.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r1, $r2, 1)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/arguslab/rpc_localservice/LocalService"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.arguslab.rpc_localservice"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.rpc_localservice.MainActivity", 
+            "exported": true
+        }
+    ]
+}

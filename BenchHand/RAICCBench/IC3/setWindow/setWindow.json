@@ -1,0 +1,51 @@
+{
+    "name": "lu.uni.trux.raicc.setWindow",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.SEND_SMS",
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.setWindow.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.setWindow.TargetActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r1)",
+                        "class_name": "lu.uni.trux.raicc.setWindow.TargetActivity",
+                        "method": "<lu.uni.trux.raicc.setWindow.TargetActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032168,
+    "analysis_end": 1639032170
+}

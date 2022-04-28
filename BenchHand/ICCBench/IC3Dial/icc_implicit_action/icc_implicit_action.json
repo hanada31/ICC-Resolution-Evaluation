@@ -1,0 +1,86 @@
+{
+    "name": "org.arguslab.icc_implicit_action", 
+    "analysis_end": 1628844475, 
+    "analysis_start": 1628844473, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_action.MainActivity", 
+                        "method": "<org.arguslab.icc_implicit_action.MainActivity: void leakImei()>", 
+                        "statement": "virtualinvoke $r0.<org.arguslab.icc_implicit_action.MainActivity: void startActivity(android.content.Intent)>($r1)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "amandroid.impliciticctest_action.testaction"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "data"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_action.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "amandroid.impliciticctest_action.testaction"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_action.FooActivity", 
+            "exported": true
+        }
+    ]
+}

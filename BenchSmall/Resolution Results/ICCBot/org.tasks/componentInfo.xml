@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.todoroo.astrid.activity.TaskListActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+      <intent_filter action="android.intent.action.VIEW" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskEditActivity, interICC_android.speech.action.RECOGNIZE_SPEECH, , com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, org.tasks.preferences.BasicPreferences, com.todoroo.astrid.activity.TaskListFragment, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, com.todoroo.astrid.actfm.TagSettingsActivity, org.tasks.receivers.RefreshReceiver" action="android.speech.action.RECOGNIZE_SPEECH, android.intent.action.VIEW, org.tasks.REFRESH" flags="FLAG_ACTIVITY_CLEAR_TOP " extras="Object-new android.content.Intent:v4ntp_,"/>
+  </component>
+  <component name="com.todoroo.astrid.activity.ShortcutActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity" action="android.intent.action.VIEW" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK " extras="Object-new android.content.Intent:v4ntp_,"/>
+  </component>
+  <component name="org.tasks.receivers.BootCompletedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="org.tasks.scheduling.CalendarNotificationIntentService, org.tasks.scheduling.BackupIntentService, org.tasks.scheduling.GtasksBackgroundService, org.tasks.scheduling.MidnightRefreshService, org.tasks.scheduling.RefreshSchedulerIntentService, org.tasks.scheduling.AlarmSchedulingIntentService, org.tasks.scheduling.ReminderSchedulerIntentService"/>
+  </component>
+  <component name="org.tasks.activities.DeleteCompletedActivity" type="Activity"/>
+  <component name="org.tasks.activities.DeleteAllCalendarEventsActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.service.UpgradeActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.preferences.BasicPreferences" type="Activity">
+    <sender destination="java.lang.Class"/>
+  </component>
+  <component name="org.tasks.activities.ClearAllDataActivity" type="Activity"/>
+  <component name="org.tasks.activities.PurgeDeletedActivity" type="Activity"/>
+  <component name="org.tasks.widget.ScrollableWidgetUpdateService" type="Service" permission="android.permission.BIND_REMOTEVIEWS"/>
+  <component name="org.tasks.receivers.RepeatConfirmationReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.TASK_REPEATED"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.preferences.DateShortcutPreferences" type="Activity"/>
+  <component name="com.todoroo.astrid.actfm.TagSettingsActivity" type="Activity">
+    <sender action="org.tasks.TAG_RENAMED, org.tasks.TAG_DELETED"/>
+  </component>
+  <component name="org.tasks.activities.DeleteCompletedEventsActivity" type="Activity"/>
+  <component name="org.tasks.receivers.CompleteTaskReceiver" type="Receiver">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.reminders.NotificationActivity" type="Activity"/>
+  <component name="org.tasks.activities.AddAttachmentActivity" type="Activity">
+    <sender destination="org.tasks.activities.CameraActivity, com.todoroo.astrid.files.FileExplore"/>
+  </component>
+  <component name="org.tasks.receivers.FirstLaunchReceiver" type="Receiver">
+    <sender destination="org.tasks.scheduling.BackupIntentService, org.tasks.scheduling.MidnightRefreshService"/>
+  </component>
+  <component name="org.tasks.preferences.MiscellaneousPreferences" type="Activity">
+    <sender destination="org.tasks.scheduling.CalendarNotificationIntentService, interICC_android.speech.tts.engine.INSTALL_TTS_DATA, , interICC_android.speech.tts.engine.CHECK_TTS_DATA, , com.todoroo.astrid.files.FileExplore" action="android.speech.tts.engine.INSTALL_TTS_DATA, android.speech.tts.engine.CHECK_TTS_DATA"/>
+  </component>
+  <component name="com.todoroo.astrid.activity.BeastModePreferences" type="Activity"/>
+  <component name="com.todoroo.astrid.files.AACRecordingActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.activity.FilterShortcutActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender action="com.android.launcher.action.INSTALL_SHORTCUT, android.intent.action.VIEW" extras="Object-new android.content.Intent:v4ntp_,,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="org.tasks.receivers.ListNotificationReceiver" type="Receiver" exported="true"/>
+  <component name="com.todoroo.astrid.calls.PhoneStateChangedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PHONE_STATE"/>
+    </manifest>
+  </component>
+  <component name="com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.REFRESH"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.activities.CameraActivity" type="Activity">
+    <sender destination="interICC_android.media.action.IMAGE_CAPTURE, " action="android.media.action.IMAGE_CAPTURE" flags="FLAG_GRANT_READ_URI_PERMISSION , FLAG_GRANT_WRITE_URI_PERMISSION "/>
+  </component>
+  <component name="org.tasks.scheduling.ReminderSchedulerIntentService" type="Service"/>
+  <component name="com.todoroo.astrid.timers.TimerTaskCompleteListener" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.TASK_COMPLETED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender action="android.intent.action.VIEW" flags="FLAG_ACTIVITY_CLEAR_TOP " extras="Object-new android.content.Intent:v4ntp_,"/>
+  </component>
+  <component name="org.tasks.activities.FilterSelectionActivity" type="Activity" exported="true"/>
+  <component name="org.tasks.activities.ResetPreferencesActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.widget.WidgetConfigActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity, com.todoroo.astrid.activity.TaskEditActivity, org.tasks.widget.ScrollableWidgetUpdateService, com.todoroo.astrid.widget.TasksWidget" action=", E, L" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.todoroo.astrid.repeats.RepeatTaskCompleteListener" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.TASK_COMPLETED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, org.tasks.receivers.RepeatConfirmationReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.TASK_REPEATED, org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.scheduling.CalendarNotificationIntentService" type="Service">
+    <sender destination="com.todoroo.astrid.gcal.CalendarAlarmReceiver" action="org.tasks.CALENDAR_EVENT" data=""/>
+  </component>
+  <component name="org.tasks.preferences.BackupPreferences" type="Activity">
+    <sender destination="com.todoroo.astrid.files.FileExplore"/>
+  </component>
+  <component name="com.todoroo.astrid.gcal.CalendarAlarmListCreator" type="Activity">
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity, org.tasks.preferences.BasicPreferences"/>
+  </component>
+  <component name="com.todoroo.astrid.widget.TasksWidget" type="Receiver">
+    <manifest>
+      <intent_filter action="com.todoroo.astrid.widget.TasksWidget.EDIT_TASK, android.appwidget.action.APPWIDGET_UPDATE, org.tasks.REFRESH, com.todoroo.astrid.widget.TasksWidget.COMPLETE_TASK"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity, com.todoroo.astrid.activity.TaskEditActivity, org.tasks.widget.ScrollableWidgetUpdateService, com.todoroo.astrid.widget.TasksWidget" action=", E, L" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.tasks.receivers.MyPackageReplacedReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.MY_PACKAGE_REPLACED"/>
+    </manifest>
+    <sender destination="org.tasks.scheduling.CalendarNotificationIntentService, org.tasks.scheduling.BackupIntentService, org.tasks.scheduling.GtasksBackgroundService, org.tasks.scheduling.MidnightRefreshService, org.tasks.scheduling.RefreshSchedulerIntentService, org.tasks.scheduling.AlarmSchedulingIntentService, org.tasks.scheduling.ReminderSchedulerIntentService"/>
+  </component>
+  <component name="org.tasks.activities.ExportTaskActivity" type="Activity"/>
+  <component name="org.tasks.reminders.SnoozeActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.activities.ImportTaskActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.receivers.TaskNotificationReceiver" type="Receiver">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.reminders.MissedCallActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity, com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="android.intent.action.VIEW, org.tasks.REFRESH" data=""/>
+  </component>
+  <component name="org.tasks.activities.TimePickerActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.core.DefaultsPreferences" type="Activity">
+    <sender destination="org.tasks.activities.CalendarSelectionActivity"/>
+  </component>
+  <component name="org.tasks.preferences.AppearancePreferences" type="Activity"/>
+  <component name="org.tasks.scheduling.MidnightRefreshService" type="Service">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.receivers.RefreshReceiver" type="Receiver">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="com.todoroo.astrid.files.FileExplore" type="Activity"/>
+  <component name="org.tasks.scheduling.BackupIntentService" type="Service"/>
+  <component name="org.tasks.activities.DonationActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity" action="android.intent.action.VIEW" data="http://tasks.org/donate"/>
+  </component>
+  <component name="org.tasks.activities.DateAndTimePickerActivity" type="Activity"/>
+  <component name="org.tasks.scheduling.AlarmSchedulingIntentService" type="Service"/>
+  <component name="org.tasks.activities.CalendarSelectionActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.activity.TaskEditActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.intent.action.VIEW" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskEditActivity, com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, com.todoroo.astrid.activity.TaskEditFragment, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="android.intent.action.VIEW, org.tasks.REFRESH" flags="FLAG_ACTIVITY_CLEAR_TOP " extras="Object-new android.content.Intent:v4ntp_,"/>
+  </component>
+  <component name="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.REFRESH"/>
+    </manifest>
+  </component>
+  <component name="com.todoroo.astrid.alarms.AlarmTaskRepeatListener" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.TASK_REPEATED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender action="ALARM"/>
+  </component>
+  <component name="com.todoroo.astrid.core.OldTaskPreferences" type="Activity">
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="com.todoroo.astrid.gcal.CalendarAlarmReceiver" type="Receiver">
+    <sender destination="com.todoroo.astrid.gcal.CalendarReminderActivity" flags="FLAG_ACTIVITY_MULTIPLE_TASK FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.tasks.ui.NavigationDrawerFragment$RefreshReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.REFRESH"/>
+    </manifest>
+  </component>
+  <component name="com.todoroo.astrid.gcal.CalendarReminderActivity" type="Activity">
+    <sender destination="com.todoroo.astrid.activity.TaskListActivity, com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, org.tasks.preferences.BasicPreferences, com.todoroo.astrid.gcal.CalendarAlarmReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.gcal.CalendarAlarmListCreator, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.CALENDAR_EVENT, org.tasks.REFRESH" data=""/>
+  </component>
+  <component name="com.todoroo.astrid.actfm.FilterSettingsActivity" type="Activity">
+    <sender action="org.tasks.FILTER_RENAMED, org.tasks.FILTER_DELETED"/>
+  </component>
+  <component name="com.todoroo.astrid.core.CustomFilterActivity" type="Activity"/>
+  <component name="org.tasks.preferences.HelpAndFeedbackActivity" type="Activity"/>
+  <component name="org.tasks.activities.SortActivity" type="Activity"/>
+  <component name="com.todoroo.astrid.activity.ShareLinkActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SEND" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.activity.TaskEditActivity, interICC_android.speech.action.RECOGNIZE_SPEECH, , com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, org.tasks.receivers.FirstLaunchReceiver, org.tasks.preferences.BasicPreferences, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, com.todoroo.astrid.actfm.TagSettingsActivity, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="com.todoroo.astrid.gcal.GCalTaskCompleteListener" type="Receiver">
+    <manifest>
+      <intent_filter action="org.tasks.TASK_COMPLETED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+  </component>
+  <component name="org.tasks.voice.VoiceCommandActivity" type="Activity">
+    <manifest>
+      <intent_filter action="com.google.android.gm.action.AUTO_SEND" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.todoroo.astrid.adapter.FilterAdapter$FilterListUpdateReceiver, com.todoroo.astrid.activity.TaskListFragment$RefreshReceiver, org.tasks.ui.NavigationDrawerFragment$RefreshReceiver, com.todoroo.astrid.widget.TasksWidget, org.tasks.receivers.RefreshReceiver" action="org.tasks.REFRESH"/>
+  </component>
+  <component name="org.tasks.scheduling.RefreshSchedulerIntentService" type="Service">
+    <sender destination="org.tasks.receivers.RefreshReceiver"/>
+  </component>
+  <component name="com.todoroo.astrid.reminders.ReminderPreferences" type="Activity"/>
+</root>

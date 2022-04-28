@@ -1,0 +1,114 @@
+{
+    "name": "edu.mit.icc_event_ordering",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.icc_event_ordering.OutFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<edu.mit.icc_event_ordering.OutFlowActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "edu.mit.icc_event_ordering.OutFlowActivity",
+                        "method": "<edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 8
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "edu.mit.icc_event_ordering.ACTION"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_event_ordering.IsolateActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_event_ordering.IsolateActivity",
+                        "method": "<edu.mit.icc_event_ordering.IsolateActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_event_ordering.EDIT"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_event_ordering.InFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_event_ordering.ACTION"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031906,
+    "analysis_end": 1639031908
+}

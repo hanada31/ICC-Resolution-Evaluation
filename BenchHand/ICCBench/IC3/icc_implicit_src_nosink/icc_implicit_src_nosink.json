@@ -1,0 +1,68 @@
+{
+    "name": "org.arguslab.icc_implicit_src_nosink", 
+    "analysis_end": 1624856430, 
+    "analysis_start": 1624856428, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "amandroid.impliciticctest_action.testaction"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_src_nosink.FooActivity", 
+                        "method": "<org.arguslab.icc_implicit_src_nosink.FooActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "r9 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r8)", 
+                        "id": 11
+                    }, 
+                    "extra": "data"
+                }
+            ], 
+            "name": "org.arguslab.icc_implicit_src_nosink.FooActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_src_nosink.MainActivity", 
+            "exported": true
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="org.ligi.passandroid.FullscreenMapActivity">
+    <destination name="org.ligi.passandroid.FullscreenMapActivity" type="Act2Act" method="&lt;org.ligi.passandroid.LocationsMapFragment$onCreateView$1$1$1: void a(com.google.android.gms.maps.model.LatLng)&gt;" InstructionId="-1"/>
+    <destination name="org.ligi.passandroid.ui.PassEditActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassMenuOptions: boolean a(android.view.MenuItem)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.SearchPassesIntentService">
+    <destination name="org.ligi.passandroid.ui.PassListActivity" type="NonAct2Act" method="&lt;org.ligi.passandroid.ui.SearchPassesIntentService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="27" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.InstallListener">
+    <destination name="org.ligi.passandroid.ui.PassImportActivity" type="NonAct2Act" method="&lt;org.ligi.passandroid.InstallListener: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="11" extras="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </source>
+  <source name="org.ligi.passandroid.ui.PassEditActivity"/>
+  <source name="org.ligi.passandroid.ui.HelpActivity"/>
+  <source name="org.ligi.passandroid.ui.TouchImageActivity"/>
+  <source name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView"/>
+  <source name="org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity">
+    <destination name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView" type="Act2Act" method="&lt;org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity$3: void onClick(android.content.DialogInterface,int)&gt;" InstructionId="14" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.PassImportActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.quirk_fix.URLRewriteActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="29" data="null" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.ExtractURLAsIphoneActivity">
+    <destination name="org.ligi.passandroid.ui.PassImportActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask: void a(java.lang.String)&gt;" InstructionId="34" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.quirk_fix.OpenIphoneWebView" type="Act2Act" method="&lt;org.ligi.passandroid.ui.ExtractURLAsIphoneActivity$DownloadExtractAndStartImportTask: void a(java.lang.String)&gt;" InstructionId="14" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity">
+    <destination name="org.ligi.passandroid.ui.PassImportActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.quirk_fix.USAirwaysLoadActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="97" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.PreferenceActivity"/>
+  <source name="org.ligi.passandroid.ui.PassViewActivity">
+    <destination name="org.ligi.passandroid.ui.TouchImageActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassViewActivity$processImage$1: void onClick(android.view.View)&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.FullscreenBarcodeActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassViewActivity$onResumeFragments$2: void onClick(android.view.View)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.PassEditActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassMenuOptions: boolean a(android.view.MenuItem)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.PassListActivity">
+    <destination name="org.ligi.passandroid.ui.PassImportActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassListActivity: void onActivityResult(int,int,android.content.Intent)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.PassEditActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassListActivity$onCreate$2: void onClick(android.view.View)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.SearchPassesIntentService" type="Act2NonAct" method="&lt;org.ligi.passandroid.ui.PassListActivity: void f()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="org.ligi.passandroid.ui.HelpActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassListActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.FullscreenBarcodeActivity">
+    <destination name="org.ligi.passandroid.ui.PassEditActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassMenuOptions: boolean a(android.view.MenuItem)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="org.ligi.passandroid.ui.PassImportActivity">
+    <destination name="org.ligi.passandroid.ui.PassViewActivity" type="Act2Act" method="&lt;org.ligi.passandroid.ui.PassImportActivity$doImport$1$1$1: void a(java.lang.String)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+</root>

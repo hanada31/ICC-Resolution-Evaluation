@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="org.osmdroid.tileprovider.modules.MapTileFileStorageProviderBase$MyBroadcastReceiver"/>
+  <source name="com.oriondev.moneywallet.ui.activity.PeriodDetailActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.service.disk.DiskBackupHandlerIntentService">
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void scheduleRecurrenceTask(android.content.Context)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.service.AbstractBackupHandlerIntentService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.service.RecurrenceHandlerIntentService" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void startBackgroundTask(android.content.Context)&gt;" InstructionId="5" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditTransactionModelActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CategoryPickerActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.CategoryPicker: void showPicker(boolean,boolean)&gt;" InstructionId="8" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditPlaceActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.PlacePickerActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MapPlacePicker: void showPicker()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.PlacePickerActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditTransferActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.service.AttachmentHandlerIntentService" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.picker.AttachmentPicker: void deleteAttachmentAsync(com.oriondev.moneywallet.model.Attachment)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.CurrencyConverterActivity">
+    <destination name="com.oriondev.moneywallet.service.openexchangerates.OpenExchangeRatesCurrencyRateDownloadIntentService" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.ui.activity.CurrencyConverterActivity: boolean onMenuItemClick(android.view.MenuItem)&gt;" InstructionId="6" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.AboutActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditBudgetActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.CategoryPickerActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.CategoryPicker: void showPicker(boolean,boolean)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditRecurrentTransactionActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CategoryPickerActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.CategoryPicker: void showPicker(boolean,boolean)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.SearchActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.SearchActivity: void onTransactionClick(long)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.service.AttachmentHandlerIntentService"/>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditWalletActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CurrencyListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.CurrencyPicker: void showPicker()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.CalculatorActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity">
+    <destination name="com.oriondev.moneywallet.service.AttachmentHandlerIntentService" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.picker.AttachmentPicker: void deleteAttachmentAsync(com.oriondev.moneywallet.model.Attachment)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CategoryPickerActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.CategoryPicker: void showPicker(boolean,boolean)&gt;" InstructionId="8" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditTransferActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity: void onViewCreated(android.os.Bundle)&gt;" InstructionId="344" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditTransferActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity: void onViewCreated(android.os.Bundle)&gt;" InstructionId="214" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.CalendarActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.LauncherActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.MainActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.LauncherActivity: void startMainActivity()&gt;" InstructionId="3" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.TutorialActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.LauncherActivity$1: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.service.UpgradeLegacyEditionIntentService" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.ui.activity.LauncherActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="22" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.BackupListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.LauncherActivity$2: void onClick(android.view.View)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.service.openexchangerates.OpenExchangeRatesCurrencyRateDownloadIntentService"/>
+  <source name="com.oriondev.moneywallet.ui.activity.BackupListActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditRecurrentTransferActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="Act2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditPersonActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.CurrencyListActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditDebtActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.service.RecurrenceHandlerIntentService">
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.CategoryPickerActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditCategoryActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.CategoryPickerActivity: void onFloatingActionButtonClick()&gt;" InstructionId="13" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditCategoryActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver">
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void scheduleDailyNotification(android.content.Context)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity" type="NonAct2Act" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="20" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void scheduleDailyNotification(android.content.Context,int)&gt;" InstructionId="15" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.broadcast.BootBroadcastReceiver">
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void scheduleDailyNotification(android.content.Context,int)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void scheduleRecurrenceTask(android.content.Context)&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.service.RecurrenceHandlerIntentService" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void startBackgroundTask(android.content.Context)&gt;" InstructionId="5" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.TransactionListActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.LockActivity"/>
+  <source name="com.oriondev.moneywallet.ui.activity.MapActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.TransactionListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MapActivity: void onInfoWindowClick(long)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.MainActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditWalletActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MainActivity: boolean onProfileChanged(android.view.View,com.mikepenz.materialdrawer.model.interfaces.IProfile,boolean)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.WalletListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MainActivity: boolean onProfileChanged(android.view.View,com.mikepenz.materialdrawer.model.interfaces.IProfile,boolean)&gt;" InstructionId="21" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MainActivity: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="27" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.AboutActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MainActivity: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CurrencyConverterActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.MainActivity: boolean onItemClick(android.view.View,int,com.mikepenz.materialdrawer.model.interfaces.IDrawerItem)&gt;" InstructionId="23" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver">
+    <destination name="com.oriondev.moneywallet.service.RecurrenceHandlerIntentService" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void startBackgroundTask(android.content.Context)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void scheduleRecurrenceTask(android.content.Context)&gt;" InstructionId="-1" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditSavingActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditEventActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.IconListActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.IconPicker: void startIconPickerActivity()&gt;" InstructionId="4" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.service.UpgradeLegacyEditionIntentService">
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver: void scheduleDailyNotification(android.content.Context,int)&gt;" InstructionId="15" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.DailyBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.storage.database.LegacyEditionImporter: void importPreferences()&gt;" InstructionId="-1" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver" type="NonAct2NonAct" method="&lt;com.oriondev.moneywallet.broadcast.RecurrenceBroadcastReceiver: void schedulePendingIntent(android.content.Context,java.util.Date)&gt;" InstructionId="7" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.NewEditTransferModelActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.CalculatorActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.picker.MoneyPicker: void showPicker()&gt;" InstructionId="9" extras="" flags=""/>
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.IconListActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.WalletListActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.LockActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.base.BaseActivity: void onResume()&gt;" InstructionId="17" extras="" flags=""/>
+  </source>
+  <source name="com.oriondev.moneywallet.ui.activity.TutorialActivity">
+    <destination name="com.oriondev.moneywallet.ui.activity.NewEditWalletActivity" type="Act2Act" method="&lt;com.oriondev.moneywallet.ui.activity.TutorialActivity: void onDonePressed(android.support.v4.app.Fragment)&gt;" InstructionId="5" extras="" flags=""/>
+  </source>
+</root>

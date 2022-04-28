@@ -1,0 +1,131 @@
+{
+    "name": "edu.mit.icc_action_string_operations",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.icc_action_string_operations.IsolateActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_action_string_operations.IsolateActivity",
+                        "method": "<edu.mit.icc_action_string_operations.IsolateActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_action_string_operations.EDIT"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_action_string_operations.InFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_action_string_operations.InFlowActivity",
+                        "method": "<edu.mit.icc_action_string_operations.InFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ],
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "edu.mit.icc_action_string_operations.ACTION"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_action_string_operations.OutFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<edu.mit.icc_action_string_operations.OutFlowActivity: void startActivity(android.content.Intent)>(r2)",
+                        "class_name": "edu.mit.icc_action_string_operations.OutFlowActivity",
+                        "method": "<edu.mit.icc_action_string_operations.OutFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 16
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0,
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                },
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031949,
+    "analysis_end": 1639031950
+}

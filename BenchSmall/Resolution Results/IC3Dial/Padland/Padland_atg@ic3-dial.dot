@@ -1,0 +1,27 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+NewPadActivity[color = red];
+PadLandDataActivity[color = red];
+SplashActivity[style=filled, fillcolor=orange, color = red];
+SettingsActivity[color = red];
+PadViewActivity[style=filled, fillcolor=pink, color = red];
+PadInfoActivity[color = red];
+IntroActivity[color = red];
+PadListActivity[style=filled, fillcolor=pink, color = red];
+About[color = red];
+ServerListActivity[color = red];
+PadContentProvider[color = violet];
+PadLandDataActivity->PadListActivity;
+PadInfoActivity->PadListActivity;
+PadListActivity->PadListActivity;
+}

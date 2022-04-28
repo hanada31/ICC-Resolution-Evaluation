@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.forrestguice.suntimeswidget.SuntimesSettingsActivity" >
+<ChildActivity name="com.forrestguice.suntimeswidget.SuntimesWidgetListActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/SuntimesSettingsActivity;=&gt;initLegacyPrefs()V"/>
+</Activity >
+<Activity name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications" >
+<ChildActivity name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications" encoded_callback="Lcom/forrestguice/suntimeswidget/alarmclock/AlarmNotifications;=&gt;getAlarmIntent(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;)Landroid/content/Intent;"/>
+<ChildActivity name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications" encoded_callback="Lcom/forrestguice/suntimeswidget/alarmclock/AlarmNotifications$NotificationService;=&gt;getNotificationIntent(Landroid/content/Context;Ljava/lang/String;Landroid/net/Uri;)Landroid/content/Intent;"/>
+<ChildActivity name="com.forrestguice.suntimeswidget.alarmclock.AlarmNotifications" encoded_callback="Lcom/forrestguice/suntimeswidget/alarmclock/AlarmNotifications;=&gt;getServiceIntent(Landroid/content/Context;)Landroid/content/Intent;"/>
+<ChildActivity name="com.forrestguice.suntimeswidget.alarmclock.ui.AlarmClockActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/alarmclock/AlarmNotifications;=&gt;getAlarmListIntent(Landroid/content/Context;Ljava/lang/Long;)Landroid/content/Intent;"/>
+<ChildActivity name="com.forrestguice.suntimeswidget.alarmclock.ui.AlarmDismissActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/alarmclock/AlarmNotifications;=&gt;getFullscreenIntent(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/Intent;"/>
+</Activity >
+<Activity name="com.forrestguice.suntimeswidget.SuntimesActivity" >
+<ChildActivity name="com.forrestguice.suntimeswidget.SuntimesSettingsActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/SuntimesActivity;=&gt;showGeneralSettings()V"/>
+</Activity >
+<Activity name="com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity" >
+<ChildActivity name="com.forrestguice.suntimeswidget.themes.WidgetThemeConfigActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/themes/WidgetThemeListActivity;=&gt;addTheme()V"/>
+</Activity >
+<Activity name="com.forrestguice.suntimeswidget.SuntimesConfigActivity0" >
+<ChildActivity name="com.forrestguice.suntimeswidget.themes.WidgetThemeListActivity" encoded_callback="Lcom/forrestguice/suntimeswidget/SuntimesConfigActivity0;=&gt;themeEditorIntent(Landroid/content/Context;)Landroid/content/Intent;"/>
+<ChildActivity name="com.forrestguice.suntimeswidget.SuntimesWidget0" encoded_callback="Lcom/forrestguice/suntimeswidget/SuntimesConfigActivity0;=&gt;updateWidgets(Landroid/content/Context;[I)V"/>
+</Activity >
+<Activity name="com.forrestguice.suntimeswidget.SolsticeWidget0ConfigActivity" >
+<ChildActivity name="com.forrestguice.suntimeswidget.SolsticeWidget0" encoded_callback="Lcom/forrestguice/suntimeswidget/SolsticeWidget0ConfigActivity;=&gt;updateWidgets(Landroid/content/Context;[I)V"/>
+</Activity >
+</ActivityGraph>

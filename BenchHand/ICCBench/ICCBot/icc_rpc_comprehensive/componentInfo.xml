@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.arguslab.icc_rpc_comprehensive.FooActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+  </component>
+  <component name="org.arguslab.icc_rpc_comprehensive.BarActivity" type="Activity">
+    <sender destination="org.arguslab.icc_rpc_comprehensive.RemoteService"/>
+  </component>
+  <component name="org.arguslab.icc_rpc_comprehensive.RemoteService" type="Service" exported="true"/>
+</root>

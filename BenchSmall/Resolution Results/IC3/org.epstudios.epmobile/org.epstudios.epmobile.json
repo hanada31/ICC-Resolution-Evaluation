@@ -1,0 +1,4344 @@
+{
+    "analysis_end": 1638585682, 
+    "analysis_start": 1638585467, 
+    "version": 33, 
+    "name": "org.epstudios.epmobile", 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WctMorphologyCriteria", 
+                        "method": "<org.epstudios.epmobile.WctMorphologyCriteria: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WctMorphologyCriteria: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WctMorphologyCriteria", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScore", 
+                        "method": "<org.epstudios.epmobile.RiskScore: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScore: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/RiskScoreList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CmsIcd", 
+                        "method": "<org.epstudios.epmobile.CmsIcd: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CmsIcd: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ReferenceList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.CmsIcd", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Brugada", 
+                        "method": "<org.epstudios.epmobile.Brugada: void displayMorphologyCriteria()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Brugada: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/BrugadaMorphologyCriteria"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Brugada", 
+                        "method": "<org.epstudios.epmobile.Brugada: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Brugada: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Brugada", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpiVt", 
+                        "method": "<org.epstudios.epmobile.EpiVt: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpiVt: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/VtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.EpiVt", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ArvcOld", 
+                        "method": "<org.epstudios.epmobile.ArvcOld: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ArvcOld: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ArvcList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.ArvcOld", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Rwpt", 
+                        "method": "<org.epstudios.epmobile.Rwpt: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Rwpt: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Rwpt", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Prefs", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.HasBled", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Warfarin", 
+                        "method": "<org.epstudios.epmobile.Warfarin: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Warfarin: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DrugDoseCalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Warfarin", 
+                        "method": "<org.epstudios.epmobile.Warfarin: void displayDoses()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Warfarin: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DoseTable"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpDrugCalculatorActivity", 
+                        "method": "<org.epstudios.epmobile.EpDrugCalculatorActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpDrugCalculatorActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DrugDoseCalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Warfarin", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Hcm", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.OesilScore", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Arvc", 
+                        "method": "<org.epstudios.epmobile.Arvc: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Arvc: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ArvcList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Arvc", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpDrugCalculatorActivity", 
+                        "method": "<org.epstudios.epmobile.EpDrugCalculatorActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpDrugCalculatorActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DrugDoseCalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.DoseTable", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WpwModifiedArruda", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Qtc", 
+                        "method": "<org.epstudios.epmobile.Qtc: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Qtc: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Qtc", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Dofetilide", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQtEcg", 
+                        "method": "<org.epstudios.epmobile.LongQtEcg: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQtEcg: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LongQtEcg", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpMobile", 
+                        "method": "<org.epstudios.epmobile.EpMobile: void diagnosisList()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpMobile: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DiagnosisList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpMobile", 
+                        "method": "<org.epstudios.epmobile.EpMobile: void referenceList()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpMobile: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ReferenceList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpMobile", 
+                        "method": "<org.epstudios.epmobile.EpMobile: void calculatorList()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpMobile: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpMobile", 
+                        "method": "<org.epstudios.epmobile.EpMobile: void riskScores()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpMobile: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/RiskScoreList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.EpMobile", 
+            "exported": true
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LvhList", 
+                        "method": "<org.epstudios.epmobile.LvhList: void estes()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LvhList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Estes"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LvhList", 
+                        "method": "<org.epstudios.epmobile.LvhList: void otherLvh()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LvhList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LvhVoltage"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LvhList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CalculatorList", 
+                        "method": "<org.epstudios.epmobile.CalculatorList: void icdDayCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DayCalculator"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CalculatorList", 
+                        "method": "<org.epstudios.epmobile.CalculatorList: void qtcCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Qtc"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CalculatorList", 
+                        "method": "<org.epstudios.epmobile.CalculatorList: void drugDoseCalculators()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DrugDoseCalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CalculatorList", 
+                        "method": "<org.epstudios.epmobile.CalculatorList: void intervalRateCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CycleLength"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CalculatorList", 
+                        "method": "<org.epstudios.epmobile.CalculatorList: void ibwCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/IbwCalculator"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.CalculatorList", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WpwMilstein", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.MartinAlgorithm", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void vtList()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/VtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void lvhList()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LvhList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void atrialTachLocalization()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/AtrialTachLocalization"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void shortQt()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ShortQt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void arvc()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ArvcList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void brugadaEcg()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/BrugadaEcg"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void wctAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void wpw()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DiagnosisList", 
+                        "method": "<org.epstudios.epmobile.DiagnosisList: void longQt()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DiagnosisList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.DiagnosisList", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Rivaroxaban", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Entrainment", 
+                        "method": "<org.epstudios.epmobile.Entrainment: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Entrainment: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ReferenceList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Entrainment", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.IcdRisk", 
+                        "method": "<org.epstudios.epmobile.IcdRisk: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.IcdRisk: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/RiskScoreList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.IcdRisk", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Sotalol", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Hemorrhages", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Dabigatran", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQt", 
+                        "method": "<org.epstudios.epmobile.LongQt: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQt: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LongQt", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.AvAnnulusMap", 
+                        "method": "<org.epstudios.epmobile.AvAnnulusMap: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.AvAnnulusMap: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.AvAnnulusMap", 
+                        "method": "<org.epstudios.epmobile.AvAnnulusMap: void onCreate(android.os.Bundle)>", 
+                        "statement": "r16 = virtualinvoke r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>(r15)", 
+                        "id": 33
+                    }, 
+                    "extra": "location1"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.AvAnnulusMap", 
+                        "method": "<org.epstudios.epmobile.AvAnnulusMap: void onCreate(android.os.Bundle)>", 
+                        "statement": "r18 = virtualinvoke r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>(r17)", 
+                        "id": 36
+                    }, 
+                    "extra": "location2"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.AvAnnulusMap", 
+                        "method": "<org.epstudios.epmobile.AvAnnulusMap: void onCreate(android.os.Bundle)>", 
+                        "statement": "r4 = virtualinvoke r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>(r13)", 
+                        "id": 28
+                    }, 
+                    "extra": "message"
+                }
+            ], 
+            "name": "org.epstudios.epmobile.AvAnnulusMap", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.MitralAnnularVt", 
+                        "method": "<org.epstudios.epmobile.MitralAnnularVt: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.MitralAnnularVt: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/VtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.MitralAnnularVt", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.VtList", 
+                        "method": "<org.epstudios.epmobile.VtList: void epicardialVt()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.VtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/EpiVt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.VtList", 
+                        "method": "<org.epstudios.epmobile.VtList: void mitralAnnularVt()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.VtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/MitralAnnularVt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.VtList", 
+                        "method": "<org.epstudios.epmobile.VtList: void outflowTractVt()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.VtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/OutflowVt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.VtList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.AtrialTachLocalization", 
+                        "method": "<org.epstudios.epmobile.AtrialTachLocalization: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.AtrialTachLocalization: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DiagnosisList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.AtrialTachLocalization", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ReferenceList", 
+                        "method": "<org.epstudios.epmobile.ReferenceList: void brugadaDrugs()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ReferenceList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ReferenceList", 
+                        "method": "<org.epstudios.epmobile.ReferenceList: void entrainment()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ReferenceList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Entrainment"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ReferenceList", 
+                        "method": "<org.epstudios.epmobile.ReferenceList: void longQtDrugs()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ReferenceList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 7
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "android.intent.action.VIEW"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 5, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ReferenceList", 
+                        "method": "<org.epstudios.epmobile.ReferenceList: void normalEpValues()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ReferenceList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/NormalEpValues"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ReferenceList", 
+                        "method": "<org.epstudios.epmobile.ReferenceList: void icdCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ReferenceList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CmsIcd"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.ReferenceList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.IbwCalculator", 
+                        "method": "<org.epstudios.epmobile.IbwCalculator: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.IbwCalculator: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.IbwCalculator", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.About", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Chads", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.SyncopeRiskScoreList", 
+                        "method": "<org.epstudios.epmobile.SyncopeRiskScoreList: void syncopeSfRule()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.SyncopeRiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/SyncopeSfRule"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.SyncopeRiskScoreList", 
+                        "method": "<org.epstudios.epmobile.SyncopeRiskScoreList: void martinAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.SyncopeRiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/MartinAlgorithm"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.SyncopeRiskScoreList", 
+                        "method": "<org.epstudios.epmobile.SyncopeRiskScoreList: void oesilScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.SyncopeRiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/OesilScore"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.SyncopeRiskScoreList", 
+                        "method": "<org.epstudios.epmobile.SyncopeRiskScoreList: void egsysScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.SyncopeRiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/EgsysScore"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.SyncopeRiskScoreList", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.EgsysScore", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WctAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WctAlgorithmList: void morphologyCriteria()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WctAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctMorphologyCriteria"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WctAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WctAlgorithmList: void brugadaAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WctAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Brugada"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WctAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WctAlgorithmList: void ultraSimpleBrugadaAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WctAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Rwpt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WctAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WctAlgorithmList: void vereckiAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WctAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Vereckei"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WctAlgorithmList", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.SyncopeSfRule", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.OutflowVt", 
+                        "method": "<org.epstudios.epmobile.OutflowVt: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.OutflowVt: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/VtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.OutflowVt", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Vereckei", 
+                        "method": "<org.epstudios.epmobile.Vereckei: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Vereckei: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Vereckei", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void chadsVascScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ChadsVasc"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void syncopeRiskScores()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/SyncopeRiskScoreList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void hasBledScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/HasBled"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void hcmScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Hcm"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void chadsScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Chads"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void IcdRiskScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/IcdRisk"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScoreList", 
+                        "method": "<org.epstudios.epmobile.RiskScoreList: void hemorrhagesScore()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScoreList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Hemorrhages"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.RiskScoreList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.BrugadaMorphologyCriteria", 
+                        "method": "<org.epstudios.epmobile.BrugadaMorphologyCriteria: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.BrugadaMorphologyCriteria: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WctAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.BrugadaMorphologyCriteria", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQtSubtypes", 
+                        "method": "<org.epstudios.epmobile.LongQtSubtypes: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQtSubtypes: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LongQtSubtypes", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpDiagnosisActivity", 
+                        "method": "<org.epstudios.epmobile.EpDiagnosisActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpDiagnosisActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DiagnosisList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.ShortQt", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void sotalolCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Sotalol"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void dabigatranCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Dabigatran"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void warfarinCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Warfarin"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void rivaroxabanCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Rivaroxaban"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void apixabanCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Apixaban"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+                        "method": "<org.epstudios.epmobile.DrugDoseCalculatorList: void dofetilideCalculator()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DrugDoseCalculatorList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Dofetilide"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.DrugDoseCalculatorList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwArruda", 
+                        "method": "<org.epstudios.epmobile.WpwArruda: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwArruda: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwAlgorithmList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwArruda", 
+                        "method": "<org.epstudios.epmobile.WpwArruda: void showMap()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwArruda: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 13
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "location1", 
+                                        "location2", 
+                                        "message"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/AvAnnulusMap"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WpwArruda", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpReferenceActivity", 
+                        "method": "<org.epstudios.epmobile.EpReferenceActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpReferenceActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ReferenceList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.NormalEpValues", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Apixaban", 
+            "exported": false
+        }, 
+        {
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.ChadsVasc", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpDiagnosisActivity", 
+                        "method": "<org.epstudios.epmobile.EpDiagnosisActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpDiagnosisActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/DiagnosisList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.BrugadaEcg", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LvhVoltage", 
+                        "method": "<org.epstudios.epmobile.LvhVoltage: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LvhVoltage: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LvhList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LvhVoltage", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.DayCalculator", 
+                        "method": "<org.epstudios.epmobile.DayCalculator: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.DayCalculator: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.DayCalculator", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 10
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Prefs"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CycleLength", 
+                        "method": "<org.epstudios.epmobile.CycleLength: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.CycleLength: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/CalculatorList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.EpActivity", 
+                        "method": "<org.epstudios.epmobile.EpActivity: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.EpActivity: void startActivity(android.content.Intent)>(r4)", 
+                        "id": 15
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/About"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CycleLength", 
+                        "method": "<org.epstudios.epmobile.CycleLength: void onCreate(android.os.Bundle)>", 
+                        "statement": "r4 = virtualinvoke r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>(r21)", 
+                        "id": 43
+                    }, 
+                    "extra": "hint"
+                }, 
+                {
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.CycleLength", 
+                        "method": "<org.epstudios.epmobile.CycleLength: void onCreate(android.os.Bundle)>", 
+                        "statement": "r5 = virtualinvoke r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>(r20)", 
+                        "id": 41
+                    }, 
+                    "extra": "label"
+                }
+            ], 
+            "name": "org.epstudios.epmobile.CycleLength", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WpwAlgorithmList: void avAnnulusMap()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/AvAnnulusMap"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WpwAlgorithmList: void milsteinAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwMilstein"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WpwAlgorithmList: void arrudaAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwArruda"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.WpwAlgorithmList", 
+                        "method": "<org.epstudios.epmobile.WpwAlgorithmList: void modifiedArrudaAlgorithm()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.WpwAlgorithmList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/WpwModifiedArruda"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.WpwAlgorithmList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.Estes", 
+                        "method": "<org.epstudios.epmobile.Estes: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.Estes: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LvhList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.RiskScore", 
+                        "method": "<org.epstudios.epmobile.RiskScore: boolean onOptionsItemSelected(android.view.MenuItem)>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.RiskScore: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "int_value": [
+                                        335544320
+                                    ], 
+                                    "kind": 14
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/RiskScoreList"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.Estes", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQtList", 
+                        "method": "<org.epstudios.epmobile.LongQtList: void lqtEcg()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtEcg"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQtList", 
+                        "method": "<org.epstudios.epmobile.LongQtList: void lqtSubtypes()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQtSubtypes"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.LongQtList", 
+                        "method": "<org.epstudios.epmobile.LongQtList: void lqtsDiagnosis()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.LongQtList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/LongQt"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.LongQtList", 
+            "exported": false
+        }, 
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ArvcList", 
+                        "method": "<org.epstudios.epmobile.ArvcList: void arvcOld()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ArvcList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/ArvcOld"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.epstudios.epmobile.ArvcList", 
+                        "method": "<org.epstudios.epmobile.ArvcList: void arvc2010()>", 
+                        "statement": "virtualinvoke r0.<org.epstudios.epmobile.ArvcList: void startActivity(android.content.Intent)>(r1)", 
+                        "id": 4
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "org/epstudios/epmobile/Arvc"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "org.epstudios.epmobile"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.epstudios.epmobile.ArvcList", 
+            "exported": false
+        }
+    ]
+}

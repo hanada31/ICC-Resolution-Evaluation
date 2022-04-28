@@ -1,0 +1,43 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+DiaryReadActivity[color = red];
+SettingsActivity[color = red];
+DashboardActivity[color = red];
+StatisticsActivity[color = red];
+PickPhotoPreviewActivity[color = red];
+DiaryUpdateActivity[color = red];
+TimelineActivity[color = red];
+PostcardViewPagerActivity[color = red];
+DevActivity[color = red];
+PostCardViewerActivity[color = red];
+IntroActivity[style=filled, fillcolor=orange, color = red];
+MarkDownViewActivity[color = red];
+CustomizationActivity[color = red];
+CalendarActivity[color = red];
+PickPhotoActivity[color = red];
+FingerprintLockActivity[color = red];
+DiaryInsertActivity[color = red];
+DiaryMainActivity[color = red];
+PostCardActivity[color = red];
+PhotoViewPagerActivity[color = red];
+PinLockActivity[color = red];
+NotificationService[color = royalblue];
+DiaryMainWidgetService[color = royalblue];
+AlarmReceiver[color = peru];
+BootCompletedReceiver[style=filled, fillcolor=pink, color = peru];
+DiaryMainWidget[style=filled, fillcolor=pink, color = peru];
+FingerprintLockActivity->PinLockActivity;
+PinLockActivity->FingerprintLockActivity;
+DiaryMainWidget->DiaryInsertActivity;
+DiaryMainWidget->DiaryReadActivity;
+}

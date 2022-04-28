@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="dev.ukanth.ufirewall.activity.StartActivity" >
+<ChildActivity name="dev.ukanth.ufirewall.MainActivity" encoded_callback="Ldev/ukanth/ufirewall/activity/StartActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="dev.ukanth.ufirewall.service.ApplyOnBootService" >
+<ChildActivity name="dev.ukanth.ufirewall.service.FirewallService" encoded_callback="Ldev/ukanth/ufirewall/service/ApplyOnBootService;=&gt;onStartCommand(Landroid/content/Intent;II)I"/>
+<ChildActivity name="dev.ukanth.ufirewall.service.LogService" encoded_callback="Ldev/ukanth/ufirewall/service/ApplyOnBootService;=&gt;onStartCommand(Landroid/content/Intent;II)I"/>
+</Activity >
+<Activity name="dev.ukanth.ufirewall.broadcast.OnBootReceiver" >
+<ChildActivity name="dev.ukanth.ufirewall.service.ApplyOnBootService" encoded_callback="Ldev/ukanth/ufirewall/broadcast/OnBootReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="dev.ukanth.ufirewall.activity.OldLogActivity" >
+<ChildActivity name="dev.ukanth.ufirewall.activity.LogActivity" encoded_callback="Ldev/ukanth/ufirewall/activity/OldLogActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="dev.ukanth.ufirewall.activity.LogActivity" >
+<ChildActivity name="dev.ukanth.ufirewall.activity.OldLogActivity" encoded_callback="Ldev/ukanth/ufirewall/activity/LogActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="dev.ukanth.ufirewall.util.AppListArrayAdapter" >
+<ChildActivity name="dev.ukanth.ufirewall.activity.AppDetailActivity" encoded_callback="Ldev/ukanth/ufirewall/util/AppListArrayAdapter$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+</ActivityGraph>

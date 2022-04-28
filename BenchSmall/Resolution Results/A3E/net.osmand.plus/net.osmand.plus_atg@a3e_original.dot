@@ -1,0 +1,8 @@
+digraph G {
+net_osmand_plus_NavigationService -> net_osmand_plus_OnNavigationServiceAlarmReceiver [label="Lnet/osmand/plus/NavigationService;=>onStartCommand(Landroid/content/Intent;II)I", fontcolor="red"];
+net_osmand_plus_AppInitializer -> net_osmand_plus_download_DownloadActivity [label="Lnet/osmand/plus/AppInitializer$1;=>onClick(Landroid/content/DialogInterface;I)V", fontcolor="red"];
+net_osmand_plus_OnNavigationServiceAlarmReceiver -> net_osmand_plus_OnNavigationServiceAlarmReceiver [label="Lnet/osmand/plus/OnNavigationServiceAlarmReceiver;=>rescheduleAlarm(Landroid/content/Context;Lnet/osmand/plus/NavigationService;)V", fontcolor="red"];
+net_osmand_plus_OsmandApplication -> net_osmand_plus_NavigationService [label="Lnet/osmand/plus/OsmandApplication;=>closeApplicationAnywayImpl(Landroid/app/Activity;Z)V", fontcolor="red"];
+net_osmand_plus_OsmandApplication -> net_osmand_plus_NavigationService [label="Lnet/osmand/plus/OsmandApplication;=>startNavigationService(II)V", fontcolor="red"];
+net_osmand_plus_liveupdates_LiveUpdatesHelper -> net_osmand_plus_liveupdates_LiveUpdatesAlarmReceiver [label="Lnet/osmand/plus/liveupdates/LiveUpdatesHelper;=>getPendingIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;", fontcolor="red"];
+}

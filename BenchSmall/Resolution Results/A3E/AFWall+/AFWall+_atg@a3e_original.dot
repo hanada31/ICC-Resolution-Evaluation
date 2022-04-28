@@ -1,0 +1,9 @@
+digraph G {
+dev_ukanth_ufirewall_activity_StartActivity -> dev_ukanth_ufirewall_MainActivity [label="Ldev/ukanth/ufirewall/activity/StartActivity;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+dev_ukanth_ufirewall_service_ApplyOnBootService -> dev_ukanth_ufirewall_service_FirewallService [label="Ldev/ukanth/ufirewall/service/ApplyOnBootService;=>onStartCommand(Landroid/content/Intent;II)I", fontcolor="red"];
+dev_ukanth_ufirewall_service_ApplyOnBootService -> dev_ukanth_ufirewall_service_LogService [label="Ldev/ukanth/ufirewall/service/ApplyOnBootService;=>onStartCommand(Landroid/content/Intent;II)I", fontcolor="red"];
+dev_ukanth_ufirewall_broadcast_OnBootReceiver -> dev_ukanth_ufirewall_service_ApplyOnBootService [label="Ldev/ukanth/ufirewall/broadcast/OnBootReceiver;=>onReceive(Landroid/content/Context;Landroid/content/Intent;)V", fontcolor="red"];
+dev_ukanth_ufirewall_activity_OldLogActivity -> dev_ukanth_ufirewall_activity_LogActivity [label="Ldev/ukanth/ufirewall/activity/OldLogActivity;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+dev_ukanth_ufirewall_activity_LogActivity -> dev_ukanth_ufirewall_activity_OldLogActivity [label="Ldev/ukanth/ufirewall/activity/LogActivity;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+dev_ukanth_ufirewall_util_AppListArrayAdapter -> dev_ukanth_ufirewall_activity_AppDetailActivity [label="Ldev/ukanth/ufirewall/util/AppListArrayAdapter$1;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+}

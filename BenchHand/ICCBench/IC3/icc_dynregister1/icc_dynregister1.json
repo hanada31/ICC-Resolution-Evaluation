@@ -1,0 +1,57 @@
+{
+    "name": "org.arguslab.icc_dynregister1", 
+    "analysis_end": 1624856433, 
+    "analysis_start": 1624856431, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_dynregister1.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.fgwei"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.arguslab.icc_dynregister1.MainActivity", 
+                "method": "<org.arguslab.icc_dynregister1.MainActivity: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke r0.<org.arguslab.icc_dynregister1.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r6, r7)", 
+                "id": 19
+            }, 
+            "name": "org.arguslab.icc_dynregister1.MyReceiver", 
+            "exported": true
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "analysis_end": 1628845256, 
+    "analysis_start": 1628845243, 
+    "version": 1, 
+    "name": "com.test.ui.transition", 
+    "components": [
+        {
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "com.test.ui.transition.NextActivity", 
+                        "method": "<com.test.ui.transition.NextActivity: void go2Activity(android.content.Context,java.lang.Class)>", 
+                        "statement": "virtualinvoke $r0.<com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)>($r3)", 
+                        "id": 5
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "com/test/ui/transition/AActivity"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "com.test.ui.transition"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.NextActivity", 
+            "exported": false
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "com.test.ui.transition.MainActivity", 
+            "exported": true
+        }
+    ]
+}

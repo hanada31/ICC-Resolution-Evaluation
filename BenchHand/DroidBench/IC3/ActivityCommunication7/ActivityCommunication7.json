@@ -1,0 +1,101 @@
+{
+    "name": "edu.mit.icc_non_constant_class_object",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "edu.mit.icc_non_constant_class_object.IsolateActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_non_constant_class_object.IsolateActivity",
+                        "method": "<edu.mit.icc_non_constant_class_object.IsolateActivity: void onCreate(android.os.Bundle)>",
+                        "id": 5
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_non_constant_class_object.InFlowActivity",
+            "kind": 0,
+            "exported": false,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r4)",
+                        "class_name": "edu.mit.icc_non_constant_class_object.InFlowActivity",
+                        "method": "<edu.mit.icc_non_constant_class_object.InFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 7
+                    }
+                }
+            ]
+        },
+        {
+            "name": "edu.mit.icc_non_constant_class_object.OutFlowActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<edu.mit.icc_non_constant_class_object.OutFlowActivity: void startActivity(android.content.Intent)>(r3)",
+                        "class_name": "edu.mit.icc_non_constant_class_object.OutFlowActivity",
+                        "method": "<edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)>",
+                        "id": 16
+                    },
+                    "kind": 0,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "edu.mit.icc_non_constant_class_object.InFlowActivity"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "edu.mit.icc_non_constant_class_object"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639031931,
+    "analysis_end": 1639031933
+}

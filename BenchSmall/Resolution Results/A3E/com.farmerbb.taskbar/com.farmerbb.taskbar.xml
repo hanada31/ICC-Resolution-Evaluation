@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.farmerbb.taskbar.MainActivity" >
+<ChildActivity name="com.farmerbb.taskbar.activity.ImportSettingsActivity" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.StartTaskbarActivity" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;a(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.ShortcutActivity" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;a(Landroid/os/Bundle;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;l()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;l()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;l()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/MainActivity;=&gt;l()V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.InvisibleActivityFreeform" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStart()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStart()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStart()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.InvisibleActivityAlt" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;a(Lcom/farmerbb/taskbar/c/e;Landroid/content/SharedPreferences;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.InvisibleActivityAltDark" encoded_callback="Lcom/farmerbb/taskbar/activity/InvisibleActivityFreeform;=&gt;a(Lcom/farmerbb/taskbar/c/e;Landroid/content/SharedPreferences;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.HomeActivity" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;onStop()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity$1;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity$1;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity$1;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;d()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;d()V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/HomeActivity;=&gt;d()V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.service.NotificationService" >
+<ChildActivity name="com.farmerbb.taskbar.MainActivity" encoded_callback="Lcom/farmerbb/taskbar/service/NotificationService;=&gt;onCreate()V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.receiver.BootReceiver" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/receiver/BootReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/receiver/BootReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/receiver/BootReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/receiver/BootReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.receiver.QuitReceiver" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/receiver/QuitReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/receiver/QuitReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/receiver/QuitReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/receiver/QuitReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.receiver.StartReceiver" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/receiver/StartReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/receiver/StartReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/receiver/StartReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/receiver/StartReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.receiver.ShowHideTaskbarReceiver" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/receiver/ShowHideTaskbarReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/receiver/ShowHideTaskbarReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/receiver/ShowHideTaskbarReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/receiver/ShowHideTaskbarReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.receiver.PackageUpgradeReceiver" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/receiver/PackageUpgradeReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/receiver/PackageUpgradeReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/receiver/PackageUpgradeReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/receiver/PackageUpgradeReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.ImportSettingsActivity" >
+<ChildActivity name="com.farmerbb.taskbar.MainActivity" encoded_callback="Lcom/farmerbb/taskbar/activity/ImportSettingsActivity$1;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.ContextMenuActivity" >
+<ChildActivity name="com.farmerbb.taskbar.activity.DummyActivity" encoded_callback="Lcom/farmerbb/taskbar/activity/ContextMenuActivity;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+<ChildActivity name="com.farmerbb.taskbar.MainActivity" encoded_callback="Lcom/farmerbb/taskbar/activity/ContextMenuActivity;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.SelectAppActivity" encoded_callback="Lcom/farmerbb/taskbar/activity/ContextMenuActivity;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.SelectAppActivityDark" encoded_callback="Lcom/farmerbb/taskbar/activity/ContextMenuActivity;=&gt;onPreferenceClick(Landroid/preference/Preference;)Z"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.b.p" >
+<ChildActivity name="com.farmerbb.taskbar.MainActivity" encoded_callback="Lcom/farmerbb/taskbar/b/p$1;=&gt;onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.c.p" >
+<ChildActivity name="com.farmerbb.taskbar.activity.ShortcutActivity" encoded_callback="Lcom/farmerbb/taskbar/c/p;=&gt;k(Landroid/content/Context;)Landroid/content/Intent;"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.StartTaskbarActivity" encoded_callback="Lcom/farmerbb/taskbar/c/p;=&gt;l(Landroid/content/Context;)Landroid/content/Intent;"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.InvisibleActivityFreeform" encoded_callback="Lcom/farmerbb/taskbar/c/p;=&gt;a(Landroid/content/Context;ZZ)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.DummyActivity" encoded_callback="Lcom/farmerbb/taskbar/c/p;=&gt;c(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.service.DashboardService" >
+<ChildActivity name="com.farmerbb.taskbar.activity.DashboardActivity" encoded_callback="Lcom/farmerbb/taskbar/service/DashboardService;=&gt;d()V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.DashboardActivityDark" encoded_callback="Lcom/farmerbb/taskbar/service/DashboardService;=&gt;d()V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.service.TaskbarService" >
+<ChildActivity name="com.farmerbb.taskbar.activity.ContextMenuActivity" encoded_callback="Lcom/farmerbb/taskbar/service/TaskbarService;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark" encoded_callback="Lcom/farmerbb/taskbar/service/TaskbarService;=&gt;k()V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.ContextMenuActivity" encoded_callback="Lcom/farmerbb/taskbar/service/TaskbarService;=&gt;a(Lcom/farmerbb/taskbar/c/a;[I)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark" encoded_callback="Lcom/farmerbb/taskbar/service/TaskbarService;=&gt;a(Lcom/farmerbb/taskbar/c/a;[I)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.IconPackApplyActivity" >
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;b(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;b(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;b(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;b(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.TaskbarService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;a(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.StartMenuService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;a(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.DashboardService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;a(Z)V"/>
+<ChildActivity name="com.farmerbb.taskbar.service.NotificationService" encoded_callback="Lcom/farmerbb/taskbar/activity/IconPackApplyActivity;=&gt;a(Z)V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.activity.SelectAppActivity" >
+<ChildActivity name="com.farmerbb.taskbar.activity.SelectAppActivity" encoded_callback="Lcom/farmerbb/taskbar/activity/SelectAppActivity;=&gt;j()V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.SelectAppActivityDark" encoded_callback="Lcom/farmerbb/taskbar/activity/SelectAppActivity;=&gt;j()V"/>
+</Activity >
+<Activity name="com.farmerbb.taskbar.service.StartMenuService" >
+<ChildActivity name="com.farmerbb.taskbar.activity.ContextMenuActivity" encoded_callback="Lcom/farmerbb/taskbar/service/StartMenuService;=&gt;a([I)V"/>
+<ChildActivity name="com.farmerbb.taskbar.activity.dark.ContextMenuActivityDark" encoded_callback="Lcom/farmerbb/taskbar/service/StartMenuService;=&gt;a([I)V"/>
+</Activity >
+</ActivityGraph>

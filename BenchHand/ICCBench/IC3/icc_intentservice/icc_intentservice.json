@@ -1,0 +1,50 @@
+{
+    "name": "org.arguslab.icc_intentservice", 
+    "analysis_end": 1624856467, 
+    "analysis_start": 1624856465, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_intentservice.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "kind": 1, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_intentservice.MyIntentService", 
+                        "method": "<org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)>", 
+                        "statement": "r7 = virtualinvoke r1.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r6)", 
+                        "id": 8
+                    }, 
+                    "extra": "data"
+                }
+            ], 
+            "name": "org.arguslab.icc_intentservice.MyIntentService", 
+            "exported": false
+        }
+    ]
+}

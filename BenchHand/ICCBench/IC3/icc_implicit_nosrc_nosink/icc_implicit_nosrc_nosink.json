@@ -1,0 +1,94 @@
+{
+    "analysis_end": 1624856403, 
+    "analysis_start": 1624856401, 
+    "version": 1, 
+    "name": "org.arguslab.icc_implicit_nosrc_nosink", 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_nosrc_nosink.MainActivity", 
+                        "method": "<org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "virtualinvoke r0.<org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void startActivity(android.content.Intent)>(r2)", 
+                        "id": 11
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 0, 
+                                    "value": [
+                                        "amandroid.impliciticctest_action.testaction"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "data"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_nosrc_nosink.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "amandroid.impliciticctest_action.testaction"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_nosrc_nosink.FooActivity", 
+                        "method": "<org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "r3 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r5)", 
+                        "id": 7
+                    }, 
+                    "extra": "data"
+                }
+            ], 
+            "name": "org.arguslab.icc_implicit_nosrc_nosink.FooActivity", 
+            "exported": true
+        }
+    ]
+}

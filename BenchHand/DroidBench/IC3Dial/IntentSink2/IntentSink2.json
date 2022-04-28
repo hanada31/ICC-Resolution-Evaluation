@@ -1,0 +1,69 @@
+{
+    "name": "de.ecspride", 
+    "analysis_end": 1628844021, 
+    "analysis_start": 1628844018, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "exit_points": [
+                {
+                    "kind": 0, 
+                    "instruction": {
+                        "class_name": "de.ecspride.IntentSink2", 
+                        "method": "<de.ecspride.IntentSink2: void startIntent(android.view.View)>", 
+                        "statement": "virtualinvoke $r0.<de.ecspride.IntentSink2: void startActivity(android.content.Intent)>($r2)", 
+                        "id": 13
+                    }, 
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7, 
+                                    "value": [
+                                        "id"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 3, 
+                                    "value": [
+                                        "(.*)"
+                                    ]
+                                }, 
+                                {
+                                    "kind": 2, 
+                                    "value": [
+                                        "de.ecspride"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "de.ecspride.IntentSink2", 
+            "exported": true
+        }
+    ]
+}

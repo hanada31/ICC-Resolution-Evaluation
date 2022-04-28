@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="nl.sogeti.android.gpstracker.viewer.TrackList" >
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;onStart()V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;onDestroy()V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.actions.Statistics" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;onContextItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.LoggerMap" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.actions.DescribeTrack" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList$10$1;=&gt;onCheckedChanged(Landroid/widget/CompoundButton;Z)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.LoggerMap" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/TrackList;=&gt;displayIntent(Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.actions.ShareTrack" >
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=&gt;onStart()V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/ShareTrack;=&gt;onDestroy()V"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.actions.DescribeTrack" >
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=&gt;onStart()V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.breadcrumbs.BreadcrumbsService" encoded_callback="Lnl/sogeti/android/gpstracker/actions/DescribeTrack;=&gt;onDestroy()V"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" >
+<ChildActivity name="nl.sogeti.android.gpstracker.actions.ControlTracking" encoded_callback="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.actions.InsertNote" encoded_callback="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" encoded_callback="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=&gt;&lt;clinit&gt;()V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.widget.ControlWidgetProvider" encoded_callback="Lnl/sogeti/android/gpstracker/widget/ControlWidgetProvider;=&gt;getLaunchPendingIntent(Landroid/content/Context;II)Landroid/app/PendingIntent;"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.actions.Statistics" >
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.TrackList" encoded_callback="Lnl/sogeti/android/gpstracker/actions/Statistics;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.actions.ControlTracking" >
+<ChildActivity name="nl.sogeti.android.gpstracker.actions.NameTrack" encoded_callback="Lnl/sogeti/android/gpstracker/actions/ControlTracking$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.viewer.LoggerMap" >
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.TrackList" encoded_callback="Lnl/sogeti/android/gpstracker/viewer/LoggerMap$8;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="nl.sogeti.android.gpstracker.logger.GPSLoggerService" >
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.LoggerMap" encoded_callback="Lnl/sogeti/android/gpstracker/logger/GPSLoggerService;=&gt;notifyOnDisabledProvider(I)V"/>
+<ChildActivity name="nl.sogeti.android.gpstracker.viewer.LoggerMap" encoded_callback="Lnl/sogeti/android/gpstracker/logger/GPSLoggerService;=&gt;updateNotification()V"/>
+</Activity >
+</ActivityGraph>

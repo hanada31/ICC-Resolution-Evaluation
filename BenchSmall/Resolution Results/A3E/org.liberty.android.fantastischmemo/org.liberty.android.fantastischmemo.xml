@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="org.liberty.android.fantastischmemo.ui.AnyMemo" >
+<ChildActivity name="org.liberty.android.fantastischmemo.service.AnyMemoService" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/AnyMemo;=&gt;onDestroy()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.AlarmReceiver" >
+<ChildActivity name="org.liberty.android.fantastischmemo.service.AnyMemoService" encoded_callback="Lorg/liberty/android/fantastischmemo/AlarmReceiver;=&gt;onReceive(Landroid/content/Context;Landroid/content/Intent;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.QuizActivity" >
+<ChildActivity name="com.example.android.apis.graphics.FingerPaint" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/QuizActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.SettingsScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.DetailScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardListActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.DatabaseMerger" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardEditor" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity$9;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardEditor" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity$10;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/PreviewEditActivity;=&gt;restartActivity()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.CardEditor" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/CardEditor;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/CardEditor;=&gt;startAudioBrowser()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.downloader.dropbox.DropboxDBListActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.dropbox.UploadDropboxScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/dropbox/DropboxDBListActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListScreen" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.google.UploadGoogleDriveScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/google/SpreadsheetListScreen;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUploadActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/quizlet/QuizletUserPrivateActivity;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.ShareScreen" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/ShareScreen;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/ShareScreen;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.DownloadTabFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.DownloaderAnyMemo" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.cram.CramLauncher" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.DownloaderSS" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.dropbox.DropboxDBListActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DownloadTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByTitleActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByUsernameActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/quizlet/QuizletLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.MiscTabFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.OptionScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/MiscTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.SettingsScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/MiscTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.DatabaseMerger" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/MiscTabFragment;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.OpenActionsFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.StudyActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OpenActionsFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OpenActionsFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardListActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OpenActionsFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.SettingsScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OpenActionsFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.StatisticsScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OpenActionsFragment$1;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.downloader.cram.CramLauncher" >
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.FEDirectory" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/cram/CramLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.cram.CramSearchPublicCardSetActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/cram/CramLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.downloader.cram.CramPublicUserCardSetActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/downloader/cram/CramLauncher;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.DatabaseMerger" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/DatabaseMerger;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.QuizLauncherDialogFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.QuizActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/QuizLauncherDialogFragment$2;=&gt;onClick(Landroid/view/View;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.AnyMemoWidgetProvider" >
+<ChildActivity name="org.liberty.android.fantastischmemo.service.AnyMemoService" encoded_callback="Lorg/liberty/android/fantastischmemo/AnyMemoWidgetProvider;=&gt;onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.RecentListFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.StudyActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/RecentListFragment$2;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.OptionScreen" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.AlgorithmCustomizationScreen" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/OptionScreen$1$1;=&gt;onClick(Landroid/content/DialogInterface;I)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.QACardActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.service.AnyMemoService" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/QACardActivity;=&gt;onDestroy()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.CardListActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.CardListActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/CardListActivity;=&gt;restartActivity()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.service.AnyMemoService" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.StudyActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/service/AnyMemoService;=&gt;updateWidget()V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.AnyMemo" encoded_callback="Lorg/liberty/android/fantastischmemo/service/AnyMemoService;=&gt;showNotification()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.SetAlarmReceiver" >
+<ChildActivity name="org.liberty.android.fantastischmemo.AlarmReceiver" encoded_callback="Lorg/liberty/android/fantastischmemo/SetAlarmReceiver;=&gt;setNotificationAlarm(Landroid/content/Context;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.AlarmReceiver" encoded_callback="Lorg/liberty/android/fantastischmemo/SetAlarmReceiver;=&gt;setWidgetUpdateAlarm(Landroid/content/Context;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.AlarmReceiver" encoded_callback="Lorg/liberty/android/fantastischmemo/SetAlarmReceiver;=&gt;cancelWidgetUpdateAlarm(Landroid/content/Context;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.AlarmReceiver" encoded_callback="Lorg/liberty/android/fantastischmemo/SetAlarmReceiver;=&gt;cancelNotificationAlarm(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.service.ConvertIntentService" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/service/ConvertIntentService;=&gt;showSuccessNotification(ILjava/lang/String;)V"/>
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.AnyMemo" encoded_callback="Lorg/liberty/android/fantastischmemo/service/ConvertIntentService;=&gt;showSuccessNotification(ILjava/lang/String;)V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.StudyActivity" >
+<ChildActivity name="org.liberty.android.fantastischmemo.ui.StudyActivity" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/StudyActivity;=&gt;restartActivity()V"/>
+</Activity >
+<Activity name="org.liberty.android.fantastischmemo.ui.ConverterFragment" >
+<ChildActivity name="org.liberty.android.fantastischmemo.service.ConvertIntentService" encoded_callback="Lorg/liberty/android/fantastischmemo/ui/ConverterFragment;=&gt;invokeConverterService(Ljava/lang/String;Ljava/lang/String;)V"/>
+</Activity >
+</ActivityGraph>

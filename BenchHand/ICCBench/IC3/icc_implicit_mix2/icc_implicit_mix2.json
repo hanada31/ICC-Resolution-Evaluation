@@ -1,0 +1,100 @@
+{
+    "name": "org.arguslab.icc_implicit_mix2", 
+    "analysis_end": 1624856422, 
+    "analysis_start": 1624856420, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "test_action"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "test_category2", 
+                                "test_category1", 
+                                "android.intent.category.DEFAULT"
+                            ]
+                        }, 
+                        {
+                            "kind": 9, 
+                            "value": [
+                                "fgwei"
+                            ]
+                        }, 
+                        {
+                            "kind": 4, 
+                            "value": [
+                                "test/type"
+                            ]
+                        }, 
+                        {
+                            "kind": 10, 
+                            "value": [
+                                "/abc/def"
+                            ]
+                        }, 
+                        {
+                            "kind": 11, 
+                            "value": [
+                                "8888"
+                            ]
+                        }, 
+                        {
+                            "kind": 6, 
+                            "value": [
+                                "amandroid"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "extras": [
+                {
+                    "instruction": {
+                        "class_name": "org.arguslab.icc_implicit_mix2.FooActivity", 
+                        "method": "<org.arguslab.icc_implicit_mix2.FooActivity: void onCreate(android.os.Bundle)>", 
+                        "statement": "r8 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r7)", 
+                        "id": 11
+                    }, 
+                    "extra": "data"
+                }
+            ], 
+            "name": "org.arguslab.icc_implicit_mix2.FooActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_implicit_mix2.MainActivity", 
+            "exported": true
+        }
+    ]
+}

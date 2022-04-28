@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.whispersystems.jobqueue.requirements.NetworkRequirementProvider$1" type="Receiver">
+    <manifest>
+      <intent_filter action="android.net.conn.CONNECTIVITY_CHANGE"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.MessageDetailsActivity" type="Activity">
+    <sender destination="interICC_android.intent.action.INSERT_OR_EDIT, , org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, android.intent.action.INSERT_OR_EDIT, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT" type="vnd.android.cursor.item/contact"/>
+  </component>
+  <component name="org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, java.lang.Class, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.notifications.WEAR_REPLY" data="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.notifications.MarkReadReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.notifications.CLEAR"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, java.lang.Class, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.notifications.WEAR_REPLY" data="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.PanicResponderActivity" type="Activity">
+    <manifest>
+      <intent_filter action="info.guardianproject.panic.action.TRIGGER" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ExitActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.CLEAR_KEY" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NO_ANIMATION FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.mms.MmsRadio$ConnectivityListener" type="Receiver">
+    <manifest>
+      <intent_filter action="android.net.conn.CONNECTIVITY_CHANGE"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.preferences.MmsPreferencesActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.preferences.MmsPreferencesFragment, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.ConversationListArchiveActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.ConversationListFragment, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.MediaPreviewActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.MediaOverviewActivity, org.smssecure.smssecure.ShareActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT" type="new java.lang.String"/>
+  </component>
+  <component name="org.smssecure.smssecure.GroupCreateActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.PushContactSelectionActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.ImportExportActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.PromptMmsActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.preferences.MmsPreferencesActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.ApplicationPreferencesActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.preferences.NotificationsPreferenceFragment, org.smssecure.smssecure.preferences.ChatsPreferenceFragment, org.smssecure.smssecure.preferences.SmsMmsPreferenceFragment, org.smssecure.smssecure.ApplicationPreferencesActivity$ApplicationPreferenceFragment, org.smssecure.smssecure.preferences.AppProtectionPreferenceFragment, org.smssecure.smssecure.preferences.AppearancePreferenceFragment, org.smssecure.smssecure.preferences.AdvancedPreferenceFragment, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.service.action.LOCALE_CHANGE_EVENT" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+  <component name="org.smssecure.smssecure.service.KeyCachingService" type="Service">
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, interICC_org.smssecure.smssecure.service.action.CLEAR_KEY_EVENT, , interICC_org.smssecure.smssecure.service.action.NEW_KEY_EVENT, , org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, java.lang.Class, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.DummyActivity, org.smssecure.smssecure.service.KeyCachingService, org.smssecure.smssecure.ConversationListActivity" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT, org.smssecure.smssecure.service.action.NEW_KEY_EVENT, org.smssecure.smssecure.service.action.PASSPHRASE_EXPIRED_EVENT, org.smssecure.smssecure.notifications.WEAR_REPLY, org.smssecure.smssecure.service.action.CLEAR_KEY_EVENT" data=", null" flags="FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.MediaOverviewActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.service.ApplicationMigrationService" type="Service">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, interICC_org.smssecure.smssecure.ApplicationMigrationService.COMPLETED, " action="org.smssecure.smssecure.ApplicationMigrationService.COMPLETED"/>
+  </component>
+  <component name="org.smssecure.smssecure.NewConversationActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.ContactSelectionListFragment, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.IntroScreenActivity$AppUpgradeReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.PACKAGE_REPLACED" scheme="package"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.mms.LollipopMmsConnection" type="Receiver">
+    <manifest>
+      <intent_filter action="new java.lang.String"/>
+    </manifest>
+    <sender action="new java.lang.String"/>
+  </component>
+  <component name="org.smssecure.smssecure.DatabaseUpgradeActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, java.lang.Class, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.notifications.WEAR_REPLY" data="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.service.SmsDeliveryListener" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.services.MESSAGE_SENT"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.IntroScreenActivity" type="Activity"/>
+  <component name="org.smssecure.smssecure.ExitActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ExitActivity" flags="FLAG_ACTIVITY_CLEAR_TASK FLAG_ACTIVITY_NO_ANIMATION FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.DummyActivity" type="Activity"/>
+  <component name="org.smssecure.smssecure.providers.BadgeWidgetProvider" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="java.lang.Class" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.PassphraseCreateActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.DatabaseMigrationActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.service.ApplicationMigrationService, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT, org.smssecure.smssecure.ApplicationMigration.MIGRATE_DATABSE"/>
+  </component>
+  <component name="org.smssecure.smssecure.SmsSendtoActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SENDTO, android.intent.action.VIEW" category="android.intent.category.BROWSABLE, android.intent.category.DEFAULT" scheme="sms"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.NewConversationActivity"/>
+  </component>
+  <component name="org.smssecure.smssecure.BlockedContactsActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.BlockedContactsActivity$BlockedContactsFragment, org.smssecure.smssecure.RecipientPreferenceActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.notifications.RemoteReplyReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.notifications.WEAR_REPLY"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, java.lang.Class, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.notifications.WEAR_REPLY" data="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.PushContactSelectionActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ContactSelectionListFragment, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.ShareActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SEND" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.ShareFragment, interICC_, , org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT" data="new android.net.Uri" type="new java.lang.String"/>
+  </component>
+  <component name="org.smssecure.smssecure.ConversationPopupActivity" type="Activity">
+    <sender destination="interICC_android.media.action.IMAGE_CAPTURE, , org.smssecure.smssecure.MediaOverviewActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, interICC_android.intent.action.GET_CONTENT, , org.smssecure.smssecure.VerifyIdentityActivity, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, interICC_android.intent.action.OPEN_DOCUMENT, android.intent.action.GET_CONTENT, , org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.ConversationActivity, interICC_android.intent.action.OPEN_DOCUMENT, , org.smssecure.smssecure.ConversationListArchiveActivity, interICC_android.intent.action.INSERT_OR_EDIT, , org.smssecure.smssecure.MediaPreviewActivity, java.lang.Class, org.smssecure.smssecure.PromptMmsActivity, org.smssecure.smssecure.RecipientPreferenceActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT, org.smssecure.smssecure.notifications.WEAR_REPLY" data=", new android.net.Uri" type="new java.lang.String" flags="FLAG_GRANT_READ_URI_PERMISSION , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.service.SmsListener" type="Receiver" exported="true" permission="android.permission.BROADCAST_SMS">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+      <intent_filter action="android.provider.Telephony.SMS_DELIVER"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.LogSubmitActivity" type="Activity">
+    <sender destination="org.whispersystems.libpastelog.SubmitLogFragment"/>
+  </component>
+  <component name="org.smssecure.smssecure.ConversationActivity" type="Activity">
+    <sender destination="interICC_android.media.action.IMAGE_CAPTURE, , org.smssecure.smssecure.MediaOverviewActivity, org.smssecure.smssecure.notifications.RemoteReplyReceiver, interICC_android.intent.action.GET_CONTENT, , org.smssecure.smssecure.ConversationFragment, org.smssecure.smssecure.VerifyIdentityActivity, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, interICC_android.intent.action.OPEN_DOCUMENT, android.intent.action.GET_CONTENT, , org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.ConversationListActivity, interICC_android.intent.action.OPEN_DOCUMENT, , org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.ConversationListArchiveActivity, interICC_android.intent.action.INSERT_OR_EDIT, , org.smssecure.smssecure.MediaPreviewActivity, java.lang.Class, org.smssecure.smssecure.PromptMmsActivity, org.smssecure.smssecure.RecipientPreferenceActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, android.intent.action.INSERT_OR_EDIT, android.media.action.IMAGE_CAPTURE, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, android.intent.action.GET_CONTENT, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.service.action.ACTIVITY_STOP_EVENT, android.intent.action.OPEN_DOCUMENT, org.smssecure.smssecure.notifications.WEAR_REPLY" data=", new android.net.Uri" type="new java.lang.String, vnd.android.cursor.item/contact" flags="FLAG_GRANT_READ_URI_PERMISSION , FLAG_ACTIVITY_CLEAR_TOP , FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.ViewLocalIdentityActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.CountrySelectionActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.CountrySelectionFragment"/>
+  </component>
+  <component name="org.smssecure.smssecure.RecipientPreferenceActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.RecipientPreferenceActivity$RecipientPreferenceFragment, interICC_android.intent.action.INSERT_OR_EDIT, , org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, android.intent.action.INSERT_OR_EDIT" type="vnd.android.cursor.item/contact"/>
+  </component>
+  <component name="org.smssecure.smssecure.ViewIdentityActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.service.QuickResponseService" type="Service" exported="true" permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+    <manifest>
+      <intent_filter action="android.intent.action.RESPOND_VIA_MESSAGE" category="android.intent.category.DEFAULT" scheme="sms"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.PassphraseChangeActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.VerifyIdentityActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT"/>
+  </component>
+  <component name="org.smssecure.smssecure.ConversationActivity$17" type="Receiver">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.database.GroupDatabase.UPDATE"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.service.MmsListener" type="Receiver" exported="true" permission="android.permission.BROADCAST_WAP_PUSH">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.WAP_PUSH_RECEIVED"/>
+      <intent_filter action="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+    </manifest>
+  </component>
+  <component name="org.smssecure.smssecure.notifications.MessageNotifier$DeleteReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION"/>
+    </manifest>
+    <sender action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION"/>
+  </component>
+  <component name="org.smssecure.smssecure.ConversationListActivity" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.notifications.RemoteReplyReceiver, org.smssecure.smssecure.ConversationListFragment, org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver, org.smssecure.smssecure.notifications.MarkReadReceiver, org.smssecure.smssecure.ConversationPopupActivity, org.smssecure.smssecure.ConversationListActivity, org.smssecure.smssecure.ViewLocalIdentityActivity, org.smssecure.smssecure.ConversationActivity, org.smssecure.smssecure.ConversationListArchiveActivity, org.smssecure.smssecure.GroupCreateActivity, org.smssecure.smssecure.ImportExportActivity, java.lang.Class, org.smssecure.smssecure.ApplicationPreferencesActivity, org.smssecure.smssecure.service.KeyCachingService" action="org.smssecure.smssecure.MessageNotifier.REMINDER_ACTION, org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT, org.smssecure.smssecure.MessageNotifier.DELETE_REMINDER_ACTION, org.smssecure.smssecure.notifications.CLEAR, org.smssecure.smssecure.notifications.WEAR_REPLY, org.smssecure.smssecure.service.action.CLEAR_KEY" data="" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.smssecure.smssecure.service.DirectShareService" type="Service" permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+    <manifest>
+      <intent_filter action="android.service.chooser.ChooserTargetService"/>
+    </manifest>
+    <sender destination="org.smssecure.smssecure.service.KeyCachingService"/>
+  </component>
+  <component name="org.smssecure.smssecure.PassphrasePromptActivity" type="Activity">
+    <sender destination="org.smssecure.smssecure.service.KeyCachingService, org.smssecure.smssecure.LogSubmitActivity"/>
+  </component>
+</root>

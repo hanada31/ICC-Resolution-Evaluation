@@ -1,0 +1,103 @@
+{
+    "name": "lu.uni.trux.raicc.requestLocationUpdates",
+    "version": 1,
+    "used_permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_PHONE_STATE"
+    ],
+    "components": [
+        {
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.MainActivity",
+            "kind": 0,
+            "exported": true,
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0,
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        },
+                        {
+                            "kind": 1,
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "exit_points": [
+                {
+                    "instruction": {
+                        "statement": "virtualinvoke r0.<lu.uni.trux.raicc.requestLocationUpdates.MainActivity: android.content.ComponentName startService(android.content.Intent)>(r1)",
+                        "class_name": "lu.uni.trux.raicc.requestLocationUpdates.MainActivity",
+                        "method": "<lu.uni.trux.raicc.requestLocationUpdates.MainActivity: void onCreate(android.os.Bundle)>",
+                        "id": 14
+                    },
+                    "kind": 1,
+                    "intents": [
+                        {
+                            "attributes": [
+                                {
+                                    "kind": 7,
+                                    "value": [
+                                        "DroidBench"
+                                    ]
+                                },
+                                {
+                                    "kind": 3,
+                                    "value": [
+                                        "lu/uni/trux/raicc/requestLocationUpdates/IntermediateService"
+                                    ]
+                                },
+                                {
+                                    "kind": 2,
+                                    "value": [
+                                        "lu.uni.trux.raicc.requestLocationUpdates"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.TargetBroadcastReceiver",
+            "kind": 2,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r4 = virtualinvoke r2.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r3)",
+                        "class_name": "lu.uni.trux.raicc.requestLocationUpdates.TargetBroadcastReceiver",
+                        "method": "<lu.uni.trux.raicc.requestLocationUpdates.TargetBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>",
+                        "id": 4
+                    }
+                }
+            ]
+        },
+        {
+            "name": "lu.uni.trux.raicc.requestLocationUpdates.IntermediateService",
+            "kind": 1,
+            "exported": true,
+            "extras": [
+                {
+                    "extra": "DroidBench",
+                    "instruction": {
+                        "statement": "r6 = virtualinvoke r4.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>(r5)",
+                        "class_name": "lu.uni.trux.raicc.requestLocationUpdates.IntermediateService",
+                        "method": "<lu.uni.trux.raicc.requestLocationUpdates.IntermediateService: int onStartCommand(android.content.Intent,int,int)>",
+                        "id": 6
+                    }
+                }
+            ]
+        }
+    ],
+    "analysis_start": 1639032240,
+    "analysis_end": 1639032242
+}

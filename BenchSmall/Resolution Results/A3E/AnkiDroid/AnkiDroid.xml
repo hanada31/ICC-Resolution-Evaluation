@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<ActivityGraph>
+<Activity name="com.ichi2.anki.IntentHandler" >
+<ChildActivity name="com.ichi2.anki.DeckPicker" encoded_callback="Lcom/ichi2/anki/IntentHandler;=&gt;onCreate(Landroid/os/Bundle;)V"/>
+</Activity >
+<Activity name="com.ichi2.anki.services.NotificationService" >
+<ChildActivity name="com.ichi2.anki.DeckPicker" encoded_callback="Lcom/ichi2/anki/services/NotificationService;=&gt;onStartCommand(Landroid/content/Intent;II)I"/>
+</Activity >
+<Activity name="com.ichi2.anki.DeckPicker" >
+<ChildActivity name="com.ichi2.anki.ModelBrowser" encoded_callback="Lcom/ichi2/anki/DeckPicker;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/anki/DeckPicker;=&gt;addNote()V"/>
+<ChildActivity name="com.ichi2.anki.StudyOptionsActivity" encoded_callback="Lcom/ichi2/anki/DeckPicker;=&gt;openStudyOptions(Z)V"/>
+<ChildActivity name="com.ichi2.anki.Reviewer" encoded_callback="Lcom/ichi2/anki/DeckPicker;=&gt;openReviewer()V"/>
+</Activity >
+<Activity name="com.ichi2.anki.Reviewer" >
+<ChildActivity name="com.ichi2.anki.DeckOptions" encoded_callback="Lcom/ichi2/anki/Reviewer;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+</Activity >
+<Activity name="com.ichi2.anki.CardBrowser" >
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/anki/CardBrowser;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/anki/CardBrowser$7;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+</Activity >
+<Activity name="com.ichi2.anki.NoteEditor" >
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/anki/NoteEditor;=&gt;onOptionsItemSelected(Landroid/view/MenuItem;)Z"/>
+<ChildActivity name="com.ichi2.anki.CardTemplateEditor" encoded_callback="Lcom/ichi2/anki/NoteEditor;=&gt;showCardTemplateEditor()V"/>
+<ChildActivity name="com.ichi2.anki.multimediacard.activity.MultimediaEditFieldActivity" encoded_callback="Lcom/ichi2/anki/NoteEditor;=&gt;startMultimediaFieldEditor(ILcom/ichi2/anki/multimediacard/IMultimediaEditableNote;Lcom/ichi2/anki/multimediacard/fields/IField;)V"/>
+</Activity >
+<Activity name="com.ichi2.anki.multimediacard.fields.BasicTextFieldController" >
+<ChildActivity name="com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity" encoded_callback="Lcom/ichi2/anki/multimediacard/fields/BasicTextFieldController$2;=&gt;onClick(Landroid/view/View;)V"/>
+<ChildActivity name="com.ichi2.anki.multimediacard.activity.TranslationActivity" encoded_callback="Lcom/ichi2/anki/multimediacard/fields/BasicTextFieldController;=&gt;startTranslationWithGlosbe()V"/>
+</Activity >
+<Activity name="com.ichi2.widget.AddNoteWidget" >
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/widget/AddNoteWidget;=&gt;onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V"/>
+</Activity >
+<Activity name="com.ichi2.anki.ModelBrowser" >
+<ChildActivity name="com.ichi2.anki.ModelFieldEditor" encoded_callback="Lcom/ichi2/anki/ModelBrowser$4;=&gt;onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V"/>
+</Activity >
+<Activity name="com.ichi2.widget.AnkiDroidWidgetSmall" >
+<ChildActivity name="com.ichi2.anki.IntentHandler" encoded_callback="Lcom/ichi2/widget/AnkiDroidWidgetSmall$UpdateService;=&gt;buildUpdate(Landroid/content/Context;Z)Landroid/widget/RemoteViews;"/>
+</Activity >
+<Activity name="com.ichi2.anki.AbstractFlashcardViewer" >
+<ChildActivity name="com.ichi2.anki.NoteEditor" encoded_callback="Lcom/ichi2/anki/AbstractFlashcardViewer;=&gt;editCard()Z"/>
+</Activity >
+<Activity name="com.ichi2.widget.WidgetStatus" >
+<ChildActivity name="com.ichi2.widget.AnkiDroidWidgetSmall" encoded_callback="Lcom/ichi2/widget/WidgetStatus$UpdateDeckStatusAsyncTask;=&gt;onPostExecute(Landroid/content/Context;)V"/>
+<ChildActivity name="com.ichi2.anki.services.NotificationService" encoded_callback="Lcom/ichi2/widget/WidgetStatus$UpdateDeckStatusAsyncTask;=&gt;onPostExecute(Landroid/content/Context;)V"/>
+</Activity >
+<Activity name="com.ichi2.anki.AnkiActivity" >
+<ChildActivity name="com.ichi2.anki.DeckPicker" encoded_callback="Lcom/ichi2/anki/AnkiActivity;=&gt;showSimpleNotification(Ljava/lang/String;Ljava/lang/String;)V"/>
+<ChildActivity name="com.ichi2.anki.DeckPicker" encoded_callback="Lcom/ichi2/anki/AnkiActivity;=&gt;onCollectionLoadError()V"/>
+</Activity >
+<Activity name="com.ichi2.anki.Lookup" >
+<ChildActivity name="org.leo.android.dict.LeoDict" encoded_callback="Lcom/ichi2/anki/Lookup;=&gt;initialize(Landroid/content/Context;)Z"/>
+</Activity >
+<Activity name="com.ichi2.anki.StudyOptionsFragment" >
+<ChildActivity name="com.ichi2.anki.FilteredDeckOptions" encoded_callback="Lcom/ichi2/anki/StudyOptionsFragment;=&gt;openFilteredDeckOptions(Z)V"/>
+</Activity >
+</ActivityGraph>

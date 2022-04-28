@@ -1,0 +1,80 @@
+{
+    "name": "org.arguslab.icc_dynregister2", 
+    "analysis_end": 1624856456, 
+    "analysis_start": 1624856454, 
+    "used_permissions": [
+        "android.permission.READ_PHONE_STATE"
+    ], 
+    "version": 1, 
+    "components": [
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "android.intent.action.MAIN"
+                            ]
+                        }, 
+                        {
+                            "kind": 1, 
+                            "value": [
+                                "android.intent.category.LAUNCHER"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 0, 
+            "name": "org.arguslab.icc_dynregister2.MainActivity", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.ksu2"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.arguslab.icc_dynregister2.MainActivity", 
+                "method": "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r10, r11)", 
+                "id": 25
+            }, 
+            "name": "org.arguslab.icc_dynregister2.MyReceiver2", 
+            "exported": true
+        }, 
+        {
+            "intent_filters": [
+                {
+                    "attributes": [
+                        {
+                            "kind": 0, 
+                            "value": [
+                                "com.ksu"
+                            ]
+                        }
+                    ]
+                }
+            ], 
+            "kind": 3, 
+            "registration_instruction": {
+                "class_name": "org.arguslab.icc_dynregister2.MainActivity", 
+                "method": "<org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)>", 
+                "statement": "virtualinvoke r0.<org.arguslab.icc_dynregister2.MainActivity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>(r7, r8)", 
+                "id": 19
+            }, 
+            "name": "org.arguslab.icc_dynregister2.MyReceiver", 
+            "exported": true
+        }
+    ]
+}

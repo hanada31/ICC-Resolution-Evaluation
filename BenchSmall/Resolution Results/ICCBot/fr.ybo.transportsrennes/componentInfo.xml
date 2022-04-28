@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="fr.ybo.transportsrennes.activity.bus.BusFavorisShortcutPicker" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" extras="Parcelable@-android.intent.extra.shortcut.ICON_RESOURCE,,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.itineraires.Itineraires"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.alerts.ListAlertsForOneLine" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.fragments.alerts.ListAlerts"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.parkrelais.ParkRelaisShortcutPicker" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" extras="Parcelable@-android.intent.extra.shortcut.ICON_RESOURCE,,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.services.UpdateTimeService" type="Service">
+    <manifest>
+      <intent_filter action="fr.ybo.transportsrennes.action.UPDATE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.widgets.TransportsWidget, fr.ybo.transportsrennes.activity.bus.DetailArret"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidgetConfigure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.widgets.TransportsWidget"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.BusShortcutPicker" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" extras="Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,,Parcelable@-android.intent.extra.shortcut.ICON_RESOURCE,"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.preferences.PreferencesRennes" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidget21Configure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.widgets.TransportsWidget"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.timeo.TimeoActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.VIEW" category="android.intent.category.BROWSABLE, android.intent.category.DEFAULT" scheme="http" host="m.starbusmetro.fr"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.bus.DetailArret"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.velos.StationsFavorisShortcutPicker" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" extras="Parcelable@-android.intent.extra.shortcut.ICON_RESOURCE,,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowRes" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.services.UpdateTimeService, fr.ybo.transportsrennes.activity.widgets.TransportsWidget, fr.ybo.transportsrennes.activity.bus.DetailArret" action="fr.ybo.transportsrennes.action.UPDATE" flags="FLAG_ACTIVITY_NO_HISTORY , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_BROUGHT_TO_FRONT "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.BusRennes" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.bus.ListArret, fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidget21" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.services.UpdateTimeService, fr.ybo.transportsrennes.activity.widgets.TransportsWidget, fr.ybo.transportsrennes.activity.bus.DetailArret" action="fr.ybo.transportsrennes.action.UPDATE" flags="FLAG_ACTIVITY_NO_HISTORY , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_BROUGHT_TO_FRONT "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.loading.LoadingActivity" type="Activity"/>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowResConfigure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.widgets.TransportsWidget"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.util.AlarmReceiver" type="Receiver"/>
+  <component name="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.velos.ListStationsByPosition" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.itineraires.Itineraires" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.parkrelais.ListParkRelais" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.ListArretByPosition" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.bus.DetailArret"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.services.UpdateTimeServiceReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.services.UpdateTimeService" action="fr.ybo.transportsrennes.action.UPDATE"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.ListNotif" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.bus.DetailArret"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.TransportsRennes" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.fragments.DashboardFragment, fr.ybo.transportsrennes.activity.TransportsRennes, interICC_android.intent.action.SEND, , fr.ybo.transportsrennes.activity.loading.LoadingActivity, fr.ybo.transportsrennes.activity.pointsdevente.ListPointsDeVente, interICC_android.intent.action.VIEW, , fr.ybo.transportsrennes.activity.bus.ListNotif" action="android.intent.action.VIEW, android.intent.action.SEND" type="image/*, text/plain" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.alerts.DetailAlert" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.pointsdevente.ListPointsDeVente" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.alerts.TabAlertes" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.DetailTrajet" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.bus.DetailArret"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidget11Configure" type="Activity">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.widgets.TransportsWidget"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.DetailArret" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.alerts.ListAlertsForOneLine, fr.ybo.transportscommun.activity.bus.AbstractDetailArret, fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.bus.DetailTrajet"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidget11" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.services.UpdateTimeService, fr.ybo.transportsrennes.activity.widgets.TransportsWidget, fr.ybo.transportsrennes.activity.bus.DetailArret" action="fr.ybo.transportsrennes.action.UPDATE" flags="FLAG_ACTIVITY_NO_HISTORY , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_BROUGHT_TO_FRONT "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.ListArret" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.widgets.TransportsWidget" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.services.UpdateTimeService, fr.ybo.transportsrennes.activity.widgets.TransportsWidget, fr.ybo.transportsrennes.activity.bus.DetailArret" action="fr.ybo.transportsrennes.action.UPDATE" flags="FLAG_ACTIVITY_NO_HISTORY , FLAG_ACTIVITY_NEW_TASK , FLAG_ACTIVITY_BROUGHT_TO_FRONT "/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.TabFavoris" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.loading.LoadingActivity, fr.ybo.transportscommun.activity.bus.AbstractTabFavoris, fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.velos.StationsShortcutPicker" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.CREATE_SHORTCUT" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes" extras="Parcelable@-android.intent.extra.shortcut.ICON_RESOURCE,,Parcelable@-android.intent.extra.shortcut.INTENT:new android.content.Intent,"/>
+  </component>
+  <component name="fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup" type="Activity">
+    <sender destination="fr.ybo.transportsrennes.activity.TransportsRennes, fr.ybo.transportsrennes.activity.loading.LoadingActivity, fr.ybo.transportsrennes.activity.bus.TabFavoris, fr.ybo.transportsrennes.fragments.bus.ListFavoris" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+</root>

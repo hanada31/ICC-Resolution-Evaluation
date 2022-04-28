@@ -1,0 +1,26 @@
+digraph G {
+com_ichi2_anki_IntentHandler -> com_ichi2_anki_DeckPicker [label="Lcom/ichi2/anki/IntentHandler;=>onCreate(Landroid/os/Bundle;)V", fontcolor="red"];
+com_ichi2_anki_services_NotificationService -> com_ichi2_anki_DeckPicker [label="Lcom/ichi2/anki/services/NotificationService;=>onStartCommand(Landroid/content/Intent;II)I", fontcolor="red"];
+com_ichi2_anki_DeckPicker -> com_ichi2_anki_ModelBrowser [label="Lcom/ichi2/anki/DeckPicker;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_ichi2_anki_DeckPicker -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/anki/DeckPicker;=>addNote()V", fontcolor="red"];
+com_ichi2_anki_DeckPicker -> com_ichi2_anki_StudyOptionsActivity [label="Lcom/ichi2/anki/DeckPicker;=>openStudyOptions(Z)V", fontcolor="red"];
+com_ichi2_anki_DeckPicker -> com_ichi2_anki_Reviewer [label="Lcom/ichi2/anki/DeckPicker;=>openReviewer()V", fontcolor="red"];
+com_ichi2_anki_Reviewer -> com_ichi2_anki_DeckOptions [label="Lcom/ichi2/anki/Reviewer;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_ichi2_anki_CardBrowser -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/anki/CardBrowser;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_ichi2_anki_CardBrowser -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/anki/CardBrowser$7;=>onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V", fontcolor="red"];
+com_ichi2_anki_NoteEditor -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/anki/NoteEditor;=>onOptionsItemSelected(Landroid/view/MenuItem;)Z", fontcolor="red"];
+com_ichi2_anki_NoteEditor -> com_ichi2_anki_CardTemplateEditor [label="Lcom/ichi2/anki/NoteEditor;=>showCardTemplateEditor()V", fontcolor="red"];
+com_ichi2_anki_NoteEditor -> com_ichi2_anki_multimediacard_activity_MultimediaEditFieldActivity [label="Lcom/ichi2/anki/NoteEditor;=>startMultimediaFieldEditor(ILcom/ichi2/anki/multimediacard/IMultimediaEditableNote;Lcom/ichi2/anki/multimediacard/fields/IField;)V", fontcolor="red"];
+com_ichi2_anki_multimediacard_fields_BasicTextFieldController -> com_ichi2_anki_multimediacard_activity_LoadPronounciationActivity [label="Lcom/ichi2/anki/multimediacard/fields/BasicTextFieldController$2;=>onClick(Landroid/view/View;)V", fontcolor="red"];
+com_ichi2_anki_multimediacard_fields_BasicTextFieldController -> com_ichi2_anki_multimediacard_activity_TranslationActivity [label="Lcom/ichi2/anki/multimediacard/fields/BasicTextFieldController;=>startTranslationWithGlosbe()V", fontcolor="red"];
+com_ichi2_widget_AddNoteWidget -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/widget/AddNoteWidget;=>onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V", fontcolor="red"];
+com_ichi2_anki_ModelBrowser -> com_ichi2_anki_ModelFieldEditor [label="Lcom/ichi2/anki/ModelBrowser$4;=>onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V", fontcolor="red"];
+com_ichi2_widget_AnkiDroidWidgetSmall -> com_ichi2_anki_IntentHandler [label="Lcom/ichi2/widget/AnkiDroidWidgetSmall$UpdateService;=>buildUpdate(Landroid/content/Context;Z)Landroid/widget/RemoteViews;", fontcolor="red"];
+com_ichi2_anki_AbstractFlashcardViewer -> com_ichi2_anki_NoteEditor [label="Lcom/ichi2/anki/AbstractFlashcardViewer;=>editCard()Z", fontcolor="red"];
+com_ichi2_widget_WidgetStatus -> com_ichi2_widget_AnkiDroidWidgetSmall [label="Lcom/ichi2/widget/WidgetStatus$UpdateDeckStatusAsyncTask;=>onPostExecute(Landroid/content/Context;)V", fontcolor="red"];
+com_ichi2_widget_WidgetStatus -> com_ichi2_anki_services_NotificationService [label="Lcom/ichi2/widget/WidgetStatus$UpdateDeckStatusAsyncTask;=>onPostExecute(Landroid/content/Context;)V", fontcolor="red"];
+com_ichi2_anki_AnkiActivity -> com_ichi2_anki_DeckPicker [label="Lcom/ichi2/anki/AnkiActivity;=>showSimpleNotification(Ljava/lang/String;Ljava/lang/String;)V", fontcolor="red"];
+com_ichi2_anki_AnkiActivity -> com_ichi2_anki_DeckPicker [label="Lcom/ichi2/anki/AnkiActivity;=>onCollectionLoadError()V", fontcolor="red"];
+com_ichi2_anki_Lookup -> org_leo_android_dict_LeoDict [label="Lcom/ichi2/anki/Lookup;=>initialize(Landroid/content/Context;)Z", fontcolor="red"];
+com_ichi2_anki_StudyOptionsFragment -> com_ichi2_anki_FilteredDeckOptions [label="Lcom/ichi2/anki/StudyOptionsFragment;=>openFilteredDeckOptions(Z)V", fontcolor="red"];
+}

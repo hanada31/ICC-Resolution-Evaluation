@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="org.liberty.android.fantastischmemo.downloader.DownloaderSS" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByTitleActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.quizlet.CardsetsListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.FEDirectory" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.DownloaderFE" action="am.fe.intent.search_tag"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.PreviewEditActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.DetailScreen, org.liberty.android.fantastischmemo.ui.CardPlayerActivity, interICC_android.intent.action.SEND, , org.liberty.android.fantastischmemo.ui.CardEditor, org.liberty.android.fantastischmemo.service.AnyMemoService, org.liberty.android.fantastischmemo.ui.SettingsScreen, org.liberty.android.fantastischmemo.ui.DatabaseMerger, org.liberty.android.fantastischmemo.ui.CardListActivity, interICC_android.intent.action.VIEW, android.intent.category.BROWSABLE, org.liberty.android.fantastischmemo.ui.PreviewEditActivity, org.liberty.android.fantastischmemo.ui.CategoryEditorFragment, org.liberty.android.fantastischmemo.ui.GestureSelectionDialogFragment" action="android.intent.action.VIEW, android.intent.action.SEND" category="android.intent.category.BROWSABLE" data="http://anymemo.org/wiki/index.php?title=Editing_screen" type="text/plain"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.cram.CramPublicUserCardSetActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.cram.CramCardSetListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletLauncher" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity, org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByTitleActivity, org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByUsernameActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.cram.CramSearchPublicCardSetActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.cram.CramCardSetListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.AlgorithmCustomizationScreen" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.ui.CardPlayerActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.service.AnyMemoService, org.liberty.android.fantastischmemo.ui.CardPlayerFragment, org.liberty.android.fantastischmemo.service.CardPlayerService"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.service.ConvertIntentService" type="Service">
+    <sender destination="org.liberty.android.fantastischmemo.ui.PreviewEditActivity, org.liberty.android.fantastischmemo.ui.AnyMemo"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.dropbox.UploadDropboxScreen" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.CardListActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.DetailScreen, org.liberty.android.fantastischmemo.ui.CardEditor, org.liberty.android.fantastischmemo.ui.CardListActivity, org.liberty.android.fantastischmemo.ui.PreviewEditActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.StudyActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.GradeButtonsFragment, com.example.android.apis.graphics.FingerPaint, org.liberty.android.fantastischmemo.ui.SettingsScreen, interICC_android.intent.action.VIEW, android.intent.category.BROWSABLE, org.liberty.android.fantastischmemo.ui.PreviewEditActivity, org.liberty.android.fantastischmemo.ui.GestureSelectionDialogFragment, interICC_colordict.intent.action.SEARCH, , org.liberty.android.fantastischmemo.ui.DetailScreen, interICC_com.ngc.fora.action.LOOKUP, , interICC_android.intent.action.SEND, , org.liberty.android.fantastischmemo.ui.CardEditor, org.liberty.android.fantastischmemo.service.AnyMemoService, interICC_bluedict.intent.action.FLOATSEARCH, , org.liberty.android.fantastischmemo.ui.StudyActivity, org.liberty.android.fantastischmemo.ui.CategoryEditorFragment" action="colordict.intent.action.SEARCH, bluedict.intent.action.FLOATSEARCH, android.intent.action.VIEW, com.ngc.fora.action.LOOKUP, android.intent.action.SEND" category="android.intent.category.BROWSABLE" data="http://anymemo.org/wiki/index.php?title=Learning_screen" type="text/plain"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.ShareScreen" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.SEND" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="org.liberty.android.fantastischmemo.ui.PreviewEditActivity, org.liberty.android.fantastischmemo.ui.FileBrowserActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.SetAlarmReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="android.intent.action.BOOT_COMPLETED"/>
+    </manifest>
+    <sender destination="org.liberty.android.fantastischmemo.AlarmReceiver"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.AnyMemo" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="org.liberty.android.fantastischmemo.AlarmReceiver, org.liberty.android.fantastischmemo.service.AnyMemoService, interICC_android.intent.action.VIEW, android.intent.category.BROWSABLE" action="android.intent.action.VIEW" category="android.intent.category.BROWSABLE" data="http://anymemo.org/index.php?page=version"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletSearchByUsernameActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.quizlet.CardsetsListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.dropbox.DropboxDBListActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.dropbox.UploadDropboxScreen, org.liberty.android.fantastischmemo.downloader.dropbox.DownloadDBFileListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.AlarmReceiver" type="Receiver">
+    <sender destination="org.liberty.android.fantastischmemo.service.AnyMemoService"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.DownloaderFE" type="Activity"/>
+  <component name="com.example.android.apis.graphics.FingerPaint" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.ui.OptionScreen" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.AlgorithmCustomizationScreen"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.QuizActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.GradeButtonsFragment, interICC_colordict.intent.action.SEARCH, , interICC_com.ngc.fora.action.LOOKUP, , com.example.android.apis.graphics.FingerPaint, org.liberty.android.fantastischmemo.service.AnyMemoService, interICC_bluedict.intent.action.FLOATSEARCH, " action="colordict.intent.action.SEARCH, bluedict.intent.action.FLOATSEARCH, com.ngc.fora.action.LOOKUP"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.SettingsScreen" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserFragment, interICC_android.intent.action.VIEW, android.intent.category.BROWSABLE" action="android.intent.action.VIEW" category="android.intent.category.BROWSABLE" data="http://anymemo.org/wiki/index.php?title=Card_styles"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.DatabaseMerger" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.AnyMemoWidgetProvider" type="Receiver">
+    <manifest>
+      <intent_filter action="android.appwidget.action.APPWIDGET_UPDATE"/>
+    </manifest>
+    <sender destination="org.liberty.android.fantastischmemo.AlarmReceiver, org.liberty.android.fantastischmemo.service.AnyMemoService"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.service.CardPlayerService" type="Service">
+    <sender destination="interICC_org.liberty.android.fantastischmemo.CardPlayerService.PLAYING_STOPPED, , org.liberty.android.fantastischmemo.ui.CardPlayerActivity, interICC_org.liberty.android.fantastischmemo.CardPlayerService.ACTION_GO_TO_CARD, " action="org.liberty.android.fantastischmemo.CardPlayerService.ACTION_GO_TO_CARD, org.liberty.android.fantastischmemo.CardPlayerService.PLAYING_STOPPED" flags="FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.DownloaderAnyMemo" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListScreen" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.google.UploadGoogleDriveScreen, org.liberty.android.fantastischmemo.downloader.google.SpreadsheetListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUserPrivateActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUploadActivity, org.liberty.android.fantastischmemo.downloader.quizlet.CardsetsListFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.StatisticsScreen" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.downloader.cram.CramLauncher" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.downloader.cram.CramSearchPublicCardSetActivity, org.liberty.android.fantastischmemo.downloader.FEDirectory, org.liberty.android.fantastischmemo.downloader.cram.CramPublicUserCardSetActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.quizlet.QuizletUploadActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.DetailScreen" type="Activity"/>
+  <component name="org.liberty.android.fantastischmemo.ui.CardEditor" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.CardEditor, org.liberty.android.fantastischmemo.ui.AudioRecorderFragment, org.liberty.android.fantastischmemo.ui.CategoryEditorFragment, org.liberty.android.fantastischmemo.ui.FileBrowserActivity"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.service.AnyMemoService" type="Service">
+    <sender destination="org.liberty.android.fantastischmemo.ui.StudyActivity, org.liberty.android.fantastischmemo.ui.AnyMemo" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.downloader.google.UploadGoogleDriveScreen" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserFragment"/>
+  </component>
+  <component name="org.liberty.android.fantastischmemo.ui.FileBrowserActivity" type="Activity">
+    <sender destination="org.liberty.android.fantastischmemo.ui.FileBrowserFragment"/>
+  </component>
+</root>

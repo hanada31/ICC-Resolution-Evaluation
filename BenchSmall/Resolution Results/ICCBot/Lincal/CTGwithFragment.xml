@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <source name="felixwiemuth.lincal.ui.SettingsActivity">
+    <destination name="felixwiemuth.lincal.ui.SettingsFragment" type="Act2Frag" method="&lt;felixwiemuth.lincal.ui.SettingsActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="felixwiemuth.lincal.ui.SettingsActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="12" extras="" flags=""/>
+  </source>
+  <source name="felixwiemuth.lincal.ui.AddCalendarActivity">
+    <destination name="felixwiemuth.lincal.NotificationService" type="Act2NonAct" method="&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.ui.SettingsActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="interICC_android.intent.action.OPEN_DOCUMENT, android.intent.category.OPENABLE" type="*/*" method="&lt;felixwiemuth.lincal.ui.AddCalendarActivity$1: void onClick(android.view.View)&gt;" InstructionId="-1" action="android.intent.action.OPEN_DOCUMENT" category="android.intent.category.OPENABLE" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.ui.CalendarListActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.util.Util: void showErrorDialog(int,java.lang.String,boolean,android.content.Context)&gt;" InstructionId="20" extras="" flags=""/>
+  </source>
+  <source name="felixwiemuth.lincal.LinCalBroadcastReceiver">
+    <destination name="felixwiemuth.lincal.NotificationService" type="NonAct2NonAct" method="&lt;felixwiemuth.lincal.LinCalBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;" InstructionId="9" extras="" flags=""/>
+  </source>
+  <source name="felixwiemuth.lincal.NotificationService">
+    <destination name="felixwiemuth.lincal.ui.CalendarListActivity" type="NonAct2Act" method="&lt;felixwiemuth.lincal.util.Util: void showErrorDialog(int,java.lang.String,boolean,android.content.Context)&gt;" InstructionId="20" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.NotificationService" type="NonAct2NonAct" method="&lt;felixwiemuth.lincal.NotificationService: void runWithCalendar(android.content.Context,int)&gt;" InstructionId="5" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.NotificationService" type="NonAct2NonAct" method="&lt;felixwiemuth.lincal.NotificationService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="37" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.NotificationService" type="NonAct2NonAct" method="&lt;felixwiemuth.lincal.NotificationService: void onHandleIntent(android.content.Intent)&gt;" InstructionId="41" extras="" flags=""/>
+  </source>
+  <source name="org.acra.dialog.CrashReportDialog">
+    <destination name="org.acra.sender.SenderService" type="Act2NonAct" method="&lt;org.acra.sender.SenderServiceStarter: void startService(boolean,boolean)&gt;" InstructionId="16" extras="" flags=""/>
+  </source>
+  <source name="org.acra.sender.SenderService"/>
+  <source name="felixwiemuth.lincal.ui.CalendarListActivity">
+    <destination name="felixwiemuth.lincal.ui.CalendarViewActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.CalendarListActivity$SimpleItemRecyclerViewAdapter$1: void onClick(android.view.View)&gt;" InstructionId="29" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.ui.SettingsActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="12" extras="" flags=""/>
+    <destination name="felixwiemuth.lincal.ui.CalendarViewFragment" type="Act2Frag" method="&lt;felixwiemuth.lincal.ui.CalendarListActivity$SimpleItemRecyclerViewAdapter$1: void onClick(android.view.View)&gt;" InstructionId="-1"/>
+    <destination name="felixwiemuth.lincal.ui.AddCalendarActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.CalendarListActivity$1: void onClick(android.view.View)&gt;" InstructionId="6" extras="" flags=""/>
+  </source>
+  <source name="felixwiemuth.lincal.ui.CalendarViewActivity">
+    <destination name="felixwiemuth.lincal.ui.CalendarViewFragment" type="Act2Frag" method="&lt;felixwiemuth.lincal.ui.CalendarViewActivity: void onCreate(android.os.Bundle)&gt;" InstructionId="-1"/>
+    <destination name="felixwiemuth.lincal.ui.SettingsActivity" type="Act2Act" method="&lt;felixwiemuth.lincal.ui.LinCalMenuAppCompatActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;" InstructionId="12" extras="" flags=""/>
+  </source>
+</root>

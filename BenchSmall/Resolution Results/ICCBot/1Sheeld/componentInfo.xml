@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <component name="com.integreight.onesheeld.utils.FacebookBroadcastReceiver" type="Receiver">
+    <manifest>
+      <intent_filter action="com.facebook.platform.AppCallResultBroadcast"/>
+    </manifest>
+  </component>
+  <component name="com.integreight.onesheeld.shields.controller.utils.SmsListener" type="Receiver">
+    <manifest>
+      <intent_filter action="android.provider.Telephony.SMS_RECEIVED"/>
+    </manifest>
+  </component>
+  <component name="com.integreight.onesheeld.services.OneSheeldService" type="Service">
+    <sender destination="com.integreight.onesheeld.MainActivity" flags="FLAG_ACTIVITY_CLEAR_TOP FLAG_ACTIVITY_SINGLE_TOP "/>
+  </component>
+  <component name="com.facebook.FacebookActivity" type="Activity">
+    <sender destination="com.facebook.internal.FacebookDialogFragment, com.facebook.login.LoginFragment"/>
+  </component>
+  <component name="com.integreight.onesheeld.plugin.action.FireReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
+    </manifest>
+  </component>
+  <component name="com.integreight.onesheeld.Tutorial" type="Activity"/>
+  <component name="com.integreight.onesheeld.shields.controller.utils.NfcUtils" type="Activity">
+    <manifest>
+      <intent_filter action="android.nfc.action.NDEF_DISCOVERED" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.nfc.action.NDEF_DISCOVERED" category="android.intent.category.DEFAULT" scheme="btl2cap"/>
+      <intent_filter action="android.nfc.action.TAG_DISCOVERED" category="android.intent.category.DEFAULT"/>
+      <intent_filter action="android.nfc.action.TECH_DISCOVERED" category="android.intent.category.DEFAULT"/>
+    </manifest>
+    <sender destination="com.integreight.onesheeld.MainActivity" flags="FLAG_ACTIVITY_CLEAR_TOP "/>
+  </component>
+  <component name="com.integreight.onesheeld.plugin.condition.ConditionActivity" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.EDIT_CONDITION"/>
+    </manifest>
+  </component>
+  <component name="com.integreight.onesheeld.shields.controller.utils.SpeechRecognitionService" type="Service">
+    <sender action="android.speech.action.RECOGNIZE_SPEECH"/>
+  </component>
+  <component name="com.integreight.onesheeld.MainActivity" type="Activity">
+    <manifest>
+      <intent_filter action="android.intent.action.MAIN" category="android.intent.category.LAUNCHER"/>
+    </manifest>
+    <sender destination="com.integreight.onesheeld.MainActivity, com.integreight.onesheeld.Tutorial, com.integreight.onesheeld.appFragments.SheeldsList" flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+  <component name="com.integreight.onesheeld.shields.controller.utils.CameraHeadService" type="Service"/>
+  <component name="com.integreight.onesheeld.plugin.action.ActionActivity" type="Activity" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
+    </manifest>
+  </component>
+  <component name="com.crashlytics.android.core.DevicePowerStateListener$1" type="Receiver"/>
+  <component name="com.integreight.onesheeld.plugin.condition.QueryReceiver" type="Receiver" exported="true">
+    <manifest>
+      <intent_filter action="com.twofortyfouram.locale.intent.action.QUERY_CONDITION"/>
+    </manifest>
+  </component>
+  <component name="com.crashlytics.android.core.DevicePowerStateListener$2" type="Receiver"/>
+  <component name="com.integreight.onesheeld.push.PushMessagesReceiver" type="Service">
+    <manifest>
+      <intent_filter action="com.google.firebase.MESSAGING_EVENT"/>
+    </manifest>
+    <sender flags="FLAG_ACTIVITY_NEW_TASK "/>
+  </component>
+</root>

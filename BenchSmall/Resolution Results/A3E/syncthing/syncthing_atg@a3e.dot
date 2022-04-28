@@ -1,0 +1,39 @@
+digraph G {
+subgraph cluster_legend{ 
+bgcolor=mintcream;
+_Activity[color = red];
+_Service[color = royalblue];
+_Provider[color = violet];
+_Reciever[color = peru];
+_Fragment[color = teal];
+_Main[style=filled, fillcolor=orange, color = mintcream];
+_Exported[style=filled, fillcolor=lightpink, color = mintcream];
+_Main -> _Exported -> _Activity -> _Service -> _Reciever -> _Provider -> _Fragment; 
+}
+ShareActivity[style=filled, fillcolor=pink, color = red];
+SettingsActivity[color = red];
+PullOrderDialogActivity[color = red];
+MainActivity[color = red];
+FolderPickerActivity[color = red];
+VersioningDialogActivity[color = red];
+WebGuiActivity[color = red];
+DeviceActivity[color = red];
+FolderTypeDialogActivity[color = red];
+FolderActivity[color = red];
+FirstStartActivity[style=filled, fillcolor=orange, color = red];
+LogActivity[style=filled, fillcolor=pink, color = red];
+SyncthingService[color = royalblue];
+AppConfigReceiver[style=filled, fillcolor=pink, color = peru];
+BootReceiver[style=filled, fillcolor=pink, color = peru];
+MainActivity->SyncthingService;
+MainActivity->FirstStartActivity;
+FolderPickerActivity->FolderPickerActivity;
+WebGuiActivity->SyncthingService;
+FolderActivity->PullOrderDialogActivity;
+FolderActivity->VersioningDialogActivity;
+FolderActivity->FolderTypeDialogActivity;
+FirstStartActivity->WebGuiActivity;
+FirstStartActivity->MainActivity;
+AppConfigReceiver->SyncthingService;
+BootReceiver->SyncthingService;
+}

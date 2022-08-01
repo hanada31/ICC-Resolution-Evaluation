@@ -57,9 +57,7 @@ Count the number of tags and ICCs relates to each pattern.
 
 - **FN-ICC-tag-count:** Number of tags on common FN ICCs.
 - **All-ICC-tag-count:** Number of tags on all ICCs.
-- **other files: **ICCs relates to each pattern.
-
-
+- **other files:** ICCs relates to each pattern.
 
 
 

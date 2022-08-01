@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/felixwiemuth.lincal">
+  <OracleEdge source="felixwiemuth.lincal.LinCalBroadcastReceiver" destination="felixwiemuth.lincal.NotificationService" method="">
+    <comment>*LinCalBroadcastReceiver.onReceive() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/LinCalBroadcastReceiver.java" start="36" end="36" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.AddCalendarActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
+    <comment>AddCalendarActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/AddCalendarActivity.java" start="39" end="39" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarListActivity" destination="felixwiemuth.lincal.NotificationService" method="">
+    <comment>CalendarListActivity.onCreate() -&gt; setupRecyclerView() -&gt; RecyclerView.setAdapter() -&gt; CalendarListActivity.SimpleItemRecyclerViewAdapter.onBindViewHolder() -&gt; View.setOnClickListener() -&gt; View.OnClickListener.onClick() -&gt; FragmentTransaction.commit() -&gt; CalendarViewFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; NotificationService.runWithCalendar() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="81" end="81" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="106" end="107" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="150" end="168" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="156" end="160" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewFragment.java" start="184" end="184" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewFragment.java" start="180" end="180" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/NotificationService.java" start="126" end="128" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarListActivity" destination="felixwiemuth.lincal.ui.AddCalendarActivity" method="">
+    <comment>CalendarListActivity.onCreate() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="71" end="77" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="75" end="75" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarListActivity" destination="felixwiemuth.lincal.ui.CalendarViewActivity" method="">
+    <comment>CalendarListActivity.onCreate() -&gt; setupRecyclerView() -&gt; RecyclerView.setAdapter() -&gt; CalendarListActivity.SimpleItemRecyclerViewAdapter.onBindViewHolder() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; CalendarListActivity.startActivityForResult()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="81" end="81" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="106" end="107" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="150" end="168" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="163" end="165" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarListActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
+    <comment>CalendarListActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarListActivity.java" start="46" end="46" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarViewActivity" destination="felixwiemuth.lincal.NotificationService" method="">
+    <comment>CalendarViewActivity.onCreate() -&gt; FragmentTransaction.commit() -&gt; CalendarViewFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; NotificationService.runWithCalendar() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewActivity.java" start="63" end="67" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewFragment.java" start="184" end="184" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewFragment.java" start="180" end="180" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewFragment.java" start="126" end="128" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/NotificationService.java" start="126" end="129" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.CalendarViewActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
+    <comment>CalendarViewActivity extends LinCalMenuAppCompatActivity -&gt; *LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/CalendarViewActivity.java" start="32" end="32" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="felixwiemuth.lincal.ui.SettingsActivity" destination="felixwiemuth.lincal.ui.SettingsActivity" method="">
+    <comment>*SettingsActivity extends LinCalMenuAppCompatActivity -&gt; LinCalMenuAppCompatActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/SettingsActivity.java" start="29" end="29" />
+      <line src="/app/src/main/java/felixwiemuth/lincal/ui/LinCalMenuAppCompatActivity.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+</root>

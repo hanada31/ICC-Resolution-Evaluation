@@ -1,0 +1,68 @@
+{
+    "apps": {
+        "com.csipsimple": 1,
+        "com.farmerbb.taskbar": 2,
+        "com.ichi2.anki": 3,
+        "com.integreight.onesheeld": 3,
+        "com.oriondev.moneywallet": 1,
+        "eu.siacs.conversations": 10,
+        "net.osmand.plus": 1,
+        "org.ligi.passandroid": 1,
+        "org.smssecure.smssecure": 6,
+        "org.sufficientlysecure.keychain": 3
+    },
+    "edges": {
+        "com.csipsimple": [
+            "com.csipsimple.ui.prefs.PrefsFilters -> com.csipsimple.ui.filters.AccountFilters"
+        ],
+        "com.farmerbb.taskbar": [
+            "com.farmerbb.taskbar.MainActivity -> com.farmerbb.taskbar.activity.ClearDataActivity",
+            "com.farmerbb.taskbar.MainActivity -> com.farmerbb.taskbar.activity.SelectAppActivity"
+        ],
+        "com.ichi2.anki": [
+            "com.ichi2.anki.DeckPicker -> com.ichi2.anki.DeckOptions",
+            "com.ichi2.anki.DeckPicker -> com.ichi2.anki.FilteredDeckOptions",
+            "com.ichi2.anki.DeckPicker -> com.ichi2.anki.MyAccount"
+        ],
+        "com.integreight.onesheeld": [
+            "com.integreight.onesheeld.MainActivity -> com.facebook.FacebookActivity",
+            "com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.CameraHeadService",
+            "com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.SpeechRecognitionService"
+        ],
+        "com.oriondev.moneywallet": [
+            "com.oriondev.moneywallet.ui.activity.MainActivity -> com.oriondev.moneywallet.ui.activity.BackupListActivity"
+        ],
+        "eu.siacs.conversations": [
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ConferenceDetailsActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ContactDetailsActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.EditAccountActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ManageAccountActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.RecordingActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ShareLocationActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.StartConversationActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.TrustKeysActivity",
+            "eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.WelcomeActivity",
+            "eu.siacs.conversations.ui.StartConversationActivity -> eu.siacs.conversations.ui.ChooseContactActivity"
+        ],
+        "net.osmand.plus": [
+            "net.osmand.plus.activities.MapActivity -> net.osmand.plus.activities.PrintDialogActivity"
+        ],
+        "org.ligi.passandroid": [
+            "org.ligi.passandroid.ui.PassListActivity -> org.ligi.passandroid.ui.PassViewActivity"
+        ],
+        "org.smssecure.smssecure": [
+            "org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.BlockedContactsActivity",
+            "org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.LogSubmitActivity",
+            "org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.PassphraseChangeActivity",
+            "org.smssecure.smssecure.ConversationListActivity -> org.smssecure.smssecure.ConversationActivity",
+            "org.smssecure.smssecure.ConversationListArchiveActivity -> org.smssecure.smssecure.ConversationActivity",
+            "org.smssecure.smssecure.NewConversationActivity -> org.smssecure.smssecure.ConversationActivity"
+        ],
+        "org.sufficientlysecure.keychain": [
+            "org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.EditKeyActivity",
+            "org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity",
+            "org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.ShowNfcSweetspotActivity"
+        ]
+    },
+    "totalCnt": 31
+}

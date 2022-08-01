@@ -1,0 +1,116 @@
+{
+    "apps": {
+        "bm_ICCBotBench": 1,
+        "com.csipsimple": 6,
+        "com.etesync.syncadapter": 3,
+        "com.integreight.onesheeld": 3,
+        "com.mikifus.padland": 6,
+        "de.tobiasbielefeld.solitaire": 3,
+        "dev.ukanth.ufirewall": 2,
+        "es.usc.citius.servando.calendula": 1,
+        "eu.siacs.conversations": 1,
+        "eu.vranckaert.worktime": 8,
+        "fr.ybo.transportsrennes": 6,
+        "org.inaturalist.android": 2,
+        "org.ligi.passandroid": 1,
+        "org.sufficientlysecure.keychain": 3,
+        "org.tasks": 12,
+        "pt.joaomneto.titancompanion": 3
+    },
+    "edges": {
+        "bm_ICCBotBench": [
+            "com.iccbot.withFrag.Source2WithFrag -> com.iccbot.withFrag.Des2WithFrag"
+        ],
+        "com.csipsimple": [
+            "com.csipsimple.ui.account.AccountsEditList -> com.csipsimple.wizards.BasePrefsWizard",
+            "com.csipsimple.ui.account.AccountsEditList -> com.csipsimple.wizards.WizardChooser",
+            "com.csipsimple.ui.filters.AccountFilters -> com.csipsimple.ui.filters.EditFilter",
+            "com.csipsimple.ui.prefs.PrefsFilters -> com.csipsimple.ui.filters.AccountFilters",
+            "com.csipsimple.ui.prefs.hc.MainPrefs -> com.csipsimple.ui.prefs.PrefsFast",
+            "com.csipsimple.ui.prefs.hc.MainPrefs -> com.csipsimple.ui.prefs.PrefsFilters"
+        ],
+        "com.etesync.syncadapter": [
+            "com.etesync.syncadapter.ui.ViewCollectionActivity -> com.etesync.syncadapter.ui.CollectionMembersActivity",
+            "com.etesync.syncadapter.ui.ViewCollectionActivity -> com.etesync.syncadapter.ui.EditCollectionActivity",
+            "com.etesync.syncadapter.ui.setup.LoginActivity -> com.etesync.syncadapter.ui.WebViewActivity"
+        ],
+        "com.integreight.onesheeld": [
+            "com.integreight.onesheeld.MainActivity -> com.facebook.FacebookActivity",
+            "com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.CameraHeadService",
+            "com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.SpeechRecognitionService"
+        ],
+        "com.mikifus.padland": [
+            "com.mikifus.padland.NewPadActivity -> com.mikifus.padland.PadViewActivity",
+            "com.mikifus.padland.PadInfoActivity -> com.mikifus.padland.PadViewActivity",
+            "com.mikifus.padland.PadListActivity -> com.mikifus.padland.NewPadActivity",
+            "com.mikifus.padland.SettingsActivity -> com.mikifus.padland.About",
+            "com.mikifus.padland.SettingsActivity -> com.mikifus.padland.IntroActivity",
+            "com.mikifus.padland.SettingsActivity -> com.mikifus.padland.ServerListActivity"
+        ],
+        "de.tobiasbielefeld.solitaire": [
+            "de.tobiasbielefeld.solitaire.ui.GameManager -> de.tobiasbielefeld.solitaire.ui.manual.Manual",
+            "de.tobiasbielefeld.solitaire.ui.GameManager -> de.tobiasbielefeld.solitaire.ui.settings.Settings",
+            "de.tobiasbielefeld.solitaire.ui.GameManager -> de.tobiasbielefeld.solitaire.ui.statistics.StatisticsActivity"
+        ],
+        "dev.ukanth.ufirewall": [
+            "dev.ukanth.ufirewall.preferences.PreferencesActivity -> dev.ukanth.ufirewall.activity.ProfileActivity",
+            "dev.ukanth.ufirewall.preferences.PreferencesActivity -> haibison.android.lockpattern.LockPatternActivity"
+        ],
+        "es.usc.citius.servando.calendula": [
+            "es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity -> es.usc.citius.servando.calendula.pinlock.PinLockActivity"
+        ],
+        "eu.siacs.conversations": [
+            "eu.siacs.conversations.ui.SettingsActivity -> eu.siacs.conversations.ui.AboutActivity"
+        ],
+        "eu.vranckaert.worktime": [
+            "eu.vranckaert.worktime.activities.HomeActivity -> eu.vranckaert.worktime.activities.preferences.PreferencesActivity",
+            "eu.vranckaert.worktime.activities.HomeActivity -> eu.vranckaert.worktime.activities.projects.ManageProjectsActivity",
+            "eu.vranckaert.worktime.activities.HomeActivity -> eu.vranckaert.worktime.activities.reporting.ReportingCriteriaActivity",
+            "eu.vranckaert.worktime.activities.HomeActivity -> eu.vranckaert.worktime.activities.timeregistrations.TimeRegistrationListActivity",
+            "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity -> eu.vranckaert.worktime.activities.backup.BackupRestoreInfoActivity",
+            "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity -> eu.vranckaert.worktime.activities.backup.BackupSendFromSDActivity",
+            "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity -> eu.vranckaert.worktime.activities.backup.BackupToSDActivity",
+            "eu.vranckaert.worktime.activities.preferences.BackupPreferencesActivity -> eu.vranckaert.worktime.activities.backup.RestoreFromSDActivity"
+        ],
+        "fr.ybo.transportsrennes": [
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.alerts.TabAlertes",
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.bus.BusRennes",
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.bus.ListArretByPosition",
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete",
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.parkrelais.ListParkRelais",
+            "fr.ybo.transportsrennes.activity.TransportsRennes -> fr.ybo.transportsrennes.activity.velos.ListStationsByPosition"
+        ],
+        "org.inaturalist.android": [
+            "org.inaturalist.android.SettingsActivity -> org.inaturalist.android.About",
+            "org.inaturalist.android.SettingsActivity -> org.inaturalist.android.NetworkSettings"
+        ],
+        "org.ligi.passandroid": [
+            "org.ligi.passandroid.ui.PassListActivity -> org.ligi.passandroid.ui.PreferenceActivity"
+        ],
+        "org.sufficientlysecure.keychain": [
+            "org.sufficientlysecure.keychain.ui.LogDisplayActivity -> org.sufficientlysecure.keychain.ui.LogDisplayActivity",
+            "org.sufficientlysecure.keychain.ui.SettingsActivity -> org.sufficientlysecure.keychain.ui.SettingsKeyServerActivity",
+            "org.sufficientlysecure.keychain.ui.SettingsActivity -> org.sufficientlysecure.keychain.ui.SettingsSmartPGPAuthoritiesActivity"
+        ],
+        "org.tasks": [
+            "com.todoroo.astrid.activity.TaskEditActivity -> com.todoroo.astrid.files.AACRecordingActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.ClearAllDataActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.DeleteAllCalendarEventsActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.DeleteCompletedActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.DeleteCompletedEventsActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.PurgeDeletedActivity",
+            "com.todoroo.astrid.core.OldTaskPreferences -> org.tasks.activities.ResetPreferencesActivity",
+            "org.tasks.preferences.BackupPreferences -> org.tasks.activities.ExportTaskActivity",
+            "org.tasks.preferences.BackupPreferences -> org.tasks.activities.ImportTaskActivity",
+            "org.tasks.preferences.BasicPreferences -> org.tasks.preferences.BackupPreferences",
+            "org.tasks.preferences.BasicPreferences -> org.tasks.preferences.DateShortcutPreferences",
+            "org.tasks.preferences.BasicPreferences -> org.tasks.preferences.MiscellaneousPreferences"
+        ],
+        "pt.joaomneto.titancompanion": [
+            "pt.joaomneto.titancompanion.MainActivity -> pt.joaomneto.titancompanion.GamebookListActivity",
+            "pt.joaomneto.titancompanion.MainActivity -> pt.joaomneto.titancompanion.LoadAdventureActivity",
+            "pt.joaomneto.titancompanion.MainActivity -> pt.joaomneto.titancompanion.TCPreferenceActivity"
+        ]
+    },
+    "totalCnt": 59
+}

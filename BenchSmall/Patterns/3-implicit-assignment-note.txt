@@ -1,0 +1,35 @@
+# Fragment invoke Activity method
+com.csipsimple.ui.prefs.PrefsFilters -> com.csipsimple.ui.filters.AccountFilters
+com.ichi2.anki.DeckPicker -> com.ichi2.anki.DeckOptions
+com.ichi2.anki.DeckPicker -> com.ichi2.anki.FilteredDeckOptions
+com.ichi2.anki.DeckPicker -> com.ichi2.anki.MyAccount
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.EditAccountActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ManageAccountActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.StartConversationActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.WelcomeActivity
+org.ligi.passandroid.ui.PassListActivity -> org.ligi.passandroid.ui.PassViewActivity
+org.smssecure.smssecure.ConversationListActivity -> org.smssecure.smssecure.ConversationActivity
+org.smssecure.smssecure.ConversationListArchiveActivity -> org.smssecure.smssecure.ConversationActivity
+org.smssecure.smssecure.NewConversationActivity -> org.smssecure.smssecure.ConversationActivity
+
+# Multiple Fragments
+com.farmerbb.taskbar.MainActivity -> com.farmerbb.taskbar.activity.ClearDataActivity
+com.farmerbb.taskbar.MainActivity -> com.farmerbb.taskbar.activity.SelectAppActivity
+com.integreight.onesheeld.MainActivity -> com.facebook.FacebookActivity
+com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.CameraHeadService
+com.integreight.onesheeld.MainActivity -> com.integreight.onesheeld.shields.controller.utils.SpeechRecognitionService
+com.oriondev.moneywallet.ui.activity.MainActivity -> com.oriondev.moneywallet.ui.activity.BackupListActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ConferenceDetailsActivity
+net.osmand.plus.activities.MapActivity -> net.osmand.plus.activities.PrintDialogActivity
+org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.BlockedContactsActivity
+org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.LogSubmitActivity
+org.smssecure.smssecure.ApplicationPreferencesActivity -> org.smssecure.smssecure.PassphraseChangeActivity
+org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.EditKeyActivity
+org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.QrCodeCaptureActivity
+org.sufficientlysecure.keychain.ui.CreateKeyActivity -> org.sufficientlysecure.keychain.ui.ShowNfcSweetspotActivity
+
+# Fragment invoke Activity method + Multiple Fragments
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ContactDetailsActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.RecordingActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.ShareLocationActivity
+eu.siacs.conversations.ui.ConversationsActivity -> eu.siacs.conversations.ui.TrustKeysActivity

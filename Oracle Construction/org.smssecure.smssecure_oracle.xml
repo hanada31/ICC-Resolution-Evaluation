@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/org.smssecure.smssecure">
+  <OracleEdge source="org.smssecure.smssecure.ApplicationPreferencesActivity" destination="org.smssecure.smssecure.BlockedContactsActivity" method="">
+    <comment>ApplicationPreferencesActivity.onCreate() -&gt; new ApplicationPreferenceFragment() -&gt; ApplicationPreferencesActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ApplicationPreferencesActivity.ApplicationPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; new AppProtectionPreferenceFragment() -&gt; FragmentTransaction.commit() -&gt; AppProtectionPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; AppProtectionPreferenceFragment.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="90" end="90" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="61" end="61" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="146" end="147" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="209" end="209" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="228" end="232" />
+      <line src="/src/org/smssecure/smssecure/preferences/AppProtectionPreferenceFragment.java" start="49" end="50" />
+      <line src="/src/org/smssecure/smssecure/preferences/AppProtectionPreferenceFragment.java" start="85" end="86" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ApplicationPreferencesActivity" destination="org.smssecure.smssecure.LogSubmitActivity" method="">
+    <comment>ApplicationPreferencesActivity.onCreate() -&gt; new ApplicationPreferenceFragment() -&gt; ApplicationPreferencesActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ApplicationPreferencesActivity.ApplicationPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; new AdvancedPreferenceFragment() -&gt; FragmentTransaction.commit() -&gt; AdvancedPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="90" end="90" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="61" end="61" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="146" end="147" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="218" end="218" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="228" end="232" />
+      <line src="/src/org/smssecure/smssecure/preferences/AdvancedPreferenceFragment.java" start="30" end="31" />
+      <line src="/src/org/smssecure/smssecure/preferences/AdvancedPreferenceFragment.java" start="46" end="47" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ApplicationPreferencesActivity" destination="org.smssecure.smssecure.PassphraseChangeActivity" method="">
+    <comment>ApplicationPreferencesActivity.onCreate() -&gt; new ApplicationPreferenceFragment() -&gt; ApplicationPreferencesActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ApplicationPreferencesActivity.ApplicationPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; new AppProtectionPreferenceFragment() -&gt; FragmentTransaction.commit() -&gt; AppProtectionPreferenceFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; AppProtectionPreferenceFragment.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="90" end="90" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="61" end="61" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="146" end="147" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="209" end="209" />
+      <line src="/src/org/smssecure/smssecure/ApplicationPreferencesActivity.java" start="228" end="232" />
+      <line src="/src/org/smssecure/smssecure/preferences/AppProtectionPreferenceFragment.java" start="45" end="46" />
+      <line src="/src/org/smssecure/smssecure/preferences/AppProtectionPreferenceFragment.java" start="95" end="95" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.BlockedContactsActivity" destination="org.smssecure.smssecure.RecipientPreferenceActivity" method="">
+    <comment>BlockedContactsActivity.onCreate() -&gt; new BlockedContactsFragment() -&gt; BlockedContactsActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; BlockedContactsActivity.BlockedContactsFragment.onActivityCreated() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; BlockedContactsActivity.BlockedContactsFragment.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/BlockedContactsActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/BlockedContactsActivity.java" start="27" end="27" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/BlockedContactsActivity.java" start="82" end="82" />
+      <line src="/src/org/smssecure/smssecure/BlockedContactsActivity.java" start="107" end="110" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.MediaOverviewActivity" method="">
+    <comment>*ConversationActivity.onOptionsItemSelected() -&gt; handleViewMedia() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="393" end="393" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="580" end="583" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.MessageDetailsActivity" method="">
+    <comment>ConversationActivity.onCreate() -&gt; new ConversationFragment() -&gt; ConversationActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ConversationFragment.onActivityCreated() -&gt; initializeListAdapter() -&gt; new ConversationAdapter() -&gt; new ConversationActivity.ConversationFragmentItemClickListener() -&gt; ListView.setAdapter() -&gt; ConversationFragmentItemClickListener.onItemLongClick() -&gt; new ActionModeCallback() -&gt; Activity.startSupportActionMode() -&gt; *ConversationFragment.ActionModeCallback.onActionItemClicked() -&gt; ConversationFragment.handleDisplayDetails() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="213" end="214" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="144" end="144" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="145" end="145" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="87" end="87" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="190" end="190" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="86" end="86" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="510" end="510" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="566" end="566" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="331" end="337" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.PromptMmsActivity" method="">
+    <comment>*ConversationActivity.onOptionsItemSelected() -&gt; handleAddAttachment() -&gt; handleManualMmsRequired() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="392" end="392" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="685" end="685" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="692" end="694" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.RecipientPreferenceActivity" method="">
+    <comment>ConversationActivity.onCreate() -&gt; initializeViews() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ConversationActivity.startActivitySceneTransition() -&gt; ConversationActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity extends BaseActionBarActivity -&gt; ActivityCompat.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="218" end="218" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="865" end="865" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="868" end="871" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="144" end="144" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="23" end="23" />
+      <line src="/src/org/smssecure/smssecure/BaseActionBarActivity.java" start="85" end="85" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.ShareActivity" method="">
+    <comment>ConversationActivity.onCreate() -&gt; new ConversationFragment() -&gt; ConversationActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ConversationFragment.onActivityCreated() -&gt; initializeListAdapter() -&gt; new ConversationAdapter() -&gt; new ConversationActivity.ConversationFragmentItemClickListener() -&gt; ListView.setAdapter() -&gt; ConversationFragmentItemClickListener.onItemLongClick() -&gt; new ActionModeCallback() -&gt; Activity.startSupportActionMode() -&gt; *ConversationFragment.ActionModeCallback.onActionItemClicked() -&gt; ConversationFragment.handleForwardMessage() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="213" end="214" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="144" end="144" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="145" end="145" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="87" end="87" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="190" end="190" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="86" end="86" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="510" end="510" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="570" end="570" />
+      <line src="/src/org/smssecure/smssecure/ConversationFragment.java" start="341" end="351" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationActivity" destination="org.smssecure.smssecure.VerifyIdentityActivity" method="">
+    <comment>*ConversationActivity.onOptionsItemSelected() -&gt; handleVerifyIdentity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="397" end="397" />
+      <line src="/src/org/smssecure/smssecure/ConversationActivity.java" start="496" end="498" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.ApplicationPreferencesActivity" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; handleDisplaySettings() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="146" end="146" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="184" end="185" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>ConversationListActivity.onCreate() -&gt; new ConversationListFragment() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ConversationListFragment.onActivityCreated() -&gt; initializeListAdapter() -&gt; new ConversationListAdapter() -&gt; ListView.setAdapter() -&gt; ConversationListAdapter.onCreateItemViewHolder() -&gt; View.OnClickListener.onClick() -&gt; ConversationListAdapter.ItemClickListener.onItemClick() -&gt; ConversationListFragment implements ConversationListAdapter.ItemClickListener -&gt; *ConversationListFragment.onItemClick() -&gt; handleCreateConversation() -&gt; ConversationListActivity.onCreateConversation() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="67" end="67" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="146" end="146" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="199" end="199" />
+      <line src="/src/org/smssecure/smssecure/ConversationListAdapter.java" start="133" end="133" />
+      <line src="/src/org/smssecure/smssecure/ConversationListAdapter.java" start="136" end="136" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="437" end="438" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="158" end="164" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.ConversationListArchiveActivity" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; handleSwitchToArchive() -&gt; onSwitchToArchive() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="144" end="144" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="170" end="171" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.DatabaseUpgradeActivity" method="">
+    <comment>*ConversationListActivity.onCreate() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.onCreate() -&gt; routeApplicationState() -&gt; getIntentForState() -&gt; getUpgradeDatabaseIntent() -&gt; getRoutedIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="42" end="42" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="120" end="120" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="133" end="133" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="162" end="162" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="166" end="169" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="122" end="122" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.GroupCreateActivity" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; createGroup() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="145" end="145" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="175" end="176" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.ImportExportActivity" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; handleImportExport() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="149" end="149" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="195" end="195" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.IntroScreenActivity" method="">
+    <comment>*ConversationListActivity.onCreate() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.onCreate() -&gt; routeApplicationState() -&gt; getIntentForState() -&gt; getIntroScreenIntent() -&gt; getRoutedIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="42" end="42" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="120" end="120" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="134" end="134" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="177" end="177" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="166" end="169" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="122" end="122" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.NewConversationActivity" method="">
+    <comment>ConversationListActivity.onCreate() -&gt; new ConversationListFragment() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ConversationListFragment.onActivityCreated() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="67" end="67" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="140" end="142" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="143" end="143" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.PassphraseCreateActivity" method="">
+    <comment>*ConversationListActivity.onCreate() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.onCreate() -&gt; routeApplicationState() -&gt; getIntentForState() -&gt; getCreatePassphraseIntent() -&gt; getRoutedIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="42" end="42" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="120" end="120" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="131" end="131" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="154" end="154" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="166" end="169" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="122" end="122" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.PassphrasePromptActivity" method="">
+    <comment>*ConversationListActivity.onCreate() -&gt; ConversationListActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.onCreate() -&gt; routeApplicationState() -&gt; getIntentForState() -&gt; getPromptPassphraseIntent() -&gt; getRoutedIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="43" end="43" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="42" end="42" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="120" end="120" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="132" end="132" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="158" end="158" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="166" end="169" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="122" end="122" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.ViewLocalIdentityActivity" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; handleMyIdentity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="150" end="150" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="199" end="199" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListActivity" destination="org.smssecure.smssecure.service.KeyCachingService" method="">
+    <comment>*ConversationListActivity.onOptionsItemSelected() -&gt; handleClearPassphrase() -&gt; startService()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="147" end="147" />
+      <line src="/src/org/smssecure/smssecure/ConversationListActivity.java" start="189" end="191" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationListArchiveActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>ConversationListArchiveActivity.onCreate() -&gt; new ConversationListFragment() -&gt; ConversationListArchiveActivity extends PassphraseRequiredActionBarActivity -&gt; PassphraseRequiredActionBarActivity.initFragment() -&gt; FragmentTransaction.commit() -&gt; ConversationListFragment.onActivityCreated() -&gt; initializeListAdapter() -&gt; new ConversationListAdapter() -&gt; ListView.setAdapter() -&gt; ConversationListAdapter.onCreateItemViewHolder() -&gt; View.OnClickListener.onClick() -&gt; ConversationListAdapter.ItemClickListener.onItemClick() -&gt; ConversationListFragment implements ConversationListAdapter.ItemClickListener -&gt; *ConversationListFragment.onItemClick() -&gt; handleCreateConversation() -&gt; ConversationListFragment.ConversationSelectedListener.onCreateConversation() -&gt; ConversationListArchiveActivity implements ConversationListFragment.ConversationSelectedListener -&gt; ConversationListArchiveActivity.onCreateConversation() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationListArchiveActivity.java" start="34" end="35" />
+      <line src="/src/org/smssecure/smssecure/ConversationListArchiveActivity.java" start="13" end="13" />
+      <line src="/src/org/smssecure/smssecure/PassphraseRequiredActionBarActivity.java" start="113" end="115" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="146" end="146" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="199" end="199" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="133" end="133" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="136" end="136" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="437" end="438" />
+      <line src="/src/org/smssecure/smssecure/ConversationListFragment.java" start="308" end="308" />
+      <line src="/src/org/smssecure/smssecure/ConversationListArchiveActivity.java" start="13" end="14" />
+      <line src="/src/org/smssecure/smssecure/ConversationListArchiveActivity.java" start="58" end="64" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ConversationPopupActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>*ConversationPopupActivity.onOptionsItemSelected() -&gt; ListenableFuture.addListener() -&gt; *ListenableFuture.Listener.onSuccess() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ConversationPopupActivity.java" start="81" end="81" />
+      <line src="/src/org/smssecure/smssecure/ConversationPopupActivity.java" start="85" end="87" />
+      <line src="/src/org/smssecure/smssecure/ConversationPopupActivity.java" start="92" end="92" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.DatabaseMigrationActivity" destination="org.smssecure.smssecure.service.ApplicationMigrationService" method="">
+    <comment>*DatabaseMigrationActivity.onCreate() -&gt; initializeServiceBinding() -&gt; bindService()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/DatabaseMigrationActivity.java" start="46" end="46" />
+      <line src="/src/org/smssecure/smssecure/DatabaseMigrationActivity.java" start="75" end="76" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.GroupCreateActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>*GroupCreateActivity.onOptionsItemSelected() -&gt; handleGroupCreate() -&gt; CreateMmsGroupAsyncTask.execute() -&gt; GroupCreateActivity.CreateMmsGroupAsyncTask.onPostExecute() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="176" end="176" />
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="189" end="189" />
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="268" end="274" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.GroupCreateActivity" destination="org.smssecure.smssecure.PushContactSelectionActivity" method="">
+    <comment>GroupCreateActivity.onCreate() -&gt; initializeResources() -&gt; View.setOnClickListener() -&gt; new AddRecipientButtonListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="103" end="103" />
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="153" end="153" />
+      <line src="/src/org/smssecure/smssecure/GroupCreateActivity.java" start="226" end="227" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ImportExportActivity" destination="org.smssecure.smssecure.DatabaseMigrationActivity" method="">
+    <comment>ImportExportActivity.onCreate() -&gt; initializeResources() -&gt; new ImportExportActivity.TabPagerAdapter() -&gt; ImportExportActivity.TabPagerAdapter.TabPagerAdapter() -&gt; new ImportFragment() -&gt; ViewPager.setAdapter() -&gt; ImportExportActivity.TabPagerAdapter.getItem() -&gt; ImportFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; View.OnClickListener.onClick() -&gt; ImportFragment.handleImportSms() -&gt; AlertDialog.Builder.setPositiveButton() -&gt; *AlertDialog.OnClickListener.onClick() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="36" end="36" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="60" end="60" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="99" end="99" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="62" end="62" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="48" end="48" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="51" end="51" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="87" end="87" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="97" end="99" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ImportExportActivity" destination="org.smssecure.smssecure.ExitActivity" method="">
+    <comment>ImportExportActivity.onCreate() -&gt; initializeResources() -&gt; new ImportExportActivity.TabPagerAdapter() -&gt; ImportExportActivity.TabPagerAdapter.TabPagerAdapter() -&gt; new ImportFragment() -&gt; ViewPager.setAdapter() -&gt; ImportExportActivity.TabPagerAdapter.getItem() -&gt; ImportFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; View.OnClickListener.onClick() -&gt; ImportFragment.handleImportEncryptedBackup() -&gt; AlertDialog.Builder.setPositiveButton() -&gt; *AlertDialog.OnClickListener.onClick() -&gt; new ImportEncryptedBackupTask().execute() -&gt; ImportEncryptedBackupTask.onPostExecute() -&gt; ExitActivity.exitAndRemoveFromRecentApps() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="36" end="36" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="60" end="60" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="99" end="99" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="62" end="62" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="55" end="55" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="58" end="58" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="114" end="114" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="220" end="220" />
+      <line src="/src/org/smssecure/smssecure/ExitActivity.java" start="25" end="32" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ImportExportActivity" destination="org.smssecure.smssecure.service.ApplicationMigrationService" method="">
+    <comment>ImportExportActivity.onCreate() -&gt; initializeResources() -&gt; new ImportExportActivity.TabPagerAdapter() -&gt; ImportExportActivity.TabPagerAdapter.TabPagerAdapter() -&gt; new ImportFragment() -&gt; ViewPager.setAdapter() -&gt; ImportExportActivity.TabPagerAdapter.getItem() -&gt; ImportFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; View.OnClickListener.onClick() -&gt; ImportFragment.handleImportSms() -&gt; AlertDialog.Builder.setPositiveButton() -&gt; *AlertDialog.OnClickListener.onClick() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="36" end="36" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="60" end="60" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="99" end="99" />
+      <line src="/src/org/smssecure/smssecure/ImportExportActivity.java" start="62" end="62" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="48" end="48" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="51" end="51" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="87" end="87" />
+      <line src="/src/org/smssecure/smssecure/ImportFragment.java" start="90" end="93" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.MediaOverviewActivity" destination="org.smssecure.smssecure.MediaPreviewActivity" method="">
+    <comment>MediaOverviewActivity.onLoadFinished() -&gt; new ImageMediaAdapter() -&gt; GridView.setAdapter() -&gt; ImageMediaAdapter.onBindItemViewHolder() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/MediaOverviewActivity.java" start="223" end="223" />
+      <line src="/src/org/smssecure/smssecure/ImageMediaAdapter.java" start="78" end="78" />
+      <line src="/src/org/smssecure/smssecure/ImageMediaAdapter.java" start="90" end="92" />
+      <line src="/src/org/smssecure/smssecure/ImageMediaAdapter.java" start="103" end="103" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.MediaPreviewActivity" destination="org.smssecure.smssecure.MediaOverviewActivity" method="">
+    <comment>*MediaPreviewActivity.onOptionsItemSelected() -&gt; showOverview() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/MediaPreviewActivity.java" start="233" end="233" />
+      <line src="/src/org/smssecure/smssecure/MediaPreviewActivity.java" start="194" end="196" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.MediaPreviewActivity" destination="org.smssecure.smssecure.ShareActivity" method="">
+    <comment>*MediaPreviewActivity.onOptionsItemSelected() -&gt; forward() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/MediaPreviewActivity.java" start="234" end="234" />
+      <line src="/src/org/smssecure/smssecure/MediaPreviewActivity.java" start="200" end="203" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.NewConversationActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>NewConversationActivity.onCreate() -&gt; NewConversationActivity extends ContactSelectionActivity -&gt; ContactSelectionActivity.onCreate() -&gt; initializeResources() -&gt; ContactSelectionListFragment.setOnContactSelectedListener() -&gt; *NewConversationActivity.onContactSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/NewConversationActivity.java" start="42" end="42" />
+      <line src="/src/org/smssecure/smssecure/NewConversationActivity.java" start="36" end="36" />
+      <line src="/src/org/smssecure/smssecure/ContactSelectionActivity.java" start="79" end="79" />
+      <line src="/src/org/smssecure/smssecure/ContactSelectionActivity.java" start="110" end="110" />
+      <line src="/src/org/smssecure/smssecure/NewConversationActivity.java" start="51" end="54" />
+      <line src="/src/org/smssecure/smssecure/NewConversationActivity.java" start="60" end="60" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.PanicResponderActivity" destination="org.smssecure.smssecure.ExitActivity" method="">
+    <comment>*PanicResponderActivity.onCreate() -&gt; ExitActivity.exitAndRemoveFromRecentApps() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/PanicResponderActivity.java" start="36" end="36" />
+      <line src="/src/org/smssecure/smssecure/ExitActivity.java" start="25" end="32" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.PanicResponderActivity" destination="org.smssecure.smssecure.service.KeyCachingService" method="">
+    <comment>*PanicResponderActivity.onCreate() -&gt; handleClearPassphrase() -&gt; startService()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/PanicResponderActivity.java" start="35" end="35" />
+      <line src="/src/org/smssecure/smssecure/PanicResponderActivity.java" start="47" end="49" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.PassphraseCreateActivity" destination="org.smssecure.smssecure.service.KeyCachingService" method="">
+    <comment>*PassphraseCreateActivity.onCreate() -&gt; initializeResources() -&gt; new SecretGenerator().execute() -&gt; PassphraseCreateActivity.SecretGenerator.onPostExecute() -&gt; PassphraseCreateActivity extends PassphraseActivity -&gt; PassphraseActivity.setMasterSecret() -&gt; startService()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/PassphraseCreateActivity.java" start="45" end="45" />
+      <line src="/src/org/smssecure/smssecure/PassphraseCreateActivity.java" start="52" end="52" />
+      <line src="/src/org/smssecure/smssecure/PassphraseCreateActivity.java" start="78" end="78" />
+      <line src="/src/org/smssecure/smssecure/PassphraseCreateActivity.java" start="35" end="35" />
+      <line src="/src/org/smssecure/smssecure/PassphraseActivity.java" start="41" end="42" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.PassphrasePromptActivity" destination="org.smssecure.smssecure.LogSubmitActivity" method="">
+    <comment>*PassphrasePromptActivity.onOptionsItemSelected() -&gt; handleLogSubmit() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/PassphrasePromptActivity.java" start="98" end="98" />
+      <line src="/src/org/smssecure/smssecure/PassphrasePromptActivity.java" start="105" end="106" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.PromptMmsActivity" destination="org.smssecure.smssecure.preferences.MmsPreferencesActivity" method="">
+    <comment>PromptMmsActivity.onCreate() -&gt; initializeResources() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/PromptMmsActivity.java" start="20" end="20" />
+      <line src="/src/org/smssecure/smssecure/PromptMmsActivity.java" start="27" end="27" />
+      <line src="/src/org/smssecure/smssecure/PromptMmsActivity.java" start="30" end="32" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.ShareActivity" destination="org.smssecure.smssecure.NewConversationActivity" method="">
+    <comment>*ShareActivity.onOptionsItemSelected() -&gt; handleNewConversation() -&gt; getBaseShareIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/ShareActivity.java" start="147" end="147" />
+      <line src="/src/org/smssecure/smssecure/ShareActivity.java" start="154" end="154" />
+      <line src="/src/org/smssecure/smssecure/ShareActivity.java" start="193" end="198" />
+      <line src="/src/org/smssecure/smssecure/ShareActivity.java" start="156" end="156" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.SmsSendtoActivity" destination="org.smssecure.smssecure.ConversationActivity" method="">
+    <comment>*SmsSendtoActivity.onCreate() -&gt; getNextIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="25" end="25" />
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="50" end="53" />
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.SmsSendtoActivity" destination="org.smssecure.smssecure.NewConversationActivity" method="">
+    <comment>*SmsSendtoActivity.onCreate() -&gt; getNextIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="25" end="25" />
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="46" end="48" />
+      <line src="/src/org/smssecure/smssecure/SmsSendtoActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver" destination="org.smssecure.smssecure.ConversationPopupActivity" method="">
+    <comment>*MessageNotifier.ReminderReceiver.onReceive() -&gt; AsyncTask.execute() -&gt; doInBackground() -&gt; MessageNotifier.updateNotification() -&gt; sendSingleThreadNotification() -&gt; SingleRecipientNotificationBuilder.addActions() -&gt; NotificationState.getQuickReplyIntent() -&gt; NotificationManagerCompat.notify()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="483" end="483" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="246" end="246" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="298" end="298" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="300" end="300" />
+      <line src="/src/org/smssecure/smssecure/notifications/NotificationState.java" start="133" end="138" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="321" end="321" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver" destination="org.smssecure.smssecure.notifications.MarkReadReceiver" method="">
+    <comment>*MessageNotifier.ReminderReceiver.onReceive() -&gt; AsyncTask.execute() -&gt; doInBackground() -&gt; MessageNotifier.updateNotification() -&gt; sendSingleThreadNotification() -&gt; SingleRecipientNotificationBuilder.addActions() -&gt; NotificationState.getMarkAsReadIntent() -&gt; NotificationManagerCompat.notify()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="483" end="483" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="246" end="246" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="298" end="298" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="299" end="299" />
+      <line src="/src/org/smssecure/smssecure/notifications/NotificationState.java" start="109" end="113" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="321" end="321" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.notifications.MessageNotifier$ReminderReceiver" destination="org.smssecure.smssecure.notifications.RemoteReplyReceiver" method="">
+    <comment>*MessageNotifier.ReminderReceiver.onReceive() -&gt; AsyncTask.execute() -&gt; doInBackground() -&gt; MessageNotifier.updateNotification() -&gt; sendSingleThreadNotification() -&gt; SingleRecipientNotificationBuilder.addActions() -&gt; NotificationState.getRemoteReplyIntent() -&gt; NotificationManagerCompat.notify()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="483" end="483" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="246" end="246" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="298" end="298" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="301" end="301" />
+      <line src="/src/org/smssecure/smssecure/notifications/NotificationState.java" start="121" end="125" />
+      <line src="/src/org/smssecure/smssecure/notifications/MessageNotifier.java" start="321" end="321" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="org.smssecure.smssecure.service.KeyCachingService" destination="org.smssecure.smssecure.DummyActivity" method="">
+    <comment>*KeyCachingService.onTaskRemoved() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/smssecure/smssecure/service/KeyCachingService.java" start="170" end="172" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+</root>

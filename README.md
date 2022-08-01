@@ -14,7 +14,7 @@ The evaluation results on five handmade benchmarks.
 
 - **ICCBotBench**: the ICC resolution results of tools, A3E, IC3, IC3-DIALDroid, Gator, StoryDistiller and ICCBot. 
 
-- **Statistic on BenchHand.xlsx**: statistic information.
+- **Statistic on BenchHand.xlsx**: statistic information, including the execution time, the evaluation results of number-based and oracle-based metrics, and the number of FN ICCs with specific tags.
 
   
 
@@ -26,7 +26,9 @@ The evaluation results on BenchSmall, which contains 31 apps.
 
 - **Resolution Results**: the ICC resolution results of tools, A3E, IC3, IC3-DIALDroid, Gator, StoryDistiller and ICCBot. 
 
-- **Statistic on BenchSmall.xlsx**: statistic information.
+- **Patterns:** the common FN ICCs, and the number of ICCs related to each FN pattern.
+
+- **Statistic on BenchSmall.xlsx**: statistic information, including the app information, execution time, the evaluation results of number-based, graph-based and oracle-based metrics, the number of FN ICCs with specific tags, and the pairwise comparison results.
 
   
 
@@ -36,7 +38,15 @@ The evaluation results on 2000 apps from f-droid and 2000 ones from google play 
 
 - **Data Set:** Information about apps.
 - **Resolution Results**: the ICC resolution results of tools, A3E, IC3, IC3-DIALDroid, Gator, StoryDistiller and ICCBot. 
-- **Statistic on BenchLarge.xlsx**: statistic information.
+- **Statistic on BenchLarge.xlsx**: statistic information, including the execution time, the evaluation results of number-based and graph-based metrics.
+
+
+
+### Oracle Construction
+
+The ICCs in our oracle set and their corresponding tags, i.e., the raw data of our ICCViewer website https://iccviewer.ldby.site/ICCViewer/.
+
+For the five benchmarks in BenchHand, and the 31 apps in BenchSmall.
 
 
 

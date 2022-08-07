@@ -171,22 +171,30 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.CalendarActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *TransactionMultiPanelViewPagerFragment.onMenuItemClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerMultiItemFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; setupPrimaryToolbar() -&gt; Toolbar.setOnMenuItemClickListener() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerMultiItemFragment -&gt; *TransactionMultiPanelViewPagerFragment.onMenuItemClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="408" end="408" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="62" end="62" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="110" end="110" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="81" end="81" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
       </analyzeScope>
     </tags>
@@ -227,301 +235,446 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.MapActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PlaceMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; *PlaceMultiPanelFragment.onMenuItemClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PlaceMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; PlaceMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; setupPrimaryToolbar() -&gt; Toolbar.setOnMenuItemClickListener() -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; PlaceMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; *PlaceMultiPanelFragment.onMenuItemClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="426" end="426" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="49" end="49" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="62" end="62" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="110" end="110" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="49" end="49" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="105" end="105" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditBudgetActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new BudgetMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *BudgetMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new BudgetMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; BudgetMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; BudgetMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; BudgetMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="416" end="416" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/BudgetMultiPanelViewPagerFragment.java" start="45" end="45" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/BudgetMultiPanelViewPagerFragment.java" start="45" end="45" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/BudgetMultiPanelViewPagerFragment.java" start="62" end="64" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditCategoryActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new CategoryMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *CategoryMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new CategoryMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; CategoryMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; CategoryMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; CategoryMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="410" end="410" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/CategoryMultiPanelViewPagerFragment.java" start="46" end="46" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/CategoryMultiPanelViewPagerFragment.java" start="46" end="46" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/CategoryMultiPanelViewPagerFragment.java" start="63" end="74" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditDebtActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new DebtMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *DebtMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new DebtMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; DebtMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; DebtMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; DebtMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="414" end="414" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/DebtMultiPanelViewPagerFragment.java" start="46" end="46" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/DebtMultiPanelViewPagerFragment.java" start="46" end="46" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/DebtMultiPanelViewPagerFragment.java" start="63" end="66" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditEventActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new EventMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *EventMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new EventMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; EventMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; EventMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; EventMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="420" end="420" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/EventMultiPanelViewPagerFragment.java" start="45" end="45" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/EventMultiPanelViewPagerFragment.java" start="45" end="45" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/EventMultiPanelViewPagerFragment.java" start="62" end="64" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditPersonActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PersonMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; *PersonMultiPanelFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PersonMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; PersonMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; setupPrimaryToolbar() -&gt; Toolbar.setOnMenuItemClickListener() -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; PersonMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; *PersonMultiPanelFragment.onMenuItemClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
-      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="420" end="420" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="428" end="428" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PersonMultiPanelFragment.java" start="46" end="46" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="62" end="62" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="110" end="110" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PersonMultiPanelFragment.java" start="46" end="46" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PersonMultiPanelFragment.java" start="100" end="102" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditPlaceActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PlaceMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; *PlaceMultiPanelFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new PlaceMultiPanelFragment() -&gt; FragmentTransaction.commit() -&gt; PlaceMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; setupPrimaryToolbar() -&gt; Toolbar.setOnMenuItemClickListener() -&gt; MultiPanelCursorListFragment extends MultiPanelFragment -&gt; MultiPanelCursorListItemFragment extends MultiPanelCursorListFragment -&gt; PlaceMultiPanelFragment extends MultiPanelCursorListItemFragment -&gt; *PlaceMultiPanelFragment.onMenuItemClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
-      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="420" end="420" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="426" end="426" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="49" end="49" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="62" end="62" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="110" end="110" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListFragment.java" start="40" end="40" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelCursorListItemFragment.java" start="32" end="32" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="49" end="49" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/PlaceMultiPanelFragment.java" start="119" end="121" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditRecurrentTransactionActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new RecurrenceMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *RecurrenceMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new RecurrenceMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; RecurrenceMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; RecurrenceMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; RecurrenceMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="422" end="422" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="47" end="47" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="47" end="47" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="76" end="76" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="84" end="85" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditRecurrentTransferActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new RecurrenceMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *RecurrenceMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new RecurrenceMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; RecurrenceMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; RecurrenceMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; RecurrenceMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="422" end="422" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="47" end="47" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="47" end="47" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="79" end="79" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/RecurrenceMultiPanelViewPagerFragment.java" start="84" end="85" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditSavingActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new SavingMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *SavingMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new SavingMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; SavingMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; SavingMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; SavingMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="418" end="418" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/SavingMultiPanelViewPagerFragment.java" start="45" end="45" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/SavingMultiPanelViewPagerFragment.java" start="45" end="45" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/SavingMultiPanelViewPagerFragment.java" start="62" end="64" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditTransactionActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *TransactionMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; TransactionMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="408" end="408" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="109" end="109" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="117" end="118" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditTransactionModelActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new ModelMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *ModelMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new ModelMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; ModelMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; ModelMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; ModelMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="424" end="424" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="52" end="52" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="52" end="52" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="92" end="92" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="100" end="101" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditTransferActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *TransactionMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; TransactionMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="408" end="408" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="112" end="112" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="117" end="118" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.NewEditTransferModelActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new ModelMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *ModelMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new ModelMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; ModelMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; onSetupRootLayout() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; MultiPanelFragment.onFloatingActionButtonClick() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelViewPagerItemFragment extends MultiPanelViewPagerFragment -&gt; ModelMultiPanelViewPagerFragment extends MultiPanelViewPagerItemFragment -&gt; ModelMultiPanelViewPagerFragment.onFloatingActionButtonClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="424" end="424" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="52" end="52" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="60" end="60" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="80" end="83" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="84" end="84" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerItemFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="52" end="52" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="95" end="95" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/ModelMultiPanelViewPagerFragment.java" start="100" end="101" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
       </analyzeScope>
     </tags>
@@ -544,22 +697,30 @@
     </tags>
   </OracleEdge>
   <OracleEdge source="com.oriondev.moneywallet.ui.activity.MainActivity" destination="com.oriondev.moneywallet.ui.activity.SearchActivity" method="">
-    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; *TransactionMultiPanelViewPagerFragment.onMenuItemClick() -&gt; startActivity()</comment>
+    <comment>MainActivity implements Drawer.OnDrawerItemClickListener -&gt; MainActivity.onItemClick() -&gt; loadSection() -&gt; buildFragmentById() -&gt; new TransactionMultiPanelViewPagerFragment() -&gt; FragmentTransaction.commit() -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerMultiItemFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelFragment.onCreateView() -&gt; setupPrimaryToolbar() -&gt; Toolbar.setOnMenuItemClickListener() -&gt; MultiPanelAppBarFragment extends MultiPanelFragment -&gt; MultiPanelViewPagerFragment extends MultiPanelAppBarFragment -&gt; TransactionMultiPanelViewPagerFragment extends MultiPanelViewPagerMultiItemFragment -&gt; *TransactionMultiPanelViewPagerFragment.onMenuItemClick() -&gt; startActivity()</comment>
     <callLines>
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="318" end="318" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="384" end="384" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="408" end="408" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/activity/MainActivity.java" start="386" end="386" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="62" end="62" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelFragment.java" start="110" end="110" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelAppBarFragment.java" start="34" end="34" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/base/MultiPanelViewPagerFragment.java" start="39" end="39" />
+      <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="51" end="51" />
       <line src="/app/src/main/java/com/oriondev/moneywallet/ui/fragment/multipanel/TransactionMultiPanelViewPagerFragment.java" start="78" end="78" />
     </callLines>
     <tags>
-      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
       <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
       <intentMatch isExplicit="true" isImplicit="false" />
       <analyzeScope>
         <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
         <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
-        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
         <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
       </analyzeScope>
     </tags>

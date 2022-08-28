@@ -1,10 +1,10 @@
-# A Comprehensive Evaluation of Android ICC Resolution Techniques
+# Artifact for: A Comprehensive Evaluation of Android ICC Resolution Techniques
 
 ## Description
-### Information about paper.
+### Information about the paper.
 
 This artifact is for paper： 
-> Jiwei Yan, Shixin Zhang, Yepang Liu, Xi Deng, Jun Yan, Jian Zhang. A Comprehensive Evaluation of Android ICC Resolution Techniques, ASE 2022.
+> Jiwei Yan, Shixin Zhang, Yepang Liu, Xi Deng, Jun Yan, Jian Zhang. [A Comprehensive Evaluation of Android ICC Resolution Techniques](ASE2022-A Comprehensive Evaluation of Android ICC Resolution Techniques.pdf), ASE 2022.
 
 The contributions of this paper are threefold:
 
@@ -22,16 +22,16 @@ In the corresponding paper, we made a comprehensive evaluation of Android ICC re
 This artifact contains three parts:
 
 - The information about multiple-type benchmark suites, including the hand-made benchmarks, the large-scale real-world benchmarks, and especially the reusable data for our characteristic-labeled ICC benchmark displayed on [ICCViewer](https://iccviewer.ldby.site/ICCViewer/). 
-- The scripts that are used to perform the unified ICC resolution comparison.
+- The scripts and source files to generate the tables and figures used in the paper.
 - The evaluation results on the three benchmark suites, including the execution time, the evaluation results of number-based and oracle-based metrics, and the number of FN ICCs with specific tags.
 
 
 
-## Content
+## Contents 
 
 ### BenchHand
 
-The evaluation results on five handmade benchmarks.
+The evaluation results on five handmade benchmarks, which contains 73 apps.
 
 - **DroidBench**: the ICC resolution results of the six tools under evaluation, *A3E*, *IC3*, *IC3-DIALDroid*, *Gator*, *StoryDistiller* and *ICCBot*. For each tool, we give the graphical result of reported ICC in *appName_atg@toolName.pdf*, and the dot source file *appName_atg@toolName.dot*. For tools, e.g., *IC3* and *ICCBot*, that make extra analysis about the value of intent field, we give the corresponding reports provided by tools.
 
@@ -71,7 +71,7 @@ The evaluation results on BenchSmall, which contains 31 apps.
 
 ### BenchLarge
 
-The evaluation results on 2000 apps from f-droid and 2000 ones from google play are given. 
+The evaluation results on 2000 apps from f-droid, and 2000 ones from google play are given. 
 
 - **Data Set:** Information about apps.
 
@@ -84,7 +84,7 @@ The evaluation results on 2000 apps from f-droid and 2000 ones from google play 
 
   
 
-## Figure Information
+### Figure Information
 
 The drawing-related source files, which generate all the figures in the paper.
 
@@ -117,11 +117,9 @@ The ICCs in our oracle set and their corresponding tags, including the label inf
 - **README:** The [README](ICCViewer\README.md) file of  ICCViewer. 
 - **Main UI of ICCViewer.**
 
-<img src="C:\Users\79940\AppData\Roaming\Typora\typora-user-images\image-20220828095403507.png" alt="image-20220828095403507" style="zoom: 67%;" />
+<img src="Imgs\img1.png" alt="img1" style="zoom:67%;" />
 
 - **The labeled ICC characteristics in ICCViewer.**
 
-<img src="C:\Users\79940\AppData\Roaming\Typora\typora-user-images\image-20220828095601213.png" alt="image-20220828095601213" style="zoom:67%;" />
-
-
+<img src="Imgs\img2.png" alt="img2" style="zoom:67%;" />
 

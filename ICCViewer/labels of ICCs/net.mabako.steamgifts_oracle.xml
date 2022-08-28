@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/net.mabako.steamgifts">
+  <OracleEdge source="net.mabako.steamgifts.activities.AboutActivity" destination="net.mabako.steamgifts.activities.DetailActivity" method="">
+    <comment>AboutActivity.onCreate() -&gt; loadFragment() -&gt; new AboutFragment() -&gt; AboutFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/AboutActivity.java" start="19" end="19" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/AboutFragment.java" start="37" end="37" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/AboutFragment.java" start="40" end="42" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-discussion" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.DetailActivity" destination="net.mabako.sgtools.SGToolsLoginActivity" method="">
+    <comment>*DetailActivity.onCreate() -&gt; initLayout() -&gt; loadFragment() -&gt; SGToolsDetailFragment.newInstance() -&gt; onCreateView() -&gt; LoadGiveawayTask.execute() -&gt; onPostExecute() -&gt; SGToolsDetailFragment.requestLogin() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="63" end="63" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="115" end="115" />
+      <line src="/core/src/main/java/net/mabako/sgtools/SGToolsDetailFragment.java" start="51" end="51" />
+      <line src="/core/src/main/java/net/mabako/sgtools/SGToolsDetailFragment.java" start="91" end="92" />
+      <line src="/core/src/main/java/net/mabako/sgtools/LoadGiveawayTask.java" start="100" end="100" />
+      <line src="/core/src/main/java/net/mabako/sgtools/SGToolsDetailFragment.java" start="137" end="137" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.DetailActivity" destination="net.mabako.steamgifts.activities.DetailActivity" method="">
+    <comment>DetailActivity.onCreate() -&gt; initLayout() -&gt; loadFragment() -&gt; SGToolsDetailFragment.newInstance() -&gt; new SGToolsDetailFragment() -&gt; *SGToolsDetailFragment.onCreateView() -&gt; LoadGiveawayTask.execute() -&gt; onPostExecute() -&gt; SGToolsDetailFragment.onCheckSuccessful() -&gt; Activity.startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="63" end="63" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="115" end="115" />
+      <line src="/core/src/main/java/net/mabako/sgtools/SGToolsDetailFragment.java" start="91" end="92" />
+      <line src="/core/src/main/java/net/mabako/sgtools/LoadGiveawayTask.java" start="96" end="96" />
+      <line src="/core/src/main/java/net/mabako/sgtools/SGToolsDetailFragment.java" start="156" end="159" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-giveaway" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.DetailActivity" destination="net.mabako.steamgifts.activities.LoginActivity" method="">
+    <comment>DetailActivity.onCreate() -&gt; initLayout() -&gt; loadFragment() -&gt; DiscussionDetailFragment.newInstance() -&gt; new DiscussionDetailFragment() -&gt; DetailActivity extends CommonActivity -&gt; CommonActivity.loadFragment() -&gt; CommonActivity extends BaseActivity -&gt; BaseActivity.loadFragment() -&gt; FragmentTransaction.commitAllowingStateLoss() -&gt; DiscussionDetailFragment.onCreate() -&gt; DiscussionDetailFragment extends DetailFragment -&gt; DetailFragment.onCreate() -&gt; DetailFragment extends ListFragment -&gt; ListFragment.onCreate() -&gt; DetailFragment.createAdapter() -&gt; new CommentAdapter() -&gt; ListFragment.onCreateView() -&gt; setupListViewAdapter() -&gt; RecyclerView.setAdapter() -&gt; CommentAdapter extends EndlessAdapter -&gt; EndlessAdapter.onCreateViewHolder() -&gt; CommentAdapter.onCreateActualViewHolder() -&gt; new GiveawayCardViewHolder() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; CommonActivity.requestLogin() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="63" end="63" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="91" end="91" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="82" end="82" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="48" end="48" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="26" end="26" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/BaseActivity.java" start="48" end="53" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="61" end="61" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="41" end="41" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="46" end="46" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="31" end="31" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="57" end="57" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="64" end="64" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="74" end="74" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="95" end="95" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/CommentAdapter.java" start="29" end="29" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/EndlessAdapter.java" start="327" end="327" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/CommentAdapter.java" start="59" end="59" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/viewholder/GiveawayCardViewHolder.java" start="71" end="71" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/viewholder/GiveawayCardViewHolder.java" start="74" end="74" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="44" end="44" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.DetailActivity" destination="net.mabako.steamgifts.activities.SyncActivity" method="">
+    <comment>DetailActivity.onCreate() -&gt; initLayout() -&gt; loadFragment() -&gt; DiscussionDetailFragment.newInstance() -&gt; new DiscussionDetailFragment() -&gt; DetailActivity extends CommonActivity -&gt; CommonActivity.loadFragment() -&gt; CommonActivity extends BaseActivity -&gt; BaseActivity.loadFragment() -&gt; FragmentTransaction.commitAllowingStateLoss() -&gt; DiscussionDetailFragment.onCreate() -&gt; DiscussionDetailFragment extends DetailFragment -&gt; DetailFragment.onCreate() -&gt; DetailFragment extends ListFragment -&gt; ListFragment.onCreate() -&gt; DetailFragment.createAdapter() -&gt; new CommentAdapter() -&gt; ListFragment.onCreateView() -&gt; setupListViewAdapter() -&gt; RecyclerView.setAdapter() -&gt; CommentAdapter extends EndlessAdapter -&gt; EndlessAdapter.onCreateViewHolder() -&gt; CommentAdapter.onCreateActualViewHolder() -&gt; new GiveawayCardViewHolder() -&gt; CommentAdapter.onBindActualViewHolder() -&gt; GiveawayCardViewHolder.setFrom() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; Activity.startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="63" end="63" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="91" end="91" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="82" end="82" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="48" end="48" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="26" end="26" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/BaseActivity.java" start="48" end="53" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="61" end="61" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="41" end="41" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="46" end="46" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="31" end="31" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="57" end="57" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="64" end="64" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="74" end="74" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/ListFragment.java" start="95" end="95" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/CommentAdapter.java" start="29" end="29" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/EndlessAdapter.java" start="327" end="327" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/CommentAdapter.java" start="59" end="59" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/CommentAdapter.java" start="91" end="94" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/viewholder/GiveawayCardViewHolder.java" start="152" end="152" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/adapters/viewholder/GiveawayCardViewHolder.java" start="155" end="155" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.DetailActivity" destination="net.mabako.steamgifts.activities.WriteCommentActivity" method="">
+    <comment>DetailActivity.onCreate() -&gt; initLayout() -&gt; loadFragment() -&gt; DiscussionDetailFragment.newInstance() -&gt; new DiscussionDetailFragment() -&gt; DiscussionDetailFragment.onCreateOptionsMenu() -&gt; MenuItem.setOnMenuItemClickListener() -&gt; *MenuItem.OnMenuItemClickListener.onMenuItemClick() -&gt; DiscussionDetailFragment extends DetailFragment -&gt; DetailFragment.requestComment() -&gt; Activity.startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="63" end="63" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/DetailActivity.java" start="91" end="91" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="82" end="82" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="217" end="217" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="220" end="220" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DiscussionDetailFragment.java" start="41" end="41" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="200" end="205" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="222" end="223" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/fragments/DetailFragment.java" start="206" end="206" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-parent, String-giveaway-id, String-path, String-title, String-xsrf-token" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.MainActivity" destination="net.mabako.steamgifts.activities.AboutActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; new Navbar() -&gt; MainActivity extends CommonActivity -&gt; DrawerBuilder.withOnDrawerItemClickListener() -&gt; *Drawer.OnDrawerItemClickListener.onItemClick() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="42" end="42" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="23" end="23" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="103" end="103" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="119" end="119" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.MainActivity" destination="net.mabako.steamgifts.activities.DetailActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; new Navbar() -&gt; MainActivity extends CommonActivity -&gt; CustomAccountHeaderBuilder.withOnAccountHeaderProfileImageListener() -&gt; *AccountHeader.OnAccountHeaderProfileImageListener.onProfileImageClick() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="42" end="42" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="23" end="23" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="78" end="78" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="82" end="84" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-user" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.MainActivity" destination="net.mabako.steamgifts.activities.LoginActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; new Navbar() -&gt; MainActivity extends CommonActivity -&gt; DrawerBuilder.withOnDrawerItemClickListener() -&gt; *Drawer.OnDrawerItemClickListener.onItemClick() -&gt; CommonActivity.requestLogin() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="42" end="42" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="23" end="23" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="103" end="103" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="113" end="113" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/CommonActivity.java" start="44" end="44" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.MainActivity" destination="net.mabako.steamgifts.activities.SettingsActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; new Navbar() -&gt; MainActivity extends CommonActivity -&gt; DrawerBuilder.withOnDrawerItemClickListener() -&gt; *Drawer.OnDrawerItemClickListener.onItemClick() -&gt; Activity.startActivityForResult()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="42" end="42" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="23" end="23" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="103" end="103" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="122" end="122" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.MainActivity" destination="net.mabako.steamgifts.intro.IntroActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; new Navbar() -&gt; MainActivity extends CommonActivity -&gt; DrawerBuilder.withOnDrawerItemClickListener() -&gt; *Drawer.OnDrawerItemClickListener.onItemClick() -&gt; IntroActivity.showIntro() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="42" end="42" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/MainActivity.java" start="23" end="23" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="103" end="103" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/Navbar.java" start="116" end="116" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/intro/IntroActivity.java" start="34" end="36" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-type" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.activities.SettingsActivity" destination="net.mabako.steamgifts.activities.SyncActivity" method="">
+    <comment>SettingsActivity.onCreate() -&gt; new SettingsFragment() -&gt; FragmentTransaction.commit() -&gt; SettingsFragment.onCreate() -&gt; Preference.setOnPreferenceClickListener() -&gt; *Preference.OnPreferenceClickListener.onPreferenceClick() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/SettingsActivity.java" start="158" end="158" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/SettingsActivity.java" start="36" end="36" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/activities/SettingsActivity.java" start="39" end="39" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="net.mabako.steamgifts.receivers.CheckForNewMessages" destination="net.mabako.steamgifts.receivers.CheckForWonGiveaways" method="">
+    <comment>*CheckForNewMessages.onReceive() -&gt; new LoadMessagesTask() -&gt; new Check() -&gt; LoadMessagesTask.execute() -&gt; onPostExecute() -&gt; ILoadItemsListener.addItems() -&gt; Check implements ILoadItemsListener -&gt; Check.addItems() -&gt; Context.sendBroadcast()</comment>
+    <callLines>
+      <line src="/core/src/main/java/net/mabako/steamgifts/receivers/CheckForNewMessages.java" start="49" end="49" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/tasks/LoadMessagesTask.java" start="89" end="89" />
+      <line src="/core/src/main/java/net/mabako/steamgifts/receivers/CheckForNewMessages.java" start="90" end="90" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="false" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+</root>

@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="pt.joaomneto.titancompanion.ErrorActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.ErrorActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.ErrorActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.ErrorActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.ErrorActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ErrorActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.ErrorActivity: void setContentView(int)&gt;(2131230722)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void createNewAdventure(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void createNewAdventure(android.view.View)&gt;,void createNewAdventure(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void createNewAdventure(android.view.View)&gt;"/>  
+        <node method="MainActivity createNewAdventure" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="MainActivity createNewAdventure" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/GamebookListActivity;&quot;)"/>  
+        <node method="MainActivity createNewAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void loadAdventure(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void loadAdventure(android.view.View)&gt;,void loadAdventure(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void loadAdventure(android.view.View)&gt;"/>  
+        <node method="MainActivity loadAdventure" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="MainActivity loadAdventure" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/LoadAdventureActivity;&quot;)"/>  
+        <node method="MainActivity loadAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;,void rate(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="MainActivity rate" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;,void rate(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="MainActivity rate" type="SetAttribute" unit="virtualinvoke $r6.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(1208483840)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;,void rate(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="MainActivity rate" type="SetAttribute" unit="virtualinvoke $r6.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(1208483840)"/>  
+        <node method="MainActivity rate" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;,void rate(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="MainActivity rate" type="SetAttribute" unit="virtualinvoke $r6.&lt;android.content.Intent: android.content.Intent addFlags(int)&gt;(1208483840)"/>  
+        <node method="MainActivity rate" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;,void rate(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void rate(android.view.View)&gt;"/>  
+        <node method="MainActivity rate" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="MainActivity rate" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void settings(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void settings(android.view.View)&gt;,void settings(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.TCPreferenceActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void settings(android.view.View)&gt;"/>  
+        <node method="MainActivity settings" type="CreateMethod" unit="$r3 = new android.content.Intent"/>  
+        <node method="MainActivity settings" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lpt/joaomneto/titancompanion/TCPreferenceActivity;&quot;)"/>  
+        <node method="MainActivity settings" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void startActivity(android.content.Intent)&gt;($r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookListActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;,void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;,void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookListActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;,void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GamebookListActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookListActivity: void setContentView(int)&gt;(2131230724)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;,void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void &lt;init&gt;(pt.joaomneto.titancompanion.GamebookListActivity,android.content.Intent)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GamebookListActivity onCreate" type="CreateMethod" unit="$r13 = new android.content.Intent"/>  
+        <node method="GamebookListActivity onCreate" type="SetAttribute" unit="specialinvoke $r13.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r11, class &quot;Lpt/joaomneto/titancompanion/GamebookSelectionActivity;&quot;)"/>  
+        <node method="GamebookListActivity$onCreate$1 &lt;init&gt;" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity onCreate" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.BaseFragmentActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.BaseFragmentActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.Adventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.Adventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.MRAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.MRAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.MainActivity: void setContentView(int)&gt;(2131230728)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.HOHAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.HOHAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <destinition name="java.lang.Class"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="CreateMethod" unit="$r11 = new android.content.Intent"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, $r6)"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="PassOutIntent" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <destinition name="java.lang.Class"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3: void onClick(android.view.View)&gt;"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="CreateMethod" unit="$r11 = new android.content.Intent"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$3 onClick" type="SetAttribute" unit="specialinvoke $r11.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, $r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TOTAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TOTAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TROKAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TROKAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.FFAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.FFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.STAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.STAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SAAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SAAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.AODAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.AODAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.GamebookWikiaActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2: void onClick(android.view.View)&gt;"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lpt/joaomneto/titancompanion/GamebookWikiaActivity;&quot;)"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$2 onClick" type="PassOutIntent" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.RPAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.RPAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.POFAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.POFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.COTSAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.COTSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.AWFAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.AWFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SSAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookFullImageActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookFullImageActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookFullImageActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookFullImageActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookFullImageActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GamebookFullImageActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookFullImageActivity: void setContentView(int)&gt;(2131230723)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.BNCAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.BNCAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SOBAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SOBAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.GODAdventure"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.GODAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.LoadAdventureActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;,void onClick(android.content.DialogInterface,int)"/>  
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="PassOutIntent" unit="virtualinvoke $r23.&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void startActivity(android.content.Intent)&gt;($r21)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;,void onClick(android.content.DialogInterface,int)"/>  
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="SetAttribute" unit="specialinvoke $r21.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r24, $r27)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;,void onClick(android.content.DialogInterface,int)"/>  
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity$onCreate$1$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="LoadAdventureActivity$onCreate$1$2 onClick" type="CreateMethod" unit="$r21 = new android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.VitalStatisticsFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.VitalStatisticsFragment$onViewCreated$2: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.VitalStatisticsFragment$onViewCreated$2: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.VitalStatisticsFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.VitalStatisticsFragment$onViewCreated$2: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.awf.AWFAdventureCreationSuperpowerFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.awf.AWFAdventureCreationSuperpowerFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.awf.AWFAdventureCreationSuperpowerFragment$onViewCreated$1: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.awf.AWFAdventureCreationSuperpowerFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.awf.AWFAdventureCreationSuperpowerFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GamebookSelectionActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void setContentView(int)&gt;(2131230725)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.LoadAdventureActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.LoadAdventureActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LoadAdventureActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.LoadAdventureActivity: void setContentView(int)&gt;(2131230727)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.PotionsFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.PotionsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.PotionsFragment$onViewCreated$1: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.PotionsFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.PotionsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookListActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;,void onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookListActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookListActivity$onCreate$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>  
+        <node method="GamebookListActivity$onCreate$1 onItemClick" type="PassOutIntent" unit="virtualinvoke $r6.&lt;pt.joaomneto.titancompanion.GamebookListActivity: void startActivity(android.content.Intent)&gt;($r4)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.sots.SOTSAdventureCreationSkillFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.sots.SOTSAdventureCreationSkillFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.sots.SOTSAdventureCreationSkillFragment$onViewCreated$1: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.sots.SOTSAdventureCreationSkillFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.sots.SOTSAdventureCreationSkillFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.tcoc.TCOCAdventureCreationSpellsFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.tcoc.TCOCAdventureCreationSpellsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.tcoc.TCOCAdventureCreationSpellsFragment$onViewCreated$1: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.tcoc.TCOCAdventureCreationSpellsFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.tcoc.TCOCAdventureCreationSpellsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.mr.MRAdventureCreationSkillsFragment"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.mr.MRAdventureCreationSkillsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.mr.MRAdventureCreationSkillsFragment$onViewCreated$1: void onClick(android.view.View)&gt;,&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;,void saveAdventure()"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.impl.fragments.mr.MRAdventureCreationSkillsFragment"/>  
+      <destinition name=", null"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.impl.fragments.mr.MRAdventureCreationSkillsFragment$onViewCreated$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void saveAdventure()&gt;"/>  
+        <node method="AdventureCreation saveAdventure" type="CreateMethod" unit="$r24 = new android.content.Intent"/>  
+        <node method="AdventureCreation saveAdventure" type="SetAttribute" unit="specialinvoke $r24.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r13, $r16)"/>  
+        <node method="AdventureCreation saveAdventure" type="PassOutIntent" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void startActivity(android.content.Intent)&gt;($r12)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="BaseFragmentActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void setContentView(int)&gt;($i0)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookWikiaActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookWikiaActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookWikiaActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookWikiaActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookWikiaActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GamebookWikiaActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.GamebookWikiaActivity: void setContentView(int)&gt;(2131230726)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.GamebookFullImageActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1: void onClick(android.view.View)&gt;"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lpt/joaomneto/titancompanion/GamebookFullImageActivity;&quot;)"/>  
+        <node method="GamebookSelectionActivity$GamebookSelectionFragment$onCreateView$1 onClick" type="PassOutIntent" unit="virtualinvoke $r3.&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity$GamebookSelectionFragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="androidx.lifecycle.ReportFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <methodtrace value="&lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;,void injectIfNeededIn(android.app.Activity), &lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;"/>  
+      <source name="androidx.lifecycle.ReportFragment"/>  
+      <nodes> 
+        <node method="&lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="Activity getFragmentManager" type="CreateMethod" unit="retFragMan = new android.app.FragmentManager"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="androidx.core.app.ComponentActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="androidx.core.app.ComponentActivity"/>  
+      <nodes> 
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="androidx.fragment.app.FragmentActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="androidx.fragment.app.FragmentActivity"/>  
+      <nodes> 
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.BaseFragmentActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.BaseFragmentActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.Adventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.Adventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.MRAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.MRAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.MRAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.HOHAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.HOHAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.HOHAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TOTAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TOTAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TOTAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TROKAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TROKAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TROKAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.FFAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.FFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.FFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SOTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.TCOCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.STAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.STAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.STAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SAAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SAAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SAAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.AODAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.AODAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.AODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.RPAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.RPAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.RPAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="androidx.fragment.app.DialogFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+      <methodtrace value="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;,void dismissInternal(boolean)"/>  
+      <source name="androidx.fragment.app.DialogFragment"/>  
+      <nodes> 
+        <node method="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+        <node method="DialogFragment dismissInternal" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke r0.&lt;androidx.fragment.app.DialogFragment: androidx.fragment.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;androidx.fragment.app.FragmentManager: androidx.fragment.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="commit" unit="virtualinvoke $r3.&lt;androidx.fragment.app.FragmentTransaction: int commitAllowingStateLoss()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary>  
+    <FragmentSummary> 
+      <method value="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+      <methodtrace value="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;,void dismissInternal(boolean)"/>  
+      <source name="androidx.fragment.app.DialogFragment"/>  
+      <nodes> 
+        <node method="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+        <node method="DialogFragment dismissInternal" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke r0.&lt;androidx.fragment.app.DialogFragment: androidx.fragment.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;androidx.fragment.app.FragmentManager: androidx.fragment.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="commit" unit="virtualinvoke $r3.&lt;androidx.fragment.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="androidx.fragment.app.DialogFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;"/>  
+      <methodtrace value="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;,&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;,void dismissInternal(boolean)"/>  
+      <source name="androidx.fragment.app.DialogFragment"/>  
+      <nodes> 
+        <node method="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+        <node method="DialogFragment dismissInternal" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke r0.&lt;androidx.fragment.app.DialogFragment: androidx.fragment.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;androidx.fragment.app.FragmentManager: androidx.fragment.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="commit" unit="virtualinvoke $r3.&lt;androidx.fragment.app.FragmentTransaction: int commitAllowingStateLoss()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary>  
+    <FragmentSummary> 
+      <method value="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;"/>  
+      <methodtrace value="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;,&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;,void dismissInternal(boolean)"/>  
+      <source name="androidx.fragment.app.DialogFragment"/>  
+      <nodes> 
+        <node method="&lt;androidx.fragment.app.DialogFragment: void onDismiss(android.content.DialogInterface)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.DialogFragment: void dismissInternal(boolean)&gt;"/>  
+        <node method="DialogFragment dismissInternal" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke r0.&lt;androidx.fragment.app.DialogFragment: androidx.fragment.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;androidx.fragment.app.FragmentManager: androidx.fragment.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="DialogFragment dismissInternal" type="commit" unit="virtualinvoke $r3.&lt;androidx.fragment.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.POFAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.POFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.POFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.COTSAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.COTSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.COTSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.AWFAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.AWFAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.AWFAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SSAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SSAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SSAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.BNCAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.BNCAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.BNCAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.HOTWAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.SOBAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.SOBAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.SOBAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventure.impl.GODAdventure"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventure.impl.GODAdventure"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.impl.GODAdventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.adventure.Adventure: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.GamebookSelectionActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.GamebookSelectionActivity"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.GamebookSelectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.TCPreferenceActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.TCPreferenceActivity: void onBuildHeaders(java.util.List)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.TCPreferenceActivity: void onBuildHeaders(java.util.List)&gt;,void onBuildHeaders(java.util.List)"/>  
+      <source name="pt.joaomneto.titancompanion.TCPreferenceActivity"/>  
+      <destinition name="pt.joaomneto.titancompanion.fragment.TCPreferenceFragment"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.TCPreferenceActivity: void onBuildHeaders(java.util.List)&gt;"/>  
+        <node method="TCPreferenceActivity onBuildHeaders" type="LoadFunction" unit="virtualinvoke r0.&lt;pt.joaomneto.titancompanion.TCPreferenceActivity: void loadHeadersFromResource(int,java.util.List)&gt;(2131623936, $r1)"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"> 
+    <FragmentSummary> 
+      <method value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;,&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;,&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle), &lt;androidx.lifecycle.ReportFragment: void injectIfNeededIn(android.app.Activity)&gt;"/>  
+      <source name="pt.joaomneto.titancompanion.adventurecreation.AdventureCreation"/>  
+      <nodes> 
+        <node method="&lt;pt.joaomneto.titancompanion.adventurecreation.AdventureCreation: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;pt.joaomneto.titancompanion.BaseFragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.fragment.app.FragmentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;androidx.core.app.ComponentActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="ReportFragment injectIfNeededIn" type="ReceiveFromRetValue" unit="$r2 = virtualinvoke $r1.&lt;android.app.Activity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="beginTransaction" unit="$r4 = virtualinvoke $r2.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="ReportFragment injectIfNeededIn" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(android.app.Fragment,java.lang.String)&gt;($r0, &quot;androidx.lifecycle.LifecycleDispatcher.report_fragment_tag&quot;)"/>  
+        <node method="ReportFragment injectIfNeededIn" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+</root>

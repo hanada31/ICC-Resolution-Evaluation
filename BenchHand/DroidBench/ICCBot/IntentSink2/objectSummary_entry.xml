@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="de.ecspride.ICC_IntentSink2.IntentSink2">
+    <intentSummary>
+      <method value="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void startIntent(android.view.View)&gt;"/>
+      <methodtrace value="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void startIntent(android.view.View)&gt;,void startIntent(android.view.View)"/>
+      <source name="de.ecspride.ICC_IntentSink2.IntentSink2"/>
+      <nodes>
+        <node method="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void startIntent(android.view.View)&gt;"/>
+        <node method="IntentSink2 startIntent" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="IntentSink2 startIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setClassName(android.content.Context,java.lang.String)&gt;(r0, $r8)"/>
+        <node method="IntentSink2 startIntent" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="de.ecspride.ICC_IntentSink2.IntentSink2">
+    <intentSummary>
+      <method value="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="de.ecspride.ICC_IntentSink2.IntentSink2"/>
+      <nodes>
+        <node method="&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="IntentSink2 onCreate" type="setContentView" unit="virtualinvoke r0.&lt;de.ecspride.ICC_IntentSink2.IntentSink2: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

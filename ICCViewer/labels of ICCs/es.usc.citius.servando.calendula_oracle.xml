@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/es.usc.citius.servando.calendula">
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.AboutActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; initializeDrawer() -&gt; LeftDrawerMgr.init() -&gt; *onItemClick() -&gt; showAbout() -&gt; launchActivity() -&gt; HomePagerActivity.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="405" end="405" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="638" end="639" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="208" end="208" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="338" end="338" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="333" end="333" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.CalendarActivity" method="">
+    <comment>*HomePagerActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="209" end="209" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.ConfirmActivity" method="反射">
+    <comment>HomePagerActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; setCurrentItem() -&gt; HomePageAdapter.getItem() -&gt; HomePages.values() -&gt; HomePages.HOME -&gt; Constructor.newInstance() -&gt; DailyAgendaFragment.onCreateView() -&gt; setupRecyclerView() -&gt; RecyclerView.setAdapter() -&gt; DailyAgendaRecyclerAdapter.setListener() -&gt; *DailyAgendaRecyclerListener.onItemClick() -&gt; DailyAgendaFragment.showConfirmActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="412" end="417" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePageAdapter.java" start="54" end="54" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePages.java" start="33" end="33" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePageAdapter.java" start="56" end="57" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="104" end="104" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="375" end="376" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="379" end="381" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="467" end="467" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="396" end="405" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/DailyAgendaFragment.java" start="425" end="425" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-position, String-date, Long-routine_id, Long-schedule_id, String-schedule_time" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.MaterialIntroActivity" method="">
+    <comment>*HomePagerActivity.onCreate() -&gt; Handler.postDelayed() -&gt; Runnable.run() -&gt; HomePagerActivity.launchActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="472" end="477" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="475" end="475" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="643" end="643" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.MedicineInfoActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; HomePageAdapter.getItem() -&gt; HomePages.values() -&gt; HomePages.MEDICINES -&gt; Constructor.newInstance() -&gt; MedicinesListFragment.onAttach() -&gt; (OnMedicineSelectedListener) HomePagerActivity -&gt; onCreateView() -&gt; setupRecyclerView() -&gt; FastItemAdapter.withOnClickListener() -&gt; *FastAdapter.OnClickListener&lt;MedicineItem&gt;.onClick() -&gt; HomePagerActivity.onMedicineSelected() -&gt; launchActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="412" end="417" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePageAdapter.java" start="54" end="54" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePages.java" start="34" end="34" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedicinesListFragment.java" start="142" end="142" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedicinesListFragment.java" start="99" end="99" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedicinesListFragment.java" start="293" end="300" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedicinesListFragment.java" start="297" end="297" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="264" end="266" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="643" end="643" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-medicine_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.MedicinesActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; FabMenuMgr.init() -&gt; View.setOnClickListener() -&gt; *MedicinesActivity.onClick() -&gt; onClickAdd() -&gt; launchActivity() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="427" end="428" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/FabMenuMgr.java" start="69" end="69" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/FabMenuMgr.java" start="103" end="103" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/FabMenuMgr.java" start="172" end="172" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/FabMenuMgr.java" start="184" end="184" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.PatientDetailActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; initializeDrawer() -&gt; LeftDrawerMgr.init() -&gt; *onProfileChanged() -&gt; launchActivity() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="405" end="405" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="638" end="639" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="244" end="245" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="333" end="333" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.PatientsActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; initializeDrawer() -&gt; LeftDrawerMgr.init() -&gt; *onItemClick() -&gt; launchActivity() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="405" end="405" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="638" end="639" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="200" end="200" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/LeftDrawerMgr.java" start="333" end="333" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.RoutinesActivity" method="Implicit Data">
+    <comment>HomePagerActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; HomePageAdapter.getItem() -&gt; HomePages.values() -&gt; HomePages.ROUTINES -&gt; Constructor.newInstance() -&gt; RoutinesListFragment.onAttach() -&gt; (OnRoutineSelectedListener) HomePagerActivity -&gt; new ReloadItemsTask().execute() -&gt; ReloadItemsTask.onPostExecute() -&gt; ArrayAdapter.notifyDataSetChanged() -&gt; RoutinesListFragment.RoutinesListAdapter.getView() -&gt; RoutinesListFragment.createRoutineListItem() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; *HomePagerActivity.onRoutineSelected() -&gt; launchActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="412" end="417" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePageAdapter.java" start="54" end="54" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePages.java" start="35" end="35" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="97" end="97" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="84" end="86" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="246" end="246" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="229" end="229" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="186" end="200" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/RoutinesListFragment.java" start="192" end="192" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="252" end="254" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="643" end="643" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="true" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-routine_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.ScheduleCreationActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; HomePageAdapter.getItem() -&gt; HomePages.values() -&gt; HomePages.SCHEDULES -&gt; Constructor.newInstance() -&gt; ScheduleListFragment.onAttach() -&gt; (OnScheduleSelectedListener) HomePagerActivity -&gt; onCreateView() -&gt; setupRecyclerView() -&gt; FastItemAdapter&lt;ScheduleListItem&gt;.withOnClickListener() -&gt; *FastAdapter.OnClickListener&lt;ScheduleListItem&gt;.onClick() -&gt; HomePagerActivity.onScheduleSelected() -&gt; launchActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="412" end="417" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePageAdapter.java" start="54" end="54" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/HomePages.java" start="36" end="36" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleListFragment.java" start="111" end="111" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleListFragment.java" start="83" end="83" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleListFragment.java" start="172" end="184" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleListFragment.java" start="178" end="178" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="277" end="279" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="643" end="643" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-schedule_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.activities.SchedulesHelpActivity" method="">
+    <comment>*HomePagerActivity.onOptionsItemSelected() -&gt; launchActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="229" end="229" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="643" end="643" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.HomePagerActivity" destination="es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity" method="">
+    <comment>HomePagerActivity.onCreate() -&gt; checkDatabaseUpdateNeeded() -&gt; MaterialStyledDialog.Builder.onPositive() -&gt; *MaterialDialog.SingleButtonCallback.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="491" end="491" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/HomePagerActivity.java" start="369" end="371" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="boolean-show_db_dialog" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.AllergiesActivity" destination="es.usc.citius.servando.calendula.activities.AllergiesSearchActivity" method="">
+    <comment>*butterknife.OnClick() -&gt; showSearchView() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/AllergiesActivity.java" start="112" end="116" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.AllergiesSearchActivity" destination="es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity" method="">
+    <comment>AllergiesSearchActivity.onCreate() -&gt; askForDatabaseIfNeeded() -&gt; MaterialStyledDialog.Builder.onPositive() -&gt; *MaterialDialog.SingleButtonCallback.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/AllergiesSearchActivity.java" start="220" end="220" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/AllergiesSearchActivity.java" start="142" end="142" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/AllergiesSearchActivity.java" start="145" end="148" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="boolean-show_db_dialog" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.ConfirmActivity" destination="es.usc.citius.servando.calendula.HomePagerActivity" method="">
+    <comment>*ConfirmActivity.onCreate() -&gt; processIntent() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ConfirmActivity.java" start="352" end="352" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ConfirmActivity.java" start="576" end="578" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="boolean-invalid_notification_error" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.MedicineInfoActivity" destination="es.usc.citius.servando.calendula.activities.MedicinesActivity" method="">
+    <comment>*MedicineInfoActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicineInfoActivity.java" start="115" end="117" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-medicine_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.MedicineInfoActivity" destination="es.usc.citius.servando.calendula.activities.WebViewActivity" method="">
+    <comment>MedicineInfoActivity.onCreate() -&gt; new MedInfoPageAdapter() -&gt; ViewPager.setAdapter() -&gt; setCurrentItem() -&gt; MedInfoPageAdapter.getItem() -&gt; MedInfoFragment.newInstance() -&gt; onCreateView() -&gt; setupView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ProspectUtils.openProspect() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicineInfoActivity.java" start="204" end="207" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/adapters/MedInfoPageAdapter.java" start="42" end="42" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedInfoFragment.java" start="121" end="121" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedInfoFragment.java" start="187" end="187" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/MedInfoFragment.java" start="190" end="190" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/util/prospects/ProspectUtils.java" start="56" end="56" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/util/prospects/ProspectUtils.java" start="78" end="79" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Parcelable-webview_param_request" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.MedicinesActivity" destination="es.usc.citius.servando.calendula.activities.MedicinesSearchActivity" method="">
+    <comment>*MedicinesActivity.onCreate() -&gt; showSearchView() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicinesActivity.java" start="219" end="219" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicinesActivity.java" start="175" end="177" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-MedicinesSearchActivity.extras.EXTRA_SEARCH_TERM" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.MedicinesSearchActivity" destination="es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity" method="">
+    <comment>MedicinesSearchActivity.onCreate() -&gt; askForDatabase() -&gt; MaterialStyledDialog.Builder.onPositive() -&gt; *MaterialDialog.SingleButtonCallback.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicinesSearchActivity.java" start="312" end="312" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicinesSearchActivity.java" start="131" end="131" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/MedicinesSearchActivity.java" start="134" end="136" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="boolean-show_db_dialog" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.PatientDetailActivity" destination="es.usc.citius.servando.calendula.activities.ScanActivity" method="">
+    <comment>*PatientDetailActivity.onOptionsItemSelected() -&gt; startScanActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PatientDetailActivity.java" start="202" end="202" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PatientDetailActivity.java" start="348" end="352" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-after_scan_cls, String-after_scan_pkg, long-patient_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.PatientsActivity" destination="es.usc.citius.servando.calendula.activities.PatientDetailActivity" method="">
+    <comment>PatientsActivity.onCreate() -&gt; GridView.setOnItemClickListener() -&gt; *PatientsActivity.onItemClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PatientsActivity.java" start="125" end="125" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PatientsActivity.java" start="72" end="73" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PatientsActivity.java" start="83" end="83" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-patient_id" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.ScheduleCreationActivity" destination="es.usc.citius.servando.calendula.activities.MedicinesActivity" method="">
+    <comment>ScheduleCreationActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; SectionsPagerAdapter.getItem() -&gt; new SelectMedicineListFragment() -&gt; SelectMedicineListFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="382" end="382" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="390" end="390" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="488" end="488" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/SelectMedicineListFragment.java" start="78" end="80" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="boolean-create" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.ScheduleCreationActivity" destination="es.usc.citius.servando.calendula.activities.SummaryCalendarActivity" method="">
+    <comment>ScheduleCreationActivity.onCreate() -&gt; ViewPager.setAdapter() -&gt; setCurrentItem() -&gt; SectionsPagerAdapter.getItem() -&gt; new ScheduleSummaryFragment() -&gt; ScheduleSummaryFragment.setUserVisibleHint() -&gt; updateSummary() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; ScheduleSummaryFragment.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="382" end="382" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="390" end="390" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="408" end="408" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ScheduleCreationActivity.java" start="491" end="491" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleSummaryFragment.java" start="72" end="72" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleSummaryFragment.java" start="110" end="110" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/fragments/ScheduleSummaryFragment.java" start="118" end="131" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-start, int-active_days, int-rest_days, String-rule" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.StartActivity" destination="es.usc.citius.servando.calendula.HomePagerActivity" method="">
+    <comment>*StartActivity.onCreate() -&gt; verifyUnlockAndLaunch() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/StartActivity.kt" start="40" end="40" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/StartActivity.kt" start="52" end="52" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.StartActivity" destination="es.usc.citius.servando.calendula.pinlock.PinLockActivity" method="">
+    <comment>*StartActivity.onCreate() -&gt; verifyUnlockAndLaunch() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/StartActivity.kt" start="40" end="40" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/StartActivity.kt" start="45" end="47" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="PinLockActivity.action.verify_pin" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.activities.UpdateFromFileActivity" destination="es.usc.citius.servando.calendula.activities.ConfirmSchedulesActivity" method="">
+    <comment>*UpdateFromFileActivity.onCreate() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/UpdateFromFileActivity.java" start="56" end="60" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-qr_data" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.drugdb.download.DBDownloadReceiver" destination="es.usc.citius.servando.calendula.drugdb.download.InstallDatabaseService" method="">
+    <comment>*DBDownloadReceiver.onReceive() -&gt; InstallDatabaseService.startSetup() -&gt; JobIntentService.enqueueWork()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/drugdb/download/DBDownloadReceiver.java" start="58" end="58" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/drugdb/download/InstallDatabaseService.java" start="69" end="81" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="calendula.persistence.medDatabases.action.SETUP, calendula.persistence.medDatabases.action.UPDATE" />
+      <IntentField type="extra" value="String-calendula.persistence.medDatabases.extra.DB_PATH, String-calendula.persistence.medDatabases.extra.DB_PREF_VALUE, String-calendula.persistence.medDatabases.extra.DB_VERSION" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.scheduling.AlarmIntentService" destination="es.usc.citius.servando.calendula.activities.ConfirmActivity" method="">
+    <comment>*AlarmIntentService.onHandleWork() -&gt; AlarmScheduler.onAlarmReceived() -&gt; onRoutineTime() -&gt; ReminderNotification.notify() -&gt; notify() -&gt; PendingIntent.getActivity() -&gt; NotificationOptions.defaultIntent -&gt; ReminderNotification.buildNotification() -&gt; NotificationCompat.Builder.setContentIntent() -&gt; build() -&gt; ReminderNotification.notify() -&gt; NotificationManagerCompat.from() -&gt; notify()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmIntentService.kt" start="68" end="71" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="124" end="124" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="374" end="377" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="106" end="106" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="173" end="173" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="188" end="188" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="196" end="196" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="224" end="224" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="264" end="264" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="269" end="269" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="197" end="197" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="366" end="367" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-routine_id, String-date" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.scheduling.AlarmIntentService" destination="es.usc.citius.servando.calendula.notifications.LockScreenAlarmActivity" method="">
+    <comment>*AlarmIntentService.onHandleWork() -&gt; AlarmScheduler.onAlarmReceived() -&gt; onRoutineTime() -&gt; ReminderNotification.notify() -&gt; notify() -&gt; showInsistentScreen() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmIntentService.kt" start="68" end="71" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="124" end="124" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="374" end="377" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="107" end="107" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="136" end="136" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="152" end="155" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Parcelable-target" />
+      <IntentField type="flag" value="FLAG_ACTIVITY_NEW_TASK" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.scheduling.AlarmIntentService" destination="es.usc.citius.servando.calendula.scheduling.NotificationEventReceiver" method="">
+    <comment>*AlarmIntentService.onHandleWork() -&gt; AlarmScheduler.onAlarmReceived() -&gt; onRoutineTime() -&gt; ReminderNotification.notify() -&gt; notify() -&gt; PendingIntent.getBroadcast() -&gt; NotificationOptions.confirmAllIntent -&gt; ReminderNotification.buildNotification() -&gt; NotificationCompat.Builder.addAction() -&gt; build() -&gt; ReminderNotification.notify() -&gt; NotificationManagerCompat.from() -&gt; notify()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmIntentService.kt" start="68" end="71" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="124" end="124" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="377" end="377" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="92" end="94" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="106" end="106" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="181" end="181" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="192" end="192" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="196" end="196" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="246" end="246" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="264" end="264" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="269" end="269" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/ReminderNotification.java" start="367" end="367" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Long-routine_id, int-action" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.scheduling.AlarmReceiver" destination="es.usc.citius.servando.calendula.scheduling.AlarmIntentService" method="">
+    <comment>*AlarmReceiver.onReceive() -&gt; AlarmScheduler.setAlarmParams() -&gt; AlarmIntentService.enqueueWork()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmReceiver.kt" start="52" end="53" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmScheduler.java" start="86" end="89" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/AlarmReceiver.kt" start="54" end="54" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Bundle-alarm_params(Parcelable-alarm_params), String-date" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.scheduling.PickupAlarmReceiver" destination="es.usc.citius.servando.calendula.activities.CalendarActivity" method="">
+    <comment>*PickupAlarmReceiver.onReceive() -&gt; showNotification() -&gt; PendingIntent.getActivity() -&gt; NotificationCompat.Builder.setContentIntent() -&gt; PickupNotification.notify() -&gt; NotificationManagerCompat.from() -&gt; notify()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/PickupAlarmReceiver.java" start="51" end="51" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/scheduling/PickupAlarmReceiver.java" start="57" end="60" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PickupNotification.java" start="69" end="73" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PickupNotification.java" start="88" end="88" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PickupNotification.java" start="104" end="104" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/activities/PickupNotification.java" start="117" end="118" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-action" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="es.usc.citius.servando.calendula.settings.CalendulaSettingsActivity" destination="es.usc.citius.servando.calendula.pinlock.PinLockActivity" method="">
+    <comment>CalendulaSettingsActivity.onCreate() -&gt; FragmentTransaction.commit() -&gt; MainPrefsFragment.onCreatePreferences() -&gt; setPreferencesFromResource() -&gt; R.xml.pref_main.Preference.fragment -&gt; PrivacyPrefsFragment.onCreatePreferences() -&gt; Preference.setOnPreferenceClickListener() -&gt; *View.OnClickListener.onClick() -&gt; PrivacyPrefsPresenter.onClickPINPref() -&gt; PrivacyPrefsFragment.recordPIN() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/settings/CalendulaSettingsActivity.kt" start="76" end="77" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/settings/MainPrefsFragment.kt" start="35" end="35" />
+      <line src="/Calendula/src/main/res/xml/pref_main.xml" start="33" end="33" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/settings/privacy/PrivacyPrefsFragment.kt" start="71" end="72" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/settings/privacy/PrivacyPrefsPresenter.kt" start="96" end="96" />
+      <line src="/Calendula/src/main/java/es/usc/citius/servando/calendula/settings/privacy/PrivacyPrefsFragment.kt" start="104" end="106" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="true" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="PinLockActivity.action.new_pin" />
+    </IntentFields>
+  </OracleEdge>
+</root>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="com.test.ui.transition.AFragment"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.AFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.AFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.AFragment"/>  
+      <destinition name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.AFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="AFragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="AFragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>  
+        <node method="AFragment onAttach" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.AFragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.NextActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.NextActivity$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NextActivity$1: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="com.test.ui.transition.NextActivity"/>  
+      <destinition name="com.test.ui.transition.AActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NextActivity$1: void onClick(android.view.View)&gt;"/>  
+        <node method="NextActivity$1 onClick" type="CreateMethod" unit="$r3 = new android.content.Intent"/>  
+        <node method="NextActivity$1 onClick" type="SetAttribute" unit="specialinvoke $r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lcom/test/ui/transition/AActivity;&quot;)"/>  
+        <node method="NextActivity$1 onClick" type="PassOutIntent" unit="virtualinvoke $r2.&lt;com.test.ui.transition.NextActivity: void startActivity(android.content.Intent)&gt;($r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.CFragment"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.CFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.CFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.CFragment"/>  
+      <destinition name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.CFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="CFragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="CFragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)"/>  
+        <node method="CFragment onAttach" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.CFragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.BlankFragment"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.BlankFragment"/>  
+      <destinition name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="BlankFragment onAttach" type="CreateMethod" unit="$r6 = new android.content.Intent"/>  
+        <node method="BlankFragment onAttach" type="SetAttribute" unit="specialinvoke $r6.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>  
+        <node method="BlankFragment onAttach" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.BlankFragment: void startActivity(android.content.Intent)&gt;($r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.Bfragment"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.Bfragment"/>  
+      <destinition name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="Bfragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="Bfragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/NextActivity;&quot;)"/>  
+        <node method="Bfragment onAttach" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.Bfragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.Bfragment"/>  
+      <destinition name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="Bfragment onAttach" type="CreateMethod" unit="$r2 = new android.content.Intent"/>  
+        <node method="Bfragment onAttach" type="SetAttribute" unit="specialinvoke $r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Lcom/test/ui/transition/MainActivity;&quot;)"/>  
+        <node method="Bfragment onAttach" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.Bfragment: void startActivity(android.content.Intent)&gt;($r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361820)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.AActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.AActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.AActivity: void setContentView(int)&gt;(2131361819)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.NextActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="NextActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void setContentView(int)&gt;(2131361821)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.BlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.BlankFragment"/>  
+      <destinition name="com.test.ui.transition.AFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="BlankFragment onAttach" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="BlankFragment onAttach" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="BlankFragment onAttach" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r5)"/>  
+        <node method="BlankFragment onAttach" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.Bfragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.Bfragment"/>  
+      <destinition name="com.test.ui.transition.CFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.Bfragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="Bfragment onAttach" type="getFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="Bfragment onAttach" type="beginTransaction" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="Bfragment onAttach" type="replaceFunction" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r6)"/>  
+        <node method="Bfragment onAttach" type="commit" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <destinition name="com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="getFragment" unit="$r3 = virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="MainActivity onCreate" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="MainActivity onCreate" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r2)"/>  
+        <node method="MainActivity onCreate" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="MainActivity onCreate" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.AActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.AActivity"/>  
+      <destinition name="com.test.ui.transition.Bfragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.AActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AActivity onCreate" type="getFragment" unit="$r5 = virtualinvoke r0.&lt;com.test.ui.transition.AActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="AActivity onCreate" type="beginTransaction" unit="$r6 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="AActivity onCreate" type="replaceFunction" unit="$r6 = virtualinvoke $r6.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r2)"/>  
+        <node method="AActivity onCreate" type="commit" unit="virtualinvoke $r6.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="AActivity onCreate" type="beginTransaction" unit="$r6 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+</root>

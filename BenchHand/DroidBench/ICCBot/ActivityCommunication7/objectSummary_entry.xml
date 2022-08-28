@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_non_constant_class_object.InFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_non_constant_class_object.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="InFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.InFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_non_constant_class_object.OutFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_non_constant_class_object.OutFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_non_constant_class_object.OutFlowActivity"/>
+      <destinition name="edu.mit.icc_non_constant_class_object.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="OutFlowActivity onCreate" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, $r7)"/>
+        <node method="OutFlowActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_non_constant_class_object.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

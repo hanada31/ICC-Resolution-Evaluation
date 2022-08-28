@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.sendTextMessage1.TargetActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendTextMessage1.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendTextMessage1.TargetActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendTextMessage1.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendTextMessage1.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TargetActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.sendTextMessage1.TargetActivity: void setContentView(int)&gt;(2131296283)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.sendTextMessage1.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendTextMessage1.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.sendTextMessage1.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r1 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/sendTextMessage1/TargetActivity;&quot;)"/>  
+        <node method="MainActivity onCreate" type="PassOutIntent" unit="virtualinvoke $r7.&lt;android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)&gt;(&quot;dummyAddress&quot;, null, &quot;data&quot;, $r6, null)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendTextMessage1.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.sendTextMessage1.MainActivity: void setContentView(int)&gt;(2131296282)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

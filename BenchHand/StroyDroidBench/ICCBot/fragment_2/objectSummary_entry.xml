@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.C"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.C"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="C showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="C showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="C showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="C showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="C showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.B"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.B"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="B showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="B showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="B showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="B showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="B showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.D"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.D"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="D showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="D showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="D showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="D showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="D showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.BlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;,void showFragment()"/>  
+      <source name="com.test.ui.transition.BlankFragment"/>  
+      <destinition name="com.test.ui.transition.NotBlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;"/>  
+        <node method="BlankFragment showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)"/>  
+        <node method="BlankFragment showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.NotBlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.NotBlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="NotBlankFragment showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="NotBlankFragment showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.A"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.A"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="A showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="A showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="A showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="A showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="A showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.E"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;,void showFragment(android.support.v4.app.Fragment)"/>  
+      <source name="com.test.ui.transition.E"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+        <node method="E showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="E showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="E showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="E showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="E showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.E"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.E: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.E: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.E: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.E"/>  
+      <destinition name="com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.E: void onAttach(android.content.Context)&gt;"/>  
+        <node method="E showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="E showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="E showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="E showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="E showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="E showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.A"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.A: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.A: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.A: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.A"/>  
+      <destinition name="com.test.ui.transition.B, com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.A: void onAttach(android.content.Context)&gt;"/>  
+        <node method="A showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="A showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="A showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="A showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="A showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="A showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.BlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;,&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;,void showFragment()"/>  
+      <source name="com.test.ui.transition.BlankFragment"/>  
+      <destinition name="com.test.ui.transition.NotBlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="&lt;com.test.ui.transition.BlankFragment: void showFragment()&gt;"/>  
+        <node method="BlankFragment showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)"/>  
+        <node method="BlankFragment showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="BlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;,void showFragment()"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <destinition name="com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;"/>  
+        <node method="MainActivity showFragment" type="getFragment" unit="$r2 = virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="MainActivity showFragment" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="MainActivity showFragment" type="replaceFunction" unit="$r3 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)"/>  
+        <node method="MainActivity showFragment" type="commit" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="MainActivity showFragment" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.D"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.D: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.D: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.D: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.D"/>  
+      <destinition name="com.test.ui.transition.E"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.D: void onAttach(android.content.Context)&gt;"/>  
+        <node method="D showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="D showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="D showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="D showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="D showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="D showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.C"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.C: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.C: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.C: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.C"/>  
+      <destinition name="com.test.ui.transition.D, com.test.ui.transition.A, com.test.ui.transition.NotBlankFragment, com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.C: void onAttach(android.content.Context)&gt;"/>  
+        <node method="C showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="C showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="C showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="C showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="C showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="C showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.B"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.B: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.B: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.B: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.B"/>  
+      <destinition name="com.test.ui.transition.C, com.test.ui.transition.NotBlankFragment, com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.B: void onAttach(android.content.Context)&gt;"/>  
+        <node method="B showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="B showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="B showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="B showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="B showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="B showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.NotBlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context), &lt;com.test.ui.transition.NotBlankFragment: void showFragment(android.support.v4.app.Fragment)&gt;"/>  
+      <source name="com.test.ui.transition.NotBlankFragment"/>  
+      <destinition name="com.test.ui.transition.A"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="NotBlankFragment showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="NotBlankFragment showFragment" type="getFragment" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r1)"/>  
+        <node method="NotBlankFragment showFragment" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="NotBlankFragment showFragment" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;,void showFragment()"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <destinition name="com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;com.test.ui.transition.MainActivity: void showFragment()&gt;"/>  
+        <node method="MainActivity showFragment" type="getFragment" unit="$r2 = virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="MainActivity showFragment" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="MainActivity showFragment" type="replaceFunction" unit="$r3 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, r1)"/>  
+        <node method="MainActivity showFragment" type="commit" unit="virtualinvoke $r3.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/>  
+        <node method="MainActivity showFragment" type="beginTransaction" unit="$r3 = virtualinvoke $r2.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+</root>

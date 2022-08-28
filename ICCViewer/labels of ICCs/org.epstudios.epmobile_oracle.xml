@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/org.epstudios.epmobile">
+  <OracleEdge source="org.epstudios.epmobile.Arvc" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Arvc.onOptionsItemSelected() -&gt; Arvc extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Arvc.java" start="39" end="39" />
+      <line src="/src/org/epstudios/epmobile/Arvc.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ArvcList" destination="org.epstudios.epmobile.Arvc" method="">
+    <comment>*ArvcList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; ArvcList.arvc2010() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="47" end="47" />
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="56" end="57" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ArvcList" destination="org.epstudios.epmobile.ArvcOld" method="">
+    <comment>*ArvcList.onItemClick() -&gt; arvcOld() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="61" end="62" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ArvcList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*ArvcList.onOptionsItemSelected() -&gt; ArvcList extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ArvcList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ArvcOld" destination="org.epstudios.epmobile.About" method="">
+    <comment>*ArvcOld.onOptionsItemSelected() -&gt; ArvcOld extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ArvcOld.java" start="19" end="19" />
+      <line src="/src/org/epstudios/epmobile/ArvcOld.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ArvcOld" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*ArvcOld.onOptionsItemSelected() -&gt; ArvcOld extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ArvcOld.java" start="19" end="19" />
+      <line src="/src/org/epstudios/epmobile/ArvcOld.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.AtrialTachLocalization" destination="org.epstudios.epmobile.About" method="">
+    <comment>*AtrialTachLocalization.onOptionsItemSelected() -&gt; AtrialTachLocalization extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/AtrialTachLocalization.java" start="72" end="72" />
+      <line src="/src/org/epstudios/epmobile/AtrialTachLocalization.java" start="16" end="16" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.AvAnnulusMap" destination="org.epstudios.epmobile.About" method="">
+    <comment>*AvAnnulusMap.onOptionsItemSelected() -&gt; AvAnnulusMap extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/AvAnnulusMap.java" start="55" end="55" />
+      <line src="/src/org/epstudios/epmobile/AvAnnulusMap.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Brugada" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Brugada.onOptionsItemSelected() -&gt; Brugada extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="64" end="64" />
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="31" end="31" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Brugada" destination="org.epstudios.epmobile.BrugadaMorphologyCriteria" method="">
+    <comment>Brugada.onCreate() -&gt; View.setOnClickListener() -&gt; *Brugada.onClick() -&gt; displayMorphologyCriteria() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="38" end="38" />
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="81" end="81" />
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="212" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Brugada" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Brugada.onOptionsItemSelected() -&gt; Brugada extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="31" end="31" />
+      <line src="/src/org/epstudios/epmobile/Brugada.java" start="64" end="64" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.BrugadaEcg" destination="org.epstudios.epmobile.About" method="">
+    <comment>*BrugadaEcg.onOptionsItemSelected() -&gt; BrugadaEcg extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/BrugadaEcg.java" start="13" end="13" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.BrugadaEcg" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*BrugadaEcg.onOptionsItemSelected() -&gt; BrugadaEcg extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/BrugadaEcg.java" start="13" end="13" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*CalculatorList.onOptionsItemSelected() -&gt; CalculatorList extends EpListActivity -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.CycleLength" method="">
+    <comment>CalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; CalculatorList.intervalRateCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="29" end="29" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="52" end="53" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.DayCalculator" method="">
+    <comment>CalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; CalculatorList.icdDayCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="38" end="38" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="62" end="63" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.DrugDoseCalculatorList" method="">
+    <comment>CalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; CalculatorList.drugDoseCalculators() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="35" end="35" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="57" end="58" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.IbwCalculator" method="">
+    <comment>CalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; CalculatorList.ibwCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="67" end="68" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*CalculatorList.onOptionsItemSelected() -&gt; CalculatorList extends EpListActivity -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CalculatorList" destination="org.epstudios.epmobile.Qtc" method="">
+    <comment>CalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; CalculatorList.qtcCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/CalculatorList.java" start="47" end="48" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CmsIcd" destination="org.epstudios.epmobile.About" method="">
+    <comment>*CmsIcd.onOptionsItemSelected() -&gt; CmsIcd extends RiskScore -&gt; RiskScore extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CmsIcd.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/CmsIcd.java" start="11" end="11" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CmsIcd" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*CmsIcd.onOptionsItemSelected() -&gt; CmsIcd extends RiskScore -&gt; RiskScore extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CmsIcd.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/CmsIcd.java" start="11" end="11" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CycleLength" destination="org.epstudios.epmobile.About" method="">
+    <comment>*CycleLength.onOptionsItemSelected() -&gt; CycleLength extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CycleLength.java" start="69" end="69" />
+      <line src="/src/org/epstudios/epmobile/CycleLength.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.CycleLength" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*CycleLength.onOptionsItemSelected() -&gt; CycleLength extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/CycleLength.java" start="69" end="69" />
+      <line src="/src/org/epstudios/epmobile/CycleLength.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DayCalculator" destination="org.epstudios.epmobile.About" method="">
+    <comment>*DayCalculator.onOptionsItemSelected() -&gt; DayCalculator extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DayCalculator.java" start="83" end="83" />
+      <line src="/src/org/epstudios/epmobile/DayCalculator.java" start="20" end="20" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DayCalculator" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*DayCalculator.onOptionsItemSelected() -&gt; DayCalculator extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DayCalculator.java" start="83" end="83" />
+      <line src="/src/org/epstudios/epmobile/DayCalculator.java" start="20" end="20" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*DiagnosisList.onOptionsItemSelected() -&gt; DiagnosisList extends EpListActivity -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.ArvcList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.arvc() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="31" end="31" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="65" end="66" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.AtrialTachLocalization" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.atrialTachLocalization() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="49" end="49" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="95" end="96" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.BrugadaEcg" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.brugadaEcg() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="44" end="44" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="90" end="91" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.LongQtList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.longQt() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="39" end="39" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="80" end="81" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.LvhList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.lvhList() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="85" end="86" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*DiagnosisList.onOptionsItemSelected() -&gt; DiagnosisList extends EpListActivity -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.ShortQt" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.shortQt() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="70" end="71" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.VtList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.vtList() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="46" end="46" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="55" end="56" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.WctAlgorithmList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.wctAlgorithm() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="29" end="29" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="60" end="61" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DiagnosisList" destination="org.epstudios.epmobile.WpwAlgorithmList" method="">
+    <comment>DiagnosisList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DiagnosisList.wpw() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="23" end="23" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="36" end="36" />
+      <line src="/src/org/epstudios/epmobile/DiagnosisList.java" start="75" end="76" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DrugDoseCalculatorList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*DrugDoseCalculatorList.onOptionsItemSelected() -&gt; DrugDoseCalculatorList extends EpCalculatorListActivity -&gt; EpCalculatorListActivity.onOptionsItemSelected() -&gt; EpCalculatorListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DrugDoseCalculatorList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpCalculatorListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpCalculatorListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="28" end="28" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DrugDoseCalculatorList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*DrugDoseCalculatorList.onOptionsItemSelected() -&gt; DrugDoseCalculatorList extends EpCalculatorListActivity -&gt; EpCalculatorListActivity.onOptionsItemSelected() -&gt; EpCalculatorListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DrugDoseCalculatorList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpCalculatorListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpCalculatorListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.DrugDoseCalculatorList" destination="org.epstudios.epmobile.Warfarin" method="">
+    <comment>DrugDoseCalculatorList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; DrugDoseCalculatorList.warfarinCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/DrugDoseCalculatorList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/DrugDoseCalculatorList.java" start="55" end="55" />
+      <line src="/src/org/epstudios/epmobile/DrugDoseCalculatorList.java" start="83" end="84" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Entrainment" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Entrainment.onOptionsItemSelected() -&gt; Entrainment extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Entrainment.java" start="78" end="78" />
+      <line src="/src/org/epstudios/epmobile/Entrainment.java" start="17" end="17" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpMobile" destination="org.epstudios.epmobile.CalculatorList" method="">
+    <comment>EpMobile.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; EpMobile.calculatorList() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="45" end="45" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="60" end="61" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpMobile" destination="org.epstudios.epmobile.DiagnosisList" method="">
+    <comment>EpMobile.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; EpMobile.diagnosisList() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="54" end="54" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="65" end="66" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpMobile" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*EpMobile.onOptionsItemSelected() -&gt; EpMobile extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpMobile" destination="org.epstudios.epmobile.ReferenceList" method="">
+    <comment>EpMobile.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; EpMobile.referenceList() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="48" end="48" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="75" end="76" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpMobile" destination="org.epstudios.epmobile.RiskScoreList" method="">
+    <comment>EpMobile.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; EpMobile.riskScores() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="51" end="51" />
+      <line src="/src/org/epstudios/epmobile/EpMobile.java" start="70" end="71" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpiVt" destination="org.epstudios.epmobile.About" method="">
+    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpiVt.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/EpiVt.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.EpiVt" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*EpiVt.onOptionsItemSelected() -&gt; EpiVt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/EpiVt.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/EpiVt.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Estes" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Estes.onOptionsItemSelected() -&gt; Estes extends RiskScore -&gt; RiskScore.onOptionsItemSelected() -&gt; RiskScore extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Estes.java" start="28" end="28" />
+      <line src="/src/org/epstudios/epmobile/Estes.java" start="8" end="8" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="38" end="38" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Hcm" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Hcm.onOptionsItemSelected() -&gt; Hcm extends RiskScore -&gt; RiskScore.onOptionsItemSelected() -&gt; RiskScore extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Hcm.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="38" end="38" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Hcm" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Hcm.onOptionsItemSelected() -&gt; Hcm extends RiskScore -&gt; RiskScore.onOptionsItemSelected() -&gt; RiskScore extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Hcm.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScore.java" start="38" end="38" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.IbwCalculator" destination="org.epstudios.epmobile.About" method="">
+    <comment>*IbwCalculator.onOptionsItemSelected() -&gt; IbwCalculator extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/IbwCalculator.java" start="22" end="22" />
+      <line src="/src/org/epstudios/epmobile/IbwCalculator.java" start="99" end="99" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.IbwCalculator" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*IbwCalculator.onOptionsItemSelected() -&gt; IbwCalculator extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/IbwCalculator.java" start="22" end="22" />
+      <line src="/src/org/epstudios/epmobile/IbwCalculator.java" start="99" end="99" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.IcdRisk" destination="org.epstudios.epmobile.About" method="">
+    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="8" end="8" />
+      <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="33" end="33" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.IcdRisk" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*IcdRisk.onOptionsItemSelected() -&gt; IcdRisk extends DiagnosticScore -&gt; DiagnosticScore extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="8" end="8" />
+      <line src="/src/org/epstudios/epmobile/IcdRisk.java" start="33" end="33" />
+      <line src="/src/org/epstudios/epmobile/DiagnosticScore.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQt" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*LongQt.onOptionsItemSelected() -&gt; LongQt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQt.java" start="16" end="16" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtEcg" destination="org.epstudios.epmobile.About" method="">
+    <comment>*LongQtEcg.onOptionsItemSelected() -&gt; LongQtEcg extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtEcg.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/LongQtEcg.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtList" destination="org.epstudios.epmobile.LongQt" method="">
+    <comment>LongQtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; LongQtList.lqtsDiagnosis() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="46" end="46" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="59" end="60" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtList" destination="org.epstudios.epmobile.LongQtEcg" method="">
+    <comment>LongQtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; LongQtList.lqtEcg() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="52" end="52" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="69" end="70" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtList" destination="org.epstudios.epmobile.LongQtSubtypes" method="">
+    <comment>LongQtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; LongQtList.lqtSubtypes() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="40" end="40" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*LongQtList.onOptionsItemSelected() -&gt; LongQtList extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity.onOptionsItemSelected() -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LongQtSubtypes" destination="org.epstudios.epmobile.About" method="">
+    <comment>*LongQtSubtypes.onOptionsItemSelected() -&gt; LongQtSubtypes extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LongQtSubtypes.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/LongQtSubtypes.java" start="43" end="43" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LvhList" destination="org.epstudios.epmobile.Estes" method="">
+    <comment>LvhList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; LvhList.estes() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="46" end="46" />
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="55" end="56" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LvhList" destination="org.epstudios.epmobile.LvhVoltage" method="">
+    <comment>LvhList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; LvhList.otherLvh() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="49" end="49" />
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="60" end="61" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LvhList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*LvhList.onOptionsItemSelected() -&gt; LvhList extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity.onOptionsItemSelected() -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LvhList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LvhVoltage" destination="org.epstudios.epmobile.About" method="">
+    <comment>*LvhVoltage.onOptionsItemSelected() -&gt; LvhVoltage extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LvhVoltage.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/LvhVoltage.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.LvhVoltage" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*LvhVoltage.onOptionsItemSelected() -&gt; LvhVoltage extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/LvhVoltage.java" start="7" end="7" />
+      <line src="/src/org/epstudios/epmobile/LvhVoltage.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.MitralAnnularVt" destination="org.epstudios.epmobile.About" method="">
+    <comment>*MitralAnnularVt.onOptionsItemSelected() -&gt; MitralAnnularVt extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/MitralAnnularVt.java" start="34" end="34" />
+      <line src="/src/org/epstudios/epmobile/MitralAnnularVt.java" start="85" end="85" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.NormalEpValues" destination="org.epstudios.epmobile.About" method="">
+    <comment>*NormalEpValues.onOptionsItemSelected() -&gt; NormalEpValues extends EpReferenceActivity -&gt; EpReferenceActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/NormalEpValues.java" start="5" end="5" />
+      <line src="/src/org/epstudios/epmobile/EpReferenceActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpReferenceActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.OutflowVt" destination="org.epstudios.epmobile.About" method="">
+    <comment>*OutflowVt.onOptionsItemSelected() -&gt; OutflowVt extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/OutflowVt.java" start="34" end="34" />
+      <line src="/src/org/epstudios/epmobile/OutflowVt.java" start="89" end="89" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.OutflowVt" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*OutflowVt.onOptionsItemSelected() -&gt; OutflowVt extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/OutflowVt.java" start="34" end="34" />
+      <line src="/src/org/epstudios/epmobile/OutflowVt.java" start="89" end="89" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Qtc" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Qtc.onOptionsItemSelected() -&gt; Qtc extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Qtc.java" start="39" end="39" />
+      <line src="/src/org/epstudios/epmobile/Qtc.java" start="80" end="80" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ReferenceList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*ReferenceList.onOptionsItemSelected() -&gt; ReferenceList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="13" end="13" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="28" end="28" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ReferenceList" destination="org.epstudios.epmobile.CmsIcd" method="">
+    <comment>ReferenceList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; ReferenceList.icdCalculator() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="24" end="24" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="33" end="33" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="53" end="54" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ReferenceList" destination="org.epstudios.epmobile.Entrainment" method="">
+    <comment>ReferenceList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; ReferenceList.entrainment() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="24" end="24" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="42" end="42" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="70" end="71" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ReferenceList" destination="org.epstudios.epmobile.NormalEpValues" method="">
+    <comment>ReferenceList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; ReferenceList.normalEpValues() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="24" end="24" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="42" end="42" />
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="48" end="49" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ReferenceList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*ReferenceList.onOptionsItemSelected() -&gt; ReferenceList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ReferenceList.java" start="13" end="13" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*RiskScoreList.onOptionsItemSelected() -&gt; RiskScoreList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="28" end="28" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.Hcm" method="">
+    <comment>RiskScoreList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; RiskScoreList.hcmScore() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="23" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="35" end="35" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.IcdRisk" method="">
+    <comment>RiskScoreList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; RiskScoreList.IcdRiskScore() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="43" end="43" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="79" end="80" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*RiskScoreList.onOptionsItemSelected() -&gt; RiskScoreList extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.RiskScoreList" destination="org.epstudios.epmobile.SyncopeRiskScoreList" method="">
+    <comment>RiskScoreList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; RiskScoreList.syncopeRiskScores() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/RiskScoreList.java" start="74" end="75" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Rwpt" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Rwpt.onOptionsItemSelected() -&gt; Rwpt extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Rwpt.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/Rwpt.java" start="44" end="44" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.ShortQt" destination="org.epstudios.epmobile.About" method="">
+    <comment>*ShortQt.onOptionsItemSelected() -&gt; extends EpDiagnosisActivity -&gt; EpDiagnosisActivity.onOptionsItemSelected() -&gt; EpDiagnosisActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/ShortQt.java" start="29" end="29" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.SyncopeRiskScoreList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*SyncopeRiskScoreList.onOptionsItemSelected() -&gt; SyncopeRiskScoreList extends EpRiskScoreListActivity -&gt; EpRiskScoreListActivity.onOptionsItemSelected() -&gt; EpRiskScoreListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/SyncopeRiskScoreList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpRiskScoreListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpRiskScoreListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="28" end="28" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.SyncopeRiskScoreList" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*SyncopeRiskScoreList.onOptionsItemSelected() -&gt; SyncopeRiskScoreList extends EpRiskScoreListActivity -&gt; EpRiskScoreListActivity.onOptionsItemSelected() -&gt; EpRiskScoreListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/SyncopeRiskScoreList.java" start="12" end="12" />
+      <line src="/src/org/epstudios/epmobile/EpRiskScoreListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpRiskScoreListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="25" end="25" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Vereckei" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Vereckei.onOptionsItemSelected() -&gt; Vereckei extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Vereckei.java" start="13" end="13" />
+      <line src="/src/org/epstudios/epmobile/Vereckei.java" start="53" end="53" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.VtList" destination="org.epstudios.epmobile.EpiVt" method="">
+    <comment>VtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; VtList.epicardialVt() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="22" end="22" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="27" end="27" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="44" end="45" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.VtList" destination="org.epstudios.epmobile.MitralAnnularVt" method="">
+    <comment>VtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; VtList.mitralAnnularVt() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="22" end="22" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="33" end="33" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="49" end="50" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.VtList" destination="org.epstudios.epmobile.OutflowVt" method="">
+    <comment>VtList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; VtList.outflowTractVt() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="22" end="22" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/VtList.java" start="39" end="40" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Warfarin" destination="org.epstudios.epmobile.About" method="">
+    <comment>*Warfarin.onOptionsItemSelected() -&gt; Warfarin extends EpDrugCalculatorActivity -&gt; EpDrugCalculatorActivity.onOptionsItemSelected() -&gt; EpDrugCalculatorActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="34" end="34" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="70" end="70" />
+      <line src="/src/org/epstudios/epmobile/EpDrugCalculatorActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpDrugCalculatorActivity.java" start="19" end="19" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Warfarin" destination="org.epstudios.epmobile.DoseTable" method="">
+    <comment>Warfarin.onCreate() -&gt; View.setOnClickListener() -&gt; *Warfarin.onClick() -&gt; calculateResult() -&gt; displayResult() -&gt; displayDoses() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="42" end="42" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="110" end="110" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="224" end="224" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="344" end="344" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="353" end="354" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.Warfarin" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*Warfarin.onOptionsItemSelected() -&gt; Warfarin extends EpDrugCalculatorActivity -&gt; EpDrugCalculatorActivity.onOptionsItemSelected() -&gt; EpDrugCalculatorActivity extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="34" end="34" />
+      <line src="/src/org/epstudios/epmobile/Warfarin.java" start="70" end="70" />
+      <line src="/src/org/epstudios/epmobile/EpDrugCalculatorActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpDrugCalculatorActivity.java" start="19" end="19" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctAlgorithmList" destination="org.epstudios.epmobile.About" method="">
+    <comment>*WctAlgorithmList.onOptionsItemSelected() -&gt; WctAlgorithmList extends EpDiagnosisListActivity -&gt; EpDiagnosisListActivity.onOptionsItemSelected() -&gt; EpDiagnosisListActivity extends EpListActivity -&gt; EpListActivity.onOptionsItemSelected() -&gt; EpListActivity extends EpMainListActivity -&gt; EpMainListActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="30" end="30" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="6" end="6" />
+      <line src="/src/org/epstudios/epmobile/EpDiagnosisListActivity.java" start="18" end="18" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="26" end="26" />
+      <line src="/src/org/epstudios/epmobile/EpListActivity.java" start="50" end="50" />
+      <line src="/src/org/epstudios/epmobile/EpMainListActivity.java" start="28" end="28" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctAlgorithmList" destination="org.epstudios.epmobile.Brugada" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.brugadaAlgorithm() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="47" end="47" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="59" end="60" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctAlgorithmList" destination="org.epstudios.epmobile.Rwpt" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.ultraSimpleBrugadaAlgorithm() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="51" end="51" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="69" end="70" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctAlgorithmList" destination="org.epstudios.epmobile.Vereckei" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.vereckiAlgorithm() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="53" end="53" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="74" end="75" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctAlgorithmList" destination="org.epstudios.epmobile.WctMorphologyCriteria" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.morphologyCriteria() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="49" end="49" />
+      <line src="/src/org/epstudios/epmobile/WctAlgorithmList.java" start="64" end="65" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WctMorphologyCriteria" destination="org.epstudios.epmobile.About" method="">
+    <comment>*WctMorphologyCriteria.onOptionsItemSelected() -&gt; WctMorphologyCriteria extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WctMorphologyCriteria.java" start="25" end="25" />
+      <line src="/src/org/epstudios/epmobile/WctMorphologyCriteria.java" start="44" end="44" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WpwAlgorithmList" destination="org.epstudios.epmobile.AvAnnulusMap" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.avAnnulusMap() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="54" end="54" />
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="75" end="76" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WpwAlgorithmList" destination="org.epstudios.epmobile.WpwArruda" method="">
+    <comment>WpwAlgorithmList.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *ListView.OnItemClickListener.onItemClick() -&gt; WpwAlgorithmList.arrudaAlgorithm() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="41" end="41" />
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="46" end="46" />
+      <line src="/src/org/epstudios/epmobile/WpwAlgorithmList.java" start="60" end="61" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WpwArruda" destination="org.epstudios.epmobile.About" method="">
+    <comment>*WpwArruda.onOptionsItemSelected() -&gt; WpwArruda extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="90" end="90" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="46" end="46" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WpwArruda" destination="org.epstudios.epmobile.AvAnnulusMap" method="">
+    <comment>WpwArruda.onCreate() -&gt; View.setOnClickListener() -&gt; WpwArruda.onClick() -&gt; getYesResult() -&gt; gotoStep() -&gt; showResult() -&gt; AlertDialog.setButton() -&gt; *DialogInterface.OnClickListener.onClick() -&gt; WpwArruda.showMap() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="65" end="65" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="96" end="96" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="155" end="155" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="229" end="229" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="294" end="294" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="299" end="299" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="376" end="380" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="String-location1, String-location2, String-message" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="org.epstudios.epmobile.WpwArruda" destination="org.epstudios.epmobile.Prefs" method="">
+    <comment>*WpwArruda.onOptionsItemSelected() -&gt; WpwArruda extends LocationAlgorithm -&gt; LocationAlgorithm extends EpActivity -&gt; EpActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="32" end="32" />
+      <line src="/src/org/epstudios/epmobile/WpwArruda.java" start="90" end="90" />
+      <line src="/src/org/epstudios/epmobile/LocationAlgorithm.java" start="3" end="3" />
+      <line src="/src/org/epstudios/epmobile/EpActivity.java" start="43" end="43" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+</root>

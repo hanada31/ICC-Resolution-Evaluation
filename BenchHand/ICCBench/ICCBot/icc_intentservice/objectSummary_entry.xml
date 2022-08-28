@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_intentservice.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_intentservice.MainActivity"/>
+      <destinition name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_intentservice/MyIntentService;&quot;)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_intentservice.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;,&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_intentservice.MainActivity"/>
+      <destinition name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+        <node method="&lt;org.arguslab.icc_intentservice.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r5, class &quot;Lorg/arguslab/icc_intentservice/MyIntentService;&quot;)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MainActivity: android.content.ComponentName startService(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_intentservice.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_intentservice.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MainActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_intentservice.MyIntentService">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="MyIntentService onBind" type="ReceiveIntentFromParatMethod" unit="parameter0 := @parameter0: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MyIntentService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="MyIntentService onBind" type="ReceiveIntentFromRetValue" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_intentservice.MyIntentService">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;,void onHandleIntent(android.content.Intent)"/>
+      <source name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;"/>
+        <node method="MyIntentService onHandleIntent" type="ReceiveIntentFromRetValue" unit="$r1 = virtualinvoke r0.&lt;org.arguslab.icc_intentservice.MyIntentService: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;,void onHandleIntent(android.content.Intent)"/>
+      <source name="org.arguslab.icc_intentservice.MyIntentService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_intentservice.MyIntentService: void onHandleIntent(android.content.Intent)&gt;"/>
+        <node method="MyIntentService onHandleIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

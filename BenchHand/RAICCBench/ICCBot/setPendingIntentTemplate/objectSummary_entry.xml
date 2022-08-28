@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setPendingIntentTemplate/TargetActivity;&quot;)"/>  
+        <node method="MainActivity onCreate" type="PassOutIntent" unit="virtualinvoke $r7.&lt;android.app.AlarmManager: void set(int,long,android.app.PendingIntent)&gt;(0, $l0, $r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TargetActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity: void setContentView(int)&gt;(2131296282)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.setPendingIntentTemplate.MyWidgetProvider"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MyWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MyWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;,void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])"/>  
+      <source name="lu.uni.trux.raicc.setPendingIntentTemplate.MyWidgetProvider"/>  
+      <destinition name="lu.uni.trux.raicc.setPendingIntentTemplate.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setPendingIntentTemplate.MyWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])&gt;"/>  
+        <node method="MyWidgetProvider onUpdate" type="CreateMethod" unit="$r10 = new android.content.Intent"/>  
+        <node method="MyWidgetProvider onUpdate" type="SetAttribute" unit="specialinvoke $r10.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, class &quot;Llu/uni/trux/raicc/setPendingIntentTemplate/TargetActivity;&quot;)"/>  
+        <node method="MyWidgetProvider onUpdate" type="PassOutIntent" unit="virtualinvoke $r6.&lt;android.widget.RemoteViews: void setPendingIntentTemplate(int,android.app.PendingIntent)&gt;(2131165310, $r11)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

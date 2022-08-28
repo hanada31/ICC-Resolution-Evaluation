@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_intent_component_name.InFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_intent_component_name.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_intent_component_name.InFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_intent_component_name.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_intent_component_name.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="InFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_intent_component_name.InFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_intent_component_name.OutFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_intent_component_name.OutFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_intent_component_name.OutFlowActivity"/>
+      <destinition name="edu.mit.icc_intent_component_name.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="OutFlowActivity onCreate" type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setComponent(android.content.ComponentName)&gt;(r2)"/>
+        <node method="OutFlowActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_intent_component_name.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r3)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

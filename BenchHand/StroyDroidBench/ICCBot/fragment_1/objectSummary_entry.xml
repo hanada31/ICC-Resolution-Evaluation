@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <destinition name="com.test.ui.transition.BlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="getFragment" unit="$r3 = virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="MainActivity onCreate" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="MainActivity onCreate" type="replaceFunction" unit="$r4 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r2)"/>  
+        <node method="MainActivity onCreate" type="commit" unit="virtualinvoke $r4.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.BlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.BlankFragment"/>  
+      <destinition name="com.test.ui.transition.NotBlankFragment"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.BlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="BlankFragment onAttach" type="getFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="BlankFragment onAttach" type="beginTransaction" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="BlankFragment onAttach" type="replaceFunction" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r2)"/>  
+        <node method="BlankFragment onAttach" type="commit" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+  <Component source="com.test.ui.transition.NotBlankFragment"> 
+    <FragmentSummary> 
+      <method value="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;,void onAttach(android.content.Context)"/>  
+      <source name="com.test.ui.transition.NotBlankFragment"/>  
+      <destinition name="com.test.ui.transition.A"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NotBlankFragment: void onAttach(android.content.Context)&gt;"/>  
+        <node method="NotBlankFragment onAttach" type="getFragment" unit="$r4 = virtualinvoke $r3.&lt;android.support.v4.app.FragmentActivity: android.support.v4.app.FragmentManager getSupportFragmentManager()&gt;()"/>  
+        <node method="NotBlankFragment onAttach" type="beginTransaction" unit="$r5 = virtualinvoke $r4.&lt;android.support.v4.app.FragmentManager: android.support.v4.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="NotBlankFragment onAttach" type="replaceFunction" unit="$r5 = virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)&gt;(2131230796, $r2)"/>  
+        <node method="NotBlankFragment onAttach" type="commit" unit="virtualinvoke $r5.&lt;android.support.v4.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+</root>

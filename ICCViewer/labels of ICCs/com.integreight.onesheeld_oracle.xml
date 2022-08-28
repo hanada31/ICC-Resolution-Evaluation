@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/com.integreight.onesheeld">
+  <OracleEdge source="com.integreight.onesheeld.MainActivity" destination="com.facebook.FacebookActivity" method="">
+    <comment>MainActivity.onCreate() -&gt; replaceCurrentFragment() -&gt; SheeldsList.onResume() -&gt; R.layout.app_sheelds_list.getAvailableDevices.onClick -&gt; SheeldsList.launchShieldsOperationActivity() -&gt; MainActivity.replaceCurrentFragment() -&gt; ShieldsOperations.onViewCreated() -&gt; initView() -&gt; SelectedShieldsListFragment.newInstance() -&gt; onListItemClick() -&gt; getShieldFragment() -&gt; generateShieldFragment() -&gt; new FacebookFragment() -&gt; *FacebookFragment.onClick() -&gt; loginToFacebook() -&gt; FacebookShield.loginToFacebook() -&gt; LoginManager.getInstance().logInWithPublishPermissions() -&gt; startActivityForResult()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/MainActivity.java" start="120" end="121" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="174" end="174" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="382" end="384" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="83" end="83" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="288" end="288" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="154" end="154" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/FacebookFragment.java" start="263" end="263" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/FacebookFragment.java" start="217" end="218" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/controller/FacebookShield.java" start="117" end="117" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="NATIVE_WITH_FALLBACK" />
+      <IntentField type="extra" value="Parcelable-request" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="com.integreight.onesheeld.MainActivity" destination="com.integreight.onesheeld.Tutorial" method="">
+    <comment>*MainActivity.onCreate() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/MainActivity.java" start="128" end="128" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.integreight.onesheeld.MainActivity" destination="com.integreight.onesheeld.shields.controller.utils.CameraHeadService" method="">
+    <comment>MainActivity.onCreate() -&gt; replaceCurrentFragment() -&gt; SheeldsList.onResume() -&gt; R.layout.app_sheelds_list.getAvailableDevices.onClick -&gt; SheeldsList.launchShieldsOperationActivity() -&gt; MainActivity.replaceCurrentFragment() -&gt; ShieldsOperations.onViewCreated() -&gt; initView() -&gt; SelectedShieldsListFragment.newInstance() -&gt; onListItemClick() -&gt; getShieldFragment() -&gt; generateShieldFragment() -&gt; new CameraFragment() -&gt; CameraFragment.onChange() -&gt; applyListeners() -&gt; *CompoundButton.OnCheckedChangeListener.onCheckedChanged() -&gt; CameraShield.setCameraToPreview() -&gt; bindService() -&gt; getApplication().bindService()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/MainActivity.java" start="120" end="121" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="174" end="174" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="382" end="384" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="83" end="83" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="288" end="288" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="211" end="211" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/CameraFragment.java" start="371" end="371" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/CameraFragment.java" start="209" end="210" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/controller/CameraShield.java" start="217" end="217" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/controller/CameraShield.java" start="134" end="134" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.integreight.onesheeld.MainActivity" destination="com.integreight.onesheeld.shields.controller.utils.SpeechRecognitionService" method="">
+    <comment>MainActivity.onCreate() -&gt; replaceCurrentFragment() -&gt; SheeldsList.onResume() -&gt; R.layout.app_sheelds_list.getAvailableDevices.onClick -&gt; SheeldsList.launchShieldsOperationActivity() -&gt; MainActivity.replaceCurrentFragment() -&gt; ShieldsOperations.onViewCreated() -&gt; initView() -&gt; SelectedShieldsListFragment.newInstance() -&gt; onListItemClick() -&gt; getShieldFragment() -&gt; generateShieldFragment() -&gt; new SpeechRecognitionFragment() -&gt; *SpeechRecognitionFragment.doOnServiceConnected() -&gt; initializeFirmata() -&gt; new SpeechRecognitionShield() -&gt; SpeechRecognitionShield.init() -&gt; getApplication().bindService()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/MainActivity.java" start="120" end="121" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="174" end="174" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SheeldsList.java" start="382" end="384" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="83" end="83" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/ShieldsOperations.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="288" end="288" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="133" end="133" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/appFragments/SelectedShieldsListFragment.java" start="221" end="222" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/SpeechRecognitionFragment.java" start="213" end="213" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/fragments/SpeechRecognitionFragment.java" start="205" end="206" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/controller/SpeechRecognitionShield.java" start="61" end="63" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="com.integreight.onesheeld.services.OneSheeldService" destination="com.integreight.onesheeld.MainActivity" method="">
+    <comment>*OneSheeldConnectionCallback.onStartCommand() -&gt; OneSheeldService.showNotification() -&gt; startForeground()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/services/OneSheeldService.java" start="64" end="64" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/services/OneSheeldService.java" start="73" end="73" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/services/OneSheeldService.java" start="109" end="111" />
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/services/OneSheeldService.java" start="116" end="116" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="flag" value="FLAG_ACTIVITY_CLEAR_TOP | FLAG_ACTIVITY_SINGLE_TOP" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="com.integreight.onesheeld.shields.controller.utils.NfcUtils" destination="com.integreight.onesheeld.MainActivity" method="">
+    <comment>*NfcUtils.onCreate() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/oneSheeld/src/main/java/com/integreight/onesheeld/shields/controller/utils/NfcUtils.java" start="40" end="40" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="flag" value="FLAG_ACTIVITY_CLEAR_TOP" />
+    </IntentFields>
+  </OracleEdge>
+</root>

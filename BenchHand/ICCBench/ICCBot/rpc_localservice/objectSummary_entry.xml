@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.rpc_localservice.LocalService">
+    <intentSummary>
+      <method value="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.rpc_localservice.LocalService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="LocalService onBind" type="ReceiveIntentFromParatMethod" unit="parameter0 := @parameter0: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.rpc_localservice.LocalService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.rpc_localservice.LocalService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="LocalService onBind" type="ReceiveIntentFromRetValue" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.rpc_localservice.LocalService: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.rpc_localservice.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.rpc_localservice.MainActivity: void onStart()&gt;"/>
+      <methodtrace value="&lt;org.arguslab.rpc_localservice.MainActivity: void onStart()&gt;,void onStart()"/>
+      <source name="org.arguslab.rpc_localservice.MainActivity"/>
+      <destinition name="org.arguslab.rpc_localservice.LocalService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.rpc_localservice.MainActivity: void onStart()&gt;"/>
+        <node method="MainActivity onStart" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity onStart" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lorg/arguslab/rpc_localservice/LocalService;&quot;)"/>
+        <node method="MainActivity onStart" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.rpc_localservice.MainActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;(r1, $r2, 1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.rpc_localservice.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.rpc_localservice.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.rpc_localservice.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.rpc_localservice.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.rpc_localservice.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.rpc_localservice.MainActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

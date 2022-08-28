@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_dynregister2.MyReceiver">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="org.arguslab.icc_dynregister2.MyReceiver"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="MyReceiver onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="org.arguslab.icc_dynregister2.MyReceiver"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MyReceiver: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="MyReceiver onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_dynregister2.MyReceiver2">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="org.arguslab.icc_dynregister2.MyReceiver2"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="MyReceiver2 onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="org.arguslab.icc_dynregister2.MyReceiver2"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MyReceiver2: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="MyReceiver2 onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MyReceiver2: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_dynregister2.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_dynregister2.MainActivity"/>
+      <destinition name="org.arguslab.icc_dynregister2.MyReceiver"/>
+      <sender action="com.ksu"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r6)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void sendBroadcast(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_dynregister2.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;,&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_dynregister2.MainActivity"/>
+      <destinition name="org.arguslab.icc_dynregister2.MyReceiver"/>
+      <sender action="com.ksu"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+        <node method="&lt;org.arguslab.icc_dynregister2.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r6)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void sendBroadcast(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_dynregister2.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_dynregister2.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_dynregister2.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_dynregister2.MainActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

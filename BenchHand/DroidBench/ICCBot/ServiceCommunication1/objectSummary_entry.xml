@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_service_messages.MessengerService">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="edu.mit.icc_service_messages.MessengerService"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="MessengerService onBind" type="ReceiveIntentFromRetValue" unit="parameter0 = virtualinvoke this.&lt;edu.mit.icc_service_messages.MessengerService: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="edu.mit.icc_service_messages.MessengerService"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_service_messages.MessengerService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="MessengerService onBind" type="ReceiveIntentFromParatMethod" unit="parameter0 := @parameter0: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_service_messages.ActivityMessenger">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onStart()&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onStart()&gt;,void onStart()"/>
+      <source name="edu.mit.icc_service_messages.ActivityMessenger"/>
+      <destinition name="edu.mit.icc_service_messages.MessengerService"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onStart()&gt;"/>
+        <node method="ActivityMessenger onStart" type="CreateMethod" unit="$r1 = new android.content.Intent"/>
+        <node method="ActivityMessenger onStart" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_service_messages/MessengerService;&quot;)"/>
+        <node method="ActivityMessenger onStart" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;($r1, $r2, 1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_service_messages.ActivityMessenger">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_service_messages.ActivityMessenger"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_service_messages.ActivityMessenger: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="ActivityMessenger onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_service_messages.ActivityMessenger: void setContentView(int)&gt;(2130837504)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

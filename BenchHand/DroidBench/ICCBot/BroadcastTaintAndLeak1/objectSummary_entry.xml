@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BroadcastTest$1 onReceive" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;,void onReceive(android.content.Context,android.content.Intent)"/>
+      <source name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1: void onReceive(android.content.Context,android.content.Intent)&gt;"/>
+        <node method="BroadcastTest$1 onReceive" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter1: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void onDestroy()&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void onDestroy()&gt;,void onDestroy()"/>
+      <source name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest"/>
+      <destinition name="edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest$1"/>
+      <sender action="edu.mit.icc_broadcast_programmatic_intentfilter.action"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void onDestroy()&gt;"/>
+        <node method="BroadcastTest onDestroy" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="BroadcastTest onDestroy" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;($r5)"/>
+        <node method="BroadcastTest onDestroy" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_broadcast_programmatic_intentfilter.BroadcastTest: void sendBroadcast(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_rpc_comprehensive.BarActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onStart()&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onStart()&gt;,void onStart()"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+      <destinition name="org.arguslab.icc_rpc_comprehensive.RemoteService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onStart()&gt;"/>
+        <node method="BarActivity onStart" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="BarActivity onStart" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setClass(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lorg/arguslab/icc_rpc_comprehensive/RemoteService;&quot;)"/>
+        <node method="BarActivity onStart" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)&gt;(r1, $r3, 1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_rpc_comprehensive.BarActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="BarActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.BarActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_rpc_comprehensive.FooActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;,void onRequestPermissionsResult(int,java.lang.String[],int[])"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.FooActivity"/>
+      <destinition name="org.arguslab.icc_rpc_comprehensive.BarActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+        <node method="FooActivity onRequestPermissionsResult" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="FooActivity onRequestPermissionsResult" type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setClass(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/arguslab/icc_rpc_comprehensive/BarActivity;&quot;)"/>
+        <node method="FooActivity onRequestPermissionsResult" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void startActivityForResult(android.content.Intent,int)&gt;(r3, 1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_rpc_comprehensive.FooActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.FooActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_rpc_comprehensive.FooActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_rpc_comprehensive.RemoteService">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.RemoteService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="RemoteService onBind" type="ReceiveIntentFromParatMethod" unit="parameter0 := @parameter0: android.content.Intent"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>
+      <source name="org.arguslab.icc_rpc_comprehensive.RemoteService"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.os.IBinder onBind(android.content.Intent)&gt;"/>
+        <node method="RemoteService onBind" type="ReceiveIntentFromRetValue" unit="parameter0 = virtualinvoke this.&lt;org.arguslab.icc_rpc_comprehensive.RemoteService: android.content.Intent getIntent()&gt;()"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

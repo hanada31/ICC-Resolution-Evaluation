@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_implicit_data1.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void leakImei()&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_implicit_data1.MainActivity"/>
+      <destinition name="org.arguslab.icc_implicit_data1.FooActivity"/>
+      <sender data="amandroid://fgwei:4444"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_data1.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r5)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_data1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_data1.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;,&lt;org.arguslab.icc_implicit_data1.MainActivity: void leakImei()&gt;,void leakImei()"/>
+      <source name="org.arguslab.icc_implicit_data1.MainActivity"/>
+      <destinition name="org.arguslab.icc_implicit_data1.FooActivity"/>
+      <sender data="amandroid://fgwei:4444"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+        <node method="&lt;org.arguslab.icc_implicit_data1.MainActivity: void leakImei()&gt;"/>
+        <node method="MainActivity leakImei" type="CreateMethod" unit="r1 = new android.content.Intent"/>
+        <node method="MainActivity leakImei" type="SetAttribute" unit="virtualinvoke r1.&lt;android.content.Intent: android.content.Intent setData(android.net.Uri)&gt;($r5)"/>
+        <node method="MainActivity leakImei" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_data1.MainActivity: void startActivity(android.content.Intent)&gt;(r1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_data1.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_data1.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_data1.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_data1.MainActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_data1.FooActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_data1.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_data1.FooActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_data1.FooActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_data1.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_data1.FooActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

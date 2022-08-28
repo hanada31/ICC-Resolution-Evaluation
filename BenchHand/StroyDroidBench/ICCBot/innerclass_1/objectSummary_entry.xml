@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;,void goToActivity(android.content.Context,java.lang.Class)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;"/>  
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>  
+        <node method="MainActivity goToActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void access$000(com.test.ui.transition.MainActivity,android.content.Context,java.lang.Class)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void access$000(com.test.ui.transition.MainActivity,android.content.Context,java.lang.Class)&gt;,void access$000(com.test.ui.transition.MainActivity,android.content.Context,java.lang.Class), &lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void access$000(com.test.ui.transition.MainActivity,android.content.Context,java.lang.Class)&gt;"/>  
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>  
+        <node method="MainActivity goToActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;,void onClick(android.view.View), &lt;com.test.ui.transition.MainActivity: void access$000(com.test.ui.transition.MainActivity,android.content.Context,java.lang.Class)&gt;"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <destinition name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;"/>  
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>  
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>  
+        <node method="MainActivity goToActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;,&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;,void goToActivity(android.content.Context,java.lang.Class)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity$1: void onClick(android.view.View)&gt;"/>  
+        <node method="&lt;com.test.ui.transition.MainActivity: void goToActivity(android.content.Context,java.lang.Class)&gt;"/>  
+        <node method="MainActivity goToActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="MainActivity goToActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r1, r2)"/>  
+        <node method="MainActivity goToActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.MainActivity: void setContentView(int)&gt;(2131361819)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="com.test.ui.transition.NextActivity"> 
+    <intentSummary> 
+      <method value="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="com.test.ui.transition.NextActivity"/>  
+      <nodes> 
+        <node method="&lt;com.test.ui.transition.NextActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="NextActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;com.test.ui.transition.NextActivity: void setContentView(int)&gt;(2131361820)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

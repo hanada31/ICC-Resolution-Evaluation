@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_implicit_nosrc_nosink.FooActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_nosrc_nosink.FooActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.FooActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_implicit_nosrc_nosink.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_nosrc_nosink.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_implicit_nosrc_nosink.MainActivity"/>
+      <destinition name="org.arguslab.icc_implicit_nosrc_nosink.FooActivity"/>
+      <sender action="amandroid.impliciticctest_action.testaction"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;amandroid.impliciticctest_action.testaction&quot;)"/>
+        <node method="MainActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_implicit_nosrc_nosink.MainActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

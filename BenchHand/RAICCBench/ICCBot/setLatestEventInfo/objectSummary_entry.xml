@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.setLatestEventInfo.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setLatestEventInfo.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void setContentView(int)&gt;(2131296280)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setLatestEventInfo.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.setLatestEventInfo.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setLatestEventInfo.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setLatestEventInfo/TargetActivity;&quot;)"/>  
+        <node method="MainActivity onCreate" type="PassOutIntent" unit="virtualinvoke $r9.&lt;android.app.Notification: void setLatestEventInfo(android.content.Context,java.lang.CharSequence,java.lang.CharSequence,android.app.PendingIntent)&gt;(r0, &quot;Title&quot;, &quot;Text&quot;, $r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.setLatestEventInfo.TargetActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setLatestEventInfo.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setLatestEventInfo.TargetActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setLatestEventInfo.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setLatestEventInfo.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TargetActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setLatestEventInfo.TargetActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

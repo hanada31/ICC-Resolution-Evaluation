@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_component_not_in_manifest.OutFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_component_not_in_manifest.OutFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_component_not_in_manifest.OutFlowActivity"/>
+      <destinition name="edu.mit.icc_component_not_in_manifest.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="OutFlowActivity onCreate" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Ledu/mit/icc_component_not_in_manifest/InFlowActivity;&quot;)"/>
+        <node method="OutFlowActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_component_not_in_manifest.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_component_not_in_manifest.InFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_component_not_in_manifest.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="InFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_component_not_in_manifest.InFlowInterceptorActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_component_not_in_manifest.InFlowInterceptorActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_component_not_in_manifest.InFlowInterceptorActivity: void onCreate(android.os.Bundle)&gt;,&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_component_not_in_manifest.InFlowInterceptorActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_component_not_in_manifest.InFlowInterceptorActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="InFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_component_not_in_manifest.InFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

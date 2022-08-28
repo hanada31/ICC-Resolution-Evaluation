@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="edu.mit.icc_event_ordering.InFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_event_ordering.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_event_ordering.InFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_event_ordering.InFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_event_ordering.InFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="InFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_event_ordering.InFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="edu.mit.icc_event_ordering.OutFlowActivity">
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_event_ordering.OutFlowActivity"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;edu.mit.icc_event_ordering.OutFlowActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+    <intentSummary>
+      <method value="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="edu.mit.icc_event_ordering.OutFlowActivity"/>
+      <destinition name="edu.mit.icc_event_ordering.InFlowActivity"/>
+      <sender action="edu.mit.icc_event_ordering.ACTION"/>
+      <nodes>
+        <node method="&lt;edu.mit.icc_event_ordering.OutFlowActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="OutFlowActivity onCreate" type="CreateMethod" unit="r2 = new android.content.Intent"/>
+        <node method="OutFlowActivity onCreate" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;edu.mit.icc_event_ordering.ACTION&quot;)"/>
+        <node method="OutFlowActivity onCreate" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;edu.mit.icc_event_ordering.OutFlowActivity: void startActivity(android.content.Intent)&gt;(r2)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

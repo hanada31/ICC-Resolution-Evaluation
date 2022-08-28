@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.sendIntent.TargetActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendIntent.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendIntent.TargetActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendIntent.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendIntent.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TargetActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.sendIntent.TargetActivity: void setContentView(int)&gt;(2131296282)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.sendIntent.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendIntent.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.sendIntent.TargetActivity"/>  
+      <sender action="ACTION"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;ACTION&quot;)"/>  
+        <node method="MainActivity onCreate" type="sendOutWrapperredIntent" unit="virtualinvoke $r7.&lt;android.content.IntentSender: void sendIntent(android.content.Context,int,android.content.Intent,android.content.IntentSender$OnFinished,android.os.Handler)&gt;(r0, 0, null, null, null)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendIntent.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendIntent.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.sendIntent.MainActivity"/>  
+      <sender action="ACTION"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.sendIntent.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(java.lang.String)&gt;(&quot;ACTION&quot;)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

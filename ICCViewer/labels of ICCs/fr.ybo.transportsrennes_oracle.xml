@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/fr.ybo.transportsrennes">
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.alerts.TabAlertes" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="57" end="57" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.bus.BusRennes" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="46" end="47" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.bus.ListArretByPosition" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="52" end="52" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="31" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="72" end="72" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.parkrelais.ListParkRelais" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="67" end="67" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.pointsdevente.ListPointsDeVente" method="">
+    <comment>*TransportsRennes.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="203" end="204" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.TransportsRennes" destination="fr.ybo.transportsrennes.activity.velos.ListStationsByPosition" method="">
+    <comment>TransportsRennes.onCreate() -&gt; setContentView() -&gt; R.layout.main.fragment_dashboard -&gt; DashboardFragment.onCreateView() -&gt; View.setOnClickListener() -&gt; *View.OnClickListener.onClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/TransportsRennes.java" start="65" end="65" />
+      <line src="/TransportsRennes/res/layout/main.xml" start="25" end="26" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/fragments/DashboardFragment.java" start="62" end="62" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="true" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="true" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.alerts.DetailAlert" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*DetailAlert.onOptionsItemSelected() -&gt; DetailAlert extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/alerts/DetailAlert.java" start="36" end="36" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.BusRennes" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*BusRennes.onOptionsItemSelected() -&gt; BusRennes extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/BusRennes.java" start="35" end="35" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.DetailArret" destination="fr.ybo.transportsrennes.activity.bus.TabFavoris" method="">
+    <comment>*DetailArret.onOptionsItemSelected() -&gt; DetailArret extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/alerts/DetailAlert.java" start="36" end="36" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="210" end="210" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.DetailArret" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*DetailArret.onOptionsItemSelected() -&gt; DetailArret extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/alerts/DetailAlert.java" start="36" end="36" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup" destination="fr.ybo.transportsrennes.activity.bus.TabFavoris" method="">
+    <comment>*ListFavorisForNoGroup.onCreateDialog() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/ListFavorisForNoGroup.java" start="77" end="77" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*ListFavorisForNoGroup.onOptionsItemSelected() -&gt; ListFavorisForNoGroup extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/ListFavorisForNoGroup.java" start="41" end="41" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.ListNotif" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>ListNotif.onCreate() -&gt; ListView.setOnItemClickListener() -&gt; *AdapterView.OnItemClickListener.onItemClick() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/ListNotif.java" start="50" end="50" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/ListNotif.java" start="53" end="61" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="true" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-ligne, Serializable-macroDirection, String-direction, String-idArret, String-nomArret" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.ListNotif" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*ListNotif.onOptionsItemSelected() -&gt; ListNotif extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/ListNotif.java" start="40" end="40" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.TabFavoris" destination="fr.ybo.transportsrennes.activity.bus.ListFavorisForNoGroup" method="">
+    <comment>*TabFavoris.onCreate() -&gt; TabFavoris extends AbstractTabFavoris -&gt; AbstractTabFavoris.onCreate() -&gt; TabFavoris.getListFavorisForNoGroupClass() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/TabFavoris.java" start="39" end="39" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/TabFavoris.java" start="35" end="35" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/bus/AbstractTabFavoris.java" start="28" end="28" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/TabFavoris.java" start="105" end="105" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/bus/AbstractTabFavoris.java" start="53" end="54" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="true" />
+      </analyzeScope>
+    </tags>
+    <IntentFields isICCBotNoResult="true" />
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.bus.TabFavoris" destination="fr.ybo.transportsrennes.activity.loading.LoadingActivity" method="">
+    <comment>*TabFavoris.onCreate() -&gt; TabFavoris extends AbstractTabFavoris -&gt; AbstractTabFavoris.loadFavoris() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/TabFavoris.java" start="35" end="35" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/bus/AbstractTabFavoris.java" start="70" end="70" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/bus/TabFavoris.java" start="115" end="117" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-operation" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" destination="fr.ybo.transportsrennes.activity.bus.TabFavoris" method="">
+    <comment>*ItineraireRequete.onOptionsItemSelected() -&gt; ItineraireRequete extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="78" end="78" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="210" end="210" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" destination="fr.ybo.transportsrennes.activity.itineraires.Itineraires" method="">
+    <comment>ItineraireRequete.onCreate() -&gt; TextView.setOnEditorActionListener() -&gt; *TextView.OnEditorActionListener.onEditorAction() -&gt; ItineraireRequete.terminer() -&gt; geoCoderAdresse() -&gt; calculItineraire() -&gt; AsyncTask.execute() -&gt; onPostExecute() -&gt; ItineraireRequete.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="149" end="149" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="212" end="212" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="333" end="333" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="457" end="461" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="true" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="true" isListenerInvocation="true" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-itinerairesReponse, int-heureDepart" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.itineraires.ItineraireRequete" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*ItineraireRequete.onOptionsItemSelected() -&gt; ItineraireRequete extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/itineraires/ItineraireRequete.java" start="78" end="78" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="true" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.timeo.TimeoActivity" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>*TimeoActivity.onCreate() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/timeo/TimeoActivity.java" start="58" end="60" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-favori" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.velos.ListStationsByPosition" destination="fr.ybo.transportsrennes.activity.bus.TabFavoris" method="">
+    <comment>*ListStationsByPosition.onOptionsItemSelected() -&gt; ListStationsByPosition extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/velos/ListStationsByPosition.java" start="58" end="58" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="210" end="210" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.velos.ListStationsByPosition" destination="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" method="">
+    <comment>*ListStationsByPosition.onOptionsItemSelected() -&gt; ListStationsByPosition extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/velos/ListStationsByPosition.java" start="58" end="58" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="213" end="213" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.velos.ListStationsFavoris" destination="fr.ybo.transportsrennes.activity.bus.TabFavoris" method="">
+    <comment>*ListStationsFavoris.onOptionsItemSelected() -&gt; ListStationsFavoris extends BaseSimpleActivity -&gt; BaseSimpleActivity.onOptionsItemSelected() -&gt; BaseActivity.onOptionsItemSelected() -&gt; AbstractTransportsApplication.onOptionsItemSelected() -&gt; TransportsRennesApplication.onOptionsItemSelected() -&gt; Activity.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/velos/ListStationsFavoris.java" start="50" end="50" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="182" end="182" />
+      <line src="/TransportsCommun/src/fr/ybo/transportscommun/activity/commun/BaseActivity.java" start="39" end="40" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="32" end="32" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/application/TransportsRennesApplication.java" start="210" end="210" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="true" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="true" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>*TransportsWidget.onReceive() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget.java" start="115" end="121" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-favori" />
+      <IntentField type="flag" value="FLAG_ACTIVITY_BROUGHT_TO_FRONT | FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_NO_HISTORY" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget" destination="fr.ybo.transportsrennes.services.UpdateTimeService" method="">
+    <comment>*TransportsWidget.onUpdate() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget.java" start="40" end="40" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="56" end="56" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="158" end="166" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="false" isImplicit="true" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="true" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="fr.ybo.transportsrennes.action.UPDATE" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget11" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>*TransportsWidget11.onReceive() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget11.java" start="109" end="115" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-favori" />
+      <IntentField type="flag" value="FLAG_ACTIVITY_BROUGHT_TO_FRONT | FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_NO_HISTORY" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget11" destination="fr.ybo.transportsrennes.services.UpdateTimeService" method="">
+    <comment>*TransportsWidget11.onUpdate() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget11.java" start="38" end="38" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="56" end="56" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="158" end="166" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="false" isImplicit="true" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="true" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="fr.ybo.transportsrennes.action.UPDATE" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget21" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>*TransportsWidget21.onReceive() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget21.java" start="110" end="116" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-favori" />
+      <IntentField type="flag" value="FLAG_ACTIVITY_BROUGHT_TO_FRONT, FLAG_ACTIVITY_NEW_TASK;, FLAG_ACTIVITY_NO_HISTORY;" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidget21" destination="fr.ybo.transportsrennes.services.UpdateTimeService" method="">
+    <comment>*TransportsWidget21.onUpdate() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidget21.java" start="38" end="38" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="56" end="56" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="158" end="166" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="false" isImplicit="true" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="true" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="fr.ybo.transportsrennes.action.UPDATE" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowRes" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>*TransportsWidgetLowRes.onReceive() -&gt; Context.startActivity()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidgetLowRes.java" start="110" end="116" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-favori" />
+      <IntentField type="flag" value="FLAG_ACTIVITY_BROUGHT_TO_FRONT | FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_NO_HISTORY" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.activity.widgets.TransportsWidgetLowRes" destination="fr.ybo.transportsrennes.services.UpdateTimeService" method="">
+    <comment>*TransportsWidgetLowRes.onUpdate() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/activity/widgets/TransportsWidgetLowRes.java" start="38" end="38" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="56" end="56" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="158" end="166" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="false" isImplicit="true" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="true" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="true" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="fr.ybo.transportsrennes.action.UPDATE" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.services.UpdateTimeService" destination="fr.ybo.transportsrennes.activity.bus.DetailArret" method="">
+    <comment>UpdateTimeService.onCreate() -&gt; registerReceiver() -&gt; *BroadcastReceiver.onReceive() -&gt; UpdateTimeService.updateNotifs() -&gt; createNotification() -&gt; NotificationManager.notify()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="82" end="82" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="212" end="212" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="149" end="149" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="172" end="181" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="false" isAtypicalSendICC="true" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="true" isBroadCast="false" isDynamicBroadCast="true" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="Serializable-ligne, Serializable-macroDirection, String-direction, String-idArret, String-nomArret" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="fr.ybo.transportsrennes.services.UpdateTimeServiceReceiver" destination="fr.ybo.transportsrennes.services.UpdateTimeService" method="">
+    <comment>*UpdateTimeServiceReceiver.onReceive() -&gt; Context.startService()</comment>
+    <callLines>
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeServiceReceiver.java" start="27" end="27" />
+      <line src="/TransportsRennes/src/fr/ybo/transportsrennes/services/UpdateTimeService.java" start="56" end="56" />
+      <line src="/TransportsRennes/AndroidManifest.xml" start="158" end="166" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="true" isImplicitCallback="false" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="false" isImplicit="true" />
+      <analyzeScope>
+        <componentScope isActivity="false" isService="true" isBroadCast="true" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="true" isStringOp="false" isNoExtra="true" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="action" value="fr.ybo.transportsrennes.action.UPDATE" />
+    </IntentFields>
+  </OracleEdge>
+</root>

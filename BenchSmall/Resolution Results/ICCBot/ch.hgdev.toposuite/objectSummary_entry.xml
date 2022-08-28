@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="ch.hgdev.toposuite.TopoSuiteActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)&gt;,void startActivity(java.lang.Class)"/>  
+      <source name="ch.hgdev.toposuite.TopoSuiteActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)&gt;"/>  
+        <node method="TopoSuiteActivity startActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="TopoSuiteActivity startActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, r1)"/>  
+        <node method="TopoSuiteActivity startActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;,void startAboutActivity()"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lch/hgdev/toposuite/settings/AboutActivity;&quot;)"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="PassOutIntent" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.utils.ViewUtils"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.utils.ViewUtils"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.TopoSuiteActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.TopoSuiteActivity$DrawerItemClickListener: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.TopoSuiteActivity$DrawerItemClickListener: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;,void onItemClick(android.widget.AdapterView,android.view.View,int,long), &lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)&gt;"/>  
+      <source name="ch.hgdev.toposuite.TopoSuiteActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity$DrawerItemClickListener: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+        <node method="TopoSuiteActivity$DrawerItemClickListener onItemClick" type="SendIntent2ICC" unit="virtualinvoke $r6.&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(java.lang.Class)&gt;($r7)"/>  
+        <node method="TopoSuiteActivity startActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="TopoSuiteActivity startActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, r1)"/>  
+        <node method="TopoSuiteActivity startActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.TopoSuiteActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()&gt;,void showCircularSegmentationResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()&gt;"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/circularsegmentation/CircularSegmentationResultsActivity;&quot;)"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.ExpandableRightMenuAdapter"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter$2: void onClick(android.view.View)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter$2: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="ch.hgdev.toposuite.ExpandableRightMenuAdapter"/>  
+      <destinition name="java.lang.Class"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter$2: void onClick(android.view.View)&gt;"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, $r6)"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="PassOutIntent" unit="virtualinvoke $r4.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;,void startAboutActivity()"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lch/hgdev/toposuite/settings/AboutActivity;&quot;)"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="PassOutIntent" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()&gt;,void showCircularSegmentationResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void showCircularSegmentationResultActivity()&gt;"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/circularsegmentation/CircularSegmentationResultsActivity;&quot;)"/>  
+        <node method="CircularSegmentationActivity showCircularSegmentationResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onMergePointsDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;,void startAboutActivity()"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lch/hgdev/toposuite/settings/AboutActivity;&quot;)"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="PassOutIntent" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,boolean onOptionsItemSelected(android.view.MenuItem)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="LeveOrthoActivity onOptionsItemSelected" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="LeveOrthoActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/leveortho/LeveOrthoResultsActivity;&quot;)"/>  
+        <node method="LeveOrthoActivity onOptionsItemSelected" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()&gt;,void showPolarImplantationResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()&gt;"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/polarimplantation/PolarImplantationResultsActivity;&quot;)"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.TopoSuiteActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.TopoSuiteActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AbrissResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity: void setContentView(int)&gt;(2130903043)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="OrthoImplantationResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void setContentView(int)&gt;(2130903066)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CircularSegmentationActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity: void setContentView(int)&gt;(2130903051)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LinesIntersectionActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity: void setContentView(int)&gt;(2130903064)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,boolean onOptionsItemSelected(android.view.MenuItem)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="CheminementOrthoActivity onOptionsItemSelected" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="CheminementOrthoActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/cheminortho/CheminementOrthoResultsActivity;&quot;)"/>  
+        <node method="CheminementOrthoActivity onOptionsItemSelected" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean savePoint(ch.hgdev.toposuite.points.Point)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean savePoint(ch.hgdev.toposuite.points.Point)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean savePoint(ch.hgdev.toposuite.points.Point)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean savePoint(ch.hgdev.toposuite.points.Point)&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: boolean savePoint(ch.hgdev.toposuite.points.Point)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="FreeStationActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void setContentView(int)&gt;(2130903053)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AbrissActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void setContentView(int)&gt;(2130903042)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PolarImplantationActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void setContentView(int)&gt;(2130903071)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LeveOrthoResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void setContentView(int)&gt;(2130903060)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="SurfaceActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void setContentView(int)&gt;(2130903076)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.AboutActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.AboutActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AboutActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.settings.AboutActivity: void setContentView(int)&gt;(2130903041)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.history.HistoryActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.history.HistoryActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="HistoryActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.history.HistoryActivity: void setContentView(int)&gt;(2130903057)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.history.HistoryActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.history.HistoryActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,boolean onOptionsItemSelected(android.view.MenuItem)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.abriss.AbrissResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="AbrissActivity onOptionsItemSelected" type="CreateMethod" unit="r4 = new android.content.Intent"/>  
+        <node method="AbrissActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/abriss/AbrissResultsActivity;&quot;)"/>  
+        <node method="AbrissActivity onOptionsItemSelected" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity: void startActivity(android.content.Intent)&gt;(r4)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.jobs.JobsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.jobs.JobsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.jobs.JobsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.jobs.JobsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="JobsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.jobs.JobsActivity: void setContentView(int)&gt;(2130903058)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()&gt;,void startFreeStationResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()&gt;"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/freestation/FreeStationResultsActivity;&quot;)"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()&gt;,void startFreeStationResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startFreeStationResultsActivity()&gt;"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/freestation/FreeStationResultsActivity;&quot;)"/>  
+        <node method="FreeStationActivity startFreeStationResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,void updateShareIntent(), &lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <sender action="android.intent.action.SEND" type="text/csv"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="CreateMethod" unit="$r7 = new android.content.Intent"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/csv&quot;)"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,void updateShareIntent(), &lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <sender action="android.intent.action.SEND" type="text/csv"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="CreateMethod" unit="$r7 = new android.content.Intent"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/csv&quot;)"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: boolean onCreateOptionsMenu(android.view.Menu)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,void updateShareIntent(), &lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <sender action="android.intent.action.SEND" type="text/csv"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="CreateMethod" unit="$r7 = new android.content.Intent"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/csv&quot;)"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onImportDialogSuccess(java.lang.String)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="SettingsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.settings.SettingsActivity: void setContentView(int)&gt;(2130903075)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()&gt;,void startAxisImplantationResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()&gt;"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/axisimpl/AxisImplantationResultsActivity;&quot;)"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()&gt;,void startAxisImplantationResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startAxisImplantationResultsActivity()&gt;"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/axisimpl/AxisImplantationResultsActivity;&quot;)"/>  
+        <node method="AxisImplantationActivity startAxisImplantationResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()&gt;,void showPolarSurveyResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()&gt;"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/polarsurvey/PolarSurveyResultsActivity;&quot;)"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,boolean onOptionsItemSelected(android.view.MenuItem)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="PointProjectionActivity onOptionsItemSelected" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="PointProjectionActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/pointproj/PointProjectionResultActivity;&quot;)"/>  
+        <node method="PointProjectionActivity onOptionsItemSelected" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TriangleSolverActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity: void setContentView(int)&gt;(2130903077)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CirclesIntersectionActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void setContentView(int)&gt;(2130903049)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LineCircleIntersectionActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity: void setContentView(int)&gt;(2130903063)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()&gt;,void showPolarImplantationResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void showPolarImplantationResultActivity()&gt;"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/polarimplantation/PolarImplantationResultsActivity;&quot;)"/>  
+        <node method="PolarImplantationActivity showPolarImplantationResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AxisImplantationResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity: void setContentView(int)&gt;(2130903045)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.entry.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.entry.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.entry.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.entry.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.entry.MainActivity: void setContentView(int)&gt;(2130903065)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CircularCurvesSolverActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void setContentView(int)&gt;(2130903050)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LeveOrthoActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity: void setContentView(int)&gt;(2130903059)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.help.HelpActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.help.HelpActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.help.HelpActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.help.HelpActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="HelpActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.help.HelpActivity: void setContentView(int)&gt;(2130903056)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circle.CircleActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circle.CircleActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circle.CircleActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CircleActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circle.CircleActivity: void setContentView(int)&gt;(2130903048)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="GisementActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity: void setContentView(int)&gt;(2130903055)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,boolean onOptionsItemSelected(android.view.MenuItem)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="OrthogonalImplantationActivity onOptionsItemSelected" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="OrthogonalImplantationActivity onOptionsItemSelected" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/orthoimpl/OrthoImplantationResultsActivity;&quot;)"/>  
+        <node method="OrthogonalImplantationActivity onOptionsItemSelected" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;,&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;,void redirectToPointsManagerActivity(android.app.Activity)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity$2: void onClick(android.content.DialogInterface,int)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void access$000(ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void savePoints()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.utils.ViewUtils: void redirectToPointsManagerActivity(android.app.Activity)&gt;"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r0, class &quot;Lch/hgdev/toposuite/points/PointsManagerActivity;&quot;)"/>  
+        <node method="ViewUtils redirectToPointsManagerActivity" type="PassOutIntent" unit="virtualinvoke $r0.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()&gt;,void startLimitDisplacementResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()&gt;"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/limdispl/LimitDisplacementResultsActivity;&quot;)"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.ExpandableRightMenuAdapter"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter: android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter: android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)&gt;,&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter$2: void onClick(android.view.View)&gt;,void onClick(android.view.View)"/>  
+      <source name="ch.hgdev.toposuite.ExpandableRightMenuAdapter"/>  
+      <destinition name="java.lang.Class"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter: android.view.View getChildView(int,int,boolean,android.view.View,android.view.ViewGroup)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.ExpandableRightMenuAdapter$2: void onClick(android.view.View)&gt;"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r4, $r6)"/>  
+        <node method="ExpandableRightMenuAdapter$2 onClick" type="PassOutIntent" unit="virtualinvoke $r4.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;,&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;,void startAboutActivity()"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.settings.AboutActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment$1: boolean onPreferenceClick(android.preference.Preference)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void access$000(ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment: void startAboutActivity()&gt;"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="CreateMethod" unit="r1 = new android.content.Intent"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="SetAttribute" unit="specialinvoke r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r2, class &quot;Lch/hgdev/toposuite/settings/AboutActivity;&quot;)"/>  
+        <node method="SettingsActivity$SettingsFragment startAboutActivity" type="PassOutIntent" unit="virtualinvoke $r2.&lt;android.app.Activity: void startActivity(android.content.Intent)&gt;(r1)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.history.HistoryActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.history.HistoryActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.history.HistoryActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;,void onItemClick(android.widget.AdapterView,android.view.View,int,long)"/>  
+      <source name="ch.hgdev.toposuite.history.HistoryActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity, ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity, ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity, ch.hgdev.toposuite.calculation.activities.surface.SurfaceActivity, ch.hgdev.toposuite.calculation.activities.trianglesolver.TriangleSolverActivity, ch.hgdev.toposuite.calculation.activities.linesintersec.LinesIntersectionActivity, ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity, ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationActivity, ch.hgdev.toposuite.calculation.activities.gisement.GisementActivity, ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity, ch.hgdev.toposuite.calculation.activities.circcurvesolver.CircularCurvesSolverActivity, ch.hgdev.toposuite.calculation.activities.abriss.AbrissActivity, ch.hgdev.toposuite.calculation.activities.linecircleintersection.LineCircleIntersectionActivity, ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity, ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity, ch.hgdev.toposuite.calculation.activities.circlesintersection.CirclesIntersectionActivity, ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationActivity, ch.hgdev.toposuite.calculation.activities.circle.CircleActivity, ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.history.HistoryActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)&gt;"/>  
+        <node method="HistoryActivity$1 onItemClick" type="CreateMethod" unit="r4 = new android.content.Intent"/>  
+        <node method="HistoryActivity$1 onItemClick" type="SetAttribute" unit="specialinvoke r4.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;($r9, $r8)"/>  
+        <node method="HistoryActivity$1 onItemClick" type="PassOutIntent" unit="virtualinvoke $r9.&lt;ch.hgdev.toposuite.history.HistoryActivity: void startActivity(android.content.Intent)&gt;(r4)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PolarSurveyActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void setContentView(int)&gt;(2130903073)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CircularSegmentationResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void setContentView(int)&gt;(2130903052)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.circularsegmentation.CircularSegmentationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PointsManagerActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setContentView(int)&gt;(2130903070)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PolarSurveyResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity: void setContentView(int)&gt;(2130903074)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()&gt;,void startLimitDisplacementResultsActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startLimitDisplacementResultsActivity()&gt;"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="CreateMethod" unit="r2 = new android.content.Intent"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="SetAttribute" unit="specialinvoke r2.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/limdispl/LimitDisplacementResultsActivity;&quot;)"/>  
+        <node method="LimitDisplacementActivity startLimitDisplacementResultsActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void startActivity(android.content.Intent)&gt;(r2)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,void updateShareIntent(), &lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <sender action="android.intent.action.SEND" type="text/csv"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="CreateMethod" unit="$r7 = new android.content.Intent"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/csv&quot;)"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogAdd(ch.hgdev.toposuite.points.AddPointDialogFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="OrthogonalImplantationActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity: void setContentView(int)&gt;(2130903067)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LimitDisplacementActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementActivity: void setContentView(int)&gt;(2130903061)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PointProjectionActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity: void setContentView(int)&gt;(2130903068)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.points.PointsManagerActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,void updateShareIntent(), &lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <sender action="android.intent.action.SEND" type="text/csv"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="CreateMethod" unit="$r7 = new android.content.Intent"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setAction(java.lang.String)&gt;(&quot;android.intent.action.SEND&quot;)"/>  
+        <node method="PointsManagerActivity updateShareIntent" type="SetAttribute" unit="virtualinvoke r2.&lt;android.content.Intent: android.content.Intent setType(java.lang.String)&gt;(&quot;text/csv&quot;)"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;,&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;,void setShareIntent(android.content.Intent)"/>  
+      <source name="ch.hgdev.toposuite.points.PointsManagerActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void onDialogEdit(ch.hgdev.toposuite.points.EditPointDialogFragment)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void updateShareIntent()&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.points.PointsManagerActivity: void setShareIntent(android.content.Intent)&gt;"/>  
+        <node method="PointsManagerActivity setShareIntent" type="ReceiveIntentFromParatMethod" unit="$r1 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PointProjectionResultActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity: void setContentView(int)&gt;(2130903069)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;,&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()&gt;,void showPolarSurveyResultActivity()"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity"/>  
+      <destinition name="ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: boolean onOptionsItemSelected(android.view.MenuItem)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void showPolarSurveyResultActivity()&gt;"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="CreateMethod" unit="r3 = new android.content.Intent"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="SetAttribute" unit="specialinvoke r3.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Lch/hgdev/toposuite/calculation/activities/polarsurvey/PolarSurveyResultsActivity;&quot;)"/>  
+        <node method="PolarSurveyActivity showPolarSurveyResultActivity" type="PassOutIntent" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarsurvey.PolarSurveyActivity: void startActivity(android.content.Intent)&gt;(r3)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CheminementOrthoActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity: void setContentView(int)&gt;(2130903046)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="LimitDisplacementResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.limdispl.LimitDisplacementResultsActivity: void setContentView(int)&gt;(2130903062)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="FreeStationResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity: void setContentView(int)&gt;(2130903054)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="CheminementOrthoResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity: void setContentView(int)&gt;(2130903047)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="PolarImplantationResultsActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.polarimplantation.PolarImplantationResultsActivity: void setContentView(int)&gt;(2130903072)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"> 
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;,&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="&lt;ch.hgdev.toposuite.TopoSuiteActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TopoSuiteActivity onCreate" type="setContentView" unit="specialinvoke r0.&lt;android.support.v4.app.FragmentActivity: void setContentView(int)&gt;(2130903088)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="AxisImplantationActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity: void setContentView(int)&gt;(2130903044)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="ch.hgdev.toposuite.settings.SettingsActivity"> 
+    <FragmentSummary> 
+      <method value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="ch.hgdev.toposuite.settings.SettingsActivity"/>  
+      <destinition name="ch.hgdev.toposuite.settings.SettingsActivity$SettingsFragment"/>  
+      <nodes> 
+        <node method="&lt;ch.hgdev.toposuite.settings.SettingsActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="SettingsActivity onCreate" type="getFragment" unit="$r3 = virtualinvoke r0.&lt;ch.hgdev.toposuite.settings.SettingsActivity: android.app.FragmentManager getFragmentManager()&gt;()"/>  
+        <node method="SettingsActivity onCreate" type="beginTransaction" unit="$r4 = virtualinvoke $r3.&lt;android.app.FragmentManager: android.app.FragmentTransaction beginTransaction()&gt;()"/>  
+        <node method="SettingsActivity onCreate" type="addFunction" unit="$r4 = virtualinvoke $r4.&lt;android.app.FragmentTransaction: android.app.FragmentTransaction add(int,android.app.Fragment)&gt;(2131427335, $r2)"/>  
+        <node method="SettingsActivity onCreate" type="commit" unit="virtualinvoke $r4.&lt;android.app.FragmentTransaction: int commit()&gt;()"/> 
+      </nodes> 
+    </FragmentSummary> 
+  </Component>
+</root>

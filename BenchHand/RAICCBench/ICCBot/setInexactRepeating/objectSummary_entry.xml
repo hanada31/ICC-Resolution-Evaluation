@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.setInexactRepeating.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setInexactRepeating.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setInexactRepeating.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.setInexactRepeating.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setInexactRepeating.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r1 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r1.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/setInexactRepeating/TargetActivity;&quot;)"/>  
+        <node method="MainActivity onCreate" type="PassOutIntent" unit="virtualinvoke $r7.&lt;android.app.AlarmManager: void setInexactRepeating(int,long,long,android.app.PendingIntent)&gt;(0, $l0, 10L, $r6)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.setInexactRepeating.TargetActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.setInexactRepeating.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.setInexactRepeating.TargetActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.setInexactRepeating.TargetActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.setInexactRepeating.TargetActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="TargetActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.setInexactRepeating.TargetActivity: void setContentView(int)&gt;(2131296282)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

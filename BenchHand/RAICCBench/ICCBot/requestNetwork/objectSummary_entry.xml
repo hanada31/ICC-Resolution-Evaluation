@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <Component source="lu.uni.trux.raicc.requestNetwork.MainActivity"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.MainActivity"/>  
+      <destinition name="lu.uni.trux.raicc.requestNetwork.TargetService"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="CreateMethod" unit="$r5 = new android.content.Intent"/>  
+        <node method="MainActivity onCreate" type="SetAttribute" unit="specialinvoke $r5.&lt;android.content.Intent: void &lt;init&gt;(android.content.Context,java.lang.Class)&gt;(r0, class &quot;Llu/uni/trux/raicc/requestNetwork/TargetService;&quot;)"/>  
+        <node method="MainActivity onCreate" type="PassOutIntent" unit="virtualinvoke $r7.&lt;android.net.ConnectivityManager: void requestNetwork(android.net.NetworkRequest,android.app.PendingIntent)&gt;($r9, $r6)"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.MainActivity"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void onCreate(android.os.Bundle)&gt;"/>  
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;lu.uni.trux.raicc.requestNetwork.MainActivity: void setContentView(int)&gt;(2131296281)"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.requestNetwork.TargetService"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;,int onStartCommand(android.content.Intent,int,int)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.TargetService"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;"/>  
+        <node method="TargetService onStartCommand" type="ReceiveIntentFromRetValue" unit="$r2 = virtualinvoke r0.&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.content.Intent getIntent()&gt;()"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;,int onStartCommand(android.content.Intent,int,int)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.TargetService"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: int onStartCommand(android.content.Intent,int,int)&gt;"/>  
+        <node method="TargetService onStartCommand" type="ReceiveIntentFromParatMethod" unit="$r2 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component>  
+  <Component source="lu.uni.trux.raicc.requestNetwork.TargetService"> 
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.TargetService"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;"/>  
+        <node method="TargetService onBind" type="ReceiveIntentFromParatMethod" unit="parameter0 := @parameter0: android.content.Intent"/> 
+      </nodes> 
+    </intentSummary>  
+    <intentSummary> 
+      <method value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;"/>  
+      <methodtrace value="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;,android.os.IBinder onBind(android.content.Intent)"/>  
+      <source name="lu.uni.trux.raicc.requestNetwork.TargetService"/>  
+      <nodes> 
+        <node method="&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.os.IBinder onBind(android.content.Intent)&gt;"/>  
+        <node method="TargetService onBind" type="ReceiveIntentFromRetValue" unit="parameter0 = virtualinvoke this.&lt;lu.uni.trux.raicc.requestNetwork.TargetService: android.content.Intent getIntent()&gt;()"/> 
+      </nodes> 
+    </intentSummary> 
+  </Component> 
+</root>

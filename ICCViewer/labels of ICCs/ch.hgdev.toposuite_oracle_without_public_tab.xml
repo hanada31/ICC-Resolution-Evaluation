@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root srcCodeBase="/apps/ch.hgdev.toposuite">
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationActivity" destination="ch.hgdev.toposuite.calculation.activities.axisimpl.AxisImplantationResultsActivity" method="">
+    <comment>*AxisImplantationActivity.onOptionsItemSelected() -&gt; startAxisImplantationResultsActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/axisimpl/AxisImplantationActivity.java" start="335" end="335" />
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/axisimpl/AxisImplantationActivity.java" start="470" end="478" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-axis_impl_position" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoActivity" destination="ch.hgdev.toposuite.calculation.activities.cheminortho.CheminementOrthoResultsActivity" method="">
+    <comment>*CheminementOrthoActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/cheminortho/CheminementOrthoActivity.java" start="235" end="241" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-leve_ortho_position" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationActivity" destination="ch.hgdev.toposuite.calculation.activities.freestation.FreeStationResultsActivity" method="">
+    <comment>*FreeStationActivity.onOptionsItemSelected() -&gt; startFreeStationResultsActivity() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/freestation/FreeStationActivity.java" start="207" end="215" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="true" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-free_station_position" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoActivity" destination="ch.hgdev.toposuite.calculation.activities.leveortho.LeveOrthoResultsActivity" method="">
+    <comment>*LeveOrthoActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/leveortho/LeveOrthoActivity.java" start="282" end="288" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-leve_ortho_position" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthogonalImplantationActivity" destination="ch.hgdev.toposuite.calculation.activities.orthoimpl.OrthoImplantationResultsActivity" method="">
+    <comment>*OrthogonalImplantationActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/orthoimpl/OrthogonalImplantationActivity.java" start="255" end="262" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-ortho_impl_position" />
+    </IntentFields>
+  </OracleEdge>
+  <OracleEdge source="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionActivity" destination="ch.hgdev.toposuite.calculation.activities.pointproj.PointProjectionResultActivity" method="">
+    <comment>*PointProjectionActivity.onOptionsItemSelected() -&gt; startActivity()</comment>
+    <callLines>
+      <line src="/TopoSuite/src/ch/hgdev/toposuite/calculation/activities/pointproj/PointProjectionActivity.java" start="311" end="317" />
+    </callLines>
+    <tags>
+      <entryMethod isLifeCycle="false" isImplicitCallback="true" isDynamicCallBack="false" isStaticCallBack="false" />
+      <exitMethod isNormalSendICC="true" isAtypicalSendICC="false" />
+      <intentMatch isExplicit="true" isImplicit="false" />
+      <analyzeScope>
+        <componentScope isActivity="true" isService="false" isBroadCast="false" isDynamicBroadCast="false" />
+        <nonComponentScope isFragment="false" isAdapter="false" isWidget="false" isOtherClass="false" />
+        <methodScope isLibraryInvocation="false" isBasicInvocation="false" isAsyncInvocation="false" isListenerInvocation="false" isPolymorphic="false" />
+        <intentFieldScope isStaticVal="false" isStringOp="false" isNoExtra="false" isContext="false" />
+      </analyzeScope>
+    </tags>
+    <IntentFields>
+      <IntentField type="extra" value="int-point_selected_position" />
+    </IntentFields>
+  </OracleEdge>
+</root>

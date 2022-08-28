@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <Component source="org.arguslab.icc_stateful.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_stateful.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_stateful.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;,void onRequestPermissionsResult(int,java.lang.String[],int[])"/>
+      <source name="org.arguslab.icc_stateful.MainActivity"/>
+      <destinition name="org.arguslab.icc_stateful.FooActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_stateful.MainActivity: void onRequestPermissionsResult(int,java.lang.String[],int[])&gt;"/>
+        <node method="MainActivity onRequestPermissionsResult" type="CreateMethod" unit="r3 = new android.content.Intent"/>
+        <node method="MainActivity onRequestPermissionsResult" type="SetAttribute" unit="virtualinvoke r3.&lt;android.content.Intent: android.content.Intent setClass(android.content.Context,java.lang.Class)&gt;($r4, class &quot;Lorg/arguslab/icc_stateful/FooActivity;&quot;)"/>
+        <node method="MainActivity onRequestPermissionsResult" type="SendIntent2ICC" unit="virtualinvoke r0.&lt;org.arguslab.icc_stateful.MainActivity: void startActivityForResult(android.content.Intent,int)&gt;(r3, 1)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_stateful.MainActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_stateful.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_stateful.MainActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_stateful.MainActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_stateful.MainActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="MainActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_stateful.MainActivity: void setContentView(int)&gt;(2130903041)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+  <Component source="org.arguslab.icc_stateful.FooActivity">
+    <intentSummary>
+      <method value="&lt;org.arguslab.icc_stateful.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+      <methodtrace value="&lt;org.arguslab.icc_stateful.FooActivity: void onCreate(android.os.Bundle)&gt;,void onCreate(android.os.Bundle)"/>
+      <source name="org.arguslab.icc_stateful.FooActivity"/>
+      <nodes>
+        <node method="&lt;org.arguslab.icc_stateful.FooActivity: void onCreate(android.os.Bundle)&gt;"/>
+        <node method="FooActivity onCreate" type="setContentView" unit="virtualinvoke r0.&lt;org.arguslab.icc_stateful.FooActivity: void setContentView(int)&gt;(2130903040)"/>
+      </nodes>
+    </intentSummary>
+  </Component>
+</root>

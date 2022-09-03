@@ -1,0 +1,220 @@
+<!--
+  ~    Calendula - An assistant for personal medication management.
+  ~    Copyright (C) 2014-2018 CiTIUS - University of Santiago de Compostela
+  ~
+  ~    Calendula is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    tools:context="es.usc.citius.servando.calendula.activities.PatientDetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="260dp"
+        android:background="@color/android_blue_dark"
+        android:transitionName="background">
+
+        <View
+            android:id="@+id/patient_avatar_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></View>
+
+        <ImageView
+            android:id="@+id/patient_avatar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="60dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar_default"
+            android:transitionName="transition" />
+
+        <Button
+            android:id="@+id/linkButton"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Vincular"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/status_bar_height"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="@dimen/negative_status_bar_height"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="0dp">
+
+            <EditText
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginLeft="72dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/dark_grey_home"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="@string/label_patient_name"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="20sp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/patient_name"
+                android:layout_below="@+id/patient_name"
+                android:layout_marginTop="36dp"
+                android:checked="true"
+                android:elegantTextHeight="false"
+                android:text="@string/create_default_routines"
+                android:textColor="@color/dark_grey_text"
+                android:textSize="16sp" />
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="30dp"
+                app:iiv_color="@color/dark_grey_home"
+                app:iiv_icon="cmd-account"
+                app:iiv_padding="3dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/grid_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top"
+        android:visibility="visible">
+
+        <HorizontalScrollView
+            android:id="@+id/colorScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/color_chooser"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <!--<include layout="@layout/color_chooser_item"/>-->
+                <!--<include layout="@layout/color_chooser_item"/>-->
+                <!--<include layout="@layout/color_chooser_item"/>-->
+                <!--<include layout="@layout/color_chooser_item"/>-->
+                <!--<include layout="@layout/color_chooser_item"/>-->
+                <!--<include layout="@layout/color_chooser_item"/>-->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:horizontalSpacing="20dp"
+            android:numColumns="3"
+            android:paddingBottom="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="0dp"
+            android:scrollbars="none"
+            android:verticalSpacing="0dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top"
+        android:alpha="0.4"
+        android:background="@drawable/presentation_box_shadow_top" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/avatar_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/fab_separator_right_margin"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/ic_autorenew_white_48dp"
+        android:transitionName="fab"
+        app:backgroundTint="@color/fab_default_color"
+        app:elevation="@dimen/fab_elevation" />
+
+
+</RelativeLayout>

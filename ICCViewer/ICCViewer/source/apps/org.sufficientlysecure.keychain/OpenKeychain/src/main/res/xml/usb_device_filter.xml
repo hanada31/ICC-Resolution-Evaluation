@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Route all smart card devices (class 11) to OpenKeychain.
+        Internally, we check against a whitelist of working devices.
+        See SecurityTokenInfo.
+    -->
+    <usb-device class="11" />
+
+    <!--
+        Route some HID devices (class 3) to OpenKeychain.
+        These tokens are generally supported but need to have CCID enabled.
+        Thus, we show a notification inside OpenKeychain to inform the user.
+
+        Based on
+        https://github.com/Yubico/yubikey-personalization/blob/master/ykcore/ykdef.h
+        Note that values are decimal.
+    -->
+    <!-- Yubikey NEO - OTP only -->
+    <usb-device class="3" vendor-id="4176" product-id="272"/>
+    <!-- Yubikey NEO - U2F only -->
+    <usb-device class="3" vendor-id="4176" product-id="275"/>
+    <!-- Yubikey NEO - OTP and U2F -->
+    <usb-device class="3" vendor-id="4176" product-id="276"/>
+
+    <!-- Yubikey 4 - OTP only -->
+    <usb-device class="3" vendor-id="4176" product-id="1025"/>
+    <!-- Yubikey 4 - U2F only -->
+    <usb-device class="3" vendor-id="4176" product-id="1026"/>
+    <!-- Yubikey 4 - OTP and U2F -->
+    <usb-device class="3" vendor-id="4176" product-id="1027"/>
+
+</resources>

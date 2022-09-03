@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~    Calendula - An assistant for personal medication management.
+  ~    Copyright (C) 2014-2018 CiTIUS - University of Santiago de Compostela
+  ~
+  ~    Calendula is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<TextView-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="@string/schedule_day_selector_take"-->
+        <!--android:textColor="@color/android_blue"            -->
+        <!--android:layout_weight="0"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone" />-->
+
+        <TextView
+            android:id="@+id/day_mo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_mo"/>
+
+        <TextView
+            android:id="@+id/day_tu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_tu"/>
+
+        <TextView
+            android:id="@+id/day_we"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_we"/>
+
+        <TextView
+            android:id="@+id/day_th"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_th"/>
+
+        <TextView
+            android:id="@+id/day_fr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_fr"/>
+
+        <TextView
+            android:id="@+id/day_sa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_sa"/>
+
+        <TextView
+            android:id="@+id/day_su"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0"
+            android:background="@drawable/dayselector_circle"
+            android:gravity="center"
+            android:text="@string/schedule_day_selector_su"/>
+
+        <!--<CheckBox-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="All"-->
+        <!--android:id="@+id/day_check_all"-->
+        <!--android:layout_weight="1.5"-->
+        <!--android:textColor="@color/android_blue"-->
+        <!--android:visibility="gone" />-->
+
+    </LinearLayout>
+</RelativeLayout>

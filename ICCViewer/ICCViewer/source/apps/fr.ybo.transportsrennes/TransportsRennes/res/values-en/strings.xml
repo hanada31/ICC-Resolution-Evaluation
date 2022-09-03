@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<resources>
+    <!-- Nom de l'application -->
+    <string name="app_name">Transports Rennes</string>
+
+    <string name="widget11_name">Transports Rennes 1x1</string>
+    <string name="widget21_name">Transports Rennes 2x1</string>
+    <string name="widget22_name">Transports Rennes 2x2</string>
+    <string name="widgetlowres_name">Transports Rennes 2x2 LowRes</string>
+    <!-- Messages -->
+    <string name="titleTransportsRennes">Welcome to the application Transports Rennes %1$s</string>
+    <string name="majDispo">An update of the STAR\'s data is available, do you want to download it now? You will have to
+        reload schedules you
+        have already loaded.
+    </string>
+    <string name="infoChargementGtfs">Loading data from STAR.</string>
+    <string name="dialogRequeteVeloStar">LE vélo STAR query</string>
+    <string name="dialogRequeteAlerts">STAR query</string>
+    <string name="dialogRequeteTwitter">Twitter query</string>
+    <string name="dialogRequeteParkRelais">STAR query</string>
+    <string name="dialogRequetePointsDeVente">STAR query</string>
+    <string name="dialogAPropos">
+        Transports Rennes is a &lt;a href="http://data.keolis-rennes.com/fr/le-projet/labellisation.html"&gt;STAR approved&lt;/a&gt; application,
+        label that guarantees to the user the quality and accuracy of the information, as described in this
+        &lt;a href="http://data.keolis-rennes.com/fileadmin/OpenDataFiles/Sources/Lab%C3%A9lisation%20des%20applications%20transport%20Rennes%20M%C3%A9tropole%20en%20acc%C3%A8s%20libre.pdf"&gt;document&lt;/a&gt;.&lt;br/&gt;
+        Last data update : %DATE_GTFS%&lt;br&gt;
+        &lt;br&gt;
+        &lt;i&gt;This application is developed and maintained by one person on personal time, so thank you for your indulgence.&lt;br/&gt;Feel free
+        to send me any suggestions or
+        problem (&lt;a href=\'mailto:ybonnel@gmail.com?subject=Transports Rennes\'&gt;ybonnel@gmail.com&lt;/a&gt;).&lt;/i&gt;
+    </string>
+    <string name="detailarret_empty">No buses at the selected date, you can choose a particular date the action bar.</string>
+    <string name="itineraires_empty">No itinerary has been found for these addresses.</string>
+    <string name="hint_rechercherarret">Bus stop search.</string>
+    <string name="listfavori_empty">No favorites found.</string>
+    <string name="go_googlemap">View on GoogleMap</string>
+    <string name="textAdresseDepart">Start</string>
+    <string name="textAdresseArrivee">Destination</string>
+    <string name="exempleAdresse">Ex : place sainte anne, Rennes</string>
+    <string name="hint_rechercheParcRelai">Park &amp; Ride search.</string>
+    <string name="hint_recherchePointDeVente">Points of sale search.</string>
+    <string name="hint_rechercheStation">Station Search</string>
+    <string name="hint_positionCourante">Current position</string>
+    <string name="listevelofavoris_empty">No favorites station found.</string>
+    <string name="directionEntete">Towards :</string>
+    <string name="tooMuchFavoris">Already selected three favorite stops</string>
+    <string name="justOneFavori">Already selected one favorite stop</string>
+    <string name="favoriUsedByWidget">A widget is using this favorite, thank you for deleting it before the favorite.
+    </string>
+    <string name="chargementLigneFavori">\nLoading bus route %1$s which you have favorites.</string>
+    <string name="loadAllLineAlert">Attention load data from all lines can take several minutes (5 minutes on a Nexus
+        One), and will occupy
+        approximately 8.5 MB of data, but you will have access to all schedules in offline mode. Are you sure you want
+        to load (wifi strongly
+        recommended)?
+    </string>
+    <string name="geocodageAdresseDepart">Geo-coding the start address</string>
+    <string name="geocodageAdresseArrivee">Geo-coding of the destination address</string>
+    <string name="calculItineraire">Calculation of possible routes in progress.</string>
+    <string name="depart">Starts at %1$s</string>
+    <string name="arrivee">Arriving at %1$s</string>
+    <!-- Libellés des boutons de la pages d'accueil -->
+    <string name="btn_velo">LE vélo STAR</string>
+    <string name="btn_velo_favori">Favorite Stations</string>
+    <string name="btn_bus">Bus</string>
+    <string name="btn_bus_favori">Favorite stops</string>
+    <string name="btn_bus_gps">Nearest stops</string>
+    <string name="btn_alert">Warnings</string>
+    <string name="btn_parking">Park &amp; Ride</string>
+    <string name="menu_tickets">Points of sale</string>
+    <!-- Libellés de menus -->
+    <string name="menu_selectDay">Select a date</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_apropos">About</string>
+    <string name="menu_carte">Map</string>
+    <string name="menu_loadLines">Load all bus lines</string>
+    <string name="btn_itineraires">Routes calculation</string>
+    <!-- Widget -->
+    <string name="widget_choix">Choose from one to three favorite stops.</string>
+    <string name="widget11_choix">Choose one favorite stop.</string>
+    <!-- Génériques -->
+    <string name="Terminer">Finish</string>
+    <string name="oui">Yes</string>
+    <string name="non">No</string>
+    <string name="prochain">Next :</string>
+    <!-- Erreurs -->
+    <string name="erreur_widgetBeforeLaunch">You have not yet started the application, please run it before trying to
+        add widgets.
+    </string>
+    <string name="erreur_widgetWithNoFavori">You do not have favorites yet. To use widgets add favorites.</string>
+    <string name="erreur_auMoinsUnFavori">Select at least one favorite stop.</string>
+    <string name="erreur_geocodage">An error occurred while geo-coding address, please try again later.</string>
+    <string name="erreur_pasAdresseDepart">No matches were found for the starting address</string>
+    <string name="erreur_pasAdresseArrivee">No matches were found for the destination address</string>
+    <string name="erreur_gpsPasPret">The GPS position has not yet been found.</string>
+    <string name="erreur_calculItineraires">An error occurred when calculating the route, please try again later.
+    </string>
+
+    <string name="erreur_outOfBounds">The route requested has addresses outside the area covered.</string>
+    <string name="erreur_noTransitTimes">No bus found for the requested time.</string>
+    <string name="erreur_pathNotFound">No route found.</string>
+
+    <string name="nouvelleVersion">New version available</string>
+    <string name="versionDisponible">Version %1$s is available!</string>
+
+    <string name="menu_share">Share</string>
+    <string name="shareText">Transport Rennes, Android application to help you in transit of Rennes: http://goo.gl/ALKs0
+    </string>
+
+    <string name="notifUpdateOn">Notification for updates</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="notifText">Line %1$s, stop %2$s arrive in %3$s minutes</string>
+    <string name="notifShortText">Line %1$s, stop %2$s</string>
+    <string name="notifDescriptionText">Arrive in %1$s minutes</string>
+    <string name="listnotif_empty">No notification found.</string>
+    <string name="notif">Notifications</string>
+    <string name="supprimerNotif">Delete the notification</string>
+    <string name="lineShortcut">Bus line</string>
+    <string name="lineName">Line %1$s</string>
+    
+    <string name="chooseTheme">Choose a style</string>
+    <string name="theme">Style</string>
+    <string name="debug">Debug</string>
+    <string name="activateDebug">Activate debug logs.</string>
+    
+    <string name="erreurTimeoNotFound">Error : no stop with code %1$s found</string>
+    
+    <string name="getRealTime">Get real time times.</string>
+    <string name="diffSecondsToHigh">There is more than 30 seconds between STAR\'s hour and your phone\'s hour (%1$d seconds).</string>
+    
+    
+    <string name="erreur_geocodage_quota">
+        Error while address geocoding, quota is over (2500 by day).
+    </string>
+    
+    
+    <string name="messageStarEnRetard">Times data aren\'t up to date, you must update application.</string>
+    
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <ImageView
+        android:id="@+id/selected_shield_list_item_selection_circle_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/shields_activity_check_circle"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/selected_shield_list_item_symbol_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/upperShadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#20000000" />
+
+</RelativeLayout>

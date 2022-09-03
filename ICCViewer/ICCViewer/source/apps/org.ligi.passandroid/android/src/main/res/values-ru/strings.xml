@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">PassAndroid</string>
+  <string name="logo">логотип</string>
+  <string name="menu_map">показать на карте</string>
+  <string name="menu_delete">удалить</string>
+  <string name="menu_share">поделиться</string>
+  <string name="barcode">штрих-код</string>
+  <string name="help_label">Справка</string>
+  <string name="help_content"><![CDATA[
+<h1>Что это?</h1>
+
+Это приложение для просмотра карточек passbook - в карточке passbook может быть <b>посадочный талон</b> на ваш авиарейс, <b>купон</b> на бесплатный кофе вместе с адресом кофейни, <b>билет</b> в кино, <b>дисконтная карта</b> одного из магазинов - возможна масса вариантов.
+По сути это замена куска бумаги или пластика которые вам приходится носить с собой - <b>давайте спасем несколько деревьев и уменьшим количество мусора!</b>
+
+<h1>Примеры карточек</h1>
+
+У вас нет карточек passbook но вы хотите посмотреть как они выглядят? <a href=\'http://espass.it/examples\'>Здесь есть тестовые карточки</a>, все для вас!
+
+<h1>Как это работает?</h1>
+
+Карточки passbook хранятся в файлах с расширением \"pkpass\", эти файлы и открывает данное приложение, например когда вы получаете карточки по почте или загружаете с сайтов. Самое важное в карточке это <b>штрих-код</b> (типы QR, AZTEC, PDF417) который в итоге считывают на кассе в магазине или на стойке регистрации рейсов, но в карточке может содержаться еще и детальное описание, время события, например вы сможете добавить напоминание о сеансе кино в ваш календарь, а так же и место события - попробуйте, это удобно!
+С помощью данной программы карточки можно просматривать и без подключения к Интернет, просто сохраните их в памяти телефона!
+
+<H1><Благодарности</H1>
+Большое спасибо <a href=\"http://ltorrecilla.com/\">Luis Torrecilla</a> за дизайн и <a href=\"https://github.com/cketti\">Cketti</a> и <a href="https://github.com/simontb">Simon Tenbeitel</a> за pull-requests!
+
+<H1>Обратная связь</H1>
+Оставляйте отзывы в <a href=\'https://plus.google.com/communities/116353894782342292067\'>сообществе Google+</a> или вы можете <a href=\'mailto:ligi@ligi.de\'>написать автору.</a> Если приложение вам понравилось, оставьте отзыв в <a href=\'https://play.google.com/store/apps/details?id=org.ligi.ticketviewer\'>Google Play</a>. Интересно было бы прочитать вашу историю, как вы использовали это приложение.
+
+<h1>История создания</h1>
+
+Я наткнулся на файлы Passbook когда получил билет на  конференцию \"29C3\" (ежегодные компьютерные конференции, эта проводилась в 2013г.), мне понравилась идея но не было приложения под Android которое меня бы устроило. Я увидел что технически реализация довольно проста:  обычный zip архив со скриптом json и картинками. Первая версия приложения была создана очень быстро и сработала, меня пустили на конференцию. В течении следующего года я почти не занимался этим приложением, поскольку лично у меня оно не находило постоянного применения. Однако много людей скачали приложение и используют его (около 100 тысяч человек), люди писали отзывы, присылали файлы passbook которые не открывались в приложении, пришлось поработать и добиться нормальной работы с файлами passbook, в которых json был просто \"сломан\", написан не по стандарту.
+Годом позже  - как раз перед конференцией \"30C3\" (2014г.) - я  опять начал активно работать над этим приложением по двум причинам:
+ - один мой друг увлекся темой устройств с BTLE (BlueTooth Low Energy), геометками и распознаванием контекста использования для устройств, возможно там найдется применение и для Passbook, но пока в этом направлении ничего не готово
+ - я получил письмо от одного дизайнера который нарисовал новый дизайн приложения.
+Все это привело к появлению следующей версии PassAndroid, полностью новой версии с новым функциональным интерфейсом.
+
+<H1>Дополнительно</H1>
+Это приложение удобно запускать с помощью <a href=\'https://play.google.com/store/apps/details?id=org.ligi.fast&referrer=utm_source%3Dticketview%26utm_medium%3Dapp\'>FAST App Search Tool</a>, еще одного бесплатного приложения с минимальным набором системных разрешений!
+
+<H1>Официальное заявление</H1>Это приложение никак не связано с корпорацией Apple. Passbook может быть зарегистрированной торговой маркой Apple, но был представлен как открытый стандарт, так что все должно быть OK.<br/>
+
+Текст лицензии приведен на языке оригинала, в том виде в котором его приводит автор:
+THIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+    ]]></string>
+  <string name="drawer_open">открыть</string>
+  <string name="drawer_close">закрыть</string>
+  <string name="pass_problem">Очень жаль, но открыть эту карточку не удалось. Вы можете отправить ее мне и я смогу разобраться в чем причина и доработать эту программу.</string>
+  <string name="problem">Проблема</string>
+  <string name="send">Отправить</string>
+  <string name="delete">Удалить!</string>
+  <string name="choose_location">Выберите адрес</string>
+  <string name="boarding_pass">Посадочные талоны</string>
+  <string name="category_event">События</string>
+  <string name="category_coupon">Купоны</string>
+  <string name="category_storecard">Скидки</string>
+  <string name="category_generic">Разное</string>
+  <string name="category_none">Без категории</string>
+  <string name="nav_more">О ПРОГРАММЕ</string>
+  <string name="nav_sort">СОРТИРОВКА</string>
+  <string name="nav_sort_category">По категориям</string>
+  <string name="nav_sort_date">По датам</string>
+  <string name="nav_categories">КАТЕГОРИИ</string>
+  <string name="nav_share">Поделиться</string>
+  <string name="pass_directions">Как проехать</string>
+  <string name="pass_to_calendar">В календарь</string>
+  <string name="invalid_passbook_title">Ошибка в файле карточки</string>
+  <string name="preparing_pass">Подготавливаю карточку</string>
+  <string name="please_wait">пожалуйста подождите немного</string>
+  <string name="passbook_is_shared_subject">Эту карточку вам прислали</string>
+  <string name="passbook_share_chooser_title">Как отправить карточку?</string>
+  <string name="dialog_delete_confirm_text">Вы правда хотите удалить эту карточку из списка?</string>
+  <string name="dialog_delete_title">Уверены?</string>
+  <string name="dialog_delete_confirm_delete_source_checkbox">удалить так же файл карточки?</string>
+  <string name="more">ПОДРОБНЕЕ</string>
+  <string name="less">СКРЫТЬ ПОДРОБНОСТИ</string>
+  <string name="scanning_for_passes">Ищу Карточки</string>
+  <string name="fab_choice_scan_pkpass_files">Искать карточки на этом устройстве</string>
+  <string name="fab_choice_add_demo_pass">Загрузить примеры карточек</string>
+  <string name="fab_choice_create_pass">Создать карточку</string>
+  <string name="empty_text_view"><big><b>Пока карточек нет</b></big>
+\n\n\n Можно поискать карточки в телефоне
+\n\n или создать карточку самостоятельно
+\n\n или скачать пример
+\n\n просто нажмите на \"+\" ниже</string>
+  <string name="downloading_new_pass_version">скачать обновленную карточку</string>
+  <string name="unzip_pass_dialog_title">Открываю карточку</string>
+  <string name="unzip_pass_dialog_message">Пожалуйста подождите ...</string>
+  <string name="action_update">обновить</string>
+  <string name="no_calendar_app_found">Не найдено приложение-календарь</string>
+  <string name="pass_updated">Карточка обновлена</string>
+  <string name="expiration_date_to_calendar_warning_message">Сейчас вы добавите дату окончания действия карточки в календарь, если эта дата не верна, но в карточке есть правильная дата, пожалуйста отправьте карточку мне, я исправлю PassAndroid.</string>
+  <string name="expiration_date_to_calendar_warning_title">Добавить дату окончания действия</string>
+  <string name="topic_trash">корзина</string>
+  <string name="topic_new">новые</string>
+  <string name="topic_archive">архив</string>
+  <string name="move_to_new_topic">Переместить в новую Категорию</string>
+  <string name="categories_nav">Категорий: %d</string>
+  <string name="passes_nav">Карточек: %d</string>
+  <string name="found_pass">найдено: %s</string>
+  <string name="found__pass">Еще %d</string>
+  <string name="scan_finished_dialog_title">Поиск завершен.</string>
+  <string name="scan_finished_dialog_text">найдено %d карточек</string>
+  <string name="scan_progressdialog_title">Поиск ...</string>
+  <string name="scan_progressdialog_message">Пожалуйста подождите.</string>
+  <string name="scan_dialog_send_background_button">в фоне</string>
+  <string name="emtytrash_label">очистить корзину</string>
+  <string name="barcode_edit_hint_alternative_message">альтернативное Сообщение</string>
+  <string name="barcode_edit_random">случайный</string>
+  <string name="barcode_edit_scan">скан</string>
+  <string name="barcode_edit_message">Сообщение</string>
+  <string name="barcode_edit_aztec">AZTEC</string>
+  <string name="barcode_edit_pdf417">PDF417</string>
+  <string name="barcode_edit_qr">QR</string>
+  <string name="barcode_edit_button_add_barcode">Добавить Штрих-код</string>
+  <string name="categories_voucher">ваучер</string>
+  <string name="edit_time">изменить время</string>
+  <string name="edit_location">изменить место</string>
+  <string name="add_front_field">Добавить первое поле</string>
+  <string name="add_back_fields">Добавить второе поле</string>
+  <string name="change_color_dialog_title">Выбрать цвет</string>
+  <string name="select_category_dialog_title">Выбрать категорию</string>
+  <string name="barcode_edit_code128">code 128</string>
+  <string name="barcode_edit_code39">code 39</string>
+  <string name="add_footer_image">добавить нижнее изображение</string>
+  <string name="add_logo_image">добавить логотип</string>
+  <string name="add_header_image">добавить заглавное изображение</string>
+  <string name="add_barcode">добавить Штрих-код</string>
+  <string name="edit_barcode_dialog_title">Редактировать Штрих-код</string>
+  <string name="empty_trash_dialog_message">Действительно очистить корзину? Восстановить уже будет нельзя</string>
+  <string name="empty_trash_dialog_title">предупреждение</string>
+  <string name="new_topic_input_hint">Заголовок для новой темы</string>
+  <string name="new_topic_suggestions">Предложения:</string>
+  <string name="cannot_be_empty">не может быть пустым</string>
+  <string name="please_use_the_swipe_feature">Используйте пожалуйста Свайп</string>
+  <string name="type">Тип</string>
+  <string name="undo">отменить</string>
+  <string name="sort_order_date_asc">Дата по возрастанию</string>
+  <string name="sort_order_date_desc">Дата по убыванию</string>
+  <string name="sort_order_date_type">Тип</string>
+  <string name="sort_order_date_temporaldistance">Время до события</string>
+  <string name="night_mode_night">Ночь</string>
+  <string name="night_mode_day">День</string>
+  <string name="night_mode_auto">Автоматически</string>
+  <string name="preference_autolight_title">Автоматическая яркость</string>
+  <string name="preference_autolight_summary">Увеличивать яркость при показе штрих-кода?</string>
+  <string name="preference_condensed_title">Сжатый вид</string>
+  <string name="preference_condensed_summary">Показывать больше деталей и меньше лишнего?</string>
+  <string name="preference_sort_title">Порядок сортировки</string>
+  <string name="preference_sort_summary">Как сортировать карточки?</string>
+  <string name="preference_daynight_title">Дневная/ночная тема</string>
+  <string name="preference_daynight_summary">Показывать темный или светлый фон?</string>
+  <string name="image_import">Импорт изображения</string>
+  <string name="pdf_import">Импорт PDF</string>
+  <string name="field_source">источник</string>
+  <string name="field_note">заметка</string>
+  <string name="field_advice_label">совет</string>
+  <string name="field_source_image">Изображение</string>
+  <string name="field_note_image">Это импортированное изображение, не настоящий билет</string>
+  <string name="field_source_pdf">PDF</string>
+  <string name="field_note_pdf">Это импортированный PDF, не настоящий билет</string>
+  <string name="nav_settings">Настройки</string>
+  <string name="nav_github">Github</string>
+  <string name="nav_betatest_opt_in_out">Бета тестирование</string>
+  <string name="nav_community_on_google">Сообщество Google+</string>
+  <string name="nav_improve_translation">Улучшить перевод</string>
+  <string name="launcher_shortcut">Ярлык для лаунчера</string>
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Padland</string>
+
+    <string name="title_activity_intro">Introduction</string>
+    <string name="launch_intro">Launch introduction screens</string>
+    <string name="intro_first_title">Welcome to Padland!</string>
+    <string name="intro_first_desc">Padland allows you to view, edit, organize and share collaborative documents.\n Press next to see how it works!</string>
+    <string name="intro_second_title">Create new documents</string>
+    <string name="intro_second_desc">Create documents in your favorite server. You can then organize them in groups and tell your friends to join them!</string>
+    <string name="intro_third_title">Edit existing documents</string>
+    <string name="intro_third_desc">Share a document url to Padland to open it for edition.</string>
+    <string name="intro_fourth_title">Custom server?</string>
+    <string name="intro_fourth_desc">No problem! You can add your favorite servers. Check the settings for this and many other options!</string>
+    <string name="intro_fifth_title">Ready to go!</string>
+    <string name="intro_fifth_desc">Request new features or report bugs in the github repository.\n
+        <a href='https://github.com/mikifus/padland'>https://github.com/mikifus/padland</a>
+        \n\nPress done to start!</string>
+
+    <string name="pref_header_general">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="go_pad">Create or go to</string>
+    <string name="title_activity_pad_view">Padland Viewer</string>
+    <string name="write_pad_name">Pad name (URL)</string>
+    <string name="action_newpad">Add document</string>
+    <string name="action_go_to_list">Back to pad list</string>
+    <string name="title_activity_new_pad">Create pad</string>
+    <string name="new_pad_explanation">Introduce the pad name. If it does not exist it will be created, otherwise it will take you to the pad.</string>
+    <string name="save_pad">Save pad</string>
+    <string name="download_pad">Save pad</string>
+    <string name="title_activity_about">About Padland</string>
+    <string name="about">About</string>
+    <string name="about_text">
+        <p>Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.</p>
+    </string>
+    <string name="settings_save_new_pads_title">Auto-save new documents</string>
+    <string name="settings_save_new_pads_desc">Automatically add your newly visited documents to your list</string>
+    <string name="group">Add to group</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="no_pads">There are no saved documents.</string>
+    <string name="sure_to_delete_pad">Are you sure you want to delete the selected documents?</string>
+    <string name="sure_to_delete_group">Do you want to delete the selected group?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="share_document">Share document</string>
+    <string name="share_auto_text">Document shared with Padland app: </string>
+
+    <string name="user_preferences">User preferences</string>
+    <string name="settings_default_username">Default username</string>
+    <string name="settings_default_username_explanation">Padland will try to set your default username in all documents you open.</string>
+    <string name="settings_default_color">Default color</string>
+    <string name="settings_default_color_explanation">Padland will try to set your default color in all documents you open.</string>
+    <string name="settings_default_color_dialogtitle">Choose color</string>
+    <string name="settings_default_color_dialogdesc">Format example (hex): #FF0000</string>
+    <string name="activity_padlist_implicitintent_text_copied">The text have been copied into the clipboard. Paste your clipboard data to use it.</string>
+    <string name="network_is_unreachable">Network is unreachable.</string>
+
+    <string name="title_activity_padlist">Padland documents</string>
+    <string name="choose_a_server">Choose a server (optional):</string>
+    <string name="default_pad_server">Default pad server</string>
+    <string name="choose_default_pad_server">Choose a default pad server when opening a new one.</string>
+    <string name="about_support_text">
+        <p>This app is under development. To provide feedback and report bugs please open a new issue on GitHub.</p>\n
+        \n
+        <p>If you\'d like to contribute here is the repository:\n
+            <a href='https://github.com/mikifus/padland'>https://github.com/mikifus/padland</a>
+        </p>\n\n
+        <p>German translation by rugk:\n
+            <a href='https://github.com/rugk'>https://github.com/rugk</a>
+        </p>\n\n
+        <p>Japanese translation by naofum:\n
+            <a href='https://github.com/naofum'>https://github.com/naofum</a>
+        </p>\n\n
+        <p>Malayalam translation by navi:\n
+            <a href='https://github.com/naviknair'>https://github.com/naviknair</a>
+        </p>\n\n
+    </string>
+    <string name="padinfo_view_pad_button">View pad</string>
+    <string name="title_activity_pad_info">Document info</string>
+    <string name="title_activity_pad_land_data">PadLandDataActivity</string>
+
+    <string name="padinfo_pad_info">Document information</string>
+    <string name="padinfo_pad_url">Document URL</string>
+    <string name="padinfo_createdate">Added to list</string>
+    <string name="padinfo_lastuseddate">Last viewed</string>
+
+    <string name="newpad_noname_warning">You must specify a name for the document.</string>
+    <string name="newpad_url_name_success">Detected url for known server.</string>
+    <string name="newpad_url_name_warning">Warning: Pad name is a URL but no compatible server has been found.</string>
+
+    <string name="padlist_empty_createnew">Create a new document</string>
+    <string name="padlist_document_deleted">The selected documents have been deleted</string>
+    <string name="padlist_group_deleted">Group deleted</string>
+    <string name="padlist_dialog_new_padgroup_title">New group</string>
+    <string name="padlist_dialog_new_padgroup_label">Insert the name of the new group</string>
+    <string name="padlist_dialog_new_padgroup_invalid">Invalid group name.</string>
+    <string name="padlist_group_unclassified_name">Unclassified</string>
+    <string name="padlist_group_select_dialog">Select group</string>
+
+    <string name="padview_toast_invalid_url" >The URL seems invalid.</string>
+    <string name="padview_toast_blacklist_url" >The host of your URL is not in the whitelist. Add a new server in Padland\'s settings or choose another app.</string>
+    <string name="padview_dialog_basicatuh_title" >Authentication required</string>
+    <string name="padview_dialog_basicatuh_username" >User name</string>
+    <string name="padview_dialog_basicatuh_password" >Password</string>
+    <string name="basic_auth_error" >Authentication failed</string>
+    <string name="basic_auth_warning" >The credentials will be sent without SSL encryption. This is highly discouraged. Try to use HTTPS protocol when available.</string>
+    <string name="ssl_error" >SSL Error</string>
+    <string name="error_ssl_expired">SSL certificate expired</string>
+    <string name="error_ssl_id_mismatch">SSL certificate ID mismatch</string>
+    <string name="error_ssl_not_yet_valid">SSL certificate is not valid yet</string>
+    <string name="error_ssl_untrusted">SSL certificate is untrusted</string>
+    <string name="error_ssl_date_invalid">SSL certificate date is invalid</string>
+    <string name="ssl_learn_more">Learn more</string>
+    <string name="ssl_learn_more_link">https://support.google.com/nexus/answer/2844832</string>
+
+    <string name="unexpected_error">An unexpected error happened.</string>
+    <string name="settings_miscellaneous">Miscellaneous</string>
+    <string name="padinfo_times_accessed">Times accessed</string>
+    <string name="pref_default_display_name">Anonymous</string>
+    <string name="settings_default_username_dialog_title">Set username</string>
+    <string name="serverlist_dialog_new_server_advanced">Advanced Options</string>
+
+    <string name="title_activity_server_list">Server list</string>
+    <string name="pref_server_list_summary">Add your custom etherpad servers</string>
+    <string name="no_custom_servers">No servers added.</string>
+
+    <string name="serverlist_dialog_new_server_title">New server</string>
+    <string name="serverlist_dialog_edit_server_title">Edit server</string>
+
+    <string name="serverlist_dialog_new_server_name_title">Server name</string>
+    <string name="serverlist_dialog_new_server_name_label">The name you want to assign to the server (optional)</string>
+    <string name="serverlist_dialog_new_server_name_invalid">Invalid server name.</string>
+
+    <string name="serverlist_dialog_new_server_url_title">Server url</string>
+    <string name="serverlist_dialog_new_server_url_label">The url where the server is accessible. Add https:// if available.</string>
+    <string name="serverlist_dialog_new_server_url_invalid">Invalid server url</string>
+
+    <string name="serverlist_dialog_new_server_lite_title">Runs Etherpad Lite</string>
+    <string name="serverlist_dialog_new_server_lite_label">I know that this server uses Etherpad Lite.</string>
+
+    <string name="serverlist_dialog_new_server_padprefix_title">Url pad prefix</string>
+    <string name="serverlist_dialog_new_server_padprefix_label">New servers (Etherpad Lite) have an url segment between the server domain and the pad name. By default it is \"/p/\". Change it here if it is different.</string>
+    <string name="serverlist_dialog_new_server_padprefix_invalid">Invalid pad prefix.</string>
+
+    <string name="serverlist_dialog_new_server_jquery_title">Embedding options</string>
+    <string name="serverlist_dialog_new_server_jquery_label">Server is supported by client-side \"etherpad-lite-jquery-plugin\".</string>
+
+    <string name="serverlist_dialog_delete_sure_to_delete">Are you sure you want to delete the selected servers?</string>
+    <string name="serverlist_dialog_delete_server_deleted">The selected servers have been removed</string>
+
+    <string name="new_pad_local_name">Optionally set a pad Alias</string>
+    <string name="write_pad_local_name">Pad Alias (optional)</string>
+    <string name="new_pad_name_invalid">The pad name contains invalid characters.</string>
+    <string name="new_pad_wrong_server">The server is not allowed. The operation cannot continue. Check your server settings and try again.</string>
+
+    <!-- Titanpad notice -->
+    <string name="titanpad_deprecated_title">Warning: Titanpad.com is deprecated</string>
+    <string name="titanpad_deprecated_text">On 1st May 2017 all documents will become read-only. On 31st Dec 2017 Titanpad.com will shut down. Make sure you backup your documents and avoid creating new ones.</string>
+    <string name="edit_pad_local_name">Pad Alias</string>
+    <string name="edit_pad_name">Pad Name (URL)</string>
+    <string name="padlist_dialog_edit_pad_title">Edit Pad</string>
+    <string name="edit_pad_group">Select group</string>
+    <string name="edit">Edit</string>
+    <string name="copy_copied">Copied to clipboard</string>
+
+</resources>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2012 Dirk Vranckaert
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project name="WorkTime for Android" default="help" xmlns:zaa="antlib:com.zutubi.android.ant">
+
+    <!--
+        Possible builds
+        ###############
+        1) To only build the application use "ant clean build"
+        2) To build and test the application use "ant run-tests" on the android-app-test module
+        3) To release use:
+           a) nightly release: "ant nightly-release"
+           b) production release: "ant prod-release"
+
+        Android Lint Support
+        ####################
+        To run lint (http://tools.android.com/tips/lint) use "ant clean build lint" or put lint behind the
+        nightly/production release command (eg: ant nightly-release lint). Lint cannot be ran on the android-app-test
+        module!
+
+        Configuration
+        #############
+        Make sure that you have a local.properties in which the following values are defined:
+        1) sdk.dir => References to the root of your Android SDK directory (required for all builds)
+        2) key.store => The location where your Android Market keystore file is available (only required for release)
+        3) key.alias => The Android Market keystore alias (only required for release)
+        4) key.store.password => The password for the Android Market keystore (only required for release)
+        5) key.alias.password => The password for the Android Market keystore alias (only required for release)
+        6) svn.repository.username => Your username on the SVN repository where the changes should be committed (only
+           required for nightly or prod release)
+        7) svn.repository.password => Your password on the SVN repository where the changes should be committed (only
+           required for nightly or prod release)
+    -->
+
+    <!-- Zutubi Android Ant library for automated versioning -->
+    <taskdef uri="antlib:com.zutubi.android.ant"
+             resource="com/zutubi/android/ant/antlib.xml"
+             classpath="ant-libs/zutubi-android-ant-0.1.2.jar"/>
+
+    <target name="check-properties">
+        <fail message="Don't try to release when no keystore is defined!" unless="key.store"/>
+        <fail message="Don't try to release when no key alias is defined!" unless="key.alias"/>
+        <fail message="Don't try to release when no keystore password is defined!" unless="key.store.password"/>
+        <fail message="Don't try to release when no alias password is defined!" unless="key.alias.password"/>
+    </target>
+
+    <target name="increment-version">
+        <zaa:bumpversion bumpname="false"/>
+    </target>
+
+    <!-- Change the name of the generated release APK-file to a name keeping in mind nightly naming conventions-->
+    <target name="nightly-release" depends="clean, check-properties, increment-version, release">
+        <xmlproperty file="AndroidManifest.xml" prefix="manifestFile" collapseAttributes="true"/>
+        <property name="versionCode" value="${manifestFile.manifest.android:versionCode}"/>
+        <property name="versionName" value="${manifestFile.manifest.android:versionName}"/>
+
+        <echo>Ready to create a new nightly build release with versionCode and versionName set!</echo>
+        <echo>versionCode: ${versionCode}</echo>
+        <echo>versionName: ${versionName}</echo>
+
+        <echo>Renaming nightly build APK file</echo>
+        <mkdir dir="./bin/release"/>
+        <copy file="./bin/${ant.project.name}-release.apk" tofile="./bin/release/${app.name}-${versionName} - Build${versionCode}.apk"/>
+
+        <echo>Ready to commit all changes made to the AndroidManifest.xml</echo>
+        <antcall target="svn-commit">
+            <param name="file" value="AndroidManifest.xml"/>
+            <param name="message" value="Auto commit for AndroidManifest.xml while releasing a new Nightly Build"/>
+        </antcall>
+
+        <antcall target="svn-update"/>
+    </target>
+
+    <!-- Change the name of the generated release APK-file to a name keeping in mind production naming conventions-->
+    <target name="prod-release" depends="clean, check-properties">
+        <echo>Creating a new production release...</echo>
+
+        <!-- Remove the ' - UNSTABLE' tag from the versionName and increment the versionCode with one. Then create a new
+         APK file and commit the changes made to the AndroidManifest.xml. Finally a new branch is created. -->
+        <!-- Get the current versionCode and versionName -->
+        <xmlproperty file="AndroidManifest.xml" prefix="oldManifestFile" collapseAttributes="true"/>
+        <property name="oldVersionCode" value="${oldManifestFile.manifest.android:versionCode}"/>
+        <property name="oldVersionName" value="${oldManifestFile.manifest.android:versionName}"/>
+
+        <antcall target="increment-version"/>
+
+        <!-- Remove the ' - UNSTABLE' tag from the versionName -->
+        <echo>Updating the versionName in AndroidManifest.xml for production release</echo>
+        <replace file="AndroidManifest.xml" token=" - UNSTABLE" value=""/>
+
+        <!-- Get the versionCode and versionName for which a release will be done -->
+        <xmlproperty file="AndroidManifest.xml" prefix="manifestFile" collapseAttributes="true"/>
+        <property name="prodVersionCode" value="${manifestFile.manifest.android:versionCode}"/>
+        <property name="prodVersionName" value="${manifestFile.manifest.android:versionName}"/>
+
+        <echo>Ready to create a new production release with versionCode and versionName set to</echo>
+        <echo>versionCode: ${prodVersionCode}</echo>
+        <echo>versionName: ${prodVersionName}</echo>
+
+        <!-- Perform the release -->
+        <echo>Executing the 'release' task</echo>
+        <antcall target="release"/>
+
+        <!-- Rename the APK build by the release target to a file name following our release naming conventions -->
+        <echo>Renaming production APK file</echo>
+        <mkdir dir="./bin/release"/>
+        <copy file="./bin/${ant.project.name}-release.apk" tofile="./bin/release/${app.name}-${prodVersionName}.apk"/>
+
+        <!-- Commit the changes made -->
+        <echo>Committing production changes</echo>
+        <antcall target="svn-commit">
+            <param name="file" value="AndroidManifest.xml"/>
+            <param name="message" value="Auto commit for AndroidManifest.xml while releasing a new Production build"/>
+        </antcall>
+        <!-- Create a branch for the trunk directory -->
+        <echo>Creating branches</echo>
+        <antcall target="svn-update"/>
+        <antcall target="svn-branch-trunk">
+            <param name="trunk.url" value="https://worktime.googlecode.com/svn/trunk/android-app"/>
+            <param name="branch.dir" value="https://worktime.googlecode.com/svn/branches/"/>
+            <param name="branch.name" value="android-app-${prodVersionName}"/>
+            <param name="message" value="Creating branch for production release ${prodVersionCode}/${prodVersionName}"/>
+        </antcall>
+
+        <!-- Revert the changes in order to have the original versionCode (to prepare for the next dev version)
+        Then increment (with bumping = increment versionName) and add the ' - UNSTABLE' tag again. Then commit all
+        changes and update!-->
+        <echo>Preparing the AndroidManifest.xml file for development of the next version</echo>
+
+        <!-- Log the versionCode and versionName before preparing for next version -->
+        <echo>Reverting previous changes made to the AndroidManifest.xml</echo>
+        <replace file="AndroidManifest.xml" token="${prodVersionCode}" value="${oldVersionCode}"/>
+        <replace file="AndroidManifest.xml" token="${prodVersionName}" value="${oldVersionName}"/>
+        <xmlproperty file="AndroidManifest.xml" prefix="revertedManifestFile" collapseAttributes="true"/>
+        <echo>Old versionCode: ${revertedManifestFile.manifest.android:versionCode}</echo>
+        <echo>Old versionName: ${revertedManifestFile.manifest.android:versionName}</echo>
+
+        <!-- Remove the ' - UNSTABLE' tag from the versionName -->
+        <replace file="AndroidManifest.xml" token=" - UNSTABLE" value=""/>
+
+        <!-- Increment both the versionCode and the versionName -->
+        <zaa:bumpversion bumpname="true"/>
+
+        <!-- Add the ' - UNSTABLE' tag to the incremented versionName -->
+        <xmlproperty file="AndroidManifest.xml" prefix="newManifestFile" collapseAttributes="true"/>
+        <property name="nextProdVersionName" value="${newManifestFile.manifest.android:versionName}"/>
+        <replace file="AndroidManifest.xml" token="${nextProdVersionName}" value="${nextProdVersionName} - UNSTABLE"/>
+
+        <!-- Log the versionCode and versionName for the next version -->
+        <xmlproperty file="AndroidManifest.xml" prefix="finalManifestFile" collapseAttributes="true"/>
+        <echo>New versionCode: ${finalManifestFile.manifest.android:versionCode}</echo>
+        <echo>New versionName: ${finalManifestFile.manifest.android:versionName}</echo>
+
+        <!-- Commit the AndroidManifest.xml file changes -->
+        <echo>Ready to commit all changes made to the AndroidManifest.xml</echo>
+        <antcall target="svn-update"/>
+        <antcall target="svn-commit">
+            <param name="file" value="AndroidManifest.xml"/>
+            <param name="message" value="Preparing trunk environment for development of new version ${finalManifestFile.manifest.android:versionName}"/>
+        </antcall>
+
+        <!-- Update the entire directory -->
+        <antcall target="svn-update"/>
+    </target>
+
+    <!-- SVN ANT library -->
+    <path id="svnant.classpath">
+        <fileset dir="ant-libs/svn/">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+    <!-- SVN ANT taskdef -->
+    <typedef resource="org/tigris/subversion/svnant/svnantlib.xml" classpathref="svnant.classpath" />
+    <!-- SVN ANT settings -->
+    <svnSetting javahl="false" svnkit="true" username="${svn.repository.username}" password="${svn.repository.password}" id="svn.settings"/>
+
+    <target name="svn-check-dependencies">
+        <fail message="The property svn.repository.username is missing" unless="svn.repository.username"/>
+        <fail message="The property svn.repository.password is missing" unless="svn.repository.password"/>
+
+        <available resource="org/tigris/subversion/svnant/svnantlib.xml"
+                   classpathref="svnant.classpath"
+                   property="available.svnant"/>
+        <echo message="SVN-ANT is available = ${available.svnant}"/>
+        <fail message="SVN-ANT is not available!" unless="${available.svnant}"/>
+    </target>
+
+    <target name="svn-commit" depends="svn-check-dependencies">
+        <echo>Committing file ${file}</echo>
+        <svn refid="svn.settings">
+            <commit file="${file}" message="${message}"/>
+            <update dir="."/>
+        </svn>
+    </target>
+
+    <target name="svn-update" depends="svn-check-dependencies">
+        <echo>Updating working copy</echo>
+        <svn refid="svn.settings">
+            <update dir="."/>
+        </svn>
+    </target>
+
+    <target name="svn-revert" depends="svn-check-dependencies">
+        <echo>Reverting file ${file}</echo>
+        <svn refid="svn.settings">
+            <revert file="${file}"/>
+        </svn>
+    </target>
+
+    <target name="svn-branch-trunk" depends="svn-check-dependencies">
+        <echo>Creating branch for trunk (${trunk.url}) to url ${branch.dir} with name ${branch.name}</echo>
+        <svn refid="svn.settings">
+            <copy srcUrl="${trunk.url}" desturl="${branch.dir}/${branch.name}" message="${message}" makeparents="true"/>
+        </svn>
+    </target>
+
+    <!-- Run Lint -->
+    <target name="lint" description="Android Lint for code control">
+        <echo>Running Lint...</echo>
+        <condition property="ext" value=".bat" else="">
+            <os family="windows"/>
+        </condition>
+        <property name="runLint" value="${sdk.dir}\tools\lint${ext}"/>
+        <echo>Lint executable: ${runLint}</echo>
+        <exec executable="${runLint}" failonerror="false">
+            <!-- Specify the output -->
+            <arg value="--xml"/>
+            <arg value="lint-report.xml" />
+            <!-- Exclude checks -->
+            <arg value="--disable"/>
+            <arg value="NewApi,UnknownId"/>
+            <!-- The directory to run lint on -->
+            <arg value="."/>
+        </exec>
+    </target>
+
+    <!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+    <property file="local.properties" />
+
+    <!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
+
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
+
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
+
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
+
+         -->
+    <property file="ant.properties" />
+
+    <!-- The project.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+
+         This contains project specific properties such as project target, and library
+         dependencies. Lower level build properties are stored in ant.properties
+         (or in .classpath for Eclipse projects).
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+    <loadproperties srcFile="project.properties" />
+
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var"
+            unless="sdk.dir"
+    />
+
+<!-- extension targets. Uncomment the ones where you want to do custom work
+     in between standard targets -->
+<!--
+    <target name="-pre-build">
+    </target>
+    <target name="-pre-compile">
+    </target>
+
+    /* This is typically used for code obfuscation.
+       Compiled code location: ${out.classes.absolute.dir}
+       If this is not done in place, override ${out.dex.input.absolute.dir} */
+    <target name="-post-compile">
+    </target>
+-->
+
+    <!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+
+    <!-- version-tag: 1 -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+    <!-- Copy EnvironmentConstants.java to our source tree, replacing
+    custom tokens with values in build.properties. The configuration
+    depends on "clean" because otherwise the build system will not detect
+    changes in the configuration. -->
+    <target name="config">
+        <fail message="Cannot create/generate the configuration classes as the config.endpoint_url property is not set." unless="config.endpoint_url"/>
+        <fail message="Cannot create/generate the configuration classes as the config.service_key property is not set." unless="config.service_key"/>
+
+        <property name="config-target-path" value="${source.dir}/eu/vranckaert/worktime/constants"/>
+
+        <!-- Copy the configuration file, replacing tokens in the file. -->
+        <copy file="config/EnvironmentConstants.java" todir="${config-target-path}"
+              overwrite="true" encoding="utf-8">
+            <filterset>
+                <filter token="CONFIG.WORKTIME_ENDPOINT" value="${config.endpoint_url}"/>
+                <filter token="CONFIG.WORKTIME_ANDROID_SERVICE_KEY" value="${config.service_key}"/>
+            </filterset>
+        </copy>
+    </target>
+
+</project>

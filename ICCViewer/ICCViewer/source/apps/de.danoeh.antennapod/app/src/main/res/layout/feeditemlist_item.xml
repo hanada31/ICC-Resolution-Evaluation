@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:background="@android:color/darker_gray">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/listitem_threeline_horizontalpadding"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/listitem_threeline_verticalpadding"
+        android:layout_marginBottom="@dimen/listitem_threeline_verticalpadding"
+        tools:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:id="@+id/statusUnread"
+            style="@style/AntennaPod.TextView.UnreadIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            tools:text="NEW"
+            tools:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtvItemname"
+            style="@style/AntennaPod.TextView.ListItemPrimaryTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@id/statusUnread"
+            tools:text="Episode title"
+            tools:background="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/txtvLenSize"
+            style="@style/AntennaPod.TextView.ListItemSecondaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtvItemname"
+            tools:text="00:42:23"
+            tools:background="@android:color/holo_green_dark" />
+
+        <ImageView
+            android:id="@+id/imgvInPlaylist"
+            android:layout_width="@dimen/enc_icons_size"
+            android:layout_height="@dimen/enc_icons_size"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txtvItemname"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/in_queue_label"
+            android:src="?attr/stat_playlist"
+            android:visibility="visible"
+            tools:src="@drawable/ic_list_white_24dp"
+            tools:background="@android:color/holo_red_light" />
+
+        <ImageView
+            android:id="@+id/imgvType"
+            android:layout_width="@dimen/enc_icons_size"
+            android:layout_height="@dimen/enc_icons_size"
+            android:layout_below="@id/txtvItemname"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/imgvInPlaylist"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_hearing_white_18dp"
+            tools:background="@android:color/holo_red_light" />
+
+        <TextView
+            android:id="@+id/txtvPublished"
+            style="@style/AntennaPod.TextView.ListItemSecondaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvItemname"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/imgvType"
+            tools:text="Jan 23"
+            tools:background="@android:color/holo_green_dark" />
+
+        <ProgressBar
+            android:id="@+id/pbar_episode_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/txtvPublished"
+            android:layout_toRightOf="@id/txtvLenSize"
+            android:layout_alignTop="@id/txtvPublished"
+            android:layout_alignBottom="@id/txtvPublished"
+            tools:background="@android:color/holo_blue_light"
+            android:max="100"
+            android:progress="42"
+            android:indeterminate="false" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/vertical_list_divider"/>
+
+    <include layout="@layout/secondary_action"/>
+
+</LinearLayout>

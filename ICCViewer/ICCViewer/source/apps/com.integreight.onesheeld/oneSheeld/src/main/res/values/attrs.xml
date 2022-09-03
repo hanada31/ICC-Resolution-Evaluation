@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Key">
+        <attr name="column" format="integer" />
+        <attr name="row" format="integer" />
+        <attr name="normalbackground" format="reference" />
+        <attr name="pressedbackground" format="reference" />
+    </declare-styleable>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="hasShadow" format="boolean" />
+        <attr name="progressColor" format="string" />
+        <attr name="backgroundColor" format="string" />
+        <attr name="title1" format="string" />
+        <attr name="titleColor" format="string" />
+        <attr name="subtitle1" format="string" />
+        <attr name="subtitleColor" format="string" />
+        <attr name="strokeWidthC" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ComboSeekBar">
+        <attr name="multiline" format="boolean" />
+        <attr name="myColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

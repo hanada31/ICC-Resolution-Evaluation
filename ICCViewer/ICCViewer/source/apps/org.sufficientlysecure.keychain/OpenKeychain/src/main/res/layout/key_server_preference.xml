@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar_standalone" />
+
+    <TextView
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/label_keyservers_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginBottom="6sp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_keyserver_settings_hint"/>
+
+    <View
+        style="@style/Divider"/>
+
+    <FrameLayout
+        android:id="@+id/keyserver_settings_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

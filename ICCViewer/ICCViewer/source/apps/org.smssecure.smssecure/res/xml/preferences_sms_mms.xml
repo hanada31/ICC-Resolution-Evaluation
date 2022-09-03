@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:defaultValue="true"
+                        android:key="pref_all_sms"
+                        android:summary="@string/preferences__use_silence_for_viewing_and_storing_all_incoming_text_messages"
+                        android:title="@string/preferences__pref_all_sms_title" />
+
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:defaultValue="true"
+                        android:key="pref_all_mms"
+                        android:summary="@string/preferences__use_silence_for_viewing_and_storing_all_incoming_multimedia_messages"
+                        android:title="@string/preferences__pref_all_mms_title" />
+
+    <Preference android:key="pref_set_default"
+                android:title="@string/preferences__make_default_sms_app"
+                android:summary="@string/preferences__make_silence_the_default_sms_mms_app" />
+
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:key="pref_show_sent_time"
+                        android:title="@string/preferences__show_sent_time"
+                        android:summary="@string/preferences__show_sent_time_instead_of_received_time_in_conversations"
+                        android:defaultValue="false" />
+
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:defaultValue="false"
+                        android:key="pref_delivery_report_sms"
+                        android:summary="@string/preferences__request_a_delivery_report_for_each_sms_message_you_send"
+                        android:title="@string/preferences__sms_delivery_reports" />
+
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:key="pref_delivery_report_toast_sms"
+                        android:title="@string/preferences__sms_delivery_reports_notification"
+                        android:summary="@string/preferences__display_a_notification_when_a_delivery_report_is_received"
+                        android:dependency="pref_delivery_report_sms"/>
+
+    <org.smssecure.smssecure.components.SwitchPreferenceCompat
+                        android:defaultValue="false"
+                        android:key="pref_wifi_sms"
+                        android:title="@string/preferences__support_wifi_calling"
+                        android:summary="@string/preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi"/>
+
+    <Preference android:key="pref_mms_preferences"
+                android:title="@string/preferences__advanced_mms_access_point_names"/>
+
+</PreferenceScreen>

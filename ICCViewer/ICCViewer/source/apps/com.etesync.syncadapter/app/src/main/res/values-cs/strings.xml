@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--common strings-->
+  <string name="help">Pomoc</string>
+  <string name="manage_accounts">Spravovat účty</string>
+  <string name="please_wait">Chvíli strpení ...</string>
+  <string name="send">Odeslat</string>
+  <!--startup dialogs-->
+  <string name="startup_battery_optimization">Optimalizace využití baterie</string>
+  <string name="startup_dont_show_again">Již nezobrazovat</string>
+  <!--AboutActivity-->
+  <string name="about_license_terms">Licenční podmínky</string>
+  <string name="about_license_info_no_warranty">Tento program je distribuován BEZ JAKÉKOLIV ZÁRUKY. Je to volně dostupný software a lze jej za určitých podmínek dále distribuovat.</string>
+  <!--global settings-->
+  <string name="logging_to_external_storage">Logování do externího úložiště: %s</string>
+  <string name="logging_to_external_storage_warning">Smazat logy jak nejdříve možno!</string>
+  <string name="logging_couldnt_create_file">Nelze vytvořit externí soubor logu: %s</string>
+  <string name="logging_no_external_storage">Externí úložiště nenalezeno</string>
+  <!--AccountsActivity-->
+  <string name="navigation_drawer_open">Otevřít panel navigace</string>
+  <string name="navigation_drawer_close">Zavřít panel navigace</string>
+  <string name="navigation_drawer_about">O aplikaci / Licence</string>
+  <string name="navigation_drawer_settings">Nastavení</string>
+  <string name="navigation_drawer_external_links">Externí odkazy</string>
+  <string name="navigation_drawer_website">Webová stránka</string>
+  <string name="navigation_drawer_faq">FAQ</string>
+  <!--AccountUpdateService-->
+  <!--AppSettingsActivity-->
+  <string name="app_settings">Nastavení</string>
+  <string name="app_settings_user_interface">Uživatelské prostředí</string>
+  <string name="app_settings_reset_hints">Resetovat nápovědu</string>
+  <string name="app_settings_reset_hints_summary">Znovu povolí vypnuté texty nápovědy</string>
+  <string name="app_settings_reset_hints_success">Budou zobrazovány všechny texty nápovědy</string>
+  <string name="app_settings_connection">Připojení</string>
+  <string name="app_settings_override_proxy">Přepsat proxy nastavení</string>
+  <string name="app_settings_override_proxy_on">Použít vlastní proxy nastavení</string>
+  <string name="app_settings_override_proxy_off">Použít výchozí systémová proxy nastavení</string>
+  <string name="app_settings_override_proxy_host">HTTP proxy hostname</string>
+  <string name="app_settings_override_proxy_port">HTTP proxy port</string>
+  <string name="app_settings_security">Zabezpečení</string>
+  <string name="app_settings_distrust_system_certs">Nedůvěřovat systémovým certifikátům</string>
+  <string name="app_settings_distrust_system_certs_on">Systémovým a uživatelem přidaným CA nebude důvěřováno</string>
+  <string name="app_settings_distrust_system_certs_off">Systémovým a uživatelem přidaným CA bude důvěřováno (doporučeno)</string>
+  <string name="app_settings_reset_certificates">Resetovat (ne)důvěryhodné certifikáty</string>
+  <string name="app_settings_reset_certificates_summary">Resetovat důvěryhodnost všech vlastních certifikátů</string>
+  <string name="app_settings_reset_certificates_success">Všechny vlastní certifikáty byly resetovány</string>
+  <string name="app_settings_debug">Ladění</string>
+  <string name="app_settings_log_to_external_storage">Logovat do externího souboru</string>
+  <string name="app_settings_log_to_external_storage_on">Logování do externího úložiště (pokud dostupné)</string>
+  <string name="app_settings_log_to_external_storage_off">Logování do externího souboru je vypnuto</string>
+  <string name="app_settings_show_debug_info">Zobrazit ladící informace</string>
+  <string name="app_settings_show_debug_info_details">Zobrazit/sdílet software a detaily konfigurace</string>
+  <!--AccountActivity-->
+  <string name="account_synchronize_now">Synchronizovat nyní</string>
+  <string name="account_synchronizing_now">Probíhá synchronizace</string>
+  <string name="account_settings">Nastavení účtu</string>
+  <string name="account_delete">Smazat účet</string>
+  <string name="account_delete_confirmation_title">Opravdu smazat účet?</string>
+  <string name="account_delete_confirmation_text">Všechny místní kopie adresáře, kalendářů a úkolů budou smazány.</string>
+  <!--PermissionsActivity-->
+  <string name="permissions_calendar">Oprávnění pro kalendáře</string>
+  <string name="permissions_calendar_request">Vyžádat oprávnění kalendáře</string>
+  <string name="permissions_contacts">Oprávnění pro kontakty</string>
+  <string name="permissions_contacts_request">Vyžádat oprávnění kontaktů</string>
+  <string name="permissions_opentasks">Oprávnění pro OpenTasks</string>
+  <string name="permissions_opentasks_request">Vyžádat oprávnění OpenTasks</string>
+  <!--AddAccountActivity-->
+  <string name="login_title">Přidat účet</string>
+  <string name="login_email_address">Emailová adresa</string>
+  <string name="login_email_address_error">Vyžadován platný email</string>
+  <string name="login_password">Heslo</string>
+  <string name="login_password_required">Vyžadováno heslo</string>
+  <string name="login_back">Zpět</string>
+  <string name="login_configuration_detection">Vyhledání konfigurace</string>
+  <string name="login_querying_server">Chvíli strpení, probíhá dotazování serveru...</string>
+  <string name="login_view_logs">Prohlížet logy</string>
+  <!--AccountSettingsActivity-->
+  <string name="settings_title">Nastavení: %s</string>
+  <string name="settings_authentication">Ověření</string>
+  <string name="settings_password">Heslo</string>
+  <string name="settings_enter_password">Vložit své heslo:</string>
+  <string name="settings_sync">Synchronizace</string>
+  <string name="settings_sync_interval_contacts">Interval synchronizace kontaktů</string>
+  <string name="settings_sync_summary_manually">Pouze manuálně</string>
+  <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%s a ihned při lokálních změnách</string>
+  <string name="settings_sync_summary_not_available">Nedostupný</string>
+  <string name="settings_sync_interval_calendars">Interval synchronizace kalendáře</string>
+  <string-array name="settings_sync_interval_seconds">
+    <item>-1</item>
+    <item>300</item>
+    <item>600</item>
+    <item>900</item>
+    <item>3600</item>
+    <item>7200</item>
+    <item>14400</item>
+    <item>86400</item>
+  </string-array>
+  <string-array name="settings_sync_interval_names">
+    <item>Pouze manuálně</item>
+    <item>Každých 5 minut</item>
+    <item>Každých 10 minut</item>
+    <item>Každých 15 minut</item>
+    <item>Každou hodinu</item>
+    <item>Každé 2 hodiny</item>
+    <item>Každé 4 hodiny</item>
+    <item>Jednou za den</item>
+  </string-array>
+  <string name="settings_sync_wifi_only">Synchronizovat pouze přes WiFi</string>
+  <string name="settings_sync_wifi_only_on">Synchronizace omezena na WiFi připojení</string>
+  <string name="settings_sync_wifi_only_off">Druh připojení není brán v potaz</string>
+  <string name="settings_sync_wifi_only_ssid">Omezení WiFi SSID</string>
+  <string name="settings_sync_wifi_only_ssid_on">Synchronizace pouze přes %s</string>
+  <string name="settings_sync_wifi_only_ssid_off">Použít všechna WiFi připojení</string>
+  <string name="settings_sync_wifi_only_ssid_message">Zadejte jméno WiFi sítě (SSID) pro omezení synchronizace na tutu síť, nebo ponechte prázdné pro použití všech WiFi připojení.</string>
+  <!--collection management-->
+  <string name="create_addressbook">Vytvořit adresář</string>
+  <string name="create_addressbook_display_name_hint">Můj adresář</string>
+  <string name="create_collection_creating">Vytváření sbírky</string>
+  <string name="create_collection_display_name">Zobrazit jméno (nadpis) této sbírky:</string>
+  <string name="create_collection_display_name_required">Nadpis je vyžadován</string>
+  <string name="create_collection_description">Popis (volitelný):</string>
+  <string name="create_collection_create">Vytvořit</string>
+  <string name="delete_collection">Smazat sbírku</string>
+  <string name="delete_collection_confirm_title">Jste si jisti?</string>
+  <string name="delete_collection_confirm_warning">Tato sbírka (%s) a všechna její data budou odstraněna ze serveru.</string>
+  <string name="delete_collection_deleting_collection">Mazání sbírky</string>
+  <!--ExceptionInfoFragment-->
+  <string name="exception">Došlo k chybě.</string>
+  <string name="exception_httpexception">Došlo k HTTP chybě.</string>
+  <string name="exception_ioexception">Došlo k I/O chybě.</string>
+  <string name="exception_show_details">Zobrazit detaily</string>
+  <!--sync errors and DebugInfoActivity-->
+  <string name="debug_info_title">Ladící informace</string>
+  <string name="sync_error_calendar">Synchronizace kalendáře selhala (%s)</string>
+  <string name="sync_error">Chyba při %s</string>
+  <string name="sync_error_http_dav">Chyba serveru při %s</string>
+  <string name="sync_error_local_storage">Chyba databáze při %s</string>
+  <!--cert4android-->
+</resources>

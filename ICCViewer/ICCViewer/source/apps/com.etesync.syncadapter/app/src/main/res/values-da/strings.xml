@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--common strings-->
+  <string name="help">Hjælp</string>
+  <string name="manage_accounts">Administrer konti</string>
+  <string name="please_wait">Vent venligst -</string>
+  <string name="send">Send</string>
+  <!--startup dialogs-->
+  <string name="startup_dont_show_again">Vis ikke igen</string>
+  <!--AboutActivity-->
+  <string name="about_license_terms">Licensforhold</string>
+  <string name="about_license_info_no_warranty">Dette program leveres ABSOLUT UDEN GARANTI. Det er fri software, og du er velkommen til at videredistribuere det under visse betingelse.</string>
+  <!--global settings-->
+  <string name="logging_to_external_storage">Logger til eksternt datalager: %s</string>
+  <string name="logging_to_external_storage_warning">Slet logfiler hurtigst muligt!</string>
+  <string name="logging_couldnt_create_file">Kunne ikke oprette ekstern logfil: %s</string>
+  <string name="logging_no_external_storage">Eksternt lager ikke funder</string>
+  <!--AccountsActivity-->
+  <string name="navigation_drawer_open">Åbn navigationsvindue</string>
+  <string name="navigation_drawer_close">Luk navigationsvindue</string>
+  <string name="navigation_drawer_about">Om / Licens</string>
+  <string name="navigation_drawer_settings">Indstillinger</string>
+  <string name="navigation_drawer_external_links">Eksterne links</string>
+  <string name="navigation_drawer_website">Hjemmeside</string>
+  <string name="navigation_drawer_faq">FAQ</string>
+  <!--AccountUpdateService-->
+  <!--AppSettingsActivity-->
+  <string name="app_settings">Indstillinger</string>
+  <string name="app_settings_user_interface">Brugerflade</string>
+  <string name="app_settings_reset_hints">Nulstil vejledende popups</string>
+  <string name="app_settings_reset_hints_summary">Genaktiverer hjælp, som er blevet lukket tidligere</string>
+  <string name="app_settings_reset_hints_success">Al vejledning vil blive vist igen</string>
+  <string name="app_settings_security">Sikkerhed</string>
+  <string name="app_settings_debug">Debugging</string>
+  <string name="app_settings_log_to_external_storage">Log til ekstern fil</string>
+  <string name="app_settings_log_to_external_storage_on">Logger til eksternt lager (hvis muligt)</string>
+  <string name="app_settings_log_to_external_storage_off">Ekstern logning deaktiveret</string>
+  <string name="app_settings_show_debug_info">Vis debug-info</string>
+  <string name="app_settings_show_debug_info_details">Vis/del software og opsætningsoplysninger</string>
+  <!--AccountActivity-->
+  <string name="account_synchronize_now">Synkroniser nu</string>
+  <string name="account_synchronizing_now">Synkroniserer nu</string>
+  <string name="account_settings">Opsætning af konti</string>
+  <string name="account_delete">Slet konto</string>
+  <string name="account_delete_confirmation_title">Ønsker du at slette konto?</string>
+  <string name="account_delete_confirmation_text">Alle lokale kopier af addessebøger, kalendere og opgavelister vil blive slettet.</string>
+  <!--PermissionsActivity-->
+  <string name="permissions_calendar">Kalenderadgange</string>
+  <string name="permissions_calendar_request">Anmod om kalenderadgang</string>
+  <string name="permissions_contacts">Kontakter: Adgangsrettigheder</string>
+  <string name="permissions_contacts_request">Anmod om adgang til kontakter</string>
+  <string name="permissions_opentasks">OpenTasks: Adgangsrettigheder</string>
+  <string name="permissions_opentasks_request">Anmod om adgang til OpenTasks</string>
+  <!--AddAccountActivity-->
+  <string name="login_title">Tilføj konto</string>
+  <string name="login_email_address">Emailadresse</string>
+  <string name="login_email_address_error">Gyldig emailadresse påkrævet</string>
+  <string name="login_password">Adgangskode</string>
+  <string name="login_password_required">Adgangskode påkrævet</string>
+  <string name="login_back">Tilbage</string>
+  <string name="login_configuration_detection">Check konfiguration</string>
+  <string name="login_querying_server">Vent, forespørger hos serveren...</string>
+  <string name="login_view_logs">Vis logs.</string>
+  <!--AccountSettingsActivity-->
+  <string name="settings_title">Indstillinger: %s</string>
+  <string name="settings_authentication">Adgangsgodkendelse</string>
+  <string name="settings_password">Adgangskode</string>
+  <string name="settings_enter_password">Indtast adgangskode:</string>
+  <string name="settings_sync">Synkronisering</string>
+  <string name="settings_sync_interval_contacts">Synkroniseringsinterval for kontakter</string>
+  <string name="settings_sync_summary_manually">Kun manuelt</string>
+  <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%s + øjeblikkeligt ved lokale ændringer</string>
+  <string name="settings_sync_summary_not_available">Ikke tilgængeligt</string>
+  <string name="settings_sync_interval_calendars">Synkroniseringsinterval for kalender</string>
+  <string-array name="settings_sync_interval_seconds">
+    <item>-1</item>
+    <item>300</item>
+    <item>600</item>
+    <item>900</item>
+    <item>3600</item>
+    <item>7200</item>
+    <item>14400</item>
+    <item>86400</item>
+  </string-array>
+  <string-array name="settings_sync_interval_names">
+    <item>Kun manuelt</item>
+    <item>Hver 5. minut</item>
+    <item>Hver 10. minut</item>
+    <item>Hver 15. minut</item>
+    <item>En gang i timen</item>
+    <item>En gang hver 2. time</item>
+    <item>En gang hver 4. time</item>
+    <item>En gang om dagen</item>
+  </string-array>
+  <string name="settings_sync_wifi_only">Synkroniser kun over WiFi</string>
+  <string name="settings_sync_wifi_only_on">Synkronisering er begrænset til WiFi-forbindelser</string>
+  <string name="settings_sync_wifi_only_off">Forbindelsestypen har ingen betydning</string>
+  <string name="settings_sync_wifi_only_ssid">Begræsning til WiFi-SSID</string>
+  <string name="settings_sync_wifi_only_ssid_on">Vil kun blive synkroniseret over %s</string>
+  <string name="settings_sync_wifi_only_ssid_off">Alle WiFi-forbindelse vil kunne bruges</string>
+  <string name="settings_sync_wifi_only_ssid_message">Indtast navnet på et WiFi-netværk (SSID) for at begrænse synkronisering til dette netværk, eller efterlad feltet blank for at acceptere alle WiFi-forbindelser.</string>
+  <!--collection management-->
+  <string name="create_addressbook">Opret adressebog</string>
+  <string name="create_addressbook_display_name_hint">Min adressebog</string>
+  <string name="create_collection_creating">Opretter sæt</string>
+  <string name="create_collection_display_name">Navn (titel) på dette sæt:</string>
+  <string name="create_collection_display_name_required">En titel er påkrævet</string>
+  <string name="create_collection_description">Beskrivelse (valgfri):</string>
+  <string name="create_collection_create">Opret</string>
+  <string name="delete_collection">Slet sæt</string>
+  <string name="delete_collection_confirm_title">Er du sikker?</string>
+  <string name="delete_collection_confirm_warning">DAV-sættet (%s) og dets data vil blive fjernet fra serveren.</string>
+  <string name="delete_collection_deleting_collection">Sletter CalDAV-sæt</string>
+  <!--ExceptionInfoFragment-->
+  <string name="exception">Der er opstået en fejl.</string>
+  <string name="exception_httpexception">Der er opstået en HTTP-fejl.</string>
+  <string name="exception_ioexception">Der er opstået en I/O-fejl.</string>
+  <string name="exception_show_details">Vis detaljer</string>
+  <!--sync errors and DebugInfoActivity-->
+  <string name="debug_info_title">Debug-info</string>
+  <string name="sync_error_calendar">Synkronisering af kalenderen lykkedes ikke (%s)</string>
+  <string name="sync_error">Fejl under %s</string>
+  <string name="sync_error_http_dav">Serverfejl under %s</string>
+  <string name="sync_error_local_storage">Databasefejl under %s</string>
+  <!--cert4android-->
+</resources>

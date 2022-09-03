@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">사일런스</string>
+  <string name="yes">예</string>
+  <string name="no">아니오</string>
+  <string name="delete">삭제</string>
+  <string name="please_wait">잠시 기다려주세요...</string>
+  <!--AbstractNotificationBuilder-->
+  <!--ApplicationPreferencesActivity-->
+  <string name="ApplicationPreferenceActivity_you_havent_set_a_passphrase_yet">아직 암호가 설정되지 않았습니다!</string>
+  <plurals name="ApplicationPreferencesActivity_messages_per_conversation">
+    <item quantity="other">하나의 대화당 %d개의 메세지</item>
+  </plurals>
+  <string name="ApplicationPreferencesActivity_delete_all_old_messages_now">오래된 메세지를 전부 지울까요?</string>
+  <plurals name="ApplicationPreferencesActivity_this_will_immediately_trim_all_conversations_to_the_d_most_recent_messages">
+    <item quantity="other">이것은 가장 최근 %d 메세지를 제외한 모든 대화를 즉시 삭제할 것입니다.</item>
+  </plurals>
+  <string name="ApplicationPreferencesActivity_delete">삭제</string>
+  <string name="ApplicationPreferencesActivity_disable_storage_encryption">저장소 암호화를 해제하시겠습니까?</string>
+  <string name="ApplicationPreferencesActivity_warning_this_will_disable_storage_encryption_for_all_messages">
+경고, 모든 메세지와 키의 저장소 암호화가 해제됩니다. 
+암호화된 세션은 계속 유효하지만, 
+기기에 물리적으로 접근 가능한 사람들은 이를 읽을 수 있게 됩니다.</string>
+  <string name="ApplicationPreferencesActivity_disable">해제</string>
+  <string name="ApplicationPreferencesActivity_sms_enabled">SMS 수신 사용</string>
+  <string name="ApplicationPreferencesActivity_tap_to_change_your_default_sms_app">터치하여 기본 SMS 앱 변경</string>
+  <string name="ApplicationPreferencesActivity_sms_disabled">SMS 수신 해제</string>
+  <string name="ApplicationPreferencesActivity_tap_to_make_silence_your_default_sms_app">사일런스를 기본 SMS 앱으로 설정하기 위해 터치</string>
+  <string name="ApplicationPreferencesActivity_on">켜짐</string>
+  <string name="ApplicationPreferencesActivity_On">켜짐</string>
+  <string name="ApplicationPreferencesActivity_off">꺼짐</string>
+  <string name="ApplicationPreferencesActivity_Off">꺼짐</string>
+  <string name="ApplicationPreferencesActivity_sms">SMS</string>
+  <string name="ApplicationPreferencesActivity_mms">MMS</string>
+  <string name="ApplicationPreferencesActivity_incoming_summary">수신 %s</string>
+  <string name="ApplicationPreferencesActivity_privacy_summary">암호 %1$s, 화면 보안 %2$s</string>
+  <string name="ApplicationPreferencesActivity_appearance_summary">테마 %1$s, 언어 %2$s</string>
+  <!--AppProtectionPreferenceFragment-->
+  <plurals name="AppProtectionPreferenceFragment_minutes">
+    <item quantity="other">%d 분</item>
+  </plurals>
+  <!--DraftDatabase-->
+  <string name="DraftDatabase_Draft_image_snippet">(이미지)</string>
+  <string name="DraftDatabase_Draft_audio_snippet">(오디오)</string>
+  <string name="DraftDatabase_Draft_video_snippet">(비디오)</string>
+  <!--AttchmentManager-->
+  <string name="AttachmentManager_cant_open_media_selection">미디어를 선택할 앱을 찾을 수 없습니다.</string>
+  <!--AttachmentTypeSelectorAdapter-->
+  <string name="AttachmentTypeSelectorAdapter_camera">카메라</string>
+  <string name="AttachmentTypeSelectorAdapter_picture">사진</string>
+  <string name="AttachmentTypeSelectorAdapter_video">비디오</string>
+  <string name="AttachmentTypeSelectorAdapter_audio">오디오</string>
+  <string name="AttachmentTypeSelectorAdapter_contact">연락처 정보</string>
+  <!--BlockedContactsActivity-->
+  <string name="BlockedContactsActivity_blocked_contacts">차단된 연락처</string>
+  <!--ConversationItem-->
+  <string name="ConversationItem_message_size_d_kb">메세지 용량: %d KB</string>
+  <string name="ConversationItem_expires_s">만료: %s</string>
+  <string name="ConversationItem_error_not_delivered">전송되지 않음</string>
+  <string name="ConversationItem_view_secure_media_question">보안 미디어를 표시할까요?</string>
+  <string name="ConversationItem_this_media_has_been_stored_in_an_encrypted_database_external_viewer_warning">이 미디어는 암호화된 데이터베이스에 저장되어 있습니다. 아쉽지만, 외부 컨텐츠 뷰어로 이것을 보려면 일시적으로 데이터를 복호화하고 저장소에 기록해야만 합니다. 계속 진행하시겠습니까?</string>
+  <string name="ConversationItem_error_received_stale_key_exchange_message">이미 만료된 키 교환 메세지가 수신되었습니다.</string>
+  <string name="ConversationItem_received_key_exchange_message_tap_to_process">키 교환 메세지를 받았습니다, 진행하려면 터치하세요.</string>
+  <string name="ConversationItem_group_action_left">%1$s이(가) 그룹을 떠났습니다.</string>
+  <string name="ConversationItem_click_for_details">눌러서 자세한 내용 확인</string>
+  <string name="ConversationItem_click_to_approve_unencrypted">눌러서 보안되지 않은 통신으로 후퇴</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">암호화되지 않은 SMS로 후퇴하시겠습니까?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">암호화되지 않은 MMS로 후퇴하시겠습니까?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_dialog_message">이 메세지는 보안 세션이 시작되지 않았으므로 암호화 <b>없이</b> 진행됩니다.\n\n보호되지 않은 메세지를 보내시겠습니까?</string>
+  <string name="ConversationItem_unable_to_open_media">이 미디어를 열 수 있는 앱을 찾을 수 없습니다.</string>
+  <string name="ConversationItem_from_s">%s (으)로부터</string>
+  <string name="ConversationItem_to_s">%s 에게</string>
+  <!--ConversationActivity-->
+  <string name="ConversationActivity_initiate_secure_session_question">보안 세션을 시작할까요?</string>
+  <string name="ConversationActivity_initiate_secure_session_with_s_question">%s에 보안 세션을 시작할까요?</string>
+  <string name="ConversationActivity_detected_silence_initiate_session_question">사일런스를 사용중인 누군가로부터 메세지를 받았습니다. 암호화된 보안 세션을 시작할까요?</string>
+  <string name="ConversationActivity_abort_secure_session_confirmation">보안 세션을 끝낼까요?</string>
+  <string name="ConversationActivity_are_you_sure_that_you_want_to_abort_this_secure_session_question">정말로 이 보안 세션을 끝내시겠습니까?</string>
+  <string name="ConversationActivity_delete_thread_question">대화를 삭제할까요?</string>
+  <string name="ConversationActivity_this_will_permanently_delete_all_messages_in_this_conversation">이것은 대화의 모든 메세지를 영구적으로 삭제합니다.</string>
+  <string name="ConversationActivity_add_attachment">첨부 파일 추가</string>
+  <string name="ConversationActivity_select_contact_info">연락처 정보 선택</string>
+  <string name="ConversationActivity_compose_message">메세지 작성</string>
+  <string name="ConversationActivity_sorry_there_was_an_error_adding_your_attachment">첨부 파일을 추가하는 도중 오류가 발생했습니다.</string>
+  <string name="ConversationActivity_the_gif_you_selected_was_too_big">선택한 GIF의 용량이 너무 큽니다.</string>
+  <string name="ConversationActivity_sorry_the_selected_video_exceeds_message_size_restrictions">선택된 비디오가 메세지 용량 제한을 초과했습니다 (%1$skB).</string>
+  <string name="ConversationActivity_sorry_the_selected_audio_exceeds_message_size_restrictions">선택된 오디오가 메세지 용량 제한을 초과했습니다 (%1$skB).</string>
+  <string name="ConversationActivity_recipient_is_not_a_valid_sms_or_email_address_exclamation">수신자의 SMS 또는 이메일 주소가 올바르지 않습니다.</string>
+  <string name="ConversationActivity_message_is_empty_exclamation">보내고자 하는 메세지가 비어있습니다!</string>
+  <string name="ConversationActivity_group_members">그룹 멤버</string>
+  <string name="ConversationActivity_group_conversation">그룹 대화</string>
+  <string name="ConversationActivity_unnamed_group">이름이 정해지지 않은 그룹</string>
+  <plurals name="ConversationActivity_d_recipients_in_group">
+    <item quantity="other">%d명의 멤버</item>
+  </plurals>
+  <string name="ConversationActivity_saved_draft">임시로 저장하기</string>
+  <string name="ConversationActivity_invalid_recipient">올바르지 않은 수신자입니다!</string>
+  <string name="ConversationActivity_calls_not_supported">전화 통화가 지원되지 않습니다</string>
+  <string name="ConversationActivity_this_device_does_not_appear_to_support_dial_actions">이 기기에서는 전화 통화를 걸 수 없습니다.</string>
+  <string name="ConversationActivity_transport_insecure_sms">보안되지 않은 SMS</string>
+  <string name="ConversationActivity_transport_insecure_mms">보안되지 않은 MMS</string>
+  <string name="ConversationActivity_transport_secure_sms">보안 SMS</string>
+  <string name="ConversationActivity_transport_secure_mms">보안 MMS</string>
+  <string name="ConversationActivity_install_smssecure">안전하게 대화합시다: %s</string>
+  <string name="ConversationActivity_recipient_self">보안 세션은 다른 사람들과만 할 수 있습니다.</string>
+  <string name="ConversationActivity_mms_not_supported_title">MMS가 지원되지 않습니다</string>
+  <string name="ConversationActivity_mms_not_supported_message">사용중인 통신사가 MMS를 지원하지 않기 때문에 이 메세지를 보낼 수 없습니다.</string>
+  <string name="ConversationActivity_specify_recipient">연락처를 선택하세요</string>
+  <string name="ConversationActivity_attachment_exceeds_size_limits">첨부 파일이 용량 제한을 초과했습니다.</string>
+  <!--ConversationFragment-->
+  <string name="ConversationFragment_message_details">메세지 상세 정보</string>
+  <plurals name="ConversationFragment_delete_selected_messages">
+    <item quantity="other">선택한 메세지를 삭제할까요?</item>
+  </plurals>
+  <plurals name="ConversationFragment_this_will_permanently_delete_all_n_selected_messages">
+    <item quantity="other">이것은 선택한 모든 %1$d 메세지를 영구적으로 삭제합니다.</item>
+  </plurals>
+  <string name="ConversationFragment_save_to_sd_card">저장소에 저장할까요?</string>
+  <plurals name="ConversationFragment_saving_n_media_to_storage_warning">
+    <item quantity="other">모든 %1$d 미디어를 저장소에 저장하면 기기의 다른 모든 앱이 여기에 접근할 수 있게 됩니다.\n\n계속할까요?</item>
+  </plurals>
+  <plurals name="ConversationFragment_error_while_saving_attachments_to_sd_card">
+    <item quantity="other">첨부 파일을 저장소에 저장하는 도중 오류가 발생했습니다!</item>
+  </plurals>
+  <string name="ConversationFragment_unable_to_write_to_sd_card_exclamation">저장소에 기록할 수 없습니다!</string>
+  <plurals name="ConversationFragment_saving_n_attachments">
+    <item quantity="other">%1$d 첨부 파일 저장 중</item>
+  </plurals>
+  <plurals name="ConversationFragment_saving_n_attachments_to_sd_card">
+    <item quantity="other">%1$d 첨부 파일을 저장소에 저장 중</item>
+  </plurals>
+  <string name="ConversationFragment_collecting_attahments">첨부 파일 수집 중...</string>
+  <string name="ConversationFragment_pending">대기중...</string>
+  <string name="ConversationFragment_mms">MMS</string>
+  <string name="ConversationFragment_sms">SMS</string>
+  <string name="ConversationFragment_deleting">삭제중...</string>
+  <string name="ConversationFragment_deleting_messages">메세지 삭제 중...</string>
+  <!--ConversationListActivity-->
+  <!--ConversationListFragment-->
+  <plurals name="ConversationListFragment_delete_selected_conversations">
+    <item quantity="other">선택된 대화를 삭제할까요?</item>
+  </plurals>
+  <plurals name="ConversationListFragment_this_will_permanently_delete_all_n_selected_conversations">
+    <item quantity="other">이것은 선택한 모든 %1$d 대화를 영구적으로 삭제합니다.</item>
+  </plurals>
+  <string name="ConversationListFragment_deleting">삭제중</string>
+  <string name="ConversationListFragment_deleting_selected_conversations">선택한 대화 삭제하는 중...</string>
+  <plurals name="ConversationListFragment_conversations_archived">
+    <item quantity="other">%d 대화가 기록 보관되었습니다.</item>
+  </plurals>
+  <string name="ConversationListFragment_undo">실행 취소</string>
+  <plurals name="ConversationListFragment_moved_conversations_to_inbox">
+    <item quantity="other">%d 대화를 수신함으로 이동했습니다</item>
+  </plurals>
+  <!--ConversationListItem-->
+  <!--ConversationListItemAction-->
+  <string name="ConversationListItemAction_archived_conversations_d">기록 보관된 대화 (%d)</string>
+  <!--CustomDefaultPreference-->
+  <string name="CustomDefaultPreference_using_custom">임의의 항목 사용: %s</string>
+  <string name="CustomDefaultPreference_using_default">기본값 사용: %s</string>
+  <string name="CustomDefaultPreference_none">없음</string>
+  <!--DateUtils-->
+  <string name="DateUtils_now">지금</string>
+  <string name="DateUtils_minutes_ago">%d 분</string>
+  <!--ShareActivity-->
+  <string name="ShareActivity_share_with">공유하기</string>
+  <!--IntroScreenActivity-->
+  <string name="IntroScreenActivity_welcome_to_silence">사일런스에 오신 것을 환영합니다!</string>
+  <string name="IntroScreenActivity_silence_description">사일런스는 프라이버시를 지키면서 친구들과 대화할 수 있게 해줍니다.</string>
+  <string name="IntroScreenActivity_encrypt_your_messages">메세지 암호화</string>
+  <string name="IntroScreenActivity_encrypt_your_messages_description">사일런스는 다른 사일런스 사용자와의 메세지를 자동적으로 암호화합니다.</string>
+  <string name="IntroScreenActivity_talk_to_everyone">모두에게 말하기</string>
+  <string name="IntroScreenActivity_talk_to_everyone_description">사일런스는 암호화되지 않은 메세지를 사일런스를 사용하지 않는 사용자와 주고받을 수 있습니다.</string>
+  <string name="IntroScreenActivity_smssecure_is_now_silence">SMS시큐어가 사일런스로 이름을 바꿨습니다.</string>
+  <string name="IntroScreenActivity_your_messages_are_still_here">SMS시큐어가 사일런스로 이름을 바꿨습니다. 메세지는 그대로 있으며 새 기능이 추가됩니다.</string>
+  <!--ExportFragment-->
+  <string name="ExportFragment_export">내보내기</string>
+  <string name="ExportFragment_export_plaintext_to_storage">평문 텍스트를 저장소로 내보낼까요?</string>
+  <string name="ExportFragment_warning_this_will_export_the_contents_of_your_messages_to_storage_in_plaintext">주의하세요, 이것은 사일런스 메세지의 내용을 평문 텍스트로 저장소로 내보냅니다.</string>
+  <string name="ExportFragment_cancel">취소</string>
+  <string name="ExportFragment_exporting">내보내는 중</string>
+  <string name="ExportFragment_exporting_plaintext_to_storage">평문 텍스트를 저장소로 내보내는 중...</string>
+  <string name="ExportFragment_error_unable_to_write_to_storage">오류 발생, 저장소에 기록할 수 없습니다.</string>
+  <string name="ExportFragment_error_while_writing_to_storage">저장소에 기록 중 오류가 발생했습니다.</string>
+  <string name="ExportFragment_export_successful">내보내기 성공</string>
+  <string name="ExportFragment_export_encrypted_backup">암호화된 백업 파일을 내보낼까요?</string>
+  <string name="ExportFragment_this_will_export_your_encrypted_keys_settings_and_messages">암호화된 키, 설정, 메세지를 저장소로 내보냅니다.</string>
+  <string name="ExportFragment_exporting_keys_settings_and_messages">암호화된 키, 설정, 메세지 내보내는 중...</string>
+  <!--GroupCreateActivity-->
+  <string name="GroupCreateActivity_actionbar_title">새 그룹</string>
+  <string name="GroupCreateActivity_actionbar_update_title">그룹 업데이트</string>
+  <string name="GroupCreateActivity_actionbar_mms_title">새 MMS 그룹</string>
+  <string name="GroupCreateActivity_contacts_mms_exception">예기치 못한 오류로 인해 그룹을 만들 수 없습니다.</string>
+  <string name="GroupCreateActivity_contacts_no_members">그룹에는 적어도 한명이 필요합니다!</string>
+  <string name="GroupCreateActivity_menu_create_title">그룹 만들기</string>
+  <!--GroupMembersDialog-->
+  <string name="GroupMembersDialog_me">나</string>
+  <!--ImportExportActivity-->
+  <string name="ImportExportActivity_import">가져오기</string>
+  <string name="ImportExportActivity_export">내보내기</string>
+  <!--ImportFragment-->
+  <string name="ImportFragment_import_system_sms_database">시스템 SMS 데이터베이스를 가져올까요?</string>
+  <string name="ImportFragment_this_will_import_messages_from_the_system">시스템의 기본 SMS 데이터베이스에서 사일런스로 메세지들을 가져옵니다. 만약 이전에 시스템의 SMS 데이터베이스를 가져온 적이 있다면, 지금 다시 가져오게 되면 메세지가 중복될 수 있습니다.</string>
+  <string name="ImportFragment_import">가져오기</string>
+  <string name="ImportFragment_cancel">취소</string>
+  <string name="ImportFragment_restore_encrypted_backup">암호화된 백업 파일을 복원할까요?</string>
+  <string name="ImportFragment_restoring_an_encrypted_backup_will_completely_replace_your_existing_keys">암호화된 백업 파일을 복원하게 되면 현재의 키, 설정, 메세지를 완전히 대체하게 됩니다. 백업 파일에 없는, 현재의 모든 사일런스 정보는 잃게 됩니다. 가져오기가 끝나면 사일런스는 중단될 것입니다.</string>
+  <string name="ImportFragment_import_plaintext_backup">평문 텍스트 백업 파일을 가져올까요?</string>
+  <string name="ImportFragment_this_will_import_messages_from_a_plaintext_backup">평문 텍스트 백업 파일로부터 메세지를 가져옵니다. 만약 이전에 이 백업 파일로부터 가져온 적이 있다면, 지금 다시 가져오면 메세지가 중복될 수 있습니다.</string>
+  <string name="ImportFragment_importing">가져오는 중</string>
+  <string name="ImportFragment_import_plaintext_backup_elipse">평문 텍스트 백업 파일을 가져오는 중...</string>
+  <string name="ImportFragment_no_plaintext_backup_found">평문 텍스트 백업 파일을 찾을 수 없습니다!</string>
+  <string name="ImportFragment_error_importing_backup">백업 파일을 가져오는 도중 오류가 발생했습니다!</string>
+  <string name="ImportFragment_import_complete">가져오기 완료!</string>
+  <string name="ImportFragment_restoring_encrypted_backup">암호화된 백업 파일 복원하는 중...</string>
+  <string name="ImportFragment_no_encrypted_backup_found">암호화된 백업 파일을 찾을 수 없습니다!</string>
+  <!--KeyScanningActivity-->
+  <string name="KeyScanningActivity_no_scanned_key_found_exclamation">검색된 키를 찾을 수 없습니다!</string>
+  <string name="KeyScanningActivity_install_barcode_Scanner">바코드 스캐너를 설치할까요?</string>
+  <string name="KeyScanningActivity_this_application_requires_barcode_scanner_would_you_like_to_install_it">사일런스는 QR코드를 사용하기 위해 바코드 스캐너가 필요합니다.</string>
+  <!--MessageDetailsRecipient-->
+  <string name="MessageDetailsRecipient_failed_to_send">전송 실패</string>
+  <string name="MessageDetailsRecipient_new_identity">새로운 신원</string>
+  <!--MmsDownloader-->
+  <string name="MmsDownloader_error_storing_mms">MMS 저장 오류!</string>
+  <!--NotificationMmsMessageRecord-->
+  <string name="NotificationMmsMessageRecord_multimedia_message">멀티미디어 메세지</string>
+  <!--MessageRecord-->
+  <string name="MessageRecord_message_encrypted_with_a_legacy_protocol_version_that_is_no_longer_supported">이전 버전의 사일런스로부터 암호화된 메세지를 수신하는 기능은 더이상 지원되지 않습니다. 최근 버전으로 업그레이드해서 다시 메세지를 전송하라고 발신자에게 요청하세요.</string>
+  <string name="MessageRecord_left_group">당신은 그룹을 떠났습니다.</string>
+  <string name="MessageRecord_updated_group">그룹을 업데이트했습니다.</string>
+  <!--PassphraseChangeActivity-->
+  <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">암호가 일치하지 않습니다!</string>
+  <string name="PassphraseChangeActivity_incorrect_old_passphrase_exclamation">기존 암호가 일치하지 않습니다!</string>
+  <string name="PassphraseChangeActivity_enter_new_passphrase_exclamation">암호를 입력하지 않았습니다!</string>
+  <!--PassphrasePromptActivity-->
+  <string name="PassphrasePromptActivity_enter_passphrase">암호 입력</string>
+  <string name="PassphrasePromptActivity_watermark_content_description">사일런스 아이콘</string>
+  <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">올바르지 않은 암호입니다!</string>
+  <!--ReceiveKeyActivity-->
+  <string name="ReceiveKeyActivity_the_signature_on_this_key_exchange_is_different">이 연락처로부터 이전에 받은 키 교환 서명과 현재의 키 교환 서명이 일치하지 않습니다. 이는 누군가 통신을 가로채려고 시도하고 있거나, 아니면 단순히 이 연락처가 사일런스를 다시 설치해서 새로운 신원 키를 가지게 된 것입니다.</string>
+  <string name="ReceiveKeyActivity_the_signature_on_this_key_exchange_is_trusted_but">이 키 교환의 서명은 신뢰할 수 있으나, 현재 \'자동으로 키 교환 완료\' 설정이 해제되어 있습니다.</string>
+  <string name="ReceiveKeyActivity_processing">처리 중...</string>
+  <string name="ReceiveKeyActivity_processing_key_exchange">키 교환 처리중...</string>
+  <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">이 연락처의 신원을 확인하시는게 좋습니다.</string>
+  <!--RecipientPreferencesActivity-->
+  <string name="RecipientPreferenceActivity_block_this_contact_question">이 연락처를 차단할까요?</string>
+  <string name="RecipientPreferenceActivity_you_will_no_longer_see_messages_from_this_user">이 사용자로부터 온 메세지를 더이상 볼 수 없게 됩니다.</string>
+  <string name="RecipientPreferenceActivity_block">차단</string>
+  <string name="RecipientPreferenceActivity_unblock_this_contact_question">이 연락처를 차단 해제할까요?</string>
+  <string name="RecipientPreferenceActivity_are_you_sure_you_want_to_unblock_this_contact">정말로 이 연락처를 차단 해제하시겠습니까?</string>
+  <string name="RecipientPreferenceActivity_unblock">차단 해제</string>
+  <string name="RecipientPreferenceActivity_enabled">사용</string>
+  <string name="RecipientPreferenceActivity_disabled">해제</string>
+  <!--Slide-->
+  <string name="Slide_image">이미지</string>
+  <string name="Slide_audio">오디오</string>
+  <string name="Slide_video">비디오</string>
+  <!--SmsMessageRecord-->
+  <string name="SmsMessageRecord_received_corrupted_key_exchange_message">손상된 키 교환 메세지를 수신했습니다!</string>
+  <string name="SmsMessageRecord_received_key_exchange_message_for_invalid_protocol_version">올바르지 않은 프로토콜 버전의 키 교환 메세지를 수신했습니다.</string>
+  <string name="SmsMessageRecord_received_message_with_unknown_identity_key_tap_to_process">알 수 없는 신원 키를 가진 메세지를 수신했습니다. 표시하고 진행하려면 터치하세요.</string>
+  <string name="SmsMessageRecord_received_updated_but_unknown_identity_information">업데이트되었지만 알 수 없는 신원 정보를 수신했습니다. 눌러서 신원을 확인하세요.</string>
+  <string name="SmsMessageRecord_secure_session_ended">보안 세션이 끝났습니다.</string>
+  <string name="SmsMessageRecord_duplicate_message">메세지가 중복되었습니다.</string>
+  <!--ThreadRecord-->
+  <string name="ThreadRecord_draft">임시 저장:</string>
+  <string name="ThreadRecord_media_message">미디어 메세지</string>
+  <!--VerifyIdentityActivity-->
+  <string name="VerifyIdentityActivity_you_do_not_have_an_identity_key">신원 키를 가지고 있지 않습니다.</string>
+  <string name="VerifyIdentityActivity_recipient_has_no_identity_key">수신자가 신원 키를 가지고 있지 않습니다.</string>
+  <string name="VerifyIdentityActivity_scan_contacts_qr_code">연락처의 QR코드 스캔</string>
+  <string name="VerifyIdentityActivity_display_your_qr_code">당신의 QR코드 표시</string>
+  <string name="VerifyIdentityActivity_warning_the_scanned_key_does_not_match_please_check_the_fingerprint_text_carefully">경고, 스캔을 한 키가 일치하지 않습니다! 핑거프린트 텍스트를 주의해서 확인하세요.</string>
+  <string name="VerifyIdentityActivity_not_verified_exclamation">검증되지 않음!</string>
+  <string name="VerifyIdentityActivity_their_key_is_correct_it_is_also_necessary_to_verify_your_key_with_them_as_well">키가 일치합니다. 이 키를 당신의 키와 비교할 필요가 있습니다.</string>
+  <string name="VerifyIdentityActivity_verified_exclamation">검증됨!</string>
+  <!--ViewIdentityActivity-->
+  <string name="ViewIdentityActivity_scan_contacts_qr_code">연락처의 QR코드 스캔</string>
+  <string name="ViewIdentityActivity_display_your_qr_code">당신의 QR코드 표시</string>
+  <string name="ViewIdentityActivity_warning_the_scanned_key_does_not_match_exclamation">경고, 스캔을 한 키가 일치하지 않습니다!</string>
+  <string name="ViewIdentityActivity_the_scanned_key_matches_exclamation">스캔을 한 키가 일치합니다!</string>
+  <string name="ViewIdentityActivity_your_identity_fingerprint">당신의 신원 핑거프린트</string>
+  <!--KeyExchangeInitiator-->
+  <string name="KeyExchangeInitiator_initiate_despite_existing_request_question">기존 요청이 있음에도 불구하고 시작할까요?</string>
+  <string name="KeyExchangeInitiator_youve_already_sent_a_session_initiation_request_to_this_recipient_are_you_sure">이미 이 수신자에게 세션 시작 요청을 보냈습니다. 정말로 또 다른 요청을 보낼까요? 이전의 요청은 무효가 됩니다.</string>
+  <string name="KeyExchangeInitiator_send">보내기</string>
+  <!--MessageDisplayHelper-->
+  <string name="MessageDisplayHelper_decrypting_please_wait">복호화중입니다, 잠시 기다려주세요...</string>
+  <!--EncryptingSmsDatabase-->
+  <string name="EncryptingSmsDatabase_error_decrypting_message">메세지 복호화 오류</string>
+  <!--MmsDatabase-->
+  <string name="MmsDatabase_connecting_to_mms_server">MMS 서버에 접속중입니다...</string>
+  <string name="MmsDatabase_downloading_mms">MMS를 다운로드 중...</string>
+  <string name="MmsDatabase_mms_download_failed">MMS 다운로드 실패!</string>
+  <string name="MmsDatabase_downloading">다운로드 중...</string>
+  <string name="MmsDatabase_mms_pending_download">다운로드를 계속하려면 눌러서 MMS를 설정하세요.</string>
+  <string name="MmsDatabase_error_decrypting_message">메세지 복호화 오류</string>
+  <!--MmsMessageRecord-->
+  <string name="MmsMessageRecord_decrypting_mms_please_wait">MMS 복호화중입니다, 잠시 기다려주세요...</string>
+  <!--MuteDialog-->
+  <string name="MuteDialog_mute_notifications">알림 음소거</string>
+  <!--ApplicationMigrationService-->
+  <string name="ApplicationMigrationService_import_in_progress">가져오는 중</string>
+  <string name="ApplicationMigrationService_importing_text_messages">텍스트 메세지 가져오는 중</string>
+  <string name="ApplicationMigrationService_import_complete">가져오기 성공</string>
+  <string name="ApplicationMigrationService_system_database_import_is_complete">시스템 데이터베이스 가져오기가 완료되었습니다.</string>
+  <!--KeyCachingService-->
+  <string name="KeyCachingService_silence_passphrase_cached">터치해서 열어보세요.</string>
+  <string name="KeyCachingService_silence_passphrase_cached_with_lock">터치해서 열거나, 자물쇠를 터치해서 닫으세요.</string>
+  <string name="KeyCachingService_passphrase_cached">사일런스가 잠금 해제되었습니다.</string>
+  <string name="KeyCachingService_lock">암호로 잠그기</string>
+  <!--MessageNotifier-->
+  <string name="MessageNotifier_d_new_messages_in_d_conversations">%2$d 대화의 %1$d 새 메세지</string>
+  <string name="MessageNotifier_most_recent_from_s">다음으로부터의 최근 항목: %1$s</string>
+  <string name="MessageNotifier_media_message_with_text">미디어 메세지: %s</string>
+  <string name="MessageNotifier_no_subject">(No subject)</string>
+  <string name="MessageNotifier_message_delivery_failed">메세지 전송 실패.</string>
+  <string name="MessageNotifier_failed_to_deliver_message">메세지 전송에 실패했습니다.</string>
+  <string name="MessageNotifier_error_delivering_message">메세지 전송 오류.</string>
+  <string name="MessageNotifier_mark_all_as_read">모두 읽음으로 표시</string>
+  <string name="MessageNotifier_mark_read">읽음으로 표시</string>
+  <string name="MessageNotifier_media_message">미디어 메세지</string>
+  <string name="MessageNotifier_message_received">메세지가 %s에 의해 수신됨.</string>
+  <string name="MessageNotifier_reply">답장</string>
+  <!--QuickResponseService-->
+  <string name="QuickResponseService_quick_response_unavailable_when_Silence_is_locked">사일런스가 잠겨있을때는 빠른 답장을 사용할 수 없습니다!</string>
+  <string name="QuickResponseService_problem_sending_message">메세지 전송 오류</string>
+  <!--SingleRecipientNotificationBuilder-->
+  <string name="SingleRecipientNotificationBuilder_silence">사일런스</string>
+  <string name="SingleRecipientNotificationBuilder_new_message">새 메세지</string>
+  <!--change_passphrase_activity-->
+  <string name="change_passphrase_activity__old_passphrase">기존 암호</string>
+  <string name="change_passphrase_activity__new_passphrase">새 암호</string>
+  <string name="change_passphrase_activity__repeat_new_passphrase">새 암호 다시 입력</string>
+  <!--contact_selection_activity-->
+  <string name="contact_selection_activity__enter_name_or_number">이름 또는 번호 입력</string>
+  <!--contact_selection_group_activity-->
+  <string name="contact_selection_group_activity__no_contacts">연락처 없음.</string>
+  <string name="contact_selection_group_activity__finding_contacts">연락처 불러오는 중...</string>
+  <!--single_contact_selection_activity-->
+  <string name="SingleContactSelectionActivity_contact_photo">연락처 사진</string>
+  <!--ContactSelectionListFragment-->
+  <string name="ContactSelectionlistFragment_select_for">다음을 선택</string>
+  <!--blocked_contacts_fragment-->
+  <!--contact_selection_recent_activity-->
+  <string name="contact_selection_recent_activity__no_recent_calls">최근 통화가 없습니다.</string>
+  <!--conversation_title_view-->
+  <string name="conversation_title_view__conversation_muted">대화가 음소거됨</string>
+  <!--conversation_activity-->
+  <string name="conversation_activity__type_message_sms_secure">보안 SMS 전송</string>
+  <string name="conversation_activity__type_message_sms_insecure">보안되지 않은 SMS 전송</string>
+  <string name="conversation_activity__type_message_mms_secure">보안 MMS 전송</string>
+  <string name="conversation_activity__type_message_mms_insecure">보안되지 않은 MMS 전송</string>
+  <string name="conversation_activity__from_sim_name">%1$s (으)로부터</string>
+  <string name="conversation_activity__send">보내기</string>
+  <string name="conversation_activity__remove">제거</string>
+  <string name="conversation_activity__window_description">%1$s와의 대화</string>
+  <string name="conversation_activity__compose_description">메세지 구성</string>
+  <string name="conversation_activity__emoji_toggle_description">이모지 키보드 전환</string>
+  <string name="conversation_activity__attachment_thumbnail">첨부 썸네일</string>
+  <!--conversation_item-->
+  <string name="conversation_item__mms_downloading_description">미디어 메세지 다운로드 중</string>
+  <string name="conversation_item__mms_image_description">미디어 메세지</string>
+  <string name="conversation_item__secure_message_description">보안 메세지</string>
+  <!--conversation_item_sent-->
+  <string name="conversation_item_sent__download">다운로드</string>
+  <string name="conversation_item_sent__downloading">다운로드 중</string>
+  <string name="conversation_item_sent__send_failed_indicator_description">전송 실패</string>
+  <string name="conversation_item_sent__pending_approval_description">승인 보류중</string>
+  <string name="conversation_item_sent__delivered_description">전송됨</string>
+  <!--conversation_item_received-->
+  <string name="conversation_item_received__download">다운로드</string>
+  <string name="conversation_item_received__contact_photo_description">연락처 사진</string>
+  <string name="conversation_item_received__downloading">다운로드 중</string>
+  <!--audio_view-->
+  <!--conversation_fragment_cab-->
+  <string name="conversation_fragment_cab__batch_selection_mode">일괄 선택 모드</string>
+  <string name="conversation_fragment_cab__batch_selection_amount">%s 선택됨</string>
+  <!--conversation_fragment-->
+  <!--log_submit_activity-->
+  <string name="log_submit_activity__log_fetch_failed">기기에서 디버그 기록을 얻을 수 없습니다. 하지만 대신 ADB를 사용해 디버그 기록을 얻을 수 있습니다.</string>
+  <string name="log_submit_activity__thanks">도와주셔서 고맙습니다!</string>
+  <string name="log_submit_activity__submitting">제출하는 중</string>
+  <string name="log_submit_activity__posting_logs">디버그 기록 올리는 중</string>
+  <!--database_migration_activity-->
+  <string name="database_migration_activity__would_you_like_to_import_your_existing_text_messages">기존의 텍스트 메세지를 사일런스의 암호화된 데이터베이스로 가져오시겠습니까?</string>
+  <string name="database_migration_activity__the_default_system_database_will_not_be_modified">기본 시스템 데이터베이스는 교체되거나 변경되지 않습니다.</string>
+  <string name="database_migration_activity__skip">건너뛰기</string>
+  <string name="database_migration_activity__import">가져오기</string>
+  <string name="database_migration_activity__this_could_take_a_moment_please_be_patient">시간이 걸릴 수 있습니다. 기다려 주세요. 가져오기가 끝나면 알려드립니다.</string>
+  <string name="database_migration_activity__importing">가져오는 중</string>
+  <!--database_upgrade_activity-->
+  <string name="database_upgrade_activity__updating_database">데이터베이스 업데이트 중...</string>
+  <string name="export_fragment__export_plaintext_backup">평문 텍스트 백업 내보내기</string>
+  <string name="export_fragment__export_a_plaintext_backup_compatible_with">\'SMS Backup &amp; Restore\'와 호환되는 평문 텍스트 백업을 저장소로 내보내기</string>
+  <string name="import_fragment__import_system_sms_database">시스템 SMS 데이터베이스 가져오기</string>
+  <string name="import_fragment__import_the_database_from_the_default_system">기본 시스템 메신저 앱으로부터 데이터베이스 가져오기</string>
+  <string name="import_fragment__restore_encrypted_backup">암호화된 백업 파일 복원</string>
+  <string name="import_fragment__restore_a_previously_exported_encrypted_backup">이미 내보낸 암호화된 백업 파일을 복원</string>
+  <string name="import_fragment__import_plaintext_backup">평문 텍스트 백업 파일 가져오기</string>
+  <string name="import_fragment__import_a_plaintext_backup_file">평문 텍스트 백업 파일을 가져옵니다. \'SMS Backup &amp; Restore\'와 호환됩니다.</string>
+  <string name="export_fragment__export_encrypted_backup">암호화된 백업 파일 내보내기</string>
+  <string name="export_fragment__export_an_encrypted_backup_to_storage">암호화된 백업 파일을 저장소로 내보내기</string>
+  <!--load_more_header-->
+  <string name="load_more_header__see_full_conversation">전체 대화 보기</string>
+  <!--media_overview_activity-->
+  <string name="media_overview_activity__no_images">이미지 없음</string>
+  <!--message_recipients_list_item-->
+  <string name="message_recipients_list_item__verify">검증</string>
+  <string name="message_recipients_list_item__resend">재전송</string>
+  <!--prompt_passphrase_activity-->
+  <string name="prompt_passphrase_activity__unlock">잠금 해제</string>
+  <!--prompt_mms_activity-->
+  <string name="prompt_mms_activity__silence_requires_mms_settings_to_deliver_media_and_group_messages">사일런스는 통신사를 통해 미디어 및 그룹 메세지를 보내기 위해서 MMS 설정을 필요로 합니다. 기기로부터 이 정보를 사용할 수 없습니다. 기기가 잠겨 있거나 제한되어 있을 가능성이 있습니다.</string>
+  <string name="prompt_mms_activity__to_send_media_and_group_messages_tap_ok">미디어 및 그룹 메세지를 보내려면 \'확인\'을 터치한 다음 요청된 설정을 완료하세요. 통신사에 적합한 MMS 설정은 일반적으로 \'(통신사 이름) APN\'을 검색하면 알아낼 수 있습니다. 이 작업은 한번만 하면 됩니다.</string>
+  <!--recipient_preferences_activity-->
+  <string name="recipient_preference_activity__blocked">차단됨</string>
+  <!--recipient_preferences-->
+  <string name="recipient_preferences__mute_conversation">대화 음소거</string>
+  <string name="recipient_preferences__disable_notifications_for_this_conversation">이 대화의 알림을 해제함</string>
+  <string name="recipient_preferences__notification_sound">알림 소리</string>
+  <string name="recipient_preferences__vibrate">진동</string>
+  <string name="recipient_preferences__block">차단</string>
+  <string name="recipient_preferences__color">색상</string>
+  <string name="recipient_preferences__color_for_this_contact">이 연락처에 사용할 색상</string>
+  <!--receive_key_dialog-->
+  <string name="receive_key_activity__complete">완료</string>
+  <!--recipients_panel-->
+  <string name="recipients_panel__to"><small>이름 또는 번호 입력</small></string>
+  <string name="recipients_panel__add_member">멤버 추가</string>
+  <!--verify_identity_activity-->
+  <string name="verify_identity_activity__their_identity_they_read">그들의 신원 (그들이 읽음):</string>
+  <string name="verify_identity_activity__your_identity_you_read">당신의 신원 (당신이 읽음):</string>
+  <!--message_details_header-->
+  <string name="message_details_header__issues_need_your_attention">몇가지 사안들에 주의하세요.</string>
+  <string name="message_details_header__sent">전송됨</string>
+  <string name="message_details_header__received">수신됨</string>
+  <string name="message_details_header__via">경유</string>
+  <string name="message_details_header__to">받는 사람:</string>
+  <string name="message_details_header__from">보내는 사람:</string>
+  <string name="message_details_header__with">다음과 함께:</string>
+  <!--AndroidManifest.xml-->
+  <string name="AndroidManifest__create_passphrase">암호 만들기</string>
+  <string name="AndroidManifest__enter_passphrase">암호 입력</string>
+  <string name="AndroidManifest__select_contacts">연락처 선택</string>
+  <string name="AndroidManifest__public_identity_key">공개 신원 키</string>
+  <string name="AndroidManifest__change_passphrase">암호 변경</string>
+  <string name="AndroidManifest__verify_identity">신원 검증</string>
+  <string name="AndroidManifest__complete_key_exchange">키 교환 완료</string>
+  <string name="AndroidManifest__log_submit">디버그 기록 제출</string>
+  <string name="AndroidManifest__media_preview">미디어 미리보기</string>
+  <string name="AndroidManifest__media_overview">모든 이미지</string>
+  <string name="AndroidManifest__media_overview_named">%1$s의 모든 이미지</string>
+  <string name="AndroidManifest__message_details">메세지 상세 정보</string>
+  <string name="AndroidManifest_archived_conversations">기록 보관된 대화</string>
+  <!--arrays.xml-->
+  <string name="arrays__import_export">가져오기 / 내보내기</string>
+  <string name="arrays__your_identity_key">당신의 신원 키</string>
+  <string name="arrays__use_default">기본값 사용</string>
+  <string name="arrays__use_custom">임의의 값 사용</string>
+  <string name="arrays__mute_for_one_hour">1시간동안 음소거</string>
+  <string name="arrays__mute_for_two_hours">2시간동안 음소거</string>
+  <string name="arrays__mute_for_one_day">하루동안 음소거</string>
+  <string name="arrays__mute_for_seven_days">일주일동안 음소거</string>
+  <string name="arrays__mute_for_one_year">1년동안 음소거</string>
+  <string name="arrays__settings_default">설정 기본값</string>
+  <string name="arrays__enabled">사용</string>
+  <string name="arrays__disabled">해제</string>
+  <string name="arrays__name_and_message">이름과 메세지</string>
+  <string name="arrays__name_only">이름만</string>
+  <string name="arrays__no_name_or_message">이름 및 메세지 없음</string>
+  <string name="arrays__enter_key">엔터 키 표시</string>
+  <string name="arrays__emoji_key">이모지 키 표시</string>
+  <string name="arrays__send_key">전송 버튼 표시</string>
+  <!--plurals.xml-->
+  <plurals name="hours_ago">
+    <item quantity="other">%d 시간</item>
+  </plurals>
+  <!--preferences.xml-->
+  <string name="preferences__general">일반</string>
+  <string name="preferences__sms_mms">SMS와 MMS</string>
+  <string name="preferences__pref_all_sms_title">모든 SMS 수신</string>
+  <string name="preferences__pref_all_mms_title">모든 MMS 수신</string>
+  <string name="preferences__use_silence_for_viewing_and_storing_all_incoming_text_messages">도착하는 모든 텍스트 메세지를 사일런스를 사용해 열람 및 저장</string>
+  <string name="preferences__use_silence_for_viewing_and_storing_all_incoming_multimedia_messages">도착하는 모든 멀티미디어 메세지를 사일런스를 사용해 열람 및 저장</string>
+  <string name="preferences__keyboard_settings">키보드 옵션</string>
+  <string name="preferences__disable_emoji_drawer">이모지 서랍 사용하지 않음</string>
+  <string name="preferences__enable_this_option_if_your_keyboard_supports_emojis">키보드가 이모지를 지원할 경우 이 옵션을 사용하세요.</string>
+  <string name="preferences__display_settings">디스플레이 설정</string>
+  <string name="preferences__choose_your_contact_entry_from_the_contacts_list">연락처 목록에서 연락처 항목을 선택하세요.</string>
+  <string name="preferences__change_passphrase">암호 변경</string>
+  <string name="preferences__change_your_passphrase">당신의 암호 변경</string>
+  <string name="preferences__complete_key_exchanges">키 교환 완료</string>
+  <string name="preferences__enable_passphrase">암호 사용</string>
+  <string name="preferences__enable_local_encryption_of_messages_and_keys">메세지 및 키의 로컬 암호화 사용</string>
+  <string name="preferences__screen_security">화면 보안</string>
+  <string name="preferences__automatically_complete_key_exchanges_for_new_sessions_or_for_existing_sessions_with_the_same_identity_key">동일한 신원 키를 가진 기존 및 새 세션에 자동적인 키 교환 사용</string>
+  <string name="preferences__disable_screen_security_to_allow_screen_shots">최근 목록 및 앱 내부의 스크린샷 차단</string>
+  <string name="preferences__forget_passphrase_from_memory_after_some_interval">설정한 시간이 지난 후 메세지에 접근할 때 암호 요구</string>
+  <string name="preferences__timeout_passphrase">시간 제한 초과 암호</string>
+  <string name="preferences__pref_timeout_interval_dialogtitle">암호 시간 제한 선택</string>
+  <string name="preferences__pref_timeout_interval_title">시간 제한 초과 간격</string>
+  <string name="preferences__the_amount_of_time_to_wait_before_forgetting_passphrase">메모리에서 암호를 지우기 전까지 경과되는 시간</string>
+  <string name="preferences__notifications">알림</string>
+  <string name="preferences__enable_message_notifications">메세지 알림 사용</string>
+  <string name="preferences__led_color">LED 색상</string>
+  <string name="preferences__led_color_unknown">알 수 없음</string>
+  <string name="preferences__pref_led_blink_title">LED 깜빡임 패턴</string>
+  <string name="preferences__pref_led_blink_custom_pattern_title">임의의 LED 깜빡임 패턴 설정</string>
+  <string name="preferences__pref_led_blink_custom_pattern_on_for">다음일 때 켜기:</string>
+  <string name="preferences__pref_led_blink_custom_pattern_off_for">다음일 때 끄기:</string>
+  <string name="preferences__pref_led_blink_custom_pattern_set">임의의 LED 깜빡임 패턴 설정!</string>
+  <string name="preferences__sound">소리</string>
+  <string name="preferences__change_notification_sound">알림 소리 변경</string>
+  <string name="preferences__silent">소리 없음</string>
+  <string name="preferences__in_conversation_notifications">대화 도중 알림</string>
+  <string name="preferences__play_inthread_notifications">현재 진행중인 대화를 보고 있을 때도 알림 소리 재생</string>
+  <string name="preferences__repeat_alerts">경고 반복</string>
+  <string name="preferences__never">하지 않음</string>
+  <string name="preferences__one_time">한번</string>
+  <string name="preferences__two_times">두번</string>
+  <string name="preferences__three_times">세번</string>
+  <string name="preferences__five_times">다섯번</string>
+  <string name="preferences__ten_times">열번</string>
+  <string name="preferences__vibrate">진동</string>
+  <string name="preferences__also_vibrate_when_notified">알림을 받았을 때 진동</string>
+  <string name="preferences__minutes">분</string>
+  <string name="preferences__hours">시간</string>
+  <string name="preferences__green">초록색</string>
+  <string name="preferences__red">빨간색</string>
+  <string name="preferences__blue">파랑색</string>
+  <string name="preferences__orange">주황색</string>
+  <string name="preferences__cyan">하늘색</string>
+  <string name="preferences__magenta">자홍색</string>
+  <string name="preferences__white">흰색</string>
+  <string name="preferences__none">없음</string>
+  <string name="preferences__fast">빠름</string>
+  <string name="preferences__normal">보통</string>
+  <string name="preferences__slow">느림</string>
+  <string name="preferences__custom">임의</string>
+  <string name="preferences__advanced">고급</string>
+  <string name="preferences__privacy">프라이버시</string>
+  <string name="preferences__mms_user_agent">MMS User Agent</string>
+  <string name="preferences__advanced_mms_access_point_names">수동 MMS 설정</string>
+  <string name="preferences__enable_manual_mms">수동 MMS 설정 사용</string>
+  <string name="preferences__override_system_mms_settings">아래의 정보로 시스템 MMS 설정을 덮어씁니다.</string>
+  <string name="preferences__mmsc_url">MMSC URL</string>
+  <string name="preferences__mms_proxy_host">MMS Proxy Host</string>
+  <string name="preferences__mms_proxy_port">MMS Proxy Port</string>
+  <string name="preferences__mmsc_username">MMSC Username</string>
+  <string name="preferences__mmsc_password">MMSC Password</string>
+  <string name="preferences__sms_delivery_reports">SMS 전송 보고</string>
+  <string name="preferences__request_a_delivery_report_for_each_sms_message_you_send">매번 SMS 메세지를 보낼 때마다 전송 보고서 요청</string>
+  <string name="preferences__sms_delivery_reports_notification">SMS 전송 보고 알림</string>
+  <string name="preferences__display_a_notification_when_a_delivery_report_is_received">전송 보고를 받을 때 알림을 표시합니다</string>
+  <string name="preferences__automatically_delete_older_messages_once_a_conversation_exceeds_a_specified_length">대화가 특정 길이를 초과하면 자동으로 오래된 메세지 삭제</string>
+  <string name="preferences__delete_old_messages">오래된 메세지 삭제</string>
+  <string name="preferences__chats">대화와 미디어</string>
+  <string name="preferences__conversation_length_limit">대화 길이 제한</string>
+  <string name="preferences__trim_all_conversations_now">지금 모든 대화 잘라내기</string>
+  <string name="preferences__scan_through_all_conversations_and_enforce_conversation_length_limits">모든 대화를 점검해서 대화 길이 제한을 강제로 적용</string>
+  <string name="preferences__light_theme">밝음</string>
+  <string name="preferences__dark_theme">어두움</string>
+  <string name="preferences__appearance">모양새</string>
+  <string name="preferences__theme">테마</string>
+  <string name="preferences__default">기본값</string>
+  <string name="preferences__language">언어</string>
+  <string name="preferences__make_default_sms_app">기본 SMS 앱으로 지정</string>
+  <string name="preferences__make_silence_the_default_sms_mms_app">사일런스를 기본 SMS/MMS 앱으로 지정합니다.</string>
+  <string name="preferences__submit_debug_log">디버그 기록 제출</string>
+  <string name="preferences__support_wifi_calling">\'Wi-Fi 통화\' 호환 모드</string>
+  <string name="preferences__enable_if_your_device_supports_sms_mms_delivery_over_wifi">만약 기기가 Wi-Fi를 통한 SMS/MMS 전송을 사용할 경우 사용 (\'Wi-Fi 통화\' 기능을 기기에서 사용중일 경우에만)</string>
+  <string name="preferences__about">사일런스에 대해서</string>
+  <string name="preferences__about_version">버전 %s</string>
+  <string name="preferences__about_build_id">Build ID: %s</string>
+  <string name="preferences_app_protection__blocked_contacts">차단된 연락처</string>
+  <string name="preferences_notifications__display_in_notifications">알림 표시</string>
+  <string name="preferences__show_sent_time">보낸 시간 표시</string>
+  <string name="preferences__show_sent_time_instead_of_received_time_in_conversations">메세지가 도착한 시간 대신에 메세지를 보낸 시간을 표시합니다</string>
+  <string name="preferences_chats__mms">MMS</string>
+  <string name="preferences__auto_retrieve">자동 수신</string>
+  <string name="preferences__automatically_retrieve_mms_messages">MMS 메세지를 자동으로 수신합니다</string>
+  <string name="preferences__roaming_auto_retrieve">로밍 자동 수신</string>
+  <string name="preferences__automatically_retrieve_mms_when_roaming">로밍시에 MMS를 자동으로 수신합니다</string>
+  <string name="preferences_chats__message_trimming">메세지 잘라내기</string>
+  <!--****************************************-->
+  <!--menus-->
+  <!--****************************************-->
+  <!--contact_selection_list-->
+  <string name="contact_selection_list__menu_select_all">모두 선택</string>
+  <string name="contact_selection_list__menu_unselect_all">모두 선택 해제</string>
+  <string name="contact_selection_list__header">모든 연락처</string>
+  <string name="contact_selection_list__unknown_contact">새 메세지...</string>
+  <!--contact_selection-->
+  <string name="contact_selection__menu_finished">완료됨</string>
+  <!--refreshing push directory from menu-->
+  <string name="push_directory__menu_refresh">연락처 목록 새로고침</string>
+  <!--conversation_button_context-->
+  <string name="conversation_button_context__send_secure_sms">보안 SMS 전송</string>
+  <string name="conversation_button_context__send_insecure_sms">보안되지 않은 SMS 전송</string>
+  <string name="conversation_button_context__send_secure_mms">보안 MMS 전송</string>
+  <string name="conversation_button_context__send_insecure_mms">보안되지 않은 MMS 전송</string>
+  <!--conversation_callable-->
+  <string name="conversation_callable__menu_call">통화</string>
+  <!--conversation_context-->
+  <string name="conversation_context__menu_message_details">메세지 상세 정보</string>
+  <string name="conversation_context__menu_copy_text">텍스트 복사</string>
+  <string name="conversation_context__menu_delete_message">메세지 삭제</string>
+  <string name="conversation_context__menu_forward_message">메세지 전달</string>
+  <string name="conversation_context__menu_resend_message">메세지 재전송</string>
+  <!--conversation_context_image-->
+  <string name="conversation_context_image__save_attachment">첨부 파일 저장</string>
+  <!--conversation_insecure-->
+  <string name="conversation_insecure__invite">초대</string>
+  <!--conversation_insecure_no_push-->
+  <string name="conversation_insecure__menu_start_secure_session">보안 세션 시작</string>
+  <string name="conversation_insecure__security">보안</string>
+  <!--conversation_list_batch-->
+  <string name="conversation_list_batch__menu_delete_selected">선택된 항목 삭제</string>
+  <string name="conversation_list_batch__menu_select_all">모두 선택</string>
+  <string name="conversation_list_batch_archive__menu_archive_selected">기록 보관 선택됨</string>
+  <string name="conversation_list_batch_unarchive__menu_unarchive_selected">기록 보관 해제 선택됨</string>
+  <!--conversation_list-->
+  <string name="conversation_list__menu_search">검색</string>
+  <!--conversation_list_item_view-->
+  <string name="conversation_list_item_view__contact_photo_image">연락처 아바타</string>
+  <string name="conversation_list_item_view__error_alert">오류 경고</string>
+  <string name="conversation_list_item_view__archived">기록 보관됨</string>
+  <!--conversation_list_fragment-->
+  <string name="conversation_list_fragment__fab_content_description">새 대화</string>
+  <!--conversation_secure_verified-->
+  <string name="conversation_secure_verified__menu_security">보안</string>
+  <string name="conversation_secure_verified__menu_verify_identity">신원 검증</string>
+  <string name="conversation_secure_verified__menu_abort_secure_session">보안 세션 끝내기</string>
+  <!--conversation_muted-->
+  <string name="conversation_muted__unmute">음소거 해제</string>
+  <!--conversation_unmuted-->
+  <string name="conversation_unmuted__mute_notifications">알림 음소거</string>
+  <!--conversation-->
+  <string name="conversation__menu_add_attachment">첨부 파일 추가</string>
+  <string name="conversation__menu_delete_conversation">대화 삭제</string>
+  <string name="conversation__menu_archive_conversation">대화 기록 보관</string>
+  <string name="conversation__menu_unarchive_conversation">대화 기록 보관 해제</string>
+  <string name="conversation__menu_view_media">모든 이미지</string>
+  <string name="conversation__menu_conversation_settings">대화 설정</string>
+  <!--conversation_popup-->
+  <string name="conversation_popup__menu_expand_popup">팝업 확장</string>
+  <!--conversation_callable-->
+  <string name="conversation_add_to_contacts__menu_add_to_contacts">연락처에 추가</string>
+  <!--conversation_group_options-->
+  <string name="convesation_group_options__recipients_list">수신자 목록</string>
+  <string name="conversation_group_options__delivery">전송</string>
+  <string name="conversation_group_options__conversation">대화</string>
+  <string name="conversation_group_options__broadcast">방송</string>
+  <!--key_scanning-->
+  <string name="key_scanning__menu_compare">비교</string>
+  <string name="key_scanning__menu_display_your_qr_code">당신의 QR코드 표시</string>
+  <string name="key_scanning__menu_scan_contacts_qr_code">연락처의 QR코드 스캔</string>
+  <!--text_secure_normal-->
+  <string name="text_secure_normal__menu_new_message">새 메세지</string>
+  <string name="text_secure_normal__menu_new_group">새 그룹</string>
+  <string name="text_secure_normal__menu_settings">설정</string>
+  <string name="text_secure_normal__menu_clear_passphrase">잠금</string>
+  <string name="text_secure_normal__mark_all_as_read">모두 읽음으로 표시</string>
+  <!--reminder_header-->
+  <string name="reminder_header_sms_default_title">기본 SMS 앱으로 지정할까요?</string>
+  <string name="reminder_header_sms_default_text">터치하여 사일런스를 기본 SMS 앱으로 지정</string>
+  <string name="reminder_header_sms_default_button">설정</string>
+  <string name="reminder_header_sms_import_title">시스템 SMS를 가져올까요?</string>
+  <string name="reminder_header_sms_import_text">기기의 SMS 메세지를 사일런스의 암호화된 데이터베이스로 복사하기 위해 터치</string>
+  <string name="reminder_header_sms_import_button">가져오기</string>
+  <string name="reminder_header_rate_title">앱 평가하기</string>
+  <string name="reminder_header_rate_text">이 앱이 마음에 드신다면 잠시 시간을 내어 앱을 평가해주세요.</string>
+  <string name="reminder_header_rate_button">지금 평가하기</string>
+  <string name="reminder_header_close_button">닫기</string>
+  <!--MediaPreviewActivity-->
+  <string name="MediaPreviewActivity_you">당신</string>
+  <string name="MediaPreviewActivity_cant_display">이미지 미리보기에 실패했습니다</string>
+  <string name="MediaPreviewActivity_unssuported_media_type">지원하지 않는 미디어 형식</string>
+  <!--media_preview-->
+  <string name="media_preview__save_title">저장</string>
+  <!--media_overview-->
+  <string name="media_overview__save_all">모두 저장</string>
+  <!--media_preview_activity-->
+  <string name="media_preview_activity__image_content_description">이미지 미리보기</string>
+  <!--Trimmer-->
+  <string name="trimmer__deleting">삭제 중...</string>
+  <string name="trimmer__deleting_old_messages">오래된 메세지 삭제 중...</string>
+  <string name="trimmer__old_messages_successfully_deleted">오래된 메세지가 성공적으로 삭제되었습니다</string>
+  <!--transport_selection_list_item-->
+  <string name="transport_selection_list_item__transport_icon">Transport 아이콘</string>
+  <!--EOF-->
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/oneSheeldLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:src="@drawable/arduino_connectivity_activity_onesheeld_logo" />
+
+    <RelativeLayout
+        android:id="@+id/initTransContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.integreight.onesheeld.utils.customviews.OneSheeldButton
+            android:id="@+id/scanOrTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_button_selector"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/connectivity_popup_scan_button"
+            android:textColor="@drawable/white_black_text_selector"
+            android:textSize="22sp"
+            android:typeface="sans" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@android:style/Widget.ProgressBar.Large.Inverse"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"></ProgressBar>
+
+        <com.integreight.onesheeld.utils.customviews.OneSheeldTextView
+            android:id="@+id/buy_1sheeld_board_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColorLink="#E79401"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/devicesListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/connectAutomotically"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/doAutomaticConnectionToThisDeviceCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.integreight.onesheeld.utils.customviews.OneSheeldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/connectivity_popup_connect_automatically_to_this_device_checkbox"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/connectAutomotically">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                    android:id="@+id/scrollingDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:fillViewport="true"
+                    android:gravity="center"
+                    android:scrollbarThumbVertical="@drawable/transparent"
+                    android:scrollbars="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="0dp" />
+
+                        <LinearLayout
+                            android:id="@+id/devicesList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical"></LinearLayout>
+                    </RelativeLayout>
+                </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/transactionSlogan"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <com.integreight.onesheeld.utils.customviews.OneSheeldTextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/connectivity_popup_searching"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arduino_connectivity_activity_integreight_logo" />
+
+        <ProgressBar
+            android:id="@+id/small_progress"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"></ProgressBar>
+
+        <com.integreight.onesheeld.utils.customviews.OneSheeldButton
+            android:id="@+id/skip_scan"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/transparent"
+            android:text="@string/main_activity_skip"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

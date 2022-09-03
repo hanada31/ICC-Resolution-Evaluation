@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+** Copyright (c) 2012 Todoroo Inc
+**
+** See the file "LICENSE" for the full license governing this code. 
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/task_edit_double_padding_top_bottom"
+    android:layout_marginBottom="@dimen/task_edit_double_padding_top_bottom">
+
+    <TextView
+        style="@android:style/TextAppearance"
+        android:id="@+id/file_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:textColor="?attr/asTextColor" />
+
+    <ImageView
+        android:id="@+id/remove_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:alpha="@dimen/drawer_icon_alpha"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:src="@drawable/ic_cancel_24dp"
+        android:tint="?attr/icon_tint" />
+</LinearLayout>

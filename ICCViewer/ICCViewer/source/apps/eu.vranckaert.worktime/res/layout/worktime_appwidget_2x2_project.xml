@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2012 Dirk Vranckaert
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/widget_margin">
+    <LinearLayout style="@style/Widget">
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+            <ImageView style="@style/WidgetTitleBackground"
+                       android:contentDescription="@string/empty_content_description"/>
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                <TextView style="@style/WidgetTitle" android:text="@string/app_name"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          style="@style/WidgetTitleProjectName"
+                          android:layout_marginLeft="10dip"
+                          android:layout_marginRight="10dip"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:paddingTop="4dip"
+                          android:layout_below="@id/widget_bgtop">
+                <Button android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@id/widget_actionbtn"
+                        android:textSize="@dimen/widget_btn_text"/>
+                <TextView android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:ellipsize="end"
+                          android:text="@string/lbl_widget_instructions"
+                          android:singleLine="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

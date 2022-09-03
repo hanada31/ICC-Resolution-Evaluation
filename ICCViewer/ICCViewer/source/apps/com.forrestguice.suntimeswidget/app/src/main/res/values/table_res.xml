@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values\table_res.xml :: typical sized phone (width <= 320dp) -->
+<resources>
+
+    <integer name="clock_amppm_maxems">2</integer>
+    <dimen name="clock_note_maxwidth">125dp</dimen>
+
+    <dimen name="solsticetable_column0_width">130dp</dimen>
+    <dimen name="moonphase_column0_width">75dp</dimen>
+
+    <dimen name="table_cell_spacing">10dp</dimen>     <!-- spacing between rows -->
+    <integer name="table_weight0">9</integer>
+    <integer name="table_weight1">1</integer>
+
+    <dimen name="table_rise_leftMargin">18dp</dimen> <!-- margins: rise column -->
+    <dimen name="table_rise_rightMargin">0dp</dimen>
+
+    <dimen name="table_set_leftMargin">28dp</dimen>  <!-- margins: set column -->
+    <dimen name="table_set_rightMargin">0dp</dimen>
+
+    <dimen name="table_moon_startEndMargin">6dp</dimen>
+
+    <!-- table heading: date field (col 0) -->
+    <dimen name="table_heading_date_fontsize">14sp</dimen>
+    <integer name="table_heading_date_maxems">7</integer>
+    <integer name="table_heading_date_maxlength">32</integer>
+    <integer name="table_heading_date_maxlines">2</integer>
+
+    <style name="TableHeadDateView">                                     <!-- date header text -->
+        <item name="android:textColor">?attr/date_buttonSelector</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/table_heading_date_fontsize</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/table_heading_date_maxlines</item>
+        <item name="android:maxLength">@integer/table_heading_date_maxlength</item>
+        <item name="android:maxEms">@integer/table_heading_date_maxems</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_gravity">bottom|start</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- table heading: rise/set field (col 1,2) -->
+    <dimen name="table_heading_label_fontsize">14sp</dimen>
+    <integer name="table_heading_label_maxlines">1</integer>
+    <dimen name="table_heading_label_maxdim">84dp</dimen>
+
+    <dimen name="table_heading_iconsize">24dp</dimen>
+
+    <style name="TableHeadImageView" parent="SunsetTimeImageView">      <!-- rise/set header icons-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="TableHeadTextView" parent="SunsetTimeTextView">        <!-- rise/set header text -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/table_heading_label_fontsize</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/table_heading_label_maxlines</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- lightmap -->
+    <dimen name="lightmap_height">12dp</dimen>
+    <dimen name="lightmap_clickable_height">16dp</dimen>
+
+</resources>

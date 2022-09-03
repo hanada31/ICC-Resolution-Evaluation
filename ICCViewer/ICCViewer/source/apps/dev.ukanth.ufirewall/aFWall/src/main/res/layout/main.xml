@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/itemBackground"
+        android:duplicateParentState="false"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize" />
+
+        <LinearLayout
+            android:id="@+id/profileOption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/profileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/profiles"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/profileGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/filerOption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="visible">
+
+            <RadioGroup
+                android:id="@+id/appFilterGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rpkg_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/pkg_all" />
+
+                <RadioButton
+                    android:id="@+id/rpkg_core"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pkg_core" />
+
+                <RadioButton
+                    android:id="@+id/rpkg_sys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pkg_sys" />
+
+                <RadioButton
+                    android:id="@+id/rpkg_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pkg_user" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0px">
+
+            <View
+                android:id="@+id/imageHolder"
+                android:layout_width="32dp"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/img_lan"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/lan_title"
+                android:clickable="true"
+                android:src="@drawable/ic_lan"
+                android:visibility="gone"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_wifi"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/wifi"
+                android:clickable="true"
+                android:src="@drawable/ic_wifi"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_3g"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/data"
+                android:clickable="true"
+                android:src="@drawable/ic_mobiledata"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_roam"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/roaming"
+                android:clickable="true"
+                android:src="@drawable/ic_roam"
+                android:visibility="gone"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_vpn"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:clickable="true"
+                android:contentDescription="@string/vpn_profile"
+                android:src="@drawable/ic_vpn"
+                android:visibility="gone"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_tor"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:clickable="true"
+                android:contentDescription="@string/tor_profile"
+                android:src="@drawable/ic_tor"
+                android:visibility="gone"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_invert"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/invert_all"
+                android:clickable="true"
+                android:src="@drawable/ic_invert"></ImageView>
+
+            <ImageView
+                android:id="@+id/img_reset"
+                android:layout_width="32dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/legend_clear"
+                android:clickable="true"
+                android:src="@drawable/ic_clean"></ImageView>
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fastScrollEnabled="true">
+            </ListView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_apply" />
+
+    </LinearLayout>
+
+</FrameLayout>

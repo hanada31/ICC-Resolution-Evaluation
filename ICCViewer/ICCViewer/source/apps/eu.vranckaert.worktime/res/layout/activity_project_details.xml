@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2012 Dirk Vranckaert
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical"
+                  android:layout_above="@id/punch_bar_container"
+                  android:layout_alignParentTop="true">
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/projectComment"
+                  style="@style/WorkTimeDetailsInfo"
+                  android:text="@string/lbl_project_details_no_comment"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"/>
+        <TableLayout android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:stretchColumns="1"
+                     android:paddingTop="10dip"
+                     android:paddingBottom="10dip">
+            <TableRow android:paddingLeft="10dip" android:paddingRight="10dip">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/lbl_project_details_total_time_spent"
+                          style="@style/WorkTimeDetailsInfo"
+                          android:paddingRight="5dip"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_project_details_total_time_spent"
+                          style="@style/WorkTimeDetailsInfo"
+                          android:text="@string/loading"/>
+            </TableRow>
+            <TableRow android:paddingLeft="10dip" android:paddingRight="10dip">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/lbl_project_details_punch_in_count"
+                          style="@style/WorkTimeDetailsInfo"
+                          android:paddingRight="5dip"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/txt_project_details_punch_in_count"
+                          style="@style/WorkTimeDetailsInfo"
+                          android:text="@string/loading"/>
+            </TableRow>
+        </TableLayout>
+        <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="22sp"
+                  android:textAllCaps="true"
+                  android:textStyle="bold"
+                  android:text="@string/lbl_project_details_tasks_title"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"/>
+        <ListView android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:id="@android:id/list"/>
+        <TextView android:id="@android:id/empty"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  android:text="@string/lbl_project_details_tasks_nothing_found"/>
+    </LinearLayout>
+
+    <include layout="@layout/comp_start_stop_time_registration"/>
+</RelativeLayout>

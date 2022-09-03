@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~    Calendula - An assistant for personal medication management.
+  ~    Copyright (C) 2014-2018 CiTIUS - University of Santiago de Compostela
+  ~
+  ~    Calendula is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/medicines_list_item_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="72dp"
+            android:background="#efefef"/>
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitStart"
+            tools:src="@drawable/icp_pill"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageButton"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/medicines_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#222"
+                android:textSize="18sp"
+                tools:text="Medicine name placeholder, possibly multiline"/>
+
+            <TextView
+                android:id="@+id/stock_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/no_stock_info_msg"
+                android:textColor="@color/agenda_item_title"
+                android:textSize="15dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.9"
+            android:background="@drawable/simple_highlight_click_selector"
+            android:padding="0dp"
+            android:src="@drawable/icprospect"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

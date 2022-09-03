@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/create_key_buttons">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/create_key_final_text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/label_name"
+                android:textColor="?attr/colorTertiaryText"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@string/label_email"
+                android:textColor="?attr/colorTertiaryText"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="?android:attr/listDivider" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/create_key_upload"
+                android:id="@+id/create_key_upload" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/custom_key_layout"
+                android:visibility="gone"
+                tools:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Using a custom key configuration!" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Revert"
+                        android:id="@+id/revert_key_configuration" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="?android:attr/listDivider" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/create_key_final_robot_text"
+                android:textColor="?attr/colorPrimary"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:drawableLeft="@drawable/create_key_robot"
+                android:drawablePadding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorButtonRow"
+        android:id="@+id/create_key_buttons">
+
+        <TextView
+            android:id="@+id/create_key_back_button"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/btn_back"
+            android:textAllCaps="true"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:drawableLeft="@drawable/ic_chevron_left_grey_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="left|center_vertical"
+            android:clickable="true"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <TextView
+            android:id="@+id/create_key_next_button"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/btn_create_key"
+            android:textAllCaps="true"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:drawableRight="@drawable/ic_key_plus_grey600_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="right|center_vertical"
+            android:clickable="true"
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+
+</RelativeLayout>

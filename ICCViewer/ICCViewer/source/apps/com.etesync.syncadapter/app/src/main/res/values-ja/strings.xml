@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--common strings-->
+  <string name="help">ヘルプ</string>
+  <string name="manage_accounts">アカウントの管理</string>
+  <string name="please_wait">しばらくお待ちください …</string>
+  <string name="send">送信</string>
+  <!--startup dialogs-->
+  <string name="startup_battery_optimization">バッテリー最適化</string>
+  <string name="startup_dont_show_again">次回から表示しない</string>
+  <!--AboutActivity-->
+  <string name="about_license_terms">ライセンス規約</string>
+  <string name="about_license_info_no_warranty">このプログラムは完全に無保証で提供されます。これはフリーソフトウェアで、特定の条件下での再頒布を歓迎します。</string>
+  <!--global settings-->
+  <string name="logging_to_external_storage">外部ストレージにログ: %s</string>
+  <string name="logging_to_external_storage_warning">できる限り早くログを削除してください!</string>
+  <string name="logging_couldnt_create_file">外部ログファイルを作成できませんでした: %s</string>
+  <string name="logging_no_external_storage">外部ストレージが見つかりません</string>
+  <!--AccountsActivity-->
+  <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+  <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
+  <string name="navigation_drawer_about">アプリについて / ライセンス</string>
+  <string name="navigation_drawer_settings">設定</string>
+  <string name="navigation_drawer_external_links">外部リンク</string>
+  <string name="navigation_drawer_website">Web サイト</string>
+  <string name="navigation_drawer_faq">FAQ</string>
+  <!--AccountUpdateService-->
+  <!--AppSettingsActivity-->
+  <string name="app_settings">設定</string>
+  <string name="app_settings_user_interface">ユーザーインターフェイス</string>
+  <string name="app_settings_reset_hints">ヒントをリセット</string>
+  <string name="app_settings_reset_hints_summary">以前非表示にしたヒントを、再度有効にします</string>
+  <string name="app_settings_reset_hints_success">すべてのヒントが再度表示されます</string>
+  <string name="app_settings_connection">接続</string>
+  <string name="app_settings_override_proxy">プロキシ設定を上書き</string>
+  <string name="app_settings_override_proxy_on">カスタムのプロキシ設定を使用する</string>
+  <string name="app_settings_override_proxy_off">システムデフォルトのプロキシ設定を使用する</string>
+  <string name="app_settings_override_proxy_host">HTTP プロキシのホスト名</string>
+  <string name="app_settings_override_proxy_port">HTTP プロキシのポート</string>
+  <string name="app_settings_security">セキュリティ</string>
+  <string name="app_settings_distrust_system_certs">システム証明書の信頼を解除</string>
+  <string name="app_settings_distrust_system_certs_on">システムとユーザーが追加したCAを信頼しない</string>
+  <string name="app_settings_distrust_system_certs_off">システムとユーザーが追加したCAを信頼する (推奨)</string>
+  <string name="app_settings_reset_certificates">(未)信頼済証明書をリセット</string>
+  <string name="app_settings_reset_certificates_summary">すべてのカスタム証明書の信頼をリセット</string>
+  <string name="app_settings_reset_certificates_success">すべてのカスタム証明書をクリアしました</string>
+  <string name="app_settings_debug">デバッグ</string>
+  <string name="app_settings_log_to_external_storage">外部ファイルにログ出力</string>
+  <string name="app_settings_log_to_external_storage_on">(可能な場合) 外部ストレージにログ出力します</string>
+  <string name="app_settings_log_to_external_storage_off">外部ファイルログ出力は無効です</string>
+  <string name="app_settings_show_debug_info">デバッグ情報を表示</string>
+  <string name="app_settings_show_debug_info_details">ソフトウェアと設定の詳細を表示/共有</string>
+  <!--AccountActivity-->
+  <string name="account_synchronize_now">今すぐ同期</string>
+  <string name="account_synchronizing_now">同期中</string>
+  <string name="account_settings">アカウント設定</string>
+  <string name="account_delete">アカウントを削除</string>
+  <string name="account_delete_confirmation_title">アカウントを削除してもよろしいですか?</string>
+  <string name="account_delete_confirmation_text">アドレス帳、カレンダー、タスクリストのローカルコピーがすべて削除されます。</string>
+  <!--PermissionsActivity-->
+  <string name="permissions_calendar">カレンダー アクセス許可</string>
+  <string name="permissions_calendar_request">カレンダー アクセス許可の要求</string>
+  <string name="permissions_contacts">連絡先アクセス許可</string>
+  <string name="permissions_contacts_request">連絡先アクセス許可の要求</string>
+  <string name="permissions_opentasks">OpenTasks アクセス許可</string>
+  <string name="permissions_opentasks_request">OpenTasks アクセス許可の要求</string>
+  <!--AddAccountActivity-->
+  <string name="login_title">アカウントを追加</string>
+  <string name="login_email_address">メールアドレス</string>
+  <string name="login_email_address_error">有効なメールアドレスが必要です</string>
+  <string name="login_password">パスワード</string>
+  <string name="login_password_required">パスワードが必要です</string>
+  <string name="login_back">戻る</string>
+  <string name="login_configuration_detection">設定の検出</string>
+  <string name="login_querying_server">しばらくお待ちください。サーバーに問い合わせ中…</string>
+  <string name="login_view_logs">ログを表示</string>
+  <!--AccountSettingsActivity-->
+  <string name="settings_title">設定: %s</string>
+  <string name="settings_authentication">認証</string>
+  <string name="settings_password">パスワード</string>
+  <string name="settings_enter_password">パスワードを入力:</string>
+  <string name="settings_sync">同期</string>
+  <string name="settings_sync_interval_contacts">連絡先同期間隔</string>
+  <string name="settings_sync_summary_manually">手動のみ</string>
+  <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%s + ローカルの変更時はすぐに</string>
+  <string name="settings_sync_summary_not_available">利用不可</string>
+  <string name="settings_sync_interval_calendars">カレンダー同期間隔</string>
+  <string-array name="settings_sync_interval_names">
+    <item>手動のみ</item>
+    <item>5 分ごと</item>
+    <item>10 分ごと</item>
+    <item>15 分ごと</item>
+    <item>1 時間ごと</item>
+    <item>2 時間ごと</item>
+    <item>4 時間ごと</item>
+    <item>1 日 1 回</item>
+  </string-array>
+  <string name="settings_sync_wifi_only">WiFi でのみ同期</string>
+  <string name="settings_sync_wifi_only_on">同期は WiFi 接続に制限されます</string>
+  <string name="settings_sync_wifi_only_off">接続の種類は考慮されません</string>
+  <string name="settings_sync_wifi_only_ssid">WiFi SSID 制限</string>
+  <string name="settings_sync_wifi_only_ssid_on">%s でのみ同期します</string>
+  <string name="settings_sync_wifi_only_ssid_off">すべての WiFi 接続を使用することができます</string>
+  <string name="settings_sync_wifi_only_ssid_message">このネットワークで同期を制限する WiFi ネットワーク (SSID) の名前を入力してください。すべての WiFi 接続は空白のままにします。</string>
+  <!--collection management-->
+  <string name="create_addressbook">アドレス帳を作成</string>
+  <string name="create_addressbook_display_name_hint">マイ アドレス帳</string>
+  <string name="create_collection_creating">コレクションの作成中</string>
+  <string name="create_collection_display_name">このコレクションの表示名 (タイトル):</string>
+  <string name="create_collection_display_name_required">タイトルが必要です</string>
+  <string name="create_collection_description">説明 (オプション):</string>
+  <string name="create_collection_create">作成</string>
+  <string name="delete_collection">コレクションを削除</string>
+  <string name="delete_collection_confirm_title">よろしいですか?</string>
+  <string name="delete_collection_confirm_warning">このコレクション (%s) とそのすべてのデータがサーバーから削除されます。</string>
+  <string name="delete_collection_deleting_collection">コレクションの削除中</string>
+  <!--ExceptionInfoFragment-->
+  <string name="exception">エラーが発生しました。</string>
+  <string name="exception_httpexception">HTTP エラーが発生しました。</string>
+  <string name="exception_ioexception">I/O エラーが発生しました。</string>
+  <string name="exception_show_details">詳細を表示</string>
+  <!--sync errors and DebugInfoActivity-->
+  <string name="debug_info_title">デバッグ情報</string>
+  <string name="sync_error_calendar">カレンダーの同期に失敗しました (%s)</string>
+  <string name="sync_error">%s 時にエラー</string>
+  <string name="sync_error_http_dav">%s 時にサーバーエラー</string>
+  <string name="sync_error_local_storage">%s 時にデータベースエラー</string>
+  <!--cert4android-->
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~    Calendula - An assistant for personal medication management.
+  ~    Copyright (C) 2014-2018 CiTIUS - University of Santiago de Compostela
+  ~
+  ~    Calendula is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <string name="app_name" translatable="false">Calendula</string>
+
+    <!-- Med schedules -->
+
+    <string-array name="schedules_array">
+        <item>@string/once_a_day</item>
+        <item>@string/twice_a_day</item>
+        <item>@string/tree_times_a_day</item>
+        <item>@string/four_times_a_day</item>
+    </string-array>
+
+    <string-array name="day_names">
+        <item>@string/day_monday_short</item>
+        <item>@string/day_tuesday_short</item>
+        <item>@string/day_wednesday_short</item>
+        <item>@string/day_thursday_short</item>
+        <item>@string/day_friday_short</item>
+        <item>@string/day_saturday_short</item>
+        <item>@string/day_sunday_short</item>
+    </string-array>
+
+    <string-array name="moods">
+        <item>@string/mood_very_bad</item>
+        <item>@string/mood_bad</item>
+        <item>@string/mood_neutral</item>
+        <item>@string/mood_good</item>
+        <item>@string/mood_very_good</item>
+    </string-array>
+
+    <string name="schedule_custom_rule_text" translatable="false">&lt;u> %1$s &lt;/u></string>
+
+    <string-array name="schedule_repeat_types">
+        <item>@string/schedule_repeat_type_everyday</item>
+        <item>@string/schedule_repeat_type_some_week_days</item>
+        <item>@string/schedule_repeat_type_interval</item>
+        <!--<item>Customize</item>-->
+    </string-array>
+
+    <string-array name="schedule_repeat_frequency_units">
+        <item>@string/schedule_repeat_frequency_days</item>
+        <item>@string/schedule_repeat_frequency_weeks</item>
+        <item>@string/schedule_repeat_frequency_months</item>
+    </string-array>
+
+    <string-array name="schedule_cycles" translatable="false">
+        <item>21 + 7</item>
+        <item>22 + 6</item>
+        <item>23 + 5</item>
+        <item>24 + 4</item>
+        <item>26 + 2</item>
+        <item>35 + 7</item>
+        <item>42 + 7</item>
+        <item>63 + 7</item>
+        <item>84 + 7</item>
+    </string-array>
+
+
+    <string-array name="calendar_weekday_names">
+        <item>@string/schedule_day_selector_none</item>
+        <item>@string/schedule_day_selector_su</item>
+        <item>@string/schedule_day_selector_mo</item>
+        <item>@string/schedule_day_selector_tu</item>
+        <item>@string/schedule_day_selector_we</item>
+        <item>@string/schedule_day_selector_th</item>
+        <item>@string/schedule_day_selector_fr</item>
+        <item>@string/schedule_day_selector_sa</item>
+    </string-array>
+
+    <string name="title_activity_patient_detail" translatable="false">PatientDetailActivity</string>
+    <string name="title_activity_about" translatable="false">AboutActivity</string>
+    <string name="title_activity_webview" translatable="false">WebViewActivity</string>
+    <string name="title_activity_allergies_search" translatable="false">AllergiesSearchActivity</string>
+
+    <string-array name="pref_notification_vibration_titles">
+        <item>@string/pref_notification_vibration_always</item>
+        <item>@string/pref_notification_vibration_alarm_audible</item>
+        <item>@string/pref_notification_vibration_alarm_silent</item>
+        <item>@string/pref_notification_vibration_never</item>
+    </string-array>
+
+    <string-array name="pref_alarm_repeat_titles">
+        <item>@string/pref_alarm_repeat_five_min</item>
+        <item>@string/pref_alarm_repeat_fifteen_min</item>
+        <item>@string/pref_alarm_repeat_thirty_min</item>
+        <item>@string/pref_alarm_repeat_sixty_min</item>
+    </string-array>
+
+    <string-array name="pref_alarm_reminder_window_titles">
+        <item>@string/pref_alarm_reminder_thirty_min</item>
+        <item>@string/pref_alarm_reminder_one_hour</item>
+        <item>@string/pref_alarm_reminder_two_hours</item>
+    </string-array>
+
+    <string-array name="pref_available_databases">
+        <item>@string/database_none_display</item>
+        <item>@string/database_aemps_display</item>
+        <item>@string/database_us_display</item>
+        <!--<item>@string/database_uk_display</item>-->
+    </string-array>
+
+    <string-array name="pref_available_databases_values">
+        <item>@string/database_none_id</item>
+        <item>@string/database_aemps_id</item>
+        <item>@string/database_us_id</item>
+        <!--<item>@string/database_uk_id</item>-->
+    </string-array>
+
+
+    <string-array name="pref_stock">
+        <item>@string/pref_stock_do_not_warn</item>
+        <item>@string/pref_stock_warn_one_week</item>
+        <item>@string/pref_stock_warn_two_weeks</item>
+        <item>@string/pref_stock_warn_three_weeks</item>
+    </string-array>
+
+    <!-- Prescription databases -->
+    <string name="database_none_id" translatable="false">None</string>
+    <string name="database_aemps_id" translatable="false">AEMPS</string>
+    <string name="database_us_id" translatable="false">US</string>
+    <string name="database_setting_up_id" translatable="false">DB_ID_SETTING_UP</string>
+    <!--<string name="database_uk_id">UK</string>-->
+
+    <string-array name="pref_notification_vibration_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_alarm_repeat_values" translatable="false">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="pref_alarm_reminder_window_values" translatable="false">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+
+    <string-array name="pref_stock_values" translatable="false">
+        <item>-1</item>
+        <item>7</item>
+        <item>14</item>
+        <item>21</item>
+    </string-array>
+
+    <string-array name="delays_array">
+        <item>@string/delays_one_min</item>
+        <item>@string/delays_five_min</item>
+        <item>@string/delays_fifteen_min</item>
+        <item>@string/delays_thirty_min</item>
+        <item>@string/delays_sixty_min</item>
+    </string-array>
+
+
+    <string name="database_file_location" translatable="false">%1$s%2$s/%2$s-%3$s.db</string>
+    <string name="ml" translatable="false">ml</string>
+    <string name="not_available_short" translatable="false">N/A</string>
+    <string name="presentation_item_tag" translatable="false">presentation_type</string>
+
+    <string-array name="calendar_pickup_reminder_values">
+        <item>@string/calendar_pickup_reminder_one_day_before</item>
+        <item>@string/calendar_pickup_reminder_two_days_before</item>
+        <item>@string/calendar_pickup_reminder_three_days_before</item>
+    </string-array>
+
+    <string-array name="pref_lock_after_names">
+        <item>@string/pref_lock_30s</item>
+        <item>@string/pref_lock_1m</item>
+        <item>@string/pref_lock_2m</item>
+        <item>@string/pref_lock_5m</item>
+    </string-array>
+
+    <string-array name="pref_lock_after_values" translatable="false">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+    </string-array>
+
+    <string-array name="hourly_repetition_display" translatable="false">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

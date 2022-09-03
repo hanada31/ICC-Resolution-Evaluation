@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+~ Copyright (c) 2009 Andrew <andrewdubya@gmail>
+~ Copyright (c) 2009 Nicolas Raoul <nicolas.raoul@gmail.com>
+~ Copyright (c) 2009 Edu Zamora <edu.zasu@gmail.com>
+~ Copyright (c) 2009 Casey Link <unnamedrambler@gmail.com>
+~ Copyright (c) 2011 Norbert Nagold <norbert.nagold@gmail.com>
+~
+~ This program is free software; you can redistribute it and/or modify it under
+~ the terms of the GNU General Public License as published by the Free Software
+~ Foundation; either version 3 of the License, or (at your option) any later
+~ version.
+~
+~ This program is distributed in the hope that it will be useful, but WITHOUT ANY
+~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+~
+~ You should have received a copy of the GNU General Public License along with
+~ this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ichi2.anki"
+          android:installLocation="auto"
+          android:versionCode="20804300"
+          android:versionName="2.8.4">
+
+    <!--
+        The version number is of the form:
+          <major>.<minor>.<maintenance>[dev|alpha<build>|beta<build>|]
+        The <build> is only present for alpha and beta releases (e.g., 2.0.4alpha2 or 2.0.4beta4), developer builds do
+        not have a build number (e.g., 2.0.4dev) and official releases only have three components (e.g., 2.0.4).
+
+        The version code is derived from the version name as follows:
+          AAbbCCtDD
+        AA: 2-digit decimal number (with leading zeros omitted) representing the major version
+        bb: 2-digit decimal number representing the minor version
+        CC: 2-digit decimal number representing the maintenance version
+        t: 1-digit decimal number representing the type of the build
+          0: developer build
+          1: alpha release
+          2: beta release
+          3: public release
+        DD: 2-digit decimal number representing the build
+          00 for internal builds and public releases
+          alpha/beta build number for alpha/beta releases
+
+        This ensures the correct ordering between the various types of releases (dev < alpha < beta < release) which is
+        needed for upgrades to be offered correctly.
+    -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="com.ichi2.anki.permission.READ_WRITE_DATABASE"
+                android:label="@string/read_write_permission_label"
+                android:description="@string/read_write_permission_description"
+                android:protectionLevel="dangerous" />
+    <!-- custom tabs library has minimum SDK of 16 -->
+    <uses-sdk tools:overrideLibrary="android.support.customtabs, com.getbase.floatingactionbutton"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.ichi2.anki.AnkiDroidApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/anki"
+        android:roundIcon="@mipmap/anki_round"
+        android:label="@string/app_name"
+        android:windowSoftInputMode="adjustResize"
+        android:largeHeap="true">
+        <activity
+            android:name="com.ichi2.anki.IntentHandler"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <!-- *.apkg matcher. NOTE: when pathPattern is used, host and scheme must also be specified -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.apkg"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.apkg"
+                    android:scheme="https" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.apkg"
+                    android:scheme="content" />
+                <data
+                    android:host="*"
+                    android:mimeType="*/*"
+                    android:pathPattern=".*\\.apkg"
+                    android:scheme="file" />
+            </intent-filter>
+            <!-- MIME type matcher for .apkg files coming from providers like gmail which hide the file extension -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/apkg"/>
+                <data android:mimeType="application/vnd.anki"/>
+                <data android:mimeType="application/x-apkg"/>
+                <data android:mimeType="application/octet-stream" android:scheme="content"/>
+                <data android:mimeType="application/zip" android:scheme="content"/>
+            </intent-filter>
+
+            <!-- Tasker DO_SYNC intent -->
+            <intent-filter>
+                <action android:name="com.ichi2.anki.DO_SYNC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme_Dark_Compat.Launcher"
+            android:name="com.ichi2.anki.DeckPicker"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.ichi2.anki.StudyOptionsActivity"
+            android:exported="false"
+            android:configChanges="keyboardHidden|locale|orientation|screenSize"
+            android:label="StudyOptions"
+            android:parentActivityName=".DeckPicker">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ichi2.anki.DeckPicker" />
+        </activity>
+        <activity
+            android:name="com.ichi2.anki.CardBrowser"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="Card Browser"
+            android:parentActivityName=".DeckPicker">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ichi2.anki.DeckPicker" />
+        </activity>
+        <activity
+        android:name=".ModelBrowser"
+        android:exported="false"
+        android:configChanges="keyboardHidden|orientation|locale|screenSize"
+        android:label="@string/model_browser_label" />
+        <activity
+            android:name=".ModelFieldEditor"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/model_editor_label" />
+        <activity
+            android:name="com.ichi2.anki.Reviewer"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".DeckPicker">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ichi2.anki.DeckPicker" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ichi2.anki.VideoPlayer"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.ichi2.anki.MyAccount"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/menu_my_account" />
+        <activity
+            android:name="com.ichi2.anki.Preferences"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/preferences_title"
+            android:theme="@style/LegacyActionBarLight"/>
+        <activity
+            android:name="com.ichi2.anki.DeckOptions"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/deckpreferences_title"
+            android:theme="@style/LegacyActionBarLight"/>
+        <activity
+            android:name=".FilteredDeckOptions"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/deckpreferences_title"
+            android:theme="@style/LegacyActionBarLight"/>
+        <activity
+            android:name="com.ichi2.anki.Info"
+            android:exported="false"
+            android:configChanges="locale"
+            android:label="@string/about_title" />
+        <activity
+            android:name="com.ichi2.anki.NoteEditor"
+            android:exported="true"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/fact_adder_intent_title" >
+            <intent-filter>
+                <action android:name="org.openintents.action.CREATE_FLASHCARD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ichi2.anki.dialogs.AnkiDroidCrashReportDialog"
+            android:theme="@style/Theme.CrashReportDialog"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true" />
+        <activity
+            android:name="com.ichi2.anki.Statistics"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:parentActivityName=".DeckPicker">
+            <!-- The meta-data element is needed for versions lower than 4.1 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ichi2.anki.DeckPicker" />
+        </activity>
+        <activity
+            android:exported="false"
+            android:name="com.ichi2.anki.Previewer"
+            android:configChanges="locale"
+            android:label="@string/preview_title" />
+
+        <service android:name="com.ichi2.anki.services.NotificationService" />
+
+        <!-- small widget -->
+        <receiver
+            android:name="com.ichi2.widget.AnkiDroidWidgetSmall"
+            android:label="@string/widget_small" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_small" />
+        </receiver>
+
+        <!-- "Add Note" widget -->
+        <receiver
+            android:name="com.ichi2.widget.AddNoteWidget"
+            android:label="@string/widget_add_note">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_add_note" />
+        </receiver>
+
+        <!-- Service to perform web API queries -->
+        <service android:name="com.ichi2.widget.AnkiDroidWidgetSmall$UpdateService" />
+
+        <receiver
+            android:name="com.ichi2.anki.receiver.SdCardReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:exported="false"
+            android:name=".multimediacard.activity.MultimediaEditFieldActivity"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/title_activity_edit_text" >
+        </activity>
+        <activity
+            android:exported="false"
+            android:name="com.ichi2.anki.multimediacard.activity.TranslationActivity"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/title_activity_translation" >
+        </activity>
+        <activity
+            android:exported="false"
+            android:name="com.ichi2.anki.multimediacard.activity.LoadPronounciationActivity"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/title_activity_load_pronounciation" >
+        </activity>
+        <activity
+            android:exported="false"
+            android:name="com.ichi2.anki.CardTemplateEditor"
+            android:configChanges="keyboardHidden|orientation|locale|screenSize"
+            android:label="@string/title_activity_template_editor"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <!-- stuff for Samsung Multi-Window -->
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.minimode.icon.portrait.normal"
+            android:resource="@drawable/anki" />
+        <meta-data
+            android:name="com.sec.minimode.icon.landscape.normal"
+            android:resource="@drawable/anki" />
+
+        <provider
+            android:name=".provider.CardContentProvider"
+            android:authorities="com.ichi2.anki.flashcards"
+            android:enabled="true"
+            android:exported="true" >
+            <meta-data android:name="com.ichi2.anki.provider.spec" android:value="2" />
+        </provider>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ichi2.anki.apkgfileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

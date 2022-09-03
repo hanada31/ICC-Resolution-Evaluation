@@ -1,0 +1,13 @@
+<org.tasks.ui.DraggableSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.todoroo.astrid.ui.DraggableListView
+        android:id="@android:id/list"
+        style="@style/TaskListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"/>
+
+</org.tasks.ui.DraggableSwipeRefreshLayout>

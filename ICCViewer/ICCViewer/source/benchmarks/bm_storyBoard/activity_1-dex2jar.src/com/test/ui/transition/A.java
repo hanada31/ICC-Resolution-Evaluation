@@ -1,0 +1,32 @@
+package com.test.ui.transition;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
+public class A extends AppCompatActivity
+{
+  protected void onCreate(Bundle paramBundle)
+  {
+    super.onCreate(paramBundle);
+    setContentView(2131361819);
+    setSupportActionBar((Toolbar)findViewById(2131230892));
+    if (Math.random() > 0.8D)
+    {
+      startActivity(new Intent(this, MainActivity.class));
+      return;
+    }
+    if (Math.random() > 0.5D)
+    {
+      startActivity(new Intent(this, NextActivity.class));
+      return;
+    }
+    startActivity(new Intent(this, B.class));
+  }
+}
+
+/* Location:           D:\SoftwareData\AcademicTool\安卓APK分析\jd-gui-0.3.5.windows\jars\activity_1-dex2jar.jar
+ * Qualified Name:     com.test.ui.transition.A
+ * JD-Core Version:    0.6.2
+ */

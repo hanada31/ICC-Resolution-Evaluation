@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+    <style name="Theme" parent="@style/Theme.AppCompat.Light">
+        <item name="switchStyle">@style/Widget.Holo.Light.CompoundButton.Switch</item>
+        <item name="switchStyle">@style/iNatAppThemeSwitch</item>
+    </style>
+
+    <style name="iNatAppThemeSwitch" parent="Widget.Holo.Light.CompoundButton.Switch">
+        <item name="track">@drawable/inatapptheme_switch_track_holo_light</item>
+        <item name="thumb">@drawable/inatapptheme_switch_inner_holo_light</item>
+        <item name="switchTextAppearance">@style/iNatAppTextAppearanceSwitch</item>
+        <item name="textOn">@string/yes</item>
+        <item name="textOff">@string/no</item>
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+    </style>
+    -->
+
+    <style name="iNatAppTextAppearanceSwitch" parent="android:TextAppearance.Small">
+        <item name="android:textColor">#ff3c3f41</item>
+    </style>
+
+    <style name="PreferenceThemeOverlay">
+        <item name="preferenceScreenStyle">@style/Preference.PreferenceScreen</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment</item>
+        <item name="preferenceCategoryStyle">@style/Preference.Category</item>
+        <item name="preferenceStyle">@style/Preference</item>
+        <item name="preferenceInformationStyle">@style/Preference.Information</item>
+        <item name="checkBoxPreferenceStyle">@style/Preference.CheckBoxPreference</item>
+        <item name="switchPreferenceCompatStyle">@style/Preference.SwitchPreferenceCompat</item>
+        <item name="dialogPreferenceStyle">@style/Preference.DialogPreference</item>
+        <item name="editTextPreferenceStyle">@style/Preference.DialogPreference.EditTextPreference</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList</item>
+    </style>
+
+  <style name="iNatAppTheme" parent="@style/_iNatAppTheme"/>
+
+    <style name="_iNatAppTheme" parent="@style/Theme.AppCompat.Light">
+        <!--<item name="switchStyle">@style/Widget.Holo.Light.CompoundButton.Switch</item>-->
+        <!-- <item name="android:typeface">monospace</item> -->
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+
+        <item name="android:editTextStyle">@style/EditTextiNatAppTheme</item>
+
+        <item name="android:textColorHighlight">#99669900</item>
+
+        <item name="android:checkboxStyle">@style/CheckBoxiNatAppTheme</item>
+
+        <item name="android:radioButtonStyle">@style/RadioButtoniNatAppTheme</item>
+
+        <item name="android:buttonStyle">@style/ButtoniNatAppTheme</item>
+
+        <item name="android:imageButtonStyle">@style/ImageButtoniNatAppTheme</item>
+
+        <item name="android:spinnerStyle">@style/SpinneriNatAppTheme</item>
+
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemiNatAppTheme</item>
+
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBariNatAppTheme</item>
+
+        <item name="android:buttonStyleToggle">@style/ToggleiNatAppTheme</item>
+
+        <item name="android:listViewStyle">@style/ListViewiNatAppTheme</item>
+
+        <item name="android:listViewWhiteStyle">@style/ListViewiNatAppTheme.White</item>
+
+        <item name="android:spinnerItemStyle">@style/SpinnerItemiNatAppTheme</item>
+    </style>
+
+</resources>

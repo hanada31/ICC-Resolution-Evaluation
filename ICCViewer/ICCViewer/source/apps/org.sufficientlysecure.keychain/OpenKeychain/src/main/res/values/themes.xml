@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.Keychain.Light" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#7bad45</item>
+        <item name="colorPrimaryDark">#6c983d</item>
+        <item name="colorAccent">#2196f3</item>
+        <item name="colorBrightToolbar">#dddddd</item>
+
+        <item name="colorFab">#2196f3</item>
+        <item name="colorFabPressed">#1976d2</item>
+        <item name="colorFabText">#fafafa</item>
+
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="fabLabelBackgroundDrawable">@drawable/fab_label_background</item>
+
+        <item name="colorTabText">#70ffffff</item>
+        <item name="colorTabTextSelected">#ffffff</item>
+        <item name="colorTabIndicator">#ffffff</item>
+
+        <item name="colorEmphasis">#2196f3</item>
+        <item name="colorButtonRow">#33cccccc</item>
+        <item name="colorLogBackground">#cecbce</item>
+        <item name="colorCardViewBackground">#ffffff</item>
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="cardViewHeaderDrawable">@drawable/cardview_header</item>
+
+        <item name="colorText">#000000</item>
+        <item name="colorHeaderText">#212121</item>
+        <item name="colorTertiaryText">#808080</item>
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="sectionHeaderDrawable">@drawable/section_header_light</item>
+
+        <!-- remove actionbar and title, we use toolbar! -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- multi selection should overlay Toolbar! http://stackoverflow.com/a/26450875 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="searchViewStyle">@style/Widget.Keychain.SearchView</item>
+
+        <!-- style dialogs -->
+        <item name="alertDialogTheme">@style/Theme.Keychain.Light.Dialog.Alert</item>
+    </style>
+
+    <style name="Base.Theme.Keychain.Dark" parent="MaterialDrawerTheme.ActionBar">
+        <item name="colorPrimary">#268bd2</item>
+        <item name="colorPrimaryDark">#166bb2</item>
+        <item name="colorAccent">#2196f3</item>
+        <item name="colorBrightToolbar">#808080</item>
+
+        <item name="colorFab">#2196f3</item>
+        <item name="colorFabPressed">#1976d2</item>
+        <item name="colorFabText">#fafafa</item>
+
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="fabLabelBackgroundDrawable">@drawable/fab_label_background</item>
+
+        <item name="colorTabText">#70ffffff</item>
+        <item name="colorTabTextSelected">#ffffff</item>
+        <item name="colorTabIndicator">#ffffff</item>
+
+        <item name="colorEmphasis">#2196f3</item>
+        <item name="colorButtonRow">#33cccccc</item>
+        <item name="colorLogBackground">#303030</item>
+        <item name="colorCardViewBackground">#505050</item>
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="cardViewHeaderDrawable">@drawable/cardview_header</item>
+
+        <item name="colorText">#ffffff</item>
+        <item name="colorHeaderText">#d0d0d0</item>
+        <item name="colorTertiaryText">#808080</item>
+        <!-- using an attribute for color will crash on API <= 20. Different drawable xmls are necessary for each theme. Refer to http://stackoverflow.com/a/13471695/3000919 -->
+        <item name="sectionHeaderDrawable">@drawable/section_header_dark</item>
+
+        <item name="material_drawer_selected_text">#268bd2</item>
+
+        <!-- remove actionbar and title, we use toolbar! -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- multi selection should overlay Toolbar! http://stackoverflow.com/a/26450875 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="searchViewStyle">@style/Widget.Keychain.SearchView</item>
+
+        <!-- style dialogs -->
+        <item name="alertDialogTheme">@style/Theme.Keychain.Dark.Dialog.Alert</item>
+    </style>
+
+    <style name="Theme.Keychain.Light" parent="Base.Theme.Keychain.Light"></style>
+
+    <style name="Theme.Keychain.Dark" parent="Base.Theme.Keychain.Dark"></style>
+
+    <!-- http://android-developers.blogspot.de/2014/10/appcompat-v21-material-design-for-pre.html -->
+    <style name="Widget.Keychain.SearchView" parent="Widget.AppCompat.SearchView">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <!--<item name="queryBackground">...</item>-->
+        <!-- Background for the actions section (e.g. voice, submit) -->
+        <!--<item name="submitBackground">...</item>-->
+        <!-- Close button icon -->
+        <item name="closeIcon">@drawable/ic_close_white_24dp</item>
+        <!-- Search button icon -->
+        <!--<item name="searchIcon">...</item>-->
+        <!-- Go/commit button icon -->
+        <!--<item name="goIcon">...</item>-->
+        <!-- Voice search button icon -->
+        <!--<item name="voiceIcon">...</item>-->
+        <!-- Commit icon shown in the query suggestion row -->
+        <!--<item name="commitIcon">...</item>-->
+        <!-- Layout for query suggestion rows -->
+        <!--<item name="suggestionRowLayout">...</item>-->
+    </style>
+
+    <style name="Theme.Keychain.Light.Dialog.Alert" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#7bad45</item>
+    </style>
+
+    <style name="Theme.Keychain.Dark.Dialog.Alert" parent="Base.Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">#268bd2</item>
+    </style>
+
+    <style name="Theme.Keychain.Light.Dialog" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="colorAccent">#7bad45</item>
+        <item name="android:buttonStyle">@style/MaterialFlatButton</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Keychain.Dark.Dialog" parent="Theme.AppCompat.Dialog.MinWidth">
+        <item name="colorAccent">#268bd2</item>
+        <item name="android:buttonStyle">@style/MaterialFlatButton</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Keychain.AppCompat.Transparent" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Keychain.AppCompat.Transparent.Fullscreen" parent="Theme.Keychain.AppCompat.Transparent">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="Theme.Keychain.Transparent" parent="Theme.Keychain.AppCompat.Transparent" />
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/txtvPodcastDirectories"
+            style="@style/AntennaPod.TextView.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/podcastdirectories_label"/>
+
+        <TextView
+            android:id="@+id/txtvPodcastDirectoriesDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/podcastdirectories_descr"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <Button
+            android:id="@+id/butSearchItunes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/search_itunes_label"/>
+
+        <Button
+            android:id="@+id/butSearchFyyd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_fyyd_label"/>
+
+        <Button
+            android:id="@+id/butBrowseGpoddernet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/browse_gpoddernet_label"/>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/txtvFeedurl"
+            style="@style/AntennaPod.TextView.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtvfeedurl_label"/>
+
+        <EditText
+            android:id="@+id/etxtFeedurl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/etxtFeedurlHint"
+            android:inputType="textUri"/>
+
+        <Button
+            android:id="@+id/butConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_label"/>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/txtvOpmlImport"
+            style="@style/AntennaPod.TextView.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opml_import_label"/>
+
+        <TextView
+            android:id="@+id/txtvOpmlImportExpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/opml_import_txtv_button_lable"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <Button
+            android:id="@+id/butOpmlImport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/opml_import_label"/>
+
+    </LinearLayout>
+
+</ScrollView>

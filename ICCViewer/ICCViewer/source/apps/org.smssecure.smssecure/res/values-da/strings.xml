@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="yes">Ja</string>
+  <string name="no">Nej</string>
+  <string name="delete">Slet</string>
+  <string name="please_wait">Vent venligst...</string>
+  <!--AbstractNotificationBuilder-->
+  <!--ApplicationPreferencesActivity-->
+  <string name="ApplicationPreferenceActivity_you_havent_set_a_passphrase_yet">Du har endnu ikke indtastet et kodeord</string>
+  <string name="ApplicationPreferencesActivity_delete_all_old_messages_now">Slet alle gamle beskeder?</string>
+  <string name="ApplicationPreferencesActivity_delete">Slet</string>
+  <string name="ApplicationPreferencesActivity_disable_storage_encryption">Deaktiverer kryptering af lager?</string>
+  <string name="ApplicationPreferencesActivity_warning_this_will_disable_storage_encryption_for_all_messages">
+Advarsel! Dette vil deaktiverer kryptering af lager for alle beskeder og nøgler.
+Dine krypterede sessioner vil fortsætte med at fungere,
+men alle med fysisk adgang til din enhed kan få adgang til dem.
+</string>
+  <string name="ApplicationPreferencesActivity_disable">Deaktivere</string>
+  <string name="ApplicationPreferencesActivity_sms_enabled">SMS aktiveret</string>
+  <string name="ApplicationPreferencesActivity_sms_disabled">SMS deaktiveret</string>
+  <string name="ApplicationPreferencesActivity_sms">SMS</string>
+  <string name="ApplicationPreferencesActivity_mms">MMS</string>
+  <!--AppProtectionPreferenceFragment-->
+  <!--DraftDatabase-->
+  <string name="DraftDatabase_Draft_image_snippet">(billede)</string>
+  <string name="DraftDatabase_Draft_audio_snippet">(lyd)</string>
+  <string name="DraftDatabase_Draft_video_snippet">(video)</string>
+  <!--AttchmentManager-->
+  <!--AttachmentTypeSelectorAdapter-->
+  <string name="AttachmentTypeSelectorAdapter_picture">Billede</string>
+  <string name="AttachmentTypeSelectorAdapter_video">Video</string>
+  <string name="AttachmentTypeSelectorAdapter_audio">Lyd</string>
+  <string name="AttachmentTypeSelectorAdapter_contact">Kontakt information</string>
+  <!--BlockedContactsActivity-->
+  <!--ConversationItem-->
+  <string name="ConversationItem_message_size_d_kb">Besked størrelse: %d KB</string>
+  <string name="ConversationItem_expires_s">Udløber: %s</string>
+  <string name="ConversationItem_view_secure_media_question">Gennemse sikret data?</string>
+  <string name="ConversationItem_error_received_stale_key_exchange_message">Fejl! Modtog en gammel udvekslingsnøgle.</string>
+  <string name="ConversationItem_group_action_left">%1$s har forladt gruppen.</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_sms_dialog_title">Godkend ukrypteret SMS?</string>
+  <string name="ConversationItem_click_to_approve_unencrypted_mms_dialog_title">Godkend ukrypteret MMS?</string>
+  <!--ConversationActivity-->
+  <string name="ConversationActivity_initiate_secure_session_question">Opret en sikker forbindelse?</string>
+  <string name="ConversationActivity_initiate_secure_session_with_s_question">Opret en sikker forbindelse med %s?</string>
+  <string name="ConversationActivity_abort_secure_session_confirmation">Bekræft afslutning af sikker forbindelse</string>
+  <string name="ConversationActivity_are_you_sure_that_you_want_to_abort_this_secure_session_question">Er du sikker på du vil afbryde den sikre forbindelse?</string>
+  <string name="ConversationActivity_add_attachment">Vedhæft fil.</string>
+  <string name="ConversationActivity_select_contact_info">Vælg kontakt information</string>
+  <string name="ConversationActivity_compose_message">Opret besked</string>
+  <string name="ConversationActivity_message_is_empty_exclamation">Beskeden er tom!</string>
+  <string name="ConversationActivity_group_conversation">Gruppe beskeder</string>
+  <string name="ConversationActivity_unnamed_group">Navnløs gruppe</string>
+  <string name="ConversationActivity_saved_draft">Gemte kladder</string>
+  <string name="ConversationActivity_invalid_recipient">Ugyldig modtager!</string>
+  <string name="ConversationActivity_calls_not_supported">Opkald er ikke understøttet</string>
+  <string name="ConversationActivity_this_device_does_not_appear_to_support_dial_actions">Din enhed understøtter ikke initieret opkald.</string>
+  <string name="ConversationActivity_transport_insecure_sms">Usikker (ikke krypteret) SMS</string>
+  <string name="ConversationActivity_transport_insecure_mms">Usikker (ikke krypteret) MMS</string>
+  <string name="ConversationActivity_transport_secure_sms">Krypteret SMS</string>
+  <string name="ConversationActivity_transport_secure_mms">Krypteret MMS</string>
+  <!--ConversationFragment-->
+  <string name="ConversationFragment_message_details">Besked detaljer</string>
+  <string name="ConversationFragment_mms">MMS</string>
+  <string name="ConversationFragment_sms">SMS</string>
+  <string name="ConversationFragment_deleting">Sletter...</string>
+  <string name="ConversationFragment_deleting_messages">Sletter beskeder...</string>
+  <!--ConversationListActivity-->
+  <!--ConversationListFragment-->
+  <string name="ConversationListFragment_deleting">Sletter</string>
+  <!--ConversationListItem-->
+  <!--ConversationListItemAction-->
+  <!--CustomDefaultPreference-->
+  <string name="CustomDefaultPreference_none">Ingen</string>
+  <!--DateUtils-->
+  <!--ShareActivity-->
+  <string name="ShareActivity_share_with">Del med</string>
+  <!--IntroScreenActivity-->
+  <!--ExportFragment-->
+  <string name="ExportFragment_export">Eksportér</string>
+  <string name="ExportFragment_cancel">Afbryd</string>
+  <string name="ExportFragment_exporting">Eksporterer</string>
+  <!--GroupCreateActivity-->
+  <string name="GroupCreateActivity_actionbar_title">Ny gruppe</string>
+  <string name="GroupCreateActivity_actionbar_update_title">Opdater gruppe</string>
+  <string name="GroupCreateActivity_actionbar_mms_title">Ny MMS gruppe</string>
+  <string name="GroupCreateActivity_contacts_mms_exception">En ukendt fejl har medført, at oprettelse af gruppen mislykkedes.</string>
+  <string name="GroupCreateActivity_contacts_no_members">Der skal være mindst én person i gruppen!</string>
+  <string name="GroupCreateActivity_menu_create_title">Opret gruppe</string>
+  <!--GroupMembersDialog-->
+  <string name="GroupMembersDialog_me">Mig</string>
+  <!--ImportExportActivity-->
+  <string name="ImportExportActivity_import">Importer</string>
+  <string name="ImportExportActivity_export">Eksportér</string>
+  <!--ImportFragment-->
+  <string name="ImportFragment_import_system_sms_database">Importer enhedens SMS database?</string>
+  <string name="ImportFragment_import">Importer</string>
+  <string name="ImportFragment_cancel">Afbryd</string>
+  <string name="ImportFragment_import_plaintext_backup">Importer klartekst backup?</string>
+  <string name="ImportFragment_this_will_import_messages_from_a_plaintext_backup">Dette vil importere beskeder fra en klartekst backup. Hvis du tidligere har importeret den samme backup, vil det resultere i dupletter.</string>
+  <string name="ImportFragment_importing">Importerer</string>
+  <string name="ImportFragment_import_plaintext_backup_elipse">Importerer klartekst backup...</string>
+  <string name="ImportFragment_no_plaintext_backup_found">Der blev ikke fundet en klartekst backup!</string>
+  <string name="ImportFragment_error_importing_backup">Fejl opstod ved import af backup!</string>
+  <string name="ImportFragment_import_complete">Import fuldført!</string>
+  <string name="ImportFragment_no_encrypted_backup_found">Der blev ikke fundet en krypteret backup!</string>
+  <!--KeyScanningActivity-->
+  <string name="KeyScanningActivity_no_scanned_key_found_exclamation">Ingen skannet nøgle fundet!</string>
+  <string name="KeyScanningActivity_install_barcode_Scanner">Installer Barcode Skanner?</string>
+  <!--MessageDetailsRecipient-->
+  <!--MmsDownloader-->
+  <string name="MmsDownloader_error_storing_mms">Fejl ved lagring af MMS!</string>
+  <!--NotificationMmsMessageRecord-->
+  <string name="NotificationMmsMessageRecord_multimedia_message">MMS-besked</string>
+  <!--MessageRecord-->
+  <string name="MessageRecord_left_group">Du har forladt gruppen.</string>
+  <string name="MessageRecord_updated_group">Har opdateret gruppen.</string>
+  <!--PassphraseChangeActivity-->
+  <string name="PassphraseChangeActivity_passphrases_dont_match_exclamation">Kodeord matcher ikke!</string>
+  <string name="PassphraseChangeActivity_incorrect_old_passphrase_exclamation">Fejl! Gammelt kodeord</string>
+  <!--PassphrasePromptActivity-->
+  <string name="PassphrasePromptActivity_enter_passphrase">Indtast kodeord</string>
+  <string name="PassphrasePromptActivity_invalid_passphrase_exclamation">Ugyldigt kodeord!</string>
+  <!--ReceiveKeyActivity-->
+  <string name="ReceiveKeyActivity_the_signature_on_this_key_exchange_is_trusted_but">Signaturen på denne udvekslingsnøgle er til at stole på, men du har deaktiveret indstillingen
+\'fuldfør udvekslingsnøgler automatisk\'.</string>
+  <string name="ReceiveKeyActivity_processing">Arbejder</string>
+  <string name="ReceiveKeyActivity_processing_key_exchange">Arbejder på nøgleudvekling...</string>
+  <string name="ConfirmIdentityDialog_you_may_wish_to_verify_this_contact">Du bør verificere
+denne kontakt.</string>
+  <!--RecipientPreferencesActivity-->
+  <!--Slide-->
+  <!--SmsMessageRecord-->
+  <string name="SmsMessageRecord_received_corrupted_key_exchange_message">Modtog en ugyldig
+nøgle-besked!</string>
+  <string name="SmsMessageRecord_received_key_exchange_message_for_invalid_protocol_version">
+Modtog en nøgle-besked for en ugyldig protokol-version.</string>
+  <string name="SmsMessageRecord_received_updated_but_unknown_identity_information">Modtog en opdateret, men ukendte identitetsoplysninger. Klik for at validere identitet.</string>
+  <string name="SmsMessageRecord_secure_session_ended">Sikker session afsluttet.</string>
+  <string name="SmsMessageRecord_duplicate_message">Duplikeret besked.</string>
+  <!--ThreadRecord-->
+  <string name="ThreadRecord_draft">Kladder:</string>
+  <!--VerifyIdentityActivity-->
+  <string name="VerifyIdentityActivity_you_do_not_have_an_identity_key">Du har ingen ID-nøgle.</string>
+  <string name="VerifyIdentityActivity_recipient_has_no_identity_key">Modtageren har ingen ID-nøgle.</string>
+  <string name="VerifyIdentityActivity_warning_the_scanned_key_does_not_match_please_check_the_fingerprint_text_carefully">ADVARSEL. De skannede fingeraftryk matcher IKKE! Vær omhyggelig ved indskanning af fingeraftryk.</string>
+  <string name="VerifyIdentityActivity_not_verified_exclamation">IKKE bekræftet!</string>
+  <string name="VerifyIdentityActivity_their_key_is_correct_it_is_also_necessary_to_verify_your_key_with_them_as_well">Modpartens nøgle er korrekt. Det er også nødvendigt at bekræfte din nøgle med modparten.</string>
+  <string name="VerifyIdentityActivity_verified_exclamation">Bekræftet!</string>
+  <!--ViewIdentityActivity-->
+  <string name="ViewIdentityActivity_warning_the_scanned_key_does_not_match_exclamation">ADVARSEL. Den skannede nøgle matcher IKKE!</string>
+  <string name="ViewIdentityActivity_the_scanned_key_matches_exclamation">Den skannede nøgle stemmer overens!</string>
+  <!--KeyExchangeInitiator-->
+  <string name="KeyExchangeInitiator_initiate_despite_existing_request_question">Initialisere til trods for eksisterende forespørgsel?</string>
+  <string name="KeyExchangeInitiator_youve_already_sent_a_session_initiation_request_to_this_recipient_are_you_sure">Du har allerede sendt en forespørgsel om at initialisere en session til denne modtager. Er du sikker på at du vil sende en til? Dette vil gøre en tidligere forespørgsel ugyldig.</string>
+  <string name="KeyExchangeInitiator_send">Send</string>
+  <!--MessageDisplayHelper-->
+  <string name="MessageDisplayHelper_decrypting_please_wait">Dekrypterer, vent venligst...</string>
+  <!--EncryptingSmsDatabase-->
+  <string name="EncryptingSmsDatabase_error_decrypting_message">Fejl ved dekryptering af besked.</string>
+  <!--MmsDatabase-->
+  <string name="MmsDatabase_connecting_to_mms_server">Forbinder til MMS tjenesten...</string>
+  <string name="MmsDatabase_downloading_mms">Henter MMS...</string>
+  <string name="MmsDatabase_mms_download_failed">Fejl ved afhentning af MMS!</string>
+  <string name="MmsDatabase_downloading">Henter...</string>
+  <string name="MmsDatabase_mms_pending_download">Tryk og konfigurere MMS-indstillinger for at fortsætte download.</string>
+  <string name="MmsDatabase_error_decrypting_message">Fejl ved dekryptering af besked.</string>
+  <!--MmsMessageRecord-->
+  <string name="MmsMessageRecord_decrypting_mms_please_wait">Dekrypterer MMS, vent venligst...</string>
+  <!--MuteDialog-->
+  <!--ApplicationMigrationService-->
+  <string name="ApplicationMigrationService_import_in_progress">Henter...</string>
+  <string name="ApplicationMigrationService_importing_text_messages">Henter tekstbeskeder</string>
+  <!--KeyCachingService-->
+  <string name="KeyCachingService_lock">Lås med et kodeord</string>
+  <!--MessageNotifier-->
+  <string name="MessageNotifier_no_subject">(Intet emne)</string>
+  <string name="MessageNotifier_message_delivery_failed">Levering af besked mislykkedes.</string>
+  <string name="MessageNotifier_failed_to_deliver_message">Kunne ikke sende besked.</string>
+  <string name="MessageNotifier_error_delivering_message">Fejl ved levering af besked.</string>
+  <string name="MessageNotifier_mark_all_as_read">Marker alle som læst</string>
+  <!--QuickResponseService-->
+  <!--SingleRecipientNotificationBuilder-->
+  <!--change_passphrase_activity-->
+  <!--contact_selection_activity-->
+  <!--contact_selection_group_activity-->
+  <string name="contact_selection_group_activity__no_contacts">Ingen kontakter.</string>
+  <string name="contact_selection_group_activity__finding_contacts">Indlæser kontaktpersoner...</string>
+  <!--single_contact_selection_activity-->
+  <string name="SingleContactSelectionActivity_contact_photo">Kontaktbillede</string>
+  <!--ContactSelectionListFragment-->
+  <string name="ContactSelectionlistFragment_select_for">Vælg</string>
+  <!--blocked_contacts_fragment-->
+  <!--contact_selection_recent_activity-->
+  <string name="contact_selection_recent_activity__no_recent_calls">Ingen nye samtaler.</string>
+  <!--conversation_title_view-->
+  <!--conversation_activity-->
+  <string name="conversation_activity__type_message_sms_secure">Send krypteret SMS</string>
+  <string name="conversation_activity__type_message_sms_insecure">Send usikker (ikke krypteret) SMS</string>
+  <string name="conversation_activity__type_message_mms_secure">Send krypteret MMS</string>
+  <string name="conversation_activity__type_message_mms_insecure">Send usikker (ikke krypteret) SMS</string>
+  <string name="conversation_activity__send">Send</string>
+  <string name="conversation_activity__remove">Slet</string>
+  <string name="conversation_activity__window_description">Samtale med %1$s</string>
+  <string name="conversation_activity__compose_description">Besked sammensætning</string>
+  <string name="conversation_activity__emoji_toggle_description">Emoji tastatur deaktiver/aktiver</string>
+  <!--conversation_item-->
+  <string name="conversation_item__mms_image_description">Multimedie besked</string>
+  <string name="conversation_item__secure_message_description">Indikator for sikker besked</string>
+  <!--conversation_item_sent-->
+  <string name="conversation_item_sent__download">Hent</string>
+  <string name="conversation_item_sent__downloading">Henter</string>
+  <string name="conversation_item_sent__send_failed_indicator_description">Indikator for besked fejl</string>
+  <string name="conversation_item_sent__pending_approval_description">Afventer godkendelse</string>
+  <string name="conversation_item_sent__delivered_description">Indikator for leveret besked</string>
+  <!--conversation_item_received-->
+  <string name="conversation_item_received__download">Hent</string>
+  <string name="conversation_item_received__contact_photo_description">Kontaktbillede</string>
+  <string name="conversation_item_received__downloading">Henter</string>
+  <!--audio_view-->
+  <!--conversation_fragment_cab-->
+  <string name="conversation_fragment_cab__batch_selection_mode">Valgte mængde</string>
+  <string name="conversation_fragment_cab__batch_selection_amount">%s valgt</string>
+  <!--conversation_fragment-->
+  <!--log_submit_activity-->
+  <string name="log_submit_activity__thanks">Tak for hjælpen!</string>
+  <string name="log_submit_activity__submitting">Sender</string>
+  <!--database_migration_activity-->
+  <string name="database_migration_activity__the_default_system_database_will_not_be_modified">Den eksisterende systemdatabase vil ikke blive ændret.</string>
+  <string name="database_migration_activity__skip">Spring over</string>
+  <string name="database_migration_activity__import">Importer</string>
+  <string name="database_migration_activity__importing">IMPORTERER</string>
+  <!--database_upgrade_activity-->
+  <string name="database_upgrade_activity__updating_database">Opdaterer databasen...</string>
+  <string name="export_fragment__export_plaintext_backup">Eksporter klartekst backup</string>
+  <string name="import_fragment__import_system_sms_database">Importer enhedens SMS database</string>
+  <string name="import_fragment__import_plaintext_backup">Importer klartekst backup</string>
+  <!--load_more_header-->
+  <!--media_overview_activity-->
+  <!--message_recipients_list_item-->
+  <!--prompt_passphrase_activity-->
+  <string name="prompt_passphrase_activity__unlock">Lås op</string>
+  <!--prompt_mms_activity-->
+  <!--recipient_preferences_activity-->
+  <!--recipient_preferences-->
+  <!--receive_key_dialog-->
+  <string name="receive_key_activity__complete">Udført</string>
+  <!--recipients_panel-->
+  <string name="recipients_panel__to"><small>Indtast navn eller nummer</small></string>
+  <string name="recipients_panel__add_member">Tilføj medlem</string>
+  <!--verify_identity_activity-->
+  <string name="verify_identity_activity__their_identity_they_read">Deres identitet (de læser):</string>
+  <string name="verify_identity_activity__your_identity_you_read">Din identitet (du læser):</string>
+  <!--message_details_header-->
+  <!--AndroidManifest.xml-->
+  <string name="AndroidManifest__create_passphrase">Indtast kodeord</string>
+  <string name="AndroidManifest__enter_passphrase">Opret kodeord</string>
+  <string name="AndroidManifest__select_contacts">Vælg kontakter</string>
+  <string name="AndroidManifest__public_identity_key">Offentlig ID nøgle</string>
+  <string name="AndroidManifest__change_passphrase">Ændre kodeord</string>
+  <string name="AndroidManifest__verify_identity">Verificer identitet</string>
+  <string name="AndroidManifest__complete_key_exchange">Fuldfør nøgleudveksling</string>
+  <!--arrays.xml-->
+  <string name="arrays__import_export">Importer / eksporter</string>
+  <!--plurals.xml-->
+  <!--preferences.xml-->
+  <string name="preferences__general">Generelt</string>
+  <string name="preferences__pref_all_sms_title">Modtag alle SMS</string>
+  <string name="preferences__pref_all_mms_title">Modtag alle MMS</string>
+  <string name="preferences__display_settings">Indstillinger for visning</string>
+  <string name="preferences__choose_your_contact_entry_from_the_contacts_list">Vælg din kontakt fra kontaktlisten.</string>
+  <string name="preferences__change_passphrase">Ændre kodeord</string>
+  <string name="preferences__complete_key_exchanges">Fuldfør nøgleudveksling</string>
+  <string name="preferences__screen_security">Skærm sikkerhed</string>
+  <string name="preferences__automatically_complete_key_exchanges_for_new_sessions_or_for_existing_sessions_with_the_same_identity_key">Fuldfør automatisk nøgleudveksling for nye sessioner eller sessioner med samme ID-nøgle</string>
+  <string name="preferences__disable_screen_security_to_allow_screen_shots">Blokér skærmbillede (screenshots) i listen \\"forrige apps\\" og i SMSSecure</string>
+  <string name="preferences__forget_passphrase_from_memory_after_some_interval">Fjern kodeord fra hukommelsen efter et givent interval</string>
+  <string name="preferences__timeout_passphrase">Kodeords timeout</string>
+  <string name="preferences__pref_timeout_interval_dialogtitle">Vælg kodeord timeout</string>
+  <string name="preferences__pref_timeout_interval_title">Timeout tidsinterval</string>
+  <string name="preferences__the_amount_of_time_to_wait_before_forgetting_passphrase">Hvor lang tid skal der gå før kodeordet slettes fra hukommelsen</string>
+  <string name="preferences__notifications">Notifikation</string>
+  <string name="preferences__led_color">LED farve</string>
+  <string name="preferences__pref_led_blink_title">LED blinkemønster</string>
+  <string name="preferences__pref_led_blink_custom_pattern_title">Tilpas LED blinkemønster</string>
+  <string name="preferences__pref_led_blink_custom_pattern_on_for">Tænd for:</string>
+  <string name="preferences__pref_led_blink_custom_pattern_off_for">Sluk for:</string>
+  <string name="preferences__pref_led_blink_custom_pattern_set">LED blinkemønster er tilpasset</string>
+  <string name="preferences__sound">Lyd</string>
+  <string name="preferences__change_notification_sound">Ændre notifikations-lyd</string>
+  <string name="preferences__play_inthread_notifications">Afspil en notifikationslyd når den viste samtale opdateres.</string>
+  <string name="preferences__vibrate">Vibrér</string>
+  <string name="preferences__also_vibrate_when_notified">Vibrér også ved tilbagemelding</string>
+  <string name="preferences__minutes">Minutter</string>
+  <string name="preferences__hours">Timer</string>
+  <string name="preferences__green">Grøn</string>
+  <string name="preferences__red">Rød</string>
+  <string name="preferences__blue">Blå</string>
+  <string name="preferences__orange">Orange</string>
+  <string name="preferences__cyan">Cyan</string>
+  <string name="preferences__magenta">Magenta</string>
+  <string name="preferences__white">Hvid</string>
+  <string name="preferences__none">Ingen</string>
+  <string name="preferences__fast">Hurtig</string>
+  <string name="preferences__normal">Normal</string>
+  <string name="preferences__slow">Langsom</string>
+  <string name="preferences__custom">Tilpasset</string>
+  <string name="preferences__advanced">Avanceret</string>
+  <string name="preferences__override_system_mms_settings">Brug nedenstående MMS-indstillinger i stedet for systemets</string>
+  <string name="preferences__sms_delivery_reports">Leveringsrapport for SMS</string>
+  <string name="preferences__request_a_delivery_report_for_each_sms_message_you_send">Bed om en leveringsrapport for hver SMS-besked du sender</string>
+  <string name="preferences__delete_old_messages">Slet gamle beskeder</string>
+  <string name="preferences__conversation_length_limit">Grænse på beskeder</string>
+  <string name="preferences__appearance">Udseende</string>
+  <string name="preferences__theme">Tema</string>
+  <string name="preferences__default">Standard</string>
+  <string name="preferences__language">Sprog</string>
+  <string name="preferences__make_default_sms_app">Brug som standard SMS-app</string>
+  <string name="preferences__submit_debug_log">Indsend fejlfindings log</string>
+  <!--****************************************-->
+  <!--menus-->
+  <!--****************************************-->
+  <!--contact_selection_list-->
+  <string name="contact_selection_list__menu_select_all">Marker alle</string>
+  <string name="contact_selection_list__menu_unselect_all">Fjern markering</string>
+  <string name="contact_selection_list__unknown_contact">Ny besked til...</string>
+  <!--contact_selection-->
+  <string name="contact_selection__menu_finished">Afslut</string>
+  <!--refreshing push directory from menu-->
+  <string name="push_directory__menu_refresh">Opdater kontakt liste</string>
+  <!--conversation_button_context-->
+  <string name="conversation_button_context__send_secure_sms">Send SMS krypteret</string>
+  <string name="conversation_button_context__send_secure_mms">Send MMS krypteret</string>
+  <!--conversation_callable-->
+  <string name="conversation_callable__menu_call">Opkald</string>
+  <!--conversation_context-->
+  <string name="conversation_context__menu_message_details">Besked detaljer</string>
+  <string name="conversation_context__menu_copy_text">Kopier tekst</string>
+  <string name="conversation_context__menu_delete_message">Slet besked</string>
+  <string name="conversation_context__menu_forward_message">Videresend besked</string>
+  <string name="conversation_context__menu_resend_message">Send besked igen</string>
+  <!--conversation_context_image-->
+  <string name="conversation_context_image__save_attachment">Gem vedhæftning</string>
+  <!--conversation_insecure-->
+  <!--conversation_insecure_no_push-->
+  <string name="conversation_insecure__menu_start_secure_session">Start sikker forbindelse</string>
+  <string name="conversation_insecure__security">Sikkerhed</string>
+  <!--conversation_list_batch-->
+  <string name="conversation_list_batch__menu_delete_selected">Slet markeret</string>
+  <string name="conversation_list_batch__menu_select_all">Marker alle</string>
+  <!--conversation_list-->
+  <string name="conversation_list__menu_search">Søg</string>
+  <!--conversation_list_item_view-->
+  <!--conversation_list_fragment-->
+  <!--conversation_secure_verified-->
+  <string name="conversation_secure_verified__menu_security">Sikkerhed</string>
+  <string name="conversation_secure_verified__menu_verify_identity">Verificer identitet</string>
+  <string name="conversation_secure_verified__menu_abort_secure_session">Afslut sikker forbindelse</string>
+  <!--conversation_muted-->
+  <!--conversation_unmuted-->
+  <!--conversation-->
+  <string name="conversation__menu_add_attachment">Vedhæft fil</string>
+  <!--conversation_popup-->
+  <!--conversation_callable-->
+  <!--conversation_group_options-->
+  <string name="convesation_group_options__recipients_list">Modtager liste</string>
+  <string name="conversation_group_options__delivery">Sender</string>
+  <string name="conversation_group_options__conversation">Konversation</string>
+  <string name="conversation_group_options__broadcast">Transmitterer</string>
+  <!--key_scanning-->
+  <string name="key_scanning__menu_compare">Sammenlign</string>
+  <!--text_secure_normal-->
+  <string name="text_secure_normal__menu_new_message">Ny besked</string>
+  <string name="text_secure_normal__menu_new_group">Ny gruppe</string>
+  <string name="text_secure_normal__menu_settings">Indstillinger</string>
+  <string name="text_secure_normal__menu_clear_passphrase">Lås</string>
+  <string name="text_secure_normal__mark_all_as_read">Marker alle som læst</string>
+  <!--reminder_header-->
+  <string name="reminder_header_sms_default_title">Anvend som standard SMS-app?</string>
+  <string name="reminder_header_sms_import_title">Importer enhedens SMS?</string>
+  <!--MediaPreviewActivity-->
+  <!--media_preview-->
+  <!--media_overview-->
+  <!--media_preview_activity-->
+  <!--Trimmer-->
+  <!--transport_selection_list_item-->
+  <!--EOF-->
+</resources>

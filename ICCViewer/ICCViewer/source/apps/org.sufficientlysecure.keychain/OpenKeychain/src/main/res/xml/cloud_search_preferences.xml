@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="search_keyserver_pref"
+        android:summary="@string/pref_keyserver_summary"
+        android:title="@string/pref_keyserver" />
+    <PreferenceScreen
+        android:dependency="search_keyserver_pref"
+        android:key="keyServers"
+        android:title="@string/label_keyservers" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="search_keybase_pref"
+        android:summary="@string/pref_keybase_summary"
+        android:title="@string/pref_keybase" />
+    <SwitchPreference
+            android:defaultValue="true"
+            android:key="search_wkd_pref"
+            android:summary="@string/pref_wkd_summary"
+            android:title="@string/pref_wkd" />
+</PreferenceScreen>

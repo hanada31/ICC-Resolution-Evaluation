@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:singleLine="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/user_id_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alice@example.com"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/user_id_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alice"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/user_id_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comment"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator
+        android:id="@+id/user_id_icon_animator"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        custom:initialView="1">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/user_id_item_certified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/status_signature_unverified_cutout_24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/user_id_item_edit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mode_edit_grey_24dp"
+            android:layout_gravity="center_vertical" />
+
+    </org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>
+
+    <ImageButton
+        android:id="@+id/user_id_item_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:src="@drawable/ic_close_grey_24dp"
+        android:layout_gravity="center_vertical"
+        android:background="?android:selectableItemBackground" />
+
+</LinearLayout>

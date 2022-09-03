@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CardViewHeader">
+        <item name="android:drawableBottom">?attr/cardViewHeaderDrawable</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorHeaderText</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="CardViewActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/card_view_button</item>
+    </style>
+
+    <style name="BorderlessButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/card_view_button</item>
+    </style>
+
+    <style name="SectionHeader">
+        <item name="android:drawableBottom">?attr/sectionHeaderDrawable</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorHeaderText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FabMenuStyle">
+        <item name="android:background">?attr/fabLabelBackgroundDrawable</item>
+        <item name="android:textColor">?attr/colorFabText</item>
+    </style>
+
+    <!-- This style is for use with our drag and drop RecyclerView since ItemDecoration did not
+    move with the drag -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="MaterialFlatButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <!-- constrain size of backup code input for smaller devices -->
+    <style name="BackupCodeTextStyle">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="TransferCodeText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">1234</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:textColorHint">@android:color/transparent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:minHeight">42sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:inputType">numberPassword|textVisiblePassword</item>
+    </style>
+
+    <style name="TransferCodeTextSep" parent="TransferCodeText">
+        <item name="android:hint"></item>
+        <item name="android:text">-</item>
+    </style>
+
+    <style name="DebugButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@drawable/ic_folder_grey_24dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+</resources>

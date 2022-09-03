@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar_standalone" />
+
+    <LinearLayout
+        android:layout_below="@id/toolbar_include"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/api_select_sign_key_list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="3dip"
+                    android:text="@string/api_select_sign_key_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/api_select_sign_key_none"
+                    android:background="?android:selectableItemBackground"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:text="@string/none"
+                    android:layout_height="?android:attr/listPreferredItemHeight"
+                    android:gravity="center_vertical"
+                    android:clickable="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="?android:attr/listDivider" />
+
+                <FrameLayout
+                    android:id="@+id/api_select_sign_key_list_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

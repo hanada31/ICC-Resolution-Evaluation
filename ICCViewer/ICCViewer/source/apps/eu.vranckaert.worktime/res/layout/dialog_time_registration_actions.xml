@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2012 Dirk Vranckaert
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/dialog_layout_root">
+
+    <Spinner android:id="@+id/tr_action_spinner"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:prompt="@string/lbl_time_registration_actions_dialog_choose_action_spinner_prompt"/>
+
+    <LinearLayout android:id="@+id/tr_comment_container"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                  android:visibility="gone">
+        <EditText android:id="@+id/tr_comment"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:lines="3"
+                  android:singleLine="false"
+                  android:inputType="textMultiLine|textImeMultiLine|textCapSentences|textAutoComplete|textAutoCorrect"
+                  android:gravity="top"/>
+
+        <Button android:id="@+id/tr_reuse_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_time_registration_actions_dialog_btn_reuse_last_comment"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/tr_delete_container"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                  android:visibility="gone">
+        <RadioGroup android:id="@+id/tr_delete_radio_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/tr_delete_current"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/lbl_time_registration_actions_dialog_removing_time_registrations_only_current"
+                         android:paddingRight="5dip"/>
+            <RadioButton android:id="@+id/tr_delete_range"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:text="@string/lbl_time_registration_actions_dialog_removing_time_registrations_in_range"
+                         android:paddingRight="5dip"/>
+            <TableLayout android:id="@+id/tr_delete_range_container"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:paddingLeft="30dip"
+                         android:stretchColumns="1">
+                <TableRow>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/lbl_time_registration_actions_dialog_removing_time_registrations_in_range_from"/>
+                    <Button android:id="@+id/tr_delete_range_date_from"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/lbl_time_registration_actions_dialog_removing_time_registrations_in_range_to"/>
+                    <Button android:id="@+id/tr_delete_range_date_to"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                </TableRow>
+            </TableLayout>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

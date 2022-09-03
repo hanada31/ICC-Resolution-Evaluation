@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/label_key_type" />
+
+            <!-- custom spinner for fixing focus on first item in list at all times -->
+            <org.sufficientlysecure.keychain.ui.util.spinner.FocusFirstItemSpinner
+                android:id="@+id/add_subkey_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="wrap_content"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/label_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|top"
+                android:paddingRight="10dp"
+                android:text="@string/label_usage" />
+
+            <RadioGroup
+                android:id="@+id/add_subkey_usage_group"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/add_subkey_usage_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="@string/usage_none" />
+
+                <RadioButton
+                    android:id="@+id/add_subkey_usage_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usage_sign" />
+
+                <RadioButton
+                    android:id="@+id/add_subkey_usage_encrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usage_encrypt" />
+
+                <RadioButton
+                    android:id="@+id/add_subkey_usage_sign_and_encrypt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usage_sign_and_encrypt" />
+
+                <RadioButton
+                    android:id="@+id/add_subkey_usage_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/usage_authentication" />
+            </RadioGroup>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/label_expiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/label_expiry" />
+
+            <CheckBox
+                android:id="@+id/add_subkey_no_expiry"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_no_date" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/add_subkey_expiry_row"
+            android:visibility="gone">
+
+            <!--
+                Use Spinner style DatePicker, not the full calendar view
+                Android < 5:
+                    android:spinnersShown="true"
+                    android:calendarViewShown="false"
+                Android >= 5:
+                    android:datePickerMode="spinner"
+            -->
+            <DatePicker
+                android:id="@+id/add_subkey_expiry_date_picker"
+                android:layout_span="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UnusedAttribute"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:calendarViewShown="false" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ankidroid="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_clear_whiteboard"
+        android:title="@string/clear_whiteboard"
+        android:icon="@drawable/ic_clear_white_24dp"
+        android:visible="false"
+        ankidroid:showAsAction="always"/>
+    <item
+        android:id="@+id/action_hide_whiteboard"
+        android:title="@string/hide_whiteboard"
+        android:icon="@drawable/ic_gesture_white_24dp"
+        android:visible="false"
+        ankidroid:showAsAction="always"/>
+    <item
+        android:id="@+id/action_undo"
+        android:enabled="false"
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:title="@string/undo"
+        ankidroid:showAsAction="always"/>
+    <item
+        android:id="@+id/action_mark_card"
+        android:icon="@drawable/ic_star_outline_white_24dp"
+        android:title="@string/menu_mark_note"
+        ankidroid:showAsAction="always"/>
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_mode_edit_white_24dp"
+        android:title="@string/cardeditor_title_edit_card"
+        ankidroid:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_add_note_reviewer"
+        android:title="@string/menu_add_note"
+        android:icon="@drawable/ic_add_white_24dp"
+        ankidroid:showAsAction="never"/>
+    <item
+        android:id="@+id/action_replay"
+        android:title="@string/replay_audio"
+        android:icon="@drawable/ic_replay_white_24dp"
+        ankidroid:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_bury"
+        android:title="@string/menu_bury"
+        android:icon="@drawable/ic_flip_to_back_white_24dp"/>
+    <item
+        android:id="@+id/action_suspend"
+        android:title="@string/menu_suspend"
+        android:icon="@drawable/ic_lock_outline_white_24dp" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/menu_delete_note"
+        android:icon="@drawable/ic_delete_white_24dp"/>
+    <item
+        android:id="@+id/action_search_dictionary"
+        android:title="@string/menu_select"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_enable_whiteboard"
+        android:title="@string/enable_whiteboard"
+        android:icon="@drawable/ic_gesture_white_24dp" />
+    <item
+        android:id="@+id/action_open_deck_options"
+        android:title="@string/study_options" />
+    <item
+        android:id="@+id/action_select_tts"
+        android:title="@string/select_tts"
+        android:visible="false" />
+</menu>

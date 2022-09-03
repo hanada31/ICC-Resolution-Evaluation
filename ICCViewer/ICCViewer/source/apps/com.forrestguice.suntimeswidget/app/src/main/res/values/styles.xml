@@ -1,0 +1,380 @@
+<resources>
+
+    <!-- themes -->
+    <style name="AppTheme" parent="AppTheme.Dark">
+    </style>
+
+    <!-- Theme: Light (left-to-right) -->
+    <style name="AppThemeBase.Light" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="dialogBackground">@color/dialog_bg_light</item>
+        <item name="dialogBackgroundAlt">@color/grey_300</item>
+        <item name="settingsCardBackground">@drawable/bg_widget</item>
+        <item name="timeCardBackground">@color/card_bg_light</item>
+        <item name="semiTransparentBackground">@color/card_bg_lighttrans</item>
+        <item name="toolbarTheme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="hrColor">@color/hr_light</item>
+        <item name="text_accentColor">@color/text_accent_light</item>
+        <item name="text_disabledColor">@color/text_disabled_light</item>
+
+        <item name="alarmColorEnabled">@color/alarm_enabled_light</item>
+        <item name="alarmCardEnabled">@drawable/card_alarmitem_enabled_light</item>
+        <item name="alarmCardDisabled">@drawable/card_alarmitem_disabled_light</item>
+        <item name="gridItemSelected">@color/grid_selected_light</item>
+
+        <item name="buttonPressColor">@color/btn_tint_pressed_light</item>
+        <item name="text_buttonSelector">@drawable/btn_txt_light</item>
+        <item name="date_buttonSelector">@drawable/btn_datetxt_light</item>
+
+        <item name="graphColor_background">@color/graphColor_bg_light</item>
+        <item name="graphColor_day">@color/graphColor_day_light</item>
+        <item name="graphColor_night">@color/graphColor_night_light</item>
+        <item name="graphColor_civil">@color/graphColor_civil_light</item>
+        <item name="graphColor_nautical">@color/graphColor_nautical_light</item>
+        <item name="graphColor_astronomical">@color/graphColor_astronomical_light</item>
+        <item name="graphColor_pointFill">@color/sunIcon_color_noon_light</item>
+        <item name="graphColor_pointStroke">@color/sunIcon_color_noonBorder_light</item>
+
+        <item name="sunriseIconSmall">@drawable/ic_sunrise_light</item>
+        <item name="sunriseIconLarge">@drawable/ic_sunrise_large_light</item>
+        <item name="sunriseColor">@color/sunIcon_color_rising_light</item>
+        <item name="sunsetIconSmall">@drawable/ic_sunset_light</item>
+        <item name="sunsetIconLarge">@drawable/ic_sunset_large_light</item>
+        <item name="sunsetColor">@color/sunIcon_color_setting_light</item>
+        <item name="sunnoonIcon">@drawable/ic_noon_large_light</item>
+
+        <item name="moonriseIcon">@drawable/ic_moon_rise_light</item>
+        <item name="moonriseColor">@color/moonIcon_color_rising_light</item>
+        <item name="moonsetIcon">@drawable/ic_moon_set_light</item>
+        <item name="moonsetColor">@color/moonIcon_color_setting_light</item>
+
+        <item name="springColor">@color/springColor_light</item>
+        <item name="summerColor">@color/summerColor_light</item>
+        <item name="fallColor">@color/fallColor_light</item>
+        <item name="winterColor">@color/winterColor_light</item>
+
+        <item name="tagColor_warning">@color/warningTag_light</item>
+        <item name="tagColor_error">@color/errorTag_light</item>
+        <item name="tagColor_dst">@color/dstTag_light</item>
+
+        <item name="snackbar_textColor">@android:color/primary_text_light</item>
+        <item name="snackbar_accentColor">?colorAccent</item>
+        <item name="snackbar_backgroundColor">?attr/colorPrimary</item>
+
+        <item name="fab_backgroundColor">@color/sunIcon_color_rising_light</item>
+        <item name="fab_rippleColor">@color/text_accent_light</item>
+
+        <item name="icActionGPS">@drawable/ic_action_location_found_light</item>
+        <item name="icActionGPS_off">@drawable/ic_action_location_off_light</item>
+        <item name="icActionGPS_searching">@drawable/ic_action_location_searching_light</item>
+
+        <item name="icActionPlace">@drawable/ic_action_place_light</item>
+        <item name="icActionMap">@drawable/ic_action_map_light</item>
+        <item name="icActionTime">@drawable/ic_action_time_light</item>
+        <item name="icActionDst">@drawable/ic_weather_sunny_light</item>
+        <item name="icActionAlarm">@drawable/ic_action_alarms_light</item>
+        <item name="icActionCalendar">@drawable/ic_calendar_light</item>
+        <item name="icActionNotification">@drawable/ic_action_notification_light</item>
+        <item name="icActionSoundEnabled">@drawable/ic_action_soundenabled_light</item>
+        <item name="icActionSoundDisabled">@drawable/ic_action_sounddisabled_light</item>
+        <item name="icActionAbout">@drawable/ic_action_about_light</item>
+        <item name="icActionWarning">@drawable/ic_action_warning_light</item>
+        <item name="icActionError">@drawable/ic_action_error_light</item>
+        <item name="icActionWidgets">@drawable/ic_action_widget_light</item>
+        <item name="icActionAppearance">@drawable/ic_palette_light</item>
+        <item name="icActionAltitude">@drawable/baseline_terrain_black_18</item>
+        <item name="icActionShadow">@drawable/ic_action_shadow_light</item>
+        <item name="icActionLocale">@drawable/ic_action_locale_light</item>
+        <item name="icActionSettings">@drawable/ic_action_settings_light</item>
+        <item name="icActionHelp">@drawable/ic_action_help_light</item>
+        <item name="icActionAccept">@drawable/ic_action_accept_light</item>
+        <item name="icActionNew">@drawable/ic_action_new_light</item>
+        <item name="icActionNewAlarm">@drawable/ic_action_alarms_light</item>
+        <item name="icActionNewNotification">@drawable/ic_action_notification_light</item>
+        <item name="icActionSave">@drawable/ic_action_save_light</item>
+        <item name="icActionEdit">@drawable/ic_action_edit_light</item>
+        <item name="icActionDelete">@drawable/ic_action_discard_light</item>
+        <item name="icActionCopy">@drawable/ic_action_copy_light</item>
+        <item name="icActionDismiss">@drawable/ic_action_cancel_light</item>
+        <item name="icActionCancel">@drawable/ic_action_cancel_light</item>
+        <item name="icActionShare">@drawable/ic_action_share_light</item>
+        <item name="icActionSnooze">@drawable/ic_action_snooze_light</item>
+
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="AppTheme.Light" parent="AppThemeBase.Light">
+        <item name="icActionNext">@drawable/ic_action_next_item_light</item>
+        <item name="icActionPrevious">@drawable/ic_action_previous_item_light</item>
+    </style>
+
+    <!-- Theme: Dark (left-to-right) -->
+    <style name="AppThemeBase.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="dialogBackground">@color/dialog_bg_dark</item>
+        <item name="dialogBackgroundAlt">@color/grey_900</item>
+        <item name="settingsCardBackground">@drawable/bg_widget_dark</item>
+        <item name="timeCardBackground">@color/card_bg_dark</item>
+        <item name="semiTransparentBackground">@color/card_bg_darktrans</item>
+        <item name="toolbarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="hrColor">@color/hr_dark</item>
+        <item name="text_accentColor">@color/text_accent_dark</item>
+        <item name="text_disabledColor">@color/text_disabled_dark</item>
+
+        <item name="alarmColorEnabled">@color/alarm_enabled_dark</item>
+        <item name="alarmCardEnabled">@drawable/card_alarmitem_enabled_dark</item>
+        <item name="alarmCardDisabled">@drawable/card_alarmitem_disabled_dark</item>
+        <item name="gridItemSelected">@color/grid_selected_dark</item>
+
+        <item name="buttonPressColor">@color/btn_tint_pressed_dark</item>
+        <item name="text_buttonSelector">@drawable/btn_txt_dark</item>
+        <item name="date_buttonSelector">@drawable/btn_datetxt_dark</item>
+
+        <item name="graphColor_background">@color/graphColor_bg_dark</item>
+        <item name="graphColor_day">@color/graphColor_day_dark</item>
+        <item name="graphColor_night">@color/graphColor_night_dark</item>
+        <item name="graphColor_civil">@color/graphColor_civil_dark</item>
+        <item name="graphColor_nautical">@color/graphColor_nautical_dark</item>
+        <item name="graphColor_astronomical">@color/graphColor_astronomical_dark</item>
+        <item name="graphColor_pointFill">@color/sunIcon_color_setting_dark</item>
+        <item name="graphColor_pointStroke">@color/grey_800</item>
+
+        <item name="sunriseIconSmall">@drawable/ic_sunrise</item>
+        <item name="sunriseIconLarge">@drawable/ic_sunrise_large</item>
+        <item name="sunriseColor">@color/sunIcon_color_rising_dark</item>
+        <item name="sunsetIconSmall">@drawable/ic_sunset</item>
+        <item name="sunsetIconLarge">@drawable/ic_sunset_large</item>
+        <item name="sunsetColor">@color/sunIcon_color_setting_dark</item>
+        <item name="sunnoonIcon">@drawable/ic_noon_large</item>
+
+        <item name="moonriseIcon">@drawable/ic_moon_rise</item>
+        <item name="moonriseColor">@color/moonIcon_color_rising_dark</item>
+        <item name="moonsetIcon">@drawable/ic_moon_set</item>
+        <item name="moonsetColor">@color/moonIcon_color_setting_dark</item>
+
+        <item name="springColor">@color/springColor_dark</item>
+        <item name="summerColor">@color/summerColor_dark</item>
+        <item name="fallColor">@color/fallColor_dark</item>
+        <item name="winterColor">@color/winterColor_dark</item>
+
+        <item name="tagColor_warning">@color/warningTag_dark</item>
+        <item name="tagColor_error">@color/errorTag_dark</item>
+        <item name="tagColor_dst">@color/dstTag_dark</item>
+
+        <item name="snackbar_textColor">@android:color/primary_text_dark</item>
+        <item name="snackbar_accentColor">?colorAccent</item>
+        <item name="snackbar_backgroundColor">?attr/colorPrimary</item>
+
+        <item name="fab_backgroundColor">@color/sunIcon_color_setting_dark</item>
+        <item name="fab_rippleColor">@color/text_accent_dark</item>
+
+        <item name="icActionGPS">@drawable/ic_action_location_found</item>
+        <item name="icActionGPS_off">@drawable/ic_action_location_off</item>
+        <item name="icActionGPS_searching">@drawable/ic_action_location_searching</item>
+
+        <item name="icActionPlace">@drawable/ic_action_place</item>
+        <item name="icActionMap">@drawable/ic_action_map</item>
+        <item name="icActionTime">@drawable/ic_action_time</item>
+        <item name="icActionDst">@drawable/ic_weather_sunny</item>
+        <item name="icActionAlarm">@drawable/ic_action_alarms</item>
+        <item name="icActionCalendar">@drawable/ic_calendar</item>
+        <item name="icActionNotification">@drawable/ic_action_notification</item>
+        <item name="icActionSoundEnabled">@drawable/ic_action_soundenabled</item>
+        <item name="icActionSoundDisabled">@drawable/ic_action_sounddisabled</item>
+        <item name="icActionAbout">@drawable/ic_action_about</item>
+        <item name="icActionWarning">@drawable/ic_action_warning</item>
+        <item name="icActionError">@drawable/ic_action_error</item>
+        <item name="icActionWidgets">@drawable/ic_action_widget</item>
+        <item name="icActionAppearance">@drawable/ic_palette</item>
+        <item name="icActionAltitude">@drawable/baseline_terrain_white_18</item>
+        <item name="icActionShadow">@drawable/ic_action_shadow</item>
+        <item name="icActionLocale">@drawable/ic_action_locale</item>
+        <item name="icActionSettings">@drawable/ic_action_settings</item>
+        <item name="icActionHelp">@drawable/ic_action_help</item>
+        <item name="icActionAccept">@drawable/ic_action_accept</item>
+        <item name="icActionNew">@drawable/ic_action_new</item>
+        <item name="icActionNewAlarm">@drawable/ic_action_alarms</item>
+        <item name="icActionNewNotification">@drawable/ic_action_notification</item>
+        <item name="icActionSave">@drawable/ic_action_save</item>
+        <item name="icActionEdit">@drawable/ic_action_edit</item>
+        <item name="icActionDelete">@drawable/ic_action_discard</item>
+        <item name="icActionCopy">@drawable/ic_action_copy</item>
+        <item name="icActionDismiss">@drawable/ic_action_cancel</item>
+        <item name="icActionCancel">@drawable/ic_action_cancel</item>
+        <item name="icActionShare">@drawable/ic_action_share</item>
+        <item name="icActionSnooze">@drawable/ic_action_snooze</item>
+
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="AppTheme.Dark" parent="AppThemeBase.Dark">
+        <item name="icActionNext">@drawable/ic_action_next_item</item>
+        <item name="icActionPrevious">@drawable/ic_action_previous_item</item>
+    </style>
+
+    <!-- view styles -->
+
+    <!-- main activity card items -->
+    <style name="SunsetTimeCard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/timeCardBackground</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!-- The outermost frame around the widget -->
+    <style name="SunsetTimeWidgetFrame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/widget_margin</item>
+    </style>
+
+    <!-- The inner frame around the widget -->
+    <style name="SunsetTimeWidgetBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SunsetTimeWidget" parent="SunsetTimeWidgetBase">
+        <item name="android:background">@drawable/bg_dark</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/widget_padding_left</item>
+        <item name="android:paddingRight">@dimen/widget_padding_right</item>
+        <item name="android:paddingTop">@dimen/widget_padding_top</item>
+        <item name="android:paddingBottom">@dimen/widget_padding_bottom</item>
+    </style>
+    <style name="SunsetTimeWidget_dark" parent="SunsetTimeWidget">
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- A layout for widget content within the inner frame -->
+    <style name="SunsetTimeLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- An ImageView (icon) appearing to left of text/time -->
+    <style name="SunsetTimeImageView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/sunIcon_width</item>
+        <item name="android:layout_height">@dimen/sunIcon_height</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+    <style name="SunsetTimeImageView2" parent="SunsetTimeImageView">
+        <item name="android:layout_gravity">center_vertical|left</item>
+    </style>
+
+    <!-- A TextView for displaying text/time -->
+    <style name="SunsetTimeTextViewBase" parent="android:TextAppearance.Small">
+    </style>
+    <style name="SunsetTextView" parent="SunsetTimeTextViewBase">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:antialias">true</item>
+    </style>
+    <style name="SunsetTimeTextView" parent="SunsetTimeTextViewBase">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:antialias">true</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="SunsetTimeTextView2" parent="SunsetTimeTextView">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- A TextView for displaying the widget title -->
+    <style name="SunsetTimeTextTitleView" parent="SunsetTimeTextView">
+        <item name="android:textSize">10sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <!-- A TextView for displaying some suffix after time/text -->
+    <style name="SunsetTimeTextSuffixView" parent="SunsetTimeTextView">
+        <item name="android:textSize">6sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="SunsetTimeSettingsGroupTitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SunsetTimeHorizontalRule">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">?attr/hrColor</item>
+    </style>
+
+    <style name="ColorEdit">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ColorEditLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">@drawable/btn_labeltxt</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="ColorEditButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:contentDescription">@string/configAction_chooseColor</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/ic_colortab</item>
+    </style>
+
+    <style name="SizeEdit" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minEms">2</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="SizeEditLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">200dp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+</resources>

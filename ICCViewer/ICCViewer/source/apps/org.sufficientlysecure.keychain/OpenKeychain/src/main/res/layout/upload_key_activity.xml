@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar_standalone" />
+
+    <LinearLayout
+        android:layout_below="@id/toolbar_include"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/notify_area" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/section_key_server" />
+
+                <Spinner
+                    android:id="@+id/upload_key_keyserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp" />
+
+                <fragment
+                    android:id="@+id/multi_user_ids_fragment"
+                    android:name="org.sufficientlysecure.keychain.ui.MultiUserIdsFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/section_actions"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/upload_key_action_upload"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/btn_export_to_server"
+                    android:minHeight="?android:attr/listPreferredItemHeight"
+                    android:drawableRight="@drawable/ic_file_upload_grey_24dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:background="?android:selectableItemBackground" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

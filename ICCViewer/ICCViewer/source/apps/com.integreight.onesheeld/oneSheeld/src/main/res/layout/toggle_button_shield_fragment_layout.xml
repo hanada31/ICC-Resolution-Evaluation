@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.integreight.onesheeld.utils.customviews.OneSheeldToggleButton
+        android:id="@+id/toggle_button_shield_button_toggle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/on_off_toggle_selelctor"
+        android:checked="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="@color/offWhite"
+        android:textOff="@string/toggle_button_off"
+        android:textOn="@string/toggle_button_on"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

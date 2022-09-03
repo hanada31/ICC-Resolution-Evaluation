@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="16dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:orientation="vertical"
+    custom:initialView="0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/passphrase_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/enter_passphrase" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passphrase_passphrase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:imeOptions="actionDone|flagNoPersonalizedLearning"
+                android:hint="@string/label_passphrase"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageButton
+                android:id="@+id/passphrase_keyboard"
+                android:src="@drawable/ic_numeric_black_24dp"
+                style="@style/MaterialFlatButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:id="@+id/remember_layout">
+
+            <!-- paddingBottom for spinner alignment -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember"
+                android:paddingBottom="1dp"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <org.sufficientlysecure.keychain.ui.widget.CacheTTLSpinner
+                android:id="@+id/ttl_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </org.sufficientlysecure.keychain.ui.widget.CacheTTLSpinner>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/label_unlock"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>

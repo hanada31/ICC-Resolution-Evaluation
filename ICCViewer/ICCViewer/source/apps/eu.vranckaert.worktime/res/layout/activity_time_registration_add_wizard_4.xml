@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <TextView  android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/lbl_registration_add_part_four_title"
+               android:textColor="@color/wizard_page_title"
+               android:gravity="center_horizontal"
+               android:textSize="@dimen/text_size_large"
+               android:textStyle="bold"/>
+    <EditText android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/registration_add_part_four_comment"
+              android:lines="3"
+              android:singleLine="false"/>
+</LinearLayout>

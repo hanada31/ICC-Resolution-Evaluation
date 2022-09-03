@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_register_error"
+        style="@style/WorkTimeValidationError"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_register_email"
+        android:hint="@string/lbl_account_register_email_hint"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_account_register_firstname_hint"
+        android:id="@+id/account_register_firstname"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_account_register_lastname_hint"
+        android:id="@+id/account_register_lastname"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_account_register_password_hint"
+        android:id="@+id/account_register_password"
+        android:password="true"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_account_register_password_confirmation_hint"
+        android:id="@+id/account_register_password_confirmation"
+        android:password="true"
+        android:inputType="textPassword"/>
+
+    <CheckBox
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_account_register_password_show"
+        android:id="@+id/account_register_password_show"
+        android:checked="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_account_register_password_button"
+        android:id="@+id/account_register_button"
+        android:layout_gravity="center"/>
+</LinearLayout>

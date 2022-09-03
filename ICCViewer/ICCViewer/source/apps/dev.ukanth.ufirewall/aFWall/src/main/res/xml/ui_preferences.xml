@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="uiPrefsScreen">
+
+    <PreferenceCategory android:title="@string/ui_prefs_title" android:key="uiscreen">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notifyAppInstall"
+            android:summaryOff="@string/notify_pref_summary_off"
+            android:summaryOn="@string/notify_pref_summary_on"
+            android:title="@string/notify_pref_title" />
+
+        <!--<SwitchPreference
+            android:defaultValue="false"
+            android:key="quickApply"
+            android:enabled="false"
+            android:summary="@string/quick_apply_summary"
+            android:title="@string/quick_apply_title" />-->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="disableIcons"
+            android:summaryOff="@string/hideicons_pref_summary_off"
+            android:summaryOn="@string/hideicons_pref_summary_on"
+            android:title="@string/hideicons_pref_title" />
+      <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="activeNotification"
+            android:summary="@string/activeNotification_summary"
+            android:title="@string/activeNotification"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="runNotification"
+            android:summary="@string/runNotification_summary"
+            android:title="@string/runNotification"/>
+       <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/notification_type"
+            android:entryValues="@array/notification_type_val"
+            android:key="notification_priority"
+            android:title="@string/notification_priority"></ListPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="showFilter"
+            android:summaryOff="@string/showfilter_summary_off"
+            android:summaryOn="@string/showfilter_summary_on"
+            android:title="@string/showFilter" />
+        <CheckBoxPreference
+            android:key="showUid"
+            android:summaryOff="@string/showuid_summary_off"
+            android:summaryOn="@string/showuid_summary_on"
+            android:title="@string/showUid" />
+
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="@color/accent"
+            android:key="sysColor"
+            android:summary="@string/syscolor_pref_summary_on"
+            android:title="@string/syscolor_pref_title" />
+
+        <CheckBoxPreference
+            android:key="enableConfirm"
+            android:summary="@string/enableConfirm_summary_on"
+            android:title="@string/enableConfirmTitle" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

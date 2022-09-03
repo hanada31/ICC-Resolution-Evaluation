@@ -1,0 +1,102 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="uiPrefsScreen">
+
+    <PreferenceCategory android:title="@string/rule_prefs_title">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="activeRules"
+            android:summary="@string/active_rules_summary"
+            android:title="@string/active_rules" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="activeRules"
+            android:icon="@drawable/ic_roam"
+            android:key="enableRoam"
+            android:summary="@string/roamingSummary"
+            android:title="@string/roaming" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="activeRules"
+            android:icon="@drawable/ic_lan"
+            android:key="enableLAN"
+            android:summary="@string/lan_summary"
+            android:title="@string/lan_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="activeRules"
+            android:icon="@drawable/ic_vpn"
+            android:key="enableVPN"
+            android:summary="@string/vpnSummary"
+            android:title="@string/vpn_profile" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="activeRules"
+            android:icon="@drawable/ic_tor"
+            android:key="enableTor"
+            android:summary="@string/torSummary"
+            android:title="@string/tor_profile" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ui_chains_title">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="input_chain"
+            android:summaryOff="@string/input_chain_summary_off"
+            android:summaryOn="@string/input_chain_summary_on"
+            android:title="@string/input_chain" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="output_chain"
+            android:summaryOff="@string/output_chain_summary_off"
+            android:summaryOn="@string/output_chain_summary_on"
+            android:title="@string/output_chain" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="forward_chain"
+            android:summaryOff="@string/forward_chain_summary_off"
+            android:summaryOn="@string/forward_chain_summary_on"
+            android:title="@string/forward_chain" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ui_chains6_title">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enableIPv6"
+            android:summary="@string/ipv6_summary"
+            android:title="@string/ipv6_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="controlIPv6"
+            android:summary="@string/control_ipv6_title"/>
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="controlIPv6"
+            android:key="input_chain_v6"
+            android:summaryOff="@string/input_chain_summary_off"
+            android:summaryOn="@string/input_chain_summary_on"
+            android:title="@string/input_chain_v6" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="controlIPv6"
+            android:key="output_chain_v6"
+            android:summaryOff="@string/output_chain_summary_off"
+            android:summaryOn="@string/output_chain_summary_on"
+            android:title="@string/output_chain_v6" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="controlIPv6"
+            android:key="forward_chain_v6"
+            android:summaryOff="@string/forward_chain_summary_off"
+            android:summaryOn="@string/forward_chain_summary_on"
+            android:title="@string/forward_chain_v6" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

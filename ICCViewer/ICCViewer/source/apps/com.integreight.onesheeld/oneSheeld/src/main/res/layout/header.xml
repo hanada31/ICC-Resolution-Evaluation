@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/arduino_conn_gray_bg"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/currentViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/onsheeld_logo_top_bar"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <com.integreight.onesheeld.utils.customviews.ClickableRelativeLayout
+        android:id="@+id/cancelConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/currentViewTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bluetooth_disconnect_button"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+    </com.integreight.onesheeld.utils.customviews.ClickableRelativeLayout>
+
+    <com.integreight.onesheeld.utils.customviews.ClickableRelativeLayout
+        android:id="@+id/getAvailableDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/currentViewTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/operationsLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shields_list_shields_operation_button"
+            android:contentDescription="@string/app_name" />
+
+        <ProgressBar
+            android:id="@+id/progressShieldInit"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </com.integreight.onesheeld.utils.customviews.ClickableRelativeLayout>
+
+</RelativeLayout>

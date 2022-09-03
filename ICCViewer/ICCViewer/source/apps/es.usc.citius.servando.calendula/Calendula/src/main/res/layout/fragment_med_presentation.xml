@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~    Calendula - An assistant for personal medication management.
+  ~    Copyright (C) 2014-2018 CiTIUS - University of Santiago de Compostela
+  ~
+  ~    Calendula is free software; you can redistribute it and/or modify
+  ~    it under the terms of the GNU General Public License as published by
+  ~    the Free Software Foundation; either version 3 of the License, or
+  ~    (at your option) any later version.
+  ~
+  ~    This program is distributed in the hope that it will be useful,
+  ~    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~    GNU General Public License for more details.
+  ~
+  ~    You should have received a copy of the GNU General Public License
+  ~    along with this software.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/med_presentation_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/presentation_scroll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/presentation_box_left"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="0dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/presentation_box_right"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/presentation_box_shadow_top"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="false"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="113dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/presentation_box_shadow_bottom"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/text_file_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.simplemobiletools.commons.views.MyTextView
+            tools:text="diary.realm_20190531"
+            android:id="@+id/fileName"
+            android:textSize="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.simplemobiletools.commons.views.MyTextView
+            tools:text="2019-05-31"
+            android:gravity="end"
+            android:id="@+id/createdTime"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

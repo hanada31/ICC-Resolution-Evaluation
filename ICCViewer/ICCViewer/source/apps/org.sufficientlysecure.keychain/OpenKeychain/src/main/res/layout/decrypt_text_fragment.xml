@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/decrypt_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <ScrollView
+            android:fillViewport="true"
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/decrypt_text_plaintext"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint=""
+                tools:text="This is the plaintext"
+                android:textIsSelectable="true" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/decrypt_error_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/decrypt_invalid_text"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/android_red_light" />
+
+        <Button
+            android:id="@+id/decrypt_error_overlay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_edgy"
+            android:textColor="@color/android_red_light"
+            android:text="@string/decrypt_invalid_button"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</org.sufficientlysecure.keychain.ui.widget.ToolableViewAnimator>

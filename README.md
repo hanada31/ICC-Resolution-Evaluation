@@ -113,7 +113,7 @@ Count the number of tags and ICCs relates to each pattern.
 
 The ICCs in our oracle set and their corresponding tags, including the label information of 1,680 ICCs and the README file of  [ICCViewer](https://iccviewer.ldby.site/ICCViewer/). 
 
-- Labels of ICCs:** Labels for the five benchmarks in BenchHand, and the 31 apps in BenchSmall.
+- **ICCViewer:** Labels for the five benchmarks in BenchHand, and the 31 apps in BenchSmall, and other files.
 
 - **README:** The [README](ICCViewer\README.md) file of  ICCViewer. 
 - **Main UI of ICCViewer.**

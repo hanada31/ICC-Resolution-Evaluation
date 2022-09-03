@@ -4,7 +4,8 @@
 ### Information about the paper.
 
 This artifact is for paper： 
-> Jiwei Yan, Shixin Zhang, Yepang Liu, Xi Deng, Jun Yan, Jian Zhang. [A Comprehensive Evaluation of Android ICC Resolution Techniques](ASE2022-A Comprehensive Evaluation of Android ICC Resolution Techniques.pdf), ASE 2022.
+> Jiwei Yan, Shixin Zhang, Yepang Liu, Xi Deng, Jun Yan, Jian Zhang. A Comprehensive Evaluation of Android ICC Resolution Techniques, ASE 2022.
+(ASE2022-A Comprehensive Evaluation of Android ICC Resolution Techniques.pdf)
 
 The contributions of this paper are threefold:
 
